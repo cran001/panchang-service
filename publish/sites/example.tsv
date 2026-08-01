@@ -1,0 +1,28 @@
+# Example site list for :publish.
+#
+#   ./gradlew :publish:run --args="--sites publish/sites/example.tsv --year 2026 --out build/feed"
+#
+# One site per line. Blank lines and everything after a # are ignored.
+#
+#   coords    <key> <lat> <lon> <iana-zone> <title...>
+#   place-id  <key> <geonamesId> [title...]
+#
+# `coords` is preferred: the point is used verbatim and the zone is stated rather than guessed.
+# `place-id` borrows a gazetteer record's representative point; ids rather than names because a
+# publisher is exactly the caller that cannot answer an interactive "which Raigarh?".
+#
+# <key> becomes a directory and a file name in the output, and the `file` field of the legacy
+# locations list. Lowercase letters, digits and dashes only.
+#
+# This file is an example, not the published set. Sites in zones that observe daylight saving get
+# full v1 output but no legacy file — see docs/legacy-contract.md section 5, which is a decision
+# waiting on the project owner rather than a settled policy.
+
+coords    mayapur       23.4249    88.3883   Asia/Kolkata      Sri Mayapur Dham
+coords    vrindavan     27.5806    77.7006   Asia/Kolkata      Sri Vrindavan Dham
+coords    jagannath-puri 19.8135   85.8312   Asia/Kolkata      Sri Jagannatha Puri
+coords    mumbai        19.0760    72.8777   Asia/Kolkata      Mumbai
+coords    kathmandu     27.7172    85.3240   Asia/Kathmandu    Kathmandu
+coords    singapore      1.3521   103.8198   Asia/Singapore    Singapore
+coords    dubai         25.2048    55.2708   Asia/Dubai        Dubai
+coords    johannesburg -26.2041    28.0473   Africa/Johannesburg Johannesburg

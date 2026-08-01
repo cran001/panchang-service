@@ -432,11 +432,16 @@ class IskconRules : SampradayaRules {
             startReason = ParanaBoundReason.HARI_VASARA_END
         }
 
+        // The reason is nullable so that it cannot be recorded without the bound that justifies
+        // it. Each of the three caps below assigns instant and reason together or not at all;
+        // the previous form asserted ONE_THIRD_DAYLIGHT up front, so a site with no usable
+        // daylight silently produced a window bounded by something else and labelled with this.
         var end = Double.MAX_VALUE
-        var endReason = ParanaBoundReason.ONE_THIRD_DAYLIGHT
+        var endReason: ParanaBoundReason? = null
         val daylight = sunTimes.daylightDays
         if (daylight != null && daylight > 0.0) {
             end = sunrise + daylight / 3.0
+            endReason = ParanaBoundReason.ONE_THIRD_DAYLIGHT
         }
         if (f.dvadashi.endJdUt > sunrise && f.dvadashi.endJdUt < end) {
             end = f.dvadashi.endJdUt
@@ -449,23 +454,34 @@ class IskconRules : SampradayaRules {
                 endReason = ParanaBoundReason.NAKSHATRA_END
             }
         }
-        // Falls through only when the site has no sunset either, which cannot happen at a site
-        // that had a sunrise. Kept as an explicit failure rather than a silent MAX_VALUE window.
-        if (end == Double.MAX_VALUE) {
-            return ParanaOutcome(
-                window = null,
-                note = "No parana window is given because the length of daylight on $paranaDate " +
-                    "could not be determined at this site.",
-                confidence = RuleConfidence.INFERRED,
-            )
-        }
+
+        // No cap could be established. `SunTimes.daylightDays` documents both ways the first one
+        // fails, and they are different facts about the site, so they get different sentences: a
+        // reader who cannot tell "the Sun never set" from "the sunset in this civil day came
+        // before its sunrise" cannot act on either. Reaching here is an explicit refusal rather
+        // than a window capped at MAX_VALUE, which would be an invented bound.
+        val boundReason = endReason ?: return ParanaOutcome(
+            window = null,
+            note = "No parana window is given because " +
+                if (daylight == null) {
+                    "the Sun does not set at this site on $paranaDate, so the daylight period " +
+                        "has no end and no first third to take"
+                } else {
+                    "this site's civil sunset on $paranaDate precedes its sunrise on the same " +
+                        "day, so the interval between them is not a length of daylight"
+                } +
+                ", and neither the end of the Dvadashi nor the end of a qualifying nakshatra " +
+                "falls after that sunrise to bound the window in its place. The tradition's " +
+                "ruling for this case is not known here.",
+            confidence = RuleConfidence.INFERRED,
+        )
 
         if (end <= start) {
             return ParanaOutcome(
                 window = null,
                 note = "No parana window is given: the fast may not be broken before " +
                     "${describe(startReason)} on $paranaDate, and must be broken before " +
-                    "${describe(endReason)}, which comes first. This needs a pandit's ruling " +
+                    "${describe(boundReason)}, which comes first. This needs a pandit's ruling " +
                     "rather than a computed answer.",
                 confidence = RuleConfidence.INFERRED,
             )
@@ -477,7 +493,7 @@ class IskconRules : SampradayaRules {
                 startJdUt = start,
                 endJdUt = end,
                 startReason = startReason,
-                endReason = endReason,
+                endReason = boundReason,
             ),
             note = null,
             confidence = RuleConfidence.CONFIRMED,

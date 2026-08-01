@@ -63,6 +63,18 @@ class VaisnavaCalendarTxtHarvester : Harvester<VaisnavaCalendarQuery, VaisnavaDa
     override fun parse(bytes: ByteArray, provenance: Provenance): ParsedArtifact<VaisnavaDay> =
         VaisnavaCalendarTxtParser.parse(bytes.toString(Charsets.ISO_8859_1))
 
+    /**
+     * The header block of a harvested artifact: city, coordinates, offset, generator.
+     *
+     * Re-parses the raw bytes rather than caching a header on this object during [parse].
+     * A harvester that remembers something about the last thing it parsed is a harvester
+     * that can hand a caller the previous city's coordinates, and the whole point of the
+     * site block is that it belongs to the file it is written into. Re-parsing 40 KB is
+     * free next to that risk.
+     */
+    fun headerOf(bytes: ByteArray): VaisnavaCalendarHeader =
+        VaisnavaCalendarTxtParser.parseCalendar(bytes.toString(Charsets.ISO_8859_1)).first.header
+
     companion object {
         const val BASE = "https://www.vaisnavacalendar.info/calendars"
 

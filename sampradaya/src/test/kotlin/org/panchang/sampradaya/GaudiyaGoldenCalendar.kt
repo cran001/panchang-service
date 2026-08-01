@@ -49,20 +49,67 @@ object GaudiyaGoldenCalendar {
         return dir
     }
 
-    fun mayapur2026(): List<GoldenDay> = load("vaisnavacalendar-mayapur-2026.json")
+    /** Delegates to [load] so the Mayapur suites keep working unchanged. */
+    fun mayapur2026(): List<GoldenDay> = load("mayapur", 2026)
 
-    fun load(fileName: String): List<GoldenDay> {
+    /**
+     * One city's harvested calendar, e.g. `load("delhi", 2026)`.
+     *
+     * The city id is our reference-grid id, not the publisher's file stem: the source
+     * files Mumbai as "Bombay [India]" and Moscow as "Moskva [Russia]", and the printed
+     * name it used is preserved in the file's own site block rather than in its name.
+     */
+    fun load(cityId: String, year: Int): List<GoldenDay> =
+        load("vaisnavacalendar-$cityId-$year.json")
+
+    fun load(fileName: String): List<GoldenDay> = document(fileName).records
+
+    /**
+     * The site the golden file describes, or null if it does not say.
+     *
+     * Nullable rather than defaulted. A location-general test needs the coordinates the
+     * reference was actually computed at, and quietly substituting the grid's own
+     * coordinates for a file that declines to state them would reintroduce exactly the
+     * datum-versus-rule ambiguity the site block exists to remove. The Mayapur file
+     * predates the block and has none; [MAYAPUR_LATITUDE] and friends cover that case.
+     */
+    fun site(cityId: String, year: Int): GoldenSite? =
+        document("vaisnavacalendar-$cityId-$year.json").site
+
+    private fun document(fileName: String): GoldenDocument {
         val file = File(goldenDir(), fileName)
         check(file.isFile) { "golden calendar file missing: $file" }
         val doc = json.decodeFromString<GoldenDocument>(file.readText())
         check(doc.records.isNotEmpty()) { "golden calendar $fileName has no records" }
-        return doc.records
+        return doc
     }
 
     @Serializable
     private data class GoldenDocument(
         val writtenAtUtc: String? = null,
+        val site: GoldenSite? = null,
         val records: List<GoldenDay> = emptyList(),
+    )
+
+    /**
+     * Where the golden file's times were computed, as the source itself printed it.
+     *
+     * [latitudeDeg]/[longitudeDeg] come from the calendar's own header (Delhi is printed
+     * as `28N40 77E13`, i.e. 28.667/77.217, while our grid carries 28.6139/77.2090).
+     * Evaluating a reference at coordinates it was not computed for makes a datum
+     * disagreement indistinguishable from a rule disagreement once the time has been
+     * rounded to the printed minute.
+     */
+    @Serializable
+    data class GoldenSite(
+        val city: String,
+        val coordinates: String,
+        val utcOffset: String,
+        val generator: String? = null,
+        val cityId: String = "",
+        val latitudeDeg: Double,
+        val longitudeDeg: Double,
+        val ianaZone: String,
     )
 
     @Serializable

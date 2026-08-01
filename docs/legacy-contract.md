@@ -264,22 +264,47 @@ Stated rather than guessed:
 - **Whether the feed is a calendar year, a rolling window, or open-ended.** The app requests one
   file and caches whatever it gets; nothing in the app constrains the range.
 
-## 7. Needs a decision — project owner, not a pandit
+## 7. Decided by the project owner — 2026-08-02
 
-None of this is a question about tradition; no pandit review is implied by this document.
+Neither of these was a question about tradition; no pandit review is implied by this document.
+Both were put to the project owner and both are now settled.
 
-**DST locations get no legacy file under the design above.** The alternatives, both of which
-ship a knowingly-wrong number to somebody, are laid out in the table in section 5. If the product
-decision is that a calendar screen matching the phone's clock matters more than a correct parana
-alarm — or the reverse — that is a call for the project owner, and it changes one predicate in
-`FeedPublisher` (`fixedOffsetOver`). Until then the publisher declines and says so in `manifest.json`, because a
-silently-wrong fasting time is exactly the failure this project exists to stop.
+### DST locations get no legacy file — **confirmed, unchanged**
 
-**Second, smaller:** the app falls back to the `P0000` (UTC) zone directory when the user's
-offset matches no `dir`, and returns failure if that directory does not exist either
-(`CalendarSyncRepository.kt:212-217`). A published set with no `P0000` zone therefore leaves every
-unmatched user with a stale cache and no error visible to them. The publisher emits a warning in
-`manifest.json` when that is the case; whether to always publish a UTC site is a product decision.
+The alternatives, both of which ship a knowingly-wrong number to somebody, are laid out in the
+table in section 5. The ruling is that **no legacy file is published for a zone that changes
+offset during the year**. Those sites get complete v1 output — IANA zone id, every instant as
+both a correctly-offset local string and a `jdUt` — and appear under `legacyWithheld` /
+`ZONE_NOT_FIXED_OFFSET` in `manifest.json`.
+
+The accepted cost is stated plainly: **London, New York, Auckland, Sydney and São Paulo see no
+data at all in the currently-shipped app** until it is updated to read v1. That is preferred to a
+parana alarm firing an hour out, or a displayed window an hour off the user's own clock, with
+nothing on screen to say which. The alternative was rejected because its error is *seasonal and
+silent* — correct for roughly seven months a year, wrong for five — which is the hardest kind for
+a user to notice or report.
+
+This remains one predicate, `FeedPublisher.fixedOffsetOver`, if the call is ever revisited.
+
+### A UTC site is now always published — **changed**
+
+The app falls back to the `P0000` (UTC) zone directory when the user's offset matches no `dir`,
+and returns failure if that directory does not exist either (`CalendarSyncRepository.kt:212-217`),
+which reaches the user as a stale cache with no visible error.
+
+The publisher therefore **synthesises one site into `legacy/P0000/` whenever no requested site
+landed there**. It is computed on the prime meridian at `Etc/UTC`, and it is honest about what it
+is in the one place a user can see it — `locations.json` titles it
+`UTC — generic fallback, not your location`, because a row reading plain "UTC" invites someone to
+select it and believe the result. It is recorded in full under `manifest.utcFallback`, announced
+in `manifest.warnings`, and **counted in nothing**: it was not requested, so counting it would
+break `published + skipped == requested`, the invariant that makes a silently short run
+detectable. When a real requested site already holds `P0000` (Accra, Reykjavík), no fallback is
+synthesised.
+
+The reasoning is that a present-but-generic calendar is a lesser harm than a stale cache showing
+last year's dates with no error — the user can at least see that the times do not match their
+sunrise. It does not make an unmatched offset *correct*; it makes it *visible*.
 
 ## 8. What this session actually measured
 

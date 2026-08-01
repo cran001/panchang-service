@@ -141,7 +141,10 @@ class FeedPublisherTest {
             ListSerializer(LegacyZone.serializer()),
             result.files.getValue("legacy/zones.json"),
         )
-        assertEquals(listOf("P0530"), zones.map { it.dir })
+        // P0000 is present although no requested site is in it: the app falls back to that
+        // directory for any unmatched offset and fails outright when it is missing, so one
+        // synthetic UTC site is always published. See PublishManifest.utcFallback.
+        assertEquals(listOf("P0000", "P0530"), zones.map { it.dir })
 
         val locations = WireJson.pretty.decodeFromString(
             ListSerializer(LegacyLocation.serializer()),
@@ -153,6 +156,61 @@ class FeedPublisherTest {
         assertTrue(LegacyFeed.COORDINATES.matches(mayapur.coordinates), mayapur.coordinates)
         // The path the app builds: /{dir}/{file}.json
         assertTrue(result.files.containsKey("legacy/P0530/${mayapur.file}.json"))
+    }
+
+    // ── the synthesised UTC fallback ────────────────────────────────────────────────────────
+
+    @Test
+    fun `a UTC site is published so an unmatched offset is not a silent stale cache`() {
+        val fallback = result.manifest.utcFallback
+        assertNotNull(fallback, "no requested site is at UTC, so one must have been synthesised")
+        checkNotNull(fallback)
+        // Everything the app needs to navigate to it, or it is no fallback at all.
+        val locations = WireJson.pretty.decodeFromString(
+            ListSerializer(LegacyLocation.serializer()),
+            result.files.getValue("legacy/P0000/locations.json"),
+        )
+        val row = locations.single()
+        assertEquals(fallback.key, row.file)
+        assertEquals("+00:00", row.timezone)
+        assertTrue(result.files.containsKey("legacy/P0000/${row.file}.json"))
+
+        // A user can only see this row's title, so the title has to carry the warning.
+        assertTrue(row.title.contains("not your location"), row.title)
+
+        // It is announced, not silent.
+        assertTrue(
+            result.manifest.warnings.any { "P0000" in it },
+            "a synthetic site must be reported: ${result.manifest.warnings}",
+        )
+    }
+
+    @Test
+    fun `the UTC fallback is counted in nothing`() {
+        val m = result.manifest
+        // The invariant that makes a silently short run detectable must survive the extra site:
+        // it was not requested, so it cannot be published.
+        assertEquals(m.requested, m.published + m.skipped)
+        assertEquals(m.published, m.legacyPublished + m.legacyWithheld)
+        assertFalse(
+            result.skipped.sites.any { it.key == m.utcFallback?.key },
+            "the fallback is neither published nor skipped; it is outside the ledger",
+        )
+    }
+
+    @Test
+    fun `no fallback is synthesised when a requested site already holds P0000`() {
+        // Accra is UTC+0 all year, so it occupies P0000 on its own merit.
+        val withUtc = FeedPublisher().run(
+            SiteList.parse("coords accra 5.6037 -0.1870 Africa/Accra Accra"),
+            YEAR,
+        )
+        assertEquals(null, withUtc.manifest.utcFallback)
+        val locations = WireJson.pretty.decodeFromString(
+            ListSerializer(LegacyLocation.serializer()),
+            withUtc.files.getValue("legacy/P0000/locations.json"),
+        )
+        assertEquals(listOf("accra"), locations.map { it.file })
     }
 
     @Test

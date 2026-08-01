@@ -124,6 +124,52 @@ class FeedPublisher(
             )
         }
 
+        // The app falls back to P0000 for any offset it cannot match and fails outright when that
+        // directory is absent, which reaches the user as a stale cache with no visible error. If no
+        // requested site landed there, synthesise one. Guarded on a non-empty feed so that a run
+        // where everything was skipped still produces an empty feed rather than one fake site.
+        var utcFallback: UtcFallback? = null
+        if (legacyByZoneDir.isNotEmpty() && "P0000" !in legacyByZoneDir) {
+            val site = Accepted(
+                key = UTC_FALLBACK_KEY,
+                title = UTC_FALLBACK_TITLE,
+                site = resolver.byCoordinates(
+                    GeoLocation(UTC_FALLBACK_LATITUDE, UTC_FALLBACK_LONGITUDE, ZoneId.of("Etc/UTC")),
+                    UTC_FALLBACK_KEY,
+                ),
+            )
+            val result = engine.compute(site.site, rules, Scope.Year(year))
+            val day = legacyDays(
+                site, result.yearResolution, result.ekadashiYear, year, ZoneOffset.UTC,
+                omissions, warnings,
+            )
+            files["legacy/P0000/${site.key}.json"] = WireJson.pretty.encodeToString(
+                kotlinx.serialization.builtins.ListSerializer(LegacyDay.serializer()), day,
+            )
+            legacyByZoneDir.getOrPut("P0000") { ArrayList() } += LegacyLocation(
+                title = site.title,
+                coordinates = LegacyFeed.coordinates(UTC_FALLBACK_LATITUDE, UTC_FALLBACK_LONGITUDE),
+                timezone = LegacyFeed.timezoneField(ZoneOffset.UTC),
+                option = site.key,
+                file = site.key,
+            )
+            utcFallback = UtcFallback(
+                key = site.key,
+                title = site.title,
+                latitude = UTC_FALLBACK_LATITUDE,
+                longitude = UTC_FALLBACK_LONGITUDE,
+                timeZone = "Etc/UTC",
+                reason = "No requested site published into the P0000 zone directory. " +
+                    "CalendarSyncRepository falls back to P0000 whenever the device's offset " +
+                    "matches no published zone, and returns failure when that directory is " +
+                    "missing — the user then keeps a stale cache with nothing on screen to say " +
+                    "so. This site exists only so that case degrades to a visibly-generic " +
+                    "calendar instead. Its times are computed on the prime meridian at a fixed " +
+                    "UTC offset and are correct for no district. See docs/legacy-contract.md " +
+                    "section 7.",
+            )
+        }
+
         val zoneDirs = legacyByZoneDir.keys.sorted()
         files["legacy/zones.json"] = WireJson.pretty.encodeToString(
             kotlinx.serialization.builtins.ListSerializer(LegacyZone.serializer()),
@@ -139,12 +185,12 @@ class FeedPublisher(
             )
         }
 
-        if (zoneDirs.isNotEmpty() && "P0000" !in zoneDirs) {
-            warnings += "No P0000 (UTC) zone directory was published. CalendarSyncRepository " +
-                "falls back to P0000 when the user's offset matches no zone dir, and returns " +
-                "failure when that directory is missing too — such a user keeps a stale cache " +
-                "with nothing on screen to say so. Whether to always publish a UTC site is a " +
-                "product decision; see docs/legacy-contract.md section 7."
+        if (utcFallback != null) {
+            warnings += "A synthetic UTC site was published into legacy/P0000/ because no " +
+                "requested site landed there. It is correct for no district and exists only so " +
+                "that an unmatched device offset degrades to a visibly-generic calendar rather " +
+                "than a silent stale cache. See manifest.utcFallback and " +
+                "docs/legacy-contract.md section 7."
         }
 
         val skippedReport = SkippedReport(
@@ -163,6 +209,7 @@ class FeedPublisher(
             legacyWithheld = withheld.size,
             legacyWithheldSites = withheld.sortedBy { it.key },
             legacyParanaOmissions = omissions,
+            utcFallback = utcFallback,
             warnings = warnings,
             attribution = Gazetteer.ATTRIBUTION,
         )
@@ -435,6 +482,20 @@ class FeedPublisher(
     // ── Zones ───────────────────────────────────────────────────────────────────────────────
 
     private companion object {
+
+        /**
+         * The synthesised `P0000` site. The prime meridian at the Royal Observatory's latitude,
+         * pinned to `Etc/UTC` rather than `Europe/London` so it holds one offset all year — which
+         * is the entire meaning of the `P0000` directory.
+         *
+         * The title says what it is in the one place a user can actually see it: `locations.json`,
+         * which the app renders as a pick list. A row reading "UTC" invites someone to select it
+         * and believe the result.
+         */
+        const val UTC_FALLBACK_KEY = "utc-fallback"
+        const val UTC_FALLBACK_TITLE = "UTC — generic fallback, not your location"
+        const val UTC_FALLBACK_LATITUDE = 51.4779
+        const val UTC_FALLBACK_LONGITUDE = 0.0
 
         /**
          * The zone's single UTC offset across [year], or null if it has more than one.

@@ -97,6 +97,33 @@ data class LegacyParanaOmission(
 )
 
 /**
+ * The synthesised UTC site published into `legacy/P0000/` when no requested site landed there.
+ *
+ * `CalendarSyncRepository` falls back to the `P0000` zone directory whenever the user's offset
+ * matches no published zone, and returns failure when that directory is missing too — which reaches
+ * the user as a stale cache with nothing on screen to say so. A present-but-wrong calendar is the
+ * lesser harm, so one is always published.
+ *
+ * **This site is not a place anyone lives and its times are wrong for anyone who reads them.** It
+ * is computed on the prime meridian at a fixed UTC offset, which is what `P0000` means and nothing
+ * more. It is recorded here, and titled in `locations.json`, so that neither an operator reading
+ * the manifest nor a user reading the app can mistake it for their own district.
+ *
+ * It is deliberately excluded from every count in [PublishManifest]: it was not requested, so
+ * counting it would break `published + skipped == requested`, which is the invariant that makes a
+ * silently short run detectable.
+ */
+@Serializable
+data class UtcFallback(
+    val key: String,
+    val title: String,
+    val latitude: Double,
+    val longitude: Double,
+    val timeZone: String,
+    val reason: String,
+)
+
+/**
  * `manifest.json`: what this run produced, and every gap in it, in one place.
  *
  * No timestamp and no host name: two runs of the same arguments must produce the same bytes, for
@@ -116,6 +143,11 @@ data class PublishManifest(
     val legacyWithheldSites: List<LegacyWithheld>,
     /** Parana windows dropped from the legacy feed. Empty is the expected state. */
     val legacyParanaOmissions: List<LegacyParanaOmission>,
+    /**
+     * The synthesised `P0000` site, or null when a requested site already occupied that zone
+     * directory. Counted in none of the fields above — see [UtcFallback].
+     */
+    val utcFallback: UtcFallback? = null,
     /** Things an operator must read before treating this run as complete. */
     val warnings: List<String>,
     val attribution: String,

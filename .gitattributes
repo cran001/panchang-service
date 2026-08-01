@@ -1,0 +1,17 @@
+# Normalise line endings in source, so the repo is identical on Windows and CI.
+* text=auto eol=lf
+
+# Vendored coefficient tables are hash-pinned in vendor/MANIFEST.sha256. If git
+# rewrote their line endings on checkout the bytes would change and every hash
+# would fail on Windows but pass on Linux - the worst kind of "works on my
+# machine". Freeze them exactly as retrieved.
+vendor/** -text
+vendor/MANIFEST.sha256 -text
+
+# Golden/reference data is compared byte-for-byte; same reasoning.
+verify/golden/** -text
+
+# Gradle wrapper.
+*.jar binary
+gradlew text eol=lf
+gradlew.bat text eol=crlf

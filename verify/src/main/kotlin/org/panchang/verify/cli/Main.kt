@@ -13,6 +13,7 @@ import com.github.ajalt.clikt.parameters.options.required
 import com.github.ajalt.clikt.parameters.types.int
 import kotlinx.coroutines.runBlocking
 import kotlinx.serialization.json.Json
+import kotlinx.serialization.json.JsonElement
 import kotlinx.serialization.json.JsonObject
 import kotlinx.serialization.json.JsonPrimitive
 import kotlinx.serialization.json.buildJsonObject
@@ -43,6 +44,8 @@ import org.panchang.verify.vaisnava.PureBhaktiHarvester
 import org.panchang.verify.vaisnava.PureBhaktiQuery
 import org.panchang.verify.vaisnava.VaisnavaCalendarQuery
 import org.panchang.verify.vaisnava.VaisnavaCalendarTxtHarvester
+import org.panchang.verify.vaisnava.VaisnavaSite
+import org.panchang.verify.vaisnava.VaisnavaSiteZones
 import java.nio.file.Path
 import java.time.LocalDate
 import kotlin.io.path.createDirectories
@@ -158,10 +161,19 @@ abstract class HarvestSubcommand(name: String) : CliktCommand(name = name) {
         }
     }
 
+    /**
+     * Extra top-level envelope members contributed by a subcommand, in order.
+     *
+     * Called after [execute], so a subcommand can describe what it actually read rather
+     * than what it intended to read.
+     */
+    protected open fun envelopeExtras(): List<Pair<String, JsonElement>> = emptyList()
+
     /** Wraps a records array in an envelope carrying the provenance of every artifact read. */
     private fun withProvenance(recordsJson: String): String {
         val envelope = buildJsonObject {
             put("writtenAtUtc", JsonPrimitive(HarvestContext.ISO_UTC.format(java.time.Instant.now())))
+            envelopeExtras().forEach { (key, value) -> put(key, value) }
             put("provenance", prettyJson.encodeToJsonElement(serializer(), collectedProvenance.toList()))
             put("records", Json.parseToJsonElement(recordsJson))
         }
@@ -194,8 +206,21 @@ abstract class HarvestSubcommand(name: String) : CliktCommand(name = name) {
         query: Q,
         label: String,
         ctx: HarvestContext,
-    ): List<R> = try {
-        runBlocking { report(label, harvester.harvest(query, ctx)) }
+    ): List<R> = runOneFull(harvester, query, label, ctx).parsed.records
+
+    /**
+     * As [runOne], but hands back the whole result including the raw bytes.
+     *
+     * Needed where a subcommand has to describe the artifact itself — the vaisnavacalendar
+     * site block is read back out of the raw header — and not merely list its records.
+     */
+    protected fun <Q, R> runOneFull(
+        harvester: Harvester<Q, R>,
+        query: Q,
+        label: String,
+        ctx: HarvestContext,
+    ): HarvestResult<R> = try {
+        runBlocking { harvester.harvest(query, ctx).also { report(label, it) } }
     } catch (e: HarvestException) {
         echo("[$label] FAILED: ${e.message}", err = true)
         throw PrintMessage("Harvest failed for $label. No data was written.", statusCode = 1, printError = true)
@@ -291,7 +316,41 @@ class IskconCommand : HarvestSubcommand("iskcon") {
     private val mumbai = IskconMumbaiHarvester()
     private val pureBhakti = PureBhaktiHarvester()
 
-    private fun txtQueries(): List<Pair<String, VaisnavaCalendarQuery>> {
+    /** Sites described by this invocation, in the order they were read. */
+    private val sites = mutableListOf<VaisnavaSite>()
+
+    /**
+     * A written file describes one place, so refuse to write ten into it.
+     *
+     * `--city all --out` would produce a single envelope holding ten cities' days behind
+     * one site block — a file that states a place it is not about. Every consumer of a
+     * golden calendar reads the days as belonging to the site, so such a file does not
+     * merely lack information, it asserts something false. Ten invocations, ten files.
+     */
+    override fun run() {
+        if (config.outFile != null && city.lowercase() == "all" && source.lowercase() == "vaisnavacalendar") {
+            throw PrintMessage(
+                "--out cannot be combined with --city all. A golden calendar file carries a " +
+                    "single site block (city, coordinates, offset, zone) and its days are read " +
+                    "as belonging to that site; ten cities' days behind one site block would be " +
+                    "a file that lies about where its times were computed. Write one file per " +
+                    "city instead: --city <id> --out golden/vaisnavacalendar-<id>-$year.json.",
+                statusCode = 1,
+                printError = true,
+            )
+        }
+        super.run()
+    }
+
+    override fun envelopeExtras(): List<Pair<String, JsonElement>> = when (sites.size) {
+        1 -> listOf("site" to prettyJson.encodeToJsonElement(serializer<VaisnavaSite>(), sites.single()))
+        else -> emptyList()
+    }
+
+    /** One city's calendar: the label it is reported under, our grid id, and the request. */
+    private data class TxtJob(val label: String, val cityId: String, val query: VaisnavaCalendarQuery)
+
+    private fun txtQueries(): List<TxtJob> {
         val cities = if (city.lowercase() == "all") ReferenceCities.ALL else listOf(ReferenceCities.byId(city))
         return cities.mapNotNull { c ->
             val q = VaisnavaCalendarQuery.forCity(c, year)
@@ -303,13 +362,13 @@ class IskconCommand : HarvestSubcommand("iskcon") {
                 )
                 null
             } else {
-                "vaisnavacalendar/${c.id}/$year" to q
+                TxtJob("vaisnavacalendar/${c.id}/$year", c.id, q)
             }
         }
     }
 
     override fun plan(): List<Pair<String, RequestSpec>> = when (source.lowercase()) {
-        "vaisnavacalendar" -> txtQueries().map { (l, q) -> l to txt.requestSpec(q) }
+        "vaisnavacalendar" -> txtQueries().map { it.label to txt.requestSpec(it.query) }
         "iskconmumbai" -> listOf(
             "iskconmumbai/ekadasi" to mumbai.requestSpec(IskconMumbaiQuery(IskconMumbaiPage.EKADASI)),
         )
@@ -319,7 +378,20 @@ class IskconCommand : HarvestSubcommand("iskcon") {
 
     override fun execute(ctx: HarvestContext): String = when (source.lowercase()) {
         "vaisnavacalendar" -> {
-            val all = txtQueries().flatMap { (label, q) -> runOne(txt, q, label, ctx) }
+            val all = txtQueries().flatMap { job ->
+                val result = runOneFull(txt, job.query, job.label, ctx)
+                // The site is read back out of the artifact's own header, so what the file
+                // claims about its location is what the source printed, not what our grid
+                // believes about that city.
+                val site = VaisnavaSiteZones.siteFor(job.cityId, txt.headerOf(result.raw), year)
+                sites += site
+                echo(
+                    "[${job.label}] site: ${site.city} ${site.coordinates} ${site.utcOffset} " +
+                        "-> ${site.ianaZone}",
+                    err = true,
+                )
+                result.parsed.records
+            }
             prettyJson.encodeToString(serializer(), all)
         }
         "iskconmumbai" -> {

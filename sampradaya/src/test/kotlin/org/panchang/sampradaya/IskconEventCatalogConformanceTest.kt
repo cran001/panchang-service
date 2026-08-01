@@ -31,6 +31,19 @@ import org.panchang.ephemeris.Vsop87Ephemeris
  * `hera_pancami` is in the catalog precisely because a rule that looked right in most years is
  * two days wrong in this one. Multi-year confirmation needs more harvested calendars and is
  * Phase 4's work.
+ *
+ * ## One place, deliberately
+ *
+ * Nor does it prove anything about location, and it is not meant to. This suite asserts **catalog
+ * semantics**: that every definition is either checkable or explicitly named as not, that each
+ * golden marker identifies exactly one day, that the catalog's rule for an event reproduces the
+ * day the source prints for it. Those are claims about the catalog's contents. Whether a location
+ * reaches the computation is asserted by the ten-site parameterisation of
+ * `GaudiyaEkadashiConformanceTest` and by [MultiSiteParanaConformanceTest], which compares two
+ * sites to each other rather than each to its own oracle. Widening this suite to ten sites would
+ * require ten marker maps and would still test the same catalog; the honest per-site question —
+ * "do festival *dates* move correctly with longitude?" — needs harvested event markers per city,
+ * which the current artifacts carry but no rule here consumes.
  */
 class IskconEventCatalogConformanceTest {
 

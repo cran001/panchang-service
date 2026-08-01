@@ -24,6 +24,20 @@ import org.panchang.core.PanchangCalculator
  * `verify/golden`, not from this resolver's own output.
  *
  * Conformance of the *catalog* is a separate suite; this one is about the machinery.
+ *
+ * ## Mayapur-only, deliberately
+ *
+ * `GaudiyaEkadashiConformanceTest` went multi-site in Wave 1 and this suite did not. That is a
+ * decision, not an oversight. What is asserted here is **resolver semantics** — that a krishna
+ * rule reads its month under the reckoning it names, that a skipped tithi resolves to the stated
+ * fallback, that a repeated tithi picks one day rather than two. Those are claims about the
+ * mapping from a rule to a day, and every one of them takes the day-boundary structure it is
+ * given; none of them is a claim about where on Earth that structure came from. Location handling
+ * is exercised where it can actually fail — in the sunrise, daylight-third and civil-day
+ * arithmetic — and that is [MultiSiteParanaConformanceTest] and the ten-site parameterisation of
+ * `GaudiyaEkadashiConformanceTest`. Running this suite at ten sites would cost twenty index builds
+ * for no evidence those two do not already carry, and it would need ten oracles for expectations
+ * that are currently written as literal dates from one.
  */
 class EventResolverTest {
 

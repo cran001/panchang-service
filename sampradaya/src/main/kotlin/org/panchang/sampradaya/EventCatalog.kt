@@ -88,6 +88,40 @@ sealed interface EventRule {
 }
 
 /**
+ * The instant of the day an observance is anchored to.
+ *
+ * ## Why this exists
+ *
+ * The catalog carried its time-of-day semantics only as English prose inside `fastingNote` —
+ * "Fast till noon", "Fast till moonrise", "Fast till midnight". A client could render the
+ * sentence but could not compute the time, so the one piece of information the fasting devotee
+ * actually needs at 11:40 in the morning was the one piece the payload did not contain.
+ *
+ * ## Why the confidence is on the anchor and not on the arithmetic
+ *
+ * The published Gaudiya calendars name these anchors in words and print **no clock time** for
+ * any of them — that holds across all 365 days of the reference data. So there is no oracle
+ * against which an anchor's *time* can be checked. What can be checked is the astronomy: our
+ * solar noon is a meridian transit and either is or is not the right transit. What cannot be
+ * checked is whether the tradition means solar noon by "noon", the *reading* of the prose.
+ *
+ * [mappingConfidence] grades that reading and nothing else. [SUNRISE], [SOLAR_NOON], [SUNSET]
+ * and [MOONRISE] are [RuleConfidence.CONFIRMED] because the words have one astronomical meaning
+ * each and the tradition uses them in it. [DUSK] and [NISITA_KALA] are [RuleConfidence.INFERRED]
+ * because "dusk" and "midnight" each have several defensible readings and this project picked
+ * one; both are flagged for pandit review, and each carries the definition it picked in
+ * [EventTime.basis] so a reviewer can see the choice rather than having to guess it.
+ */
+enum class ObservanceAnchor(val displayName: String, val mappingConfidence: RuleConfidence) {
+    SUNRISE("sunrise", RuleConfidence.CONFIRMED),
+    SOLAR_NOON("noon", RuleConfidence.CONFIRMED),
+    SUNSET("sunset", RuleConfidence.CONFIRMED),
+    MOONRISE("moonrise", RuleConfidence.CONFIRMED),
+    DUSK("dusk", RuleConfidence.INFERRED),
+    NISITA_KALA("midnight (Nisita-kala)", RuleConfidence.INFERRED),
+}
+
+/**
  * One entry in a tradition's event catalog.
  *
  * @param sourceNote where this entry's rule came from — a published calendar, a scripture
@@ -104,10 +138,26 @@ data class EventDefinition(
     val confidence: RuleConfidence,
     /** Described if the day carries a fast; null if it does not. */
     val fastingNote: String? = null,
+    /**
+     * The instant [fastingNote] says the fast runs until, when it names one.
+     *
+     * Null for the majority of entries, which either carry no fast at all or carry one with no
+     * time of day in it — "Yogurt is given up for one month" has no anchor and inventing one
+     * would be worse than having none. Defaulted so that the many entries without a fast are
+     * untouched by this field's existence.
+     */
+    val fastUntil: ObservanceAnchor? = null,
 ) {
     init {
         require(id.isNotBlank() && id == id.lowercase()) { "event id must be lowercase: '$id'" }
         require(sourceNote.isNotBlank()) { "event '$id' must record where its rule came from" }
+        // An anchor with no fast behind it is a time-of-day for an observance that has no
+        // time-of-day semantics — the resolver would compute an instant and the payload would
+        // show a deadline for a fast the entry never said existed.
+        require(fastUntil == null || fastingNote != null) {
+            "event '$id' anchors a fast to ${fastUntil?.displayName} but records no fastingNote; " +
+                "an anchor with nothing to anchor is a time nobody asked for"
+        }
         if (rule is EventRule.FixedGregorian) {
             require(confidence == RuleConfidence.TABULATED) {
                 "event '$id' is a bare list of dates but claims confidence $confidence; a date " +

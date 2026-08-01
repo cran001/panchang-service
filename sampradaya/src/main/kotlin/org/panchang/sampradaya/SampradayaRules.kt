@@ -153,4 +153,28 @@ data class ResolvedEvent(
     val fastingNote: String?,
     val reason: String,
     val confidence: RuleConfidence,
+    /**
+     * When the fast ends, computed at this location, or null when [fastingNote] names no time.
+     *
+     * Carries its **own** [EventTime.confidence] rather than folding into [confidence], and that
+     * separation is the point of the field. Janmastami's *date* is CONFIRMED — the tithi and
+     * nakshatra are stated in the tradition's own literature — while reading "fast till
+     * midnight" as Nisita-kala is INFERRED. One shared confidence would have to either hide the
+     * assumption behind a CONFIRMED date or drag a date that nobody doubts down to INFERRED, and
+     * both of those are lies about a different thing than the one in question.
+     */
+    val fastUntil: EventTime? = null,
+    /**
+     * The tithi occurrence that qualified this date, or null when nothing qualified it.
+     *
+     * Present so a client can show the festival's tithi start and end *at the user's own
+     * location*, which is a thing devotees ask for constantly and which the bare date cannot
+     * answer. It is retained from the occurrence the resolver already matched, not recomputed.
+     *
+     * Nullable because [EventRule.OnNakshatraInMonth] and [EventRule.FixedGregorian] entries have
+     * no qualifying tithi at all. A non-null field would force one to be invented for them, and
+     * an invented tithi on a festival day is precisely the sort of authoritative-looking wrong
+     * answer this codebase exists to avoid.
+     */
+    val tithi: TithiOccurrence? = null,
 )

@@ -6,6 +6,8 @@ import org.panchang.core.LunarMonth
 import org.panchang.core.MonthReckoning
 import org.panchang.core.Paksha
 import org.panchang.core.RiseSet
+import org.panchang.core.SunTimes
+import org.panchang.core.Tithi
 
 /**
  * One tithi occurrence in a [LunarDayIndex]'s window, tagged with the month that contains it.
@@ -97,7 +99,7 @@ class LunarDayIndex private constructor(
     private val spans: List<TithiSpan>,
     /** Dates, in order, whose sunrise fell inside the span at the same list position. */
     private val sunriseDatesBySpan: List<List<LocalDate>>,
-    private val sunriseByDate: Map<LocalDate, Double>,
+    private val sunTimesByDate: Map<LocalDate, SunTimes>,
     private val spanIndexBySunriseDate: Map<LocalDate, Int>,
     /** Dates in the window on which the Sun never rose. Empty outside the polar regions. */
     val datesWithoutSunrise: List<LocalDate>,
@@ -114,8 +116,23 @@ class LunarDayIndex private constructor(
     /** The civil date at this site on which [span] ended. */
     fun endDateOf(span: TithiSpan): LocalDate = location.localDate(span.endJdUt)
 
+    /**
+     * Every solar instant of [date] — sunrise, sunset, solar noon and arunodaya.
+     *
+     * The whole [SunTimes] is retained per date rather than just the sunrise the index is built
+     * on, so an event anchored to noon or to sunset costs nothing beyond the solve the index
+     * already paid for. Only moonrise and dusk still need a fresh solve, and only for the
+     * handful of dated events that name them.
+     *
+     * Dates outside the index window are computed on demand rather than refused: the caller
+     * asking for one is [EventTimes.nisitaKala] wanting the sunrise *after* a date at the very
+     * edge, and a real solve is the only honest answer to that.
+     */
+    fun sunTimesOf(date: LocalDate): SunTimes =
+        sunTimesByDate[date] ?: ctx.calculator.sunTimes(date, location)
+
     /** Sunrise on [date] as Julian Day (UT), or null if the Sun did not rise. */
-    fun sunriseOf(date: LocalDate): Double? = sunriseByDate[date]
+    fun sunriseOf(date: LocalDate): Double? = sunTimesByDate[date]?.sunrise?.jdUtOrNull
 
     /** The tithi running at sunrise on [date], or null if there was no sunrise. */
     fun spanAtSunriseOf(date: LocalDate): TithiSpan? =
@@ -181,11 +198,17 @@ class LunarDayIndex private constructor(
                 jd = tithi.endJdUt + NEXT_TITHI_STEP_DAYS
             }
 
+            // The whole SunTimes is kept, not just the sunrise. Sunset, solar noon and arunodaya
+            // all come out of the same solve, so discarding them here only meant solving again
+            // later for any rule that wanted one.
+            val sunTimesByDate = LinkedHashMap<LocalDate, SunTimes>()
             val sunriseByDate = LinkedHashMap<LocalDate, Double>()
             val datesWithoutSunrise = ArrayList<LocalDate>()
             var date = windowStart
             while (!date.isAfter(windowEnd)) {
-                when (val sunrise = calc.sunTimes(date, location).sunrise) {
+                val sunTimes = calc.sunTimes(date, location)
+                sunTimesByDate[date] = sunTimes
+                when (val sunrise = sunTimes.sunrise) {
                     is RiseSet.At -> sunriseByDate[date] = sunrise.jdUt
                     else -> datesWithoutSunrise += date
                 }
@@ -215,7 +238,7 @@ class LunarDayIndex private constructor(
                 windowEnd = windowEnd,
                 spans = spans,
                 sunriseDatesBySpan = sunriseDatesBySpan,
-                sunriseByDate = sunriseByDate,
+                sunTimesByDate = sunTimesByDate,
                 spanIndexBySunriseDate = spanIndexBySunriseDate,
                 datesWithoutSunrise = datesWithoutSunrise,
             )
@@ -332,26 +355,35 @@ class EventResolver(catalog: List<EventDefinition>) {
 
     fun resolve(definition: EventDefinition, index: LunarDayIndex): EventResolution {
         val outcome = datesOf(definition, index, LinkedHashSet())
-        val inYear = outcome.dates.filter { it.year == index.year }.distinct().sorted()
+        val inYear = outcome.matches
+            .filter { it.date.year == index.year }
+            .distinctBy { it.date }
+            .sortedBy { it.date }
         if (inYear.isEmpty()) return explainNothing(definition, index, outcome)
 
         // Two matches in one Gregorian year is legitimate: a lunar year is ~11 days shorter, so
         // an observance falling in early January can recur in late December. The earlier is
         // returned and the later named, rather than the later being dropped without trace.
         val extra = if (inYear.size > 1) {
-            " Also occurs in ${index.year} on ${inYear.drop(1).joinToString(", ")}."
+            " Also occurs in ${index.year} on " +
+                inYear.drop(1).joinToString(", ") { it.date.toString() } + "."
         } else {
             ""
         }
+        val chosen = inYear.first()
         return EventResolution.Resolved(
             ResolvedEvent(
                 id = definition.id,
                 name = definition.name,
                 group = definition.group,
-                date = inYear.first(),
+                date = chosen.date,
                 fastingNote = definition.fastingNote,
                 reason = describe(definition.rule) + "." + extra,
                 confidence = definition.confidence,
+                fastUntil = definition.fastUntil?.let { anchor ->
+                    eventTimeOf(anchor, chosen.date, index)
+                },
+                tithi = chosen.span?.let { occurrenceOf(it, definition.rule) },
             ),
         )
     }
@@ -375,6 +407,65 @@ class EventResolver(catalog: List<EventDefinition>) {
         resolveYear(LunarDayIndex.build(year, ctx))
 
     // ── Internals ───────────────────────────────────────────────────────────────────────────
+
+    /**
+     * The instant (or muhurta) an anchored fast runs until, at this site on this date.
+     *
+     * Sunrise, solar noon and sunset are read straight off the [SunTimes] the index already
+     * holds. Moonrise and dusk are solved here, which is why anchoring is per event rather than
+     * per day: a year's catalog names moonrise once and dusk once, so two extra solves a year is
+     * the whole cost of the feature.
+     */
+    private fun eventTimeOf(
+        anchor: ObservanceAnchor,
+        date: LocalDate,
+        index: LunarDayIndex,
+    ): EventTime = when (anchor) {
+        ObservanceAnchor.SUNRISE -> EventTimes.sunrise(index.sunTimesOf(date))
+
+        ObservanceAnchor.SOLAR_NOON -> EventTimes.solarNoon(index.sunTimesOf(date))
+
+        ObservanceAnchor.SUNSET -> EventTimes.sunset(index.sunTimesOf(date))
+
+        ObservanceAnchor.MOONRISE ->
+            EventTimes.moonrise(index.ctx.calculator.moonTimes(date, index.location))
+
+        ObservanceAnchor.DUSK ->
+            EventTimes.dusk(index.ctx.calculator.civilTwilightEnd(date, index.location))
+
+        // The night of the observance runs from this evening's sunset to tomorrow's sunrise, so
+        // the muhurta needs both days. Taking the *same* day's sunrise would divide the daylight
+        // and place "midnight" in the early afternoon.
+        ObservanceAnchor.NISITA_KALA -> EventTimes.nisitaKala(
+            sunsetOfDay = index.sunTimesOf(date).sunset,
+            sunriseOfNextDay = index.sunTimesOf(date.plusDays(1)).sunrise,
+        )
+    }
+
+    /**
+     * The matched [TithiSpan] as the [TithiOccurrence] a caller can render.
+     *
+     * The month is named under the *rule's own* reckoning, so a Gaudiya entry stated
+     * purnimanta reports the purnimanta name the tradition prints and not the amanta name the
+     * span is stored under.
+     */
+    private fun occurrenceOf(span: TithiSpan, rule: EventRule): TithiOccurrence {
+        val reckoning = when (rule) {
+            is EventRule.OnTithi -> rule.reckoning
+            is EventRule.OnNakshatraInMonth -> rule.reckoning
+            else -> MonthReckoning.AMANTA
+        }
+        return TithiOccurrence(
+            index = span.tithiIndex,
+            name = Tithi.nameOf(span.tithiIndex),
+            numberInPaksha = span.numberInPaksha,
+            paksha = span.paksha,
+            lunarMonthName = span.monthName(reckoning),
+            isAdhikaMonth = span.isAdhika,
+            startJdUt = span.startJdUt,
+            endJdUt = span.endJdUt,
+        )
+    }
 
     private fun explainNothing(
         definition: EventDefinition,
@@ -411,10 +502,13 @@ class EventResolver(catalog: List<EventDefinition>) {
 
         is EventRule.OnNakshatraInMonth -> onNakshatra(definition, rule, index)
 
+        // A bare date qualified nothing, so it carries no span: there is no tithi that "made"
+        // this date and inventing the one that happens to run on it would be a different claim.
         is EventRule.FixedGregorian -> RuleOutcome(
             rule.datesByYear.values
                 .filter { !it.isBefore(index.windowStart) && !it.isAfter(index.windowEnd) }
-                .sorted(),
+                .sorted()
+                .map { Match(it, span = null) },
         )
 
         is EventRule.RelativeTo -> {
@@ -429,7 +523,13 @@ class EventResolver(catalog: List<EventDefinition>) {
             val inner = datesOf(base, index, visiting)
             visiting.remove(definition.id)
             RuleOutcome(
-                dates = inner.dates.map { it.plusDays(rule.offsetDays.toLong()) },
+                // The base's span is deliberately dropped rather than carried across the offset.
+                // It is the tithi that qualified the *base* event; the offset day's own tithi was
+                // never consulted by this rule, and reporting either one as "the tithi that
+                // qualified this date" would be false.
+                matches = inner.matches.map {
+                    Match(it.date.plusDays(rule.offsetDays.toLong()), span = null)
+                },
                 skipped = inner.skipped.map { "base event '${rule.eventId}': $it" },
                 notes = inner.notes.map { "base event '${rule.eventId}': $it" },
             )
@@ -443,7 +543,7 @@ class EventResolver(catalog: List<EventDefinition>) {
     ): RuleOutcome {
         val monthIndex = monthIndexOf(rule.lunarMonthName, definition.id)
         val wantedTithiIndex = tithiIndexOf(rule.paksha, rule.tithiNumberInPaksha)
-        val dates = ArrayList<LocalDate>()
+        val matches = ArrayList<Match>()
         val skipped = ArrayList<String>()
         val notes = ArrayList<String>()
         index.spans().forEachIndexed { position, span ->
@@ -455,7 +555,7 @@ class EventResolver(catalog: List<EventDefinition>) {
                         "beginning ${index.location.localDate(span.startJdUt)} fell in the adhika " +
                         "month, where the tradition keeps no observances"
 
-                    !rule.atSunrise -> dates += index.endDateOf(span)
+                    !rule.atSunrise -> matches += Match(index.endDateOf(span), span)
 
                     else -> {
                         val days = index.sunriseDatesAt(position)
@@ -465,13 +565,16 @@ class EventResolver(catalog: List<EventDefinition>) {
                                 "${index.location.zonedDateTime(span.endJdUt)} without touching " +
                                 "a sunrise"
                         } else {
-                            dates += days.first()
+                            // The span is retained, not recomputed: it is the very occurrence
+                            // that qualified the date, so the caller can show this festival's
+                            // tithi start and end at this user's location.
+                            matches += Match(days.first(), span)
                         }
                     }
                 }
             }
         }
-        return RuleOutcome(dates.sorted(), skipped, notes)
+        return RuleOutcome(matches.sortedBy { it.date }, skipped, notes)
     }
 
     /**
@@ -506,7 +609,10 @@ class EventResolver(catalog: List<EventDefinition>) {
         if (sawAdhika) {
             notes += "occurrences in the adhika ${LunarMonth.NAMES[monthIndex]} were not counted"
         }
-        return RuleOutcome(dates.sorted(), notes = notes)
+        // No span: a nakshatra qualified these dates, not a tithi. The tithi running at that
+        // sunrise is a fact about the day, not the thing the rule matched on, and reporting it
+        // as the qualifying occurrence would misdescribe the rule.
+        return RuleOutcome(dates.sorted().map { Match(it, span = null) }, notes = notes)
     }
 
     private fun checkReferences(definition: EventDefinition, seen: MutableSet<String>) {
@@ -545,8 +651,18 @@ class EventResolver(catalog: List<EventDefinition>) {
         return "$tithi (${rule.reckoning.name.lowercase()}), $basis"
     }
 
+    /**
+     * A date the rule named, together with the tithi occurrence that qualified it if one did.
+     *
+     * [span] is null wherever nothing tithi-shaped did the qualifying — a tabulated date, a
+     * nakshatra match, or an offset from another event. Carrying it here rather than looking it
+     * up again at construction time is what makes [ResolvedEvent.tithi] retention rather than
+     * recomputation.
+     */
+    private data class Match(val date: LocalDate, val span: TithiSpan?)
+
     private data class RuleOutcome(
-        val dates: List<LocalDate>,
+        val matches: List<Match>,
         /** Occurrences lost to a kshaya tithi, described. */
         val skipped: List<String> = emptyList(),
         /** Anything else worth saying about why a match was or was not made. */

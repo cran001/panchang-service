@@ -109,22 +109,30 @@ object DayDivisions {
     )
 
     /**
-     * The [part]-th of [divisions] equal parts of the daylight period. [part] is 1-based.
+     * The [part]-th of [divisions] equal parts of the interval `[startJdUt, endJdUt]`. [part] is
+     * 1-based.
      *
-     * Works correctly for a "day" of any length, including the 25-hour and 23-hour civil days
+     * **Not daylight-only.** The parameters are named for arbitrary instants because they are
+     * arbitrary instants: the night muhurtas that Nisita-kala is the eighth of come from handing
+     * this function sunset and the *following* sunrise. The earlier `sunriseJdUt`/`sunsetJdUt`
+     * names invited the reader to assume a daylight interval and to add a redundant night
+     * variant next to it.
+     *
+     * Works correctly for an interval of any length, including the 25-hour and 23-hour civil days
      * either side of a DST transition, because it divides the interval between two instants and
-     * never touches a clock.
+     * never touches a clock. It does *not* check that the interval is positive — [JdInterval]
+     * does, and callers dividing a night must establish that both endpoints exist first.
      */
     fun equalPart(
-        sunriseJdUt: Double,
-        sunsetJdUt: Double,
+        startJdUt: Double,
+        endJdUt: Double,
         part: Int,
         divisions: Int,
     ): JdInterval {
         require(divisions > 0) { "divisions must be positive" }
         require(part in 1..divisions) { "part must be in 1..$divisions, was $part" }
-        val length = (sunsetJdUt - sunriseJdUt) / divisions
-        val start = sunriseJdUt + (part - 1) * length
+        val length = (endJdUt - startJdUt) / divisions
+        val start = startJdUt + (part - 1) * length
         return JdInterval(start, start + length)
     }
 

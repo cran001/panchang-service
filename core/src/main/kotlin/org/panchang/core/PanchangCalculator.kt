@@ -289,6 +289,37 @@ class PanchangCalculator(
         )
     }
 
+    /**
+     * End of civil twilight on the civil day [date] at [location]: the Sun's centre descending
+     * through [CIVIL_TWILIGHT_ALTITUDE_DEGREES].
+     *
+     * Deliberately **not** a field of [SunTimes]. Twilight is not one of the five limbs of the
+     * panchanga and nothing in [panchang] needs it, so putting it there would charge every
+     * existing caller an extra rise/set solve for a value they never asked for. It is here
+     * because the observance rules need a defensible "dusk" that is distinct from sunset, and
+     * because [RiseSetSolver] is internal to this module so they cannot solve for it themselves.
+     *
+     * No horizon dip is applied for the site's elevation, unlike [sunTimes]. Twilight is defined
+     * against the geometric horizon rather than the visible one, and the project's inputs are
+     * sea-level by convention anyway.
+     *
+     * The result is a [RiseSet] rather than a `Double` for the usual reason: at high latitude in
+     * summer the Sun never reaches −6° and there is no dusk to report. That returns
+     * [RiseSet.CircumpolarUp] — "stayed above the twilight depression all day" — which callers
+     * must not read as a rise/set circumpolar case.
+     */
+    @JvmOverloads
+    fun civilTwilightEnd(
+        date: LocalDate,
+        location: GeoLocation,
+        refinementPasses: Int = DEFAULT_REFINEMENT_PASSES,
+    ): RiseSet {
+        val windowStart = location.jdUtAtStartOfDay(date)
+        val windowEnd = location.jdUtAtEndOfDay(date)
+        return sunSolver(location, horizonAltitudeDeg = CIVIL_TWILIGHT_ALTITUDE_DEGREES)
+            .solve(windowStart, windowEnd, RiseSetDirection.SET, refinementPasses, toleranceDays)
+    }
+
     /** Geometric altitude of the Sun's centre in degrees at [jdUt], excluding refraction. */
     fun sunAltitudeDeg(jdUt: Double, location: GeoLocation): Double =
         sunSolver(location).altitudeDeg(jdUt)
@@ -352,8 +383,16 @@ class PanchangCalculator(
     /**
      * The Sun's ecliptic latitude is under one arcsecond and is taken as zero, which shifts a
      * computed sunrise by well under a second of time.
+     *
+     * @param horizonAltitudeDeg the altitude the crossing is solved for. Defaults to the site's
+     *   rise/set horizon; [civilTwilightEnd] passes −6° instead. The solver already takes this
+     *   as a lambda, so a twilight is the same solve with one number changed and not a second
+     *   code path.
      */
-    private fun sunSolver(location: GeoLocation) = RiseSetSolver(
+    private fun sunSolver(
+        location: GeoLocation,
+        horizonAltitudeDeg: Double = Horizon.sunAltitudeDegrees(location),
+    ) = RiseSetSolver(
         ephemeris = ephemeris,
         location = location,
         equatorialAt = { jdTt ->
@@ -363,7 +402,7 @@ class PanchangCalculator(
                 ephemeris.nutationAndObliquity(jdTt).trueObliquity,
             )
         },
-        horizonAltitudeAt = { Horizon.sunAltitudeDegrees(location) },
+        horizonAltitudeAt = { horizonAltitudeDeg },
     )
 
     private fun moonSolver(location: GeoLocation) = RiseSetSolver(
@@ -455,6 +494,16 @@ class PanchangCalculator(
          * declination term is far more sensitive.
          */
         const val DEFAULT_REFINEMENT_PASSES: Int = 6
+
+        /**
+         * Depression of the Sun's centre defining civil twilight: −6°.
+         *
+         * The standard figure, and the shallowest of the three twilights — roughly the point at
+         * which the brightest stars appear and artificial light becomes necessary outdoors.
+         * Nautical (−12°) and astronomical (−18°) are not offered because no rule here asks for
+         * them.
+         */
+        const val CIVIL_TWILIGHT_ALTITUDE_DEGREES: Double = -6.0
 
         /**
          * How far to look for an element boundary. The longest possible tithi is 1.12 days and

@@ -124,6 +124,7 @@ object IskconEventCatalog {
                     "2026 (25 January).",
             confidence = RuleConfidence.CONFIRMED,
             fastingNote = "Fast till noon",
+            fastUntil = ObservanceAnchor.SOLAR_NOON,
         ),
         EventDefinition(
             id = "bhismastami",
@@ -156,6 +157,7 @@ object IskconEventCatalog {
                     "Gaudiya sources. Matches Mayapur 2026 (31 January).",
             confidence = RuleConfidence.CONFIRMED,
             fastingNote = "Fast till noon",
+            fastUntil = ObservanceAnchor.SOLAR_NOON,
         ),
         EventDefinition(
             id = "krsna_madhura_utsava",
@@ -188,6 +190,7 @@ object IskconEventCatalog {
                     "of the Gaurabda year. Matches Mayapur 2026 (3 March).",
             confidence = RuleConfidence.CONFIRMED,
             fastingNote = "Fast till moonrise",
+            fastUntil = ObservanceAnchor.MOONRISE,
         ),
         EventDefinition(
             id = "jagannatha_misra_festival",
@@ -227,6 +230,7 @@ object IskconEventCatalog {
                     "traditions. Matches Mayapur 2026 (27 March).",
             confidence = RuleConfidence.CONFIRMED,
             fastingNote = "Fast till sunset",
+            fastUntil = ObservanceAnchor.SUNSET,
         ),
         EventDefinition(
             id = "damanakaropana_dvadasi",
@@ -298,6 +302,7 @@ object IskconEventCatalog {
                     "(30 April).",
             confidence = RuleConfidence.CONFIRMED,
             fastingNote = "Fast till dusk",
+            fastUntil = ObservanceAnchor.DUSK,
         ),
         EventDefinition(
             id = "krsna_phula_dola",
@@ -466,6 +471,7 @@ object IskconEventCatalog {
                     "2026 (28 August).",
             confidence = RuleConfidence.CONFIRMED,
             fastingNote = "Fast till noon",
+            fastUntil = ObservanceAnchor.SOLAR_NOON,
         ),
         EventDefinition(
             id = "jhulana_yatra_ends",
@@ -508,6 +514,7 @@ object IskconEventCatalog {
                     "differ from the Smarta one. Matches Mayapur 2026 (4 September).",
             confidence = RuleConfidence.CONFIRMED,
             fastingNote = "Fast till midnight",
+            fastUntil = ObservanceAnchor.NISITA_KALA,
         ),
         EventDefinition(
             id = "nandotsava",
@@ -519,6 +526,7 @@ object IskconEventCatalog {
                     "is how the tradition states it. Matches Mayapur 2026 (5 September).",
             confidence = RuleConfidence.CONFIRMED,
             fastingNote = "Fast till noon",
+            fastUntil = ObservanceAnchor.SOLAR_NOON,
         ),
         EventDefinition(
             id = "srila_prabhupada_appearance",
@@ -531,6 +539,7 @@ object IskconEventCatalog {
                     "Mayapur 2026 (5 September).",
             confidence = RuleConfidence.CONFIRMED,
             fastingNote = "Fast till noon",
+            fastUntil = ObservanceAnchor.SOLAR_NOON,
         ),
         EventDefinition(
             id = "radhastami",
@@ -542,6 +551,7 @@ object IskconEventCatalog {
                     "Janmastami. Matches Mayapur 2026 (19 September).",
             confidence = RuleConfidence.CONFIRMED,
             fastingNote = "Fast till noon",
+            fastUntil = ObservanceAnchor.SOLAR_NOON,
         ),
         EventDefinition(
             id = "vamana_dvadasi",
@@ -725,6 +735,7 @@ object IskconEventCatalog {
                     "date. Matches Mayapur 2026 (13 November).",
             confidence = RuleConfidence.CONFIRMED,
             fastingNote = "Fast till noon",
+            fastUntil = ObservanceAnchor.SOLAR_NOON,
         ),
         EventDefinition(
             id = "gopastami",

@@ -60,8 +60,15 @@ enum class FastKind {
     EKADASHI,
 
     /**
-     * The fast was deferred to the Dvadashi. In Gaudiya practice this is not "Ekadashi moved" —
-     * the Dvadashi itself becomes the fasting day and takes one of the eight Mahadvadashi names.
+     * The fortnight qualified as one of the eight Mahadvadashis. In Gaudiya practice this is not
+     * "Ekadashi moved" — the observance takes one of the eight Mahadvadashi names, with its own
+     * parana rule.
+     *
+     * Usually, but *not* always, the fasting day is the Dvadashi. Trisprsa and Unmilani both keep
+     * the fast on a day the Ekadashi tithi is running at sunrise: Trisprsa because the Dvadashi is
+     * skipped entirely, Unmilani because the Ekadashi spans two sunrises and the second of them is
+     * taken. Reading this constant as "the fast is on the Dvadashi" is therefore wrong for two of
+     * the eight; read [ObservanceDecision.date] instead.
      */
     MAHADVADASHI,
 }
@@ -105,6 +112,16 @@ enum class ParanaBoundReason {
 
     /** Traditional cap at the first third of the daylight period. */
     ONE_THIRD_DAYLIGHT,
+
+    /**
+     * The nakshatra that qualified a Mahadvadashi ends before the window would otherwise close.
+     *
+     * Added for the four nakshatra-based Mahadvadashis, where the fast must be broken while the
+     * qualifying nakshatra still runs. GCal prints this basis as `end of naksatra`; without a
+     * constant for it a window would have to claim one of the other reasons and be wrong about
+     * itself, which is the exact failure this enum exists to prevent.
+     */
+    NAKSHATRA_END,
 
     /** The Ekadashi or Mahadvadashi tithi had to end before eating could begin. */
     FAST_TITHI_END,

@@ -63,9 +63,33 @@ interface SampradayaRules {
 
     /**
      * The tradition's non-Ekadashi observances — festivals, appearance and disappearance days,
-     * optional fasts — resolved to dates for [year] at this location.
+     * optional fasts — for [year] at this location, **including the ones that failed to
+     * resolve**.
+     *
+     * This is the method implementations provide, and it returns [YearResolution] rather than a
+     * list because `List<ResolvedEvent>` structurally cannot carry a failure: a [ResolvedEvent]
+     * requires a date, and the whole point of an unresolved entry is that it has none.
+     *
+     * The failures are not an edge case to be tidied away. When a catalog entry's tithi is
+     * kshaya in some year the resolver deliberately refuses to move the festival to a
+     * neighbouring day — which way the tradition shifts it is a ruling this project does not
+     * have a source for — so that festival is *absent* from the year. A missing observance is
+     * worse than a visibly wrong one: there is no artifact for anyone to notice or challenge.
+     * `unresolved` is what makes it noticeable.
      */
-    fun events(year: Int, ctx: ObservanceContext): List<ResolvedEvent>
+    fun eventResolution(year: Int, ctx: ObservanceContext): YearResolution
+
+    /**
+     * Just the dates, for callers that genuinely only want to render a year's festivals.
+     *
+     * Deliberately *not* an overridable method. It derives from [eventResolution], so no
+     * implementation can produce events without also producing the record of what it could not
+     * produce — which is the only way to keep the two from drifting apart. Any caller that finds
+     * an expected festival missing from this list should look at
+     * `eventResolution(year, ctx).unresolved` before concluding the catalog lacks it.
+     */
+    fun events(year: Int, ctx: ObservanceContext): List<ResolvedEvent> =
+        eventResolution(year, ctx).events
 }
 
 /**
@@ -114,7 +138,9 @@ class UnimplementedSampradaya(
     override fun ekadashiObservances(year: Int, ctx: ObservanceContext): List<ObservanceDecision> =
         emptyList()
 
-    override fun events(year: Int, ctx: ObservanceContext): List<ResolvedEvent> = emptyList()
+    /** Nothing resolved and nothing failed to resolve: this tradition was never asked anything. */
+    override fun eventResolution(year: Int, ctx: ObservanceContext): YearResolution =
+        YearResolution(emptyList(), emptyMap())
 }
 
 /** An event definition resolved to an actual date at an actual location. */

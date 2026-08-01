@@ -1,6 +1,8 @@
 # We are more accurate than the calendar we validate against
 
-**Status:** open question for the project owner. A default is implemented; it is reversible.
+**Status:** **REOPENED 2026-08-02** — two of the three triggers below have fired. The default is
+unchanged and still implemented; what is now open is a question this repository cannot answer.
+See "Reopened" at the end.
 **Date:** 2026-08-01
 **Arose from:** Phase 3G conformance work against `verify/golden/vaisnavacalendar-mayapur-2026.json`.
 
@@ -89,3 +91,56 @@ code happened to produce.
 - The publisher's ephemeris is identified precisely enough that the ~50″ can be attributed
   rather than inferred. Right now we know the size and sign of the disagreement, and that it
   is not ours; we do not know its source.
+
+## Reopened — 2026-08-02
+
+Two triggers fired together when the ten-site gate ran (`docs/validation-multisite.md`).
+
+### 1. A divergence moved an actual fasting date
+
+**Vrindavan, Pandava Nirjala Ekadashi.** We fast **2026-06-25**; the reference fasts
+**2026-06-26** as `Paksa vardhini Mahadvadasi`.
+
+This was investigated as a rule error first, per the plan. It is not one. The closing Purnima
+ends `2026-06-30 05:26:39.8 IST` — the same instant at all four `Asia/Kolkata` sites, because
+tithi boundaries are global. Only sunrise differs:
+
+| Site | Sunrise relative to the tithi end | Paksavardhini? | Agrees with reference |
+|---|---|---|---|
+| Delhi | 20.9 s **before** | yes | yes |
+| Vrindavan | 13.4 s **after** | **no** | **no** |
+| Mumbai | well after | no | yes |
+| Mayapur | not in range | no | yes |
+
+The margin that decides it is **13.4 seconds**. That is smaller than our own measured
+worst-case inputs — tithi ≤17.3″ against JPL, sunrise 28 s against USNO — and well inside the
+34–112 s one-signed reference lateness documented above, which applied here would produce the
+reference's answer.
+
+So this is **consistent with** the reference's ephemeris being the cause. It is **not
+demonstrated**, and is not claimed. At a margin this thin, "our number is better" does not
+establish "our date is right": the quantity being decided is not the elongation, it is which
+side of a sunrise a boundary fell on, and both our sunrise and theirs carry error comparable
+to the gap. The conformance test is left red rather than excluded or tolerated.
+
+**This is the case the section above anticipated, and its ruling stands unchanged: which date
+a Vrindavan devotee keeps is a matter for a pandit and the GBC, not for this repository.** It
+is surfaced loudly and not resolved by whichever number the code produced.
+
+### 2. The per-city gate showed behaviour away from Mayapur
+
+Nine sites beyond Mayapur now run. The offset does not behave *differently* by location — it
+is global, as it must be — but location controls whether it is *visible*, and this is the
+first evidence of that. Three of four Indian sites agree; the disagreement is created entirely
+by Vrindavan's sunrise, not by anything about Vrindavan's tithi. One site in ten surfaced it,
+which is the practical size of the exposure the original "one day in seven hundred" estimate
+described.
+
+Two further label-only divergences (Moscow 2026-05-27, Sydney 2026-12-05) remain
+**unexplained** after four hypotheses were tested and refuted; they are recorded in
+`docs/validation-multisite.md` for pandit review and move no fasting date.
+
+### Still not reopened
+
+The third trigger — identifying the publisher's ephemeris precisely enough to attribute the
+offset rather than infer it — has **not** fired. We still know only the size and sign.

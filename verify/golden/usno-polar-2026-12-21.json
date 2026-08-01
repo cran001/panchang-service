@@ -1,0 +1,113 @@
+{
+    "writtenAtUtc": "2026-08-01T13:42:42.463639600Z",
+    "provenance": [
+        {
+            "sourceId": "usno-rstt-oneday",
+            "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-12-21&coords=78.2232%2C15.6469&tz=1&label=longyearbyen",
+            "method": "GET",
+            "requestParameters": {
+                "date": "2026-12-21",
+                "coords": "78.2232,15.6469",
+                "tz": "1",
+                "label": "longyearbyen"
+            },
+            "requestHeaders": {
+                "User-Agent": "panchang-service-verify/0.1 (ground-truth harvester; contact via project repository)"
+            },
+            "retrievedAtUtc": "2026-08-01T13:42:40.318796400Z",
+            "httpStatus": 200,
+            "responseContentType": "application/json",
+            "responseBytes": 1120,
+            "responseSha256": "c9bfb6304bcef7ae5816b1948825903572eda85f4fd0dbc6dcd5489575a3ef28",
+            "rawArtifactFile": "longyearbyen-2026-12-21-b611967221e7.raw",
+            "harvesterVersion": 1,
+            "notes": [
+                "Source: US Naval Observatory. US Government work."
+            ]
+        },
+        {
+            "sourceId": "usno-rstt-oneday",
+            "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-12-21&coords=-77.8419%2C166.6863&tz=13&label=mcmurdo",
+            "method": "GET",
+            "requestParameters": {
+                "date": "2026-12-21",
+                "coords": "-77.8419,166.6863",
+                "tz": "13",
+                "label": "mcmurdo"
+            },
+            "requestHeaders": {
+                "User-Agent": "panchang-service-verify/0.1 (ground-truth harvester; contact via project repository)"
+            },
+            "retrievedAtUtc": "2026-08-01T13:42:42.463639600Z",
+            "httpStatus": 200,
+            "responseContentType": "application/json",
+            "responseBytes": 1118,
+            "responseSha256": "53b7f4a1dba2bd045e0ee1dc1456e1ecb38d4be1286de9b241baf366c1bc1a60",
+            "rawArtifactFile": "mcmurdo-2026-12-21-46636e293bb2.raw",
+            "harvesterVersion": 1,
+            "notes": [
+                "Source: US Naval Observatory. US Government work."
+            ]
+        }
+    ],
+    "records": [
+        {
+            "date": "2026-12-21",
+            "latitudeDeg": 78.2232,
+            "longitudeDeg": 15.6469,
+            "utcOffsetHours": 1.0,
+            "isDst": false,
+            "sunRises": [],
+            "sunSets": [],
+            "sunUpperTransits": [],
+            "beginCivilTwilight": null,
+            "endCivilTwilight": null,
+            "moonRises": [],
+            "moonSets": [],
+            "moonUpperTransits": [
+                "21:37"
+            ],
+            "sunCondition": "CONTINUOUSLY_BELOW_HORIZON",
+            "sunTwilightCondition": "CONTINUOUSLY_BELOW_TWILIGHT_LIMIT",
+            "moonCondition": "CONTINUOUSLY_ABOVE_HORIZON",
+            "currentMoonPhase": "Waxing Gibbous",
+            "fractionIlluminated": "90%",
+            "closestPhase": {
+                "phase": "Full Moon",
+                "year": 2026,
+                "month": 12,
+                "day": 24,
+                "time": "02:28"
+            }
+        },
+        {
+            "date": "2026-12-21",
+            "latitudeDeg": -77.8419,
+            "longitudeDeg": 166.6863,
+            "utcOffsetHours": 13.0,
+            "isDst": false,
+            "sunRises": [],
+            "sunSets": [],
+            "sunUpperTransits": [
+                "13:51"
+            ],
+            "beginCivilTwilight": null,
+            "endCivilTwilight": null,
+            "moonRises": [],
+            "moonSets": [],
+            "moonUpperTransits": [],
+            "sunCondition": "CONTINUOUSLY_ABOVE_HORIZON",
+            "sunTwilightCondition": "CONTINUOUSLY_ABOVE_TWILIGHT_LIMIT",
+            "moonCondition": "CONTINUOUSLY_BELOW_HORIZON",
+            "currentMoonPhase": "Waxing Gibbous",
+            "fractionIlluminated": "86%",
+            "closestPhase": {
+                "phase": "Full Moon",
+                "year": 2026,
+                "month": 12,
+                "day": 24,
+                "time": "14:28"
+            }
+        }
+    ]
+}

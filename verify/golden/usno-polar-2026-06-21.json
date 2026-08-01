@@ -1,0 +1,121 @@
+{
+    "writtenAtUtc": "2026-08-01T13:42:27.804240700Z",
+    "provenance": [
+        {
+            "sourceId": "usno-rstt-oneday",
+            "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-06-21&coords=78.2232%2C15.6469&tz=2&label=longyearbyen",
+            "method": "GET",
+            "requestParameters": {
+                "date": "2026-06-21",
+                "coords": "78.2232,15.6469",
+                "tz": "2",
+                "label": "longyearbyen"
+            },
+            "requestHeaders": {
+                "User-Agent": "panchang-service-verify/0.1 (ground-truth harvester; contact via project repository)"
+            },
+            "retrievedAtUtc": "2026-08-01T13:42:25.161547300Z",
+            "httpStatus": 200,
+            "responseContentType": "application/json",
+            "responseBytes": 1251,
+            "responseSha256": "f887082da6be6240297211f290085fdee78034d1f5ed81f331671e48bea3e6fb",
+            "rawArtifactFile": "longyearbyen-2026-06-21-51b3982812ea.raw",
+            "harvesterVersion": 1,
+            "notes": [
+                "Source: US Naval Observatory. US Government work."
+            ]
+        },
+        {
+            "sourceId": "usno-rstt-oneday",
+            "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-06-21&coords=-77.8419%2C166.6863&tz=12&label=mcmurdo",
+            "method": "GET",
+            "requestParameters": {
+                "date": "2026-06-21",
+                "coords": "-77.8419,166.6863",
+                "tz": "12",
+                "label": "mcmurdo"
+            },
+            "requestHeaders": {
+                "User-Agent": "panchang-service-verify/0.1 (ground-truth harvester; contact via project repository)"
+            },
+            "retrievedAtUtc": "2026-08-01T13:42:27.804240700Z",
+            "httpStatus": 200,
+            "responseContentType": "application/json",
+            "responseBytes": 1007,
+            "responseSha256": "a04f4479c90233a483203ca1bafa4a0c42d2ceb7ed19d314a37d00564b9f5a24",
+            "rawArtifactFile": "mcmurdo-2026-06-21-8678dfa1c57e.raw",
+            "harvesterVersion": 1,
+            "notes": [
+                "Source: US Naval Observatory. US Government work."
+            ]
+        }
+    ],
+    "records": [
+        {
+            "date": "2026-06-21",
+            "latitudeDeg": 78.2232,
+            "longitudeDeg": 15.6469,
+            "utcOffsetHours": 2.0,
+            "isDst": false,
+            "sunRises": [],
+            "sunSets": [],
+            "sunUpperTransits": [
+                "12:59"
+            ],
+            "beginCivilTwilight": null,
+            "endCivilTwilight": null,
+            "moonRises": [
+                "12:29"
+            ],
+            "moonSets": [
+                "01:17"
+            ],
+            "moonUpperTransits": [
+                "18:46"
+            ],
+            "sunCondition": "CONTINUOUSLY_ABOVE_HORIZON",
+            "sunTwilightCondition": "CONTINUOUSLY_ABOVE_TWILIGHT_LIMIT",
+            "moonCondition": null,
+            "currentMoonPhase": "Waxing Crescent",
+            "fractionIlluminated": "45%",
+            "closestPhase": {
+                "phase": "First Quarter",
+                "year": 2026,
+                "month": 6,
+                "day": 21,
+                "time": "23:55"
+            }
+        },
+        {
+            "date": "2026-06-21",
+            "latitudeDeg": -77.8419,
+            "longitudeDeg": 166.6863,
+            "utcOffsetHours": 12.0,
+            "isDst": false,
+            "sunRises": [],
+            "sunSets": [],
+            "sunUpperTransits": [],
+            "beginCivilTwilight": null,
+            "endCivilTwilight": null,
+            "moonRises": [
+                "13:10"
+            ],
+            "moonSets": [],
+            "moonUpperTransits": [
+                "18:24"
+            ],
+            "sunCondition": "CONTINUOUSLY_BELOW_HORIZON",
+            "sunTwilightCondition": "CONTINUOUSLY_BELOW_TWILIGHT_LIMIT",
+            "moonCondition": null,
+            "currentMoonPhase": "Waxing Crescent",
+            "fractionIlluminated": "41%",
+            "closestPhase": {
+                "phase": "First Quarter",
+                "year": 2026,
+                "month": 6,
+                "day": 22,
+                "time": "09:55"
+            }
+        }
+    ]
+}

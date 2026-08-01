@@ -1,0 +1,97 @@
+{
+    "writtenAtUtc": "2026-08-01T13:40:47.883215900Z",
+    "provenance": [
+        {
+            "sourceId": "jpl-horizons",
+            "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=text&COMMAND=%27301%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27500%40399%27&START_TIME=%272026-04-14%27&STOP_TIME=%272026-04-21%27&STEP_SIZE=%271%20d%27&QUANTITIES=%2731%2C20%27&CAL_FORMAT=%27CAL%27&ANG_FORMAT=%27DEG%27&TIME_DIGITS=%27SECONDS%27&CSV_FORMAT=%27YES%27",
+            "method": "GET",
+            "requestParameters": {
+                "format": "text",
+                "COMMAND": "'301'",
+                "OBJ_DATA": "'NO'",
+                "MAKE_EPHEM": "'YES'",
+                "EPHEM_TYPE": "'OBSERVER'",
+                "CENTER": "'500@399'",
+                "START_TIME": "'2026-04-14'",
+                "STOP_TIME": "'2026-04-21'",
+                "STEP_SIZE": "'1 d'",
+                "QUANTITIES": "'31,20'",
+                "CAL_FORMAT": "'CAL'",
+                "ANG_FORMAT": "'DEG'",
+                "TIME_DIGITS": "'SECONDS'",
+                "CSV_FORMAT": "'YES'"
+            },
+            "requestHeaders": {
+                "User-Agent": "panchang-service-verify/0.1 (ground-truth harvester; contact via project repository)"
+            },
+            "retrievedAtUtc": "2026-08-01T13:40:47.748809900Z",
+            "httpStatus": 200,
+            "responseContentType": "text/plain",
+            "responseBytes": 6141,
+            "responseSha256": "e168ac57adecc2fdde893aaf13469ce220c4a6feb2b20ffb687ea2cc03a6891e",
+            "rawArtifactFile": "moon-2026-04-14_2026-04-21-d484a2767d90.raw",
+            "harvesterVersion": 1,
+            "notes": [
+                "Source: NASA/JPL Horizons. US Government work, no redistribution restriction."
+            ]
+        }
+    ],
+    "records": [
+        {
+            "utc": "2026-04-14T00:00:00Z",
+            "apparentEclipticLongitudeDeg": 338.291449,
+            "apparentEclipticLatitudeDeg": 0.0147343,
+            "distanceAu": 0.0025458405279,
+            "rangeRateKmPerSec": -0.0679535
+        },
+        {
+            "utc": "2026-04-15T00:00:00Z",
+            "apparentEclipticLongitudeDeg": 351.848978,
+            "apparentEclipticLatitudeDeg": 1.2229991,
+            "distanceAu": 0.00250743554285,
+            "rangeRateKmPerSec": -0.0641232
+        },
+        {
+            "utc": "2026-04-16T00:00:00Z",
+            "apparentEclipticLongitudeDeg": 5.8458167,
+            "apparentEclipticLatitudeDeg": 2.3943471,
+            "distanceAu": 0.00247282609607,
+            "rangeRateKmPerSec": -0.0548629
+        },
+        {
+            "utc": "2026-04-17T00:00:00Z",
+            "apparentEclipticLongitudeDeg": 20.2430197,
+            "apparentEclipticLatitudeDeg": 3.4454448,
+            "distanceAu": 0.00244497683003,
+            "rangeRateKmPerSec": -0.040895
+        },
+        {
+            "utc": "2026-04-18T00:00:00Z",
+            "apparentEclipticLongitudeDeg": 34.9543455,
+            "apparentEclipticLatitudeDeg": 4.2907951,
+            "distanceAu": 0.00242621830641,
+            "rangeRateKmPerSec": -0.0236762
+        },
+        {
+            "utc": "2026-04-19T00:00:00Z",
+            "apparentEclipticLongitudeDeg": 49.853348,
+            "apparentEclipticLatitudeDeg": 4.856366,
+            "distanceAu": 0.00241787470306,
+            "rangeRateKmPerSec": -0.0051819
+        },
+        {
+            "utc": "2026-04-20T00:00:00Z",
+            "apparentEclipticLongitudeDeg": 64.7915044,
+            "apparentEclipticLatitudeDeg": 5.0933862,
+            "distanceAu": 0.00242007206003,
+            "rangeRateKmPerSec": 0.0124896
+        },
+        {
+            "utc": "2026-04-21T00:00:00Z",
+            "apparentEclipticLongitudeDeg": 79.6230623,
+            "apparentEclipticLatitudeDeg": 4.986963,
+            "distanceAu": 0.00243179804787,
+            "rangeRateKmPerSec": 0.0275645
+        }
+    ]
+}

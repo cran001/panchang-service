@@ -1,9 +1,12 @@
-# Vendored coefficient tables
+# Vendored source data
 
 These are the published coefficient tables for the two analytical theories this service
-uses for high-precision Sun and Moon positions. They are committed rather than fetched at
-build time on purpose: the service must still build in 2040, and CDS being reachable then
-is not something this project can control.
+uses for high-precision Sun and Moon positions, plus the GeoNames archives the place
+gazetteer is derived from. They are committed rather than fetched at build time on purpose:
+the service must still build in 2040, and CDS and GeoNames being reachable then is not
+something this project can control. The app this service replaces already learned that
+lesson the expensive way — it resolved places through a third-party host that is now dead,
+which is precisely why nothing here is fetched at runtime.
 
 `MANIFEST.sha256` lists a SHA-256 and byte size for every file. Regenerate and diff it if
 you ever suspect a file has been touched — these tables are input data, and a single
@@ -18,8 +21,8 @@ grep -v '^#' MANIFEST.sha256 | awk 'NF==3 {print $1"  "$3}' | sha256sum -c
 The `awk` is not optional. The manifest carries three columns (hash, size, path) so that a
 truncated file is caught even in the astronomically unlikely event of a hash collision, and
 that third column means **`sha256sum -c MANIFEST.sha256` does not work** — it reads
-`size path` as one filename and reports all 41 files FAILED, which looks like catastrophic
-corruption and is not. Expect `41 OK, 0 FAILED`.
+`size path` as one filename and reports all 43 files FAILED, which looks like catastrophic
+corruption and is not. Expect `43 OK, 0 FAILED`.
 
 **Nothing in this directory may be edited.** If a table is wrong, it is wrong upstream and
 the fix is a new retrieval with an updated manifest, not a local patch.
@@ -107,3 +110,75 @@ permanently dependent on a third party's future licensing decisions.
 
 Citing Bretagnon & Francou and Chapront-Touzé & Chapront in any published accuracy claim is
 the correct scholarly practice regardless of whether a licence compels it.
+
+---
+
+## GeoNames — place gazetteer
+
+| | |
+|---|---|
+| Source | `https://download.geonames.org/export/dump/` |
+| Files | `geonames/cities15000.zip`, `geonames/IN.zip` |
+| Retrieved | 2026-08-01, HTTP 200 |
+| Licence | **CC BY 4.0** — `https://creativecommons.org/licenses/by/4.0/` |
+| Attribution | `Place data © GeoNames (https://www.geonames.org/), used under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).` |
+
+`cities15000.zip` is every populated place on Earth with a population of 15 000 or more.
+`IN.zip` is the full GeoNames country file for India; the gazetteer ingest keeps only the
+rows where `feature_class == "A" && feature_code == "ADM2"`, which is India's districts.
+
+**Why the districts come from the country file and not from `admin2Codes.txt`.** The
+`admin2Codes.txt` table is the obvious-looking source for districts and is a hundredth the
+size, but it carries *no coordinates* — only code, name and geonameid. A gazetteer whose
+district rows have no position cannot answer the one question the module exists to answer.
+So the 15.7 MB country file is downloaded and 99.9% of it is discarded. That is the correct
+trade.
+
+### The `elevation` and `dem` columns are deliberately NOT ingested
+
+This is a decision. It is not an oversight, and it is not a TODO.
+
+GeoNames ships an `elevation` column (metres, where surveyed) and a `dem` column (SRTM
+digital elevation model). The gazetteer ingest reads neither, and the derived
+`gazetteer-v1.tsv` therefore has no elevation column at all — there is nothing for later
+code to reach for by accident.
+
+The reason is that elevation is not a free accuracy improvement here. It enters the
+horizon-dip term of sunrise and sunset, and sunrise is the instant against which tithi is
+tested to decide **which civil day a fast is kept on**. Every reference calendar this
+service is validated against — the published Gaudiya calendars, and the ground truth in
+`verify/golden/` — is computed at sea level. Feeding a district's true altitude into dip
+would move our sunrise away from those references by a knowable amount, at exactly the
+high-altitude districts for which no reference data exists to tell us whether the move was
+an improvement or an error. Dip grows as the square root of height, so the districts where
+it would matter most are the ones we can check least.
+
+An unvalidatable change to a religiously-consequential quantity is not an improvement. If
+and when reference data for altitude sites exists, this becomes a real decision with real
+evidence behind it; until then `Place.toGeoLocation()` defaults `elevationMeters` to zero
+and a caller who has a defensible figure must pass it explicitly and knowingly.
+
+`alternatenames` (column 4) is also dropped. It is more than half the input by volume, its
+quality is very uneven, and fuzzy multilingual matching is not what a module designed to
+*refuse* to guess should be doing.
+
+### Why CC BY, specifically
+
+Attribution-only, no share-alike, no network clause. The alternatives with copyleft that
+reaches through a network service would have obliged us to publish the sampradaya rule set,
+which is the same reason VSOP87/ELP2000 were chosen over Swiss Ephemeris above.
+
+The whole cost of that choice is the attribution string, so the attribution string is
+load-bearing: it is a constant in `Gazetteer.ATTRIBUTION`, it is written into the header of
+the derived table, and `GazetteerProvenanceTest` fails if it stops being present in the
+shipped artifact. Do not "tidy" it away.
+
+### Derived artifact
+
+`gazetteer/src/main/resources/org/panchang/gazetteer/gazetteer-v1.tsv` is generated from
+these two archives by `./gradlew :gazetteer:ingest` and is committed. Its `#`-prefixed
+header records the SHA-256 and byte size of both source archives, the exact filter applied
+to each, and the kept/dropped row counts with a named reason for every drop.
+`GazetteerProvenanceTest` asserts those hashes still equal the ones in `MANIFEST.sha256`,
+so re-vendoring an archive without re-running the ingest is a build failure rather than a
+silent inconsistency.

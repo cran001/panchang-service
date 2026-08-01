@@ -9,6 +9,18 @@ is not something this project can control.
 you ever suspect a file has been touched — these tables are input data, and a single
 mistyped coefficient is exactly the kind of error that produces plausible-looking output.
 
+Verify it from this directory with:
+
+```bash
+grep -v '^#' MANIFEST.sha256 | awk 'NF==3 {print $1"  "$3}' | sha256sum -c
+```
+
+The `awk` is not optional. The manifest carries three columns (hash, size, path) so that a
+truncated file is caught even in the astronomically unlikely event of a hash collision, and
+that third column means **`sha256sum -c MANIFEST.sha256` does not work** — it reads
+`size path` as one filename and reports all 41 files FAILED, which looks like catastrophic
+corruption and is not. Expect `41 OK, 0 FAILED`.
+
 **Nothing in this directory may be edited.** If a table is wrong, it is wrong upstream and
 the fix is a new retrieval with an updated manifest, not a local patch.
 

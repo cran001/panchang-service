@@ -1,16 +1,34 @@
 package org.panchang.ephemeris
 
+import kotlin.math.max
+
 /**
  * ΔT = TT − UT1, in seconds.
  *
- * ## Source
+ * ## What this object is, since Phase 2A
+ *
+ * Two things, layered:
+ *
+ * - [secondsAtJd] — **the one callers should use.** Observed IERS Earth orientation where
+ *   the IERS has measured it (1973-01-02 onward), IERS Bulletin A predictions for the
+ *   following year, a parabolic continuation after that, and the Espenak & Meeus fit
+ *   before it. [qualityAtJd] says which. See [ObservedDeltaT].
+ * - [secondsAtYear] — the Espenak & Meeus piecewise polynomial fit, on its own. It is what
+ *   the layer above falls back to for pre-1973 and deep-past dates, and it remains
+ *   directly callable because it is the citable published model and the thing every other
+ *   ΔT implementation can be compared against.
+ *
+ * The layering, rather than a replacement, is deliberate: outside the IERS record there is
+ * no alternative to the fit, and pretending otherwise would be inventing data.
+ *
+ * ## Source of the fit
  *
  * Fred Espenak and Jean Meeus, *Polynomial Expressions for Delta T*, published on the NASA
  * Eclipse Web Site (`eclipse.gsfc.nasa.gov/SEhelp/deltatpoly2004.html`) and used for the
  * *Five Millennium Canon of Solar Eclipses* (NASA/TP–2006–214141). It is a piecewise
  * polynomial fit to the historical ΔT record, stated valid from −1999 to +3000.
  *
- * ## Stated uncertainty
+ * ## Stated uncertainty of the fit
  *
  * The fit is not a measurement. Espenak & Meeus give roughly:
  *
@@ -24,35 +42,41 @@ package org.panchang.ephemeris
  * - after 2005: extrapolation. Uncertainty grows to roughly ±10 s by 2100 and much more
  *   beyond, because it depends on the unpredictable long-term behaviour of Earth rotation.
  *
- * ## Known bias in the post-2005 branch
+ * ## The post-2005 branch, and why [secondsAtJd] no longer uses it
  *
  * The 2005–2050 branch (`62.92 + 0.32217t + 0.005589t²`) was fitted in 2006 and assumed a
  * continued increase in ΔT. Earth's rotation instead sped up slightly, and the fit has
  * been diverging from observation ever since:
  *
- * | epoch    | this fit | observed | error |
- * |----------|----------|----------|-------|
- * | 2020.0   | 71.6 s   | 69.36 s  | +2.2 s |
- * | 2026.6   | 75.4 s   | ~69.3 s  | +6.1 s |
+ * | epoch    | this fit | observed (IERS) | error |
+ * |----------|----------|-----------------|-------|
+ * | 2020.0   | 71.60 s  | 69.36 s         | +2.24 s |
+ * | 2026.58  | 75.23 s  | 69.17 s         | +6.06 s |
  *
- * That is a real, known systematic offset — currently about six seconds — in every
- * civil-time result the service produces for present-day dates. It shifts every published
- * boundary time by that amount. (As an error in the *position* series argument it is
- * trivial: 6 s is 3″ of lunar longitude.)
+ * That was a real, known systematic offset — about six seconds — in every civil-time
+ * result this service produced for present-day dates, shifting every published boundary
+ * time by that amount. It is now gone from [secondsAtJd]: for any date the IERS has
+ * measured, ΔT is the measurement.
  *
- * It is retained deliberately rather than patched with an ad-hoc correction: it is the
- * published, citable fit, and a hand-tuned replacement would be an unsourced number of
- * exactly the kind this module is supposed to avoid. Replacing it with observed
- * IERS/`finals.all` values plus a proper extrapolation is a Phase 2 item, and is the
- * single largest improvement available to boundary-time accuracy.
+ * The polynomial is *not* deleted, and this branch is still reachable through
+ * [secondsAtYear]. Its bias is pinned by test so it stays visible rather than becoming
+ * folklore.
  *
  * ## Purity
  *
- * Pure function of the decimal year. No state, no I/O, thread-safe.
+ * [secondsAtYear] is a pure function of the decimal year with no state at all.
+ * [secondsAtJd] reads one classpath resource, once, lazily, and is thereafter pure. No
+ * network at build time or run time.
  */
 object DeltaT {
 
-    /** ΔT in seconds at a decimal year, e.g. `2000.5`. See [decimalYear] for the convention. */
+    /**
+     * ΔT in seconds from the **Espenak & Meeus piecewise fit alone**, at a decimal year.
+     *
+     * This is the published model, unmodified — including its stale post-2005
+     * extrapolation. For dates from 1973 onward prefer [secondsAtJd], which uses observed
+     * IERS data instead. See [decimalYear] for the argument convention.
+     */
     fun secondsAtYear(year: Double): Double = when {
         year < -500.0 -> {
             val u = (year - 1820.0) / 100.0
@@ -150,8 +174,65 @@ object DeltaT {
         }
     }
 
-    /** ΔT in seconds at a UT-based Julian Day. */
-    fun secondsAtJd(jdUt: Double): Double = secondsAtYear(decimalYear(jdUt))
+    /**
+     * ΔT in seconds at a UT-based Julian Day — observed where observation exists.
+     *
+     * Four regimes, joined without a step (see [qualityAtJd] to find out which one a date
+     * falls in):
+     *
+     * | regime | dates | source |
+     * |---|---|---|
+     * | [DeltaTQuality.HISTORICAL_FIT] | before 1973-01-02 | Espenak & Meeus, tapered onto the IERS record over the last [ObservedDeltaT.SEAM_TAPER_YEARS] years |
+     * | [DeltaTQuality.OBSERVED] | 1973-01-02 … end of the IERS determined record | IERS UT1−UTC + leap seconds |
+     * | [DeltaTQuality.PREDICTED] | the following ~1 year | IERS Bulletin A prediction |
+     * | [DeltaTQuality.EXTRAPOLATED] | after that | parabola matched in value and slope to the record's end |
+     *
+     * ## Continuity
+     *
+     * ΔT is bisected through by every boundary solver in `:core`: they search civil time,
+     * and civil time reaches the series only via `jdTt = jdUt + ΔT/86400`. A discontinuity
+     * anywhere in ΔT is therefore a place where a bisection can fail to converge, no matter
+     * how small the step. Both seams here are continuous by construction — the pre-1973
+     * taper is defined to reproduce the first tabulated value exactly at the seam, and the
+     * post-record parabola is defined to reproduce the last one — and both are asserted.
+     */
+    fun secondsAtJd(jdUt: Double): Double {
+        val mjd = ObservedDeltaT.modifiedJulianDate(jdUt)
+        if (mjd >= ObservedDeltaT.firstMjd) return ObservedDeltaT.secondsAtJd(jdUt)
+
+        // Before the IERS record. Use the published fit, but slide it onto the observed
+        // value at the seam so there is no step there. The offset is ~0.06 s and dies away
+        // linearly over SEAM_TAPER_YEARS, after which this is the unmodified fit.
+        val yearsBefore = (ObservedDeltaT.firstMjd - mjd) / 365.25
+        val weight = max(0.0, 1.0 - yearsBefore / ObservedDeltaT.SEAM_TAPER_YEARS)
+        return secondsAtYear(decimalYear(jdUt)) + seamOffsetSeconds * weight
+    }
+
+    /**
+     * How [secondsAtJd] arrived at the value for [jdUt] — measured, predicted,
+     * extrapolated, or historical fit.
+     *
+     * Callers that publish a tolerance need this. A tithi boundary in 2027 is limited by
+     * the ephemeris; one in 2100 is limited by nobody knowing how fast the Earth will be
+     * turning, which is ±10 s of ΔT and so ±20 s of boundary time. Stating the same
+     * confidence for both would be a false claim.
+     *
+     * It is not on the [Ephemeris] interface because that interface is a frozen contract in
+     * this phase. It is reachable here, and via [ObservedDeltaT.qualityAtJd], because both
+     * are objects.
+     */
+    fun qualityAtJd(jdUt: Double): DeltaTQuality = ObservedDeltaT.qualityAtJd(jdUt)
+
+    /**
+     * ΔT(seam, observed) − ΔT(seam, Espenak & Meeus) at the first row of the IERS table.
+     *
+     * Computed rather than hard-coded, so that refreshing the resource cannot leave a stale
+     * constant behind and silently reopen a step at the seam.
+     */
+    private val seamOffsetSeconds: Double by lazy {
+        val seamJd = ObservedDeltaT.firstMjd + 2_400_000.5
+        ObservedDeltaT.firstSeconds - secondsAtYear(decimalYear(seamJd))
+    }
 
     /**
      * Decimal year of a Julian Day, measured in Julian years from J2000.0.

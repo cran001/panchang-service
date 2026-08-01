@@ -154,22 +154,31 @@ class DeltaTTest {
     }
 
     /**
-     * ΔT as a function of JD must be continuous and, across the modern era, strictly
-     * increasing at half-day resolution.
+     * ΔT as a function of JD must be continuous, and must vary at *every* sample rather
+     * than sitting on a staircase.
      *
      * This is the property that Espenak & Meeus' own month-midpoint argument convention
      * would break, and the reason [DeltaT.decimalYear] departs from it: a month-midpoint
-     * argument makes ΔT piecewise constant within each month, which fails the strict
-     * increase below on 59 out of every 60 samples. See the KDoc there.
+     * argument makes ΔT piecewise constant within each month, which would leave 59 out of
+     * every 60 half-day samples exactly unchanged. See the KDoc there.
      *
-     * The one step larger than 0.01 s in the 1990–2040 range is the published fit's own
-     * ~0.05 s *downward* discontinuity where the 1986–2005 branch hands over to the
-     * 2005–2050 branch. That is inherent to the source, so the strict-increase sweep starts
-     * after it; the bounded-step sweep spans the crossover and its threshold sits just
-     * above it.
+     * ## Changed in Phase 2A — what this used to assert and why it could not stay
+     *
+     * This test previously asserted that ΔT was **strictly increasing** from 2010 to 2040.
+     * That was a true property of the Espenak & Meeus 2005–2050 polynomial, which
+     * [DeltaT.secondsAtJd] no longer uses; it is **not** a property of the Earth. Since
+     * about 2020 the Earth has been rotating slightly faster and observed ΔT has been
+     * *falling* — 69.36 s at 2020-01-01 against 69.17 s in mid-2026. Asserting monotonicity
+     * against IERS data would be asserting that the measurements are wrong.
+     *
+     * The intent of the original — "the argument must not be quantised" — is preserved by
+     * asserting strict *change* at every step instead of strict increase, which catches a
+     * staircase exactly as well and does not encode a false claim about Earth rotation.
+     * `ObservedDeltaTTest.the recent observed decrease in deltaT is present` asserts the
+     * decrease positively.
      */
     @Test
-    fun `deltaT is continuous and strictly increasing in julian day`() {
+    fun `deltaT is continuous and never quantised in julian day`() {
         var jd = TimeScale.jdUtAtMidnight(1990, 1, 1)
         val end = TimeScale.jdUtAtMidnight(2040, 1, 1)
         var previous = DeltaT.secondsAtJd(jd)
@@ -189,9 +198,9 @@ class DeltaTTest {
             jd += 0.5
             val current = DeltaT.secondsAtJd(jd)
             assertTrue(
-                current > previous,
-                "ΔT must increase strictly inside the 2005-2050 branch; it was flat or " +
-                    "falling at jd $jd, which is the signature of a quantised argument",
+                current != previous,
+                "ΔT was exactly unchanged across half a day at jd $jd, which is the " +
+                    "signature of a quantised time argument",
             )
             previous = current
         }
@@ -200,17 +209,27 @@ class DeltaTTest {
     /**
      * The interface method must agree with the underlying function and be independent of
      * the host clock or zone.
+     *
+     * ## Changed in Phase 2A
+     *
+     * This used to assert additionally that `ephemeris.deltaT(jd)` equalled
+     * `DeltaT.secondsAtYear(DeltaT.decimalYear(jd))` — i.e. that the interface returned the
+     * Espenak & Meeus polynomial. That is no longer true and is no longer wanted:
+     * [DeltaT.secondsAtJd] returns observed IERS Earth orientation for any date the IERS
+     * has measured, which for 2026-08-01 is ~69.17 s against the polynomial's ~75.4 s. The
+     * equality is replaced by its opposite, asserted in
+     * `ObservedDeltaTTest.the stale Espenak-Meeus post-2005 bias is gone`.
+     *
+     * What remains here is the part that was always the point: the interface delegates to
+     * the module function, and the whole UT/TT bridge produces a sane present-day number.
+     * The 65–80 s window is left as it was, so it still spans both the old and new values
+     * and fails loudly only if something structural breaks.
      */
     @Test
-    fun `interface method delegates to the same fit`() {
+    fun `interface method delegates to the module function`() {
         val jd = TimeScale.jdUtAtMidnight(2026, 8, 1)
         assertEquals(DeltaT.secondsAtJd(jd), ephemeris.deltaT(jd), 0.0)
-        assertEquals(DeltaT.secondsAtYear(DeltaT.decimalYear(jd)), ephemeris.deltaT(jd), 0.0)
 
-        // Present-day ΔT. Observation is ~69.3 s; this fit's extrapolation returns ~75.4 s
-        // for mid-2026, a known +6 s bias documented on DeltaT. The window below spans both
-        // so it does not have to be moved when the fit is eventually replaced, while still
-        // failing loudly if the whole UT/TT bridge breaks.
         assertTrue(
             ephemeris.deltaT(jd) in 65.0..80.0,
             "present-day ΔT came out ${ephemeris.deltaT(jd)} s; expected 65-80 s",

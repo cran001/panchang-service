@@ -10,13 +10,13 @@ import org.junit.jupiter.params.provider.MethodSource
 import org.panchang.core.GeoLocation
 
 /**
- * [IskconRules] against the published Gaudiya calendar at **all ten harvested sites**.
+ * [IskconRules] against the published Gaudiya calendar at **all fourteen harvested sites**.
  *
  * The oracles are `verify/golden/vaisnavacalendar-<city>-2026.json`, GCal 11 Build 5's own output
  * for the sites whose coordinates each file prints in its own `site` block. Where this suite and
  * those files disagree, the presumption is that these rules are wrong.
  *
- * ## Why ten sites and not one
+ * ## Why fourteen sites and not one
  *
  * Through Wave 0 this suite pinned Mayapur, and every other observance test still does. That made
  * location-generality a claim about the source — "no coordinate is hardcoded; everything flows
@@ -225,6 +225,7 @@ class GaudiyaEkadashiConformanceTest {
         )
 
         val failures = mutableListOf<String>()
+        val basisTies = mutableListOf<String>()
         var excludedStaleDst = 0
         var openEnded = 0
 
@@ -275,8 +276,28 @@ class GaudiyaEkadashiConformanceTest {
             } else {
                 val expectedEndReason = expected.endBasis?.let { BASIS_TO_REASON[it] }
                 if (window.endReason != expectedEndReason) {
-                    failures += "${day.date} end basis: calendar '${expected.endBasis}' " +
-                        "(${expectedEndReason ?: "unmapped"}), rules ${window.endReason}"
+                    val gap = if (ParanaBasisTie.covers(cityId, day.date, "end")) {
+                        ParanaBasisTie.gapSeconds(site, day.date)
+                    } else {
+                        null
+                    }
+                    if (gap != null && gap <= ParanaBasisTie.MAX_GAP_SECONDS) {
+                        // A named tie, re-measured on this run, not a tolerance. See
+                        // [ParanaBasisTie]: the printed time is still asserted by checkBound
+                        // below, and only the label is excepted.
+                        basisTies += "${day.date} end: calendar '${expected.endBasis}', rules " +
+                            "${window.endReason}; the two caps are %.2f s apart".format(gap)
+                    } else {
+                        failures += "${day.date} end basis: calendar '${expected.endBasis}' " +
+                            "(${expectedEndReason ?: "unmapped"}), rules ${window.endReason}" +
+                            if (gap == null) {
+                                ""
+                            } else {
+                                " — ParanaBasisTie names this row but the two caps are now " +
+                                    "%.2f s apart, past its %.1f s limit, so it is no longer a tie"
+                                        .format(gap, ParanaBasisTie.MAX_GAP_SECONDS)
+                            }
+                    }
                 }
                 checkBound(
                     failures, site, day.date, "end",
@@ -298,7 +319,19 @@ class GaudiyaEkadashiConformanceTest {
         println(
             "parana conformance $cityId: ${expectedDays.size} printed, $excludedStaleDst " +
                 "excluded as stale reference DST, $openEnded open-ended (start-only), " +
-                "${failures.size} disagreements",
+                "${basisTies.size} basis ties, ${failures.size} disagreements",
+        )
+        basisTies.forEach { println("  tie: $it") }
+        // A tie that stops occurring must fail as loudly as one that appears. [ParanaBasisTie]
+        // is a record of a measured coincidence at a particular longitude and date; if the two
+        // caps separate, the label disagreement it was excusing is a real one again.
+        assertEquals(
+            ParanaBasisTie.ROWS.filter { it.startsWith("$cityId ") }.size,
+            basisTies.size,
+            "ParanaBasisTie names ${ParanaBasisTie.ROWS.count { it.startsWith("$cityId ") }} " +
+                "tied row(s) at $cityId but ${basisTies.size} were measured this run. A tie that " +
+                "no longer holds is not a passing test; it means the caps have separated and the " +
+                "label disagreement needs deciding on its merits.",
         )
         assertTrue(
             failures.isEmpty(),
@@ -445,7 +478,7 @@ class GaudiyaEkadashiConformanceTest {
      * This asserts the *reporting channel* on the resolver seam — that a catalog entry which
      * produces no date is surfaced to a caller rather than silently absent from `events()`. That
      * is a fact about the seam, not about a location, and `eventResolution(year, ctx)` builds its
-     * own [LunarDayIndex] rather than reusing the fixture's, so running it at ten sites would add
+     * own [LunarDayIndex] rather than reusing the fixture's, so running it at fourteen sites would add
      * twenty index builds — three to five minutes — to buy no additional evidence. Catalog
      * conformance across sites, if it is ever wanted, belongs in
      * [IskconEventCatalogConformanceTest], where the catalog's oracle mapping already lives.

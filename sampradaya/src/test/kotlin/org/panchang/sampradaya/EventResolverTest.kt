@@ -35,7 +35,7 @@ import org.panchang.core.PanchangCalculator
  * given; none of them is a claim about where on Earth that structure came from. Location handling
  * is exercised where it can actually fail — in the sunrise, daylight-third and civil-day
  * arithmetic — and that is [MultiSiteParanaConformanceTest] and the ten-site parameterisation of
- * `GaudiyaEkadashiConformanceTest`. Running this suite at ten sites would cost twenty index builds
+ * `GaudiyaEkadashiConformanceTest`. Running this suite at fourteen sites would cost twenty-eight index builds
  * for no evidence those two do not already carry, and it would need ten oracles for expectations
  * that are currently written as literal dates from one.
  */

@@ -348,6 +348,25 @@ that the silence is a recorded decision rather than an oversight.[^9]
 
 ---
 
+## 9. Ahmedabad, 2026-11-06 — two caps 0.93 s apart, noted rather than asked
+
+**Listed for completeness and deliberately not asked**, because on the measurement we have it is
+not a question a pandit can answer and not one whose answer would change what anyone does.
+
+The parana cap that day is set by two rules that fall within a second of each other at Ahmedabad's
+longitude: the Dvadashi ends at 10:31:04.467 IST, the first third of daylight at 10:31:05.395 IST.
+We name the Dvadashi (the earlier one); the calendar names the daylight third. **Both give 10:31.**
+
+The doctrinal rule — take whichever cap comes first — is not in dispute, and applying it is what
+produces our answer. The only thing in dispute is which of two effectively simultaneous instants
+came first, and 0.93 s is well inside our own input error (~17 s on tithi instants, ~28 s on
+sunrise), so no ephemeris work and no ruling can decide it. Recorded in
+`validation-multisite.md` category (d) and pinned by `ParanaBasisTie`, which re-measures the gap
+each run so that if the caps ever separate the disagreement becomes real and visible again.
+
+**Ask only if** a pandit says the *named basis* itself must be published to the devotee and must be
+right even when the time is not affected. Nothing in the sources we have suggests it does.
+
 ## What this page is not
 
 It is not a list of bugs, and none of these items is waiting on more computation. Items 1 and 2 in

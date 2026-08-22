@@ -1,7 +1,8 @@
 # Multi-location conformance gate
 
 Enforced continuously by `sampradaya/src/test/kotlin/org/panchang/sampradaya/`:
-`GaudiyaEkadashiConformanceTest` (parameterised over ten sites) and
+`GaudiyaEkadashiConformanceTest` (parameterised over fourteen sites),
+`IndiaParanaReportTest` (every Indian parana bound printed row by row, agreeing or not) and
 `MultiSiteParanaConformanceTest` (cross-site and DST-transition claims). Both are committed
 tests, not one-off measurements.
 
@@ -18,8 +19,21 @@ Through Wave 0 every observance test pinned Mayapur. Location-generality was the
 timings and relabelled them would satisfy it, pass a single-site suite, and be wrong by roughly an
 hour for every user elsewhere.
 
-Ten harvested calendars now exist in `verify/golden/vaisnavacalendar-{city}-2026.json`, 365 records
-each. The gate walks all ten.
+Fourteen harvested calendars now exist in `verify/golden/vaisnavacalendar-{city}-2026.json`, 365
+records each. The gate walks all fourteen.
+
+**Eight of them are Indian**, which is the coverage the request asked for. Wave 1 shipped four;
+the publisher turns out to list 21 Indian cities for 2026, and four more were harvested from it
+— Chennai, Bangalore, Ahmedabad and Guwahati — chosen to make specific failures reachable rather
+than to spread pins on a map:
+
+- **Ahmedabad (72E37) and Guwahati (91E44)** are the western and eastern extremes of
+  `Asia/Kolkata`, 19.1 degrees and **76 minutes of solar time** apart on one civil clock. This
+  pair *is* the requirement, stated as two rows of output.
+- **Bangalore (77E36)** sits within half a degree of Delhi's longitude at sixteen degrees less
+  latitude, so a disagreement there is latitude's and cannot be longitude's.
+- **Chennai (13N05)** is the southernmost site and has the smallest daylight swing in the grid,
+  where a hemisphere-agnostic daylight-fraction error would be hardest to see.
 
 ## Coordinates come from the artifact, never from the reference grid
 
@@ -40,6 +54,10 @@ The Mayapur file predates the site block and returns `null` from `GaudiyaGoldenC
 | vrindavan | Vrindavan [India] | 27.5833 | 77.7000 | Asia/Kolkata | +5:30 |
 | delhi | Delhi [India] | 28.6667 | 77.2167 | Asia/Kolkata | +5:30 |
 | mumbai | Bombay [India] | 18.9833 | 72.8333 | Asia/Kolkata | +5:30 |
+| chennai | Madras [India] | 13.0833 | 80.2833 | Asia/Kolkata | +5:30 |
+| bangalore | Bangalore [India] | 12.9833 | 77.6000 | Asia/Kolkata | +5:30 |
+| ahmedabad | Ahmadabad [India] | 23.0333 | 72.6167 | Asia/Kolkata | +5:30 |
+| guwahati | Guwahati [India] | 26.1833 | 91.7333 | Asia/Kolkata | +5:30 |
 | london | London [United Kingdom] | 51.5167 | −0.1333 | Europe/London | +0:00 |
 | new-york | New York City [USA] | 40.7167 | −74.0000 | America/New_York | −5:00 |
 | sao-paulo | Sao Paulo [Brazil] | −23.5500 | −46.6333 | America/Sao_Paulo | −3:00 |
@@ -48,7 +66,9 @@ The Mayapur file predates the site block and returns `null` from `GaudiyaGoldenC
 | sydney | Sydney [Australia] | −33.8667 | 151.2000 | Australia/Sydney | +10:00 |
 
 Four southern-hemisphere sites, eight distinct zones, six of them observing daylight saving in
-2026, and four sites sharing a single civil clock.
+2026, and **eight sites sharing a single civil clock**. Chennai and Bangalore are also the two
+cities the publisher still files under pre-rename names (`Madras`, and `Ahmadabad` for Ahmedabad),
+which is why `VaisnavaSiteZones` is keyed on the printed name rather than on our city id.
 
 ## Tolerances were not widened
 
@@ -149,20 +169,30 @@ Two properties are invisible to any number of such comparisons:
 
 ## Result
 
-First run 2026-08-02, `./gradlew --rerun-tasks --no-daemon :sampradaya:test :verify:test`, counts
-read from `build/test-results/test/*.xml` rather than from the console.
+Latest run 2026-08-03, fourteen sites, `./gradlew --rerun-tasks --no-daemon :ephemeris:test
+:core:test :sampradaya:test :verify:test`, counts read from `build/test-results/test/*.xml`
+rather than from the console.
 
 | Module | tests | skipped | failures | errors |
 |---|---|---|---|---|
-| `:sampradaya` | 141 | 0 | **9** | 0 |
-| `:verify` | 97 | 0 | 0 | 0 |
+| `:ephemeris` | 54 | 0 | 0 | 0 |
+| `:core` | 82 | 0 | 0 | 0 |
+| `:sampradaya` | 179 | 0 | **9** | 0 |
+| `:verify` | 101 | 0 | 0 | 0 |
 
-`GaudiyaEkadashiConformanceTest` 91 tests / 9 failures; `MultiSiteParanaConformanceTest` 5 / 0;
-`EventResolverTest` 20 / 0; `EventTimeTest` 16 / 0; `IskconEventCatalogConformanceTest` 7 / 0;
-`ParanaDaylightEdgeTest` 2 / 0.
+**Adding four Indian cities added zero failures.** The first ten-site run on 2026-08-02 was 141
+tests / 9 failures; the fourteen-site run is 179 / 9, and the nine are the same nine — the
+Vrindavan fasting date and its two knock-ons, four Mahadvadashi labels, and two deferral
+classifications. Chennai, Bangalore, Ahmedabad and Guwahati each pass 9/9.
 
-**The gate is red, deliberately and visibly.** Nine failures across four sites. Nothing below was
-made to pass by widening a band or by editing a golden file.
+That is the load-bearing result on this page. Four new locations spanning 19.1 degrees of
+longitude inside `Asia/Kolkata` produced no new disagreement, which is the evidence for
+location-generality that a Mayapur-only suite could not give. It is not proof of correctness —
+one publisher, one year, one generator — but it is a claim with a measurement behind it.
+
+**The gate is still red, deliberately and visibly.** Nine failures across four sites, all of them
+pre-existing and each classified below. Nothing was made to pass by widening a band or by editing
+a golden file.
 
 ### Per site
 
@@ -176,6 +206,10 @@ every-decision-explains-itself, and coordinates-from-the-site-block.
 | vrindavan | 6/9 | fasting dates, Mahadvadashi labels, parana | 25 | 0 | 0 | **2026-06-25 vs 06-26 fasting date** (+2 knock-ons) |
 | delhi | 9/9 | — | 25 | 0 | 0 | none |
 | mumbai | 9/9 | — | 25 | 0 | 1 | none |
+| chennai | 9/9 | — | 25 | 0 | 0 | none |
+| bangalore | 9/9 | — | 25 | 0 | 0 | none |
+| ahmedabad | 9/9 | — | 25 | 0 | 0 | 2026-11-06 end basis — a 0.93 s tie, category (d) |
+| guwahati | 9/9 | — | 25 | 0 | 0 | none |
 | london | 9/9 | — | 24 | 0 | 0 | none |
 | new-york | 9/9 | — | 24 | 0 | 1 | none |
 | sao-paulo | 9/9 | — | 24 | 9 | 0 | none |
@@ -183,9 +217,76 @@ every-decision-explains-itself, and coordinates-from-the-site-block.
 | auckland | 7/9 | Mahadvadashi labels, parana | 25 | 0 | 1 | 2026-10-07 Trisprsa label; 2026-04-28 and 2026-10-08 parana bases |
 | sydney | 7/9 | Mahadvadashi labels, deferral classification | 25 | 0 | 0 | 2026-12-05 Vyanjuli label |
 
-**246 printed parana windows, 240 fasting days, 240 fortnights.** Of those: **1 fasting-date
+**346 printed parana windows, 336 fasting days, 336 fortnights.** Of those: **1 fasting-date
 disagreement**, 4 Mahadvadashi label disagreements, 3 parana bound disagreements at one site,
-24 rows excluded under (a), 3 rows handled under (b).
+1 basis tie under (d), 24 rows excluded under (a), 3 rows handled under (b).
+
+### Every Indian parana bound, printed — `IndiaParanaReportTest`
+
+The per-site table above reports what *failed*. `IndiaParanaReportTest` answers the question that
+cannot: for all 24 fasts at each of the eight Indian cities, what does the calendar print, what do
+the rules compute, and how far apart are they — **including every row that agrees**. It prints one
+line per bound and derives its summary from the rows it actually walked.
+
+```
+SUMMARY — derived from the 396 bounds actually compared above
+sites: mayapur, vrindavan, delhi, mumbai, chennai, bangalore, ahmedabad, guwahati
+solar bounds (sunrise / 1/3 daylight / sunset): 344 compared,
+    min -0.04, max +1.00, mean +0.50 min; band -0.25..1.25
+lunar bounds (1/4 of tithi / end of tithi / end of naksatra): 52 compared,
+    min -1.85, max +0.07, mean -1.25 min; band -3.0..1.25
+bounds outside their band: 0
+bounds on the printed minute but naming a different rule: 1 (see ParanaBasisTie)
+  - ahmedabad 2026-11-06 end: calendar says '1/3 of daylight', rules say DVADASHI_END;
+    both print 10:31, delta +0.07 min
+rows not compared (2):
+  - vrindavan 2026-06-27: the source prints a bounded window and these rules produced none
+  - mumbai 2026-08-24: the source prints a start with no cap; these rules refuse to emit an
+    inverted window here (Hari Vasara outlasts the first third of daylight)
+```
+
+**396 of 398 bounds compared, 0 outside band.** The two not compared are the Vrindavan fasting-date
+disagreement and the Mumbai uncapped window, both already categorised. Every city: 24 fasts, 25
+printed windows, 50 bounds (48 where a row is uncompared).
+
+The solar mean of **+0.50 min** is the truncation signature and not an error: the source prints
+`10:31` for anything in `[10:31:00, 10:32:00)`, so agreement shows up as a uniform delta in `[0, 1)`
+whose mean is a half minute. The lunar mean of **−1.25 min** is ADR 0002's one-signed ephemeris
+offset, which is why that band is asymmetric.
+
+#### A report that measures nothing must not be able to claim agreement
+
+`assertRowsWereWalked` fails the run if any Indian site contributed no compared bound, if the fast
+count at any site is not 24, or if the compared-bound count at a site is below its printed-window
+count. This exists because a first attempt at this comparison printed a clean pass while every file
+read had failed — the summary text was a constant rather than a function of the data. Every figure
+above is now a function of the rows walked.
+
+### "Any other time-bound event" — there is no oracle, and that is now asserted
+
+The request asked about time-bound events beyond the parana. The answer is a measured negative:
+
+```
+anchored fasting notes across the 8 Indian calendars: 136 lines, 0 carrying a clock time
+    80x  (Fast till noon)
+     8x  (Fast till noon for Varahadeva, with feast tomorrow)
+     8x  (Fast till moonrise)
+     8x  (Fast till sunset)
+     8x  (Fast till dusk)
+     8x  (Fast till midnight)
+     8x  (Fast till noon for Vamanadeva, with feast tomorrow)
+     8x  (Fasting till noon, with feast tomorrow)
+```
+
+**The publisher names every anchor in words and prints a clock time for none of them.** The parana
+is the only time-bound observance in this reference that carries an instant, so it is the only one
+against which our arithmetic can be checked. We compute all six anchors and validate them *as
+astronomy* (`validation-moonrise.md`, `validation-sunrise.md`); the claim that the tradition means
+those instants has no reference and is in `pandit-review.md`.
+
+`no anchored fasting note in an Indian calendar carries a clock time` asserts the zero, so a future
+calendar that *does* print such a time fails the test and the gap becomes closable — rather than
+this remaining a sentence in a document that nobody re-checks.
 
 ### Category (a) — closed, as predicted
 
@@ -223,6 +324,58 @@ same geometric conflict; the difference between them is doctrinal, not astronomi
 > **Open question for a pandit.** When Hari Vasara outlasts the first third of daylight, may the
 > fast be broken after the daylight third (the source's implicit answer), or is there a ruling this
 > repository does not have? Three occurrences in 2026 across ten sites. Nothing here decides it.
+
+### Category (d) — two caps that are the same instant: Ahmedabad, 2026-11-06
+
+**Not predicted before the run.** This category was added after the four new Indian cities were
+harvested, because it is a failure mode the original ten did not reach. It is written up here in
+full rather than absorbed, because absorbing it is exactly the mistake it invites.
+
+The calendar prints the parana ending `10:31` and names the basis `1/3 of daylight`. `IskconRules`
+gives 10:31:04 and names `end of tithi`. The clock times agree — our delta against the printed
+minute is **+0.07 min**, comfortably inside the solar band — and only the *label* differs.
+
+The reason is that both caps exist and are 0.93 seconds apart:
+
+| Cap | Instant (IST) |
+|---|---|
+| end of the Dvadashi | 10:31:04.467 |
+| end of the first third of daylight | 10:31:05.395 |
+
+The rule takes whichever comes first, which is the correct reading, so it names the Dvadashi.
+
+**Why this is Ahmedabad's longitude and not a rule error.** The Dvadashi's end is a global instant,
+identical at all eight Indian sites. The daylight third is site-specific. Measured on this same
+date:
+
+| Site | 1/3 of daylight | Dvadashi ends | Gap |
+|---|---|---|---|
+| mayapur | 09:28:10.9 | 10:31:04.5 | 62.89 min |
+| vrindavan | 10:12:49.4 | 10:31:04.5 | 18.25 min |
+| delhi | 10:15:16.5 | 10:31:04.5 | 15.80 min |
+| mumbai | 10:28:29.6 | 10:31:04.5 | 2.58 min |
+| chennai | 09:56:18.6 | 10:31:04.5 | 34.77 min |
+| bangalore | 10:07:00.3 | 10:31:04.5 | 24.07 min |
+| **ahmedabad** | **10:31:05.4** | **10:31:04.5** | **−0.02 min (0.93 s)** |
+| guwahati | 09:16:01.6 | 10:31:04.5 | 75.05 min |
+
+The two curves cross near Ahmedabad's longitude on this date. A rule that picked the wrong cap
+would miss by minutes at every site; this misses by a second at one.
+
+**Nothing better can decide it.** 0.93 s is well inside our own input error — tithi instants agree
+with JPL to about 17 s (ADR 0002) and sunrise with USNO to about 28 s (`validation-sunrise.md`).
+No ephemeris improvement can settle which label is right, and the devotee is told 10:31 either way.
+
+**How it is held.** `ParanaBasisTie` in `GaudiyaSiteFixture.kt` names the single row and
+**re-measures the gap on every run** from the site's own index; the exception applies only while
+the gap is under 2 seconds — above the measured 0.93 s so the assertion is not knife-edged against
+itself, far below the ~17 s at which our own inputs are uncertain, so it cannot absorb a
+disagreement better inputs would have settled. The printed time is still fully asserted. And the
+count is asserted in both directions: a run where the tie *stops* occurring fails too, because the
+caps having separated means the label disagreement is real again.
+
+This is deliberately not a tolerance on the basis comparison. A tolerance would let a bound taken
+from the wrong tithi — tens of minutes out — pass under the same allowance.
 
 ### Category (c) — tithi-boundary flips, 2 of 4 label disagreements
 

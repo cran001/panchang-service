@@ -7,10 +7,11 @@ import java.time.ZonedDateTime
 import java.util.concurrent.ConcurrentHashMap
 import org.panchang.core.GeoLocation
 import org.panchang.core.PanchangCalculator
+import org.panchang.core.RiseSet
 import org.panchang.ephemeris.Vsop87Ephemeris
 
 /**
- * The ten harvested sites, and one built-once fixture per site.
+ * The fourteen harvested sites, and one built-once fixture per site.
  *
  * ## Why this exists
  *
@@ -46,6 +47,10 @@ object GaudiyaSites {
         "vrindavan",
         "delhi",
         "mumbai",
+        "chennai",
+        "bangalore",
+        "ahmedabad",
+        "guwahati",
         "london",
         "new-york",
         "sao-paulo",
@@ -54,8 +59,20 @@ object GaudiyaSites {
         "sydney",
     )
 
-    /** The four sites that share `Asia/Kolkata`. Same civil clock, four different skies. */
-    val ASIA_KOLKATA: List<String> = listOf("mayapur", "vrindavan", "delhi", "mumbai")
+    /**
+     * The eight sites that share `Asia/Kolkata`. Same civil clock, eight different skies.
+     *
+     * Ahmedabad (72E37) and Guwahati (91E44) are 19.1 degrees apart — 76 minutes of solar time
+     * inside one offset — which is the requirement this project exists to satisfy, stated as a
+     * pair of rows rather than as a claim.
+     */
+    val ASIA_KOLKATA: List<String> = listOf(
+        "mayapur", "vrindavan", "delhi", "mumbai",
+        "chennai", "bangalore", "ahmedabad", "guwahati",
+    )
+
+    /** The Indian sites, for suites that report on India specifically. Identical to [ASIA_KOLKATA]. */
+    val INDIA: List<String> = ASIA_KOLKATA
 
     /**
      * One ephemeris and one calculator for the whole test JVM.
@@ -231,6 +248,80 @@ class GaudiyaSiteFixture private constructor(
 }
 
 /**
+ * The one row where the calendar and these rules name different bounds that are the same instant.
+ *
+ * ## What was measured
+ *
+ * Ahmedabad, parana of 2026-11-06. The calendar prints `10:31` and calls it `1/3 of daylight`;
+ * these rules give 10:31:04 and call it `end of tithi`. Both bounds exist, both are computed, and
+ * they are **0.93 seconds apart**:
+ *
+ * | | instant (IST) |
+ * |---|---|
+ * | end of the Dvadashi | 10:31:04.467 |
+ * | end of the first third of daylight | 10:31:05.395 |
+ *
+ * [ParanaBasisTie.gapSeconds] recomputes that gap from the site's own index rather than trusting
+ * the numbers above, so this exception cannot outlive the condition that justifies it.
+ *
+ * ## Why this is not a rule error
+ *
+ * The rule takes whichever cap comes first, which is the correct reading and is why it names the
+ * Dvadashi here. The two candidates are only this close at this longitude: on the same date the
+ * gap at the seven other Indian sites runs from 2.58 minutes (Mumbai) to 75.05 (Guwahati). A rule
+ * that picked the wrong cap would miss by minutes everywhere, not by a second in one place.
+ *
+ * 0.93 s is well inside our own input error — tithi instants agree with JPL to about 17 s and
+ * sunrise with USNO to about 28 s — so no ephemeris work can decide which name is right, and the
+ * devotee is given 10:31 either way.
+ *
+ * ## Why a named tie and not a widened band
+ *
+ * The clock time is *not* excluded: the printed minute is still asserted and agrees to +0.07 min.
+ * Only the *label* is excepted, and only where [MAX_GAP_SECONDS] holds. A tolerance on the basis
+ * comparison would let a bound taken from the wrong tithi — tens of minutes out — pass under the
+ * same allowance.
+ */
+object ParanaBasisTie {
+
+    /**
+     * How close two candidate caps must be before disagreeing about which one to name is a tie
+     * rather than an error.
+     *
+     * Two seconds: above the 0.93 s measured here so the assertion is not knife-edged against
+     * itself, and far below the ~17 s at which our own tithi instants are uncertain, so it cannot
+     * absorb a disagreement that better inputs would have settled.
+     */
+    const val MAX_GAP_SECONDS: Double = 2.0
+
+    /** The rows this applies to, keyed `<cityId> <paranaDate> <start|end>`. */
+    val ROWS: Set<String> = setOf("ahmedabad 2026-11-06 end")
+
+    fun covers(cityId: String, date: LocalDate, which: String): Boolean =
+        "$cityId $date $which" in ROWS
+
+    /**
+     * Seconds between the two caps this rule chooses among on [date] at [site], recomputed.
+     *
+     * Derives both from the site's own index — the Dvadashi's end from the tithi spans, the first
+     * third of daylight from that day's sunrise and daylight length — so a run where the
+     * astronomy has moved reports the real gap instead of the one written in the KDoc above.
+     */
+    fun gapSeconds(site: GaudiyaSiteFixture, date: LocalDate): Double? {
+        val sun = GaudiyaSites.calculator.sunTimes(date, site.location)
+        val sunrise = (sun.sunrise as? RiseSet.At)?.jdUt ?: return null
+        val daylight = sun.daylightDays?.takeIf { it > 0.0 } ?: return null
+        val oneThird = sunrise + daylight / 3.0
+        val dvadashiEnd = site.index.spans().asSequence()
+            .filter { it.numberInPaksha == 12 }
+            .map { it.endJdUt }
+            .firstOrNull { site.location.localDate(it) == date }
+            ?: return null
+        return kotlin.math.abs(oneThird - dvadashiEnd) * 86_400.0
+    }
+}
+
+/**
  * The three days on which the source prints a parana start and no cap, and what they turned out
  * to be.
  *
@@ -260,7 +351,7 @@ class GaudiyaSiteFixture private constructor(
  * about a tradition that the only reference available declines to make — and no assertion is
  * deleted, which would quietly stop checking the start as well. The start we would derive is
  * recomputed from the index's tithi spans by [GaudiyaSiteFixture.hariVasaraEndOn] and compared
- * with the printed one; and `MultiSiteParanaConformanceTest` asserts across all ten sites that the
+ * with the printed one; and `MultiSiteParanaConformanceTest` asserts across all fourteen sites that the
  * days the source declines to cap are **exactly** the days our rules decline to bound. That
  * equality is the evidence that matters: three sites, three dates, and no site carrying one
  * without the other.

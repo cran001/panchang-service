@@ -39,7 +39,7 @@ import org.panchang.verify.usno.UsnoDayRecord
  *
  * ## Reference data
  *
- * `verify/golden/usno-grid-2026-04-14.json` (ten cities, 2026-04-14) and
+ * `verify/golden/usno-grid-2026-04-14.json` (fourteen cities, 2026-04-14) and
  * `verify/golden/usno-polar-2026-06-21.json` / `usno-polar-2026-12-21.json` (Longyearbyen at
  * 78.2°N and McMurdo at 77.8°S). Retrieved 2026-08-01 from `https://aa.usno.navy.mil/api/rstt/oneday`,
  * HTTP 200, with the per-request provenance recorded in each file's `provenance` block.
@@ -101,7 +101,7 @@ class UsnoMoonTimesConformanceTest {
     private data class Envelope(val records: List<UsnoDayRecord> = emptyList())
 
     @TestFactory
-    fun `moonrise and moonset agree with USNO across the ten reference cities`(): List<DynamicTest> {
+    fun `moonrise and moonset agree with USNO across the fourteen reference cities`(): List<DynamicTest> {
         val records = records("usno-grid-2026-04-14.json")
         assertEquals(
             ReferenceCities.ALL.size,

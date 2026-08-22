@@ -17,7 +17,7 @@ import org.panchang.core.RiseSet
 /**
  * The claims a single site structurally cannot make.
  *
- * `GaudiyaEkadashiConformanceTest` now walks ten sites, but every one of its assertions is still
+ * `GaudiyaEkadashiConformanceTest` now walks fourteen sites, but every one of its assertions is still
  * of the form "this site agrees with its own oracle". Two properties are invisible to any number
  * of independent per-site comparisons, and both are properties a user of this service depends on:
  *

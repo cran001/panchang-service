@@ -40,7 +40,7 @@ import org.panchang.ephemeris.Vsop87Ephemeris
  * day the source prints for it. Those are claims about the catalog's contents. Whether a location
  * reaches the computation is asserted by the ten-site parameterisation of
  * `GaudiyaEkadashiConformanceTest` and by [MultiSiteParanaConformanceTest], which compares two
- * sites to each other rather than each to its own oracle. Widening this suite to ten sites would
+ * sites to each other rather than each to its own oracle. Widening this suite to fourteen sites would
  * require ten marker maps and would still test the same catalog; the honest per-site question —
  * "do festival *dates* move correctly with longitude?" — needs harvested event markers per city,
  * which the current artifacts carry but no rule here consumes.

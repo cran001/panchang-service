@@ -83,6 +83,51 @@ object ReferenceCities {
         vaisnavaCalendarCity = "Bombay [India]",
     )
 
+    val CHENNAI = ReferenceCity(
+        id = "chennai",
+        displayName = "Chennai, India",
+        latitudeDeg = 13.0827,
+        longitudeDeg = 80.2707,
+        ianaZone = "Asia/Kolkata",
+        // The community calendar still files Chennai under its pre-1996 name.
+        vaisnavaCalendarCity = "Madras [India]",
+        notes = "Southernmost Indian site at 13.1N; the shortest daylight swing in the grid, " +
+            "where a hemisphere-agnostic daylight-fraction error is smallest and so hardest to see.",
+    )
+
+    val BANGALORE = ReferenceCity(
+        id = "bangalore",
+        displayName = "Bangalore, India",
+        latitudeDeg = 12.9716,
+        longitudeDeg = 77.5946,
+        ianaZone = "Asia/Kolkata",
+        vaisnavaCalendarCity = "Bangalore [India]",
+        notes = "Shares a longitude with Delhi (77.6E vs 77.2E) at sixteen degrees less " +
+            "latitude, so a disagreement here is latitude's and cannot be longitude's.",
+    )
+
+    val AHMEDABAD = ReferenceCity(
+        id = "ahmedabad",
+        displayName = "Ahmedabad, India",
+        latitudeDeg = 23.0225,
+        longitudeDeg = 72.5714,
+        ianaZone = "Asia/Kolkata",
+        vaisnavaCalendarCity = "Ahmadabad [India]",
+        notes = "Western extreme of Asia/Kolkata at 72.6E — 63 minutes of solar time from " +
+            "Guwahati inside one civil clock.",
+    )
+
+    val GUWAHATI = ReferenceCity(
+        id = "guwahati",
+        displayName = "Guwahati, India",
+        latitudeDeg = 26.1445,
+        longitudeDeg = 91.7362,
+        ianaZone = "Asia/Kolkata",
+        vaisnavaCalendarCity = "Guwahati [India]",
+        notes = "Eastern extreme of Asia/Kolkata at 91.7E; sunrise here precedes Ahmedabad's " +
+            "by over an hour on the same civil clock.",
+    )
+
     val LONDON = ReferenceCity(
         id = "london",
         displayName = "London, United Kingdom",
@@ -143,8 +188,8 @@ object ReferenceCities {
     )
 
     val ALL: List<ReferenceCity> = listOf(
-        MAYAPUR, VRINDAVAN, DELHI, MUMBAI, LONDON,
-        NEW_YORK, AUCKLAND, MOSCOW, SAO_PAULO, SYDNEY,
+        MAYAPUR, VRINDAVAN, DELHI, MUMBAI, CHENNAI, BANGALORE, AHMEDABAD, GUWAHATI,
+        LONDON, NEW_YORK, AUCKLAND, MOSCOW, SAO_PAULO, SYDNEY,
     )
 
     fun byId(id: String): ReferenceCity =

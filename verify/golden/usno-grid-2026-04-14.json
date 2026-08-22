@@ -1,5 +1,5 @@
 {
-    "writtenAtUtc": "2026-08-01T13:41:56.570013200Z",
+    "writtenAtUtc": "2026-08-02T19:04:28.959285600Z",
     "provenance": [
         {
             "sourceId": "usno-rstt-oneday",
@@ -92,6 +92,102 @@
             "responseBytes": 1268,
             "responseSha256": "6207d4deb29d41888c0789275bb773f890bd01b2251940bf935915aaa5252016",
             "rawArtifactFile": "mumbai-2026-04-14-ac2a5b9b40e6.raw",
+            "harvesterVersion": 1,
+            "notes": [
+                "Source: US Naval Observatory. US Government work."
+            ]
+        },
+        {
+            "sourceId": "usno-rstt-oneday",
+            "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-04-14&coords=13.0827%2C80.2707&tz=5.5&label=chennai",
+            "method": "GET",
+            "requestParameters": {
+                "date": "2026-04-14",
+                "coords": "13.0827,80.2707",
+                "tz": "5.5",
+                "label": "chennai"
+            },
+            "requestHeaders": {
+                "User-Agent": "panchang-service-verify/0.1 (ground-truth harvester; contact via project repository)"
+            },
+            "retrievedAtUtc": "2026-08-02T19:04:21.499148500Z",
+            "httpStatus": 200,
+            "responseContentType": "application/json",
+            "responseBytes": 1270,
+            "responseSha256": "9b4c5cd8180faebfd6042e3a5716f747a3bc153f4cb7475ce85e13ab1dfb1a04",
+            "rawArtifactFile": "chennai-2026-04-14-0dcc6660ef60.raw",
+            "harvesterVersion": 1,
+            "notes": [
+                "Source: US Naval Observatory. US Government work."
+            ]
+        },
+        {
+            "sourceId": "usno-rstt-oneday",
+            "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-04-14&coords=12.9716%2C77.5946&tz=5.5&label=bangalore",
+            "method": "GET",
+            "requestParameters": {
+                "date": "2026-04-14",
+                "coords": "12.9716,77.5946",
+                "tz": "5.5",
+                "label": "bangalore"
+            },
+            "requestHeaders": {
+                "User-Agent": "panchang-service-verify/0.1 (ground-truth harvester; contact via project repository)"
+            },
+            "retrievedAtUtc": "2026-08-02T19:04:23.867036500Z",
+            "httpStatus": 200,
+            "responseContentType": "application/json",
+            "responseBytes": 1272,
+            "responseSha256": "a71f9a814e055f035355c405ad19a71d883006deb4d390a822f80f841f8e0131",
+            "rawArtifactFile": "bangalore-2026-04-14-8c22b703e77e.raw",
+            "harvesterVersion": 1,
+            "notes": [
+                "Source: US Naval Observatory. US Government work."
+            ]
+        },
+        {
+            "sourceId": "usno-rstt-oneday",
+            "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-04-14&coords=23.0225%2C72.5714&tz=5.5&label=ahmedabad",
+            "method": "GET",
+            "requestParameters": {
+                "date": "2026-04-14",
+                "coords": "23.0225,72.5714",
+                "tz": "5.5",
+                "label": "ahmedabad"
+            },
+            "requestHeaders": {
+                "User-Agent": "panchang-service-verify/0.1 (ground-truth harvester; contact via project repository)"
+            },
+            "retrievedAtUtc": "2026-08-02T19:04:26.791767600Z",
+            "httpStatus": 200,
+            "responseContentType": "application/json",
+            "responseBytes": 1272,
+            "responseSha256": "9c05172b981e341bf5b53bcd72bba0d7c124dfcb9a5c9694453602566d7fa173",
+            "rawArtifactFile": "ahmedabad-2026-04-14-51b7af402ee4.raw",
+            "harvesterVersion": 1,
+            "notes": [
+                "Source: US Naval Observatory. US Government work."
+            ]
+        },
+        {
+            "sourceId": "usno-rstt-oneday",
+            "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-04-14&coords=26.1445%2C91.7362&tz=5.5&label=guwahati",
+            "method": "GET",
+            "requestParameters": {
+                "date": "2026-04-14",
+                "coords": "26.1445,91.7362",
+                "tz": "5.5",
+                "label": "guwahati"
+            },
+            "requestHeaders": {
+                "User-Agent": "panchang-service-verify/0.1 (ground-truth harvester; contact via project repository)"
+            },
+            "retrievedAtUtc": "2026-08-02T19:04:28.933891700Z",
+            "httpStatus": 200,
+            "responseContentType": "application/json",
+            "responseBytes": 1271,
+            "responseSha256": "0a2c7ed157b003a44b55f8a234bc5cc2cf2f6111981b2585e55529db5cc65c6d",
+            "rawArtifactFile": "guwahati-2026-04-14-6d1b668280e5.raw",
             "harvesterVersion": 1,
             "notes": [
                 "Source: US Naval Observatory. US Government work."
@@ -385,6 +481,162 @@
             ],
             "moonUpperTransits": [
                 "09:58"
+            ],
+            "sunCondition": null,
+            "sunTwilightCondition": null,
+            "moonCondition": null,
+            "currentMoonPhase": "Waning Crescent",
+            "fractionIlluminated": "13%",
+            "closestPhase": {
+                "phase": "New Moon",
+                "year": 2026,
+                "month": 4,
+                "day": 17,
+                "time": "17:22"
+            }
+        },
+        {
+            "date": "2026-04-14",
+            "latitudeDeg": 13.0827,
+            "longitudeDeg": 80.2707,
+            "utcOffsetHours": 5.5,
+            "isDst": false,
+            "sunRises": [
+                "05:57"
+            ],
+            "sunSets": [
+                "18:22"
+            ],
+            "sunUpperTransits": [
+                "12:09"
+            ],
+            "beginCivilTwilight": "05:35",
+            "endCivilTwilight": "18:43",
+            "moonRises": [
+                "03:25"
+            ],
+            "moonSets": [
+                "15:32"
+            ],
+            "moonUpperTransits": [
+                "09:27"
+            ],
+            "sunCondition": null,
+            "sunTwilightCondition": null,
+            "moonCondition": null,
+            "currentMoonPhase": "Waning Crescent",
+            "fractionIlluminated": "13%",
+            "closestPhase": {
+                "phase": "New Moon",
+                "year": 2026,
+                "month": 4,
+                "day": 17,
+                "time": "17:22"
+            }
+        },
+        {
+            "date": "2026-04-14",
+            "latitudeDeg": 12.9716,
+            "longitudeDeg": 77.5946,
+            "utcOffsetHours": 5.5,
+            "isDst": false,
+            "sunRises": [
+                "06:08"
+            ],
+            "sunSets": [
+                "18:32"
+            ],
+            "sunUpperTransits": [
+                "12:20"
+            ],
+            "beginCivilTwilight": "05:46",
+            "endCivilTwilight": "18:54",
+            "moonRises": [
+                "03:36"
+            ],
+            "moonSets": [
+                "15:44"
+            ],
+            "moonUpperTransits": [
+                "09:38"
+            ],
+            "sunCondition": null,
+            "sunTwilightCondition": null,
+            "moonCondition": null,
+            "currentMoonPhase": "Waning Crescent",
+            "fractionIlluminated": "13%",
+            "closestPhase": {
+                "phase": "New Moon",
+                "year": 2026,
+                "month": 4,
+                "day": 17,
+                "time": "17:22"
+            }
+        },
+        {
+            "date": "2026-04-14",
+            "latitudeDeg": 23.0225,
+            "longitudeDeg": 72.5714,
+            "utcOffsetHours": 5.5,
+            "isDst": false,
+            "sunRises": [
+                "06:20"
+            ],
+            "sunSets": [
+                "19:00"
+            ],
+            "sunUpperTransits": [
+                "12:40"
+            ],
+            "beginCivilTwilight": "05:57",
+            "endCivilTwilight": "19:23",
+            "moonRises": [
+                "04:04"
+            ],
+            "moonSets": [
+                "16:00"
+            ],
+            "moonUpperTransits": [
+                "09:59"
+            ],
+            "sunCondition": null,
+            "sunTwilightCondition": null,
+            "moonCondition": null,
+            "currentMoonPhase": "Waning Crescent",
+            "fractionIlluminated": "13%",
+            "closestPhase": {
+                "phase": "New Moon",
+                "year": 2026,
+                "month": 4,
+                "day": 17,
+                "time": "17:22"
+            }
+        },
+        {
+            "date": "2026-04-14",
+            "latitudeDeg": 26.1445,
+            "longitudeDeg": 91.7362,
+            "utcOffsetHours": 5.5,
+            "isDst": false,
+            "sunRises": [
+                "05:01"
+            ],
+            "sunSets": [
+                "17:46"
+            ],
+            "sunUpperTransits": [
+                "11:23"
+            ],
+            "beginCivilTwilight": "04:38",
+            "endCivilTwilight": "18:10",
+            "moonRises": [
+                "02:48"
+            ],
+            "moonSets": [
+                "14:38"
+            ],
+            "moonUpperTransits": [
+                "08:40"
             ],
             "sunCondition": null,
             "sunTwilightCondition": null,

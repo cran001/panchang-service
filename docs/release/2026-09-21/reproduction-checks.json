@@ -1,0 +1,272 @@
+[
+  {
+    "city": "ahmedabad",
+    "year": 2025,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "ahmedabad",
+    "year": 2026,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "ahmedabad",
+    "year": 2027,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "auckland",
+    "year": 2025,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "auckland",
+    "year": 2026,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "auckland",
+    "year": 2027,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "bangalore",
+    "year": 2025,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "bangalore",
+    "year": 2026,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "bangalore",
+    "year": 2027,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "chennai",
+    "year": 2025,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "chennai",
+    "year": 2026,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "chennai",
+    "year": 2027,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "delhi",
+    "year": 2025,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "delhi",
+    "year": 2026,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "delhi",
+    "year": 2027,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "guwahati",
+    "year": 2025,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "guwahati",
+    "year": 2026,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "guwahati",
+    "year": 2027,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "hyderabad",
+    "year": 2025,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "hyderabad",
+    "year": 2026,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "hyderabad",
+    "year": 2027,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "london",
+    "year": 2025,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "london",
+    "year": 2026,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "london",
+    "year": 2027,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "mayapur",
+    "year": 2025,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "mayapur",
+    "year": 2026,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "mayapur",
+    "year": 2027,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "moscow",
+    "year": 2025,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "moscow",
+    "year": 2026,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "moscow",
+    "year": 2027,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "mumbai",
+    "year": 2025,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "mumbai",
+    "year": 2026,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "mumbai",
+    "year": 2027,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "new-york",
+    "year": 2025,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "new-york",
+    "year": 2026,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "new-york",
+    "year": 2027,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "sao-paulo",
+    "year": 2025,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "sao-paulo",
+    "year": 2026,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "sao-paulo",
+    "year": 2027,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "sydney",
+    "year": 2025,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "sydney",
+    "year": 2026,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "sydney",
+    "year": 2027,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "vrindavan",
+    "year": 2025,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "vrindavan",
+    "year": 2026,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  },
+  {
+    "city": "vrindavan",
+    "year": 2027,
+    "resultUnchanged": true,
+    "comparisonsUnchanged": true
+  }
+]

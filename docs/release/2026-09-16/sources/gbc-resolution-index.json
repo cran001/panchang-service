@@ -1,0 +1,24 @@
+{
+  "id": "gbc-resolution-index",
+  "url": "https://gbc.iskcon.org/gbc-resolutions/",
+  "kind": "primary-authority-index",
+  "retrievedAtUtc": "2026-09-20T17:57:02.951055+00:00",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": 200,
+  "finalUrl": "https://gbc.iskcon.org/gbc-resolutions/",
+  "responseHeaders": {
+    "Server": "nginx/1.31.1",
+    "Date": "Sun, 20 Sep 2026 17:57:08 GMT",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Vary": "Accept-Encoding",
+    "Link": "<https://gbc.iskcon.org/wp-json/>; rel=\"https://api.w.org/\", <https://gbc.iskcon.org/wp-json/wp/v2/pages/251>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://gbc.iskcon.org/?p=251>; rel=shortlink",
+    "X-Proxy-Cache": "HIT"
+  },
+  "file": "docs/release/2026-09-16/sources/gbc-resolution-index.raw",
+  "sha256": "d08e6da0c5bc98af833c7d81d812838e30af10051961f3aaa1b8410e9d8b5a02",
+  "bytes": 131916
+}

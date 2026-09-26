@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="VSOP87D — authors' published check values" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-09-20T18:07:48" hostname="DESKTOP-KBUKJ2P" time="0.086">
+  <properties/>
+  <testcase name="reproduces all ten published EARTH blocks()" classname="org.panchang.ephemeris.Vsop87CheckValuesTest" time="0.041"/>
+  <testcase name="the centuries-instead-of-millennia error would be caught()" classname="org.panchang.ephemeris.Vsop87CheckValuesTest" time="0.012"/>
+  <testcase name="J2000 block matches the value quoted in PROVENANCE()" classname="org.panchang.ephemeris.Vsop87CheckValuesTest" time="0.001"/>
+  <testcase name="all published terms are loaded()" classname="org.panchang.ephemeris.Vsop87CheckValuesTest" time="0.012"/>
+  <system-out><![CDATA[VSOP87D EARTH vs published check values, worst of 10 epochs: l 3.969e-11 rad  b 4.370e-11 rad  r 4.745e-11 au
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

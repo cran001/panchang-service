@@ -1,0 +1,496 @@
+[
+  {
+    "fixture": "verify\\golden\\horizons-moon-2026-04-14_2026-04-21.json",
+    "fixtureSha256": "020757a14c6995cc6cd5c522f35e2aaa6a85d7392d08a156a7d8181cdf6335d8",
+    "sourceUrl": "https://ssd.jpl.nasa.gov/api/horizons.api?format=text&COMMAND=%27301%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27500%40399%27&START_TIME=%272026-04-14%27&STOP_TIME=%272026-04-21%27&STEP_SIZE=%271%20d%27&QUANTITIES=%2731%2C20%27&CAL_FORMAT=%27CAL%27&ANG_FORMAT=%27DEG%27&TIME_DIGITS=%27SECONDS%27&CSV_FORMAT=%27YES%27",
+    "retrievedAtUtc": "2026-08-01T13:40:47.748809900Z",
+    "rawFile": "verify\\cache\\jpl-horizons\\moon-2026-04-14_2026-04-21-d484a2767d90.raw",
+    "rawPresent": true,
+    "rawChecksumMatches": true,
+    "rawResponseSha256": "e168ac57adecc2fdde893aaf13469ce220c4a6feb2b20ffb687ea2cc03a6891e",
+    "parameters": {
+      "format": "text",
+      "COMMAND": "'301'",
+      "OBJ_DATA": "'NO'",
+      "MAKE_EPHEM": "'YES'",
+      "EPHEM_TYPE": "'OBSERVER'",
+      "CENTER": "'500@399'",
+      "START_TIME": "'2026-04-14'",
+      "STOP_TIME": "'2026-04-21'",
+      "STEP_SIZE": "'1 d'",
+      "QUANTITIES": "'31,20'",
+      "CAL_FORMAT": "'CAL'",
+      "ANG_FORMAT": "'DEG'",
+      "TIME_DIGITS": "'SECONDS'",
+      "CSV_FORMAT": "'YES'"
+    }
+  },
+  {
+    "fixture": "verify\\golden\\horizons-sun-2026-04-14_2026-04-21.json",
+    "fixtureSha256": "7606735e8dc61416bd2d5207cd35bd1fee0db34e8716396e7afcb7f5e040c409",
+    "sourceUrl": "https://ssd.jpl.nasa.gov/api/horizons.api?format=text&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27500%40399%27&START_TIME=%272026-04-14%27&STOP_TIME=%272026-04-21%27&STEP_SIZE=%271%20d%27&QUANTITIES=%2731%2C20%27&CAL_FORMAT=%27CAL%27&ANG_FORMAT=%27DEG%27&TIME_DIGITS=%27SECONDS%27&CSV_FORMAT=%27YES%27",
+    "retrievedAtUtc": "2026-08-01T13:40:06.106148300Z",
+    "rawFile": "verify\\cache\\jpl-horizons\\sun-2026-04-14_2026-04-21-f1473dad81e6.raw",
+    "rawPresent": true,
+    "rawChecksumMatches": true,
+    "rawResponseSha256": "9a67c1de4ce74f1625330035b96c4ef63bd7485cabf7522d1736393ff62de604",
+    "parameters": {
+      "format": "text",
+      "COMMAND": "'10'",
+      "OBJ_DATA": "'NO'",
+      "MAKE_EPHEM": "'YES'",
+      "EPHEM_TYPE": "'OBSERVER'",
+      "CENTER": "'500@399'",
+      "START_TIME": "'2026-04-14'",
+      "STOP_TIME": "'2026-04-21'",
+      "STEP_SIZE": "'1 d'",
+      "QUANTITIES": "'31,20'",
+      "CAL_FORMAT": "'CAL'",
+      "ANG_FORMAT": "'DEG'",
+      "TIME_DIGITS": "'SECONDS'",
+      "CSV_FORMAT": "'YES'"
+    }
+  },
+  {
+    "fixture": "verify\\golden\\usno-grid-2026-04-14.json",
+    "fixtureSha256": "f46f3b68e873f353e022ed8f8b01ff2c62267cbf472cc23a26cb7731301c41b2",
+    "sourceUrl": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-04-14&coords=23.4242%2C88.3888&tz=5.5&label=mayapur",
+    "retrievedAtUtc": "2026-08-01T13:41:36.230468500Z",
+    "rawFile": "verify\\cache\\usno-rstt-oneday\\mayapur-2026-04-14-026d999ffcfc.raw",
+    "rawPresent": true,
+    "rawChecksumMatches": true,
+    "rawResponseSha256": "7078d66343efbfeccb71e64729182a46068ec2d67979d3c08361557e0c1764b4",
+    "parameters": {
+      "date": "2026-04-14",
+      "coords": "23.4242,88.3888",
+      "tz": "5.5",
+      "label": "mayapur"
+    }
+  },
+  {
+    "fixture": "verify\\golden\\usno-grid-2026-04-14.json",
+    "fixtureSha256": "f46f3b68e873f353e022ed8f8b01ff2c62267cbf472cc23a26cb7731301c41b2",
+    "sourceUrl": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-04-14&coords=27.5806%2C77.7006&tz=5.5&label=vrindavan",
+    "retrievedAtUtc": "2026-08-01T13:41:38.380684500Z",
+    "rawFile": "verify\\cache\\usno-rstt-oneday\\vrindavan-2026-04-14-eb92a38b7b40.raw",
+    "rawPresent": true,
+    "rawChecksumMatches": true,
+    "rawResponseSha256": "0d7ee02a35a26bbb456fa71fd0df729b02d8e42a903f555a68e5264e044e4d67",
+    "parameters": {
+      "date": "2026-04-14",
+      "coords": "27.5806,77.7006",
+      "tz": "5.5",
+      "label": "vrindavan"
+    }
+  },
+  {
+    "fixture": "verify\\golden\\usno-grid-2026-04-14.json",
+    "fixtureSha256": "f46f3b68e873f353e022ed8f8b01ff2c62267cbf472cc23a26cb7731301c41b2",
+    "sourceUrl": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-04-14&coords=28.6139%2C77.209&tz=5.5&label=delhi",
+    "retrievedAtUtc": "2026-08-01T13:41:40.535405400Z",
+    "rawFile": "verify\\cache\\usno-rstt-oneday\\delhi-2026-04-14-36f5245f80ae.raw",
+    "rawPresent": true,
+    "rawChecksumMatches": true,
+    "rawResponseSha256": "fb20580bcaf147904671ed21be79bda59b2c8171c151ec23823aea3088d04774",
+    "parameters": {
+      "date": "2026-04-14",
+      "coords": "28.6139,77.209",
+      "tz": "5.5",
+      "label": "delhi"
+    }
+  },
+  {
+    "fixture": "verify\\golden\\usno-grid-2026-04-14.json",
+    "fixtureSha256": "f46f3b68e873f353e022ed8f8b01ff2c62267cbf472cc23a26cb7731301c41b2",
+    "sourceUrl": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-04-14&coords=19.076%2C72.8777&tz=5.5&label=mumbai",
+    "retrievedAtUtc": "2026-08-01T13:41:42.692244700Z",
+    "rawFile": "verify\\cache\\usno-rstt-oneday\\mumbai-2026-04-14-ac2a5b9b40e6.raw",
+    "rawPresent": true,
+    "rawChecksumMatches": true,
+    "rawResponseSha256": "6207d4deb29d41888c0789275bb773f890bd01b2251940bf935915aaa5252016",
+    "parameters": {
+      "date": "2026-04-14",
+      "coords": "19.076,72.8777",
+      "tz": "5.5",
+      "label": "mumbai"
+    }
+  },
+  {
+    "fixture": "verify\\golden\\usno-grid-2026-04-14.json",
+    "fixtureSha256": "f46f3b68e873f353e022ed8f8b01ff2c62267cbf472cc23a26cb7731301c41b2",
+    "sourceUrl": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-04-14&coords=13.0827%2C80.2707&tz=5.5&label=chennai",
+    "retrievedAtUtc": "2026-08-02T19:04:21.499148500Z",
+    "rawFile": "verify\\cache\\usno-rstt-oneday\\chennai-2026-04-14-0dcc6660ef60.raw",
+    "rawPresent": true,
+    "rawChecksumMatches": true,
+    "rawResponseSha256": "9b4c5cd8180faebfd6042e3a5716f747a3bc153f4cb7475ce85e13ab1dfb1a04",
+    "parameters": {
+      "date": "2026-04-14",
+      "coords": "13.0827,80.2707",
+      "tz": "5.5",
+      "label": "chennai"
+    }
+  },
+  {
+    "fixture": "verify\\golden\\usno-grid-2026-04-14.json",
+    "fixtureSha256": "f46f3b68e873f353e022ed8f8b01ff2c62267cbf472cc23a26cb7731301c41b2",
+    "sourceUrl": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-04-14&coords=12.9716%2C77.5946&tz=5.5&label=bangalore",
+    "retrievedAtUtc": "2026-08-02T19:04:23.867036500Z",
+    "rawFile": "verify\\cache\\usno-rstt-oneday\\bangalore-2026-04-14-8c22b703e77e.raw",
+    "rawPresent": true,
+    "rawChecksumMatches": true,
+    "rawResponseSha256": "a71f9a814e055f035355c405ad19a71d883006deb4d390a822f80f841f8e0131",
+    "parameters": {
+      "date": "2026-04-14",
+      "coords": "12.9716,77.5946",
+      "tz": "5.5",
+      "label": "bangalore"
+    }
+  },
+  {
+    "fixture": "verify\\golden\\usno-grid-2026-04-14.json",
+    "fixtureSha256": "f46f3b68e873f353e022ed8f8b01ff2c62267cbf472cc23a26cb7731301c41b2",
+    "sourceUrl": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-04-14&coords=23.0225%2C72.5714&tz=5.5&label=ahmedabad",
+    "retrievedAtUtc": "2026-08-02T19:04:26.791767600Z",
+    "rawFile": "verify\\cache\\usno-rstt-oneday\\ahmedabad-2026-04-14-51b7af402ee4.raw",
+    "rawPresent": true,
+    "rawChecksumMatches": true,
+    "rawResponseSha256": "9c05172b981e341bf5b53bcd72bba0d7c124dfcb9a5c9694453602566d7fa173",
+    "parameters": {
+      "date": "2026-04-14",
+      "coords": "23.0225,72.5714",
+      "tz": "5.5",
+      "label": "ahmedabad"
+    }
+  },
+  {
+    "fixture": "verify\\golden\\usno-grid-2026-04-14.json",
+    "fixtureSha256": "f46f3b68e873f353e022ed8f8b01ff2c62267cbf472cc23a26cb7731301c41b2",
+    "sourceUrl": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-04-14&coords=26.1445%2C91.7362&tz=5.5&label=guwahati",
+    "retrievedAtUtc": "2026-08-02T19:04:28.933891700Z",
+    "rawFile": "verify\\cache\\usno-rstt-oneday\\guwahati-2026-04-14-6d1b668280e5.raw",
+    "rawPresent": true,
+    "rawChecksumMatches": true,
+    "rawResponseSha256": "0a2c7ed157b003a44b55f8a234bc5cc2cf2f6111981b2585e55529db5cc65c6d",
+    "parameters": {
+      "date": "2026-04-14",
+      "coords": "26.1445,91.7362",
+      "tz": "5.5",
+      "label": "guwahati"
+    }
+  },
+  {
+    "fixture": "verify\\golden\\usno-grid-2026-04-14.json",
+    "fixtureSha256": "f46f3b68e873f353e022ed8f8b01ff2c62267cbf472cc23a26cb7731301c41b2",
+    "sourceUrl": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-04-14&coords=51.5074%2C-0.1278&tz=1&label=london",
+    "retrievedAtUtc": "2026-08-01T13:41:44.976500700Z",
+    "rawFile": "verify\\cache\\usno-rstt-oneday\\london-2026-04-14-c23e9f003fb3.raw",
+    "rawPresent": true,
+    "rawChecksumMatches": true,
+    "rawResponseSha256": "fe033ea6cba63e6275550a328d2990d6d38a77f982fee819f07afd978366f235",
+    "parameters": {
+      "date": "2026-04-14",
+      "coords": "51.5074,-0.1278",
+      "tz": "1",
+      "label": "london"
+    }
+  },
+  {
+    "fixture": "verify\\golden\\usno-grid-2026-04-14.json",
+    "fixtureSha256": "f46f3b68e873f353e022ed8f8b01ff2c62267cbf472cc23a26cb7731301c41b2",
+    "sourceUrl": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-04-14&coords=40.7128%2C-74.006&tz=-4&label=new-york",
+    "retrievedAtUtc": "2026-08-01T13:41:47.126111400Z",
+    "rawFile": "verify\\cache\\usno-rstt-oneday\\new-york-2026-04-14-71f17a4aea51.raw",
+    "rawPresent": true,
+    "rawChecksumMatches": true,
+    "rawResponseSha256": "83cffe2d5da9f8618a783ab4677c2824d1315f4f39568273d44c15727d6bc19d",
+    "parameters": {
+      "date": "2026-04-14",
+      "coords": "40.7128,-74.006",
+      "tz": "-4",
+      "label": "new-york"
+    }
+  },
+  {
+    "fixture": "verify\\golden\\usno-grid-2026-04-14.json",
+    "fixtureSha256": "f46f3b68e873f353e022ed8f8b01ff2c62267cbf472cc23a26cb7731301c41b2",
+    "sourceUrl": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-04-14&coords=-36.8485%2C174.7633&tz=12&label=auckland",
+    "retrievedAtUtc": "2026-08-01T13:41:49.319320Z",
+    "rawFile": "verify\\cache\\usno-rstt-oneday\\auckland-2026-04-14-65e708fe0f59.raw",
+    "rawPresent": true,
+    "rawChecksumMatches": true,
+    "rawResponseSha256": "0c64a301c1bb15509f7c89a24a2ca147f534ee24eb9f1a25c13159ab70267286",
+    "parameters": {
+      "date": "2026-04-14",
+      "coords": "-36.8485,174.7633",
+      "tz": "12",
+      "label": "auckland"
+    }
+  },
+  {
+    "fixture": "verify\\golden\\usno-grid-2026-04-14.json",
+    "fixtureSha256": "f46f3b68e873f353e022ed8f8b01ff2c62267cbf472cc23a26cb7731301c41b2",
+    "sourceUrl": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-04-14&coords=55.7558%2C37.6173&tz=3&label=moscow",
+    "retrievedAtUtc": "2026-08-01T13:41:52.127426400Z",
+    "rawFile": "verify\\cache\\usno-rstt-oneday\\moscow-2026-04-14-f47f61447b96.raw",
+    "rawPresent": true,
+    "rawChecksumMatches": true,
+    "rawResponseSha256": "d7a327428604d23bedf80f253a59bfba34d2fc888813b7593f3413f71d6a136c",
+    "parameters": {
+      "date": "2026-04-14",
+      "coords": "55.7558,37.6173",
+      "tz": "3",
+      "label": "moscow"
+    }
+  },
+  {
+    "fixture": "verify\\golden\\usno-grid-2026-04-14.json",
+    "fixtureSha256": "f46f3b68e873f353e022ed8f8b01ff2c62267cbf472cc23a26cb7731301c41b2",
+    "sourceUrl": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-04-14&coords=-23.5505%2C-46.6333&tz=-3&label=sao-paulo",
+    "retrievedAtUtc": "2026-08-01T13:41:54.406434200Z",
+    "rawFile": "verify\\cache\\usno-rstt-oneday\\sao-paulo-2026-04-14-509ef45431d5.raw",
+    "rawPresent": true,
+    "rawChecksumMatches": true,
+    "rawResponseSha256": "5f4417ca191e1733338f09f2e63b05ed14ced287312c2a22dd3cacbfc04b83c9",
+    "parameters": {
+      "date": "2026-04-14",
+      "coords": "-23.5505,-46.6333",
+      "tz": "-3",
+      "label": "sao-paulo"
+    }
+  },
+  {
+    "fixture": "verify\\golden\\usno-grid-2026-04-14.json",
+    "fixtureSha256": "f46f3b68e873f353e022ed8f8b01ff2c62267cbf472cc23a26cb7731301c41b2",
+    "sourceUrl": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-04-14&coords=-33.8688%2C151.2093&tz=10&label=sydney",
+    "retrievedAtUtc": "2026-08-01T13:41:56.563056800Z",
+    "rawFile": "verify\\cache\\usno-rstt-oneday\\sydney-2026-04-14-ea41f8646659.raw",
+    "rawPresent": true,
+    "rawChecksumMatches": true,
+    "rawResponseSha256": "0b374f04fa463bd6e40783e7288c3022cbfc3d873cc81cb2f957723d66549875",
+    "parameters": {
+      "date": "2026-04-14",
+      "coords": "-33.8688,151.2093",
+      "tz": "10",
+      "label": "sydney"
+    }
+  },
+  {
+    "fixture": "verify\\golden\\usno-polar-2026-06-21.json",
+    "fixtureSha256": "cdd8cd8071824a7bf6f5af9fa56d7a01c9592481ccc0aa7075b48d9a8c8da92d",
+    "sourceUrl": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-06-21&coords=78.2232%2C15.6469&tz=2&label=longyearbyen",
+    "retrievedAtUtc": "2026-08-01T13:42:25.161547300Z",
+    "rawFile": "verify\\cache\\usno-rstt-oneday\\longyearbyen-2026-06-21-51b3982812ea.raw",
+    "rawPresent": true,
+    "rawChecksumMatches": true,
+    "rawResponseSha256": "f887082da6be6240297211f290085fdee78034d1f5ed81f331671e48bea3e6fb",
+    "parameters": {
+      "date": "2026-06-21",
+      "coords": "78.2232,15.6469",
+      "tz": "2",
+      "label": "longyearbyen"
+    }
+  },
+  {
+    "fixture": "verify\\golden\\usno-polar-2026-06-21.json",
+    "fixtureSha256": "cdd8cd8071824a7bf6f5af9fa56d7a01c9592481ccc0aa7075b48d9a8c8da92d",
+    "sourceUrl": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-06-21&coords=-77.8419%2C166.6863&tz=12&label=mcmurdo",
+    "retrievedAtUtc": "2026-08-01T13:42:27.804240700Z",
+    "rawFile": "verify\\cache\\usno-rstt-oneday\\mcmurdo-2026-06-21-8678dfa1c57e.raw",
+    "rawPresent": true,
+    "rawChecksumMatches": true,
+    "rawResponseSha256": "a04f4479c90233a483203ca1bafa4a0c42d2ceb7ed19d314a37d00564b9f5a24",
+    "parameters": {
+      "date": "2026-06-21",
+      "coords": "-77.8419,166.6863",
+      "tz": "12",
+      "label": "mcmurdo"
+    }
+  },
+  {
+    "fixture": "verify\\golden\\usno-polar-2026-12-21.json",
+    "fixtureSha256": "cc75e3ba6183b7830ab0391176279ad3aef9bdaa3cc121b08c2ae3fb75f35ef9",
+    "sourceUrl": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-12-21&coords=78.2232%2C15.6469&tz=1&label=longyearbyen",
+    "retrievedAtUtc": "2026-08-01T13:42:40.318796400Z",
+    "rawFile": "verify\\cache\\usno-rstt-oneday\\longyearbyen-2026-12-21-b611967221e7.raw",
+    "rawPresent": true,
+    "rawChecksumMatches": true,
+    "rawResponseSha256": "c9bfb6304bcef7ae5816b1948825903572eda85f4fd0dbc6dcd5489575a3ef28",
+    "parameters": {
+      "date": "2026-12-21",
+      "coords": "78.2232,15.6469",
+      "tz": "1",
+      "label": "longyearbyen"
+    }
+  },
+  {
+    "fixture": "verify\\golden\\usno-polar-2026-12-21.json",
+    "fixtureSha256": "cc75e3ba6183b7830ab0391176279ad3aef9bdaa3cc121b08c2ae3fb75f35ef9",
+    "sourceUrl": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-12-21&coords=-77.8419%2C166.6863&tz=13&label=mcmurdo",
+    "retrievedAtUtc": "2026-08-01T13:42:42.463639600Z",
+    "rawFile": "verify\\cache\\usno-rstt-oneday\\mcmurdo-2026-12-21-46636e293bb2.raw",
+    "rawPresent": true,
+    "rawChecksumMatches": true,
+    "rawResponseSha256": "53b7f4a1dba2bd045e0ee1dc1456e1ecb38d4be1286de9b241baf366c1bc1a60",
+    "parameters": {
+      "date": "2026-12-21",
+      "coords": "-77.8419,166.6863",
+      "tz": "13",
+      "label": "mcmurdo"
+    }
+  },
+  {
+    "fixture": "verify\\golden\\vaisnavacalendar-ahmedabad-2026.json",
+    "fixtureSha256": "afba78d8a2d6dee9b1d3c5a46ef268d2ec4b06bc31b875ce01ff742fc2c0fcf5",
+    "sourceUrl": "https://www.vaisnavacalendar.info/calendars/2026/Ahmadabad%20%5BIndia%5D.txt",
+    "retrievedAtUtc": "2026-08-02T19:01:35.661496100Z",
+    "rawFile": "verify\\cache\\vaisnavacalendar-txt\\Ahmadabad__India_-2026-b7d19ec71950.raw",
+    "rawPresent": true,
+    "rawChecksumMatches": true,
+    "rawResponseSha256": "28ea1f7d579fcae374a48ad9545c0cbbffd45edd0d11d783935ad38cc4d3c26a",
+    "parameters": {}
+  },
+  {
+    "fixture": "verify\\golden\\vaisnavacalendar-auckland-2026.json",
+    "fixtureSha256": "4c528a0f9c94f6512249161ba08ff145c57b3458a7c5709ee1e5f1ee1a17d0a0",
+    "sourceUrl": "https://www.vaisnavacalendar.info/calendars/2026/Auckland%20%5BNew%20Zealand%5D.txt",
+    "retrievedAtUtc": "2026-08-01T13:43:29.372524600Z",
+    "rawFile": "verify\\cache\\vaisnavacalendar-txt\\Auckland__New_Zealand_-2026-ca5841fae827.raw",
+    "rawPresent": true,
+    "rawChecksumMatches": true,
+    "rawResponseSha256": "ef4246bff1a7339c87653ae87b50d8c137fdbd289af4d9dd95c1f9832a3fe53d",
+    "parameters": {}
+  },
+  {
+    "fixture": "verify\\golden\\vaisnavacalendar-bangalore-2026.json",
+    "fixtureSha256": "7e680adec5a2f63dddfafe47573d82b50b89b632ba9e6bfb098d055b4e5d5679",
+    "sourceUrl": "https://www.vaisnavacalendar.info/calendars/2026/Bangalore%20%5BIndia%5D.txt",
+    "retrievedAtUtc": "2026-08-02T19:01:22.183229600Z",
+    "rawFile": "verify\\cache\\vaisnavacalendar-txt\\Bangalore__India_-2026-d229ab4687da.raw",
+    "rawPresent": true,
+    "rawChecksumMatches": true,
+    "rawResponseSha256": "781f54e9914e832ea16fd4787aa89a559dece9b639858be4f94479be21903972",
+    "parameters": {}
+  },
+  {
+    "fixture": "verify\\golden\\vaisnavacalendar-chennai-2026.json",
+    "fixtureSha256": "50a4554c30ad8c66e574e898c447681958edd77c81340de29033f5d1893f05ba",
+    "sourceUrl": "https://www.vaisnavacalendar.info/calendars/2026/Madras%20%5BIndia%5D.txt",
+    "retrievedAtUtc": "2026-08-02T19:01:08.256379300Z",
+    "rawFile": "verify\\cache\\vaisnavacalendar-txt\\Madras__India_-2026-a018cc603cab.raw",
+    "rawPresent": true,
+    "rawChecksumMatches": true,
+    "rawResponseSha256": "76cad39e527ffdecbcdbb15bd597873440769f8259f59fd7142db2d7c99a1bcf",
+    "parameters": {}
+  },
+  {
+    "fixture": "verify\\golden\\vaisnavacalendar-delhi-2026.json",
+    "fixtureSha256": "abac9645623b4b5914f176a53371f072bd77bc328837716d65e9655d963386c7",
+    "sourceUrl": "https://www.vaisnavacalendar.info/calendars/2026/Delhi%20%5BIndia%5D.txt",
+    "retrievedAtUtc": "2026-08-01T13:43:13.585529600Z",
+    "rawFile": "verify\\cache\\vaisnavacalendar-txt\\Delhi__India_-2026-7378b1209222.raw",
+    "rawPresent": true,
+    "rawChecksumMatches": true,
+    "rawResponseSha256": "2477eeb288fbf0aa27969de770e142d6a397624dd6e4f5a4c746d574e141eebe",
+    "parameters": {}
+  },
+  {
+    "fixture": "verify\\golden\\vaisnavacalendar-guwahati-2026.json",
+    "fixtureSha256": "db2c40821e8b8c2bef605e4ed3e63b964fdf8ad1ecb8e484dcd30142b50c8c7a",
+    "sourceUrl": "https://www.vaisnavacalendar.info/calendars/2026/Guwahati%20%5BIndia%5D.txt",
+    "retrievedAtUtc": "2026-08-02T19:01:49.020583500Z",
+    "rawFile": "verify\\cache\\vaisnavacalendar-txt\\Guwahati__India_-2026-38c4597eea0d.raw",
+    "rawPresent": true,
+    "rawChecksumMatches": true,
+    "rawResponseSha256": "5819d25013ad2374115d22504d7193fb2655ff91e7d6f8915200bd7d3876ed9c",
+    "parameters": {}
+  },
+  {
+    "fixture": "verify\\golden\\vaisnavacalendar-london-2026.json",
+    "fixtureSha256": "eaa7c72f8802f806e1f3a7358d404b453ced98e1750d87a9c3fb5648e19b9cb3",
+    "sourceUrl": "https://www.vaisnavacalendar.info/calendars/2026/London%20%5BUnited%20Kingdom%5D.txt",
+    "retrievedAtUtc": "2026-08-01T13:43:21.842818600Z",
+    "rawFile": "verify\\cache\\vaisnavacalendar-txt\\London__United_Kingdom_-2026-d68c29ff659c.raw",
+    "rawPresent": true,
+    "rawChecksumMatches": true,
+    "rawResponseSha256": "521de0c0c54cc8c79f6e2872c757c6158c48234294e97236303bf56524a034d2",
+    "parameters": {}
+  },
+  {
+    "fixture": "verify\\golden\\vaisnavacalendar-mayapur-2026.json",
+    "fixtureSha256": "d84e50a45a15576d059523a8f4731c6849dcbc439bf8a7283c456840b52099e4",
+    "sourceUrl": "https://www.vaisnavacalendar.info/calendars/2026/Mayapur%20%5BIndia%5D.txt",
+    "retrievedAtUtc": "2026-08-01T13:43:06.123646900Z",
+    "rawFile": "verify\\cache\\vaisnavacalendar-txt\\Mayapur__India_-2026-756b7b4d4581.raw",
+    "rawPresent": true,
+    "rawChecksumMatches": true,
+    "rawResponseSha256": "51fbe8bb9ab3e92a9090b7c8d9d204055c8e3b9b51422cba9aab7003112f84b0",
+    "parameters": {}
+  },
+  {
+    "fixture": "verify\\golden\\vaisnavacalendar-moscow-2026.json",
+    "fixtureSha256": "2a527d25fd8c99a600ca9203c7250f839a3bc6d83ed73a486a5152c775d98dd8",
+    "sourceUrl": "https://www.vaisnavacalendar.info/calendars/2026/Moskva%20%5BRussia%5D.txt",
+    "retrievedAtUtc": "2026-08-01T13:43:33.202832800Z",
+    "rawFile": "verify\\cache\\vaisnavacalendar-txt\\Moskva__Russia_-2026-b4264b30431d.raw",
+    "rawPresent": true,
+    "rawChecksumMatches": true,
+    "rawResponseSha256": "ff1db8c94dd5e8e447e042b21fc8639a1a7b094e584a306cd7846cda2f0ac5b2",
+    "parameters": {}
+  },
+  {
+    "fixture": "verify\\golden\\vaisnavacalendar-mumbai-2026.json",
+    "fixtureSha256": "8efe851f707564d9d033ad9a71ffcccb9c9bd23adc387623fc35d807ffcc2677",
+    "sourceUrl": "https://www.vaisnavacalendar.info/calendars/2026/Bombay%20%5BIndia%5D.txt",
+    "retrievedAtUtc": "2026-08-01T13:43:17.317046Z",
+    "rawFile": "verify\\cache\\vaisnavacalendar-txt\\Bombay__India_-2026-7d829bb2511f.raw",
+    "rawPresent": true,
+    "rawChecksumMatches": true,
+    "rawResponseSha256": "1f768d777870327a90ffada13e9dc48fc0e8c7d3e6e5d7659ad490eff1fd74b0",
+    "parameters": {}
+  },
+  {
+    "fixture": "verify\\golden\\vaisnavacalendar-new-york-2026.json",
+    "fixtureSha256": "2bb8863c6ffacbea90573b4a73f00019c3534349beacdf45fa285019ca37e75e",
+    "sourceUrl": "https://www.vaisnavacalendar.info/calendars/2026/New%20York%20City%20%5BUnited%20States%20of%20America%5D.txt",
+    "retrievedAtUtc": "2026-08-01T13:43:25.623334100Z",
+    "rawFile": "verify\\cache\\vaisnavacalendar-txt\\New_York_City__United_States_of_America_-2026-3e8bfaf92cfa.raw",
+    "rawPresent": true,
+    "rawChecksumMatches": true,
+    "rawResponseSha256": "4050a4b15ed55a1e67aee9bad487dd3d4315b90bbd0aab6df11e18d8172f1fce",
+    "parameters": {}
+  },
+  {
+    "fixture": "verify\\golden\\vaisnavacalendar-sao-paulo-2026.json",
+    "fixtureSha256": "7ff059e7e045508ca282719a0f43492c6ae258763f0fed9a62d9076677759703",
+    "sourceUrl": "https://www.vaisnavacalendar.info/calendars/2026/Sao%20Paulo%20%5BBrazil%5D.txt",
+    "retrievedAtUtc": "2026-08-01T13:43:37.402376Z",
+    "rawFile": "verify\\cache\\vaisnavacalendar-txt\\Sao_Paulo__Brazil_-2026-d248b26ccd7f.raw",
+    "rawPresent": true,
+    "rawChecksumMatches": true,
+    "rawResponseSha256": "4f1fb3acd451efe6b72a4d6e1647758231473dba710d0d8e35d6be423882de15",
+    "parameters": {}
+  },
+  {
+    "fixture": "verify\\golden\\vaisnavacalendar-sydney-2026.json",
+    "fixtureSha256": "26daa01124e4835ac88a00564acfbae113de5197be513dcd57aa08d7d7d9c867",
+    "sourceUrl": "https://www.vaisnavacalendar.info/calendars/2026/Sydney%20%5BAustralia%5D.txt",
+    "retrievedAtUtc": "2026-08-01T13:43:41.181347500Z",
+    "rawFile": "verify\\cache\\vaisnavacalendar-txt\\Sydney__Australia_-2026-efbe56f84c3c.raw",
+    "rawPresent": true,
+    "rawChecksumMatches": true,
+    "rawResponseSha256": "0fbd0ac1f3b61a96a059375f20ef34099064d74a2c8d48b4f1267a50a635e076",
+    "parameters": {}
+  },
+  {
+    "fixture": "verify\\golden\\vaisnavacalendar-vrindavan-2026.json",
+    "fixtureSha256": "f4e9250c3dd34646709ac0aed6d698a65c38045c5cc8cfa90b323849d6c7f05d",
+    "sourceUrl": "https://www.vaisnavacalendar.info/calendars/2026/Vrindavan%20%5BIndia%5D.txt",
+    "retrievedAtUtc": "2026-08-01T13:43:09.846759400Z",
+    "rawFile": "verify\\cache\\vaisnavacalendar-txt\\Vrindavan__India_-2026-7facb8bc80d3.raw",
+    "rawPresent": true,
+    "rawChecksumMatches": true,
+    "rawResponseSha256": "da193be0364433b4ae9ddc2cd0d4cc2c27c794448a585d9d54556fba4a71872d",
+    "parameters": {}
+  }
+]

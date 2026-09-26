@@ -1,0 +1,10 @@
+{
+  "total": {
+    "tests": 109,
+    "passed": 109,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "failures": []
+}

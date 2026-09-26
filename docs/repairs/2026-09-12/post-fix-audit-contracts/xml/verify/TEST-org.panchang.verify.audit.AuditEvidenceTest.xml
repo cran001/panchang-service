@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.verify.audit.AuditEvidenceTest" tests="3" skipped="0" failures="1" errors="0" timestamp="2026-09-12T18:01:27" hostname="DESKTOP-KBUKJ2P" time="10.902">
+  <properties/>
+  <testcase name="reykjavikDocumentedDaylightCapContract()" classname="org.panchang.verify.audit.AuditEvidenceTest" time="0.096"/>
+  <testcase name="januaryFirstDeliveryContract()" classname="org.panchang.verify.audit.AuditEvidenceTest" time="10.761"/>
+  <testcase name="reykjavikSunriseRoundingContract()" classname="org.panchang.verify.audit.AuditEvidenceTest" time="0.043">
+    <failure message="org.opentest4j.AssertionFailedError: Held-out Reykjavik 2026-06-27 sunrise exceeds the predeclared USNO rounding interval ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Held-out Reykjavik 2026-06-27 sunrise exceeds the predeclared USNO rounding interval ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at app//org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at app//org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at app//org.panchang.verify.audit.AuditEvidenceTest.reykjavikSunriseRoundingContract(AuditEvidenceTest.kt:82)
+	at java.base@21.0.6/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList.forEach(Unknown Source)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.verify.ReferenceCitiesTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-09-12T20:45:13" hostname="DESKTOP-KBUKJ2P" time="0.017">
+  <properties/>
+  <testcase name="the grid still covers every case it was chosen for()" classname="org.panchang.verify.ReferenceCitiesTest" time="0.011"/>
+  <testcase name="lookup by id is case insensitive and fails helpfully()" classname="org.panchang.verify.ReferenceCitiesTest" time="0.003"/>
+  <testcase name="community calendar city stems are recorded in the source's own spelling()" classname="org.panchang.verify.ReferenceCitiesTest" time="0.001"/>
+  <testcase name="coordinates are within range and time zones resolve()" classname="org.panchang.verify.ReferenceCitiesTest" time="0.001"/>
+  <testcase name="ids are unique and lowercase()" classname="org.panchang.verify.ReferenceCitiesTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

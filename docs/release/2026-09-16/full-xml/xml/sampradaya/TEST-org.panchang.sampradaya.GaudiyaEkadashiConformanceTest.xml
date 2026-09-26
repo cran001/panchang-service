@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" tests="127" skipped="0" failures="9" errors="0" timestamp="2026-09-20T18:08:12" hostname="DESKTOP-KBUKJ2P" time="137.517">
+  <properties/>
+  <testcase name="mayapur" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="22.254"/>
+  <testcase name="vrindavan" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="9.208"/>
+  <testcase name="delhi" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="7.992"/>
+  <testcase name="mumbai" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="7.821"/>
+  <testcase name="chennai" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="7.711"/>
+  <testcase name="bangalore" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="7.6"/>
+  <testcase name="ahmedabad" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="7.781"/>
+  <testcase name="guwahati" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="8.377"/>
+  <testcase name="london" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="8.058"/>
+  <testcase name="new-york" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="8.471"/>
+  <testcase name="sao-paulo" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="9.265"/>
+  <testcase name="moscow" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="7.853"/>
+  <testcase name="auckland" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="6.445"/>
+  <testcase name="sydney" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="6.408"/>
+  <testcase name="mayapur" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="vrindavan" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.0"/>
+  <testcase name="delhi" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="mumbai" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="chennai" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.0"/>
+  <testcase name="bangalore" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.0"/>
+  <testcase name="ahmedabad" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="guwahati" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="london" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="new-york" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.0"/>
+  <testcase name="sao-paulo" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.0"/>
+  <testcase name="moscow" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.0"/>
+  <testcase name="auckland" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.0"/>
+  <testcase name="sydney" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="mayapur" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.004"/>
+  <testcase name="vrindavan" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="delhi" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="mumbai" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="chennai" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="bangalore" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="ahmedabad" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="guwahati" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="london" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="new-york" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="sao-paulo" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.0"/>
+  <testcase name="moscow" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.0"/>
+  <testcase name="auckland" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.0"/>
+  <testcase name="sydney" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.0"/>
+  <testcase name="mayapur" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.004"/>
+  <testcase name="vrindavan" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.005"/>
+  <testcase name="delhi" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.002"/>
+  <testcase name="mumbai" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.002"/>
+  <testcase name="chennai" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.003"/>
+  <testcase name="bangalore" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.002"/>
+  <testcase name="ahmedabad" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.002"/>
+  <testcase name="guwahati" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="london" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="new-york" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.002"/>
+  <testcase name="sao-paulo" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.002"/>
+  <testcase name="moscow" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.002"/>
+  <testcase name="auckland" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.002"/>
+  <testcase name="sydney" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.002"/>
+  <testcase name="mayapur" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.015"/>
+  <testcase name="vrindavan" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.01">
+    <failure message="org.opentest4j.AssertionFailedError: parana disagreements at vrindavan:&#10;2026-06-27: calendar prints a parana window, rules produced none&#10;2026-06-26: rules produced a parana window the calendar does not print ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: parana disagreements at vrindavan:
+2026-06-27: calendar prints a parana window, rules produced none
+2026-06-26: rules produced a parana window the calendar does not print ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at app//org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at app//org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at app//org.panchang.sampradaya.GaudiyaEkadashiConformanceTest.parana windows match the published calendar(GaudiyaEkadashiConformanceTest.kt:336)
+	at java.base@21.0.6/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList.forEach(Unknown Source)
+</failure>
+  </testcase>
+  <testcase name="delhi" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.002"/>
+  <testcase name="mumbai" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.008"/>
+  <testcase name="chennai" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="bangalore" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="ahmedabad" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.015"/>
+  <testcase name="guwahati" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="london" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="new-york" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="sao-paulo" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="moscow" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.002"/>
+  <testcase name="auckland" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.007">
+    <failure message="org.opentest4j.AssertionFailedError: parana disagreements at auckland:&#10;2026-04-28 start basis: calendar '1/4 of tithi' (HARI_VASARA_END), rules SUNRISE&#10;2026-10-08 end basis: calendar 'end of tithi' (DVADASHI_END), rules ONE_THIRD_DAYLIGHT&#10;2026-10-08 end (ONE_THIRD_DAYLIGHT): calendar 06:47, rules 11:01:42, delta +254.71 min, outside -0.25..1.25 ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: parana disagreements at auckland:
+2026-04-28 start basis: calendar '1/4 of tithi' (HARI_VASARA_END), rules SUNRISE
+2026-10-08 end basis: calendar 'end of tithi' (DVADASHI_END), rules ONE_THIRD_DAYLIGHT
+2026-10-08 end (ONE_THIRD_DAYLIGHT): calendar 06:47, rules 11:01:42, delta +254.71 min, outside -0.25..1.25 ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at app//org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at app//org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at app//org.panchang.sampradaya.GaudiyaEkadashiConformanceTest.parana windows match the published calendar(GaudiyaEkadashiConformanceTest.kt:336)
+	at java.base@21.0.6/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList.forEach(Unknown Source)
+</failure>
+  </testcase>
+  <testcase name="sydney" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="mayapur" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.004"/>
+  <testcase name="vrindavan" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.003"/>
+  <testcase name="delhi" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.004"/>
+  <testcase name="mumbai" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.003"/>
+  <testcase name="chennai" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.003"/>
+  <testcase name="bangalore" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.002"/>
+  <testcase name="ahmedabad" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.003"/>
+  <testcase name="guwahati" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.004"/>
+  <testcase name="london" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.004"/>
+  <testcase name="new-york" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.004"/>
+  <testcase name="sao-paulo" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.002"/>
+  <testcase name="moscow" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.003"/>
+  <testcase name="auckland" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.003"/>
+  <testcase name="sydney" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.002"/>
+  <testcase name="mayapur" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="vrindavan" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.002">
+    <failure message="org.opentest4j.AssertionFailedError: Ekadashi fasting dates disagree with the vrindavan 2026 calendar. Missing: [2026-06-26]. Extra: [2026-06-25]. A fasting-date disagreement is a far stronger signal than a label disagreement and must be investigated as a rule error first; see docs/validation-multisite.md. ==&gt; expected: &lt;[2026-01-14, 2026-01-29, 2026-02-13, 2026-02-27, 2026-03-15, 2026-03-29, 2026-04-13, 2026-04-27, 2026-05-13, 2026-05-27, 2026-06-11, 2026-06-26, 2026-07-11, 2026-07-25, 2026-08-09, 2026-08-24, 2026-09-07, 2026-09-22, 2026-10-06, 2026-10-22, 2026-11-05, 2026-11-21, 2026-12-04, 2026-12-20]&gt; but was: &lt;[2026-01-14, 2026-01-29, 2026-02-13, 2026-02-27, 2026-03-15, 2026-03-29, 2026-04-13, 2026-04-27, 2026-05-13, 2026-05-27, 2026-06-11, 2026-06-25, 2026-07-11, 2026-07-25, 2026-08-09, 2026-08-24, 2026-09-07, 2026-09-22, 2026-10-06, 2026-10-22, 2026-11-05, 2026-11-21, 2026-12-04, 2026-12-20]&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Ekadashi fasting dates disagree with the vrindavan 2026 calendar. Missing: [2026-06-26]. Extra: [2026-06-25]. A fasting-date disagreement is a far stronger signal than a label disagreement and must be investigated as a rule error first; see docs/validation-multisite.md. ==&gt; expected: &lt;[2026-01-14, 2026-01-29, 2026-02-13, 2026-02-27, 2026-03-15, 2026-03-29, 2026-04-13, 2026-04-27, 2026-05-13, 2026-05-27, 2026-06-11, 2026-06-26, 2026-07-11, 2026-07-25, 2026-08-09, 2026-08-24, 2026-09-07, 2026-09-22, 2026-10-06, 2026-10-22, 2026-11-05, 2026-11-21, 2026-12-04, 2026-12-20]&gt; but was: &lt;[2026-01-14, 2026-01-29, 2026-02-13, 2026-02-27, 2026-03-15, 2026-03-29, 2026-04-13, 2026-04-27, 2026-05-13, 2026-05-27, 2026-06-11, 2026-06-25, 2026-07-11, 2026-07-25, 2026-08-09, 2026-08-24, 2026-09-07, 2026-09-22, 2026-10-06, 2026-10-22, 2026-11-05, 2026-11-21, 2026-12-04, 2026-12-20]&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1156)
+	at app//org.panchang.sampradaya.GaudiyaEkadashiConformanceTest.fasting dates match the published calendar(GaudiyaEkadashiConformanceTest.kt:62)
+	at java.base@21.0.6/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList.forEach(Unknown Source)
+</failure>
+  </testcase>
+  <testcase name="delhi" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="mumbai" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="chennai" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.0"/>
+  <testcase name="bangalore" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.0"/>
+  <testcase name="ahmedabad" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="guwahati" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="london" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.0"/>
+  <testcase name="new-york" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="sao-paulo" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.0"/>
+  <testcase name="moscow" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.0"/>
+  <testcase name="auckland" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="sydney" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="mayapur" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.002"/>
+  <testcase name="vrindavan" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.002">
+    <failure message="org.opentest4j.AssertionFailedError: Mahadvadashi classification disagrees with the vrindavan 2026 calendar. A *label* disagreement on a fortnight whose fasting date still matches is the outcome ADR 0002 predicts from the reference's ephemeris (docs/decisions/0002-reference-calendar-disagreement.md); a disagreement that also moves the fasting date is not, and is a rule error until shown otherwise. ==&gt; expected: &lt;{2026-06-26=PAKSAVARDHINI, 2026-08-24=VANJULI}&gt; but was: &lt;{2026-08-24=VANJULI}&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Mahadvadashi classification disagrees with the vrindavan 2026 calendar. A *label* disagreement on a fortnight whose fasting date still matches is the outcome ADR 0002 predicts from the reference's ephemeris (docs/decisions/0002-reference-calendar-disagreement.md); a disagreement that also moves the fasting date is not, and is a rule error until shown otherwise. ==&gt; expected: &lt;{2026-06-26=PAKSAVARDHINI, 2026-08-24=VANJULI}&gt; but was: &lt;{2026-08-24=VANJULI}&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1156)
+	at app//org.panchang.sampradaya.GaudiyaEkadashiConformanceTest.Mahadvadashi labels match the published calendar(GaudiyaEkadashiConformanceTest.kt:138)
+	at java.base@21.0.6/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList.forEach(Unknown Source)
+</failure>
+  </testcase>
+  <testcase name="delhi" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="mumbai" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="chennai" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.004"/>
+  <testcase name="bangalore" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.0"/>
+  <testcase name="ahmedabad" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="guwahati" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="london" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="new-york" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="sao-paulo" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="moscow" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001">
+    <failure message="org.opentest4j.AssertionFailedError: Mahadvadashi classification disagrees with the moscow 2026 calendar. A *label* disagreement on a fortnight whose fasting date still matches is the outcome ADR 0002 predicts from the reference's ephemeris (docs/decisions/0002-reference-calendar-disagreement.md); a disagreement that also moves the fasting date is not, and is a rule error until shown otherwise. ==&gt; expected: &lt;{}&gt; but was: &lt;{2026-05-27=VANJULI}&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Mahadvadashi classification disagrees with the moscow 2026 calendar. A *label* disagreement on a fortnight whose fasting date still matches is the outcome ADR 0002 predicts from the reference's ephemeris (docs/decisions/0002-reference-calendar-disagreement.md); a disagreement that also moves the fasting date is not, and is a rule error until shown otherwise. ==&gt; expected: &lt;{}&gt; but was: &lt;{2026-05-27=VANJULI}&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1156)
+	at app//org.panchang.sampradaya.GaudiyaEkadashiConformanceTest.Mahadvadashi labels match the published calendar(GaudiyaEkadashiConformanceTest.kt:138)
+	at java.base@21.0.6/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList.forEach(Unknown Source)
+</failure>
+  </testcase>
+  <testcase name="auckland" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.002">
+    <failure message="org.opentest4j.AssertionFailedError: Mahadvadashi classification disagrees with the auckland 2026 calendar. A *label* disagreement on a fortnight whose fasting date still matches is the outcome ADR 0002 predicts from the reference's ephemeris (docs/decisions/0002-reference-calendar-disagreement.md); a disagreement that also moves the fasting date is not, and is a rule error until shown otherwise. ==&gt; expected: &lt;{2026-04-14=TRISPRSA}&gt; but was: &lt;{2026-04-14=TRISPRSA, 2026-10-07=TRISPRSA}&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Mahadvadashi classification disagrees with the auckland 2026 calendar. A *label* disagreement on a fortnight whose fasting date still matches is the outcome ADR 0002 predicts from the reference's ephemeris (docs/decisions/0002-reference-calendar-disagreement.md); a disagreement that also moves the fasting date is not, and is a rule error until shown otherwise. ==&gt; expected: &lt;{2026-04-14=TRISPRSA}&gt; but was: &lt;{2026-04-14=TRISPRSA, 2026-10-07=TRISPRSA}&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1156)
+	at app//org.panchang.sampradaya.GaudiyaEkadashiConformanceTest.Mahadvadashi labels match the published calendar(GaudiyaEkadashiConformanceTest.kt:138)
+	at java.base@21.0.6/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList.forEach(Unknown Source)
+</failure>
+  </testcase>
+  <testcase name="sydney" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.004">
+    <failure message="org.opentest4j.AssertionFailedError: Mahadvadashi classification disagrees with the sydney 2026 calendar. A *label* disagreement on a fortnight whose fasting date still matches is the outcome ADR 0002 predicts from the reference's ephemeris (docs/decisions/0002-reference-calendar-disagreement.md); a disagreement that also moves the fasting date is not, and is a rule error until shown otherwise. ==&gt; expected: &lt;{2026-01-15=PAKSAVARDHINI, 2026-07-11=TRISPRSA}&gt; but was: &lt;{2026-01-15=PAKSAVARDHINI, 2026-07-11=TRISPRSA, 2026-12-05=VANJULI}&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Mahadvadashi classification disagrees with the sydney 2026 calendar. A *label* disagreement on a fortnight whose fasting date still matches is the outcome ADR 0002 predicts from the reference's ephemeris (docs/decisions/0002-reference-calendar-disagreement.md); a disagreement that also moves the fasting date is not, and is a rule error until shown otherwise. ==&gt; expected: &lt;{2026-01-15=PAKSAVARDHINI, 2026-07-11=TRISPRSA}&gt; but was: &lt;{2026-01-15=PAKSAVARDHINI, 2026-07-11=TRISPRSA, 2026-12-05=VANJULI}&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1156)
+	at app//org.panchang.sampradaya.GaudiyaEkadashiConformanceTest.Mahadvadashi labels match the published calendar(GaudiyaEkadashiConformanceTest.kt:138)
+	at java.base@21.0.6/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList.forEach(Unknown Source)
+</failure>
+  </testcase>
+  <testcase name="the 2026 event catalog resolves with nothing left unexplained at Mayapur()" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="11.959"/>
+  <testcase name="mayapur" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="vrindavan" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.0"/>
+  <testcase name="delhi" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.0"/>
+  <testcase name="mumbai" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.0"/>
+  <testcase name="chennai" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="bangalore" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.0"/>
+  <testcase name="ahmedabad" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="guwahati" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="london" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="new-york" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.0"/>
+  <testcase name="sao-paulo" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.0"/>
+  <testcase name="moscow" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.002">
+    <failure message="org.opentest4j.AssertionFailedError: deferral classification at moscow:&#10;2026-05-27: an unnamed deferral was promoted to VANJULI; the calendar prints no Mahadvadashi line here ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: deferral classification at moscow:
+2026-05-27: an unnamed deferral was promoted to VANJULI; the calendar prints no Mahadvadashi line here ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at app//org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at app//org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at app//org.panchang.sampradaya.GaudiyaEkadashiConformanceTest.a deferral is a Mahadvadashi exactly when the calendar names one(GaudiyaEkadashiConformanceTest.kt:186)
+	at java.base@21.0.6/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList.forEach(Unknown Source)
+</failure>
+  </testcase>
+  <testcase name="auckland" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001"/>
+  <testcase name="sydney" classname="org.panchang.sampradaya.GaudiyaEkadashiConformanceTest" time="0.001">
+    <failure message="org.opentest4j.AssertionFailedError: deferral classification at sydney:&#10;2026-12-05: an unnamed deferral was promoted to VANJULI; the calendar prints no Mahadvadashi line here ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: deferral classification at sydney:
+2026-12-05: an unnamed deferral was promoted to VANJULI; the calendar prints no Mahadvadashi line here ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at app//org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at app//org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at app//org.panchang.sampradaya.GaudiyaEkadashiConformanceTest.a deferral is a Mahadvadashi exactly when the calendar names one(GaudiyaEkadashiConformanceTest.kt:186)
+	at java.base@21.0.6/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base@21.0.6/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base@21.0.6/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList.forEach(Unknown Source)
+</failure>
+  </testcase>
+  <system-out><![CDATA[parana conformance mayapur: 25 printed, 0 excluded as stale reference DST, 0 open-ended (start-only), 0 basis ties, 0 disagreements
+parana conformance vrindavan: 25 printed, 0 excluded as stale reference DST, 0 open-ended (start-only), 0 basis ties, 2 disagreements
+parana conformance delhi: 25 printed, 0 excluded as stale reference DST, 0 open-ended (start-only), 0 basis ties, 0 disagreements
+parana conformance mumbai: 25 printed, 0 excluded as stale reference DST, 1 open-ended (start-only), 0 basis ties, 0 disagreements
+parana conformance chennai: 25 printed, 0 excluded as stale reference DST, 0 open-ended (start-only), 0 basis ties, 0 disagreements
+parana conformance bangalore: 25 printed, 0 excluded as stale reference DST, 0 open-ended (start-only), 0 basis ties, 0 disagreements
+parana conformance ahmedabad: 25 printed, 0 excluded as stale reference DST, 0 open-ended (start-only), 1 basis ties, 0 disagreements
+  tie: 2026-11-06 end: calendar '1/3 of daylight', rules DVADASHI_END; the two caps are 0.93 s apart
+parana conformance guwahati: 25 printed, 0 excluded as stale reference DST, 0 open-ended (start-only), 0 basis ties, 0 disagreements
+parana conformance london: 24 printed, 0 excluded as stale reference DST, 0 open-ended (start-only), 0 basis ties, 0 disagreements
+parana conformance new-york: 24 printed, 0 excluded as stale reference DST, 1 open-ended (start-only), 0 basis ties, 0 disagreements
+parana conformance sao-paulo: 24 printed, 9 excluded as stale reference DST, 0 open-ended (start-only), 0 basis ties, 0 disagreements
+parana conformance moscow: 24 printed, 15 excluded as stale reference DST, 0 open-ended (start-only), 0 basis ties, 0 disagreements
+parana conformance auckland: 25 printed, 0 excluded as stale reference DST, 1 open-ended (start-only), 0 basis ties, 3 disagreements
+parana conformance sydney: 25 printed, 0 excluded as stale reference DST, 0 open-ended (start-only), 0 basis ties, 0 disagreements
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

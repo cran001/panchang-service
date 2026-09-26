@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Differential test vs JPL Horizons" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-09-12T20:44:44" hostname="DESKTOP-KBUKJ2P" time="0.439">
+  <properties/>
+  <testcase name="measure and report()" classname="org.panchang.ephemeris.HorizonsDifferentialTest" time="0.439"/>
+  <system-out><![CDATA[
+Horizons differential measurement — D:\projects\panchang-service\docs\measurements\horizons-2026-08-01
+ΔT source: https://datacenter.iers.org/data/latestVersion/finals.all.iau2000.txt
+ΔT observed through MJD 61251, predicted through 61624
+
+| Epoch / quantity | mean | rms | max | clock | resid rms | resid max |
+|---|---|---|---|---|---|---|
+| 1950 Moon (shared) | +0.37″ | 2.50″ | 9.94″ | +0.55 s | 2.48″ | 10.29″ |
+| 1950 Sun — meeus | +2.78″ | 8.87″ | 27.70″ | +71.31 s | 8.37″ | 24.67″ |
+| 1950 Sun — **vsop87** | -0.06″ | 0.06″ | 0.06″ | -1.44 s | 0.00″ | 0.01″ |
+| 1950 Elongation — meeus | -2.41″ | 9.74″ | 28.53″ | -4.70 s | 9.44″ | 26.26″ |
+| 1950 Elongation — **vsop87** | +0.43″ | 2.51″ | 9.88″ | +0.70 s | 2.48″ | 10.30″ |
+| 2026 Moon (shared) | -0.56″ | 2.86″ | 8.70″ | -1.06 s | 2.80″ | 8.11″ |
+| 2026 Sun — meeus | +12.38″ | 17.15″ | 33.86″ | +300.68 s | 11.90″ | 22.32″ |
+| 2026 Sun — **vsop87** | +0.10″ | 0.10″ | 0.11″ | +2.48 s | 0.01″ | 0.01″ |
+| 2026 Elongation — meeus | -12.94″ | 18.38″ | 38.29″ | -25.30 s | 13.06″ | 25.97″ |
+| 2026 Elongation — **vsop87** | -0.66″ | 2.88″ | 8.79″ | -1.35 s | 2.80″ | 8.12″ |
+| 2100 Moon (shared) | +11.08″ | 11.56″ | 23.53″ | +20.33 s | 2.79″ | 11.82″ |
+| 2100 Sun — meeus | +6.79″ | 11.49″ | 23.58″ | +161.21 s | 9.39″ | 22.92″ |
+| 2100 Sun — **vsop87** | +0.88″ | 0.88″ | 0.92″ | +21.51 s | 0.01″ | 0.01″ |
+| 2100 Elongation — meeus | +4.29″ | 11.36″ | 34.02″ | +8.81 s | 10.43″ | 29.31″ |
+| 2100 Elongation — **vsop87** | +10.20″ | 10.71″ | 22.62″ | +20.25 s | 2.79″ | 11.81″ |
+
+Tithi advances 1829″/hour, so max elongation error → boundary error:
+  1950: raw max 9.88″ → 19 s ; clock-removed max 10.30″ → 20 s
+  2026: raw max 8.79″ → 17 s ; clock-removed max 8.12″ → 16 s
+  2100: raw max 22.62″ → 45 s ; clock-removed max 11.81″ → 23 s
+
+ΔT at 2026-08-01: espenak-meeus 75.43 s, this module 69.17 s, difference -6.26 s (PREDICTED)
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

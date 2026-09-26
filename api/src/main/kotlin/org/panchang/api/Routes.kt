@@ -32,13 +32,14 @@ import org.panchang.gazetteer.PlaceKind
 import org.panchang.gazetteer.normalizePlaceName
 import org.panchang.sampradaya.SampradayaRules
 import org.panchang.sampradaya.VerificationStatus
-import org.panchang.wire.POLAR_LIMIT_DEG
+import org.panchang.wire.MIDNIGHT_SUN_LIMIT_DEG
 import org.panchang.wire.SampradayaListDto
 import org.panchang.wire.SiteAcceptance
 import org.panchang.wire.SiteRejectionCode
 import org.panchang.wire.WIRE_SCHEMA_VERSION
 import org.panchang.wire.WireRenderer
 import org.panchang.wire.acceptSite
+import org.panchang.publication.PublicationService
 
 /**
  * The HTTP surface: `:calc`'s engine behind six routes.
@@ -73,6 +74,7 @@ fun Application.panchangModule(
     engine: CalcEngine = CalcEngine(),
     resolver: LocationResolver = LocationResolver(),
     gazetteer: Gazetteer = Gazetteer.default,
+    publication: PublicationService = PublicationService(engine),
 ) {
     install(StatusPages) {
         exception<ApiFailure> { call, cause -> call.respondJson(cause.status, cause.body) }
@@ -92,7 +94,7 @@ fun Application.panchangModule(
     }
 
     routing {
-        route("/v1") {
+        for (version in listOf("v1", "v2")) route("/$version") {
             get("/health") {
                 call.respondJson(
                     HttpStatusCode.OK,
@@ -112,6 +114,10 @@ fun Application.panchangModule(
             }
 
             get("/calendar/{sampradaya}/{year}") {
+                if (version == "v1") {
+                    call.respondJson(HttpStatusCode.Gone, migration("/v2/calendar/{sampradaya}/{year}"))
+                    return@get
+                }
                 val rules = call.rules()
                 val year = call.parameters["year"]!!.let { raw ->
                     raw.toIntOrNull() ?: throw failure(
@@ -122,11 +128,15 @@ fun Application.panchangModule(
                 }
                 call.respondJson(
                     HttpStatusCode.OK,
-                    computed(call, engine, resolver, rules, Scope.Year(year)),
+                    computed(call, publication, resolver, rules, Scope.Year(year)),
                 )
             }
 
             get("/day/{sampradaya}/{date}") {
+                if (version == "v1") {
+                    call.respondJson(HttpStatusCode.Gone, migration("/v2/day/{sampradaya}/{date}"))
+                    return@get
+                }
                 val rules = call.rules()
                 val date = call.parameters["date"]!!.let { raw ->
                     try {
@@ -141,11 +151,19 @@ fun Application.panchangModule(
                 }
                 call.respondJson(
                     HttpStatusCode.OK,
-                    computed(call, engine, resolver, rules, Scope.Day(date)),
+                    computed(call, publication, resolver, rules, Scope.Day(date)),
                 )
             }
         }
     }
+}
+
+private fun migration(replacement: String) = apiDocument {
+    put("schemaVersion", JsonPrimitive(2))
+    put("code", JsonPrimitive("API_VERSION_RETIRED"))
+    put("guidance", JsonPrimitive("WITHHELD"))
+    put("replacement", JsonPrimitive(replacement))
+    put("message", JsonPrimitive("Use the explicit v2 route with the same location parameters. Check each field's publication state; null means withheld, never no observance. No automatic redirect or legacy fallback."))
 }
 
 // ── The answer ──────────────────────────────────────────────────────────────────────────────────
@@ -166,14 +184,18 @@ fun Application.panchangModule(
  */
 private fun computed(
     call: ApplicationCall,
-    engine: CalcEngine,
+    publication: PublicationService,
     resolver: LocationResolver,
     rules: SampradayaRules,
     scope: Scope,
 ): JsonObject {
     val site = resolveSiteFromQuery(call.request.queryParameters, resolver)
-    val document = CalcJson.document(engine.compute(site, rules, scope))
+    val result = publication.publish(site, rules, scope)
+    check(result.isCurrent()) { "Publication state changed during request; retry for a current decision" }
+    val document = result.document
     return apiDocument {
+        put("schemaVersion", JsonPrimitive(2))
+        put("publication", document.getValue("publication"))
         put("request", document.getValue("request"))
         put("location", document.getValue("location"))
         put("ekadashiYear", document.getValue("ekadashiYear"))
@@ -188,16 +210,16 @@ private fun computed(
  * it is a real tradition this project knows about and has not implemented, and returning its empty
  * calendar with a 200 would put "no observances" in front of someone as if it were a finding.
  *
- * The 501 branch has no test in this module because `:calc`'s `Sampradayas` registers exactly one
- * tradition, ISKCON, and it is implemented — so no request can currently reach the branch.
- * Registering a placeholder from a test would mutate the process-wide `SampradayaRegistry` and
- * leak into every other test in the JVM. The branch is here because the alternative is worse:
- * without it, the day a placeholder is registered, this door starts answering with empty
- * calendars and nothing fails.
+ * The 501 branch has no test in this module because every tradition `:calc`'s `Sampradayas`
+ * registers is implemented — ISKCON fully, the nine regional traditions as festival catalogs —
+ * so no request can currently reach the branch. Registering a placeholder from a test would
+ * mutate the process-wide `SampradayaRegistry` and leak into every other test in the JVM. The
+ * branch is here because the alternative is worse: without it, the day a placeholder is
+ * registered, this door starts answering with empty calendars and nothing fails.
  */
 private fun ApplicationCall.rules(): SampradayaRules {
     val id = parameters["sampradaya"]!!
-    val known = Sampradayas.knownIds()
+    val known = org.panchang.publication.PublicReleaseScope.traditionIds.toList()
     val rules = Sampradayas[id] ?: throw failure(
         HttpStatusCode.NotFound,
         ApiErrorCode.UNKNOWN_SAMPRADAYA,
@@ -207,6 +229,13 @@ private fun ApplicationCall.rules(): SampradayaRules {
     ) {
         put("requested", JsonPrimitive(id))
         put("known", JsonArray(known.map { JsonPrimitive(it) }))
+    }
+    if (!org.panchang.publication.PublicReleaseScope.includes(rules.id)) {
+        throw failure(HttpStatusCode.UnprocessableEntity, ApiErrorCode.SAMPRADAYA_OUTSIDE_RELEASE,
+            org.panchang.publication.PublicReleaseScope.exclusionReason) {
+            put("requested", JsonPrimitive(id))
+            put("publicTraditions", JsonArray(known.map { JsonPrimitive(it) }))
+        }
     }
     if (rules.status == VerificationStatus.NOT_IMPLEMENTED) {
         throw failure(
@@ -240,13 +269,24 @@ private fun ApplicationCall.rules(): SampradayaRules {
  * set, and the cost of that choice is that the credit must appear wherever the data surfaces.
  */
 private fun meta(call: ApplicationCall, gazetteer: Gazetteer): JsonObject = apiDocument {
+    put("publicationContract", JsonPrimitive("publication-v2"))
+    put("releaseScope", JsonPrimitive(org.panchang.publication.PublicReleaseScope.revision))
+    put("coverageNote", JsonPrimitive("Gazetteer entries and online reference availability do not confer supported coverage. Locations, years and fields require an exact reviewed and owner-approved bundle."))
+    put("approvalNote", JsonPrimitive("VERIFIED and CONFIRMED are calculation diagnostics, not human approval. Calendar guidance requires exact-scope owner approval."))
+    put("productionApprovalWrites", JsonPrimitive("DISABLED_NO_OWNER_APPROVED_IDENTITY_OR_STORAGE"))
     put("engineVersion", JsonPrimitive(EngineVersion.value))
     put("wireSchemaVersion", JsonPrimitive(WIRE_SCHEMA_VERSION))
+    put("publicSchemaVersion", JsonPrimitive(2))
+    putJsonObject("publicRoutes") {
+        put("day", JsonPrimitive("/v2/day/{sampradaya}/{date}"))
+        put("calendar", JsonPrimitive("/v2/calendar/{sampradaya}/{year}"))
+        put("v1Guidance", JsonPrimitive("HTTP_410_MIGRATION_REQUIRED"))
+    }
     put(
         "sampradayas",
         jsonFor(call.pretty()).encodeToJsonElement(
             SampradayaListDto.serializer(),
-            WireRenderer.sampradayaList(Sampradayas.knownIds().mapNotNull { Sampradayas[it] }),
+            WireRenderer.sampradayaList(org.panchang.publication.PublicReleaseScope.traditionIds.mapNotNull { Sampradayas[it] }),
         ),
     )
     putJsonObject("gazetteer") {
@@ -273,7 +313,8 @@ private fun meta(call: ApplicationCall, gazetteer: Gazetteer): JsonObject = apiD
             )
             add(
                 JsonPrimitive(
-                    "This service declines to compute above $POLAR_LIMIT_DEG degrees of " +
+                    "This service declines to compute above the midnight-sun boundary of about " +
+                        "${"%.2f".format(java.util.Locale.ROOT, MIDNIGHT_SUN_LIMIT_DEG)} degrees of " +
                         "latitude, north or south, and answers 422 there. The " +
                         "observance rules are defined against a sunrise that does not occur on " +
                         "every day at those latitudes.",
@@ -427,6 +468,7 @@ internal fun ApplicationCall.pretty(): Boolean =
     request.queryParameters["pretty"]?.lowercase() in setOf("1", "true", "yes")
 
 private suspend fun ApplicationCall.respondJson(status: HttpStatusCode, body: JsonObject) {
+    response.headers.append("Cache-Control", "no-store")
     respondText(
         text = jsonFor(pretty()).encodeToString(JsonObject.serializer(), body),
         contentType = ContentType.Application.Json,

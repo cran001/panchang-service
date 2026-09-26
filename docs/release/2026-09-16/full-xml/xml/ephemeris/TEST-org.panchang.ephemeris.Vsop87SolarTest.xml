@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="VSOP87 solar corrections" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-09-20T18:07:48" hostname="DESKTOP-KBUKJ2P" time="7.283">
+  <properties/>
+  <testcase name="nutation is applied to the Sun and to the Moon consistently()" classname="org.panchang.ephemeris.Vsop87SolarTest" time="0.045"/>
+  <testcase name="Meeus example 25b apparent solar longitude()" classname="org.panchang.ephemeris.Vsop87SolarTest" time="0.002"/>
+  <testcase name="repeated and concurrent evaluation is bit-identical()" classname="org.panchang.ephemeris.Vsop87SolarTest" time="0.031"/>
+  <testcase name="Meeus example 25b radius vector()" classname="org.panchang.ephemeris.Vsop87SolarTest" time="0.008"/>
+  <testcase name="identity and range()" classname="org.panchang.ephemeris.Vsop87SolarTest" time="0.058"/>
+  <testcase name="solar longitude advances smoothly over a century()" classname="org.panchang.ephemeris.Vsop87SolarTest" time="6.978"/>
+  <testcase name="the Moon is bit-identical to the delegated Meeus implementation()" classname="org.panchang.ephemeris.Vsop87SolarTest" time="0.132"/>
+  <testcase name="aberration is about minus 20 point 5 arcsec and matches the simple form()" classname="org.panchang.ephemeris.Vsop87SolarTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

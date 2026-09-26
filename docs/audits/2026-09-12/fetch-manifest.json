@@ -1,0 +1,486 @@
+[
+  {
+    "id": "horizons-2027-moon",
+    "kind": "horizons",
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=text&COMMAND=%27301%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27500%40399%27&START_TIME=%272027-01-01%27&STOP_TIME=%272027-02-01%27&STEP_SIZE=%271%20d%27&QUANTITIES=%2731%2C20%27&CAL_FORMAT=%27CAL%27&ANG_FORMAT=%27DEG%27&TIME_DIGITS=%27SECONDS%27&CSV_FORMAT=%27YES%27",
+    "parameters": {
+      "id": "horizons-2027-moon",
+      "kind": "horizons",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=text&COMMAND=%27301%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27500%40399%27&START_TIME=%272027-01-01%27&STOP_TIME=%272027-02-01%27&STEP_SIZE=%271%20d%27&QUANTITIES=%2731%2C20%27&CAL_FORMAT=%27CAL%27&ANG_FORMAT=%27DEG%27&TIME_DIGITS=%27SECONDS%27&CSV_FORMAT=%27YES%27",
+      "body": "MOON",
+      "start": "2027-01-01",
+      "stop": "2027-02-01",
+      "step": "1 d"
+    },
+    "retrievedAtUtc": "2026-09-11T22:51:44.1480271Z",
+    "origin": "live",
+    "httpStatus": 200,
+    "file": "raw/horizons-2027-moon.raw",
+    "sha256": "2d723c8d880e7dade2645685e6418158cc2472dd7f16a564612b3de11abae82f",
+    "error": null
+  },
+  {
+    "id": "horizons-2027-sun",
+    "kind": "horizons",
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=text&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27500%40399%27&START_TIME=%272027-01-01%27&STOP_TIME=%272027-02-01%27&STEP_SIZE=%271%20d%27&QUANTITIES=%2731%2C20%27&CAL_FORMAT=%27CAL%27&ANG_FORMAT=%27DEG%27&TIME_DIGITS=%27SECONDS%27&CSV_FORMAT=%27YES%27",
+    "parameters": {
+      "id": "horizons-2027-sun",
+      "kind": "horizons",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=text&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27500%40399%27&START_TIME=%272027-01-01%27&STOP_TIME=%272027-02-01%27&STEP_SIZE=%271%20d%27&QUANTITIES=%2731%2C20%27&CAL_FORMAT=%27CAL%27&ANG_FORMAT=%27DEG%27&TIME_DIGITS=%27SECONDS%27&CSV_FORMAT=%27YES%27",
+      "body": "SUN",
+      "start": "2027-01-01",
+      "stop": "2027-02-01",
+      "step": "1 d"
+    },
+    "retrievedAtUtc": "2026-09-11T22:51:49.8582969Z",
+    "origin": "live",
+    "httpStatus": 200,
+    "file": "raw/horizons-2027-sun.raw",
+    "sha256": "a19c637f057348eccc0ae873076c530da881a473042b0cb760029ec896ba2c2b",
+    "error": null
+  },
+  {
+    "id": "horizons-2028-moon",
+    "kind": "horizons",
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=text&COMMAND=%27301%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27500%40399%27&START_TIME=%272028-01-01%27&STOP_TIME=%272028-02-01%27&STEP_SIZE=%271%20d%27&QUANTITIES=%2731%2C20%27&CAL_FORMAT=%27CAL%27&ANG_FORMAT=%27DEG%27&TIME_DIGITS=%27SECONDS%27&CSV_FORMAT=%27YES%27",
+    "parameters": {
+      "id": "horizons-2028-moon",
+      "kind": "horizons",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=text&COMMAND=%27301%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27500%40399%27&START_TIME=%272028-01-01%27&STOP_TIME=%272028-02-01%27&STEP_SIZE=%271%20d%27&QUANTITIES=%2731%2C20%27&CAL_FORMAT=%27CAL%27&ANG_FORMAT=%27DEG%27&TIME_DIGITS=%27SECONDS%27&CSV_FORMAT=%27YES%27",
+      "body": "MOON",
+      "start": "2028-01-01",
+      "stop": "2028-02-01",
+      "step": "1 d"
+    },
+    "retrievedAtUtc": "2026-09-11T22:51:53.9851685Z",
+    "origin": "live",
+    "httpStatus": 200,
+    "file": "raw/horizons-2028-moon.raw",
+    "sha256": "05328e6b90a63db683fe6e3273c3e5666914f7e7b0c53eb38c3e276f2aaedeca",
+    "error": null
+  },
+  {
+    "id": "horizons-2028-sun",
+    "kind": "horizons",
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=text&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27500%40399%27&START_TIME=%272028-01-01%27&STOP_TIME=%272028-02-01%27&STEP_SIZE=%271%20d%27&QUANTITIES=%2731%2C20%27&CAL_FORMAT=%27CAL%27&ANG_FORMAT=%27DEG%27&TIME_DIGITS=%27SECONDS%27&CSV_FORMAT=%27YES%27",
+    "parameters": {
+      "id": "horizons-2028-sun",
+      "kind": "horizons",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=text&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27500%40399%27&START_TIME=%272028-01-01%27&STOP_TIME=%272028-02-01%27&STEP_SIZE=%271%20d%27&QUANTITIES=%2731%2C20%27&CAL_FORMAT=%27CAL%27&ANG_FORMAT=%27DEG%27&TIME_DIGITS=%27SECONDS%27&CSV_FORMAT=%27YES%27",
+      "body": "SUN",
+      "start": "2028-01-01",
+      "stop": "2028-02-01",
+      "step": "1 d"
+    },
+    "retrievedAtUtc": "2026-09-11T22:51:58.0767348Z",
+    "origin": "live",
+    "httpStatus": 200,
+    "file": "raw/horizons-2028-sun.raw",
+    "sha256": "89b0a6dc5e54c1aec9f5ccc18a2d4580844effa9ef29110346f622e6fb8ee7c8",
+    "error": null
+  },
+  {
+    "id": "horizons-vrindavan-boundary-moon",
+    "kind": "horizons",
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=text&COMMAND=%27301%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27500%40399%27&START_TIME=%272026-06-29%2023%3A40%27&STOP_TIME=%272026-06-30%2000%3A10%27&STEP_SIZE=%2710%20m%27&QUANTITIES=%2731%2C20%27&CAL_FORMAT=%27CAL%27&ANG_FORMAT=%27DEG%27&TIME_DIGITS=%27SECONDS%27&CSV_FORMAT=%27YES%27",
+    "parameters": {
+      "id": "horizons-vrindavan-boundary-moon",
+      "kind": "horizons",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=text&COMMAND=%27301%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27500%40399%27&START_TIME=%272026-06-29%2023%3A40%27&STOP_TIME=%272026-06-30%2000%3A10%27&STEP_SIZE=%2710%20m%27&QUANTITIES=%2731%2C20%27&CAL_FORMAT=%27CAL%27&ANG_FORMAT=%27DEG%27&TIME_DIGITS=%27SECONDS%27&CSV_FORMAT=%27YES%27",
+      "body": "MOON",
+      "start": "2026-06-29 23:40",
+      "stop": "2026-06-30 00:10",
+      "step": "10 m"
+    },
+    "retrievedAtUtc": "2026-09-11T22:52:02.2072290Z",
+    "origin": "live",
+    "httpStatus": 200,
+    "file": "raw/horizons-vrindavan-boundary-moon.raw",
+    "sha256": "7c3938c483a6398b1a508a5d7f9520ddd0c917e4beb1e6f53989c8cbd7049d52",
+    "error": null
+  },
+  {
+    "id": "horizons-vrindavan-boundary-sun",
+    "kind": "horizons",
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=text&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27500%40399%27&START_TIME=%272026-06-29%2023%3A40%27&STOP_TIME=%272026-06-30%2000%3A10%27&STEP_SIZE=%2710%20m%27&QUANTITIES=%2731%2C20%27&CAL_FORMAT=%27CAL%27&ANG_FORMAT=%27DEG%27&TIME_DIGITS=%27SECONDS%27&CSV_FORMAT=%27YES%27",
+    "parameters": {
+      "id": "horizons-vrindavan-boundary-sun",
+      "kind": "horizons",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=text&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27500%40399%27&START_TIME=%272026-06-29%2023%3A40%27&STOP_TIME=%272026-06-30%2000%3A10%27&STEP_SIZE=%2710%20m%27&QUANTITIES=%2731%2C20%27&CAL_FORMAT=%27CAL%27&ANG_FORMAT=%27DEG%27&TIME_DIGITS=%27SECONDS%27&CSV_FORMAT=%27YES%27",
+      "body": "SUN",
+      "start": "2026-06-29 23:40",
+      "stop": "2026-06-30 00:10",
+      "step": "10 m"
+    },
+    "retrievedAtUtc": "2026-09-11T22:52:06.3157515Z",
+    "origin": "live",
+    "httpStatus": 200,
+    "file": "raw/horizons-vrindavan-boundary-sun.raw",
+    "sha256": "ca02b41c17522609a8ba570156580456b73fe38ab44b51197bfdc1e211554d87",
+    "error": null
+  },
+  {
+    "id": "horizons-auckland-boundary-moon",
+    "kind": "horizons",
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=text&COMMAND=%27301%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27500%40399%27&START_TIME=%272026-10-07%2017%3A30%27&STOP_TIME=%272026-10-07%2018%3A00%27&STEP_SIZE=%2710%20m%27&QUANTITIES=%2731%2C20%27&CAL_FORMAT=%27CAL%27&ANG_FORMAT=%27DEG%27&TIME_DIGITS=%27SECONDS%27&CSV_FORMAT=%27YES%27",
+    "parameters": {
+      "id": "horizons-auckland-boundary-moon",
+      "kind": "horizons",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=text&COMMAND=%27301%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27500%40399%27&START_TIME=%272026-10-07%2017%3A30%27&STOP_TIME=%272026-10-07%2018%3A00%27&STEP_SIZE=%2710%20m%27&QUANTITIES=%2731%2C20%27&CAL_FORMAT=%27CAL%27&ANG_FORMAT=%27DEG%27&TIME_DIGITS=%27SECONDS%27&CSV_FORMAT=%27YES%27",
+      "body": "MOON",
+      "start": "2026-10-07 17:30",
+      "stop": "2026-10-07 18:00",
+      "step": "10 m"
+    },
+    "retrievedAtUtc": "2026-09-11T22:52:10.4279090Z",
+    "origin": "live",
+    "httpStatus": 200,
+    "file": "raw/horizons-auckland-boundary-moon.raw",
+    "sha256": "c3d436c05e0f489f1741614035428e571a88636c3af4b44452701fc04bd33103",
+    "error": null
+  },
+  {
+    "id": "horizons-auckland-boundary-sun",
+    "kind": "horizons",
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=text&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27500%40399%27&START_TIME=%272026-10-07%2017%3A30%27&STOP_TIME=%272026-10-07%2018%3A00%27&STEP_SIZE=%2710%20m%27&QUANTITIES=%2731%2C20%27&CAL_FORMAT=%27CAL%27&ANG_FORMAT=%27DEG%27&TIME_DIGITS=%27SECONDS%27&CSV_FORMAT=%27YES%27",
+    "parameters": {
+      "id": "horizons-auckland-boundary-sun",
+      "kind": "horizons",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=text&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27500%40399%27&START_TIME=%272026-10-07%2017%3A30%27&STOP_TIME=%272026-10-07%2018%3A00%27&STEP_SIZE=%2710%20m%27&QUANTITIES=%2731%2C20%27&CAL_FORMAT=%27CAL%27&ANG_FORMAT=%27DEG%27&TIME_DIGITS=%27SECONDS%27&CSV_FORMAT=%27YES%27",
+      "body": "SUN",
+      "start": "2026-10-07 17:30",
+      "stop": "2026-10-07 18:00",
+      "step": "10 m"
+    },
+    "retrievedAtUtc": "2026-09-11T22:52:14.5279304Z",
+    "origin": "live",
+    "httpStatus": 200,
+    "file": "raw/horizons-auckland-boundary-sun.raw",
+    "sha256": "8a5d63e82fcda9ddf7e91f791783efef2fa2ed156fde9c6986185f2fd73a3718",
+    "error": null
+  },
+  {
+    "id": "usno-cape-town-2027-01-01",
+    "kind": "usno",
+    "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2027-01-01&coords=-33.925%2C18.424&tz=2&label=cape-town",
+    "parameters": {
+      "id": "usno-cape-town-2027-01-01",
+      "kind": "usno",
+      "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2027-01-01&coords=-33.925%2C18.424&tz=2&label=cape-town",
+      "date": "2027-01-01",
+      "latitude": -33.925,
+      "longitude": 18.424,
+      "offset": 2.0,
+      "zone": "Africa/Johannesburg"
+    },
+    "retrievedAtUtc": "2026-09-11T22:52:18.6025652Z",
+    "origin": "live",
+    "httpStatus": 502,
+    "file": "raw/usno-cape-town-2027-01-01.raw",
+    "sha256": "61b30d408583991fd69f3dec694e154cb652471e663328ad9c8482c9021ab5db",
+    "error": null
+  },
+  {
+    "id": "usno-cape-town-2028-06-21",
+    "kind": "usno",
+    "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2028-06-21&coords=-33.925%2C18.424&tz=2&label=cape-town",
+    "parameters": {
+      "id": "usno-cape-town-2028-06-21",
+      "kind": "usno",
+      "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2028-06-21&coords=-33.925%2C18.424&tz=2&label=cape-town",
+      "date": "2028-06-21",
+      "latitude": -33.925,
+      "longitude": 18.424,
+      "offset": 2.0,
+      "zone": "Africa/Johannesburg"
+    },
+    "retrievedAtUtc": "2026-09-11T22:52:24.5981504Z",
+    "origin": "live",
+    "httpStatus": 502,
+    "file": "raw/usno-cape-town-2028-06-21.raw",
+    "sha256": "61b30d408583991fd69f3dec694e154cb652471e663328ad9c8482c9021ab5db",
+    "error": null
+  },
+  {
+    "id": "usno-singapore-2027-12-31",
+    "kind": "usno",
+    "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2027-12-31&coords=1.3521%2C103.8198&tz=8&label=singapore",
+    "parameters": {
+      "id": "usno-singapore-2027-12-31",
+      "kind": "usno",
+      "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2027-12-31&coords=1.3521%2C103.8198&tz=8&label=singapore",
+      "date": "2027-12-31",
+      "latitude": 1.3521,
+      "longitude": 103.8198,
+      "offset": 8.0,
+      "zone": "Asia/Singapore"
+    },
+    "retrievedAtUtc": "2026-09-11T22:52:29.4302812Z",
+    "origin": "live",
+    "httpStatus": 502,
+    "file": "raw/usno-singapore-2027-12-31.raw",
+    "sha256": "61b30d408583991fd69f3dec694e154cb652471e663328ad9c8482c9021ab5db",
+    "error": null
+  },
+  {
+    "id": "usno-singapore-2028-01-01",
+    "kind": "usno",
+    "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2028-01-01&coords=1.3521%2C103.8198&tz=8&label=singapore",
+    "parameters": {
+      "id": "usno-singapore-2028-01-01",
+      "kind": "usno",
+      "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2028-01-01&coords=1.3521%2C103.8198&tz=8&label=singapore",
+      "date": "2028-01-01",
+      "latitude": 1.3521,
+      "longitude": 103.8198,
+      "offset": 8.0,
+      "zone": "Asia/Singapore"
+    },
+    "retrievedAtUtc": "2026-09-11T22:52:33.9288575Z",
+    "origin": "live",
+    "httpStatus": 502,
+    "file": "raw/usno-singapore-2028-01-01.raw",
+    "sha256": "61b30d408583991fd69f3dec694e154cb652471e663328ad9c8482c9021ab5db",
+    "error": null
+  },
+  {
+    "id": "usno-reykjavik-2026-06-26",
+    "kind": "usno",
+    "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-06-26&coords=64.1466%2C-21.9426&tz=0&label=reykjavik",
+    "parameters": {
+      "id": "usno-reykjavik-2026-06-26",
+      "kind": "usno",
+      "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-06-26&coords=64.1466%2C-21.9426&tz=0&label=reykjavik",
+      "date": "2026-06-26",
+      "latitude": 64.1466,
+      "longitude": -21.9426,
+      "offset": 0.0,
+      "zone": "Atlantic/Reykjavik"
+    },
+    "retrievedAtUtc": "2026-09-11T22:52:38.3887734Z",
+    "origin": "live",
+    "httpStatus": 200,
+    "file": "raw/usno-reykjavik-2026-06-26.raw",
+    "sha256": "6b9697be626c0cb31ab61b2cd45e8bfc88fe8d1776ea9a8588230a65b9336072",
+    "error": null
+  },
+  {
+    "id": "usno-reykjavik-2028-06-21",
+    "kind": "usno",
+    "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2028-06-21&coords=64.1466%2C-21.9426&tz=0&label=reykjavik",
+    "parameters": {
+      "id": "usno-reykjavik-2028-06-21",
+      "kind": "usno",
+      "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2028-06-21&coords=64.1466%2C-21.9426&tz=0&label=reykjavik",
+      "date": "2028-06-21",
+      "latitude": 64.1466,
+      "longitude": -21.9426,
+      "offset": 0.0,
+      "zone": "Atlantic/Reykjavik"
+    },
+    "retrievedAtUtc": "2026-09-11T22:52:47.1148800Z",
+    "origin": "live",
+    "httpStatus": 502,
+    "file": "raw/usno-reykjavik-2028-06-21.raw",
+    "sha256": "61b30d408583991fd69f3dec694e154cb652471e663328ad9c8482c9021ab5db",
+    "error": null
+  },
+  {
+    "id": "usno-london-2027-03-28",
+    "kind": "usno",
+    "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2027-03-28&coords=51.5074%2C-0.1278&tz=1&label=london",
+    "parameters": {
+      "id": "usno-london-2027-03-28",
+      "kind": "usno",
+      "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2027-03-28&coords=51.5074%2C-0.1278&tz=1&label=london",
+      "date": "2027-03-28",
+      "latitude": 51.5074,
+      "longitude": -0.1278,
+      "offset": 1.0,
+      "zone": "Europe/London"
+    },
+    "retrievedAtUtc": "2026-09-11T22:52:51.3782343Z",
+    "origin": "live",
+    "httpStatus": 502,
+    "file": "raw/usno-london-2027-03-28.raw",
+    "sha256": "61b30d408583991fd69f3dec694e154cb652471e663328ad9c8482c9021ab5db",
+    "error": null
+  },
+  {
+    "id": "usno-london-2028-10-29",
+    "kind": "usno",
+    "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2028-10-29&coords=51.5074%2C-0.1278&tz=0&label=london",
+    "parameters": {
+      "id": "usno-london-2028-10-29",
+      "kind": "usno",
+      "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2028-10-29&coords=51.5074%2C-0.1278&tz=0&label=london",
+      "date": "2028-10-29",
+      "latitude": 51.5074,
+      "longitude": -0.1278,
+      "offset": 0.0,
+      "zone": "Europe/London"
+    },
+    "retrievedAtUtc": "2026-09-11T22:52:55.7231977Z",
+    "origin": "live",
+    "httpStatus": 502,
+    "file": "raw/usno-london-2028-10-29.raw",
+    "sha256": "61b30d408583991fd69f3dec694e154cb652471e663328ad9c8482c9021ab5db",
+    "error": null
+  },
+  {
+    "id": "usno-new-york-2027-03-14",
+    "kind": "usno",
+    "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2027-03-14&coords=40.7128%2C-74.006&tz=-4&label=new-york",
+    "parameters": {
+      "id": "usno-new-york-2027-03-14",
+      "kind": "usno",
+      "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2027-03-14&coords=40.7128%2C-74.006&tz=-4&label=new-york",
+      "date": "2027-03-14",
+      "latitude": 40.7128,
+      "longitude": -74.006,
+      "offset": -4.0,
+      "zone": "America/New_York"
+    },
+    "retrievedAtUtc": "2026-09-11T22:53:00.0576609Z",
+    "origin": "live",
+    "httpStatus": 502,
+    "file": "raw/usno-new-york-2027-03-14.raw",
+    "sha256": "61b30d408583991fd69f3dec694e154cb652471e663328ad9c8482c9021ab5db",
+    "error": null
+  },
+  {
+    "id": "usno-new-york-2028-11-05",
+    "kind": "usno",
+    "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2028-11-05&coords=40.7128%2C-74.006&tz=-5&label=new-york",
+    "parameters": {
+      "id": "usno-new-york-2028-11-05",
+      "kind": "usno",
+      "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2028-11-05&coords=40.7128%2C-74.006&tz=-5&label=new-york",
+      "date": "2028-11-05",
+      "latitude": 40.7128,
+      "longitude": -74.006,
+      "offset": -5.0,
+      "zone": "America/New_York"
+    },
+    "retrievedAtUtc": "2026-09-11T22:53:04.3226846Z",
+    "origin": "live",
+    "httpStatus": 502,
+    "file": "raw/usno-new-york-2028-11-05.raw",
+    "sha256": "61b30d408583991fd69f3dec694e154cb652471e663328ad9c8482c9021ab5db",
+    "error": null
+  },
+  {
+    "id": "usno-vrindavan-2026-06-30",
+    "kind": "usno",
+    "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-06-30&coords=27.583333333333332%2C77.7&tz=5.5&label=vrindavan",
+    "parameters": {
+      "id": "usno-vrindavan-2026-06-30",
+      "kind": "usno",
+      "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-06-30&coords=27.583333333333332%2C77.7&tz=5.5&label=vrindavan",
+      "date": "2026-06-30",
+      "latitude": 27.583333333333332,
+      "longitude": 77.7,
+      "offset": 5.5,
+      "zone": "Asia/Kolkata"
+    },
+    "retrievedAtUtc": "2026-09-11T22:53:08.6477594Z",
+    "origin": "live",
+    "httpStatus": 502,
+    "file": "raw/usno-vrindavan-2026-06-30.raw",
+    "sha256": "61b30d408583991fd69f3dec694e154cb652471e663328ad9c8482c9021ab5db",
+    "error": null
+  },
+  {
+    "id": "usno-auckland-2026-10-08",
+    "kind": "usno",
+    "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-10-08&coords=-36.86666666666667%2C174.76666666666668&tz=13&label=auckland",
+    "parameters": {
+      "id": "usno-auckland-2026-10-08",
+      "kind": "usno",
+      "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-10-08&coords=-36.86666666666667%2C174.76666666666668&tz=13&label=auckland",
+      "date": "2026-10-08",
+      "latitude": -36.86666666666667,
+      "longitude": 174.76666666666668,
+      "offset": 13.0,
+      "zone": "Pacific/Auckland"
+    },
+    "retrievedAtUtc": "2026-09-11T22:53:12.9724655Z",
+    "origin": "live",
+    "httpStatus": 502,
+    "file": "raw/usno-auckland-2026-10-08.raw",
+    "sha256": "61b30d408583991fd69f3dec694e154cb652471e663328ad9c8482c9021ab5db",
+    "error": null
+  },
+  {
+    "id": "calendar-mayapur-2027",
+    "kind": "calendar",
+    "url": "https://www.vaisnavacalendar.info/calendars/2027/Mayapur%20%5BIndia%5D.txt",
+    "parameters": {
+      "id": "calendar-mayapur-2027",
+      "kind": "calendar",
+      "url": "https://www.vaisnavacalendar.info/calendars/2027/Mayapur%20%5BIndia%5D.txt",
+      "year": 2027,
+      "city": "Mayapur [India]"
+    },
+    "retrievedAtUtc": "2026-09-11T22:53:17.3367202Z",
+    "origin": "live",
+    "httpStatus": 200,
+    "file": "raw/calendar-mayapur-2027.raw",
+    "sha256": "3d3dd810eec68a3f095ef574c5c3edd87e17c2778a002a4747ed3d9bab6d5590",
+    "error": null
+  },
+  {
+    "id": "calendar-hyderabad-2027",
+    "kind": "calendar",
+    "url": "https://www.vaisnavacalendar.info/calendars/2027/Hyderabad%20%5BIndia%5D.txt",
+    "parameters": {
+      "id": "calendar-hyderabad-2027",
+      "kind": "calendar",
+      "url": "https://www.vaisnavacalendar.info/calendars/2027/Hyderabad%20%5BIndia%5D.txt",
+      "year": 2027,
+      "city": "Hyderabad [India]"
+    },
+    "retrievedAtUtc": "2026-09-11T22:53:21.8804341Z",
+    "origin": "live",
+    "httpStatus": 200,
+    "file": "raw/calendar-hyderabad-2027.raw",
+    "sha256": "9a55b8eff9e6f2e2d5a84c9c120bf8c91935cde87178ec42b74550866dbc4ca8",
+    "error": null
+  },
+  {
+    "id": "calendar-mayapur-2028",
+    "kind": "calendar",
+    "url": "https://www.vaisnavacalendar.info/calendars/2028/Mayapur%20%5BIndia%5D.txt",
+    "parameters": {
+      "id": "calendar-mayapur-2028",
+      "kind": "calendar",
+      "url": "https://www.vaisnavacalendar.info/calendars/2028/Mayapur%20%5BIndia%5D.txt",
+      "year": 2028,
+      "city": "Mayapur [India]"
+    },
+    "retrievedAtUtc": "2026-09-11T22:53:25.6965860Z",
+    "origin": "live",
+    "httpStatus": 404,
+    "file": "raw/calendar-mayapur-2028.raw",
+    "sha256": "880cefe8c0c9d433cbec1c2af60863aaec653f3af96c4a95554cf15b72ba51f2",
+    "error": null
+  },
+  {
+    "id": "calendar-hyderabad-2028",
+    "kind": "calendar",
+    "url": "https://www.vaisnavacalendar.info/calendars/2028/Hyderabad%20%5BIndia%5D.txt",
+    "parameters": {
+      "id": "calendar-hyderabad-2028",
+      "kind": "calendar",
+      "url": "https://www.vaisnavacalendar.info/calendars/2028/Hyderabad%20%5BIndia%5D.txt",
+      "year": 2028,
+      "city": "Hyderabad [India]"
+    },
+    "retrievedAtUtc": "2026-09-11T22:53:30.7586089Z",
+    "origin": "live",
+    "httpStatus": 404,
+    "file": "raw/calendar-hyderabad-2028.raw",
+    "sha256": "2e91339b35cd71e8023bb468d26bcf8490d84080252ad1713b2c47ed8002a6e6",
+    "error": null
+  }
+]

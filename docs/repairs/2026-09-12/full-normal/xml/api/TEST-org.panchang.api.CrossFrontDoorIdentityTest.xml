@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.api.CrossFrontDoorIdentityTest" tests="6" skipped="0" failures="1" errors="0" timestamp="2026-09-12T16:07:32" hostname="DESKTOP-KBUKJ2P" time="101.108">
+  <properties/>
+  <testcase name="the api envelope adds nothing inside the wire roots()" classname="org.panchang.api.CrossFrontDoorIdentityTest" time="16.855"/>
+  <testcase name="a single day at the same coordinates is byte-identical through both front doors()" classname="org.panchang.api.CrossFrontDoorIdentityTest" time="27.492"/>
+  <testcase name="both doors resolve the same request to the same site, and say so the same way()" classname="org.panchang.api.CrossFrontDoorIdentityTest" time="42.969"/>
+  <testcase name="a year at the same coordinates is byte-identical through both front doors()" classname="org.panchang.api.CrossFrontDoorIdentityTest" time="0.025">
+    <failure message="org.opentest4j.AssertionFailedError: an ordinary year carries 24 Ekadashi observances; if this is 0 the byte comparison above is comparing two empty documents ==&gt; expected: &lt;24&gt; but was: &lt;25&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: an ordinary year carries 24 Ekadashi observances; if this is 0 the byte comparison above is comparing two empty documents ==&gt; expected: &lt;24&gt; but was: &lt;25&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at app//org.panchang.api.CrossFrontDoorIdentityTest.a year at the same coordinates is byte-identical through both front doors(CrossFrontDoorIdentityTest.kt:78)
+	at java.base@21.0.6/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList.forEach(Unknown Source)
+</failure>
+  </testcase>
+  <testcase name="the compact form carries the same document as the file form()" classname="org.panchang.api.CrossFrontDoorIdentityTest" time="13.762"/>
+  <testcase name="a place-resolved year is byte-identical through both front doors()" classname="org.panchang.api.CrossFrontDoorIdentityTest" time="0.003"/>
+  <system-out><![CDATA[16:07:32.862 [DefaultDispatcher-worker-2 @call-context#2] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+16:07:33.397 [DefaultDispatcher-worker-2 @call-context#2] INFO ktor.test -- Application started in 0.552 seconds.
+16:07:33.400 [DefaultDispatcher-worker-3 @coroutine#4] INFO ktor.test -- Responding at http://localhost:80
+16:07:33.400 [DefaultDispatcher-worker-3 @coroutine#4] INFO ktor.test -- Responding at https://localhost:443
+16:08:02.920 [DefaultDispatcher-worker-9 @call-context#11] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+16:08:02.921 [DefaultDispatcher-worker-9 @call-context#11] INFO ktor.test -- Application started in 0.001 seconds.
+16:08:02.921 [DefaultDispatcher-worker-2 @coroutine#13] INFO ktor.test -- Responding at http://localhost:80
+16:08:02.922 [DefaultDispatcher-worker-2 @coroutine#13] INFO ktor.test -- Responding at https://localhost:443
+16:08:45.362 [DefaultDispatcher-worker-8 @call-context#20] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+16:08:45.363 [DefaultDispatcher-worker-8 @call-context#20] INFO ktor.test -- Application started in 0.001 seconds.
+16:08:45.363 [DefaultDispatcher-worker-4 @coroutine#22] INFO ktor.test -- Responding at http://localhost:80
+16:08:45.363 [DefaultDispatcher-worker-4 @coroutine#22] INFO ktor.test -- Responding at https://localhost:443
+16:08:59.422 [DefaultDispatcher-worker-6 @call-context#29] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+16:08:59.423 [DefaultDispatcher-worker-6 @call-context#29] INFO ktor.test -- Application started in 0.002 seconds.
+16:08:59.424 [DefaultDispatcher-worker-7 @coroutine#31] INFO ktor.test -- Responding at http://localhost:80
+16:08:59.424 [DefaultDispatcher-worker-7 @coroutine#31] INFO ktor.test -- Responding at https://localhost:443
+]]></system-out>
+  <system-err><![CDATA[SLF4J(I): Connected with provider of type [ch.qos.logback.classic.spi.LogbackServiceProvider]
+]]></system-err>
+</testsuite>

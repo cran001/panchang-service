@@ -1,0 +1,2233 @@
+{
+  "auditedSourceAtRepairStart": [
+    {
+      "path": "calc/src/test/kotlin/org/panchang/calc/SampradayasRegistrationTest.kt",
+      "matches": true
+    },
+    {
+      "path": "docs/sampradaya-coverage.md",
+      "matches": true
+    },
+    {
+      "path": "docs/sampradaya-expansion-guide.md",
+      "matches": true
+    },
+    {
+      "path": "publish/src/test/kotlin/org/panchang/publish/RegionalFeedPublishTest.kt",
+      "matches": true
+    },
+    {
+      "path": "sampradaya/src/main/kotlin/org/panchang/sampradaya/BengaliRules.kt",
+      "matches": true
+    },
+    {
+      "path": "sampradaya/src/main/kotlin/org/panchang/sampradaya/GujaratiRules.kt",
+      "matches": true
+    },
+    {
+      "path": "sampradaya/src/main/kotlin/org/panchang/sampradaya/KannadaRules.kt",
+      "matches": true
+    },
+    {
+      "path": "sampradaya/src/main/kotlin/org/panchang/sampradaya/MalayalamRules.kt",
+      "matches": true
+    },
+    {
+      "path": "sampradaya/src/main/kotlin/org/panchang/sampradaya/MarathiRules.kt",
+      "matches": true
+    },
+    {
+      "path": "sampradaya/src/main/kotlin/org/panchang/sampradaya/NorthIndianRules.kt",
+      "matches": true
+    },
+    {
+      "path": "sampradaya/src/main/kotlin/org/panchang/sampradaya/OdiaRules.kt",
+      "matches": true
+    },
+    {
+      "path": "sampradaya/src/main/kotlin/org/panchang/sampradaya/SolarIngressIndex.kt",
+      "matches": true
+    },
+    {
+      "path": "sampradaya/src/main/kotlin/org/panchang/sampradaya/TamilRules.kt",
+      "matches": true
+    },
+    {
+      "path": "sampradaya/src/main/kotlin/org/panchang/sampradaya/TeluguRules.kt",
+      "matches": true
+    },
+    {
+      "path": "sampradaya/src/test/kotlin/org/panchang/sampradaya/BengaliCalendarTest.kt",
+      "matches": true
+    },
+    {
+      "path": "sampradaya/src/test/kotlin/org/panchang/sampradaya/GujaratiCalendarTest.kt",
+      "matches": true
+    },
+    {
+      "path": "sampradaya/src/test/kotlin/org/panchang/sampradaya/KannadaCalendarTest.kt",
+      "matches": true
+    },
+    {
+      "path": "sampradaya/src/test/kotlin/org/panchang/sampradaya/MalayalamCalendarTest.kt",
+      "matches": true
+    },
+    {
+      "path": "sampradaya/src/test/kotlin/org/panchang/sampradaya/MarathiCalendarTest.kt",
+      "matches": true
+    },
+    {
+      "path": "sampradaya/src/test/kotlin/org/panchang/sampradaya/NorthIndianCalendarTest.kt",
+      "matches": true
+    },
+    {
+      "path": "sampradaya/src/test/kotlin/org/panchang/sampradaya/OdiaCalendarTest.kt",
+      "matches": true
+    },
+    {
+      "path": "sampradaya/src/test/kotlin/org/panchang/sampradaya/ReykjavikParanaTest.kt",
+      "matches": true
+    },
+    {
+      "path": "sampradaya/src/test/kotlin/org/panchang/sampradaya/SolarRuleTest.kt",
+      "matches": true
+    },
+    {
+      "path": "sampradaya/src/test/kotlin/org/panchang/sampradaya/TamilCalendarTest.kt",
+      "matches": true
+    },
+    {
+      "path": "sampradaya/src/test/kotlin/org/panchang/sampradaya/TeluguCalendarTest.kt",
+      "matches": true
+    },
+    {
+      "path": ".gitattributes",
+      "matches": true
+    },
+    {
+      "path": ".gitignore",
+      "matches": true
+    },
+    {
+      "path": "api/build.gradle.kts",
+      "matches": true
+    },
+    {
+      "path": "api/src/main/kotlin/org/panchang/api/ApiFailure.kt",
+      "matches": true
+    },
+    {
+      "path": "api/src/main/kotlin/org/panchang/api/ApiJson.kt",
+      "matches": true
+    },
+    {
+      "path": "api/src/main/kotlin/org/panchang/api/Main.kt",
+      "matches": true
+    },
+    {
+      "path": "api/src/main/kotlin/org/panchang/api/RequestSite.kt",
+      "matches": true
+    },
+    {
+      "path": "api/src/main/kotlin/org/panchang/api/Routes.kt",
+      "matches": true
+    },
+    {
+      "path": "api/src/test/kotlin/org/panchang/api/CrossFrontDoorIdentityTest.kt",
+      "matches": true
+    },
+    {
+      "path": "api/src/test/kotlin/org/panchang/api/Fixtures.kt",
+      "matches": true
+    },
+    {
+      "path": "api/src/test/kotlin/org/panchang/api/MultiSiteParanaApiTest.kt",
+      "matches": true
+    },
+    {
+      "path": "api/src/test/kotlin/org/panchang/api/PlaceRenderingTest.kt",
+      "matches": true
+    },
+    {
+      "path": "api/src/test/kotlin/org/panchang/api/RoutesTest.kt",
+      "matches": true
+    },
+    {
+      "path": "build.gradle.kts",
+      "matches": true
+    },
+    {
+      "path": "calc/build.gradle.kts",
+      "matches": true
+    },
+    {
+      "path": "calc/src/main/kotlin/org/panchang/calc/CalcEngine.kt",
+      "matches": true
+    },
+    {
+      "path": "calc/src/main/kotlin/org/panchang/calc/HumanReport.kt",
+      "matches": true
+    },
+    {
+      "path": "calc/src/main/kotlin/org/panchang/calc/LocationResolution.kt",
+      "matches": true
+    },
+    {
+      "path": "calc/src/main/kotlin/org/panchang/calc/Main.kt",
+      "matches": true
+    },
+    {
+      "path": "calc/src/test/kotlin/org/panchang/calc/CalcCliTest.kt",
+      "matches": true
+    },
+    {
+      "path": "core/build.gradle.kts",
+      "matches": true
+    },
+    {
+      "path": "core/src/main/kotlin/org/panchang/core/AngleCrossing.kt",
+      "matches": true
+    },
+    {
+      "path": "core/src/main/kotlin/org/panchang/core/Angles.kt",
+      "matches": true
+    },
+    {
+      "path": "core/src/main/kotlin/org/panchang/core/Ayanamsha.kt",
+      "matches": true
+    },
+    {
+      "path": "core/src/main/kotlin/org/panchang/core/DayDivisions.kt",
+      "matches": true
+    },
+    {
+      "path": "core/src/main/kotlin/org/panchang/core/Elements.kt",
+      "matches": true
+    },
+    {
+      "path": "core/src/main/kotlin/org/panchang/core/GeoLocation.kt",
+      "matches": true
+    },
+    {
+      "path": "core/src/main/kotlin/org/panchang/core/LunarMonth.kt",
+      "matches": true
+    },
+    {
+      "path": "core/src/main/kotlin/org/panchang/core/Panchang.kt",
+      "matches": true
+    },
+    {
+      "path": "core/src/main/kotlin/org/panchang/core/PanchangCalculator.kt",
+      "matches": true
+    },
+    {
+      "path": "core/src/main/kotlin/org/panchang/core/RiseSet.kt",
+      "matches": true
+    },
+    {
+      "path": "core/src/main/kotlin/org/panchang/core/RiseSetSolver.kt",
+      "matches": true
+    },
+    {
+      "path": "core/src/main/kotlin/org/panchang/core/Topocentric.kt",
+      "matches": true
+    },
+    {
+      "path": "core/src/test/kotlin/org/panchang/core/AngleCrossingTest.kt",
+      "matches": true
+    },
+    {
+      "path": "core/src/test/kotlin/org/panchang/core/CivilTwilightTest.kt",
+      "matches": true
+    },
+    {
+      "path": "core/src/test/kotlin/org/panchang/core/DayDivisionsTest.kt",
+      "matches": true
+    },
+    {
+      "path": "core/src/test/kotlin/org/panchang/core/LinearEphemeris.kt",
+      "matches": true
+    },
+    {
+      "path": "core/src/test/kotlin/org/panchang/core/LunarMonthTest.kt",
+      "matches": true
+    },
+    {
+      "path": "core/src/test/kotlin/org/panchang/core/MoonTimesTest.kt",
+      "matches": true
+    },
+    {
+      "path": "core/src/test/kotlin/org/panchang/core/PolarTest.kt",
+      "matches": true
+    },
+    {
+      "path": "core/src/test/kotlin/org/panchang/core/SunTimesTest.kt",
+      "matches": true
+    },
+    {
+      "path": "core/src/test/kotlin/org/panchang/core/TimeZoneTest.kt",
+      "matches": true
+    },
+    {
+      "path": "core/src/test/kotlin/org/panchang/core/TithiPartitionTest.kt",
+      "matches": true
+    },
+    {
+      "path": "core/src/test/kotlin/org/panchang/core/UsnoSunTimesConformanceTest.kt",
+      "matches": true
+    },
+    {
+      "path": "docs/accuracy-baseline.md",
+      "matches": true
+    },
+    {
+      "path": "docs/decisions/0001-elp2000-deferred.md",
+      "matches": true
+    },
+    {
+      "path": "docs/decisions/0002-reference-calendar-disagreement.md",
+      "matches": true
+    },
+    {
+      "path": "docs/decisions/0003-event-anchor-definitions.md",
+      "matches": true
+    },
+    {
+      "path": "docs/legacy-contract.md",
+      "matches": true
+    },
+    {
+      "path": "docs/measurements/horizons-2026-08-01/README.md",
+      "matches": true
+    },
+    {
+      "path": "docs/measurements/horizons-2026-08-01/moon_1950.csv",
+      "matches": true
+    },
+    {
+      "path": "docs/measurements/horizons-2026-08-01/moon_2026.csv",
+      "matches": true
+    },
+    {
+      "path": "docs/measurements/horizons-2026-08-01/moon_2100.csv",
+      "matches": true
+    },
+    {
+      "path": "docs/measurements/horizons-2026-08-01/sun_1950.csv",
+      "matches": true
+    },
+    {
+      "path": "docs/measurements/horizons-2026-08-01/sun_2026.csv",
+      "matches": true
+    },
+    {
+      "path": "docs/measurements/horizons-2026-08-01/sun_2100.csv",
+      "matches": true
+    },
+    {
+      "path": "docs/pandit-review.md",
+      "matches": true
+    },
+    {
+      "path": "docs/validation-moonrise.md",
+      "matches": true
+    },
+    {
+      "path": "docs/validation-multisite.md",
+      "matches": true
+    },
+    {
+      "path": "docs/validation-sunrise.md",
+      "matches": true
+    },
+    {
+      "path": "ephemeris/.gitattributes",
+      "matches": true
+    },
+    {
+      "path": "ephemeris/build.gradle.kts",
+      "matches": true
+    },
+    {
+      "path": "ephemeris/src/main/kotlin/org/panchang/ephemeris/DeltaT.kt",
+      "matches": true
+    },
+    {
+      "path": "ephemeris/src/main/kotlin/org/panchang/ephemeris/Ephemeris.kt",
+      "matches": true
+    },
+    {
+      "path": "ephemeris/src/main/kotlin/org/panchang/ephemeris/MeeusEphemeris.kt",
+      "matches": true
+    },
+    {
+      "path": "ephemeris/src/main/kotlin/org/panchang/ephemeris/Nutation.kt",
+      "matches": true
+    },
+    {
+      "path": "ephemeris/src/main/kotlin/org/panchang/ephemeris/ObservedDeltaT.kt",
+      "matches": true
+    },
+    {
+      "path": "ephemeris/src/main/kotlin/org/panchang/ephemeris/TimeScale.kt",
+      "matches": true
+    },
+    {
+      "path": "ephemeris/src/main/kotlin/org/panchang/ephemeris/Vsop87.kt",
+      "matches": true
+    },
+    {
+      "path": "ephemeris/src/main/kotlin/org/panchang/ephemeris/Vsop87Ephemeris.kt",
+      "matches": true
+    },
+    {
+      "path": "ephemeris/src/main/resources/org/panchang/ephemeris/VSOP87D.ear",
+      "matches": true
+    },
+    {
+      "path": "ephemeris/src/main/resources/org/panchang/ephemeris/deltat-iers.csv",
+      "matches": true
+    },
+    {
+      "path": "ephemeris/src/test/kotlin/org/panchang/ephemeris/DeltaTTest.kt",
+      "matches": true
+    },
+    {
+      "path": "ephemeris/src/test/kotlin/org/panchang/ephemeris/HorizonsDifferentialTest.kt",
+      "matches": true
+    },
+    {
+      "path": "ephemeris/src/test/kotlin/org/panchang/ephemeris/MeeusEphemerisPropertiesTest.kt",
+      "matches": true
+    },
+    {
+      "path": "ephemeris/src/test/kotlin/org/panchang/ephemeris/MeeusWorkedExampleTest.kt",
+      "matches": true
+    },
+    {
+      "path": "ephemeris/src/test/kotlin/org/panchang/ephemeris/ObservedDeltaTTest.kt",
+      "matches": true
+    },
+    {
+      "path": "ephemeris/src/test/kotlin/org/panchang/ephemeris/TimeScaleTest.kt",
+      "matches": true
+    },
+    {
+      "path": "ephemeris/src/test/kotlin/org/panchang/ephemeris/Vsop87CheckValuesTest.kt",
+      "matches": true
+    },
+    {
+      "path": "ephemeris/src/test/kotlin/org/panchang/ephemeris/Vsop87SolarTest.kt",
+      "matches": true
+    },
+    {
+      "path": "ephemeris/src/test/resources/org/panchang/ephemeris/vsop87d-earth-checkvalues.txt",
+      "matches": true
+    },
+    {
+      "path": "gazetteer/build.gradle.kts",
+      "matches": true
+    },
+    {
+      "path": "gazetteer/src/main/kotlin/org/panchang/gazetteer/Gazetteer.kt",
+      "matches": true
+    },
+    {
+      "path": "gazetteer/src/main/kotlin/org/panchang/gazetteer/Place.kt",
+      "matches": true
+    },
+    {
+      "path": "gazetteer/src/main/kotlin/org/panchang/gazetteer/PlaceNames.kt",
+      "matches": true
+    },
+    {
+      "path": "gazetteer/src/main/kotlin/org/panchang/gazetteer/ingest/Ingest.kt",
+      "matches": true
+    },
+    {
+      "path": "gazetteer/src/main/resources/org/panchang/gazetteer/gazetteer-v1.tsv",
+      "matches": true
+    },
+    {
+      "path": "gazetteer/src/test/kotlin/org/panchang/gazetteer/GazetteerGeometryTest.kt",
+      "matches": true
+    },
+    {
+      "path": "gazetteer/src/test/kotlin/org/panchang/gazetteer/GazetteerProvenanceTest.kt",
+      "matches": true
+    },
+    {
+      "path": "gazetteer/src/test/kotlin/org/panchang/gazetteer/GazetteerTest.kt",
+      "matches": true
+    },
+    {
+      "path": "gazetteer/src/test/kotlin/org/panchang/gazetteer/PlaceNamesTest.kt",
+      "matches": true
+    },
+    {
+      "path": "gradle.properties",
+      "matches": true
+    },
+    {
+      "path": "gradle/libs.versions.toml",
+      "matches": true
+    },
+    {
+      "path": "gradle/wrapper/gradle-wrapper.jar",
+      "matches": true
+    },
+    {
+      "path": "gradle/wrapper/gradle-wrapper.properties",
+      "matches": true
+    },
+    {
+      "path": "gradlew",
+      "matches": true
+    },
+    {
+      "path": "gradlew.bat",
+      "matches": true
+    },
+    {
+      "path": "publish/build.gradle.kts",
+      "matches": true
+    },
+    {
+      "path": "publish/sites/example.tsv",
+      "matches": true
+    },
+    {
+      "path": "publish/src/main/kotlin/org/panchang/publish/FeedPublisher.kt",
+      "matches": true
+    },
+    {
+      "path": "publish/src/main/kotlin/org/panchang/publish/LegacyFeed.kt",
+      "matches": true
+    },
+    {
+      "path": "publish/src/main/kotlin/org/panchang/publish/Main.kt",
+      "matches": true
+    },
+    {
+      "path": "publish/src/main/kotlin/org/panchang/publish/PublishReport.kt",
+      "matches": true
+    },
+    {
+      "path": "publish/src/main/kotlin/org/panchang/publish/SiteList.kt",
+      "matches": true
+    },
+    {
+      "path": "publish/src/test/kotlin/org/panchang/publish/FeedPublisherTest.kt",
+      "matches": true
+    },
+    {
+      "path": "publish/src/test/kotlin/org/panchang/publish/LegacyFeedTest.kt",
+      "matches": true
+    },
+    {
+      "path": "publish/src/test/kotlin/org/panchang/publish/SiteListTest.kt",
+      "matches": true
+    },
+    {
+      "path": "sampradaya/build.gradle.kts",
+      "matches": true
+    },
+    {
+      "path": "sampradaya/src/main/kotlin/org/panchang/sampradaya/EventCatalog.kt",
+      "matches": true
+    },
+    {
+      "path": "sampradaya/src/main/kotlin/org/panchang/sampradaya/EventResolver.kt",
+      "matches": true
+    },
+    {
+      "path": "sampradaya/src/main/kotlin/org/panchang/sampradaya/EventTime.kt",
+      "matches": true
+    },
+    {
+      "path": "sampradaya/src/main/kotlin/org/panchang/sampradaya/IskconEventCatalog.kt",
+      "matches": true
+    },
+    {
+      "path": "sampradaya/src/main/kotlin/org/panchang/sampradaya/IskconRules.kt",
+      "matches": true
+    },
+    {
+      "path": "sampradaya/src/main/kotlin/org/panchang/sampradaya/Observance.kt",
+      "matches": true
+    },
+    {
+      "path": "sampradaya/src/main/kotlin/org/panchang/sampradaya/SampradayaRules.kt",
+      "matches": true
+    },
+    {
+      "path": "sampradaya/src/test/kotlin/org/panchang/sampradaya/EventResolverTest.kt",
+      "matches": true
+    },
+    {
+      "path": "sampradaya/src/test/kotlin/org/panchang/sampradaya/EventTimeTest.kt",
+      "matches": true
+    },
+    {
+      "path": "sampradaya/src/test/kotlin/org/panchang/sampradaya/GaudiyaEkadashiConformanceTest.kt",
+      "matches": true
+    },
+    {
+      "path": "sampradaya/src/test/kotlin/org/panchang/sampradaya/GaudiyaGoldenCalendar.kt",
+      "matches": true
+    },
+    {
+      "path": "sampradaya/src/test/kotlin/org/panchang/sampradaya/GaudiyaSiteFixture.kt",
+      "matches": true
+    },
+    {
+      "path": "sampradaya/src/test/kotlin/org/panchang/sampradaya/IndiaParanaReportTest.kt",
+      "matches": true
+    },
+    {
+      "path": "sampradaya/src/test/kotlin/org/panchang/sampradaya/IskconEventCatalogConformanceTest.kt",
+      "matches": true
+    },
+    {
+      "path": "sampradaya/src/test/kotlin/org/panchang/sampradaya/MultiSiteParanaConformanceTest.kt",
+      "matches": true
+    },
+    {
+      "path": "sampradaya/src/test/kotlin/org/panchang/sampradaya/ParanaDaylightEdgeTest.kt",
+      "matches": true
+    },
+    {
+      "path": "settings.gradle.kts",
+      "matches": true
+    },
+    {
+      "path": "vendor/MANIFEST.sha256",
+      "matches": true
+    },
+    {
+      "path": "vendor/PROVENANCE.md",
+      "matches": true
+    },
+    {
+      "path": "vendor/elp2000/ELP1",
+      "matches": true
+    },
+    {
+      "path": "vendor/elp2000/ELP10",
+      "matches": true
+    },
+    {
+      "path": "vendor/elp2000/ELP11",
+      "matches": true
+    },
+    {
+      "path": "vendor/elp2000/ELP12",
+      "matches": true
+    },
+    {
+      "path": "vendor/elp2000/ELP13",
+      "matches": true
+    },
+    {
+      "path": "vendor/elp2000/ELP14",
+      "matches": true
+    },
+    {
+      "path": "vendor/elp2000/ELP15",
+      "matches": true
+    },
+    {
+      "path": "vendor/elp2000/ELP16",
+      "matches": true
+    },
+    {
+      "path": "vendor/elp2000/ELP17",
+      "matches": true
+    },
+    {
+      "path": "vendor/elp2000/ELP18",
+      "matches": true
+    },
+    {
+      "path": "vendor/elp2000/ELP19",
+      "matches": true
+    },
+    {
+      "path": "vendor/elp2000/ELP2",
+      "matches": true
+    },
+    {
+      "path": "vendor/elp2000/ELP20",
+      "matches": true
+    },
+    {
+      "path": "vendor/elp2000/ELP21",
+      "matches": true
+    },
+    {
+      "path": "vendor/elp2000/ELP22",
+      "matches": true
+    },
+    {
+      "path": "vendor/elp2000/ELP23",
+      "matches": true
+    },
+    {
+      "path": "vendor/elp2000/ELP24",
+      "matches": true
+    },
+    {
+      "path": "vendor/elp2000/ELP25",
+      "matches": true
+    },
+    {
+      "path": "vendor/elp2000/ELP26",
+      "matches": true
+    },
+    {
+      "path": "vendor/elp2000/ELP27",
+      "matches": true
+    },
+    {
+      "path": "vendor/elp2000/ELP28",
+      "matches": true
+    },
+    {
+      "path": "vendor/elp2000/ELP29",
+      "matches": true
+    },
+    {
+      "path": "vendor/elp2000/ELP3",
+      "matches": true
+    },
+    {
+      "path": "vendor/elp2000/ELP30",
+      "matches": true
+    },
+    {
+      "path": "vendor/elp2000/ELP31",
+      "matches": true
+    },
+    {
+      "path": "vendor/elp2000/ELP32",
+      "matches": true
+    },
+    {
+      "path": "vendor/elp2000/ELP33",
+      "matches": true
+    },
+    {
+      "path": "vendor/elp2000/ELP34",
+      "matches": true
+    },
+    {
+      "path": "vendor/elp2000/ELP35",
+      "matches": true
+    },
+    {
+      "path": "vendor/elp2000/ELP36",
+      "matches": true
+    },
+    {
+      "path": "vendor/elp2000/ELP4",
+      "matches": true
+    },
+    {
+      "path": "vendor/elp2000/ELP5",
+      "matches": true
+    },
+    {
+      "path": "vendor/elp2000/ELP6",
+      "matches": true
+    },
+    {
+      "path": "vendor/elp2000/ELP7",
+      "matches": true
+    },
+    {
+      "path": "vendor/elp2000/ELP8",
+      "matches": true
+    },
+    {
+      "path": "vendor/elp2000/ELP9",
+      "matches": true
+    },
+    {
+      "path": "vendor/elp2000_ReadMe",
+      "matches": true
+    },
+    {
+      "path": "vendor/geonames/IN.zip",
+      "matches": true
+    },
+    {
+      "path": "vendor/geonames/cities15000.zip",
+      "matches": true
+    },
+    {
+      "path": "vendor/vsop87_ReadMe",
+      "matches": true
+    },
+    {
+      "path": "vendor/vsop87_VSOP87D.ear",
+      "matches": true
+    },
+    {
+      "path": "vendor/vsop87_vsop87.chk",
+      "matches": true
+    },
+    {
+      "path": "vendor/vsop87_vsop87.txt",
+      "matches": true
+    },
+    {
+      "path": "verify/build.gradle.kts",
+      "matches": true
+    },
+    {
+      "path": "verify/golden/horizons-moon-2026-04-14_2026-04-21.json",
+      "matches": true
+    },
+    {
+      "path": "verify/golden/horizons-sun-2026-04-14_2026-04-21.json",
+      "matches": true
+    },
+    {
+      "path": "verify/golden/usno-grid-2026-04-14.json",
+      "matches": true
+    },
+    {
+      "path": "verify/golden/usno-polar-2026-06-21.json",
+      "matches": true
+    },
+    {
+      "path": "verify/golden/usno-polar-2026-12-21.json",
+      "matches": true
+    },
+    {
+      "path": "verify/golden/vaisnavacalendar-ahmedabad-2026.json",
+      "matches": true
+    },
+    {
+      "path": "verify/golden/vaisnavacalendar-auckland-2026.json",
+      "matches": true
+    },
+    {
+      "path": "verify/golden/vaisnavacalendar-bangalore-2026.json",
+      "matches": true
+    },
+    {
+      "path": "verify/golden/vaisnavacalendar-chennai-2026.json",
+      "matches": true
+    },
+    {
+      "path": "verify/golden/vaisnavacalendar-delhi-2026.json",
+      "matches": true
+    },
+    {
+      "path": "verify/golden/vaisnavacalendar-guwahati-2026.json",
+      "matches": true
+    },
+    {
+      "path": "verify/golden/vaisnavacalendar-london-2026.json",
+      "matches": true
+    },
+    {
+      "path": "verify/golden/vaisnavacalendar-mayapur-2026.json",
+      "matches": true
+    },
+    {
+      "path": "verify/golden/vaisnavacalendar-moscow-2026.json",
+      "matches": true
+    },
+    {
+      "path": "verify/golden/vaisnavacalendar-mumbai-2026.json",
+      "matches": true
+    },
+    {
+      "path": "verify/golden/vaisnavacalendar-new-york-2026.json",
+      "matches": true
+    },
+    {
+      "path": "verify/golden/vaisnavacalendar-sao-paulo-2026.json",
+      "matches": true
+    },
+    {
+      "path": "verify/golden/vaisnavacalendar-sydney-2026.json",
+      "matches": true
+    },
+    {
+      "path": "verify/golden/vaisnavacalendar-vrindavan-2026.json",
+      "matches": true
+    },
+    {
+      "path": "verify/src/main/kotlin/org/panchang/verify/cli/Main.kt",
+      "matches": true
+    },
+    {
+      "path": "verify/src/main/kotlin/org/panchang/verify/drik/DrikPanchangHarvester.kt",
+      "matches": true
+    },
+    {
+      "path": "verify/src/main/kotlin/org/panchang/verify/grid/ReferenceCities.kt",
+      "matches": true
+    },
+    {
+      "path": "verify/src/main/kotlin/org/panchang/verify/harvest/ArtifactStore.kt",
+      "matches": true
+    },
+    {
+      "path": "verify/src/main/kotlin/org/panchang/verify/harvest/HarvestException.kt",
+      "matches": true
+    },
+    {
+      "path": "verify/src/main/kotlin/org/panchang/verify/harvest/Harvester.kt",
+      "matches": true
+    },
+    {
+      "path": "verify/src/main/kotlin/org/panchang/verify/harvest/HttpFetcher.kt",
+      "matches": true
+    },
+    {
+      "path": "verify/src/main/kotlin/org/panchang/verify/harvest/Provenance.kt",
+      "matches": true
+    },
+    {
+      "path": "verify/src/main/kotlin/org/panchang/verify/harvest/RateLimiter.kt",
+      "matches": true
+    },
+    {
+      "path": "verify/src/main/kotlin/org/panchang/verify/harvest/RequestSpec.kt",
+      "matches": true
+    },
+    {
+      "path": "verify/src/main/kotlin/org/panchang/verify/horizons/HorizonsHarvester.kt",
+      "matches": true
+    },
+    {
+      "path": "verify/src/main/kotlin/org/panchang/verify/horizons/HorizonsModels.kt",
+      "matches": true
+    },
+    {
+      "path": "verify/src/main/kotlin/org/panchang/verify/horizons/HorizonsParser.kt",
+      "matches": true
+    },
+    {
+      "path": "verify/src/main/kotlin/org/panchang/verify/usno/UsnoHarvester.kt",
+      "matches": true
+    },
+    {
+      "path": "verify/src/main/kotlin/org/panchang/verify/usno/UsnoModels.kt",
+      "matches": true
+    },
+    {
+      "path": "verify/src/main/kotlin/org/panchang/verify/usno/UsnoParser.kt",
+      "matches": true
+    },
+    {
+      "path": "verify/src/main/kotlin/org/panchang/verify/vaisnava/HtmlText.kt",
+      "matches": true
+    },
+    {
+      "path": "verify/src/main/kotlin/org/panchang/verify/vaisnava/IskconMumbaiHarvester.kt",
+      "matches": true
+    },
+    {
+      "path": "verify/src/main/kotlin/org/panchang/verify/vaisnava/PureBhaktiHarvester.kt",
+      "matches": true
+    },
+    {
+      "path": "verify/src/main/kotlin/org/panchang/verify/vaisnava/VaisnavaCalendarTxtHarvester.kt",
+      "matches": true
+    },
+    {
+      "path": "verify/src/main/kotlin/org/panchang/verify/vaisnava/VaisnavaCalendarTxtParser.kt",
+      "matches": true
+    },
+    {
+      "path": "verify/src/main/kotlin/org/panchang/verify/vaisnava/VaisnavaModels.kt",
+      "matches": true
+    },
+    {
+      "path": "verify/src/main/kotlin/org/panchang/verify/vaisnava/VaisnavaSites.kt",
+      "matches": true
+    },
+    {
+      "path": "verify/src/main/resources/logback.xml",
+      "matches": true
+    },
+    {
+      "path": "verify/src/test/kotlin/org/panchang/verify/Fixtures.kt",
+      "matches": true
+    },
+    {
+      "path": "verify/src/test/kotlin/org/panchang/verify/HorizonsParserTest.kt",
+      "matches": true
+    },
+    {
+      "path": "verify/src/test/kotlin/org/panchang/verify/HtmlSourceParserTest.kt",
+      "matches": true
+    },
+    {
+      "path": "verify/src/test/kotlin/org/panchang/verify/HttpFetcherTest.kt",
+      "matches": true
+    },
+    {
+      "path": "verify/src/test/kotlin/org/panchang/verify/LiveSourceTest.kt",
+      "matches": true
+    },
+    {
+      "path": "verify/src/test/kotlin/org/panchang/verify/ProvenanceAndCacheTest.kt",
+      "matches": true
+    },
+    {
+      "path": "verify/src/test/kotlin/org/panchang/verify/RateLimiterTest.kt",
+      "matches": true
+    },
+    {
+      "path": "verify/src/test/kotlin/org/panchang/verify/ReferenceCitiesTest.kt",
+      "matches": true
+    },
+    {
+      "path": "verify/src/test/kotlin/org/panchang/verify/UsnoMoonTimesConformanceTest.kt",
+      "matches": true
+    },
+    {
+      "path": "verify/src/test/kotlin/org/panchang/verify/UsnoParserTest.kt",
+      "matches": true
+    },
+    {
+      "path": "verify/src/test/kotlin/org/panchang/verify/VaisnavaCalendarTxtParserTest.kt",
+      "matches": true
+    },
+    {
+      "path": "verify/src/test/kotlin/org/panchang/verify/VaisnavaSiteTest.kt",
+      "matches": true
+    },
+    {
+      "path": "verify/src/test/resources/fixtures/drikpanchang_day_panchang_structure.html",
+      "matches": true
+    },
+    {
+      "path": "verify/src/test/resources/fixtures/horizons_moon_geocentric_2026-04-14.txt",
+      "matches": true
+    },
+    {
+      "path": "verify/src/test/resources/fixtures/horizons_sun_geocentric_2026-04-14.txt",
+      "matches": true
+    },
+    {
+      "path": "verify/src/test/resources/fixtures/iskconmumbai_ekadasi_fragment.html",
+      "matches": true
+    },
+    {
+      "path": "verify/src/test/resources/fixtures/usno_oneday_mayapur_2026-04-14.json",
+      "matches": true
+    },
+    {
+      "path": "verify/src/test/resources/fixtures/usno_oneday_svalbard_2026-06-21.json",
+      "matches": true
+    },
+    {
+      "path": "verify/src/test/resources/fixtures/vaisnavacalendar_auckland_2026_head.txt",
+      "matches": true
+    },
+    {
+      "path": "verify/src/test/resources/fixtures/vaisnavacalendar_auckland_2026_sep_slice.txt",
+      "matches": true
+    },
+    {
+      "path": "verify/src/test/resources/fixtures/vaisnavacalendar_mayapur_2026_head.txt",
+      "matches": true
+    },
+    {
+      "path": "verify/src/test/resources/fixtures/vaisnavacalendar_mayapur_2026_jun_slice.txt",
+      "matches": true
+    },
+    {
+      "path": "verify/src/test/resources/fixtures/vaisnavacalendar_notes_tail.txt",
+      "matches": true
+    },
+    {
+      "path": "wire/build.gradle.kts",
+      "matches": true
+    },
+    {
+      "path": "wire/src/main/kotlin/org/panchang/wire/Dto.kt",
+      "matches": true
+    },
+    {
+      "path": "wire/src/main/kotlin/org/panchang/wire/SiteAcceptance.kt",
+      "matches": true
+    },
+    {
+      "path": "wire/src/main/kotlin/org/panchang/wire/WireJson.kt",
+      "matches": true
+    },
+    {
+      "path": "wire/src/main/kotlin/org/panchang/wire/WireRenderer.kt",
+      "matches": true
+    },
+    {
+      "path": "wire/src/test/kotlin/org/panchang/wire/DeterminismTest.kt",
+      "matches": true
+    },
+    {
+      "path": "wire/src/test/kotlin/org/panchang/wire/EventTimeWireTest.kt",
+      "matches": true
+    },
+    {
+      "path": "wire/src/test/kotlin/org/panchang/wire/Fixtures.kt",
+      "matches": true
+    },
+    {
+      "path": "wire/src/test/kotlin/org/panchang/wire/InstantRenderingTest.kt",
+      "matches": true
+    },
+    {
+      "path": "wire/src/test/kotlin/org/panchang/wire/SiteAcceptanceTest.kt",
+      "matches": true
+    },
+    {
+      "path": "wire/src/test/kotlin/org/panchang/wire/WireRoundTripTest.kt",
+      "matches": true
+    }
+  ],
+  "originalChecksumRecordVerification": [
+    {
+      "path": "analyse.py",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "analysis.log",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "angular-elements.log",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "astronomy-comparisons.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "astronomy-final.log",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "audit.init.gradle",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "AUDIT.md",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "audited-source-hashes.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-counts.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-failures.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-status.txt",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-tests.log",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-tracked.diff",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\api\\TEST-org.panchang.api.CrossFrontDoorIdentityTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\api\\TEST-org.panchang.api.MultiSiteParanaApiTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\api\\TEST-org.panchang.api.PlaceRenderingTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\api\\TEST-org.panchang.api.RoutesTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\calc\\TEST-org.panchang.calc.CalcCliTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\calc\\TEST-org.panchang.calc.SampradayasRegistrationTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\core\\TEST-org.panchang.core.AngleCrossingTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\core\\TEST-org.panchang.core.CivilTwilightTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\core\\TEST-org.panchang.core.DayDivisionsTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\core\\TEST-org.panchang.core.LunarMonthTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\core\\TEST-org.panchang.core.MoonTimesTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\core\\TEST-org.panchang.core.PolarTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\core\\TEST-org.panchang.core.SunTimesTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\core\\TEST-org.panchang.core.TimeZoneTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\core\\TEST-org.panchang.core.TithiPartitionTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\core\\TEST-org.panchang.core.UsnoSunTimesConformanceTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\ephemeris\\TEST-org.panchang.ephemeris.DeltaTTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\ephemeris\\TEST-org.panchang.ephemeris.HorizonsDifferentialTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\ephemeris\\TEST-org.panchang.ephemeris.MeeusEphemerisPropertiesTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\ephemeris\\TEST-org.panchang.ephemeris.MeeusWorkedExampleTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\ephemeris\\TEST-org.panchang.ephemeris.ObservedDeltaTTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\ephemeris\\TEST-org.panchang.ephemeris.TimeScaleTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\ephemeris\\TEST-org.panchang.ephemeris.Vsop87CheckValuesTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\ephemeris\\TEST-org.panchang.ephemeris.Vsop87SolarTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\gazetteer\\TEST-org.panchang.gazetteer.GazetteerGeometryTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\gazetteer\\TEST-org.panchang.gazetteer.GazetteerProvenanceTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\gazetteer\\TEST-org.panchang.gazetteer.GazetteerTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\gazetteer\\TEST-org.panchang.gazetteer.PlaceNamesTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\publish\\TEST-org.panchang.publish.FeedPublisherTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\publish\\TEST-org.panchang.publish.LegacyFeedTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\publish\\TEST-org.panchang.publish.PublishReportTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\publish\\TEST-org.panchang.publish.RegionalFeedPublishTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\publish\\TEST-org.panchang.publish.SiteListTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\sampradaya\\TEST-org.panchang.sampradaya.BengaliCalendarTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\sampradaya\\TEST-org.panchang.sampradaya.EventResolverTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\sampradaya\\TEST-org.panchang.sampradaya.EventTimeTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\sampradaya\\TEST-org.panchang.sampradaya.GaudiyaEkadashiConformanceTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\sampradaya\\TEST-org.panchang.sampradaya.GujaratiCalendarTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\sampradaya\\TEST-org.panchang.sampradaya.IndiaParanaReportTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\sampradaya\\TEST-org.panchang.sampradaya.IskconEventCatalogConformanceTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\sampradaya\\TEST-org.panchang.sampradaya.KannadaCalendarTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\sampradaya\\TEST-org.panchang.sampradaya.MalayalamCalendarTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\sampradaya\\TEST-org.panchang.sampradaya.MarathiCalendarTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\sampradaya\\TEST-org.panchang.sampradaya.MultiSiteParanaConformanceTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\sampradaya\\TEST-org.panchang.sampradaya.NorthIndianCalendarTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\sampradaya\\TEST-org.panchang.sampradaya.OdiaCalendarTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\sampradaya\\TEST-org.panchang.sampradaya.ParanaDaylightEdgeTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\sampradaya\\TEST-org.panchang.sampradaya.ReykjavikParanaTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\sampradaya\\TEST-org.panchang.sampradaya.SolarRuleTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\sampradaya\\TEST-org.panchang.sampradaya.TamilCalendarTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\sampradaya\\TEST-org.panchang.sampradaya.TeluguCalendarTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\verify\\TEST-org.panchang.verify.DrikPanchangParserTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\verify\\TEST-org.panchang.verify.HorizonsParserTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\verify\\TEST-org.panchang.verify.HttpFetcherTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\verify\\TEST-org.panchang.verify.IskconMumbaiParserTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\verify\\TEST-org.panchang.verify.ProvenanceAndCacheTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\verify\\TEST-org.panchang.verify.PureBhaktiParserTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\verify\\TEST-org.panchang.verify.RateLimiterTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\verify\\TEST-org.panchang.verify.ReferenceCitiesTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\verify\\TEST-org.panchang.verify.RetryPolicyTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\verify\\TEST-org.panchang.verify.UsnoMoonTimesConformanceTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\verify\\TEST-org.panchang.verify.UsnoParserTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\verify\\TEST-org.panchang.verify.VaisnavaCalendarTxtParserTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\verify\\TEST-org.panchang.verify.VaisnavaSiteTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\wire\\TEST-org.panchang.wire.DeterminismTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\wire\\TEST-org.panchang.wire.EventTimeWireTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\wire\\TEST-org.panchang.wire.InstantRenderingTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\wire\\TEST-org.panchang.wire.SiteAcceptanceTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "baseline-xml\\wire\\TEST-org.panchang.wire.WireRoundTripTest.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "calendar-final.log",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "calendar-final.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "commit.txt",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "comparisons.log",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "daily-boundary-diagnostics.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "daily-field-comparisons.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "daily-field-disagreements.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "defect-tests.log",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "defect-tests.xml",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "delivery-probes-final.log",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "delivery-probes-retry.log",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "delivery-probes.log",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "evidence_inventory.py",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "EXCEPTIONS.md",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "exceptions.py",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "fasting-comparisons.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "fasting-results.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "fetch-manifest.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "fetch.log",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "fetch.ps1",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "findings.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "gcal-tree-provenance.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "gcal-tree.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "harness\\AuditEvidenceTest.kt",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "high-latitude-diagnostics.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "independent-angular-elements.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "independent-boundaries.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "january-first-delivery.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "method.md",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "new-astronomy\\horizons-2027-moon.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "new-astronomy\\horizons-2027-sun.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "new-astronomy\\horizons-2028-moon.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "new-astronomy\\horizons-2028-sun.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "new-astronomy\\horizons-auckland-boundary-moon.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "new-astronomy\\horizons-auckland-boundary-sun.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "new-astronomy\\horizons-vrindavan-boundary-moon.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "new-astronomy\\horizons-vrindavan-boundary-sun.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "new-astronomy\\retry-usno-cape-town-2028-06-21.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "new-astronomy\\retry-usno-london-2027-03-28.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "new-astronomy\\retry-usno-reykjavik-2026-06-26.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "new-astronomy\\retry-usno-singapore-2028-01-01.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "new-astronomy\\supplement-usno-auckland-2026-10-08.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "new-astronomy\\supplement-usno-cape-town-2027-01-01.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "new-astronomy\\supplement-usno-singapore-2027-12-31.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "new-astronomy\\supplement-usno-vrindavan-2026-06-30.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "new-astronomy\\usno-reykjavik-2026-06-26.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "new-calendars\\calendar-hyderabad-2027.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "new-calendars\\calendar-mayapur-2027.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "parana-comparisons.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "parana-results.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "parse-final.log",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "parse-report.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "parse.log",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "plan-retry.log",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "plan.log",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "powershell-version.txt",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "python-version.txt",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\calendar-hyderabad-2027.raw",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\calendar-hyderabad-2027.stderr.txt",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\calendar-hyderabad-2028.raw",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\calendar-hyderabad-2028.stderr.txt",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\calendar-mayapur-2027.raw",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\calendar-mayapur-2027.stderr.txt",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\calendar-mayapur-2028.raw",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\calendar-mayapur-2028.stderr.txt",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\gcal-readme.raw",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\gcal-readme.stderr.txt",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\gcal-rules.stderr.txt",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\horizons-2027-moon.raw",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\horizons-2027-moon.stderr.txt",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\horizons-2027-sun.raw",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\horizons-2027-sun.stderr.txt",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\horizons-2028-moon.raw",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\horizons-2028-moon.stderr.txt",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\horizons-2028-sun.raw",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\horizons-2028-sun.stderr.txt",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\horizons-auckland-boundary-moon.raw",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\horizons-auckland-boundary-moon.stderr.txt",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\horizons-auckland-boundary-sun.raw",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\horizons-auckland-boundary-sun.stderr.txt",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\horizons-vrindavan-boundary-moon.raw",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\horizons-vrindavan-boundary-moon.stderr.txt",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\horizons-vrindavan-boundary-sun.raw",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\horizons-vrindavan-boundary-sun.stderr.txt",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\publisher-policy.raw",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\publisher-policy.stderr.txt",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\retry-usno-cape-town-2028-06-21.raw",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\retry-usno-cape-town-2028-06-21.stderr.txt",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\retry-usno-london-2027-03-28.raw",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\retry-usno-london-2027-03-28.stderr.txt",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\retry-usno-reykjavik-2026-06-26.raw",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\retry-usno-reykjavik-2026-06-26.stderr.txt",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\retry-usno-singapore-2028-01-01.raw",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\retry-usno-singapore-2028-01-01.stderr.txt",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\supplement-usno-auckland-2026-10-08.raw",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\supplement-usno-auckland-2026-10-08.stderr.txt",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\supplement-usno-cape-town-2027-01-01.raw",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\supplement-usno-cape-town-2027-01-01.stderr.txt",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\supplement-usno-singapore-2027-12-31.raw",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\supplement-usno-singapore-2027-12-31.stderr.txt",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\supplement-usno-vrindavan-2026-06-30.raw",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\supplement-usno-vrindavan-2026-06-30.stderr.txt",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\usno-auckland-2026-10-08.raw",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\usno-auckland-2026-10-08.stderr.txt",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\usno-cape-town-2027-01-01.raw",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\usno-cape-town-2027-01-01.stderr.txt",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\usno-cape-town-2028-06-21.raw",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\usno-cape-town-2028-06-21.stderr.txt",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\usno-definitions.raw",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\usno-definitions.stderr.txt",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\usno-london-2027-03-28.raw",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\usno-london-2027-03-28.stderr.txt",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\usno-london-2028-10-29.raw",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\usno-london-2028-10-29.stderr.txt",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\usno-new-york-2027-03-14.raw",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\usno-new-york-2027-03-14.stderr.txt",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\usno-new-york-2028-11-05.raw",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\usno-new-york-2028-11-05.stderr.txt",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\usno-reykjavik-2026-06-26.raw",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\usno-reykjavik-2026-06-26.stderr.txt",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\usno-reykjavik-2028-06-21.raw",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\usno-reykjavik-2028-06-21.stderr.txt",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\usno-singapore-2027-12-31.raw",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\usno-singapore-2027-12-31.stderr.txt",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\usno-singapore-2028-01-01.raw",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\usno-singapore-2028-01-01.stderr.txt",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\usno-vrindavan-2026-06-30.raw",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "raw\\usno-vrindavan-2026-06-30.stderr.txt",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "REPRODUCE.md",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "requests.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "retry-fetch.log",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "retry-manifest.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "retry-requests.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "reykjavik-cap-comparison.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "reykjavik-sunrise-sensitivity.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "rule-diagnostics.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "runtime.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "site-summary.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "stored-provenance-checks.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "summary.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "supplement-fetch.log",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "supplement-manifest.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "supplement-requests.json",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "tracked-after.diff",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "transliteration-map.json",
+      "exists": true,
+      "matches": true
+    }
+  ]
+}

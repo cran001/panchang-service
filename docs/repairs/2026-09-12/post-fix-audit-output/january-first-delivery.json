@@ -1,0 +1,94 @@
+{
+  "tool": "panchang-calc",
+  "request": {
+    "sampradaya": "iskcon",
+    "year": 2026,
+    "scope": "DAY",
+    "date": "2026-01-01",
+    "scopeNote": "yearResolution.events is filtered to this date. ekadashiYear.observances keeps an Ekadashi whose fast OR whose parana window falls on this date, because the parana falls on the following day and is the thing most likely to be asked for on the morning itself; check observances[].date against observances[].parana.date to tell the two cases apart. yearResolution.unresolved is the whole year's, because an unresolved entry has no date to filter on."
+  },
+  "location": {
+    "coordinateSource": "CALLER_COORDINATES",
+    "query": "audit",
+    "coordinatesUsed": {
+      "latitude": 23.416666666666668,
+      "longitude": 88.38333333333334,
+      "timeZone": "Asia/Kolkata",
+      "elevationMeters": 0.0
+    },
+    "notes": []
+  },
+  "ekadashiYear": {
+    "schemaVersion": 1,
+    "year": 2026,
+    "site": {
+      "latitude": 23.416666666666668,
+      "longitude": 88.38333333333334,
+      "timeZone": "Asia/Kolkata",
+      "elevationMeters": 0.0
+    },
+    "sampradaya": {
+      "id": "iskcon",
+      "displayName": "ISKCON / Gaudiya Vaishnava",
+      "status": "VERIFIED",
+      "provenanceNote": "Ekadashi, Mahadvadashi and parana rules follow GCal 11 Build 5 (GBC Calendar Committee), as published at vaisnavacalendar.info. Fasting dates, Ekadashi names and parana windows are checked against that calendar's Mayapur output for 2026 by an automated conformance test, and the rules were derived against its 2021-2027 output. Two reservations a reader should carry: the four nakshatra-based Mahadvadashis (Jaya, Vijaya, Jayanti, Papanasini) rest on a single observed occurrence and their qualifying condition is inferred rather than quoted from a text; and this engine's tithi boundaries run up to about two minutes earlier than GCal's, which is harmless for a printed time but could in principle move a fasting day when a tithi ends within about two minutes of sunrise."
+    },
+    "observances": [
+      {
+        "date": "2025-12-31",
+        "name": "Putrada Ekadashi",
+        "kind": "EKADASHI",
+        "tithi": {
+          "index": 10,
+          "name": "Ekadashi",
+          "numberInPaksha": 11,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Pausha",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2025-12-30T07:51:32+05:30",
+            "jdUt": 2461039.59829
+          },
+          "end": {
+            "local": "2025-12-31T05:00:57+05:30",
+            "jdUt": 2461040.47983
+          }
+        },
+        "parana": {
+          "date": "2026-01-01",
+          "start": {
+            "local": "2026-01-01T06:18:13+05:30",
+            "jdUt": 2461041.53348
+          },
+          "end": {
+            "local": "2026-01-01T09:52:42+05:30",
+            "jdUt": 2461041.68243
+          },
+          "startReason": "SUNRISE",
+          "endReason": "ONE_THIRD_DAYLIGHT",
+          "durationMinutes": 214.499
+        },
+        "reason": "The Ekadashi began after sunrise and ended before the next sunrise, so no day carries it; the fast is kept on the Dvadashi.",
+        "confidence": "CONFIRMED"
+      }
+    ]
+  },
+  "yearResolution": {
+    "schemaVersion": 1,
+    "year": 2026,
+    "site": {
+      "latitude": 23.416666666666668,
+      "longitude": 88.38333333333334,
+      "timeZone": "Asia/Kolkata",
+      "elevationMeters": 0.0
+    },
+    "sampradaya": {
+      "id": "iskcon",
+      "displayName": "ISKCON / Gaudiya Vaishnava",
+      "status": "VERIFIED",
+      "provenanceNote": "Ekadashi, Mahadvadashi and parana rules follow GCal 11 Build 5 (GBC Calendar Committee), as published at vaisnavacalendar.info. Fasting dates, Ekadashi names and parana windows are checked against that calendar's Mayapur output for 2026 by an automated conformance test, and the rules were derived against its 2021-2027 output. Two reservations a reader should carry: the four nakshatra-based Mahadvadashis (Jaya, Vijaya, Jayanti, Papanasini) rest on a single observed occurrence and their qualifying condition is inferred rather than quoted from a text; and this engine's tithi boundaries run up to about two minutes earlier than GCal's, which is harmless for a printed time but could in principle move a fasting day when a tithi ends within about two minutes of sunrise."
+    },
+    "events": [],
+    "unresolved": {}
+  }
+}

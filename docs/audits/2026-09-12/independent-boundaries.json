@@ -1,0 +1,26 @@
+[
+  {
+    "site": "vrindavan",
+    "referenceSource": "new-astronomy/horizons-vrindavan-boundary-*.json",
+    "targetElongationDegrees": 180,
+    "referenceUtc": "2026-06-29T23:56:41.191130+00:00",
+    "linearVsQuadraticSeconds": -0.0020961761474609375,
+    "serviceBoundary": "2026-06-30T05:26:39.819+05:30[Asia/Kolkata]",
+    "serviceMinusReferenceSeconds": -1.3721301555633545,
+    "serviceSunrise": "2026-06-30T05:26:53.259+05:30[Asia/Kolkata]",
+    "referenceBoundaryMinusServiceSunriseSeconds": -12.067869901657104,
+    "uncertaintyNote": "Interpolation consistency is not total uncertainty. USNO minute rounding cannot resolve the associated sunrise ordering."
+  },
+  {
+    "site": "auckland",
+    "referenceSource": "new-astronomy/horizons-auckland-boundary-*.json",
+    "targetElongationDegrees": 324,
+    "referenceUtc": "2026-10-07T17:47:04.425858+00:00",
+    "linearVsQuadraticSeconds": 0.005743741989135742,
+    "serviceBoundary": "2026-10-08T06:46:57.059+13:00[Pacific/Auckland]",
+    "serviceMinusReferenceSeconds": -7.36685848236084,
+    "serviceSunrise": "2026-10-08T06:47:17.585+13:00[Pacific/Auckland]",
+    "referenceBoundaryMinusServiceSunriseSeconds": -13.159141540527344,
+    "uncertaintyNote": "Interpolation consistency is not total uncertainty. USNO minute rounding cannot resolve the associated sunrise ordering."
+  }
+]

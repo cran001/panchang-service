@@ -52,6 +52,9 @@ enum class ApiErrorCode {
     /** The tradition is not in the registry. The response names what is. */
     UNKNOWN_SAMPRADAYA,
 
+    /** Implemented locally but excluded from the public launch. */
+    SAMPRADAYA_OUTSIDE_RELEASE,
+
     /**
      * The tradition is registered — it exists and this project knows it does — but carries no
      * rules. It is refused rather than answered with an empty calendar, which would be
@@ -91,6 +94,13 @@ internal fun failure(
 ): ApiFailure = ApiFailure(
     status,
     apiDocument {
+        if (status == HttpStatusCode.UnprocessableEntity || status == HttpStatusCode.NotImplemented) {
+            putJsonObject("publication") {
+                put("state", JsonPrimitive("UNSUPPORTED"))
+                put("guidance", JsonPrimitive("WITHHELD"))
+                put("absenceMeaning", JsonPrimitive("GUIDANCE_WITHHELD_NOT_NO_EVENT"))
+            }
+        }
         putJsonObject("error") {
             put("status", JsonPrimitive(status.value))
             put("code", JsonPrimitive(code))

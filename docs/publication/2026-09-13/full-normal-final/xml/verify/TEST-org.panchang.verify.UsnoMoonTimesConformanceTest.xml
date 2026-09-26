@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.verify.UsnoMoonTimesConformanceTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2026-09-14T05:31:41" hostname="DESKTOP-KBUKJ2P" time="0.15">
+  <properties/>
+  <testcase name="Longyearbyen, Svalbard 2026-06-21 (usno-polar-2026-06-21.json)" classname="org.panchang.verify.UsnoMoonTimesConformanceTest" time="0.039"/>
+  <testcase name="McMurdo Station, Antarctica 2026-06-21 (usno-polar-2026-06-21.json)" classname="org.panchang.verify.UsnoMoonTimesConformanceTest" time="0.011"/>
+  <testcase name="Longyearbyen, Svalbard 2026-12-21 (usno-polar-2026-12-21.json)" classname="org.panchang.verify.UsnoMoonTimesConformanceTest" time="0.008"/>
+  <testcase name="McMurdo Station, Antarctica 2026-12-21 (usno-polar-2026-12-21.json)" classname="org.panchang.verify.UsnoMoonTimesConformanceTest" time="0.008"/>
+  <testcase name="Mayapur, India 2026-04-14" classname="org.panchang.verify.UsnoMoonTimesConformanceTest" time="0.003"/>
+  <testcase name="Vrindavan, India 2026-04-14" classname="org.panchang.verify.UsnoMoonTimesConformanceTest" time="0.003"/>
+  <testcase name="Delhi, India 2026-04-14" classname="org.panchang.verify.UsnoMoonTimesConformanceTest" time="0.003"/>
+  <testcase name="Mumbai, India 2026-04-14" classname="org.panchang.verify.UsnoMoonTimesConformanceTest" time="0.003"/>
+  <testcase name="Chennai, India 2026-04-14" classname="org.panchang.verify.UsnoMoonTimesConformanceTest" time="0.003"/>
+  <testcase name="Bangalore, India 2026-04-14" classname="org.panchang.verify.UsnoMoonTimesConformanceTest" time="0.012"/>
+  <testcase name="Ahmedabad, India 2026-04-14" classname="org.panchang.verify.UsnoMoonTimesConformanceTest" time="0.004"/>
+  <testcase name="Guwahati, India 2026-04-14" classname="org.panchang.verify.UsnoMoonTimesConformanceTest" time="0.004"/>
+  <testcase name="London, United Kingdom 2026-04-14" classname="org.panchang.verify.UsnoMoonTimesConformanceTest" time="0.003"/>
+  <testcase name="New York, United States 2026-04-14" classname="org.panchang.verify.UsnoMoonTimesConformanceTest" time="0.004"/>
+  <testcase name="Auckland, New Zealand 2026-04-14" classname="org.panchang.verify.UsnoMoonTimesConformanceTest" time="0.004"/>
+  <testcase name="Moscow, Russia 2026-04-14" classname="org.panchang.verify.UsnoMoonTimesConformanceTest" time="0.004"/>
+  <testcase name="Sao Paulo, Brazil 2026-04-14" classname="org.panchang.verify.UsnoMoonTimesConformanceTest" time="0.006"/>
+  <testcase name="Sydney, Australia 2026-04-14" classname="org.panchang.verify.UsnoMoonTimesConformanceTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

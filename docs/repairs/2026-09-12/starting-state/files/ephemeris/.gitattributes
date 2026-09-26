@@ -1,0 +1,8 @@
+# Coefficient and observation tables shipped as resources are byte-for-byte copies of
+# what was retrieved. The root .gitattributes normalises line endings across the repo;
+# these files are exempted for the same reason vendor/** is: their bytes are pinned by
+# SHA-256 in tests, and a checkout-time EOL rewrite would make those tests pass on Linux
+# and fail on Windows.
+src/main/resources/org/panchang/ephemeris/VSOP87D.ear    -text
+src/main/resources/org/panchang/ephemeris/deltat-iers.csv -text
+src/test/resources/org/panchang/ephemeris/vsop87d-earth-checkvalues.txt -text

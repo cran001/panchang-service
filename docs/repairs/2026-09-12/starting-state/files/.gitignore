@@ -1,0 +1,8 @@
+.gradle/
+build/
+out/
+*.log
+local.properties
+.idea/
+# Harvested reference data is cached here; only curated golden files are committed.
+verify/cache/

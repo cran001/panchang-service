@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.sampradaya.DaylightDeliveryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-09-12T16:00:04" hostname="DESKTOP-KBUKJ2P" time="6.097">
+  <properties/>
+  <testcase name="Reykjavik June 26 uses the independently evidenced following sunset cap()" classname="org.panchang.sampradaya.DaylightDeliveryTest" time="6.097"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

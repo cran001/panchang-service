@@ -1,0 +1,4 @@
+{
+  "completed": false,
+  "reason": "Process absent after resumed user turn; no completion exit or copied XML recorded. Partial log preserved."
+}

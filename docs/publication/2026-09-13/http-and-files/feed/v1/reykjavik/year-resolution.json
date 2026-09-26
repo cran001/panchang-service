@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 2,
+  "year": 2026,
+  "site": {
+    "latitude": 64.1466,
+    "longitude": -21.9426,
+    "timeZone": "Atlantic/Reykjavik",
+    "elevationMeters": 0.0
+  },
+  "sampradaya": {
+    "id": "iskcon",
+    "displayName": "ISKCON / Gaudiya Vaishnava"
+  },
+  "publication": {
+    "state": "DISPUTED",
+    "guidance": "WITHHELD",
+    "field": "EVENTS",
+    "coverage": {
+      "from": "2026-01-01",
+      "through": "2026-12-31"
+    },
+    "bundleFingerprint": "045b8dac9844fcb8747d603fac81cf736f93f0e1e1a20039ea6f15c943b10c8e",
+    "approvalRecordId": null,
+    "approverKeyId": null,
+    "approvedAt": null,
+    "issues": [
+      {
+        "id": "ASTRONOMY-01",
+        "place": {
+          "id": "audit:reykjavik",
+          "latitude": 64.1466,
+          "longitude": -21.9426,
+          "elevationMeters": 0.0,
+          "timeZone": "Atlantic/Reykjavik"
+        },
+        "tradition": "iskcon",
+        "coverage": {
+          "from": "2026-06-27",
+          "through": "2026-06-27"
+        },
+        "fields": [
+          "DAILY_ASTRONOMY",
+          "OBSERVANCES",
+          "EVENTS"
+        ],
+        "affectedDetails": [
+          "sunrise",
+          "sunriseDependentGuidance"
+        ],
+        "observedRevision": "2026-09-12-dirty-audit-and-repair-handoff",
+        "versionApplicability": "OBSERVED_AND_UNREVIEWED_SUCCESSORS",
+        "state": "DISPUTED",
+        "explanation": "Separate sunrise disagreement: -32.171 seconds versus the unchanged 30-second USNO rounding band; daylight repair did not settle it.",
+        "evidence": [
+          {
+            "link": "docs/audits/2026-09-12/reykjavik-sunrise-sensitivity.json",
+            "sha256": "6619671686e82a3873bc0e6b65ec84dc242f4e0d8b0f80e60268eeb8672fc68d",
+            "outcome": "UNRESOLVED_AUDIT_EVIDENCE"
+          }
+        ]
+      }
+    ],
+    "explanation": "Scoped audit cases require an explicit qualified resolution. An approved withholding decision keeps guidance withheld"
+  },
+  "diagnosticClassificationsAreNotApproval": true,
+  "events": null,
+  "unresolved": null,
+  "absenceMeaning": "GUIDANCE_WITHHELD_NOT_NO_EVENT"
+}

@@ -1,0 +1,183 @@
+{
+  "gitDiffCheckExitCode": 0,
+  "gitDiffCheckOutput": "warning: in the working copy of 'api/src/test/kotlin/org/panchang/api/CrossFrontDoorIdentityTest.kt', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'publish/src/main/kotlin/org/panchang/publish/FeedPublisher.kt', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'publish/src/test/kotlin/org/panchang/publish/FeedPublisherTest.kt', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'sampradaya/src/test/kotlin/org/panchang/sampradaya/ParanaDaylightEdgeTest.kt', CRLF will be replaced by LF the next time Git touches it\n",
+  "localDocumentLinksChecked": [
+    {
+      "document": "AI-ASSISTED-REVIEW.md",
+      "target": "ai-assisted-review.json"
+    },
+    {
+      "document": "AI-ASSISTED-REVIEW.md",
+      "target": "coverage-inventory.json"
+    },
+    {
+      "document": "AI-ASSISTED-REVIEW.md",
+      "target": "SOURCE-FINDINGS.md"
+    },
+    {
+      "document": "AI-ASSISTED-REVIEW.md",
+      "target": "DECISIONS.md"
+    },
+    {
+      "document": "AI-ASSISTED-REVIEW.md",
+      "target": "HANDOFF.md"
+    },
+    {
+      "document": "HANDOFF.md",
+      "target": "CACHE.md"
+    },
+    {
+      "document": "HANDOFF.md",
+      "target": "API-ANDROID-HANDOFF.md"
+    },
+    {
+      "document": "HANDOFF.md",
+      "target": "production.env.example"
+    },
+    {
+      "document": "HANDOFF.md",
+      "target": "implementation-files.json"
+    },
+    {
+      "document": "HANDOFF.md",
+      "target": "AI-ASSISTED-REVIEW.md"
+    },
+    {
+      "document": "HANDOFF.md",
+      "target": "ai-assisted-review.json"
+    },
+    {
+      "document": "HANDOFF.md",
+      "target": "coverage-inventory.json"
+    },
+    {
+      "document": "HANDOFF.md",
+      "target": "SOURCE-FINDINGS.md"
+    },
+    {
+      "document": "HANDOFF.md",
+      "target": "bundles/priority/bundle.json"
+    },
+    {
+      "document": "HANDOFF.md",
+      "target": "bundles/hold/bundle.json"
+    },
+    {
+      "document": "HANDOFF.md",
+      "target": "bundles/alternative-sydney-through-december-04/bundle.json"
+    },
+    {
+      "document": "HANDOFF.md",
+      "target": "bundle-checks.json"
+    },
+    {
+      "document": "HANDOFF.md",
+      "target": "VERIFICATION.md"
+    },
+    {
+      "document": "HANDOFF.md",
+      "target": "verification.json"
+    },
+    {
+      "document": "HANDOFF.md",
+      "target": "DECISIONS.md"
+    },
+    {
+      "document": "VERIFICATION.md",
+      "target": "baseline/counts.json"
+    },
+    {
+      "document": "VERIFICATION.md",
+      "target": "targeted-1/counts.json"
+    },
+    {
+      "document": "VERIFICATION.md",
+      "target": "targeted-2/counts.json"
+    },
+    {
+      "document": "VERIFICATION.md",
+      "target": "full/counts.json"
+    },
+    {
+      "document": "VERIFICATION.md",
+      "target": "delivery-regressions.json"
+    },
+    {
+      "document": "VERIFICATION.md",
+      "target": "reproduction-checks.json"
+    },
+    {
+      "document": "VERIFICATION.md",
+      "target": "source-recheck.json"
+    },
+    {
+      "document": "VERIFICATION.md",
+      "target": "source-checks.json"
+    },
+    {
+      "document": "VERIFICATION.md",
+      "target": "bundle-checks.json"
+    },
+    {
+      "document": "VERIFICATION.md",
+      "target": "smoke/checks.json"
+    },
+    {
+      "document": "VERIFICATION.md",
+      "target": "starting-state/hashes.json"
+    },
+    {
+      "document": "VERIFICATION.md",
+      "target": "verification.json"
+    },
+    {
+      "document": "VERIFICATION.md",
+      "target": "implementation-files.json"
+    }
+  ],
+  "pythonSourcesParsed": [
+    "finalize.py",
+    "finish_runs.py",
+    "prepare_bundles.py",
+    "prepare_reproduction.py",
+    "research.py",
+    "review.py",
+    "smoke.py",
+    "verify.py"
+  ],
+  "finalDeliverableHashes": {
+    "AI-ASSISTED-REVIEW.md": "f9ebd909668fc5f7bf5d87db35f6a960b0064436a47748be08a5f8c9717892f8",
+    "API-ANDROID-HANDOFF.md": "0ff273c04efbb5b178d0351fb73b5e60aa4c1c35ccbf790991c3f6aec269facb",
+    "CACHE.md": "ffa759cbbc1c8494a4488beccac7080daf0750d96f620dbd93a9276da64e3ab0",
+    "DECISIONS.md": "0c1b9a06d6b5d0d00caee9a48578804f4306bf84d33a6300d5531e675a257426",
+    "finalize.py": "46e2cfce47a4a64f4f9a0971fdfcbb5a4fd2823f202e83f217491b0b0c49719d",
+    "finish_runs.py": "3fa68732b490930ee0a06bbc32fad6102d804ca263fda8b2f4494875dc8040e7",
+    "HANDOFF.md": "fbe4361a7314d4989485f39eebc84885ea6188adf327fe95962b8aaaf5c0ebbb",
+    "prepare_bundles.py": "6a5b2b153cf04256e9d6491be45127278698267334a917ffb2330cc68667ad55",
+    "prepare_reproduction.py": "ff5dc2e976e1947bf4aaf77ecd92b276d5ebdb8ad59069d0abfa63db832661c4",
+    "production.env.example": "322d1c7efd85cce62382da87f03cc377cd7501470b34d01408fdaba1261612f6",
+    "research.py": "1f826bc9cdbaab7c060a4e7bc84f57eb92a648f6a834aa9b4627ef4464d56d56",
+    "review.py": "ffa3995160015922d2770b85c4d9edc2518cca986eade41e1870f4f6932955ed",
+    "smoke.py": "98be2aaf9710ce46e01391e3e48a320b92d87de8e918b36e0a8a667b01b7b8ec",
+    "SOURCE-FINDINGS.md": "714bbfe0a0baa66e47e45f31917269bafb9dc0a6d6fa2dc2884331d51f088517",
+    "VERIFICATION.md": "ce587668a4e8874e626179cbb4d7bce9829f25b6c301728638edc7a9883ae146",
+    "verify.py": "dcaaa3a69c04eb798f232303621d60706cbc5366c17fe87aec388a5960864e4f"
+  },
+  "implementationHashes": {
+    "api/src/test/kotlin/org/panchang/api/DeliveryFrontDoorTest.kt": "e7855d63d7385381beb3c9f052c515c625ba334210c06e77e5c1e32dcc058333",
+    "api/src/test/kotlin/org/panchang/api/PublicationControlsApiTest.kt": "a366cd2f5fcbe2e232be45f5e4e79b2baecb5d2b247aa7f152db545bc4683a78",
+    "publication/src/main/kotlin/org/panchang/publication/PublicationPolicy.kt": "a0fca9e83553f0f911ffe098545231a09fd83f71147df276718a4646005c3d2d",
+    "publish/src/main/kotlin/org/panchang/publish/PublicFeedPublisher.kt": "88151c850ea7ac9744d378a916d8f44845dbb8fa24521192fb8803b9823d4f32",
+    "api/src/main/kotlin/org/panchang/api/Main.kt": "aa4d9da844c60d7a682e5de1e2dcdef0d9934acc074bd37af4551b08fc92d63f",
+    "api/src/main/kotlin/org/panchang/api/Routes.kt": "27f99f0bc9151aa661455390be4a1bafae2faf81584d38b675053b7d25fcb208",
+    "api/src/test/kotlin/org/panchang/api/Fixtures.kt": "c5cab2412590ebbe5f487f3c1b67f7c0756f15acea30498700ef508d70ab959b",
+    "api/src/test/kotlin/org/panchang/api/PlaceRenderingTest.kt": "d2d963c631c36246ae5a1df86cccfa39a1f9e4dfe69f2788744a445f3948e28c",
+    "api/src/test/kotlin/org/panchang/api/RoutesTest.kt": "1f4361fd83c27cd7c30347ab6a7b797b17acf8af6151db77ad738f922c0783aa",
+    "publish/src/main/kotlin/org/panchang/publish/Main.kt": "9be6df870dbd78b80a8c2c0e3cc5957352de9517fc6ed5a29d145cc07ba2cda7",
+    "api/src/test/kotlin/org/panchang/api/VersionMigrationTest.kt": "122dcf7e6ac389e8ffa8ec87e5d331ebebb411facfe18044ce74980fa8149042",
+    "publication/src/main/kotlin/org/panchang/publication/CalculationCache.kt": "63abe6eae801d0e127993b72612151a42af8b1a3804be5acf5fbdd1f505bdd42",
+    "publication/src/test/kotlin/org/panchang/publication/CalculationCacheTest.kt": "347a484b09ba5a3c97b75a0b62a9582efa7f8756cb32a6d662721a58f9c13bb4"
+  },
+  "allBundleEvidenceHashesChecked": true,
+  "allMeasurementReferenceHashesChecked": true
+}

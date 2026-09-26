@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.gazetteer.GazetteerTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2026-09-21T09:03:01" hostname="DESKTOP-KBUKJ2P" time="1.991">
+  <properties/>
+  <testcase name="prefix search is for typeahead and never matches everything()" classname="org.panchang.gazetteer.GazetteerTest" time="0.024"/>
+  <testcase name="ambiguous names return every match, most populous first()" classname="org.panchang.gazetteer.GazetteerTest" time="0.002"/>
+  <testcase name="the table loads and both kinds are present()" classname="org.panchang.gazetteer.GazetteerTest" time="0.042"/>
+  <testcase name="nearest finds the closest record()" classname="org.panchang.gazetteer.GazetteerTest" time="0.002"/>
+  <testcase name="nearest wraps across the antimeridian()" classname="org.panchang.gazetteer.GazetteerTest" time="0.001"/>
+  <testcase name="no one-degree cell is pathologically crowded()" classname="org.panchang.gazetteer.GazetteerTest" time="0.004"/>
+  <testcase name="nearest works at the poles where longitude cells collapse()" classname="org.panchang.gazetteer.GazetteerTest" time="0.032"/>
+  <testcase name="name lookup returns nothing rather than a guess()" classname="org.panchang.gazetteer.GazetteerTest" time="0.001"/>
+  <testcase name="grid search agrees with brute force()" classname="org.panchang.gazetteer.GazetteerTest" time="1.641"/>
+  <testcase name="the radius is honoured exactly()" classname="org.panchang.gazetteer.GazetteerTest" time="0.001"/>
+  <testcase name="districts are all Indian and carry a resolved state name()" classname="org.panchang.gazetteer.GazetteerTest" time="0.03"/>
+  <testcase name="byGeonameId finds a known record()" classname="org.panchang.gazetteer.GazetteerTest" time="0.01"/>
+  <testcase name="zone ids are interned rather than duplicated per row()" classname="org.panchang.gazetteer.GazetteerTest" time="0.047"/>
+  <testcase name="every row is well formed()" classname="org.panchang.gazetteer.GazetteerTest" time="0.114"/>
+  <testcase name="name lookup is exact after normalisation and diacritic-insensitive()" classname="org.panchang.gazetteer.GazetteerTest" time="0.001"/>
+  <testcase name="nearest rejects nonsense input at the edge()" classname="org.panchang.gazetteer.GazetteerTest" time="0.006"/>
+  <testcase name="toGeoLocation defaults to sea level and carries the record's zone()" classname="org.panchang.gazetteer.GazetteerTest" time="0.003"/>
+  <testcase name="nearest returns null beyond the radius rather than snapping()" classname="org.panchang.gazetteer.GazetteerTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

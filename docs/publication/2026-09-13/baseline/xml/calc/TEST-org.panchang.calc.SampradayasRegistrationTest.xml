@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.calc.SampradayasRegistrationTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-09-12T20:46:23" hostname="DESKTOP-KBUKJ2P" time="64.236">
+  <properties/>
+  <testcase name="every regional tradition carries festivals and an honest unverified status()" classname="org.panchang.calc.SampradayasRegistrationTest" time="57.767"/>
+  <testcase name="only iskcon computes ekadashi and parana timing()" classname="org.panchang.calc.SampradayasRegistrationTest" time="6.468"/>
+  <testcase name="iskcon plus the nine regional traditions are registered, in order()" classname="org.panchang.calc.SampradayasRegistrationTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

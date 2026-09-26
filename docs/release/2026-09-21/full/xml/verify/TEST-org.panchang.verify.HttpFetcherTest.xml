@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.verify.HttpFetcherTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-09-22T08:07:16" hostname="DESKTOP-KBUKJ2P" time="3.599">
+  <properties/>
+  <testcase name="retries a 5xx up to the attempt budget and then fails loudly()" classname="org.panchang.verify.HttpFetcherTest" time="3.036"/>
+  <testcase name="never retries a 4xx()" classname="org.panchang.verify.HttpFetcherTest" time="0.141"/>
+  <testcase name="returns the body and status of a successful response()" classname="org.panchang.verify.HttpFetcherTest" time="0.112"/>
+  <testcase name="recovers when a transient 5xx clears before the budget runs out()" classname="org.panchang.verify.HttpFetcherTest" time="0.121"/>
+  <testcase name="sends the headers the request spec declares()" classname="org.panchang.verify.HttpFetcherTest" time="0.128"/>
+  <testcase name="fails rather than hanging when the host does not answer()" classname="org.panchang.verify.HttpFetcherTest" time="0.041"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J(I): Connected with provider of type [ch.qos.logback.classic.spi.LogbackServiceProvider]
+]]></system-err>
+</testsuite>

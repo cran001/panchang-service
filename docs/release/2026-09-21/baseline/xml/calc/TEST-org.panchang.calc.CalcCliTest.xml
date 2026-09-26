@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.calc.CalcCliTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2026-09-21T09:03:14" hostname="DESKTOP-KBUKJ2P" time="85.816">
+  <properties/>
+  <testcase name="every event carries its tithi window, or honestly carries none()" classname="org.panchang.calc.CalcCliTest" time="25.687"/>
+  <testcase name="an unknown sampradaya is refused, never answered with another tradition's dates()" classname="org.panchang.calc.CalcCliTest" time="0.005"/>
+  <testcase name="a polar site is refused with wire's own stated reason()" classname="org.panchang.calc.CalcCliTest" time="0.006"/>
+  <testcase name="giving both a place and coordinates is refused rather than silently ranked()" classname="org.panchang.calc.CalcCliTest" time="0.002"/>
+  <testcase name="ekadashi observances carry both parana bounds with both reasons()" classname="org.panchang.calc.CalcCliTest" time="15.439"/>
+  <testcase name="the same arguments produce byte-identical output across two runs()" classname="org.panchang.calc.CalcCliTest" time="15.121"/>
+  <testcase name="a place resolves to the record's point and says that is what it did()" classname="org.panchang.calc.CalcCliTest" time="0.001"/>
+  <testcase name="an event with no anchor emits no fast-until field at all, not a null-shaped one()" classname="org.panchang.calc.CalcCliTest" time="0.003"/>
+  <testcase name="coordinates without a zone are refused rather than guessed()" classname="org.panchang.calc.CalcCliTest" time="0.002"/>
+  <testcase name="unresolved is printed, not dropped()" classname="org.panchang.calc.CalcCliTest" time="0.002"/>
+  <testcase name="a day query keeps the Ekadashi whose parana falls that morning, and all unresolved()" classname="org.panchang.calc.CalcCliTest" time="14.384"/>
+  <testcase name="a historical name fails with a message, and is never silently substituted()" classname="org.panchang.calc.CalcCliTest" time="0.011"/>
+  <testcase name="an ambiguous place is refused, non-zero, with every candidate named()" classname="org.panchang.calc.CalcCliTest" time="0.01"/>
+  <testcase name="two cities in one time zone get different parana times()" classname="org.panchang.calc.CalcCliTest" time="15.113"/>
+  <testcase name="caller coordinates are reported as caller-supplied and used verbatim()" classname="org.panchang.calc.CalcCliTest" time="0.001"/>
+  <testcase name="an undecidable parana window is omitted with a reason, not invented()" classname="org.panchang.calc.CalcCliTest" time="0.001"/>
+  <testcase name="a place that resolves elsewhere than the famous namesake says so()" classname="org.panchang.calc.CalcCliTest" time="0.014"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

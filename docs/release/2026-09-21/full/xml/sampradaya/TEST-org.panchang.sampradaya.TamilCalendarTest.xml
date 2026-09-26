@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.sampradaya.TamilCalendarTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-09-22T08:14:54" hostname="DESKTOP-KBUKJ2P" time="11.211">
+  <properties/>
+  <testcase name="Puthandu 2026 resolves inside the Mesha window()" classname="org.panchang.sampradaya.TamilCalendarTest" time="5.545"/>
+  <testcase name="ekadashi timing is absent and the rest of the catalog resolves()" classname="org.panchang.sampradaya.TamilCalendarTest" time="5.666"/>
+  <testcase name="the rules identify themselves and stay unverified()" classname="org.panchang.sampradaya.TamilCalendarTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

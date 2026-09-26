@@ -1,0 +1,61 @@
+{
+  "members": [
+    {
+      "place": {
+        "id": "point:9044be8bde1db78cc2e3e8e484353f4597c804636499162f9e2dbed4acd405f6",
+        "latitude": 28.666666666666668,
+        "longitude": 77.21666666666667,
+        "elevationMeters": 0.0,
+        "timeZone": "Asia/Kolkata"
+      },
+      "tradition": "iskcon",
+      "year": 2026,
+      "coverage": {
+        "from": "2026-01-01",
+        "through": "2026-12-31"
+      },
+      "fields": [
+        "OBSERVANCES"
+      ]
+    }
+  ],
+  "referencePolicy": {
+    "id": "vaisnavacalendar-info-gcal-text",
+    "revision": "2026-09-16-proposed",
+    "description": "PROPOSED only: compare exact GCal text snapshots at printed coordinates, IANA mappings and assumed zero elevation. Existing solar -15..75s and lunar -180..75s bands; retain clock/basis disputes and missing ends. No replacement of calculated values. Owner and qualified review pending.",
+    "evidence": [
+      {
+        "link": "docs/release/2026-09-16/REFERENCE-POLICY.md",
+        "sha256": "59c2fe098f2d74ae2418b1af5a173a53bbf12f505be16f077a60bd5b137b2b2d",
+        "outcome": "PROPOSED_POLICY_NOT_APPROVED"
+      },
+      {
+        "link": "docs/release/2026-09-16/coverage-inventory.json",
+        "sha256": "dd9eba1e612260279487d0904f7d2428ed0810fabbfd6d62fd2c7e9e481abb25",
+        "outcome": "MEASURED_COMPARISONS_WITH_UNRESOLVED_CASES"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "link": "docs/release/2026-09-16/measurements/delhi-2026.json",
+      "sha256": "7d01c0fe127ef5a36baa62310ce6e7dc4a5354ed5306f6e33cd025550e38c202",
+      "outcome": "MEASURED_NOT_APPROVED"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-delhi-2025.raw",
+      "sha256": "740646536b0ee057b4594c0a95484bcb65e3663c34e806a8bc5cdabb0aad0741",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-delhi-2026.raw",
+      "sha256": "2477eeb288fbf0aa27969de770e142d6a397624dd6e4f5a4c746d574e141eebe",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-delhi-2027.raw",
+      "sha256": "7c70eb9fbb19cdec3a73762670d6aa9b1ec700b1d783330efcf911d390ac098f",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    }
+  ]
+}

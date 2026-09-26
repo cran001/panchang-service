@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.calc.YearCarryoverTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-09-13T20:31:07" hostname="DESKTOP-KBUKJ2P" time="235.89">
+  <properties/>
+  <testcase name="adjacent years share only the carryover and day selection agrees with each year()" classname="org.panchang.calc.YearCarryoverTest" time="222.722"/>
+  <testcase name="January 1 retains the December fast with its distinct Parana date()" classname="org.panchang.calc.YearCarryoverTest" time="13.167"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

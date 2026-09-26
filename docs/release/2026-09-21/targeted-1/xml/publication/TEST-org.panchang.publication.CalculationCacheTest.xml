@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.publication.CalculationCacheTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-09-21T13:40:07" hostname="DESKTOP-KBUKJ2P" time="38.4">
+  <properties/>
+  <testcase name="concurrent instances compute one complete entry()" classname="org.panchang.publication.CalculationCacheTest" time="21.098"/>
+  <testcase name="warm reads recheck revocation supersession unavailable store and disputes()" classname="org.panchang.publication.CalculationCacheTest" time="0.936"/>
+  <testcase name="restart reuses verified yearly bytes and preserves request provenance()" classname="org.panchang.publication.CalculationCacheTest" time="0.04"/>
+  <testcase name="failed computation and abandoned partial files never become hits()" classname="org.panchang.publication.CalculationCacheTest" time="0.024"/>
+  <testcase name="changed location actually recomputes and cannot borrow cached scope()" classname="org.panchang.publication.CalculationCacheTest" time="0.032"/>
+  <testcase name="corrupted or swapped payload cannot be read as a cache hit()" classname="org.panchang.publication.CalculationCacheTest" time="0.034"/>
+  <testcase name="runtime configuration never activates approval through environment()" classname="org.panchang.publication.CalculationCacheTest" time="16.22"/>
+  <testcase name="exact input and all version changes invalidate cache identity()" classname="org.panchang.publication.CalculationCacheTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

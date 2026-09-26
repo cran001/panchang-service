@@ -1,0 +1,29 @@
+{
+  "id": "calendar-bangalore-2027",
+  "url": "https://www.vaisnavacalendar.info/calendars/2027/Bangalore%20%5BIndia%5D.txt",
+  "kind": "calendar",
+  "retrievedAtUtc": "2026-09-15T19:53:16.142236+00:00",
+  "cityId": "bangalore",
+  "year": 2027,
+  "lineage": "vaisnavacalendar.info/GCal-text",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": 200,
+  "finalUrl": "https://www.vaisnavacalendar.info/calendars/2027/Bangalore%20%5BIndia%5D.txt",
+  "responseHeaders": {
+    "Date": "Tue, 15 Sep 2026 19:53:16 GMT",
+    "Server": "Apache/2",
+    "Upgrade": "h2,h2c",
+    "Connection": "Upgrade, close",
+    "Last-Modified": "Fri, 27 Mar 2026 19:48:32 GMT",
+    "ETag": "\"a31a-64e06c92b9fb7\"",
+    "Accept-Ranges": "bytes",
+    "Content-Length": "41754",
+    "Vary": "Accept-Encoding,User-Agent",
+    "Content-Type": "text/plain"
+  },
+  "file": "docs/release/2026-09-16/sources/calendar-bangalore-2027.raw",
+  "sha256": "70eb5a3e2e4d52c4f02324f6757955f7dc1853c1d5adfe0fa4a631416c9e0414",
+  "bytes": 41754
+}

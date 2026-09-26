@@ -1,0 +1,21 @@
+[
+  "D:\\projects\\panchang-service\\gradlew.bat",
+  ":core:test",
+  "--tests",
+  "*DaylightIntervalTest",
+  ":calc:test",
+  "--tests",
+  "*YearCarryoverTest",
+  ":sampradaya:test",
+  "--tests",
+  "*DaylightDeliveryTest",
+  "--tests",
+  "*ReykjavikParanaTest",
+  "--tests",
+  "*ParanaDaylightEdgeTest",
+  ":api:test",
+  "--tests",
+  "*DeliveryFrontDoorTest",
+  "--continue",
+  "--console=plain"
+]

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.api.MultiSiteParanaApiTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-09-21T13:43:44" hostname="DESKTOP-KBUKJ2P" time="12.925">
+  <properties/>
+  <testcase name="each response reports the coordinates it was actually given()" classname="org.panchang.api.MultiSiteParanaApiTest" time="12.912"/>
+  <testcase name="in December the separation is small and reversed()" classname="org.panchang.api.MultiSiteParanaApiTest" time="0.002"/>
+  <testcase name="every tithi-bounded parana agrees and every sunrise-bounded one does not()" classname="org.panchang.api.MultiSiteParanaApiTest" time="0.003"/>
+  <testcase name="at the equinox the separation is about a quarter of an hour()" classname="org.panchang.api.MultiSiteParanaApiTest" time="0.002"/>
+  <testcase name="a parana bounded by the end of Hari Vasara is identical in both cities()" classname="org.panchang.api.MultiSiteParanaApiTest" time="0.001"/>
+  <testcase name="mid-June is the widest separation, and it is over half an hour()" classname="org.panchang.api.MultiSiteParanaApiTest" time="0.001"/>
+  <system-out><![CDATA[13:43:44.632 [DefaultDispatcher-worker-4 @call-context#92] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+13:43:44.633 [DefaultDispatcher-worker-4 @call-context#92] INFO ktor.test -- Application started in 0.001 seconds.
+13:43:44.633 [DefaultDispatcher-worker-8 @coroutine#94] INFO ktor.test -- Responding at http://localhost:80
+13:43:44.633 [DefaultDispatcher-worker-8 @coroutine#94] INFO ktor.test -- Responding at https://localhost:443
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.core.AngleCrossingTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-09-12T20:44:50" hostname="DESKTOP-KBUKJ2P" time="0.147">
+  <properties/>
+  <testcase name="tithi 1 boundaries match the closed form()" classname="org.panchang.core.AngleCrossingTest" time="0.101"/>
+  <testcase name="returns null rather than looping when the interval brackets nothing()" classname="org.panchang.core.AngleCrossingTest" time="0.004"/>
+  <testcase name="nakshatra and yoga boundaries land on their target angles()" classname="org.panchang.core.AngleCrossingTest" time="0.025"/>
+  <testcase name="karana 60 ends at the seam()" classname="org.panchang.core.AngleCrossingTest" time="0.003"/>
+  <testcase name="lastCrossingBefore returns the latest crossing, not the earliest()" classname="org.panchang.core.AngleCrossingTest" time="0.001"/>
+  <testcase name="tithi 30 boundaries match the closed form across the seam()" classname="org.panchang.core.AngleCrossingTest" time="0.001"/>
+  <testcase name="finds a linear crossing to within a second()" classname="org.panchang.core.AngleCrossingTest" time="0.001"/>
+  <testcase name="a tighter tolerance actually tightens the answer()" classname="org.panchang.core.AngleCrossingTest" time="0.001"/>
+  <testcase name="finds a crossing of the 360-0 seam()" classname="org.panchang.core.AngleCrossingTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

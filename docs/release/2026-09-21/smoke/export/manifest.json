@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "tool": "panchang-publish",
+  "sampradaya": "iskcon",
+  "year": 2026,
+  "requested": 1,
+  "published": 1,
+  "skipped": 0,
+  "legacyPublished": 0,
+  "legacyWithheld": 1,
+  "legacyWithheldSites": [
+    {
+      "key": "mayapur",
+      "timeZone": "Asia/Kolkata",
+      "code": "PUBLICATION_CONTRACT_REQUIRED",
+      "reason": "Legacy cannot express approval, scoped withholding or revocation. Publication is refused; use publication-v2. No fallback calendar was created."
+    }
+  ],
+  "legacyParanaOmissions": [],
+  "warnings": [
+    "0 of 1 structured site documents have all guidance approved. Other documents explicitly withhold guidance. Legacy publication is refused."
+  ],
+  "attribution": "Place data © GeoNames (https://www.geonames.org/), used under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)."
+}

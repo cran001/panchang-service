@@ -1,0 +1,67 @@
+{
+  "apiversion": "4.0.1", 
+  "geometry": {
+    "coordinates": [
+      103.8198, 
+      1.3521
+    ], 
+    "type": "Point"
+  }, 
+  "properties": {
+    "data": {
+      "closestphase": {
+        "day": 5, 
+        "month": 1, 
+        "phase": "First Quarter", 
+        "time": "09:40", 
+        "year": 2028
+      }, 
+      "curphase": "Waxing Crescent", 
+      "day": 1, 
+      "day_of_week": "Saturday", 
+      "fracillum": "16%", 
+      "isdst": false, 
+      "label": "singapore", 
+      "month": 1, 
+      "moondata": [
+        {
+          "phen": "Rise", 
+          "time": "10:18"
+        }, 
+        {
+          "phen": "Upper Transit", 
+          "time": "16:27"
+        }, 
+        {
+          "phen": "Set", 
+          "time": "22:36"
+        }
+      ], 
+      "sundata": [
+        {
+          "phen": "Begin Civil Twilight", 
+          "time": "06:44"
+        }, 
+        {
+          "phen": "Rise", 
+          "time": "07:06"
+        }, 
+        {
+          "phen": "Upper Transit", 
+          "time": "13:08"
+        }, 
+        {
+          "phen": "Set", 
+          "time": "19:09"
+        }, 
+        {
+          "phen": "End Civil Twilight", 
+          "time": "19:32"
+        }
+      ], 
+      "tz": 8.0, 
+      "year": 2028
+    }
+  }, 
+  "type": "Feature"
+}

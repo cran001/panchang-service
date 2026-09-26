@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.verify.VaisnavaSiteTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-09-20T18:08:27" hostname="DESKTOP-KBUKJ2P" time="0.034">
+  <properties/>
+  <testcase name="refuses a city with no hand-entered zone rather than guessing one from the offset()" classname="org.panchang.verify.VaisnavaSiteTest" time="0.003"/>
+  <testcase name="site coordinates come from the artifact, not from the reference grid()" classname="org.panchang.verify.VaisnavaSiteTest" time="0.005"/>
+  <testcase name="assigns the expected zones()" classname="org.panchang.verify.VaisnavaSiteTest" time="0.0"/>
+  <testcase name="refuses a zone whose standard offset contradicts the printed offset()" classname="org.panchang.verify.VaisnavaSiteTest" time="0.009"/>
+  <testcase name="reads degrees from the printed coordinates, south and west negative()" classname="org.panchang.verify.VaisnavaSiteTest" time="0.001"/>
+  <testcase name="every published city has a zone whose standard offset matches the printed one()" classname="org.panchang.verify.VaisnavaSiteTest" time="0.006"/>
+  <testcase name="refuses an unreadable coordinate string()" classname="org.panchang.verify.VaisnavaSiteTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

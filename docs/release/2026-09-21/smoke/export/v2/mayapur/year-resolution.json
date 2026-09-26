@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "year": 2026,
+  "site": {
+    "latitude": 23.416666666666668,
+    "longitude": 88.38333333333334,
+    "timeZone": "Asia/Kolkata",
+    "elevationMeters": 0.0
+  },
+  "sampradaya": {
+    "id": "iskcon",
+    "displayName": "ISKCON / Gaudiya Vaishnava"
+  },
+  "publication": {
+    "state": "MISSING_EVIDENCE",
+    "guidance": "WITHHELD",
+    "field": "EVENTS",
+    "coverage": {
+      "from": "2026-01-01",
+      "through": "2026-12-31"
+    },
+    "bundleFingerprint": "51b189ec5ca44346785a2beb29c6a4414117ff99913ded1ab62c1b9a217b9d80",
+    "approvalRecordId": null,
+    "approverKeyId": null,
+    "approvedAt": null,
+    "issues": [],
+    "explanation": "No approved reference-policy evidence is configured"
+  },
+  "diagnosticClassificationsAreNotApproval": true,
+  "events": null,
+  "unresolved": null,
+  "absenceMeaning": "GUIDANCE_WITHHELD_NOT_NO_EVENT"
+}

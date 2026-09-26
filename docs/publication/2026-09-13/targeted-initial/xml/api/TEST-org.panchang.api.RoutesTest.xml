@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.api.RoutesTest" tests="23" skipped="0" failures="0" errors="0" timestamp="2026-09-13T08:39:58" hostname="DESKTOP-KBUKJ2P" time="21.471">
+  <properties/>
+  <testcase name="nearest in the middle of an ocean says so rather than naming a distant record()" classname="org.panchang.api.RoutesTest" time="0.007"/>
+  <testcase name="health answers with a version it did not invent()" classname="org.panchang.api.RoutesTest" time="0.006"/>
+  <testcase name="every refusal is a json document with the same two identifying fields()" classname="org.panchang.api.RoutesTest" time="0.057"/>
+  <testcase name="a polar site is 422, not 400, and carries wire's own reason verbatim()" classname="org.panchang.api.RoutesTest" time="0.006"/>
+  <testcase name="a malformed year is 400()" classname="org.panchang.api.RoutesTest" time="0.004"/>
+  <testcase name="nearest with a latitude off the planet is a malformed request()" classname="org.panchang.api.RoutesTest" time="0.005"/>
+  <testcase name="nearest names a record and how far away it is, as a label only()" classname="org.panchang.api.RoutesTest" time="0.006"/>
+  <testcase name="a placeId settles an ambiguous name()" classname="org.panchang.api.RoutesTest" time="10.515"/>
+  <testcase name="an unknown sampradaya is 404 naming what is known, never another tradition's dates()" classname="org.panchang.api.RoutesTest" time="0.005"/>
+  <testcase name="no location at all is refused with instructions()" classname="org.panchang.api.RoutesTest" time="0.005"/>
+  <testcase name="coordinates without a zone are refused rather than guessed()" classname="org.panchang.api.RoutesTest" time="0.005"/>
+  <testcase name="an unknown time zone is a malformed request, not a polar one()" classname="org.panchang.api.RoutesTest" time="0.005"/>
+  <testcase name="nearest above the polar limit still answers, and warns before a calendar is asked for()" classname="org.panchang.api.RoutesTest" time="0.004"/>
+  <testcase name="an ambiguous place is 409 with every candidate named and none chosen()" classname="org.panchang.api.RoutesTest" time="0.01"/>
+  <testcase name="a place search lists every record carrying the name and chooses none()" classname="org.panchang.api.RoutesTest" time="0.006"/>
+  <testcase name="an unknown placeId is 404()" classname="org.panchang.api.RoutesTest" time="0.008"/>
+  <testcase name="meta states what is known, how well, and whose data this is()" classname="org.panchang.api.RoutesTest" time="0.015"/>
+  <testcase name="a name with no record is 404 and nothing is substituted for it()" classname="org.panchang.api.RoutesTest" time="0.006"/>
+  <testcase name="a historical name returns no record and the hint that names the modern one()" classname="org.panchang.api.RoutesTest" time="0.005"/>
+  <testcase name="a malformed date is 400()" classname="org.panchang.api.RoutesTest" time="0.005"/>
+  <testcase name="coordinates and a place together are refused rather than silently ranked()" classname="org.panchang.api.RoutesTest" time="0.004"/>
+  <testcase name="a place search without q is refused()" classname="org.panchang.api.RoutesTest" time="0.005"/>
+  <testcase name="a site below the midnight-sun boundary is answered()" classname="org.panchang.api.RoutesTest" time="10.766"/>
+  <system-out><![CDATA[08:39:58.365 [DefaultDispatcher-worker-2 @call-context#119] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+08:39:58.365 [DefaultDispatcher-worker-2 @call-context#119] INFO ktor.test -- Application started in 0.001 seconds.
+08:39:58.366 [DefaultDispatcher-worker-5 @coroutine#121] INFO ktor.test -- Responding at http://localhost:80
+08:39:58.366 [DefaultDispatcher-worker-5 @coroutine#121] INFO ktor.test -- Responding at https://localhost:443
+08:39:58.372 [DefaultDispatcher-worker-1 @call-context#128] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+08:39:58.373 [DefaultDispatcher-worker-1 @call-context#128] INFO ktor.test -- Application started in 0.001 seconds.
+08:39:58.373 [DefaultDispatcher-worker-4 @coroutine#130] INFO ktor.test -- Responding at http://localhost:80
+08:39:58.373 [DefaultDispatcher-worker-4 @coroutine#130] INFO ktor.test -- Responding at https://localhost:443
+08:39:58.379 [DefaultDispatcher-worker-10 @call-context#137] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+08:39:58.380 [DefaultDispatcher-worker-10 @call-context#137] INFO ktor.test -- Application started in 0.001 seconds.
+08:39:58.380 [DefaultDispatcher-worker-4 @coroutine#139] INFO ktor.test -- Responding at http://localhost:80
+08:39:58.380 [DefaultDispatcher-worker-4 @coroutine#139] INFO ktor.test -- Responding at https://localhost:443
+08:39:58.419 [DefaultDispatcher-worker-9 @call-context#146] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+08:39:58.419 [DefaultDispatcher-worker-9 @call-context#146] INFO ktor.test -- Application started in 0.001 seconds.
+08:39:58.420 [DefaultDispatcher-worker-7 @coroutine#148] INFO ktor.test -- Responding at http://localhost:80
+08:39:58.420 [DefaultDispatcher-worker-7 @coroutine#148] INFO ktor.test -- Responding at https://localhost:443
+08:39:58.424 [DefaultDispatcher-worker-3 @call-context#155] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+08:39:58.424 [DefaultDispatcher-worker-3 @call-context#155] INFO ktor.test -- Application started in 0.0 seconds.
+08:39:58.425 [DefaultDispatcher-worker-9 @coroutine#157] INFO ktor.test -- Responding at http://localhost:80
+08:39:58.425 [DefaultDispatcher-worker-9 @coroutine#157] INFO ktor.test -- Responding at https://localhost:443
+08:39:58.428 [DefaultDispatcher-worker-3 @call-context#164] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+08:39:58.429 [DefaultDispatcher-worker-3 @call-context#164] INFO ktor.test -- Application started in 0.001 seconds.
+08:39:58.434 [DefaultDispatcher-worker-11 @coroutine#166] INFO ktor.test -- Responding at http://localhost:80
+08:39:58.434 [DefaultDispatcher-worker-11 @coroutine#166] INFO ktor.test -- Responding at https://localhost:443
+08:39:58.437 [DefaultDispatcher-worker-10 @call-context#173] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+08:39:58.438 [DefaultDispatcher-worker-10 @call-context#173] INFO ktor.test -- Application started in 0.001 seconds.
+08:39:58.438 [DefaultDispatcher-worker-6 @coroutine#175] INFO ktor.test -- Responding at http://localhost:80
+08:39:58.438 [DefaultDispatcher-worker-6 @coroutine#175] INFO ktor.test -- Responding at https://localhost:443
+08:39:58.443 [DefaultDispatcher-worker-9 @call-context#182] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+08:39:58.444 [DefaultDispatcher-worker-9 @call-context#182] INFO ktor.test -- Application started in 0.001 seconds.
+08:39:58.444 [DefaultDispatcher-worker-10 @coroutine#184] INFO ktor.test -- Responding at http://localhost:80
+08:39:58.444 [DefaultDispatcher-worker-10 @coroutine#184] INFO ktor.test -- Responding at https://localhost:443
+08:39:58.449 [DefaultDispatcher-worker-11 @call-context#191] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+08:39:58.449 [DefaultDispatcher-worker-11 @call-context#191] INFO ktor.test -- Application started in 0.001 seconds.
+08:39:58.449 [DefaultDispatcher-worker-9 @coroutine#193] INFO ktor.test -- Responding at http://localhost:80
+08:39:58.449 [DefaultDispatcher-worker-9 @coroutine#193] INFO ktor.test -- Responding at https://localhost:443
+08:39:58.454 [DefaultDispatcher-worker-5 @call-context#200] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+08:39:58.455 [DefaultDispatcher-worker-5 @call-context#200] INFO ktor.test -- Application started in 0.001 seconds.
+08:39:58.456 [DefaultDispatcher-worker-11 @coroutine#202] INFO ktor.test -- Responding at http://localhost:80
+08:39:58.456 [DefaultDispatcher-worker-11 @coroutine#202] INFO ktor.test -- Responding at https://localhost:443
+08:39:58.461 [DefaultDispatcher-worker-11 @call-context#209] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+08:39:58.461 [DefaultDispatcher-worker-11 @call-context#209] INFO ktor.test -- Application started in 0.001 seconds.
+08:39:58.462 [DefaultDispatcher-worker-9 @coroutine#211] INFO ktor.test -- Responding at http://localhost:80
+08:39:58.462 [DefaultDispatcher-worker-9 @coroutine#211] INFO ktor.test -- Responding at https://localhost:443
+08:40:08.975 [DefaultDispatcher-worker-6 @call-context#218] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+08:40:08.976 [DefaultDispatcher-worker-6 @call-context#218] INFO ktor.test -- Application started in 0.001 seconds.
+08:40:08.976 [DefaultDispatcher-worker-1 @coroutine#220] INFO ktor.test -- Responding at http://localhost:80
+08:40:08.976 [DefaultDispatcher-worker-1 @coroutine#220] INFO ktor.test -- Responding at https://localhost:443
+08:40:08.981 [DefaultDispatcher-worker-10 @call-context#227] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+08:40:08.982 [DefaultDispatcher-worker-10 @call-context#227] INFO ktor.test -- Application started in 0.0 seconds.
+08:40:08.982 [DefaultDispatcher-worker-6 @coroutine#229] INFO ktor.test -- Responding at http://localhost:80
+08:40:08.982 [DefaultDispatcher-worker-6 @coroutine#229] INFO ktor.test -- Responding at https://localhost:443
+08:40:08.986 [DefaultDispatcher-worker-10 @call-context#236] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+08:40:08.986 [DefaultDispatcher-worker-10 @call-context#236] INFO ktor.test -- Application started in 0.0 seconds.
+08:40:08.988 [DefaultDispatcher-worker-10 @coroutine#238] INFO ktor.test -- Responding at http://localhost:80
+08:40:08.988 [DefaultDispatcher-worker-10 @coroutine#238] INFO ktor.test -- Responding at https://localhost:443
+08:40:08.991 [DefaultDispatcher-worker-6 @call-context#245] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+08:40:08.991 [DefaultDispatcher-worker-6 @call-context#245] INFO ktor.test -- Application started in 0.001 seconds.
+08:40:08.991 [DefaultDispatcher-worker-3 @coroutine#247] INFO ktor.test -- Responding at http://localhost:80
+08:40:08.991 [DefaultDispatcher-worker-3 @coroutine#247] INFO ktor.test -- Responding at https://localhost:443
+08:40:08.996 [DefaultDispatcher-worker-1 @call-context#254] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+08:40:08.996 [DefaultDispatcher-worker-1 @call-context#254] INFO ktor.test -- Application started in 0.001 seconds.
+08:40:08.996 [DefaultDispatcher-worker-6 @coroutine#256] INFO ktor.test -- Responding at http://localhost:80
+08:40:08.996 [DefaultDispatcher-worker-6 @coroutine#256] INFO ktor.test -- Responding at https://localhost:443
+08:40:09.000 [DefaultDispatcher-worker-1 @call-context#263] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+08:40:09.000 [DefaultDispatcher-worker-1 @call-context#263] INFO ktor.test -- Application started in 0.0 seconds.
+08:40:09.001 [DefaultDispatcher-worker-5 @coroutine#265] INFO ktor.test -- Responding at http://localhost:80
+08:40:09.001 [DefaultDispatcher-worker-5 @coroutine#265] INFO ktor.test -- Responding at https://localhost:443
+08:40:09.011 [DefaultDispatcher-worker-2 @call-context#272] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+08:40:09.011 [DefaultDispatcher-worker-2 @call-context#272] INFO ktor.test -- Application started in 0.0 seconds.
+08:40:09.012 [DefaultDispatcher-worker-8 @coroutine#274] INFO ktor.test -- Responding at http://localhost:80
+08:40:09.012 [DefaultDispatcher-worker-8 @coroutine#274] INFO ktor.test -- Responding at https://localhost:443
+08:40:09.017 [DefaultDispatcher-worker-2 @call-context#281] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+08:40:09.018 [DefaultDispatcher-worker-2 @call-context#281] INFO ktor.test -- Application started in 0.001 seconds.
+08:40:09.018 [DefaultDispatcher-worker-5 @coroutine#283] INFO ktor.test -- Responding at http://localhost:80
+08:40:09.018 [DefaultDispatcher-worker-5 @coroutine#283] INFO ktor.test -- Responding at https://localhost:443
+08:40:09.026 [DefaultDispatcher-worker-1 @call-context#290] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+08:40:09.027 [DefaultDispatcher-worker-1 @call-context#290] INFO ktor.test -- Application started in 0.001 seconds.
+08:40:09.027 [DefaultDispatcher-worker-8 @coroutine#292] INFO ktor.test -- Responding at http://localhost:80
+08:40:09.027 [DefaultDispatcher-worker-8 @coroutine#292] INFO ktor.test -- Responding at https://localhost:443
+08:40:09.041 [DefaultDispatcher-worker-9 @call-context#299] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+08:40:09.042 [DefaultDispatcher-worker-9 @call-context#299] INFO ktor.test -- Application started in 0.001 seconds.
+08:40:09.042 [DefaultDispatcher-worker-1 @coroutine#301] INFO ktor.test -- Responding at http://localhost:80
+08:40:09.042 [DefaultDispatcher-worker-1 @coroutine#301] INFO ktor.test -- Responding at https://localhost:443
+08:40:09.048 [DefaultDispatcher-worker-11 @call-context#308] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+08:40:09.049 [DefaultDispatcher-worker-11 @call-context#308] INFO ktor.test -- Application started in 0.001 seconds.
+08:40:09.051 [DefaultDispatcher-worker-9 @coroutine#310] INFO ktor.test -- Responding at http://localhost:80
+08:40:09.051 [DefaultDispatcher-worker-9 @coroutine#310] INFO ktor.test -- Responding at https://localhost:443
+08:40:09.054 [DefaultDispatcher-worker-3 @call-context#317] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+08:40:09.054 [DefaultDispatcher-worker-3 @call-context#317] INFO ktor.test -- Application started in 0.0 seconds.
+08:40:09.054 [DefaultDispatcher-worker-9 @coroutine#319] INFO ktor.test -- Responding at http://localhost:80
+08:40:09.055 [DefaultDispatcher-worker-9 @coroutine#319] INFO ktor.test -- Responding at https://localhost:443
+08:40:09.059 [DefaultDispatcher-worker-7 @call-context#326] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+08:40:09.060 [DefaultDispatcher-worker-7 @call-context#326] INFO ktor.test -- Application started in 0.001 seconds.
+08:40:09.060 [DefaultDispatcher-worker-10 @coroutine#328] INFO ktor.test -- Responding at http://localhost:80
+08:40:09.060 [DefaultDispatcher-worker-10 @coroutine#328] INFO ktor.test -- Responding at https://localhost:443
+08:40:09.064 [DefaultDispatcher-worker-7 @call-context#335] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+08:40:09.065 [DefaultDispatcher-worker-7 @call-context#335] INFO ktor.test -- Application started in 0.001 seconds.
+08:40:09.066 [DefaultDispatcher-worker-7 @coroutine#337] INFO ktor.test -- Responding at http://localhost:80
+08:40:09.066 [DefaultDispatcher-worker-7 @coroutine#337] INFO ktor.test -- Responding at https://localhost:443
+08:40:09.070 [DefaultDispatcher-worker-7 @call-context#344] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+08:40:09.070 [DefaultDispatcher-worker-7 @call-context#344] INFO ktor.test -- Application started in 0.0 seconds.
+08:40:09.071 [DefaultDispatcher-worker-2 @coroutine#346] INFO ktor.test -- Responding at http://localhost:80
+08:40:09.071 [DefaultDispatcher-worker-2 @coroutine#346] INFO ktor.test -- Responding at https://localhost:443
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

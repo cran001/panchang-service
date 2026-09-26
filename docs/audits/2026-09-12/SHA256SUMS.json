@@ -1,0 +1,1137 @@
+[
+  {
+    "path": "analyse.py",
+    "sha256": "908057fad9a95cc34f4c4428e2e909686057f2945260ca6108ddc4853930e75b",
+    "bytes": 9855
+  },
+  {
+    "path": "analysis.log",
+    "sha256": "4d9b14323d1d31bf9f5c0a2e3da623489f9fb1d9d37bf5b9e6f3aa609129ee06",
+    "bytes": 7633
+  },
+  {
+    "path": "angular-elements.log",
+    "sha256": "0aa4bc281b3b42f4a33e25b9fa34d191e4da8f76d956580de3884de885916ead",
+    "bytes": 2079
+  },
+  {
+    "path": "astronomy-comparisons.json",
+    "sha256": "6a45cc30c504221e141d051b10924aa3e6972aa0427fdb0ea99e4142f96ec0af",
+    "bytes": 835062
+  },
+  {
+    "path": "astronomy-final.log",
+    "sha256": "aeea66cba3bdb3a6872881007c83d8405033d41eb072b919d1e7ddbcd3c2b25a",
+    "bytes": 2090
+  },
+  {
+    "path": "audit.init.gradle",
+    "sha256": "5cf1c57e8054b5d4206e1071e47b7c0e35f24a03d25a2cc5f5e9e104cbaacc07",
+    "bytes": 881
+  },
+  {
+    "path": "AUDIT.md",
+    "sha256": "a40444c43b222725030d614a24aff0a6b34546f92bd941531aaa9d51be4d83e2",
+    "bytes": 31215
+  },
+  {
+    "path": "audited-source-hashes.json",
+    "sha256": "98e26cd667b9ba1446f2a04cc343c010eb66f2bee0f49be122a93bb5deb34518",
+    "bytes": 43879
+  },
+  {
+    "path": "baseline-counts.json",
+    "sha256": "d35d8a4370797f15f49f79237ab5000218326cf6ec3ddff97f50a7b7fece2ea7",
+    "bytes": 1071
+  },
+  {
+    "path": "baseline-failures.json",
+    "sha256": "0a2598a4afaaae46d978539b8c6a22c06b75d9f8590b67b32d10e710ba8a6606",
+    "bytes": 55964
+  },
+  {
+    "path": "baseline-status.txt",
+    "sha256": "77c0b6bea1de6e184609ca3dc8cd8f6ae89b0164a1e8e9b6f6b6295f979f98aa",
+    "bytes": 2346
+  },
+  {
+    "path": "baseline-tests.log",
+    "sha256": "6dce43f36d3cfe71218c6d10262d62e2a75754604e18b54648b46c573ace0105",
+    "bytes": 14892
+  },
+  {
+    "path": "baseline-tracked.diff",
+    "sha256": "1860cb7c579829681d4742be2fb213c754aa50042af2c3ed2475a2e57d223971",
+    "bytes": 42712
+  },
+  {
+    "path": "baseline-xml\\api\\TEST-org.panchang.api.CrossFrontDoorIdentityTest.xml",
+    "sha256": "86a98cfaf82e90bace9366b0a9a33d2b4ec9b72e0149d2c453db28a9ad6073f8",
+    "bytes": 3362
+  },
+  {
+    "path": "baseline-xml\\api\\TEST-org.panchang.api.MultiSiteParanaApiTest.xml",
+    "sha256": "54758b0d5243c80d8165c16d50815a3c0220be6d739fcb0299e746590ece81c3",
+    "bytes": 1734
+  },
+  {
+    "path": "baseline-xml\\api\\TEST-org.panchang.api.PlaceRenderingTest.xml",
+    "sha256": "63a40e762bf2e4f42e9dae6064ffb364632a9868ef738e3620b2bcf751ce9c45",
+    "bytes": 1611
+  },
+  {
+    "path": "baseline-xml\\api\\TEST-org.panchang.api.RoutesTest.xml",
+    "sha256": "6308357d95a74d05ec151b9be285af108186817451ffbfa30a229f9de8ea2916",
+    "bytes": 16288
+  },
+  {
+    "path": "baseline-xml\\calc\\TEST-org.panchang.calc.CalcCliTest.xml",
+    "sha256": "8f9bc247bf81d12590a21d8dd9d94ddf46103d8f674f3b95639660bc0051bdda",
+    "bytes": 2793
+  },
+  {
+    "path": "baseline-xml\\calc\\TEST-org.panchang.calc.SampradayasRegistrationTest.xml",
+    "sha256": "3ecc07d01eff27c362f92340df18d5bf579693098fb273005f6f563595ea21c2",
+    "bytes": 813
+  },
+  {
+    "path": "baseline-xml\\core\\TEST-org.panchang.core.AngleCrossingTest.xml",
+    "sha256": "7f138b1b250ee74cb2759719f9a382bd3b4cc90a20d37e4caefe95317674d418",
+    "bytes": 1536
+  },
+  {
+    "path": "baseline-xml\\core\\TEST-org.panchang.core.CivilTwilightTest.xml",
+    "sha256": "50d3f28ab6acd774eff713b9bc08df0ccae677c0d270a8c2ed343860b7bb137b",
+    "bytes": 1117
+  },
+  {
+    "path": "baseline-xml\\core\\TEST-org.panchang.core.DayDivisionsTest.xml",
+    "sha256": "fc2e06f65856a9c0bf6ceb4eba8b3d80abf5906af88bc58211ed27ce87763202",
+    "bytes": 2225
+  },
+  {
+    "path": "baseline-xml\\core\\TEST-org.panchang.core.LunarMonthTest.xml",
+    "sha256": "bd49caac1aba2868baa3331b7c6526bb970bf7d49c912366a4a06ca4dcf9cb96",
+    "bytes": 1623
+  },
+  {
+    "path": "baseline-xml\\core\\TEST-org.panchang.core.MoonTimesTest.xml",
+    "sha256": "9d3d7bd5df980de562c758f9dab4bcdd0303dd95f3f6b67b28e26a664a8e0e68",
+    "bytes": 1151
+  },
+  {
+    "path": "baseline-xml\\core\\TEST-org.panchang.core.PolarTest.xml",
+    "sha256": "da0bd6a810a3ad6a1b1339438128f0c4c5e0c55c7b090f2f675ed80c266470b6",
+    "bytes": 1217
+  },
+  {
+    "path": "baseline-xml\\core\\TEST-org.panchang.core.SunTimesTest.xml",
+    "sha256": "145153171810e273a543d3310944b89c7c4fedbfb809040b55efe8878baba307",
+    "bytes": 1499
+  },
+  {
+    "path": "baseline-xml\\core\\TEST-org.panchang.core.TimeZoneTest.xml",
+    "sha256": "609d76c7df138653f3ce33e744d8b966c518d9ffe425950a87f79177c31cbadf",
+    "bytes": 1150
+  },
+  {
+    "path": "baseline-xml\\core\\TEST-org.panchang.core.TithiPartitionTest.xml",
+    "sha256": "63cea12b01d6573ae0189777842fb4436598d499d015db23f341b49993b89c9f",
+    "bytes": 1130
+  },
+  {
+    "path": "baseline-xml\\core\\TEST-org.panchang.core.UsnoSunTimesConformanceTest.xml",
+    "sha256": "bd034b23732af1a575c7d26415bd3601a3889f79ca3b4a6d363d5b3218daa308",
+    "bytes": 1458
+  },
+  {
+    "path": "baseline-xml\\ephemeris\\TEST-org.panchang.ephemeris.DeltaTTest.xml",
+    "sha256": "bfbbc5a96101694c7f4a78102501dc4833c1a4b6b12f74936690dac07ab538f2",
+    "bytes": 1345
+  },
+  {
+    "path": "baseline-xml\\ephemeris\\TEST-org.panchang.ephemeris.HorizonsDifferentialTest.xml",
+    "sha256": "ca1d663466b4c6acc680190df8b7697795bfcb92866585830044710a6c8abb05",
+    "bytes": 2544
+  },
+  {
+    "path": "baseline-xml\\ephemeris\\TEST-org.panchang.ephemeris.MeeusEphemerisPropertiesTest.xml",
+    "sha256": "d590f3af974a7fb51020948688849126c3abf26cd5fb7a22c6b0f66095d70667",
+    "bytes": 1668
+  },
+  {
+    "path": "baseline-xml\\ephemeris\\TEST-org.panchang.ephemeris.MeeusWorkedExampleTest.xml",
+    "sha256": "83fe0dc32762eeb70f777aed8378287ffde382086620dbb67d5c6f1b5daac65e",
+    "bytes": 865
+  },
+  {
+    "path": "baseline-xml\\ephemeris\\TEST-org.panchang.ephemeris.ObservedDeltaTTest.xml",
+    "sha256": "66837f2ff18d23a71cb1a390cd03b8dbc5289d2b5d3d25c36120dfc7526cb3e1",
+    "bytes": 1863
+  },
+  {
+    "path": "baseline-xml\\ephemeris\\TEST-org.panchang.ephemeris.TimeScaleTest.xml",
+    "sha256": "470308352b49185d2fe1ce613d0798684fe6529c1b7f2a67a1ce69590bad20ae",
+    "bytes": 1455
+  },
+  {
+    "path": "baseline-xml\\ephemeris\\TEST-org.panchang.ephemeris.Vsop87CheckValuesTest.xml",
+    "sha256": "b4ce04b4f617cbe0f5f381627a21be6b669f83389f80e8db865f7e0fd8d19438",
+    "bytes": 1003
+  },
+  {
+    "path": "baseline-xml\\ephemeris\\TEST-org.panchang.ephemeris.Vsop87SolarTest.xml",
+    "sha256": "8c69e91cc1df4b55b06ef341d30061126f72ed634e3213d7da59ea58b5352ee4",
+    "bytes": 1413
+  },
+  {
+    "path": "baseline-xml\\gazetteer\\TEST-org.panchang.gazetteer.GazetteerGeometryTest.xml",
+    "sha256": "4cd375f19fa0525e45935490162d81a121bc91801148110c3b373d0942636134",
+    "bytes": 1032
+  },
+  {
+    "path": "baseline-xml\\gazetteer\\TEST-org.panchang.gazetteer.GazetteerProvenanceTest.xml",
+    "sha256": "ce5b34702af92679369f1295e8948ab5023568dbc684128dfbacb382d3866f7a",
+    "bytes": 1319
+  },
+  {
+    "path": "baseline-xml\\gazetteer\\TEST-org.panchang.gazetteer.GazetteerTest.xml",
+    "sha256": "3b49d2eea8772ae6c94b8db88053d862f7d2ab7bc69d4846f7e8b1a1f38343ac",
+    "bytes": 2727
+  },
+  {
+    "path": "baseline-xml\\gazetteer\\TEST-org.panchang.gazetteer.PlaceNamesTest.xml",
+    "sha256": "74d73dc1c84c13e3a5ee8aaa0f072b3f40705d468d1157821ad3dabccc4a031c",
+    "bytes": 1113
+  },
+  {
+    "path": "baseline-xml\\publish\\TEST-org.panchang.publish.FeedPublisherTest.xml",
+    "sha256": "7d543128fe24d18696ba06eda608df5461d6bd79f04936e780bbce5a94b478f0",
+    "bytes": 2535
+  },
+  {
+    "path": "baseline-xml\\publish\\TEST-org.panchang.publish.LegacyFeedTest.xml",
+    "sha256": "3d620f1f72a6ff052e024b73b4e1ff0c6d2a54359dc7caa994ba93166b0b4e45",
+    "bytes": 2271
+  },
+  {
+    "path": "baseline-xml\\publish\\TEST-org.panchang.publish.PublishReportTest.xml",
+    "sha256": "045cb685fcd682a2de4e9b6f4362e4a37a245b5eac3dceaa73b00f21e2c3318d",
+    "bytes": 767
+  },
+  {
+    "path": "baseline-xml\\publish\\TEST-org.panchang.publish.RegionalFeedPublishTest.xml",
+    "sha256": "81dd0055887b7cbf30c6188017bf88e9c812961c22fc753eb8bd6c57e21a670e",
+    "bytes": 1090
+  },
+  {
+    "path": "baseline-xml\\publish\\TEST-org.panchang.publish.SiteListTest.xml",
+    "sha256": "2ed309a1fa6361fba73e88a135713e90c305b0ce120095244866dd3524c61d87",
+    "bytes": 625
+  },
+  {
+    "path": "baseline-xml\\sampradaya\\TEST-org.panchang.sampradaya.BengaliCalendarTest.xml",
+    "sha256": "bfc5a74dba7b69444f8c6a69d79d62c879d4cedd6ae5b886b8a19444cfd8af7e",
+    "bytes": 782
+  },
+  {
+    "path": "baseline-xml\\sampradaya\\TEST-org.panchang.sampradaya.EventResolverTest.xml",
+    "sha256": "5c545bba94fa0fa74dd1a0b433a17399b95e93934a1265a1ed2c33dbcc3d86b8",
+    "bytes": 3296
+  },
+  {
+    "path": "baseline-xml\\sampradaya\\TEST-org.panchang.sampradaya.EventTimeTest.xml",
+    "sha256": "3c0baf093d7dac2c154c2772bc8ad15eb4442eccc6f338b434125f4bcb91ea0f",
+    "bytes": 2607
+  },
+  {
+    "path": "baseline-xml\\sampradaya\\TEST-org.panchang.sampradaya.GaudiyaEkadashiConformanceTest.xml",
+    "sha256": "c954d9592118a9b9a7e79ba4a3110fe38519c6b9733a34a4b13b524e4f4dba04",
+    "bytes": 71083
+  },
+  {
+    "path": "baseline-xml\\sampradaya\\TEST-org.panchang.sampradaya.GujaratiCalendarTest.xml",
+    "sha256": "b02e3cb197c65aba06725a9315a1c9802a35cc17c247465857121623c565597c",
+    "bytes": 782
+  },
+  {
+    "path": "baseline-xml\\sampradaya\\TEST-org.panchang.sampradaya.IndiaParanaReportTest.xml",
+    "sha256": "1c5f61422ed501170c2e72d4ceb1df31d7c2f4579b2f92ec1cf3d8f28c90abe1",
+    "bytes": 51651
+  },
+  {
+    "path": "baseline-xml\\sampradaya\\TEST-org.panchang.sampradaya.IskconEventCatalogConformanceTest.xml",
+    "sha256": "c071741f193ad3cb2040664a1423bfd3cc0d74c8f5c4b31cf51687748ea06f0d",
+    "bytes": 2981
+  },
+  {
+    "path": "baseline-xml\\sampradaya\\TEST-org.panchang.sampradaya.KannadaCalendarTest.xml",
+    "sha256": "4a30ec555136cdb64cfbdba32ffc9dfd9aa9664d3c89db07cd46a4b7dd5ae880",
+    "bytes": 949
+  },
+  {
+    "path": "baseline-xml\\sampradaya\\TEST-org.panchang.sampradaya.MalayalamCalendarTest.xml",
+    "sha256": "3d8bfbdc6be7d9d61e21de2e4acd0e3446bf1e5153454684476d9bcef03f90bd",
+    "bytes": 782
+  },
+  {
+    "path": "baseline-xml\\sampradaya\\TEST-org.panchang.sampradaya.MarathiCalendarTest.xml",
+    "sha256": "e9e85e8bc2f6e05ef521c2c80e1f41b7537f5f519137402154f781fd7a9ae09e",
+    "bytes": 957
+  },
+  {
+    "path": "baseline-xml\\sampradaya\\TEST-org.panchang.sampradaya.MultiSiteParanaConformanceTest.xml",
+    "sha256": "90777d29b9020322199b6bdb2d0c99b18082c98c697f2bbdca14a5db12523d6f",
+    "bytes": 1510
+  },
+  {
+    "path": "baseline-xml\\sampradaya\\TEST-org.panchang.sampradaya.NorthIndianCalendarTest.xml",
+    "sha256": "a84e6729cf2f742f6a875e6cf57002e918cc920c4b1060e940dbbf860d6325cf",
+    "bytes": 984
+  },
+  {
+    "path": "baseline-xml\\sampradaya\\TEST-org.panchang.sampradaya.OdiaCalendarTest.xml",
+    "sha256": "e9e7ee27835201621a9640857a4e320ef39df5fa4fa049b68a31e9b5fc6756e5",
+    "bytes": 767
+  },
+  {
+    "path": "baseline-xml\\sampradaya\\TEST-org.panchang.sampradaya.ParanaDaylightEdgeTest.xml",
+    "sha256": "17e12a130921683e43d1b8a715c1bad53132b71f10a186768eb033e522dc2686",
+    "bytes": 840
+  },
+  {
+    "path": "baseline-xml\\sampradaya\\TEST-org.panchang.sampradaya.ReykjavikParanaTest.xml",
+    "sha256": "379958c0b2897fb247acfe9204717803535673c1cca4d66ff0061b4dbc892803",
+    "bytes": 854
+  },
+  {
+    "path": "baseline-xml\\sampradaya\\TEST-org.panchang.sampradaya.SolarRuleTest.xml",
+    "sha256": "772ff0adfbd37f77c331fce6784a92b3c5eb71303bbf86f5fb83de44c100bdde",
+    "bytes": 1528
+  },
+  {
+    "path": "baseline-xml\\sampradaya\\TEST-org.panchang.sampradaya.TamilCalendarTest.xml",
+    "sha256": "48fd4dd64d843053b126d929aa1f8cc773bc0e9184dff5b564a394be7138674a",
+    "bytes": 765
+  },
+  {
+    "path": "baseline-xml\\sampradaya\\TEST-org.panchang.sampradaya.TeluguCalendarTest.xml",
+    "sha256": "19452aca294a75a00fff57cfa077b62f284e21e01d6c269f4205faade6580579",
+    "bytes": 948
+  },
+  {
+    "path": "baseline-xml\\verify\\TEST-org.panchang.verify.DrikPanchangParserTest.xml",
+    "sha256": "322d30685f81328f1530cf99ef151342bfce7f0c1ed66c6141c7bbf620607cb0",
+    "bytes": 928
+  },
+  {
+    "path": "baseline-xml\\verify\\TEST-org.panchang.verify.HorizonsParserTest.xml",
+    "sha256": "102e78e00c417415d5788b9e3c6599af3587839bdd93338d551b637f540e7841",
+    "bytes": 1768
+  },
+  {
+    "path": "baseline-xml\\verify\\TEST-org.panchang.verify.HttpFetcherTest.xml",
+    "sha256": "975be1b9174637a822d7ed34ac737117a503b76e98c03ac9d4a13fcc352cc22d",
+    "bytes": 1225
+  },
+  {
+    "path": "baseline-xml\\verify\\TEST-org.panchang.verify.IskconMumbaiParserTest.xml",
+    "sha256": "59b82e5d3802fc2f63e041f754b4c170c39411d2807092be58993ba0cb07678b",
+    "bytes": 941
+  },
+  {
+    "path": "baseline-xml\\verify\\TEST-org.panchang.verify.ProvenanceAndCacheTest.xml",
+    "sha256": "5decd0c7c57fcab3d20ae2a6a83cb38bdd87e7612481c1dd8b32a7a4f757ee68",
+    "bytes": 1835
+  },
+  {
+    "path": "baseline-xml\\verify\\TEST-org.panchang.verify.PureBhaktiParserTest.xml",
+    "sha256": "4a724b1ecb9bfebba0e118a0ac1246bbaab5cccd3d49b18f909e00e540279139",
+    "bytes": 615
+  },
+  {
+    "path": "baseline-xml\\verify\\TEST-org.panchang.verify.RateLimiterTest.xml",
+    "sha256": "ebc0c135d98cfd650ae5fa7fe9f7acf0e1389535e8b686e7ef1c89108f500a23",
+    "bytes": 1522
+  },
+  {
+    "path": "baseline-xml\\verify\\TEST-org.panchang.verify.ReferenceCitiesTest.xml",
+    "sha256": "5a0fef90ac174f4b2ad3e4066db33a60450f3ff0ac70a6f78ef133ef8c9f8f69",
+    "bytes": 1031
+  },
+  {
+    "path": "baseline-xml\\verify\\TEST-org.panchang.verify.RetryPolicyTest.xml",
+    "sha256": "6c2ef022f4a438d9542895407a65adc6fc8490be6946e7f18ef10e3cd343bcc2",
+    "bytes": 584
+  },
+  {
+    "path": "baseline-xml\\verify\\TEST-org.panchang.verify.UsnoMoonTimesConformanceTest.xml",
+    "sha256": "80b27d0c7290a7403bbf65a0a6de7d54f6d548501de66ca8e0db403a744c32ca",
+    "bytes": 2728
+  },
+  {
+    "path": "baseline-xml\\verify\\TEST-org.panchang.verify.UsnoParserTest.xml",
+    "sha256": "97e087db751a59d4c1254adb562a46c9b1e09e095e235aa76db2e64eedaaf9e2",
+    "bytes": 1488
+  },
+  {
+    "path": "baseline-xml\\verify\\TEST-org.panchang.verify.VaisnavaCalendarTxtParserTest.xml",
+    "sha256": "227d990c9590d61b4aa72d5c6dbc8da959a11700f94053104b2770eea0169e40",
+    "bytes": 2722
+  },
+  {
+    "path": "baseline-xml\\verify\\TEST-org.panchang.verify.VaisnavaSiteTest.xml",
+    "sha256": "7e8d6588909901dce0f0fd7adf9691e6704e4d90853234a72cea219f6b7e1192",
+    "bytes": 1362
+  },
+  {
+    "path": "baseline-xml\\wire\\TEST-org.panchang.wire.DeterminismTest.xml",
+    "sha256": "7dc9651264df6090687113d88ff8ccd1c3d2f25c691418a6edbbcd414f28d8ad",
+    "bytes": 1013
+  },
+  {
+    "path": "baseline-xml\\wire\\TEST-org.panchang.wire.EventTimeWireTest.xml",
+    "sha256": "3568b468f321bbfbf26f2b96e765de2b8214376fdc3cf329c76c6eab27b8ad65",
+    "bytes": 1127
+  },
+  {
+    "path": "baseline-xml\\wire\\TEST-org.panchang.wire.InstantRenderingTest.xml",
+    "sha256": "0bd4fc8c591ee60c3f316b1857f20df8c95ab1e60ecc3af6c5d43845baf5205f",
+    "bytes": 1179
+  },
+  {
+    "path": "baseline-xml\\wire\\TEST-org.panchang.wire.SiteAcceptanceTest.xml",
+    "sha256": "a2da73da28f09320b7ca5c59a102dcba82d93b49313e77796602b618d2bdcfd3",
+    "bytes": 1842
+  },
+  {
+    "path": "baseline-xml\\wire\\TEST-org.panchang.wire.WireRoundTripTest.xml",
+    "sha256": "5d2d7165a05b419ce9676fd4f7591551e299a80f157aee4afb41147b062d49c3",
+    "bytes": 2469
+  },
+  {
+    "path": "calendar-final.log",
+    "sha256": "3849b7f2b3986cd829aaeefc0ae10b45d940ea21d9a0dfc9355b1776af044b30",
+    "bytes": 2083
+  },
+  {
+    "path": "calendar-final.xml",
+    "sha256": "f77fce192ec82bed3bcc174e944dfdfba400fa1af13096e234d691bed5750517",
+    "bytes": 1295
+  },
+  {
+    "path": "commit.txt",
+    "sha256": "af73f78bd17ba25848b24103ed3999e51f04260dcfe83f4ba8ae7354ec555ad2",
+    "bytes": 42
+  },
+  {
+    "path": "comparisons.log",
+    "sha256": "7b6a94b4a012c5e6f80099e22c3c156cb56cc4309082859627e1159546d0c573",
+    "bytes": 1334
+  },
+  {
+    "path": "daily-boundary-diagnostics.json",
+    "sha256": "5e238c419853cffdf5b3e9b35d2b71806ded4ca67487edfee5831c46797f1aeb",
+    "bytes": 13927
+  },
+  {
+    "path": "daily-field-comparisons.json",
+    "sha256": "eddf9a4a7c096359025db1a4200826e6a97196fb0c5dafbcc9a1be6a0329f53c",
+    "bytes": 2951997
+  },
+  {
+    "path": "daily-field-disagreements.json",
+    "sha256": "a6e61708771bf5c5ada3dd5500b90b6581191cb3b25639855db590d74a240cb0",
+    "bytes": 7187
+  },
+  {
+    "path": "defect-tests.log",
+    "sha256": "5b1be0553c614b3159add9b00c6982ae09093ffccea5ac36058c0e224e684973",
+    "bytes": 4972
+  },
+  {
+    "path": "defect-tests.xml",
+    "sha256": "c93eb5382a1c0d5aca83add6b23ca0e320a62e6cfd38a6462e50b0be34c4a74c",
+    "bytes": 4426
+  },
+  {
+    "path": "delivery-probes-final.log",
+    "sha256": "e392afd48064978b03a0919fc2f112d57477d8d9f651b6a83d088bb5cda7d274",
+    "bytes": 3283
+  },
+  {
+    "path": "delivery-probes-retry.log",
+    "sha256": "c4d2b2c1154222a9e9b15b2ffa8330f8bd69376c3e5ad5424124f705945109e3",
+    "bytes": 2673
+  },
+  {
+    "path": "delivery-probes.log",
+    "sha256": "d350e925c4984dfec933fb3d6677638be272b97d734070ed5e1652e2a95c86ec",
+    "bytes": 3330
+  },
+  {
+    "path": "evidence_inventory.py",
+    "sha256": "8b56cf1c8f0712f5990104dddca3438ce31d1fcc8b813469795ab346ac751976",
+    "bytes": 2164
+  },
+  {
+    "path": "EXCEPTIONS.md",
+    "sha256": "5864c3eef4cde78b65615dd6bb7e04c5bf6b57eeef70273ef680b877c9164dfe",
+    "bytes": 15942
+  },
+  {
+    "path": "exceptions.py",
+    "sha256": "a129ce28afb2bea81cbbffb0e5016bf290a1b8371c9f4bcc6b64a404fe8d05bc",
+    "bytes": 6526
+  },
+  {
+    "path": "fasting-comparisons.json",
+    "sha256": "a17d8cf817e1897bf9ad9add1a701de266126b4972d650c1fb0a79eb5a660e61",
+    "bytes": 270344
+  },
+  {
+    "path": "fasting-results.json",
+    "sha256": "6cd808e13d943d950fe297334dc574bc24e189e757a584fed0c6988728087043",
+    "bytes": 280806
+  },
+  {
+    "path": "fetch-manifest.json",
+    "sha256": "433d55c1f91b7ee2edf11b9032ad8674178e268c87ac7af198c30fc054a83dd4",
+    "bytes": 22601
+  },
+  {
+    "path": "fetch.log",
+    "sha256": "e84f26cf503273519d25eb445762efa2129574ab18dff9db26f14a2faac0943f",
+    "bytes": 861
+  },
+  {
+    "path": "fetch.ps1",
+    "sha256": "d1e8d2a6b8ee9ef8a81be9ad90f8a16450f52f1e44f2df8ca0932c89800ed0d2",
+    "bytes": 2459
+  },
+  {
+    "path": "findings.json",
+    "sha256": "40b448982450abfa9b973ba7f639e21fb8b3feea67fc9fe4848dcceeed6acc94",
+    "bytes": 3922
+  },
+  {
+    "path": "gcal-tree-provenance.json",
+    "sha256": "140e83b9fca7019b85ce27070de505dcfecb68fde9a84499afe19b0532e2b090",
+    "bytes": 424
+  },
+  {
+    "path": "gcal-tree.json",
+    "sha256": "e346f9c20f96c6b24d704bd3b92b065b30d21a282a1886de36dfc0e9277e0162",
+    "bytes": 68568
+  },
+  {
+    "path": "harness\\AuditEvidenceTest.kt",
+    "sha256": "703e39d6c16b81c33338eac9199cd10728ffc19b79b5d055cb6043fe3114c3a0",
+    "bytes": 26568
+  },
+  {
+    "path": "high-latitude-diagnostics.json",
+    "sha256": "2e453aaf474c5fd45f80c6bb8885d47730650b0d4ab8c8d5e915555fdf3300fc",
+    "bytes": 3311
+  },
+  {
+    "path": "independent-angular-elements.json",
+    "sha256": "d38b80a6b5d195460f709388640a1fa6a55eb743b201977472a22421d5df2e1f",
+    "bytes": 26824
+  },
+  {
+    "path": "independent-boundaries.json",
+    "sha256": "11e1688a502b9df73630853a7afbf1c926525df0087c2a82f38a1ca84fde7571",
+    "bytes": 1371
+  },
+  {
+    "path": "january-first-delivery.json",
+    "sha256": "59dd9dd9067e43aafb79f82c81ddfc8762a0af84a0af644024f8ba11ad343e72",
+    "bytes": 3255
+  },
+  {
+    "path": "method.md",
+    "sha256": "c814f2e534b90bc0a28b6e75380f88c02cf0fd9f488aee1d3a3ad13840912dc3",
+    "bytes": 2583
+  },
+  {
+    "path": "new-astronomy\\horizons-2027-moon.json",
+    "sha256": "b4dfb28c3ec90fc5a3b89f075bcab287fe08f35a220d14bdde9c9ae4d5c1df94",
+    "bytes": 6717
+  },
+  {
+    "path": "new-astronomy\\horizons-2027-sun.json",
+    "sha256": "3c314738859a00560a882714f76b59fb9422cffd193b5a79f9d40557599f4e52",
+    "bytes": 6643
+  },
+  {
+    "path": "new-astronomy\\horizons-2028-moon.json",
+    "sha256": "f9b917b87046c980175a2fafe8c23a72d2028271ee12c6045e2e7413f77310a9",
+    "bytes": 6708
+  },
+  {
+    "path": "new-astronomy\\horizons-2028-sun.json",
+    "sha256": "7b2d305f5e040d6da56b7d1704d8550ca60aba659ae368fb57fb7d1c4c3fc63f",
+    "bytes": 6658
+  },
+  {
+    "path": "new-astronomy\\horizons-auckland-boundary-moon.json",
+    "sha256": "c445261507fa0252a1751a17af946fc3428007bc8d39663e374e3ed69005f0ed",
+    "bytes": 1929
+  },
+  {
+    "path": "new-astronomy\\horizons-auckland-boundary-sun.json",
+    "sha256": "a100afd62b3b3fca70e348246fde0b9b57f99619e68a230ecffbf58fb256bb4f",
+    "bytes": 1911
+  },
+  {
+    "path": "new-astronomy\\horizons-vrindavan-boundary-moon.json",
+    "sha256": "936a8e9470388a2f525ba18f4bf6bda7f9073ceb31452e90bd33f6f2d90f5a55",
+    "bytes": 1933
+  },
+  {
+    "path": "new-astronomy\\horizons-vrindavan-boundary-sun.json",
+    "sha256": "6a2e93a497a1db2489ca3b60e86608ef8606c019c8d44002e905cf5cf800d388",
+    "bytes": 1917
+  },
+  {
+    "path": "new-astronomy\\retry-usno-cape-town-2028-06-21.json",
+    "sha256": "f601883d71028abbaacea33eaaa47f3b2ca26f35a90c9ecf93e37f9874929eb9",
+    "bytes": 1215
+  },
+  {
+    "path": "new-astronomy\\retry-usno-london-2027-03-28.json",
+    "sha256": "9f9623d4d03784c2d8fc6ad27cbcc42cd9bf0a0ec7039fe5e8196284fcdc57df",
+    "bytes": 1202
+  },
+  {
+    "path": "new-astronomy\\retry-usno-reykjavik-2026-06-26.json",
+    "sha256": "3e7874a610494d34a126ebfc05736f2143483a520edcb20014cbb2a9b35a30cb",
+    "bytes": 1251
+  },
+  {
+    "path": "new-astronomy\\retry-usno-singapore-2028-01-01.json",
+    "sha256": "9089076ac038b7c5f572a698e96de83b4b7832ea89a358482cfdfaf7b6d74e65",
+    "bytes": 1219
+  },
+  {
+    "path": "new-astronomy\\supplement-usno-auckland-2026-10-08.json",
+    "sha256": "cd9838aa0f031f148043694bcd1fb226e36860968e8e2e8ccb21e1df65d8b141",
+    "bytes": 1303
+  },
+  {
+    "path": "new-astronomy\\supplement-usno-cape-town-2027-01-01.json",
+    "sha256": "7f2d39190bbe6d28947a2fb11d33025e21a8652e9287a57b6aa3366168487ff3",
+    "bytes": 1230
+  },
+  {
+    "path": "new-astronomy\\supplement-usno-singapore-2027-12-31.json",
+    "sha256": "ef5ed06ee40e18116d153b2246e6ec867f30db6f387e75571d391dba1a51760c",
+    "bytes": 1235
+  },
+  {
+    "path": "new-astronomy\\supplement-usno-vrindavan-2026-06-30.json",
+    "sha256": "7557ae6675d0984fb752b7664116ec26ef003cf3b63170d0eeb6b017bcacea9e",
+    "bytes": 1251
+  },
+  {
+    "path": "new-astronomy\\usno-reykjavik-2026-06-26.json",
+    "sha256": "d2d1914b5a9b7d688b3c5806e794f6836fbcad38357920f84c0fe949ce73313e",
+    "bytes": 1238
+  },
+  {
+    "path": "new-calendars\\calendar-hyderabad-2027.json",
+    "sha256": "cb89710976ca56c3fdf77e641dd0ee38bc2abd06743d73e088483c4f3659ed89",
+    "bytes": 84354
+  },
+  {
+    "path": "new-calendars\\calendar-mayapur-2027.json",
+    "sha256": "5b9e6cede77353794d3fc625de44f80a73cc7d117fa13e293139a5a461ad4963",
+    "bytes": 84383
+  },
+  {
+    "path": "parana-comparisons.json",
+    "sha256": "a1f82c670c64e26a29bdefdba427137f0b25feca9fda0fb84033d72fb4888456",
+    "bytes": 335933
+  },
+  {
+    "path": "parana-results.json",
+    "sha256": "00da85c14f4ed027245e554141c45210ea895d5b0c7bbfb95ce13e246dd66eb7",
+    "bytes": 361537
+  },
+  {
+    "path": "parse-final.log",
+    "sha256": "51153050f51afe72447f56d2e2c88986abbd37a3eb170a933ba678cb414b7ae9",
+    "bytes": 2079
+  },
+  {
+    "path": "parse-report.json",
+    "sha256": "6a075f1c6f9d7fc9b86548b81b6cc00317011de415cdae23e383ac0c8ae280e1",
+    "bytes": 4002
+  },
+  {
+    "path": "parse.log",
+    "sha256": "b04cd4d5e5f7b107f7a6d588510503347fea1be68834cccc37b468f1d58a235c",
+    "bytes": 1430
+  },
+  {
+    "path": "plan-retry.log",
+    "sha256": "b404e82bf9e422e69860729a64d70f6aa8a02cb1e8ce56b9399df90b96bf3483",
+    "bytes": 1319
+  },
+  {
+    "path": "plan.log",
+    "sha256": "9d38e045f4754887945abd86693c4be9cb8ad09e03989c3a2edf2823c0682b6b",
+    "bytes": 2143
+  },
+  {
+    "path": "powershell-version.txt",
+    "sha256": "cccfa4727b610fad8ae1bfb5f63587320f6c07720a478918516b259c9e1c545b",
+    "bytes": 464
+  },
+  {
+    "path": "python-version.txt",
+    "sha256": "31cda082310eab7c08ee332542fcbf074d359dedd2b5e79a80bc2b11be19111e",
+    "bytes": 65
+  },
+  {
+    "path": "raw\\calendar-hyderabad-2027.raw",
+    "sha256": "9a55b8eff9e6f2e2d5a84c9c120bf8c91935cde87178ec42b74550866dbc4ca8",
+    "bytes": 41820
+  },
+  {
+    "path": "raw\\calendar-hyderabad-2027.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "raw\\calendar-hyderabad-2028.raw",
+    "sha256": "2e91339b35cd71e8023bb468d26bcf8490d84080252ad1713b2c47ed8002a6e6",
+    "bytes": 77910
+  },
+  {
+    "path": "raw\\calendar-hyderabad-2028.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "raw\\calendar-mayapur-2027.raw",
+    "sha256": "3d3dd810eec68a3f095ef574c5c3edd87e17c2778a002a4747ed3d9bab6d5590",
+    "bytes": 41847
+  },
+  {
+    "path": "raw\\calendar-mayapur-2027.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "raw\\calendar-mayapur-2028.raw",
+    "sha256": "880cefe8c0c9d433cbec1c2af60863aaec653f3af96c4a95554cf15b72ba51f2",
+    "bytes": 77910
+  },
+  {
+    "path": "raw\\calendar-mayapur-2028.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "raw\\gcal-readme.raw",
+    "sha256": "51d09a77d3039ddfad9a9d38f6d7ced57d40941ea1ab8e1f9fd9424a4319e94b",
+    "bytes": 15628
+  },
+  {
+    "path": "raw\\gcal-readme.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "raw\\gcal-rules.stderr.txt",
+    "sha256": "c08a32e9519b9e3f30f341915343f0a8bcfb02db1c016c47544a1f41fe7a31e1",
+    "bytes": 400
+  },
+  {
+    "path": "raw\\horizons-2027-moon.raw",
+    "sha256": "2d723c8d880e7dade2645685e6418158cc2472dd7f16a564612b3de11abae82f",
+    "bytes": 8133
+  },
+  {
+    "path": "raw\\horizons-2027-moon.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "raw\\horizons-2027-sun.raw",
+    "sha256": "a19c637f057348eccc0ae873076c530da881a473042b0cb760029ec896ba2c2b",
+    "bytes": 8131
+  },
+  {
+    "path": "raw\\horizons-2027-sun.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "raw\\horizons-2028-moon.raw",
+    "sha256": "05328e6b90a63db683fe6e3273c3e5666914f7e7b0c53eb38c3e276f2aaedeca",
+    "bytes": 8133
+  },
+  {
+    "path": "raw\\horizons-2028-moon.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "raw\\horizons-2028-sun.raw",
+    "sha256": "89b0a6dc5e54c1aec9f5ccc18a2d4580844effa9ef29110346f622e6fb8ee7c8",
+    "bytes": 8131
+  },
+  {
+    "path": "raw\\horizons-2028-sun.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "raw\\horizons-auckland-boundary-moon.raw",
+    "sha256": "c3d436c05e0f489f1741614035428e571a88636c3af4b44452701fc04bd33103",
+    "bytes": 5780
+  },
+  {
+    "path": "raw\\horizons-auckland-boundary-moon.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "raw\\horizons-auckland-boundary-sun.raw",
+    "sha256": "8a5d63e82fcda9ddf7e91f791783efef2fa2ed156fde9c6986185f2fd73a3718",
+    "bytes": 5778
+  },
+  {
+    "path": "raw\\horizons-auckland-boundary-sun.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "raw\\horizons-vrindavan-boundary-moon.raw",
+    "sha256": "7c3938c483a6398b1a508a5d7f9520ddd0c917e4beb1e6f53989c8cbd7049d52",
+    "bytes": 5780
+  },
+  {
+    "path": "raw\\horizons-vrindavan-boundary-moon.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "raw\\horizons-vrindavan-boundary-sun.raw",
+    "sha256": "ca02b41c17522609a8ba570156580456b73fe38ab44b51197bfdc1e211554d87",
+    "bytes": 5778
+  },
+  {
+    "path": "raw\\horizons-vrindavan-boundary-sun.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "raw\\publisher-policy.raw",
+    "sha256": "d0d57c0e07497f5318906c682a967c400d44e0eaf2b5422dbc6a27b72b5710c3",
+    "bytes": 80593
+  },
+  {
+    "path": "raw\\publisher-policy.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "raw\\retry-usno-cape-town-2028-06-21.raw",
+    "sha256": "c791511bf327a274f9125bfb7225e2eb127860747daf118b2d309acb1acb7ae0",
+    "bytes": 1272
+  },
+  {
+    "path": "raw\\retry-usno-cape-town-2028-06-21.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "raw\\retry-usno-london-2027-03-28.raw",
+    "sha256": "8b5c66bbd763677a4cc105ce2026a9b83ea7c433e66b8c436d131ac137163869",
+    "bytes": 1271
+  },
+  {
+    "path": "raw\\retry-usno-london-2027-03-28.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "raw\\retry-usno-reykjavik-2026-06-26.raw",
+    "sha256": "0c639f0a7a4b1f76a4c86d8d0a7464de8dda0119fbfc1dcfda2ba3d238372406",
+    "bytes": 1078
+  },
+  {
+    "path": "raw\\retry-usno-reykjavik-2026-06-26.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "raw\\retry-usno-singapore-2028-01-01.raw",
+    "sha256": "13dae276f020e236856da850db97babfbd0cea1144cf52cf9fb1fa5120eb48df",
+    "bytes": 1276
+  },
+  {
+    "path": "raw\\retry-usno-singapore-2028-01-01.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "raw\\supplement-usno-auckland-2026-10-08.raw",
+    "sha256": "64299f3637334bdbe8adc1cc3491899fc293dd97e7fbe420fa79d44447c24457",
+    "bytes": 1279
+  },
+  {
+    "path": "raw\\supplement-usno-auckland-2026-10-08.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "raw\\supplement-usno-cape-town-2027-01-01.raw",
+    "sha256": "72ac97b19716dcd2ac08d9bf006d2631661c33c03c27375c36808405e6361346",
+    "bytes": 1270
+  },
+  {
+    "path": "raw\\supplement-usno-cape-town-2027-01-01.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "raw\\supplement-usno-singapore-2027-12-31.raw",
+    "sha256": "89a6d6037dc47346d4ec8223520ba740d86bde0338d01fcd659f0f04262ef05f",
+    "bytes": 1279
+  },
+  {
+    "path": "raw\\supplement-usno-singapore-2027-12-31.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "raw\\supplement-usno-vrindavan-2026-06-30.raw",
+    "sha256": "ec792d8fc8786de40ab4f59e0caa21fca30362a65491ceec392e54e72f935830",
+    "bytes": 1267
+  },
+  {
+    "path": "raw\\supplement-usno-vrindavan-2026-06-30.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "raw\\usno-auckland-2026-10-08.raw",
+    "sha256": "61b30d408583991fd69f3dec694e154cb652471e663328ad9c8482c9021ab5db",
+    "bytes": 150
+  },
+  {
+    "path": "raw\\usno-auckland-2026-10-08.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "raw\\usno-cape-town-2027-01-01.raw",
+    "sha256": "61b30d408583991fd69f3dec694e154cb652471e663328ad9c8482c9021ab5db",
+    "bytes": 150
+  },
+  {
+    "path": "raw\\usno-cape-town-2027-01-01.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "raw\\usno-cape-town-2028-06-21.raw",
+    "sha256": "61b30d408583991fd69f3dec694e154cb652471e663328ad9c8482c9021ab5db",
+    "bytes": 150
+  },
+  {
+    "path": "raw\\usno-cape-town-2028-06-21.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "raw\\usno-definitions.raw",
+    "sha256": "178f7024fdbce65bf3c3ee80f758ec3429e0115dff4d538cf54c59a978f58281",
+    "bytes": 27057
+  },
+  {
+    "path": "raw\\usno-definitions.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "raw\\usno-london-2027-03-28.raw",
+    "sha256": "61b30d408583991fd69f3dec694e154cb652471e663328ad9c8482c9021ab5db",
+    "bytes": 150
+  },
+  {
+    "path": "raw\\usno-london-2027-03-28.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "raw\\usno-london-2028-10-29.raw",
+    "sha256": "61b30d408583991fd69f3dec694e154cb652471e663328ad9c8482c9021ab5db",
+    "bytes": 150
+  },
+  {
+    "path": "raw\\usno-london-2028-10-29.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "raw\\usno-new-york-2027-03-14.raw",
+    "sha256": "61b30d408583991fd69f3dec694e154cb652471e663328ad9c8482c9021ab5db",
+    "bytes": 150
+  },
+  {
+    "path": "raw\\usno-new-york-2027-03-14.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "raw\\usno-new-york-2028-11-05.raw",
+    "sha256": "61b30d408583991fd69f3dec694e154cb652471e663328ad9c8482c9021ab5db",
+    "bytes": 150
+  },
+  {
+    "path": "raw\\usno-new-york-2028-11-05.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "raw\\usno-reykjavik-2026-06-26.raw",
+    "sha256": "6b9697be626c0cb31ab61b2cd45e8bfc88fe8d1776ea9a8588230a65b9336072",
+    "bytes": 1278
+  },
+  {
+    "path": "raw\\usno-reykjavik-2026-06-26.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "raw\\usno-reykjavik-2028-06-21.raw",
+    "sha256": "61b30d408583991fd69f3dec694e154cb652471e663328ad9c8482c9021ab5db",
+    "bytes": 150
+  },
+  {
+    "path": "raw\\usno-reykjavik-2028-06-21.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "raw\\usno-singapore-2027-12-31.raw",
+    "sha256": "61b30d408583991fd69f3dec694e154cb652471e663328ad9c8482c9021ab5db",
+    "bytes": 150
+  },
+  {
+    "path": "raw\\usno-singapore-2027-12-31.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "raw\\usno-singapore-2028-01-01.raw",
+    "sha256": "61b30d408583991fd69f3dec694e154cb652471e663328ad9c8482c9021ab5db",
+    "bytes": 150
+  },
+  {
+    "path": "raw\\usno-singapore-2028-01-01.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "raw\\usno-vrindavan-2026-06-30.raw",
+    "sha256": "61b30d408583991fd69f3dec694e154cb652471e663328ad9c8482c9021ab5db",
+    "bytes": 150
+  },
+  {
+    "path": "raw\\usno-vrindavan-2026-06-30.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "REPRODUCE.md",
+    "sha256": "86dc4dde039450d590236da6afcd3279a34876fe2544b986c8ff332a2b95fb5b",
+    "bytes": 4497
+  },
+  {
+    "path": "requests.json",
+    "sha256": "2a6cc62e48ce7bf4844452916af80d201a3a76522ab3e389ee8cb0af138fc926",
+    "bytes": 9754
+  },
+  {
+    "path": "retry-fetch.log",
+    "sha256": "b0463815ad7ab00e03db28a1d2ed82a4f0673f30b793a3b16b999e35dfd953fa",
+    "bytes": 169
+  },
+  {
+    "path": "retry-manifest.json",
+    "sha256": "fe4e31066f2dc922340a7afdb232e12114376287032ea98d14d6ed7749c488ac",
+    "bytes": 3262
+  },
+  {
+    "path": "retry-requests.json",
+    "sha256": "71e96ac758db961adbf50d12b1e1f1e20d847016ae45e9085f66e9201700794e",
+    "bytes": 1311
+  },
+  {
+    "path": "reykjavik-cap-comparison.json",
+    "sha256": "daea42fbd81ef17b78f3b733696ba0b308345385ad451add4716805bbbbb1e62",
+    "bytes": 374
+  },
+  {
+    "path": "reykjavik-sunrise-sensitivity.json",
+    "sha256": "6619671686e82a3873bc0e6b65ec84dc242f4e0d8b0f80e60268eeb8672fc68d",
+    "bytes": 646
+  },
+  {
+    "path": "rule-diagnostics.json",
+    "sha256": "472f954c330b93cb4b8080d5a0aedef2b1745f8caa51e6b80f1f0617e9fc9daa",
+    "bytes": 27860
+  },
+  {
+    "path": "runtime.json",
+    "sha256": "40990bb0c7b94d1a55d5fe0b601314bb6e7c24c7dc0b46c4be717c9ef548f572",
+    "bytes": 71
+  },
+  {
+    "path": "site-summary.json",
+    "sha256": "9407ffc87eaa6b58c85f0e7c42893e29ab5e85b66bd532f3f41a326b1f53e0b7",
+    "bytes": 29099
+  },
+  {
+    "path": "stored-provenance-checks.json",
+    "sha256": "ba669064c8fad9833dddf3f8fa8c613f7033625d5282d54b2f3b916e5eb85a45",
+    "bytes": 24050
+  },
+  {
+    "path": "summary.json",
+    "sha256": "b7fc46419897d816fdf407bcd54e9a52312e2199755a010f1006ae889ad082d7",
+    "bytes": 67366
+  },
+  {
+    "path": "supplement-fetch.log",
+    "sha256": "b6d9e4e7c7c645de57998773ad9588b857ad23e3b4ddf2abdeb7148519aabf58",
+    "bytes": 290
+  },
+  {
+    "path": "supplement-manifest.json",
+    "sha256": "7500e57e88ad13b339a0f151c2236face5fe1b9e8977a626c959e102b50e4d69",
+    "bytes": 5986
+  },
+  {
+    "path": "supplement-requests.json",
+    "sha256": "93783ac7769693ba2c96463b0bff810ec22d393531c8b3028554b5b552bfa326",
+    "bytes": 1968
+  },
+  {
+    "path": "tracked-after.diff",
+    "sha256": "1860cb7c579829681d4742be2fb213c754aa50042af2c3ed2475a2e57d223971",
+    "bytes": 42712
+  },
+  {
+    "path": "transliteration-map.json",
+    "sha256": "336069a1318f1854d3accc76a4326fd85f876beb10b30e15cd9c411a1dfddbe5",
+    "bytes": 2397
+  }
+]

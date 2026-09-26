@@ -1,0 +1,25 @@
+{
+  "id": "about",
+  "url": "https://www.vaisnavacalendar.info/about-the-vaisnava-calendar",
+  "kind": "documentation",
+  "retrievedAtUtc": "2026-09-15T19:52:25.860927+00:00",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": 200,
+  "finalUrl": "https://www.vaisnavacalendar.info/about-the-vaisnava-calendar",
+  "responseHeaders": {
+    "Date": "Tue, 15 Sep 2026 19:52:37 GMT",
+    "Server": "Apache/2",
+    "X-UA-Compatible": "IE=edge",
+    "Link": "<https://www.vaisnavacalendar.info/wp-json/>; rel=\"https://api.w.org/\", <https://www.vaisnavacalendar.info/wp-json/wp/v2/pages/64>; rel=\"alternate\"; type=\"application/json\", <https://www.vaisnavacalendar.info/?p=64>; rel=shortlink",
+    "Upgrade": "h2,h2c",
+    "Connection": "Upgrade, close",
+    "Vary": "Accept-Encoding,User-Agent",
+    "Transfer-Encoding": "chunked",
+    "Content-Type": "text/html; charset=UTF-8"
+  },
+  "file": "docs/release/2026-09-16/sources/about.raw",
+  "sha256": "b60951502d41dbb39dc973f0b052a51e5d41512fe438d0afa8868f7440646f6f",
+  "bytes": 110649
+}

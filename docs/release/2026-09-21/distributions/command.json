@@ -1,0 +1,11 @@
+{
+  "command": [
+    ".\\gradlew.bat",
+    ":api:installDist",
+    ":publish:installDist",
+    ":publication:installDist",
+    "--console=plain"
+  ],
+  "exitCode": 0,
+  "elapsedSeconds": 3.125
+}

@@ -1,0 +1,24 @@
+# Normalise line endings in source, so the repo is identical on Windows and CI.
+* text=auto eol=lf
+
+# Vendored coefficient tables are hash-pinned in vendor/MANIFEST.sha256. If git
+# rewrote their line endings on checkout the bytes would change and every hash
+# would fail on Windows but pass on Linux - the worst kind of "works on my
+# machine". Freeze them exactly as retrieved.
+vendor/** -text
+vendor/MANIFEST.sha256 -text
+
+# Golden/reference data is compared byte-for-byte; same reasoning.
+verify/golden/** -text
+
+# Test fixtures are captured HTTP responses. Their value is that they are exactly what
+# the server sent - vaisnavacalendar.info serves CRLF, and a parser that only ever sees
+# git-normalised LF has not been tested against the real thing. Nothing asserts a digest
+# over these today, so normalising them would not have failed a test; it would just have
+# quietly made the fixtures less faithful than they claim to be.
+verify/src/test/resources/fixtures/** -text
+
+# Gradle wrapper.
+*.jar binary
+gradlew text eol=lf
+gradlew.bat text eol=crlf

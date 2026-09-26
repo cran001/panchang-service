@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.verify.release.ReleaseEvidenceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-09-22T08:16:17" hostname="DESKTOP-KBUKJ2P" time="741.444">
+  <properties/>
+  <testcase name="collectCurrentReferenceComparisons()" classname="org.panchang.verify.release.ReleaseEvidenceTest" time="741.444"/>
+  <system-out><![CDATA[Collected ahmedabad 2025: 365 days; no approval created
+Collected ahmedabad 2026: 365 days; no approval created
+Collected ahmedabad 2027: 365 days; no approval created
+Collected auckland 2025: 365 days; no approval created
+Collected auckland 2026: 365 days; no approval created
+Collected auckland 2027: 365 days; no approval created
+Collected bangalore 2025: 365 days; no approval created
+Collected bangalore 2026: 365 days; no approval created
+Collected bangalore 2027: 365 days; no approval created
+Collected chennai 2025: 365 days; no approval created
+Collected chennai 2026: 365 days; no approval created
+Collected chennai 2027: 365 days; no approval created
+Collected delhi 2025: 365 days; no approval created
+Collected delhi 2026: 365 days; no approval created
+Collected delhi 2027: 365 days; no approval created
+Collected guwahati 2025: 365 days; no approval created
+Collected guwahati 2026: 365 days; no approval created
+Collected guwahati 2027: 365 days; no approval created
+Collected hyderabad 2025: 365 days; no approval created
+Collected hyderabad 2026: 365 days; no approval created
+Collected hyderabad 2027: 365 days; no approval created
+Collected london 2025: 365 days; no approval created
+Collected london 2026: 365 days; no approval created
+Collected london 2027: 365 days; no approval created
+Collected mayapur 2025: 365 days; no approval created
+Collected mayapur 2026: 365 days; no approval created
+Collected mayapur 2027: 365 days; no approval created
+Collected moscow 2025: 365 days; no approval created
+Collected moscow 2026: 365 days; no approval created
+Collected moscow 2027: 365 days; no approval created
+Collected mumbai 2025: 365 days; no approval created
+Collected mumbai 2026: 365 days; no approval created
+Collected mumbai 2027: 365 days; no approval created
+Collected new-york 2025: 365 days; no approval created
+Collected new-york 2026: 365 days; no approval created
+Collected new-york 2027: 365 days; no approval created
+Collected sao-paulo 2025: 365 days; no approval created
+Collected sao-paulo 2026: 365 days; no approval created
+Collected sao-paulo 2027: 365 days; no approval created
+Collected sydney 2025: 365 days; no approval created
+Collected sydney 2026: 365 days; no approval created
+Collected sydney 2027: 365 days; no approval created
+Collected vrindavan 2025: 365 days; no approval created
+Collected vrindavan 2026: 365 days; no approval created
+Collected vrindavan 2027: 365 days; no approval created
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.core.CivilTwilightTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-09-14T05:31:21" hostname="DESKTOP-KBUKJ2P" time="0.064">
+  <properties/>
+  <testcase name="civil twilight ends after sunset()" classname="org.panchang.core.CivilTwilightTest" time="0.042"/>
+  <testcase name="no dusk in the polar night either()" classname="org.panchang.core.CivilTwilightTest" time="0.006"/>
+  <testcase name="elevation moves sunset but not the twilight boundary()" classname="org.panchang.core.CivilTwilightTest" time="0.003"/>
+  <testcase name="no dusk when the Sun never reaches six degrees down()" classname="org.panchang.core.CivilTwilightTest" time="0.002"/>
+  <testcase name="the descending crossing is taken, not the ascending one()" classname="org.panchang.core.CivilTwilightTest" time="0.001"/>
+  <testcase name="the Sun is six degrees down at the returned instant()" classname="org.panchang.core.CivilTwilightTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

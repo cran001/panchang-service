@@ -1,0 +1,29 @@
+{
+  "id": "calendar-mumbai-2025",
+  "url": "https://www.vaisnavacalendar.info/calendars/2025/Bombay%20%5BIndia%5D.txt",
+  "kind": "calendar",
+  "retrievedAtUtc": "2026-09-15T19:54:26.924837+00:00",
+  "cityId": "mumbai",
+  "year": 2025,
+  "lineage": "vaisnavacalendar.info/GCal-text",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": 200,
+  "finalUrl": "https://www.vaisnavacalendar.info/calendars/2025/Bombay%20%5BIndia%5D.txt",
+  "responseHeaders": {
+    "Date": "Tue, 15 Sep 2026 19:54:28 GMT",
+    "Server": "Apache/2",
+    "Upgrade": "h2,h2c",
+    "Connection": "Upgrade, close",
+    "Last-Modified": "Mon, 29 Jan 2024 18:01:13 GMT",
+    "ETag": "\"9c98-610196e6edb9e\"",
+    "Accept-Ranges": "bytes",
+    "Content-Length": "40088",
+    "Vary": "Accept-Encoding,User-Agent",
+    "Content-Type": "text/plain"
+  },
+  "file": "docs/release/2026-09-16/sources/calendar-mumbai-2025.raw",
+  "sha256": "d659d94df017b22bb26966076200ed1cc25dd23eae41f335fa22e236ab631d45",
+  "bytes": 40088
+}

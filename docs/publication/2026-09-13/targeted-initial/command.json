@@ -1,0 +1,8 @@
+[
+  "D:\\projects\\panchang-service\\gradlew.bat",
+  ":publication:test",
+  ":api:test",
+  ":publish:test",
+  "--continue",
+  "--console=plain"
+]

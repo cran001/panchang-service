@@ -1,0 +1,61 @@
+{
+  "members": [
+    {
+      "place": {
+        "id": "point:86e5782e0356194520cc6ed2af757bdf87cb4b40655a7047c7959b80876fecf7",
+        "latitude": 40.71666666666667,
+        "longitude": -74.0,
+        "elevationMeters": 0.0,
+        "timeZone": "America/New_York"
+      },
+      "tradition": "iskcon",
+      "year": 2026,
+      "coverage": {
+        "from": "2026-01-01",
+        "through": "2026-12-31"
+      },
+      "fields": [
+        "OBSERVANCES"
+      ]
+    }
+  ],
+  "referencePolicy": {
+    "id": "vaisnavacalendar-info-gcal-text",
+    "revision": "2026-09-16-proposed",
+    "description": "PROPOSED only: compare exact GCal text snapshots at printed coordinates, IANA mappings and assumed zero elevation. Existing solar -15..75s and lunar -180..75s bands; retain clock/basis disputes and missing ends. No replacement of calculated values. Owner and qualified review pending.",
+    "evidence": [
+      {
+        "link": "docs/release/2026-09-16/REFERENCE-POLICY.md",
+        "sha256": "59c2fe098f2d74ae2418b1af5a173a53bbf12f505be16f077a60bd5b137b2b2d",
+        "outcome": "PROPOSED_POLICY_NOT_APPROVED"
+      },
+      {
+        "link": "docs/release/2026-09-16/coverage-inventory.json",
+        "sha256": "dd9eba1e612260279487d0904f7d2428ed0810fabbfd6d62fd2c7e9e481abb25",
+        "outcome": "MEASURED_COMPARISONS_WITH_UNRESOLVED_CASES"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "link": "docs/release/2026-09-16/measurements/new-york-2026.json",
+      "sha256": "96b3a0aa6df8975486a4cc5e1034b578027722d9e81182fe4387d2df63cab565",
+      "outcome": "MEASURED_NOT_APPROVED"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-new-york-2025.raw",
+      "sha256": "10b8f2015f6a509a9bef3d3edae8a25449a5d1d737a42cf8d54513dc3c60ba5a",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-new-york-2026.raw",
+      "sha256": "4050a4b15ed55a1e67aee9bad487dd3d4315b90bbd0aab6df11e18d8172f1fce",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-new-york-2027.raw",
+      "sha256": "d63f5e3e1fff80de68dc8211a6d2d7193a892312be8021cca7a145fbfd35c57f",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    }
+  ]
+}

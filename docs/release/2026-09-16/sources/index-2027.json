@@ -1,0 +1,26 @@
+{
+  "id": "index-2027",
+  "url": "https://www.vaisnavacalendar.info/calendar-file-downloads/txt-calendar-files-2027",
+  "kind": "index",
+  "retrievedAtUtc": "2026-09-15T19:52:19.651742+00:00",
+  "year": 2027,
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": 200,
+  "finalUrl": "https://www.vaisnavacalendar.info/calendar-file-downloads/txt-calendar-files-2027",
+  "responseHeaders": {
+    "Date": "Tue, 15 Sep 2026 19:52:21 GMT",
+    "Server": "Apache/2",
+    "X-UA-Compatible": "IE=edge",
+    "Link": "<https://www.vaisnavacalendar.info/wp-json/>; rel=\"https://api.w.org/\", <https://www.vaisnavacalendar.info/wp-json/wp/v2/pages/1654>; rel=\"alternate\"; type=\"application/json\", <https://www.vaisnavacalendar.info/?p=1654>; rel=shortlink",
+    "Upgrade": "h2,h2c",
+    "Connection": "Upgrade, close",
+    "Vary": "Accept-Encoding,User-Agent",
+    "Transfer-Encoding": "chunked",
+    "Content-Type": "text/html; charset=UTF-8"
+  },
+  "file": "docs/release/2026-09-16/sources/index-2027.raw",
+  "sha256": "1264a43ec3d6fe0470a9414a5be9ab69093fb7ec8e6ee1de2ea4dc0184c05a4e",
+  "bytes": 109925
+}

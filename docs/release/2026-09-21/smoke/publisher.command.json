@@ -1,0 +1,16 @@
+{
+  "command": [
+    "java",
+    "-cp",
+    "D:\\projects\\panchang-service\\publish\\build\\install\\publish\\lib\\*",
+    "org.panchang.publish.MainKt",
+    "--sites",
+    "D:\\projects\\panchang-service\\docs\\release\\2026-09-21\\smoke\\sites.txt",
+    "--year",
+    "2026",
+    "--out",
+    "D:\\projects\\panchang-service\\docs\\release\\2026-09-21\\smoke\\export"
+  ],
+  "exitCode": 0,
+  "elapsedSeconds": 1.0774296999443322
+}

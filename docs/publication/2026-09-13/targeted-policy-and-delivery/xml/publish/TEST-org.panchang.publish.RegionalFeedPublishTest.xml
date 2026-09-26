@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.publish.RegionalFeedPublishTest" tests="5" skipped="0" failures="1" errors="0" timestamp="2026-09-13T20:32:39" hostname="DESKTOP-KBUKJ2P" time="13.41">
+  <properties/>
+  <testcase name="the legacy day files carry festivals and no fasting or parana items()" classname="org.panchang.publish.RegionalFeedPublishTest" time="13.394"/>
+  <testcase name="the run publishes one site and refuses nothing()" classname="org.panchang.publish.RegionalFeedPublishTest" time="0.001"/>
+  <testcase name="the legacy index files are unchanged in shape()" classname="org.panchang.publish.RegionalFeedPublishTest" time="0.011">
+    <failure message="org.opentest4j.AssertionFailedError: the UTC fallback directory is always published: [P0530] ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: the UTC fallback directory is always published: [P0530] ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at app//org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at app//org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at app//org.panchang.publish.RegionalFeedPublishTest.the legacy index files are unchanged in shape(RegionalFeedPublishTest.kt:129)
+	at java.base@21.0.6/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList.forEach(Unknown Source)
+</failure>
+  </testcase>
+  <testcase name="the v1 year resolution keeps its unresolved record and the new year()" classname="org.panchang.publish.RegionalFeedPublishTest" time="0.0"/>
+  <testcase name="the v1 ekadashi year is schema-shaped and honestly empty()" classname="org.panchang.publish.RegionalFeedPublishTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

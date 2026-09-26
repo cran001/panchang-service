@@ -1,0 +1,24 @@
+{
+  "id": "gbc-committees",
+  "url": "https://gbc.iskcon.org/commmittees/",
+  "kind": "upstream-discovery-or-documentation",
+  "retrievedAtUtc": "2026-09-21T09:08:20.840745+00:00",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": 200,
+  "finalUrl": "https://gbc.iskcon.org/commmittees/",
+  "responseHeaders": {
+    "Server": "nginx/1.31.1",
+    "Date": "Mon, 21 Sep 2026 09:08:21 GMT",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Vary": "Accept-Encoding",
+    "Link": "<https://gbc.iskcon.org/wp-json/>; rel=\"https://api.w.org/\", <https://gbc.iskcon.org/wp-json/wp/v2/pages/511>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://gbc.iskcon.org/?p=511>; rel=shortlink",
+    "X-Proxy-Cache": "MISS"
+  },
+  "file": "docs/release/2026-09-21/sources/gbc-committees.raw",
+  "sha256": "959567a4adb93c60944c7b3357144ee1dc3350924921129f81a354aa1109f62c",
+  "bytes": 126143
+}

@@ -1,0 +1,12 @@
+{
+  "command": [
+    "java",
+    "-cp",
+    "D:\\projects\\panchang-service\\publication\\build\\install\\publication\\lib\\*",
+    "org.panchang.publication.MainKt",
+    "prepare",
+    "D:\\projects\\panchang-service\\docs\\release\\2026-09-21\\proposals\\alternative-sydney-through-december-04.request.json",
+    "D:\\projects\\panchang-service\\docs\\release\\2026-09-21\\bundles\\alternative-sydney-through-december-04"
+  ],
+  "exitCode": 0
+}

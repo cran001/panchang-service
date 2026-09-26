@@ -1,0 +1,2551 @@
+{
+  "tool": "panchang-calc",
+  "purpose": "CALCULATED_REVIEW_ONLY_NOT_APPROVED_GUIDANCE",
+  "request": {
+    "sampradaya": "iskcon",
+    "year": 2026,
+    "scope": "YEAR"
+  },
+  "location": {
+    "coordinateSource": "CALLER_COORDINATES",
+    "query": "local review",
+    "coordinatesUsed": {
+      "latitude": 40.71666666666667,
+      "longitude": -74.0,
+      "timeZone": "America/New_York",
+      "elevationMeters": 0.0
+    },
+    "nearestPlaceLabel": {
+      "place": {
+        "geonameId": 5112540,
+        "name": "Chinatown",
+        "asciiName": "Chinatown",
+        "kind": "CITY",
+        "country": "US",
+        "admin1": "NY",
+        "population": 90000,
+        "latitude": 40.71649,
+        "longitude": -73.99625,
+        "timeZone": "America/New_York",
+        "attribution": "Place data © GeoNames (https://www.geonames.org/), used under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)."
+      },
+      "distanceKm": 0.32,
+      "note": "A label for the coordinates supplied. Nothing was computed at this record's point."
+    },
+    "notes": [
+      "Computed at the coordinates you supplied, not at any place record. The place name below, if any, is a label only."
+    ]
+  },
+  "ekadashiYear": {
+    "schemaVersion": 1,
+    "year": 2026,
+    "site": {
+      "latitude": 40.71666666666667,
+      "longitude": -74.0,
+      "timeZone": "America/New_York",
+      "elevationMeters": 0.0
+    },
+    "sampradaya": {
+      "id": "iskcon",
+      "displayName": "ISKCON / Gaudiya Vaishnava",
+      "status": "VERIFIED",
+      "provenanceNote": "Ekadashi, Mahadvadashi and parana rules follow GCal 11 Build 5 (GBC Calendar Committee), as published at vaisnavacalendar.info. Fasting dates, Ekadashi names and parana windows are checked against that calendar's Mayapur output for 2026 by an automated conformance test, and the rules were derived against its 2021-2027 output. Two reservations a reader should carry: the four nakshatra-based Mahadvadashis (Jaya, Vijaya, Jayanti, Papanasini) rest on a single observed occurrence and their qualifying condition is inferred rather than quoted from a text; and this engine's tithi boundaries run up to about two minutes earlier than GCal's, which is harmless for a printed time but could in principle move a fasting day when a tithi ends within about two minutes of sunrise."
+    },
+    "observances": [
+      {
+        "date": "2026-01-14",
+        "name": "Sat-tila Ekadashi",
+        "kind": "MAHADVADASHI",
+        "mahadvadashiType": "UNMILANI",
+        "tithi": {
+          "index": 25,
+          "name": "Ekadashi",
+          "numberInPaksha": 11,
+          "paksha": "KRISHNA",
+          "lunarMonthName": "Pausha",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-01-13T04:48:28-05:00",
+            "jdUt": 2461053.90866
+          },
+          "end": {
+            "local": "2026-01-14T07:23:17-05:00",
+            "jdUt": 2461055.01617
+          }
+        },
+        "parana": {
+          "date": "2026-01-15",
+          "start": {
+            "local": "2026-01-15T07:17:51-05:00",
+            "jdUt": 2461056.0124
+          },
+          "end": {
+            "local": "2026-01-15T09:47:00-05:00",
+            "jdUt": 2461056.11597
+          },
+          "startReason": "SUNRISE",
+          "endReason": "DVADASHI_END",
+          "durationMinutes": 149.134
+        },
+        "reason": "The Ekadashi began before arunodaya and is still running at sunrise on the following day, so the fast is kept on that second day as Unmilani Mahadvadashi.",
+        "confidence": "CONFIRMED"
+      },
+      {
+        "date": "2026-01-29",
+        "name": "Bhaimi Ekadashi",
+        "kind": "EKADASHI",
+        "tithi": {
+          "index": 10,
+          "name": "Ekadashi",
+          "numberInPaksha": 11,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Magha",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-01-28T06:06:27-05:00",
+            "jdUt": 2461068.96281
+          },
+          "end": {
+            "local": "2026-01-29T03:25:38-05:00",
+            "jdUt": 2461069.85113
+          }
+        },
+        "parana": {
+          "date": "2026-01-30",
+          "start": {
+            "local": "2026-01-30T07:07:46-05:00",
+            "jdUt": 2461071.00539
+          },
+          "end": {
+            "local": "2026-01-30T10:28:56-05:00",
+            "jdUt": 2461071.14509
+          },
+          "startReason": "SUNRISE",
+          "endReason": "ONE_THIRD_DAYLIGHT",
+          "durationMinutes": 201.172
+        },
+        "reason": "The Ekadashi had not begun by arunodaya, so Dashami was still running in the last four ghatikas before sunrise and the Ekadashi is viddha; the fast is kept on the Dvadashi.",
+        "confidence": "CONFIRMED"
+      },
+      {
+        "date": "2026-02-12",
+        "name": "Vijaya Ekadashi",
+        "kind": "EKADASHI",
+        "tithi": {
+          "index": 25,
+          "name": "Ekadashi",
+          "numberInPaksha": 11,
+          "paksha": "KRISHNA",
+          "lunarMonthName": "Magha",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-02-12T01:52:43-05:00",
+            "jdUt": 2461083.78661
+          },
+          "end": {
+            "local": "2026-02-13T03:56:26-05:00",
+            "jdUt": 2461084.87252
+          }
+        },
+        "parana": {
+          "date": "2026-02-13",
+          "start": {
+            "local": "2026-02-13T10:20:22-05:00",
+            "jdUt": 2461085.13914
+          },
+          "end": {
+            "local": "2026-02-13T10:24:24-05:00",
+            "jdUt": 2461085.14194
+          },
+          "startReason": "HARI_VASARA_END",
+          "endReason": "ONE_THIRD_DAYLIGHT",
+          "durationMinutes": 4.034
+        },
+        "reason": "The Ekadashi began before arunodaya and was running at sunrise, so the fast is kept on the Ekadashi itself.",
+        "confidence": "CONFIRMED"
+      },
+      {
+        "date": "2026-02-27",
+        "name": "Amalaki vrata Ekadashi",
+        "kind": "EKADASHI",
+        "tithi": {
+          "index": 10,
+          "name": "Ekadashi",
+          "numberInPaksha": 11,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Phalguna",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-02-26T14:03:58-05:00",
+            "jdUt": 2461098.29442
+          },
+          "end": {
+            "local": "2026-02-27T12:03:24-05:00",
+            "jdUt": 2461099.2107
+          }
+        },
+        "parana": {
+          "date": "2026-02-28",
+          "start": {
+            "local": "2026-02-28T06:31:20-05:00",
+            "jdUt": 2461099.98009
+          },
+          "end": {
+            "local": "2026-02-28T10:13:52-05:00",
+            "jdUt": 2461100.13463
+          },
+          "startReason": "SUNRISE",
+          "endReason": "DVADASHI_END",
+          "durationMinutes": 222.547
+        },
+        "reason": "The Ekadashi began before arunodaya and was running at sunrise, so the fast is kept on the Ekadashi itself.",
+        "confidence": "CONFIRMED"
+      },
+      {
+        "date": "2026-03-14",
+        "name": "Papamocani Ekadashi",
+        "kind": "EKADASHI",
+        "tithi": {
+          "index": 25,
+          "name": "Ekadashi",
+          "numberInPaksha": 11,
+          "paksha": "KRISHNA",
+          "lunarMonthName": "Phalguna",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-03-13T22:41:25-04:00",
+            "jdUt": 2461113.6121
+          },
+          "end": {
+            "local": "2026-03-14T23:46:58-04:00",
+            "jdUt": 2461114.65762
+          }
+        },
+        "parana": {
+          "date": "2026-03-15",
+          "start": {
+            "local": "2026-03-15T07:07:30-04:00",
+            "jdUt": 2461114.96354
+          },
+          "end": {
+            "local": "2026-03-15T11:05:56-04:00",
+            "jdUt": 2461115.12912
+          },
+          "startReason": "SUNRISE",
+          "endReason": "ONE_THIRD_DAYLIGHT",
+          "durationMinutes": 238.434
+        },
+        "reason": "The Ekadashi began before arunodaya and was running at sunrise, so the fast is kept on the Ekadashi itself.",
+        "confidence": "CONFIRMED"
+      },
+      {
+        "date": "2026-03-28",
+        "name": "Kamada Ekadashi",
+        "kind": "EKADASHI",
+        "tithi": {
+          "index": 10,
+          "name": "Ekadashi",
+          "numberInPaksha": 11,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Chaitra",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-03-27T23:16:15-04:00",
+            "jdUt": 2461127.63629
+          },
+          "end": {
+            "local": "2026-03-28T22:16:58-04:00",
+            "jdUt": 2461128.59511
+          }
+        },
+        "parana": {
+          "date": "2026-03-29",
+          "start": {
+            "local": "2026-03-29T06:44:22-04:00",
+            "jdUt": 2461128.94748
+          },
+          "end": {
+            "local": "2026-03-29T10:55:29-04:00",
+            "jdUt": 2461129.12186
+          },
+          "startReason": "SUNRISE",
+          "endReason": "ONE_THIRD_DAYLIGHT",
+          "durationMinutes": 251.105
+        },
+        "reason": "The Ekadashi began before arunodaya and was running at sunrise, so the fast is kept on the Ekadashi itself.",
+        "confidence": "CONFIRMED"
+      },
+      {
+        "date": "2026-04-13",
+        "name": "Varuthini Ekadashi",
+        "kind": "EKADASHI",
+        "tithi": {
+          "index": 25,
+          "name": "Ekadashi",
+          "numberInPaksha": 11,
+          "paksha": "KRISHNA",
+          "lunarMonthName": "Chaitra",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-04-12T15:47:19-04:00",
+            "jdUt": 2461143.32453
+          },
+          "end": {
+            "local": "2026-04-13T15:39:13-04:00",
+            "jdUt": 2461144.3189
+          }
+        },
+        "parana": {
+          "date": "2026-04-14",
+          "start": {
+            "local": "2026-04-14T06:18:41-04:00",
+            "jdUt": 2461144.92964
+          },
+          "end": {
+            "local": "2026-04-14T10:43:56-04:00",
+            "jdUt": 2461145.11384
+          },
+          "startReason": "SUNRISE",
+          "endReason": "ONE_THIRD_DAYLIGHT",
+          "durationMinutes": 265.254
+        },
+        "reason": "The Ekadashi began before arunodaya and was running at sunrise, so the fast is kept on the Ekadashi itself.",
+        "confidence": "CONFIRMED"
+      },
+      {
+        "date": "2026-04-27",
+        "name": "Mohini Ekadashi",
+        "kind": "EKADASHI",
+        "tithi": {
+          "index": 10,
+          "name": "Ekadashi",
+          "numberInPaksha": 11,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Vaishakha",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-04-26T08:37:28-04:00",
+            "jdUt": 2461157.02602
+          },
+          "end": {
+            "local": "2026-04-27T08:46:26-04:00",
+            "jdUt": 2461158.03224
+          }
+        },
+        "parana": {
+          "date": "2026-04-28",
+          "start": {
+            "local": "2026-04-28T05:58:27-04:00",
+            "jdUt": 2461158.91559
+          },
+          "end": {
+            "local": "2026-04-28T09:22:19-04:00",
+            "jdUt": 2461159.05716
+          },
+          "startReason": "SUNRISE",
+          "endReason": "DVADASHI_END",
+          "durationMinutes": 203.866
+        },
+        "reason": "The Ekadashi began before arunodaya and was running at sunrise, so the fast is kept on the Ekadashi itself.",
+        "confidence": "CONFIRMED"
+      },
+      {
+        "date": "2026-05-13",
+        "name": "Apara Ekadashi",
+        "kind": "EKADASHI",
+        "tithi": {
+          "index": 25,
+          "name": "Ekadashi",
+          "numberInPaksha": 11,
+          "paksha": "KRISHNA",
+          "lunarMonthName": "Vaishakha",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-05-12T05:22:59-04:00",
+            "jdUt": 2461172.89096
+          },
+          "end": {
+            "local": "2026-05-13T04:00:31-04:00",
+            "jdUt": 2461173.83369
+          }
+        },
+        "parana": {
+          "date": "2026-05-14",
+          "start": {
+            "local": "2026-05-14T05:39:48-04:00",
+            "jdUt": 2461174.90264
+          },
+          "end": {
+            "local": "2026-05-14T10:28:21-04:00",
+            "jdUt": 2461175.10302
+          },
+          "startReason": "SUNRISE",
+          "endReason": "ONE_THIRD_DAYLIGHT",
+          "durationMinutes": 288.542
+        },
+        "reason": "The Ekadashi had not begun by arunodaya, so Dashami was still running in the last four ghatikas before sunrise and the Ekadashi is viddha; the fast is kept on the Dvadashi.",
+        "confidence": "CONFIRMED"
+      },
+      {
+        "date": "2026-05-26",
+        "name": "Padmini Ekadashi",
+        "kind": "EKADASHI",
+        "tithi": {
+          "index": 10,
+          "name": "Ekadashi",
+          "numberInPaksha": 11,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Adhika Jyeshtha",
+          "isAdhikaMonth": true,
+          "start": {
+            "local": "2026-05-25T19:41:26-04:00",
+            "jdUt": 2461186.48711
+          },
+          "end": {
+            "local": "2026-05-26T20:52:17-04:00",
+            "jdUt": 2461187.53631
+          }
+        },
+        "parana": {
+          "date": "2026-05-27",
+          "start": {
+            "local": "2026-05-27T05:29:35-04:00",
+            "jdUt": 2461187.89554
+          },
+          "end": {
+            "local": "2026-05-27T10:25:27-04:00",
+            "jdUt": 2461188.10101
+          },
+          "startReason": "SUNRISE",
+          "endReason": "ONE_THIRD_DAYLIGHT",
+          "durationMinutes": 295.887
+        },
+        "reason": "The Ekadashi began before arunodaya and was running at sunrise, so the fast is kept on the Ekadashi itself.",
+        "confidence": "CONFIRMED"
+      },
+      {
+        "date": "2026-06-11",
+        "name": "Parama Ekadashi",
+        "kind": "EKADASHI",
+        "tithi": {
+          "index": 25,
+          "name": "Ekadashi",
+          "numberInPaksha": 11,
+          "paksha": "KRISHNA",
+          "lunarMonthName": "Adhika Jyeshtha",
+          "isAdhikaMonth": true,
+          "start": {
+            "local": "2026-06-10T15:28:26-04:00",
+            "jdUt": 2461202.31141
+          },
+          "end": {
+            "local": "2026-06-11T13:06:48-04:00",
+            "jdUt": 2461203.21306
+          }
+        },
+        "parana": {
+          "date": "2026-06-12",
+          "start": {
+            "local": "2026-06-12T05:24:16-04:00",
+            "jdUt": 2461203.89185
+          },
+          "end": {
+            "local": "2026-06-12T10:07:07-04:00",
+            "jdUt": 2461204.08828
+          },
+          "startReason": "SUNRISE",
+          "endReason": "DVADASHI_END",
+          "durationMinutes": 282.868
+        },
+        "reason": "The Ekadashi began before arunodaya and was running at sunrise, so the fast is kept on the Ekadashi itself.",
+        "confidence": "CONFIRMED"
+      },
+      {
+        "date": "2026-06-25",
+        "name": "Pandava Nirjala Ekadashi",
+        "kind": "EKADASHI",
+        "tithi": {
+          "index": 10,
+          "name": "Ekadashi",
+          "numberInPaksha": 11,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Jyeshtha",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-06-24T08:42:50-04:00",
+            "jdUt": 2461216.02974
+          },
+          "end": {
+            "local": "2026-06-25T10:39:55-04:00",
+            "jdUt": 2461217.11105
+          }
+        },
+        "parana": {
+          "date": "2026-06-26",
+          "start": {
+            "local": "2026-06-26T05:26:26-04:00",
+            "jdUt": 2461217.89336
+          },
+          "end": {
+            "local": "2026-06-26T10:28:04-04:00",
+            "jdUt": 2461218.10282
+          },
+          "startReason": "SUNRISE",
+          "endReason": "ONE_THIRD_DAYLIGHT",
+          "durationMinutes": 301.628
+        },
+        "reason": "The Ekadashi began before arunodaya and was running at sunrise, so the fast is kept on the Ekadashi itself.",
+        "confidence": "CONFIRMED"
+      },
+      {
+        "date": "2026-07-10",
+        "name": "Yogini Ekadashi",
+        "kind": "EKADASHI",
+        "tithi": {
+          "index": 25,
+          "name": "Ekadashi",
+          "numberInPaksha": 11,
+          "paksha": "KRISHNA",
+          "lunarMonthName": "Jyeshtha",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-07-09T22:46:55-04:00",
+            "jdUt": 2461231.61591
+          },
+          "end": {
+            "local": "2026-07-10T19:53:10-04:00",
+            "jdUt": 2461232.49526
+          }
+        },
+        "parana": {
+          "date": "2026-07-11",
+          "start": {
+            "local": "2026-07-11T05:34:44-04:00",
+            "jdUt": 2461232.89912
+          },
+          "end": {
+            "local": "2026-07-11T10:32:30-04:00",
+            "jdUt": 2461233.1059
+          },
+          "startReason": "SUNRISE",
+          "endReason": "ONE_THIRD_DAYLIGHT",
+          "durationMinutes": 297.77
+        },
+        "reason": "The Ekadashi began before arunodaya and was running at sunrise, so the fast is kept on the Ekadashi itself.",
+        "confidence": "CONFIRMED"
+      },
+      {
+        "date": "2026-07-24",
+        "name": "Sayana Ekadashi",
+        "kind": "EKADASHI",
+        "tithi": {
+          "index": 10,
+          "name": "Ekadashi",
+          "numberInPaksha": 11,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Ashadha",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-07-23T23:43:15-04:00",
+            "jdUt": 2461245.65503
+          },
+          "end": {
+            "local": "2026-07-25T02:04:48-04:00",
+            "jdUt": 2461246.75333
+          }
+        },
+        "parana": {
+          "date": "2026-07-25",
+          "start": {
+            "local": "2026-07-25T08:40:41-04:00",
+            "jdUt": 2461247.02825
+          },
+          "end": {
+            "local": "2026-07-25T10:36:57-04:00",
+            "jdUt": 2461247.10899
+          },
+          "startReason": "HARI_VASARA_END",
+          "endReason": "ONE_THIRD_DAYLIGHT",
+          "durationMinutes": 116.263
+        },
+        "reason": "The Ekadashi began before arunodaya and was running at sunrise, so the fast is kept on the Ekadashi itself.",
+        "confidence": "CONFIRMED"
+      },
+      {
+        "date": "2026-08-09",
+        "name": "Kamika Ekadashi",
+        "kind": "EKADASHI",
+        "tithi": {
+          "index": 25,
+          "name": "Ekadashi",
+          "numberInPaksha": 11,
+          "paksha": "KRISHNA",
+          "lunarMonthName": "Ashadha",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-08-08T04:29:46-04:00",
+            "jdUt": 2461260.85401
+          },
+          "end": {
+            "local": "2026-08-09T01:35:31-04:00",
+            "jdUt": 2461261.733
+          }
+        },
+        "parana": {
+          "date": "2026-08-10",
+          "start": {
+            "local": "2026-08-10T06:01:28-04:00",
+            "jdUt": 2461262.91769
+          },
+          "end": {
+            "local": "2026-08-10T10:41:10-04:00",
+            "jdUt": 2461263.11192
+          },
+          "startReason": "SUNRISE",
+          "endReason": "ONE_THIRD_DAYLIGHT",
+          "durationMinutes": 279.697
+        },
+        "reason": "The Ekadashi had not begun by arunodaya, so Dashami was still running in the last four ghatikas before sunrise and the Ekadashi is viddha; the fast is kept on the Dvadashi.",
+        "confidence": "CONFIRMED"
+      },
+      {
+        "date": "2026-08-23",
+        "name": "Pavitraropana Ekadashi",
+        "kind": "EKADASHI",
+        "tithi": {
+          "index": 10,
+          "name": "Ekadashi",
+          "numberInPaksha": 11,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Shravana",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-08-22T16:30:51-04:00",
+            "jdUt": 2461275.35476
+          },
+          "end": {
+            "local": "2026-08-23T18:49:14-04:00",
+            "jdUt": 2461276.45086
+          }
+        },
+        "parana": {
+          "date": "2026-08-24",
+          "start": {
+            "local": "2026-08-24T06:15:16-04:00",
+            "jdUt": 2461276.92727
+          },
+          "end": {
+            "local": "2026-08-24T10:43:45-04:00",
+            "jdUt": 2461277.11371
+          },
+          "startReason": "SUNRISE",
+          "endReason": "ONE_THIRD_DAYLIGHT",
+          "durationMinutes": 268.475
+        },
+        "reason": "The Ekadashi began before arunodaya and was running at sunrise, so the fast is kept on the Ekadashi itself.",
+        "confidence": "CONFIRMED"
+      },
+      {
+        "date": "2026-09-07",
+        "name": "Annada Ekadashi",
+        "kind": "MAHADVADASHI",
+        "mahadvadashiType": "TRISPRSA",
+        "tithi": {
+          "index": 25,
+          "name": "Ekadashi",
+          "numberInPaksha": 11,
+          "paksha": "KRISHNA",
+          "lunarMonthName": "Shravana",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-09-06T09:59:43-04:00",
+            "jdUt": 2461290.08314
+          },
+          "end": {
+            "local": "2026-09-07T07:34:36-04:00",
+            "jdUt": 2461290.98236
+          }
+        },
+        "parana": {
+          "date": "2026-09-08",
+          "start": {
+            "local": "2026-09-08T06:29:54-04:00",
+            "jdUt": 2461291.93743
+          },
+          "end": {
+            "local": "2026-09-08T10:45:28-04:00",
+            "jdUt": 2461292.11491
+          },
+          "startReason": "SUNRISE",
+          "endReason": "ONE_THIRD_DAYLIGHT",
+          "durationMinutes": 255.57
+        },
+        "reason": "The Dvadashi begins and ends between two sunrises, so Ekadashi, Dvadashi and Trayodashi all touch this day; the fast is kept on the Ekadashi as Trisprsa Mahadvadashi and broken on the Trayodashi.",
+        "confidence": "CONFIRMED"
+      },
+      {
+        "date": "2026-09-22",
+        "name": "Parsva Ekadashi",
+        "kind": "EKADASHI",
+        "tithi": {
+          "index": 10,
+          "name": "Ekadashi",
+          "numberInPaksha": 11,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Bhadrapada",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-09-21T10:31:25-04:00",
+            "jdUt": 2461305.10515
+          },
+          "end": {
+            "local": "2026-09-22T12:13:51-04:00",
+            "jdUt": 2461306.17628
+          }
+        },
+        "parana": {
+          "date": "2026-09-23",
+          "start": {
+            "local": "2026-09-23T06:44:35-04:00",
+            "jdUt": 2461306.94763
+          },
+          "end": {
+            "local": "2026-09-23T10:46:50-04:00",
+            "jdUt": 2461307.11586
+          },
+          "startReason": "SUNRISE",
+          "endReason": "ONE_THIRD_DAYLIGHT",
+          "durationMinutes": 242.251
+        },
+        "reason": "The Ekadashi began before arunodaya and was running at sunrise, so the fast is kept on the Ekadashi itself.",
+        "confidence": "CONFIRMED"
+      },
+      {
+        "date": "2026-10-06",
+        "name": "Indira Ekadashi",
+        "kind": "EKADASHI",
+        "tithi": {
+          "index": 25,
+          "name": "Ekadashi",
+          "numberInPaksha": 11,
+          "paksha": "KRISHNA",
+          "lunarMonthName": "Bhadrapada",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-10-05T16:38:00-04:00",
+            "jdUt": 2461319.35972
+          },
+          "end": {
+            "local": "2026-10-06T15:04:57-04:00",
+            "jdUt": 2461320.2951
+          }
+        },
+        "parana": {
+          "date": "2026-10-07",
+          "start": {
+            "local": "2026-10-07T06:58:45-04:00",
+            "jdUt": 2461320.95747
+          },
+          "end": {
+            "local": "2026-10-07T10:48:33-04:00",
+            "jdUt": 2461321.11705
+          },
+          "startReason": "SUNRISE",
+          "endReason": "ONE_THIRD_DAYLIGHT",
+          "durationMinutes": 229.791
+        },
+        "reason": "The Ekadashi began before arunodaya and was running at sunrise, so the fast is kept on the Ekadashi itself.",
+        "confidence": "CONFIRMED"
+      },
+      {
+        "date": "2026-10-21",
+        "name": "Pasankusa Ekadashi",
+        "kind": "EKADASHI",
+        "tithi": {
+          "index": 10,
+          "name": "Ekadashi",
+          "numberInPaksha": 11,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Ashvina",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-10-21T04:42:18-04:00",
+            "jdUt": 2461334.86271
+          },
+          "end": {
+            "local": "2026-10-22T05:18:30-04:00",
+            "jdUt": 2461335.88785
+          }
+        },
+        "reason": "The Ekadashi began before arunodaya and was running at sunrise, so the fast is kept on the Ekadashi itself. No parana window is given: the fast may not be broken before the end of Hari Vasara, the first quarter of Dvadashi on 2026-10-22, and must be broken before the end of the first third of daylight, which comes first. This needs a pandit's ruling rather than a computed answer.",
+        "confidence": "INFERRED"
+      },
+      {
+        "date": "2026-11-04",
+        "name": "Rama Ekadashi",
+        "kind": "EKADASHI",
+        "tithi": {
+          "index": 25,
+          "name": "Ekadashi",
+          "numberInPaksha": 11,
+          "paksha": "KRISHNA",
+          "lunarMonthName": "Ashvina",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-11-04T00:33:46-05:00",
+            "jdUt": 2461348.73178
+          },
+          "end": {
+            "local": "2026-11-05T00:06:05-05:00",
+            "jdUt": 2461349.71256
+          }
+        },
+        "parana": {
+          "date": "2026-11-05",
+          "start": {
+            "local": "2026-11-05T06:31:07-05:00",
+            "jdUt": 2461349.97994
+          },
+          "end": {
+            "local": "2026-11-05T09:56:36-05:00",
+            "jdUt": 2461350.12264
+          },
+          "startReason": "SUNRISE",
+          "endReason": "ONE_THIRD_DAYLIGHT",
+          "durationMinutes": 205.491
+        },
+        "reason": "The Ekadashi began before arunodaya and was running at sunrise, so the fast is kept on the Ekadashi itself.",
+        "confidence": "CONFIRMED"
+      },
+      {
+        "date": "2026-11-20",
+        "name": "Utthana Ekadashi",
+        "kind": "EKADASHI",
+        "tithi": {
+          "index": 10,
+          "name": "Ekadashi",
+          "numberInPaksha": 11,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Kartika",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-11-19T20:46:05-05:00",
+            "jdUt": 2461364.57367
+          },
+          "end": {
+            "local": "2026-11-20T20:01:57-05:00",
+            "jdUt": 2461365.54302
+          }
+        },
+        "parana": {
+          "date": "2026-11-21",
+          "start": {
+            "local": "2026-11-21T06:49:52-05:00",
+            "jdUt": 2461365.99296
+          },
+          "end": {
+            "local": "2026-11-21T10:04:26-05:00",
+            "jdUt": 2461366.12808
+          },
+          "startReason": "SUNRISE",
+          "endReason": "ONE_THIRD_DAYLIGHT",
+          "durationMinutes": 194.582
+        },
+        "reason": "The Ekadashi began before arunodaya and was running at sunrise, so the fast is kept on the Ekadashi itself.",
+        "confidence": "CONFIRMED"
+      },
+      {
+        "date": "2026-12-04",
+        "name": "Utpanna Ekadashi",
+        "kind": "EKADASHI",
+        "tithi": {
+          "index": 25,
+          "name": "Ekadashi",
+          "numberInPaksha": 11,
+          "paksha": "KRISHNA",
+          "lunarMonthName": "Kartika",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-12-03T12:34:01-05:00",
+            "jdUt": 2461378.23196
+          },
+          "end": {
+            "local": "2026-12-04T13:15:12-05:00",
+            "jdUt": 2461379.26055
+          }
+        },
+        "parana": {
+          "date": "2026-12-05",
+          "start": {
+            "local": "2026-12-05T07:04:38-05:00",
+            "jdUt": 2461380.00322
+          },
+          "end": {
+            "local": "2026-12-05T10:12:35-05:00",
+            "jdUt": 2461380.13374
+          },
+          "startReason": "SUNRISE",
+          "endReason": "ONE_THIRD_DAYLIGHT",
+          "durationMinutes": 187.955
+        },
+        "reason": "The Ekadashi began before arunodaya and was running at sunrise, so the fast is kept on the Ekadashi itself.",
+        "confidence": "CONFIRMED"
+      },
+      {
+        "date": "2026-12-20",
+        "name": "Moksada Ekadashi",
+        "kind": "MAHADVADASHI",
+        "mahadvadashiType": "TRISPRSA",
+        "tithi": {
+          "index": 10,
+          "name": "Ekadashi",
+          "numberInPaksha": 11,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Margashirsha",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-12-19T11:39:54-05:00",
+            "jdUt": 2461394.19438
+          },
+          "end": {
+            "local": "2026-12-20T09:45:05-05:00",
+            "jdUt": 2461395.11464
+          }
+        },
+        "parana": {
+          "date": "2026-12-21",
+          "start": {
+            "local": "2026-12-21T07:16:34-05:00",
+            "jdUt": 2461396.0115
+          },
+          "end": {
+            "local": "2026-12-21T10:21:38-05:00",
+            "jdUt": 2461396.14002
+          },
+          "startReason": "SUNRISE",
+          "endReason": "ONE_THIRD_DAYLIGHT",
+          "durationMinutes": 185.074
+        },
+        "reason": "The Dvadashi begins and ends between two sunrises, so Ekadashi, Dvadashi and Trayodashi all touch this day; the fast is kept on the Ekadashi as Trisprsa Mahadvadashi and broken on the Trayodashi.",
+        "confidence": "CONFIRMED"
+      }
+    ]
+  },
+  "yearResolution": {
+    "schemaVersion": 1,
+    "year": 2026,
+    "site": {
+      "latitude": 40.71666666666667,
+      "longitude": -74.0,
+      "timeZone": "America/New_York",
+      "elevationMeters": 0.0
+    },
+    "sampradaya": {
+      "id": "iskcon",
+      "displayName": "ISKCON / Gaudiya Vaishnava",
+      "status": "VERIFIED",
+      "provenanceNote": "Ekadashi, Mahadvadashi and parana rules follow GCal 11 Build 5 (GBC Calendar Committee), as published at vaisnavacalendar.info. Fasting dates, Ekadashi names and parana windows are checked against that calendar's Mayapur output for 2026 by an automated conformance test, and the rules were derived against its 2021-2027 output. Two reservations a reader should carry: the four nakshatra-based Mahadvadashis (Jaya, Vijaya, Jayanti, Papanasini) rest on a single observed occurrence and their qualifying condition is inferred rather than quoted from a text; and this engine's tithi boundaries run up to about two minutes earlier than GCal's, which is harmless for a printed time but could in principle move a fasting day when a tithi ends within about two minutes of sunrise."
+    },
+    "events": [
+      {
+        "id": "vasanta_pancami",
+        "name": "Vasanta Pancami (Sarasvati Puja)",
+        "group": "MAJOR_FESTIVAL",
+        "date": "2026-01-23",
+        "reason": "Magha Shukla 5 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "tithi": {
+          "index": 4,
+          "name": "Panchami",
+          "numberInPaksha": 5,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Magha",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-01-22T15:58:59-05:00",
+            "jdUt": 2461063.37429
+          },
+          "end": {
+            "local": "2026-01-23T15:16:37-05:00",
+            "jdUt": 2461064.34487
+          }
+        }
+      },
+      {
+        "id": "advaita_acarya_appearance",
+        "name": "Sri Advaita Acarya — Appearance",
+        "group": "APPEARANCE",
+        "date": "2026-01-25",
+        "fastingNote": "Fast till noon",
+        "reason": "Magha Shukla 7 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "fastUntil": {
+          "type": "at",
+          "anchor": "SOLAR_NOON",
+          "anchorDisplayName": "noon",
+          "confidence": "CONFIRMED",
+          "basis": "solar noon: the Sun's upper meridian transit at this longitude. Not 12:00 civil time, which can sit more than an hour away from it at a wide zone's edge",
+          "at": {
+            "local": "2026-01-25T12:08:21-05:00",
+            "jdUt": 2461066.21413
+          }
+        },
+        "tithi": {
+          "index": 6,
+          "name": "Saptami",
+          "numberInPaksha": 7,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Magha",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-01-24T14:10:28-05:00",
+            "jdUt": 2461065.29893
+          },
+          "end": {
+            "local": "2026-01-25T12:40:43-05:00",
+            "jdUt": 2461066.23661
+          }
+        }
+      },
+      {
+        "id": "bhismastami",
+        "name": "Bhismastami",
+        "group": "OPTIONAL_FAST",
+        "date": "2026-01-26",
+        "reason": "Magha Shukla 8 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "tithi": {
+          "index": 7,
+          "name": "Ashtami",
+          "numberInPaksha": 8,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Magha",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-01-25T12:40:43-05:00",
+            "jdUt": 2461066.23661
+          },
+          "end": {
+            "local": "2026-01-26T10:48:24-05:00",
+            "jdUt": 2461067.15861
+          }
+        }
+      },
+      {
+        "id": "varaha_dvadasi",
+        "name": "Varaha Dvadasi: Appearance of Lord Varahadeva",
+        "group": "MAJOR_FESTIVAL",
+        "date": "2026-01-29",
+        "reason": "Magha Shukla 12 (purnimanta), the tithi running at sunrise.",
+        "confidence": "INFERRED",
+        "tithi": {
+          "index": 11,
+          "name": "Dvadashi",
+          "numberInPaksha": 12,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Magha",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-01-29T03:25:38-05:00",
+            "jdUt": 2461069.85113
+          },
+          "end": {
+            "local": "2026-01-30T00:39:42-05:00",
+            "jdUt": 2461070.7359
+          }
+        }
+      },
+      {
+        "id": "nityananda_trayodasi",
+        "name": "Nityananda Trayodasi: Appearance of Sri Nityananda Prabhu",
+        "group": "MAJOR_FESTIVAL",
+        "date": "2026-01-30",
+        "fastingNote": "Fast till noon",
+        "reason": "Magha Shukla 13 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "fastUntil": {
+          "type": "at",
+          "anchor": "SOLAR_NOON",
+          "anchorDisplayName": "noon",
+          "confidence": "CONFIRMED",
+          "basis": "solar noon: the Sun's upper meridian transit at this longitude. Not 12:00 civil time, which can sit more than an hour away from it at a wide zone's edge",
+          "at": {
+            "local": "2026-01-30T12:09:17-05:00",
+            "jdUt": 2461071.21478
+          }
+        },
+        "tithi": {
+          "index": 12,
+          "name": "Trayodashi",
+          "numberInPaksha": 13,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Magha",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-01-30T00:39:42-05:00",
+            "jdUt": 2461070.7359
+          },
+          "end": {
+            "local": "2026-01-30T21:56:10-05:00",
+            "jdUt": 2461071.62234
+          }
+        }
+      },
+      {
+        "id": "krsna_madhura_utsava",
+        "name": "Sri Krsna Madhura Utsava",
+        "group": "MAJOR_FESTIVAL",
+        "date": "2026-02-01",
+        "reason": "Magha Shukla 15 (purnimanta), the tithi running at sunrise.",
+        "confidence": "INFERRED",
+        "tithi": {
+          "index": 14,
+          "name": "Purnima",
+          "numberInPaksha": 15,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Magha",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-01-31T19:23:14-05:00",
+            "jdUt": 2461072.51613
+          },
+          "end": {
+            "local": "2026-02-01T17:09:22-05:00",
+            "jdUt": 2461073.42317
+          }
+        }
+      },
+      {
+        "id": "siva_ratri",
+        "name": "Siva Ratri",
+        "group": "MAJOR_FESTIVAL",
+        "date": "2026-02-15",
+        "reason": "Phalguna Krishna 14 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "tithi": {
+          "index": 28,
+          "name": "Chaturdashi",
+          "numberInPaksha": 14,
+          "paksha": "KRISHNA",
+          "lunarMonthName": "Phalguna",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-02-15T06:35:20-05:00",
+            "jdUt": 2461086.98287
+          },
+          "end": {
+            "local": "2026-02-16T07:04:36-05:00",
+            "jdUt": 2461088.0032
+          }
+        }
+      },
+      {
+        "id": "gaura_purnima",
+        "name": "Gaura Purnima: Appearance of Sri Caitanya Mahaprabhu",
+        "group": "MAJOR_FESTIVAL",
+        "date": "2026-03-03",
+        "fastingNote": "Fast till moonrise",
+        "reason": "Phalguna Shukla 15 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "fastUntil": {
+          "type": "at",
+          "anchor": "MOONRISE",
+          "anchorDisplayName": "moonrise",
+          "confidence": "CONFIRMED",
+          "basis": "moonrise: the Moon's centre on the horizon while rising, including its parallax at the Moon's distance on the day",
+          "at": {
+            "local": "2026-03-03T18:17:23-05:00",
+            "jdUt": 2461103.4704
+          }
+        },
+        "tithi": {
+          "index": 14,
+          "name": "Purnima",
+          "numberInPaksha": 15,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Phalguna",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-03-02T07:26:18-05:00",
+            "jdUt": 2461102.01826
+          },
+          "end": {
+            "local": "2026-03-03T06:37:59-05:00",
+            "jdUt": 2461102.98471
+          }
+        }
+      },
+      {
+        "id": "jagannatha_misra_festival",
+        "name": "Festival of Jagannatha Misra",
+        "group": "MAJOR_FESTIVAL",
+        "date": "2026-03-04",
+        "reason": "1 day(s) after 'gaura_purnima'.",
+        "confidence": "CONFIRMED"
+      },
+      {
+        "id": "ramanujacarya_appearance",
+        "name": "Sri Ramanujacarya — Appearance",
+        "group": "APPEARANCE",
+        "date": "2026-03-23",
+        "reason": "Chaitra Shukla 5 (purnimanta), the tithi running at sunrise.",
+        "confidence": "INFERRED",
+        "tithi": {
+          "index": 4,
+          "name": "Panchami",
+          "numberInPaksha": 5,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Chaitra",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-03-22T11:47:10-04:00",
+            "jdUt": 2461122.15776
+          },
+          "end": {
+            "local": "2026-03-23T09:08:56-04:00",
+            "jdUt": 2461123.04787
+          }
+        }
+      },
+      {
+        "id": "rama_navami",
+        "name": "Rama Navami: Appearance of Lord Sri Ramacandra",
+        "group": "MAJOR_FESTIVAL",
+        "date": "2026-03-26",
+        "fastingNote": "Fast till sunset",
+        "reason": "Chaitra Shukla 9 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "fastUntil": {
+          "type": "at",
+          "anchor": "SUNSET",
+          "anchorDisplayName": "sunset",
+          "confidence": "CONFIRMED",
+          "basis": "sunset: the Sun's upper limb on the horizon (centre at −0°50′) while descending",
+          "at": {
+            "local": "2026-03-26T19:14:31-04:00",
+            "jdUt": 2461126.46842
+          }
+        },
+        "tithi": {
+          "index": 8,
+          "name": "Navami",
+          "numberInPaksha": 9,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Chaitra",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-03-26T02:19:24-04:00",
+            "jdUt": 2461125.76347
+          },
+          "end": {
+            "local": "2026-03-27T00:37:23-04:00",
+            "jdUt": 2461126.69263
+          }
+        }
+      },
+      {
+        "id": "damanakaropana_dvadasi",
+        "name": "Damanakaropana Dvadasi",
+        "group": "MAJOR_FESTIVAL",
+        "date": "2026-03-29",
+        "reason": "Chaitra Shukla 12 (purnimanta), the tithi running at sunrise.",
+        "confidence": "INFERRED",
+        "tithi": {
+          "index": 11,
+          "name": "Dvadashi",
+          "numberInPaksha": 12,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Chaitra",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-03-28T22:16:58-04:00",
+            "jdUt": 2461128.59511
+          },
+          "end": {
+            "local": "2026-03-29T21:40:08-04:00",
+            "jdUt": 2461129.56954
+          }
+        }
+      },
+      {
+        "id": "krsna_vasanta_rasa",
+        "name": "Sri Krsna Vasanta Rasa, Sri Balarama Rasayatra",
+        "group": "MAJOR_FESTIVAL",
+        "date": "2026-04-01",
+        "reason": "Chaitra Shukla 15 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "tithi": {
+          "index": 14,
+          "name": "Purnima",
+          "numberInPaksha": 15,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Chaitra",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-03-31T21:36:42-04:00",
+            "jdUt": 2461131.56715
+          },
+          "end": {
+            "local": "2026-04-01T22:11:55-04:00",
+            "jdUt": 2461132.59161
+          }
+        }
+      },
+      {
+        "id": "aksaya_trtiya",
+        "name": "Aksaya Trtiya (Candana Yatra starts)",
+        "group": "MAJOR_FESTIVAL",
+        "date": "2026-04-19",
+        "reason": "Vaishakha Shukla 3 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "tithi": {
+          "index": 2,
+          "name": "Tritiya",
+          "numberInPaksha": 3,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Vaishakha",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-04-19T01:19:55-04:00",
+            "jdUt": 2461149.72217
+          },
+          "end": {
+            "local": "2026-04-19T21:58:09-04:00",
+            "jdUt": 2461150.58205
+          }
+        }
+      },
+      {
+        "id": "jahnu_saptami",
+        "name": "Jahnu Saptami",
+        "group": "MAJOR_FESTIVAL",
+        "date": "2026-04-23",
+        "reason": "Vaishakha Shukla 7 (purnimanta), the tithi running at sunrise.",
+        "confidence": "INFERRED",
+        "tithi": {
+          "index": 6,
+          "name": "Saptami",
+          "numberInPaksha": 7,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Vaishakha",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-04-22T13:20:07-04:00",
+            "jdUt": 2461153.2223
+          },
+          "end": {
+            "local": "2026-04-23T11:19:43-04:00",
+            "jdUt": 2461154.13869
+          }
+        }
+      },
+      {
+        "id": "sita_devi_appearance",
+        "name": "Srimati Sita Devi (consort of Lord Sri Rama) — Appearance",
+        "group": "APPEARANCE",
+        "date": "2026-04-25",
+        "reason": "Vaishakha Shukla 9 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "tithi": {
+          "index": 8,
+          "name": "Navami",
+          "numberInPaksha": 9,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Vaishakha",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-04-24T09:52:17-04:00",
+            "jdUt": 2461155.07797
+          },
+          "end": {
+            "local": "2026-04-25T08:58:35-04:00",
+            "jdUt": 2461156.04068
+          }
+        }
+      },
+      {
+        "id": "rukmini_dvadasi",
+        "name": "Rukmini Dvadasi",
+        "group": "MAJOR_FESTIVAL",
+        "date": "2026-04-28",
+        "reason": "Vaishakha Shukla 12 (purnimanta), the tithi running at sunrise.",
+        "confidence": "INFERRED",
+        "tithi": {
+          "index": 11,
+          "name": "Dvadashi",
+          "numberInPaksha": 12,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Vaishakha",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-04-27T08:46:26-04:00",
+            "jdUt": 2461158.03224
+          },
+          "end": {
+            "local": "2026-04-28T09:22:19-04:00",
+            "jdUt": 2461159.05716
+          }
+        }
+      },
+      {
+        "id": "nrsimha_caturdasi",
+        "name": "Nrsimha Caturdasi: Appearance of Lord Nrsimhadeva",
+        "group": "MAJOR_FESTIVAL",
+        "date": "2026-04-30",
+        "fastingNote": "Fast till dusk",
+        "reason": "Vaishakha Shukla 14 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "fastUntil": {
+          "type": "at",
+          "anchor": "DUSK",
+          "anchorDisplayName": "dusk",
+          "confidence": "INFERRED",
+          "basis": "dusk: end of civil twilight, the Sun's centre 6° below the horizon after sunset. Read as end of civil twilight rather than as sunset because the source distinguishes 'till dusk' from 'till sunset' and the two must not collapse. No horizon dip is applied: twilight is defined against the geometric horizon, which also keeps this consistent with the project's sea-level convention. Flagged INFERRED for pandit review.",
+          "at": {
+            "local": "2026-04-30T20:20:55-04:00",
+            "jdUt": 2461161.51453
+          }
+        },
+        "tithi": {
+          "index": 13,
+          "name": "Chaturdashi",
+          "numberInPaksha": 14,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Vaishakha",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-04-29T10:22:03-04:00",
+            "jdUt": 2461160.09865
+          },
+          "end": {
+            "local": "2026-04-30T11:43:04-04:00",
+            "jdUt": 2461161.15491
+          }
+        }
+      },
+      {
+        "id": "krsna_phula_dola",
+        "name": "Krsna Phula Dola, Salila Vihara",
+        "group": "MAJOR_FESTIVAL",
+        "date": "2026-05-01",
+        "reason": "Vaishakha Shukla 15 (purnimanta), the tithi running at sunrise.",
+        "confidence": "INFERRED",
+        "tithi": {
+          "index": 14,
+          "name": "Purnima",
+          "numberInPaksha": 15,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Vaishakha",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-04-30T11:43:04-04:00",
+            "jdUt": 2461161.15491
+          },
+          "end": {
+            "local": "2026-05-01T13:23:14-04:00",
+            "jdUt": 2461162.22447
+          }
+        }
+      },
+      {
+        "id": "ganga_puja",
+        "name": "Ganga Puja (Ganga Dussehra)",
+        "group": "MAJOR_FESTIVAL",
+        "date": "2026-06-24",
+        "reason": "Jyeshtha Shukla 10 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "tithi": {
+          "index": 9,
+          "name": "Dashami",
+          "numberInPaksha": 10,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Jyeshtha",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-06-23T07:10:11-04:00",
+            "jdUt": 2461214.9654
+          },
+          "end": {
+            "local": "2026-06-24T08:42:50-04:00",
+            "jdUt": 2461216.02974
+          }
+        }
+      },
+      {
+        "id": "panihati_cida_dahi_utsava",
+        "name": "Panihati Cida Dahi Utsava",
+        "group": "MAJOR_FESTIVAL",
+        "date": "2026-06-27",
+        "reason": "Jyeshtha Shukla 13 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "tithi": {
+          "index": 12,
+          "name": "Trayodashi",
+          "numberInPaksha": 13,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Jyeshtha",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-06-26T12:52:50-04:00",
+            "jdUt": 2461218.20336
+          },
+          "end": {
+            "local": "2026-06-27T15:13:55-04:00",
+            "jdUt": 2461219.30133
+          }
+        }
+      },
+      {
+        "id": "snana_yatra",
+        "name": "Snana Yatra",
+        "group": "MAJOR_FESTIVAL",
+        "date": "2026-06-29",
+        "reason": "Jyeshtha Shukla 15 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "tithi": {
+          "index": 14,
+          "name": "Purnima",
+          "numberInPaksha": 15,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Jyeshtha",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-06-28T17:36:54-04:00",
+            "jdUt": 2461220.40063
+          },
+          "end": {
+            "local": "2026-06-29T19:56:40-04:00",
+            "jdUt": 2461221.49768
+          }
+        }
+      },
+      {
+        "id": "gundica_marjana",
+        "name": "Gundica Marjana",
+        "group": "MAJOR_FESTIVAL",
+        "date": "2026-07-14",
+        "reason": "1 day(s) before 'ratha_yatra'.",
+        "confidence": "CONFIRMED"
+      },
+      {
+        "id": "ratha_yatra",
+        "name": "Ratha Yatra",
+        "group": "MAJOR_FESTIVAL",
+        "date": "2026-07-15",
+        "reason": "Ashadha Shukla 2 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "tithi": {
+          "index": 1,
+          "name": "Dvitiya",
+          "numberInPaksha": 2,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Ashadha",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-07-15T02:21:30-04:00",
+            "jdUt": 2461236.76493
+          },
+          "end": {
+            "local": "2026-07-15T23:23:30-04:00",
+            "jdUt": 2461237.64132
+          }
+        }
+      },
+      {
+        "id": "hera_pancami",
+        "name": "Hera Pancami",
+        "group": "MAJOR_FESTIVAL",
+        "date": "2026-07-19",
+        "reason": "4 day(s) after 'ratha_yatra'.",
+        "confidence": "CONFIRMED"
+      },
+      {
+        "id": "return_ratha_yatra",
+        "name": "Return Ratha Yatra",
+        "group": "MAJOR_FESTIVAL",
+        "date": "2026-07-23",
+        "reason": "8 day(s) after 'ratha_yatra'.",
+        "confidence": "CONFIRMED"
+      },
+      {
+        "id": "caturmasya_first_month_begins",
+        "name": "First month of Caturmasya begins (Purnima system)",
+        "group": "SEASONAL",
+        "date": "2026-07-29",
+        "fastingNote": "Green leafy vegetables are given up for one month",
+        "reason": "Ashadha Shukla 15 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "tithi": {
+          "index": 14,
+          "name": "Purnima",
+          "numberInPaksha": 15,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Ashadha",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-07-28T08:49:30-04:00",
+            "jdUt": 2461250.03437
+          },
+          "end": {
+            "local": "2026-07-29T10:35:48-04:00",
+            "jdUt": 2461251.1082
+          }
+        }
+      },
+      {
+        "id": "guru_purnima",
+        "name": "Guru (Vyasa) Purnima",
+        "group": "MAJOR_FESTIVAL",
+        "date": "2026-07-29",
+        "reason": "Ashadha Shukla 15 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "tithi": {
+          "index": 14,
+          "name": "Purnima",
+          "numberInPaksha": 15,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Ashadha",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-07-28T08:49:30-04:00",
+            "jdUt": 2461250.03437
+          },
+          "end": {
+            "local": "2026-07-29T10:35:48-04:00",
+            "jdUt": 2461251.1082
+          }
+        }
+      },
+      {
+        "id": "sanatana_gosvami_disappearance",
+        "name": "Srila Sanatana Gosvami — Disappearance",
+        "group": "DISAPPEARANCE",
+        "date": "2026-07-29",
+        "reason": "Ashadha Shukla 15 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "tithi": {
+          "index": 14,
+          "name": "Purnima",
+          "numberInPaksha": 15,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Ashadha",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-07-28T08:49:30-04:00",
+            "jdUt": 2461250.03437
+          },
+          "end": {
+            "local": "2026-07-29T10:35:48-04:00",
+            "jdUt": 2461251.1082
+          }
+        }
+      },
+      {
+        "id": "jhulana_yatra_begins",
+        "name": "Radha Govinda Jhulana Yatra begins",
+        "group": "SEASONAL",
+        "date": "2026-08-23",
+        "reason": "Shravana Shukla 11 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "tithi": {
+          "index": 10,
+          "name": "Ekadashi",
+          "numberInPaksha": 11,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Shravana",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-08-22T16:30:51-04:00",
+            "jdUt": 2461275.35476
+          },
+          "end": {
+            "local": "2026-08-23T18:49:14-04:00",
+            "jdUt": 2461276.45086
+          }
+        }
+      },
+      {
+        "id": "rupa_gosvami_disappearance",
+        "name": "Srila Rupa Gosvami — Disappearance",
+        "group": "DISAPPEARANCE",
+        "date": "2026-08-24",
+        "reason": "Shravana Shukla 12 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "tithi": {
+          "index": 11,
+          "name": "Dvadashi",
+          "numberInPaksha": 12,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Shravana",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-08-23T18:49:14-04:00",
+            "jdUt": 2461276.45086
+          },
+          "end": {
+            "local": "2026-08-24T20:51:26-04:00",
+            "jdUt": 2461277.53572
+          }
+        }
+      },
+      {
+        "id": "caturmasya_first_month_last_day",
+        "name": "Last day of the first Caturmasya month (Purnima system)",
+        "group": "SEASONAL",
+        "date": "2026-08-26",
+        "reason": "1 day(s) before 'caturmasya_second_month_begins'.",
+        "confidence": "CONFIRMED"
+      },
+      {
+        "id": "balarama_purnima",
+        "name": "Lord Balarama — Appearance (Balarama Purnima)",
+        "group": "MAJOR_FESTIVAL",
+        "date": "2026-08-27",
+        "fastingNote": "Fast till noon",
+        "reason": "Shravana Shukla 15 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "fastUntil": {
+          "type": "at",
+          "anchor": "SOLAR_NOON",
+          "anchorDisplayName": "noon",
+          "confidence": "CONFIRMED",
+          "basis": "solar noon: the Sun's upper meridian transit at this longitude. Not 12:00 civil time, which can sit more than an hour away from it at a wide zone's edge",
+          "at": {
+            "local": "2026-08-27T12:57:29-04:00",
+            "jdUt": 2461280.20658
+          }
+        },
+        "tithi": {
+          "index": 14,
+          "name": "Purnima",
+          "numberInPaksha": 15,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Shravana",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-08-26T23:39:32-04:00",
+            "jdUt": 2461279.65245
+          },
+          "end": {
+            "local": "2026-08-28T00:18:42-04:00",
+            "jdUt": 2461280.67965
+          }
+        }
+      },
+      {
+        "id": "caturmasya_second_month_begins",
+        "name": "Second month of Caturmasya begins (Purnima system)",
+        "group": "SEASONAL",
+        "date": "2026-08-27",
+        "fastingNote": "Yogurt is given up for one month",
+        "reason": "Shravana Shukla 15 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "tithi": {
+          "index": 14,
+          "name": "Purnima",
+          "numberInPaksha": 15,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Shravana",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-08-26T23:39:32-04:00",
+            "jdUt": 2461279.65245
+          },
+          "end": {
+            "local": "2026-08-28T00:18:42-04:00",
+            "jdUt": 2461280.67965
+          }
+        }
+      },
+      {
+        "id": "jhulana_yatra_ends",
+        "name": "Jhulana Yatra ends",
+        "group": "SEASONAL",
+        "date": "2026-08-27",
+        "reason": "Shravana Shukla 15 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "tithi": {
+          "index": 14,
+          "name": "Purnima",
+          "numberInPaksha": 15,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Shravana",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-08-26T23:39:32-04:00",
+            "jdUt": 2461279.65245
+          },
+          "end": {
+            "local": "2026-08-28T00:18:42-04:00",
+            "jdUt": 2461280.67965
+          }
+        }
+      },
+      {
+        "id": "janmastami",
+        "name": "Sri Krsna Janmastami: Appearance of Lord Sri Krsna",
+        "group": "MAJOR_FESTIVAL",
+        "date": "2026-09-04",
+        "fastingNote": "Fast till midnight",
+        "reason": "Bhadrapada Krishna 8 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "fastUntil": {
+          "type": "window",
+          "anchor": "NISITA_KALA",
+          "anchorDisplayName": "midnight (Nisita-kala)",
+          "confidence": "INFERRED",
+          "basis": "Nisita-kala: the 8th of the 15 equal muhurtas of the night, the night taken from sunset to the following sunrise — hence the muhurta containing solar midnight. Chosen over civil 00:00 because civil midnight is an artefact of the zone meridian and of DST — at a wide zone's western edge it sits over an hour from solar midnight, which would put the same observance at a different point of the night for two devotees in one country. Flagged INFERRED for pandit review.",
+          "start": {
+            "local": "2026-09-05T00:32:58-04:00",
+            "jdUt": 2461288.68956
+          },
+          "end": {
+            "local": "2026-09-05T01:17:13-04:00",
+            "jdUt": 2461288.72029
+          },
+          "durationMinutes": 44.251
+        },
+        "tithi": {
+          "index": 22,
+          "name": "Ashtami",
+          "numberInPaksha": 8,
+          "paksha": "KRISHNA",
+          "lunarMonthName": "Bhadrapada",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-09-03T16:55:59-04:00",
+            "jdUt": 2461287.37221
+          },
+          "end": {
+            "local": "2026-09-04T14:44:07-04:00",
+            "jdUt": 2461288.28064
+          }
+        }
+      },
+      {
+        "id": "nandotsava",
+        "name": "Nandotsava",
+        "group": "MAJOR_FESTIVAL",
+        "date": "2026-09-05",
+        "fastingNote": "Fast till noon",
+        "reason": "1 day(s) after 'janmastami'.",
+        "confidence": "CONFIRMED",
+        "fastUntil": {
+          "type": "at",
+          "anchor": "SOLAR_NOON",
+          "anchorDisplayName": "noon",
+          "confidence": "CONFIRMED",
+          "basis": "solar noon: the Sun's upper meridian transit at this longitude. Not 12:00 civil time, which can sit more than an hour away from it at a wide zone's edge",
+          "at": {
+            "local": "2026-09-05T12:54:37-04:00",
+            "jdUt": 2461289.2046
+          }
+        }
+      },
+      {
+        "id": "srila_prabhupada_appearance",
+        "name": "Srila Prabhupada — Appearance",
+        "group": "APPEARANCE",
+        "date": "2026-09-05",
+        "fastingNote": "Fast till noon",
+        "reason": "1 day(s) after 'janmastami'.",
+        "confidence": "CONFIRMED",
+        "fastUntil": {
+          "type": "at",
+          "anchor": "SOLAR_NOON",
+          "anchorDisplayName": "noon",
+          "confidence": "CONFIRMED",
+          "basis": "solar noon: the Sun's upper meridian transit at this longitude. Not 12:00 civil time, which can sit more than an hour away from it at a wide zone's edge",
+          "at": {
+            "local": "2026-09-05T12:54:37-04:00",
+            "jdUt": 2461289.2046
+          }
+        }
+      },
+      {
+        "id": "radhastami",
+        "name": "Radhastami: Appearance of Srimati Radharani",
+        "group": "MAJOR_FESTIVAL",
+        "date": "2026-09-18",
+        "fastingNote": "Fast till noon",
+        "reason": "Bhadrapada Shukla 8 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "fastUntil": {
+          "type": "at",
+          "anchor": "SOLAR_NOON",
+          "anchorDisplayName": "noon",
+          "confidence": "CONFIRMED",
+          "basis": "solar noon: the Sun's upper meridian transit at this longitude. Not 12:00 civil time, which can sit more than an hour away from it at a wide zone's edge",
+          "at": {
+            "local": "2026-09-18T12:50:04-04:00",
+            "jdUt": 2461302.20144
+          }
+        },
+        "tithi": {
+          "index": 7,
+          "name": "Ashtami",
+          "numberInPaksha": 8,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Bhadrapada",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-09-18T03:31:32-04:00",
+            "jdUt": 2461301.81357
+          },
+          "end": {
+            "local": "2026-09-19T05:57:26-04:00",
+            "jdUt": 2461302.91488
+          }
+        }
+      },
+      {
+        "id": "vamana_dvadasi",
+        "name": "Sri Vamana Dvadasi: Appearance of Lord Vamanadeva",
+        "group": "MAJOR_FESTIVAL",
+        "date": "2026-09-23",
+        "reason": "Bhadrapada Shukla 12 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "tithi": {
+          "index": 11,
+          "name": "Dvadashi",
+          "numberInPaksha": 12,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Bhadrapada",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-09-22T12:13:51-04:00",
+            "jdUt": 2461306.17628
+          },
+          "end": {
+            "local": "2026-09-23T13:21:05-04:00",
+            "jdUt": 2461307.22298
+          }
+        }
+      },
+      {
+        "id": "ananta_caturdasi_vrata",
+        "name": "Ananta Caturdasi Vrata",
+        "group": "OPTIONAL_FAST",
+        "date": "2026-09-25",
+        "reason": "Bhadrapada Shukla 14 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "tithi": {
+          "index": 13,
+          "name": "Chaturdashi",
+          "numberInPaksha": 14,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Bhadrapada",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-09-24T13:49:01-04:00",
+            "jdUt": 2461308.24237
+          },
+          "end": {
+            "local": "2026-09-25T13:37:20-04:00",
+            "jdUt": 2461309.23426
+          }
+        }
+      },
+      {
+        "id": "caturmasya_second_month_last_day",
+        "name": "Last day of the second Caturmasya month (Purnima system)",
+        "group": "SEASONAL",
+        "date": "2026-09-25",
+        "reason": "1 day(s) before 'caturmasya_third_month_begins'.",
+        "confidence": "CONFIRMED"
+      },
+      {
+        "id": "haridasa_thakura_disappearance",
+        "name": "Srila Haridasa Thakura — Disappearance",
+        "group": "DISAPPEARANCE",
+        "date": "2026-09-25",
+        "reason": "Bhadrapada Shukla 14 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "tithi": {
+          "index": 13,
+          "name": "Chaturdashi",
+          "numberInPaksha": 14,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Bhadrapada",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-09-24T13:49:01-04:00",
+            "jdUt": 2461308.24237
+          },
+          "end": {
+            "local": "2026-09-25T13:37:20-04:00",
+            "jdUt": 2461309.23426
+          }
+        }
+      },
+      {
+        "id": "caturmasya_third_month_begins",
+        "name": "Third month of Caturmasya begins (Purnima system)",
+        "group": "SEASONAL",
+        "date": "2026-09-26",
+        "fastingNote": "Milk is given up for one month",
+        "reason": "Bhadrapada Shukla 15 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "tithi": {
+          "index": 14,
+          "name": "Purnima",
+          "numberInPaksha": 15,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Bhadrapada",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-09-25T13:37:20-04:00",
+            "jdUt": 2461309.23426
+          },
+          "end": {
+            "local": "2026-09-26T12:48:58-04:00",
+            "jdUt": 2461310.20067
+          }
+        }
+      },
+      {
+        "id": "visvarupa_mahotsava",
+        "name": "Sri Visvarupa Mahotsava (Bhadra Purnima)",
+        "group": "MAJOR_FESTIVAL",
+        "date": "2026-09-26",
+        "reason": "Bhadrapada Shukla 15 (purnimanta), the tithi running at sunrise.",
+        "confidence": "INFERRED",
+        "tithi": {
+          "index": 14,
+          "name": "Purnima",
+          "numberInPaksha": 15,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Bhadrapada",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-09-25T13:37:20-04:00",
+            "jdUt": 2461309.23426
+          },
+          "end": {
+            "local": "2026-09-26T12:48:58-04:00",
+            "jdUt": 2461310.20067
+          }
+        }
+      },
+      {
+        "id": "durga_puja",
+        "name": "Durga Puja",
+        "group": "MAJOR_FESTIVAL",
+        "date": "2026-10-17",
+        "reason": "Ashvina Shukla 7 (purnimanta), the tithi running at sunrise.",
+        "confidence": "INFERRED",
+        "tithi": {
+          "index": 6,
+          "name": "Saptami",
+          "numberInPaksha": 7,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Ashvina",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-10-16T20:24:48-04:00",
+            "jdUt": 2461330.51722
+          },
+          "end": {
+            "local": "2026-10-17T22:58:36-04:00",
+            "jdUt": 2461331.62403
+          }
+        }
+      },
+      {
+        "id": "madhvacarya_appearance",
+        "name": "Sri Madhvacarya — Appearance",
+        "group": "APPEARANCE",
+        "date": "2026-10-20",
+        "reason": "Ashvina Shukla 10 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "tithi": {
+          "index": 9,
+          "name": "Dashami",
+          "numberInPaksha": 10,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Ashvina",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-10-20T03:20:51-04:00",
+            "jdUt": 2461333.80615
+          },
+          "end": {
+            "local": "2026-10-21T04:42:18-04:00",
+            "jdUt": 2461334.86271
+          }
+        }
+      },
+      {
+        "id": "ramacandra_vijayotsava",
+        "name": "Ramacandra Vijayotsava (Vijaya Dasami)",
+        "group": "MAJOR_FESTIVAL",
+        "date": "2026-10-20",
+        "reason": "Ashvina Shukla 10 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "tithi": {
+          "index": 9,
+          "name": "Dashami",
+          "numberInPaksha": 10,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Ashvina",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-10-20T03:20:51-04:00",
+            "jdUt": 2461333.80615
+          },
+          "end": {
+            "local": "2026-10-21T04:42:18-04:00",
+            "jdUt": 2461334.86271
+          }
+        }
+      },
+      {
+        "id": "caturmasya_third_month_last_day",
+        "name": "Last day of the third Caturmasya month (Purnima system)",
+        "group": "SEASONAL",
+        "date": "2026-10-24",
+        "reason": "1 day(s) before 'caturmasya_fourth_month_begins'.",
+        "confidence": "CONFIRMED"
+      },
+      {
+        "id": "caturmasya_fourth_month_begins",
+        "name": "Fourth month of Caturmasya begins (Purnima system)",
+        "group": "SEASONAL",
+        "date": "2026-10-25",
+        "fastingNote": "Urad dal is given up for one month",
+        "reason": "Ashvina Shukla 15 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "tithi": {
+          "index": 14,
+          "name": "Purnima",
+          "numberInPaksha": 15,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Ashvina",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-10-25T02:26:31-04:00",
+            "jdUt": 2461338.76841
+          },
+          "end": {
+            "local": "2026-10-26T00:11:43-04:00",
+            "jdUt": 2461339.6748
+          }
+        }
+      },
+      {
+        "id": "kartika_vrata_begins",
+        "name": "Kartika (Damodara) vrata begins",
+        "group": "SEASONAL",
+        "date": "2026-10-25",
+        "reason": "Ashvina Shukla 15 (purnimanta), the tithi running at sunrise.",
+        "confidence": "INFERRED",
+        "tithi": {
+          "index": 14,
+          "name": "Purnima",
+          "numberInPaksha": 15,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Ashvina",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-10-25T02:26:31-04:00",
+            "jdUt": 2461338.76841
+          },
+          "end": {
+            "local": "2026-10-26T00:11:43-04:00",
+            "jdUt": 2461339.6748
+          }
+        }
+      },
+      {
+        "id": "saradiya_rasa_yatra",
+        "name": "Sri Krsna Saradiya Rasayatra (Laksmi Puja)",
+        "group": "MAJOR_FESTIVAL",
+        "date": "2026-10-25",
+        "reason": "Ashvina Shukla 15 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "tithi": {
+          "index": 14,
+          "name": "Purnima",
+          "numberInPaksha": 15,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Ashvina",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-10-25T02:26:31-04:00",
+            "jdUt": 2461338.76841
+          },
+          "end": {
+            "local": "2026-10-26T00:11:43-04:00",
+            "jdUt": 2461339.6748
+          }
+        }
+      },
+      {
+        "id": "bahulastami",
+        "name": "Bahulastami",
+        "group": "MAJOR_FESTIVAL",
+        "date": "2026-11-01",
+        "reason": "Kartika Krishna 8 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "tithi": {
+          "index": 22,
+          "name": "Ashtami",
+          "numberInPaksha": 8,
+          "paksha": "KRISHNA",
+          "lunarMonthName": "Kartika",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-11-01T04:22:11-05:00",
+            "jdUt": 2461345.8904
+          },
+          "end": {
+            "local": "2026-11-02T02:41:02-05:00",
+            "jdUt": 2461346.82016
+          }
+        }
+      },
+      {
+        "id": "dipavali",
+        "name": "Dipa dana, Dipavali",
+        "group": "MAJOR_FESTIVAL",
+        "date": "2026-11-08",
+        "reason": "Kartika Krishna 15 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "tithi": {
+          "index": 29,
+          "name": "Amavasya",
+          "numberInPaksha": 15,
+          "paksha": "KRISHNA",
+          "lunarMonthName": "Kartika",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-11-08T00:58:26-05:00",
+            "jdUt": 2461352.74891
+          },
+          "end": {
+            "local": "2026-11-09T02:02:12-05:00",
+            "jdUt": 2461353.7932
+          }
+        }
+      },
+      {
+        "id": "govardhana_puja",
+        "name": "Govardhana Puja, Go Puja, Bali Daityaraja Puja",
+        "group": "MAJOR_FESTIVAL",
+        "date": "2026-11-09",
+        "reason": "Kartika Shukla 1 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "tithi": {
+          "index": 0,
+          "name": "Pratipada",
+          "numberInPaksha": 1,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Kartika",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-11-09T02:02:12-05:00",
+            "jdUt": 2461353.7932
+          },
+          "end": {
+            "local": "2026-11-10T03:30:42-05:00",
+            "jdUt": 2461354.85465
+          }
+        }
+      },
+      {
+        "id": "srila_prabhupada_disappearance",
+        "name": "Srila Prabhupada — Disappearance",
+        "group": "DISAPPEARANCE",
+        "date": "2026-11-13",
+        "fastingNote": "Fast till noon",
+        "reason": "Kartika Shukla 4 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "fastUntil": {
+          "type": "at",
+          "anchor": "SOLAR_NOON",
+          "anchorDisplayName": "noon",
+          "confidence": "CONFIRMED",
+          "basis": "solar noon: the Sun's upper meridian transit at this longitude. Not 12:00 civil time, which can sit more than an hour away from it at a wide zone's edge",
+          "at": {
+            "local": "2026-11-13T11:40:19-05:00",
+            "jdUt": 2461358.19466
+          }
+        },
+        "tithi": {
+          "index": 3,
+          "name": "Chaturthi",
+          "numberInPaksha": 4,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Kartika",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-11-12T07:39:47-05:00",
+            "jdUt": 2461357.02763
+          },
+          "end": {
+            "local": "2026-11-13T10:12:58-05:00",
+            "jdUt": 2461358.13401
+          }
+        }
+      },
+      {
+        "id": "gopastami",
+        "name": "Gopastami, Gosthastami",
+        "group": "MAJOR_FESTIVAL",
+        "date": "2026-11-17",
+        "reason": "Kartika Shukla 8 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "tithi": {
+          "index": 7,
+          "name": "Ashtami",
+          "numberInPaksha": 8,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Kartika",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-11-16T17:50:02-05:00",
+            "jdUt": 2461361.45141
+          },
+          "end": {
+            "local": "2026-11-17T19:35:32-05:00",
+            "jdUt": 2461362.52468
+          }
+        }
+      },
+      {
+        "id": "jagaddhatri_puja",
+        "name": "Jagaddhatri Puja",
+        "group": "MAJOR_FESTIVAL",
+        "date": "2026-11-18",
+        "reason": "Kartika Shukla 9 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "tithi": {
+          "index": 8,
+          "name": "Navami",
+          "numberInPaksha": 9,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Kartika",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-11-17T19:35:32-05:00",
+            "jdUt": 2461362.52468
+          },
+          "end": {
+            "local": "2026-11-18T20:36:36-05:00",
+            "jdUt": 2461363.56708
+          }
+        }
+      },
+      {
+        "id": "bhisma_pancaka_begins",
+        "name": "First day of Bhisma Pancaka",
+        "group": "SEASONAL",
+        "date": "2026-11-20",
+        "reason": "Kartika Shukla 11 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "tithi": {
+          "index": 10,
+          "name": "Ekadashi",
+          "numberInPaksha": 11,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Kartika",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-11-19T20:46:05-05:00",
+            "jdUt": 2461364.57367
+          },
+          "end": {
+            "local": "2026-11-20T20:01:57-05:00",
+            "jdUt": 2461365.54302
+          }
+        }
+      },
+      {
+        "id": "caturmasya_fourth_month_last_day",
+        "name": "Last day of the fourth Caturmasya month (Purnima system)",
+        "group": "SEASONAL",
+        "date": "2026-11-23",
+        "reason": "1 day(s) before 'kartika_purnima'.",
+        "confidence": "CONFIRMED"
+      },
+      {
+        "id": "bhisma_pancaka_ends",
+        "name": "Last day of Bhisma Pancaka",
+        "group": "SEASONAL",
+        "date": "2026-11-24",
+        "reason": "Kartika Shukla 15 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "tithi": {
+          "index": 14,
+          "name": "Purnima",
+          "numberInPaksha": 15,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Kartika",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-11-23T13:13:01-05:00",
+            "jdUt": 2461368.25904
+          },
+          "end": {
+            "local": "2026-11-24T09:53:44-05:00",
+            "jdUt": 2461369.12065
+          }
+        }
+      },
+      {
+        "id": "kartika_purnima",
+        "name": "Sri Krsna Rasayatra, Tulasi-Saligrama Vivaha",
+        "group": "MAJOR_FESTIVAL",
+        "date": "2026-11-24",
+        "reason": "Kartika Shukla 15 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "tithi": {
+          "index": 14,
+          "name": "Purnima",
+          "numberInPaksha": 15,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Kartika",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-11-23T13:13:01-05:00",
+            "jdUt": 2461368.25904
+          },
+          "end": {
+            "local": "2026-11-24T09:53:44-05:00",
+            "jdUt": 2461369.12065
+          }
+        }
+      },
+      {
+        "id": "kartika_vrata_ends",
+        "name": "Kartika (Damodara) vrata ends",
+        "group": "SEASONAL",
+        "date": "2026-11-24",
+        "reason": "Kartika Shukla 15 (purnimanta), the tithi running at sunrise.",
+        "confidence": "INFERRED",
+        "tithi": {
+          "index": 14,
+          "name": "Purnima",
+          "numberInPaksha": 15,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Kartika",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-11-23T13:13:01-05:00",
+            "jdUt": 2461368.25904
+          },
+          "end": {
+            "local": "2026-11-24T09:53:44-05:00",
+            "jdUt": 2461369.12065
+          }
+        }
+      },
+      {
+        "id": "nimbarkacarya_appearance",
+        "name": "Sri Nimbarkacarya — Appearance",
+        "group": "APPEARANCE",
+        "date": "2026-11-24",
+        "reason": "Kartika Shukla 15 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "tithi": {
+          "index": 14,
+          "name": "Purnima",
+          "numberInPaksha": 15,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Kartika",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-11-23T13:13:01-05:00",
+            "jdUt": 2461368.25904
+          },
+          "end": {
+            "local": "2026-11-24T09:53:44-05:00",
+            "jdUt": 2461369.12065
+          }
+        }
+      },
+      {
+        "id": "odana_sasthi",
+        "name": "Odana Sasthi",
+        "group": "MAJOR_FESTIVAL",
+        "date": "2026-12-15",
+        "reason": "Margashirsha Shukla 6 (purnimanta), the tithi running at sunrise.",
+        "confidence": "INFERRED",
+        "tithi": {
+          "index": 5,
+          "name": "Shashthi",
+          "numberInPaksha": 6,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Margashirsha",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-12-14T08:46:28-05:00",
+            "jdUt": 2461389.07393
+          },
+          "end": {
+            "local": "2026-12-15T10:49:49-05:00",
+            "jdUt": 2461390.15959
+          }
+        }
+      },
+      {
+        "id": "gita_jayanti",
+        "name": "Advent of Srimad Bhagavad-gita",
+        "group": "MAJOR_FESTIVAL",
+        "date": "2026-12-20",
+        "reason": "Margashirsha Shukla 11 (purnimanta), the tithi running at sunrise.",
+        "confidence": "CONFIRMED",
+        "tithi": {
+          "index": 10,
+          "name": "Ekadashi",
+          "numberInPaksha": 11,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Margashirsha",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-12-19T11:39:54-05:00",
+            "jdUt": 2461394.19438
+          },
+          "end": {
+            "local": "2026-12-20T09:45:05-05:00",
+            "jdUt": 2461395.11464
+          }
+        }
+      },
+      {
+        "id": "katyayani_vrata_ends",
+        "name": "Katyayani vrata ends",
+        "group": "SEASONAL",
+        "date": "2026-12-23",
+        "reason": "Margashirsha Shukla 15 (purnimanta), the tithi running at sunrise.",
+        "confidence": "INFERRED",
+        "tithi": {
+          "index": 14,
+          "name": "Purnima",
+          "numberInPaksha": 15,
+          "paksha": "SHUKLA",
+          "lunarMonthName": "Margashirsha",
+          "isAdhikaMonth": false,
+          "start": {
+            "local": "2026-12-23T00:17:42-05:00",
+            "jdUt": 2461397.72062
+          },
+          "end": {
+            "local": "2026-12-23T20:28:24-05:00",
+            "jdUt": 2461398.56139
+          }
+        }
+      }
+    ],
+    "unresolved": {
+      "katyayani_vrata_begins": {
+        "type": "tithiSkipped",
+        "why": "Margashirsha Krishna 1 (purnimanta), the tithi running at sunrise was skipped: the tithi ran from 2025-11-05T08:19:26.042-05:00[America/New_York] to 2025-11-06T04:25:21.559-05:00[America/New_York] without touching a sunrise; Margashirsha Krishna 1 (purnimanta), the tithi running at sunrise was skipped: the tithi ran from 2026-11-24T09:53:44.308-05:00[America/New_York] to 2026-11-25T06:20:57.975-05:00[America/New_York] without touching a sunrise"
+      },
+      "krsna_pusya_abhiseka": {
+        "type": "tithiSkipped",
+        "why": "Pausha Shukla 15 (purnimanta), the tithi running at sunrise was skipped: the tithi ran from 2026-01-02T08:24:00.144-05:00[America/New_York] to 2026-01-03T05:02:59.793-05:00[America/New_York] without touching a sunrise"
+      }
+    }
+  }
+}

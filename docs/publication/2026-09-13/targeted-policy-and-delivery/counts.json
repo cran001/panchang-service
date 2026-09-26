@@ -1,0 +1,77 @@
+{
+  "xmlSource": "docs\\publication\\2026-09-13\\targeted-policy-and-delivery\\xml",
+  "modules": {
+    "api": {
+      "tests": 49,
+      "passed": 49,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "calc": {
+      "tests": 2,
+      "passed": 2,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "core": {
+      "tests": 4,
+      "passed": 4,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "publication": {
+      "tests": 15,
+      "passed": 14,
+      "failed": 1,
+      "errors": 0,
+      "skipped": 0
+    },
+    "publish": {
+      "tests": 40,
+      "passed": 38,
+      "failed": 2,
+      "errors": 0,
+      "skipped": 0
+    },
+    "sampradaya": {
+      "tests": 6,
+      "passed": 6,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "total": {
+    "tests": 116,
+    "passed": 113,
+    "failed": 3,
+    "errors": 0,
+    "skipped": 0
+  },
+  "failures": [
+    {
+      "module": "publication",
+      "suite": "org.panchang.publication.PublicationPolicyTest",
+      "name": "different place coordinates elevation timezone tradition year result and every version miss approval()",
+      "kind": "failure",
+      "message": "java.lang.IllegalArgumentException: Failed requirement."
+    },
+    {
+      "module": "publish",
+      "suite": "org.panchang.publish.FeedPublisherTest",
+      "name": "the manifest warns that no UTC zone was published()",
+      "kind": "failure",
+      "message": "org.opentest4j.AssertionFailedError: no warning about the missing UTC fallback: [] ==> expected: <true> but was: <false>"
+    },
+    {
+      "module": "publish",
+      "suite": "org.panchang.publish.RegionalFeedPublishTest",
+      "name": "the legacy index files are unchanged in shape()",
+      "kind": "failure",
+      "message": "org.opentest4j.AssertionFailedError: the UTC fallback directory is always published: [P0530] ==> expected: <true> but was: <false>"
+    }
+  ]
+}

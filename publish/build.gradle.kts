@@ -24,6 +24,8 @@ plugins {
 }
 
 dependencies {
+    implementation(project(":publication"))
+    testImplementation(testFixtures(project(":publication")))
     implementation(project(":sampradaya"))
     implementation(project(":calc"))
     implementation(project(":wire"))

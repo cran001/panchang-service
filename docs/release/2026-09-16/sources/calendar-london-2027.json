@@ -1,0 +1,29 @@
+{
+  "id": "calendar-london-2027",
+  "url": "https://www.vaisnavacalendar.info/calendars/2027/London%20%5BUnited%20Kingdom%5D.txt",
+  "kind": "calendar",
+  "retrievedAtUtc": "2026-09-15T19:53:50.133139+00:00",
+  "cityId": "london",
+  "year": 2027,
+  "lineage": "vaisnavacalendar.info/GCal-text",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": 200,
+  "finalUrl": "https://www.vaisnavacalendar.info/calendars/2027/London%20%5BUnited%20Kingdom%5D.txt",
+  "responseHeaders": {
+    "Date": "Tue, 15 Sep 2026 19:53:50 GMT",
+    "Server": "Apache/2",
+    "Upgrade": "h2,h2c",
+    "Connection": "Upgrade, close",
+    "Last-Modified": "Fri, 27 Mar 2026 19:48:48 GMT",
+    "ETag": "\"a38d-64e06ca2d319f\"",
+    "Accept-Ranges": "bytes",
+    "Content-Length": "41869",
+    "Vary": "Accept-Encoding,User-Agent",
+    "Content-Type": "text/plain"
+  },
+  "file": "docs/release/2026-09-16/sources/calendar-london-2027.raw",
+  "sha256": "1a725685690673dafee26763978290c64c9f07d08e0f854b4079e9c1afc39d76",
+  "bytes": 41869
+}

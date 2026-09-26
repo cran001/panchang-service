@@ -1,0 +1,217 @@
+{
+  "service": "panchang-api",
+  "schemaVersion": 2,
+  "publication": {
+    "contract": "publication-v2",
+    "calculation": "CALCULATED",
+    "validation": "SEPARATE_EVIDENCE_RECORDS_NOT_APPROVAL",
+    "humanApprovalRequired": true,
+    "qualifiedReviewQuestions": [
+      {
+        "id": "RARE-NAKSHATRA-QUALIFIERS",
+        "traditions": [
+          "iskcon"
+        ],
+        "fields": [
+          "OBSERVANCES"
+        ],
+        "description": "Jaya, Jayanti and Papanasini lack positive coverage; next-sunrise survival qualifiers remain inferred.",
+        "evidence": [
+          {
+            "link": "docs/audits/2026-09-12/AUDIT.md",
+            "sha256": "a40444c43b222725030d614a24aff0a6b34546f92bd941531aaa9d51be4d83e2",
+            "outcome": "UNRESOLVED_REVIEW_QUESTIONS"
+          }
+        ]
+      },
+      {
+        "id": "UNMILANI-PURITY-NAMING",
+        "traditions": [
+          "iskcon"
+        ],
+        "fields": [
+          "OBSERVANCES"
+        ],
+        "description": "Unmilani purity and naming qualifiers require qualified tradition review.",
+        "evidence": [
+          {
+            "link": "docs/audits/2026-09-12/AUDIT.md",
+            "sha256": "a40444c43b222725030d614a24aff0a6b34546f92bd941531aaa9d51be4d83e2",
+            "outcome": "UNRESOLVED_REVIEW_QUESTIONS"
+          }
+        ]
+      },
+      {
+        "id": "FAST-ENDING-ANCHORS",
+        "traditions": [
+          "iskcon"
+        ],
+        "fields": [
+          "EVENTS"
+        ],
+        "description": "Dusk versus civil twilight, midnight versus Nisita and interval-edge choice need an approved policy.",
+        "evidence": [
+          {
+            "link": "docs/audits/2026-09-12/AUDIT.md",
+            "sha256": "a40444c43b222725030d614a24aff0a6b34546f92bd941531aaa9d51be4d83e2",
+            "outcome": "UNRESOLVED_REVIEW_QUESTIONS"
+          }
+        ]
+      },
+      {
+        "id": "CATALOG-INTERPRETATIONS",
+        "traditions": [
+          "iskcon"
+        ],
+        "fields": [
+          "EVENTS"
+        ],
+        "description": "Ramanuja tithi versus regional nakshatra reckoning and Damodara closing labels remain human review questions.",
+        "evidence": [
+          {
+            "link": "docs/audits/2026-09-12/AUDIT.md",
+            "sha256": "a40444c43b222725030d614a24aff0a6b34546f92bd941531aaa9d51be4d83e2",
+            "outcome": "UNRESOLVED_REVIEW_QUESTIONS"
+          }
+        ]
+      },
+      {
+        "id": "HIGH-LATITUDE-OBSERVANCE",
+        "traditions": [
+          "iskcon"
+        ],
+        "fields": [
+          "EVENTS",
+          "OBSERVANCES"
+        ],
+        "description": "Assess whether this exact release scope uses high-latitude conditions lacking an authoritative observance oracle; record not-applicable reasoning when appropriate.",
+        "evidence": [
+          {
+            "link": "docs/audits/2026-09-12/AUDIT.md",
+            "sha256": "a40444c43b222725030d614a24aff0a6b34546f92bd941531aaa9d51be4d83e2",
+            "outcome": "UNRESOLVED_REVIEW_QUESTIONS"
+          }
+        ]
+      },
+      {
+        "id": "REFERENCE-COVERAGE",
+        "traditions": [
+          "iskcon"
+        ],
+        "fields": [
+          "EVENTS",
+          "OBSERVANCES"
+        ],
+        "description": "Review actual reference year/location coverage, missing 2028 calendars, uncertainty and exclusions; passing tests do not fill gaps.",
+        "evidence": [
+          {
+            "link": "docs/audits/2026-09-12/AUDIT.md",
+            "sha256": "a40444c43b222725030d614a24aff0a6b34546f92bd941531aaa9d51be4d83e2",
+            "outcome": "UNRESOLVED_REVIEW_QUESTIONS"
+          }
+        ]
+      }
+    ],
+    "legacyPublication": "REFUSED_CONTRACT_CANNOT_EXPRESS_WITHHOLDING"
+  },
+  "request": {
+    "sampradaya": "iskcon",
+    "year": 2026,
+    "scope": "YEAR"
+  },
+  "location": {
+    "coordinateSource": "CALLER_COORDINATES",
+    "query": "lat=23.416666666666668&lon=88.38333333333334&tz=Asia/Kolkata",
+    "coordinatesUsed": {
+      "latitude": 23.416666666666668,
+      "longitude": 88.38333333333334,
+      "timeZone": "Asia/Kolkata",
+      "elevationMeters": 0.0
+    },
+    "nearestPlaceLabel": {
+      "place": {
+        "geonameId": 1261669,
+        "name": "Navadw\u012bp",
+        "asciiName": "Navadwip",
+        "kind": "CITY",
+        "country": "IN",
+        "admin1": "West Bengal",
+        "population": 111123,
+        "latitude": 23.4067,
+        "longitude": 88.36861,
+        "timeZone": "Asia/Kolkata",
+        "attribution": "Place data \u00a9 GeoNames (https://www.geonames.org/), used under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)."
+      },
+      "distanceKm": 1.87,
+      "note": "A label for the coordinates supplied. Nothing was computed at this record's point."
+    },
+    "notes": [
+      "Computed at the coordinates you supplied, not at any place record. The place name below, if any, is a label only."
+    ]
+  },
+  "ekadashiYear": {
+    "schemaVersion": 2,
+    "year": 2026,
+    "site": {
+      "latitude": 23.416666666666668,
+      "longitude": 88.38333333333334,
+      "timeZone": "Asia/Kolkata",
+      "elevationMeters": 0.0
+    },
+    "sampradaya": {
+      "id": "iskcon",
+      "displayName": "ISKCON / Gaudiya Vaishnava"
+    },
+    "publication": {
+      "state": "MISSING_EVIDENCE",
+      "guidance": "WITHHELD",
+      "field": "OBSERVANCES",
+      "coverage": {
+        "from": "2026-01-01",
+        "through": "2026-12-31"
+      },
+      "bundleFingerprint": "634d90b4acb7a2a46194f84f1d563037109f03f2628548ee169bb9ec6340d322",
+      "approvalRecordId": null,
+      "approverKeyId": null,
+      "approvedAt": null,
+      "issues": [],
+      "explanation": "No approved reference-policy evidence is configured"
+    },
+    "diagnosticClassificationsAreNotApproval": true,
+    "observances": null,
+    "absenceMeaning": "GUIDANCE_WITHHELD_NOT_NO_EVENT"
+  },
+  "yearResolution": {
+    "schemaVersion": 2,
+    "year": 2026,
+    "site": {
+      "latitude": 23.416666666666668,
+      "longitude": 88.38333333333334,
+      "timeZone": "Asia/Kolkata",
+      "elevationMeters": 0.0
+    },
+    "sampradaya": {
+      "id": "iskcon",
+      "displayName": "ISKCON / Gaudiya Vaishnava"
+    },
+    "publication": {
+      "state": "MISSING_EVIDENCE",
+      "guidance": "WITHHELD",
+      "field": "EVENTS",
+      "coverage": {
+        "from": "2026-01-01",
+        "through": "2026-12-31"
+      },
+      "bundleFingerprint": "634d90b4acb7a2a46194f84f1d563037109f03f2628548ee169bb9ec6340d322",
+      "approvalRecordId": null,
+      "approverKeyId": null,
+      "approvedAt": null,
+      "issues": [],
+      "explanation": "No approved reference-policy evidence is configured"
+    },
+    "diagnosticClassificationsAreNotApproval": true,
+    "events": null,
+    "unresolved": null,
+    "absenceMeaning": "GUIDANCE_WITHHELD_NOT_NO_EVENT"
+  }
+}

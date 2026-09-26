@@ -1,0 +1,29 @@
+{
+  "id": "calendar-chennai-2027",
+  "url": "https://www.vaisnavacalendar.info/calendars/2027/Madras%20%5BIndia%5D.txt",
+  "kind": "calendar",
+  "retrievedAtUtc": "2026-09-15T19:53:20.005369+00:00",
+  "cityId": "chennai",
+  "year": 2027,
+  "lineage": "vaisnavacalendar.info/GCal-text",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": 200,
+  "finalUrl": "https://www.vaisnavacalendar.info/calendars/2027/Madras%20%5BIndia%5D.txt",
+  "responseHeaders": {
+    "Date": "Tue, 15 Sep 2026 19:53:21 GMT",
+    "Server": "Apache/2",
+    "Upgrade": "h2,h2c",
+    "Connection": "Upgrade, close",
+    "Last-Modified": "Fri, 27 Mar 2026 19:48:49 GMT",
+    "ETag": "\"a341-64e06ca38c294\"",
+    "Accept-Ranges": "bytes",
+    "Content-Length": "41793",
+    "Vary": "Accept-Encoding,User-Agent",
+    "Content-Type": "text/plain"
+  },
+  "file": "docs/release/2026-09-16/sources/calendar-chennai-2027.raw",
+  "sha256": "d7f002c434856cbcb6f5beb73d877a9a4428a3521c3f16353825c3697f035bcc",
+  "bytes": 41793
+}

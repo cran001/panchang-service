@@ -1,0 +1,61 @@
+{
+  "members": [
+    {
+      "place": {
+        "id": "point:3fc65b8451f0f54d7af076a4ed14858e6095ac0dd0034a03ed8241a7cfb8470e",
+        "latitude": -36.86666666666667,
+        "longitude": 174.76666666666668,
+        "elevationMeters": 0.0,
+        "timeZone": "Pacific/Auckland"
+      },
+      "tradition": "iskcon",
+      "year": 2026,
+      "coverage": {
+        "from": "2026-01-01",
+        "through": "2026-12-31"
+      },
+      "fields": [
+        "OBSERVANCES"
+      ]
+    }
+  ],
+  "referencePolicy": {
+    "id": "vaisnavacalendar-info-gcal-text",
+    "revision": "2026-09-16-proposed",
+    "description": "PROPOSED only: compare exact GCal text snapshots at printed coordinates, IANA mappings and assumed zero elevation. Existing solar -15..75s and lunar -180..75s bands; retain clock/basis disputes and missing ends. No replacement of calculated values. Owner and qualified review pending.",
+    "evidence": [
+      {
+        "link": "docs/release/2026-09-16/REFERENCE-POLICY.md",
+        "sha256": "59c2fe098f2d74ae2418b1af5a173a53bbf12f505be16f077a60bd5b137b2b2d",
+        "outcome": "PROPOSED_POLICY_NOT_APPROVED"
+      },
+      {
+        "link": "docs/release/2026-09-16/coverage-inventory.json",
+        "sha256": "dd9eba1e612260279487d0904f7d2428ed0810fabbfd6d62fd2c7e9e481abb25",
+        "outcome": "MEASURED_COMPARISONS_WITH_UNRESOLVED_CASES"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "link": "docs/release/2026-09-16/measurements/auckland-2026.json",
+      "sha256": "6c89d21adcc584410dbe9533bbeb65be1c55118ad149dfd0bae91c1761a449f5",
+      "outcome": "MEASURED_NOT_APPROVED"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-auckland-2025.raw",
+      "sha256": "5abdff77c9cd8c510e4dbb918f4a58bc926c651b61136db774f0c7c184a71359",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-auckland-2026.raw",
+      "sha256": "ef4246bff1a7339c87653ae87b50d8c137fdbd289af4d9dd95c1f9832a3fe53d",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-auckland-2027.raw",
+      "sha256": "387679552696bdfd121da31fde3ea5dd882c23a13f95732e45ec0f2ec8277e65",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    }
+  ]
+}

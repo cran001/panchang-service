@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.sampradaya.MarathiCalendarTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-09-21T09:06:51" hostname="DESKTOP-KBUKJ2P" time="19.258">
+  <properties/>
+  <testcase name="Gudi Padwa resolves inside the Chaitra window in an ordinary year()" classname="org.panchang.sampradaya.MarathiCalendarTest" time="6.159"/>
+  <testcase name="the kshaya Chaitra Pratipada of 2026 is reported loudly, never guessed()" classname="org.panchang.sampradaya.MarathiCalendarTest" time="6.349"/>
+  <testcase name="ekadashi timing is absent and the rest of the catalog resolves()" classname="org.panchang.sampradaya.MarathiCalendarTest" time="6.75"/>
+  <testcase name="the rules identify themselves and stay unverified()" classname="org.panchang.sampradaya.MarathiCalendarTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

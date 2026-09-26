@@ -1,0 +1,948 @@
+{
+  "schemaVersion": 1,
+  "year": 2026,
+  "site": {
+    "latitude": 23.416666666666668,
+    "longitude": 88.38333333333334,
+    "timeZone": "Asia/Kolkata",
+    "elevationMeters": 0.0
+  },
+  "sampradaya": {
+    "id": "iskcon",
+    "displayName": "ISKCON / Gaudiya Vaishnava",
+    "status": "VERIFIED",
+    "provenanceNote": "Ekadashi, Mahadvadashi and parana rules follow GCal 11 Build 5 (GBC Calendar Committee), as published at vaisnavacalendar.info. Fasting dates, Ekadashi names and parana windows are checked against that calendar's Mayapur output for 2026 by an automated conformance test, and the rules were derived against its 2021-2027 output. Two reservations a reader should carry: the four nakshatra-based Mahadvadashis (Jaya, Vijaya, Jayanti, Papanasini) rest on a single observed occurrence and their qualifying condition is inferred rather than quoted from a text; and this engine's tithi boundaries run up to about two minutes earlier than GCal's, which is harmless for a printed time but could in principle move a fasting day when a tithi ends within about two minutes of sunrise."
+  },
+  "observances": [
+    {
+      "date": "2025-12-31",
+      "name": "Putrada Ekadashi",
+      "kind": "EKADASHI",
+      "tithi": {
+        "index": 10,
+        "name": "Ekadashi",
+        "numberInPaksha": 11,
+        "paksha": "SHUKLA",
+        "lunarMonthName": "Pausha",
+        "isAdhikaMonth": false,
+        "start": {
+          "local": "2025-12-30T07:51:32+05:30",
+          "jdUt": 2461039.59829
+        },
+        "end": {
+          "local": "2025-12-31T05:00:57+05:30",
+          "jdUt": 2461040.47983
+        }
+      },
+      "parana": {
+        "date": "2026-01-01",
+        "start": {
+          "local": "2026-01-01T06:18:13+05:30",
+          "jdUt": 2461041.53348
+        },
+        "end": {
+          "local": "2026-01-01T09:52:42+05:30",
+          "jdUt": 2461041.68243
+        },
+        "startReason": "SUNRISE",
+        "endReason": "ONE_THIRD_DAYLIGHT",
+        "durationMinutes": 214.499
+      },
+      "reason": "The Ekadashi began after sunrise and ended before the next sunrise, so no day carries it; the fast is kept on the Dvadashi.",
+      "confidence": "CONFIRMED"
+    },
+    {
+      "date": "2026-01-14",
+      "name": "Sat-tila Ekadashi",
+      "kind": "EKADASHI",
+      "tithi": {
+        "index": 25,
+        "name": "Ekadashi",
+        "numberInPaksha": 11,
+        "paksha": "KRISHNA",
+        "lunarMonthName": "Pausha",
+        "isAdhikaMonth": false,
+        "start": {
+          "local": "2026-01-13T15:18:28+05:30",
+          "jdUt": 2461053.90866
+        },
+        "end": {
+          "local": "2026-01-14T17:53:17+05:30",
+          "jdUt": 2461055.01617
+        }
+      },
+      "parana": {
+        "date": "2026-01-15",
+        "start": {
+          "local": "2026-01-15T06:20:21+05:30",
+          "jdUt": 2461055.53496
+        },
+        "end": {
+          "local": "2026-01-15T09:57:21+05:30",
+          "jdUt": 2461055.68566
+        },
+        "startReason": "SUNRISE",
+        "endReason": "ONE_THIRD_DAYLIGHT",
+        "durationMinutes": 217.012
+      },
+      "reason": "The Ekadashi began before arunodaya and was running at sunrise, so the fast is kept on the Ekadashi itself.",
+      "confidence": "CONFIRMED"
+    },
+    {
+      "date": "2026-01-29",
+      "name": "Bhaimi Ekadashi",
+      "kind": "EKADASHI",
+      "tithi": {
+        "index": 10,
+        "name": "Ekadashi",
+        "numberInPaksha": 11,
+        "paksha": "SHUKLA",
+        "lunarMonthName": "Magha",
+        "isAdhikaMonth": false,
+        "start": {
+          "local": "2026-01-28T16:36:27+05:30",
+          "jdUt": 2461068.96281
+        },
+        "end": {
+          "local": "2026-01-29T13:55:38+05:30",
+          "jdUt": 2461069.85113
+        }
+      },
+      "parana": {
+        "date": "2026-01-30",
+        "start": {
+          "local": "2026-01-30T06:17:36+05:30",
+          "jdUt": 2461070.53305
+        },
+        "end": {
+          "local": "2026-01-30T09:59:04+05:30",
+          "jdUt": 2461070.68685
+        },
+        "startReason": "SUNRISE",
+        "endReason": "ONE_THIRD_DAYLIGHT",
+        "durationMinutes": 221.476
+      },
+      "reason": "The Ekadashi began before arunodaya and was running at sunrise, so the fast is kept on the Ekadashi itself.",
+      "confidence": "CONFIRMED"
+    },
+    {
+      "date": "2026-02-13",
+      "name": "Vijaya Ekadashi",
+      "kind": "EKADASHI",
+      "tithi": {
+        "index": 25,
+        "name": "Ekadashi",
+        "numberInPaksha": 11,
+        "paksha": "KRISHNA",
+        "lunarMonthName": "Magha",
+        "isAdhikaMonth": false,
+        "start": {
+          "local": "2026-02-12T12:22:43+05:30",
+          "jdUt": 2461083.78661
+        },
+        "end": {
+          "local": "2026-02-13T14:26:26+05:30",
+          "jdUt": 2461084.87252
+        }
+      },
+      "parana": {
+        "date": "2026-02-14",
+        "start": {
+          "local": "2026-02-14T06:09:58+05:30",
+          "jdUt": 2461085.52775
+        },
+        "end": {
+          "local": "2026-02-14T09:57:09+05:30",
+          "jdUt": 2461085.68552
+        },
+        "startReason": "SUNRISE",
+        "endReason": "ONE_THIRD_DAYLIGHT",
+        "durationMinutes": 227.188
+      },
+      "reason": "The Ekadashi began before arunodaya and was running at sunrise, so the fast is kept on the Ekadashi itself.",
+      "confidence": "CONFIRMED"
+    },
+    {
+      "date": "2026-02-27",
+      "name": "Amalaki vrata Ekadashi",
+      "kind": "EKADASHI",
+      "tithi": {
+        "index": 10,
+        "name": "Ekadashi",
+        "numberInPaksha": 11,
+        "paksha": "SHUKLA",
+        "lunarMonthName": "Phalguna",
+        "isAdhikaMonth": false,
+        "start": {
+          "local": "2026-02-27T00:33:58+05:30",
+          "jdUt": 2461098.29442
+        },
+        "end": {
+          "local": "2026-02-27T22:33:24+05:30",
+          "jdUt": 2461099.2107
+        }
+      },
+      "parana": {
+        "date": "2026-02-28",
+        "start": {
+          "local": "2026-02-28T05:59:23+05:30",
+          "jdUt": 2461099.52041
+        },
+        "end": {
+          "local": "2026-02-28T09:52:34+05:30",
+          "jdUt": 2461099.68234
+        },
+        "startReason": "SUNRISE",
+        "endReason": "ONE_THIRD_DAYLIGHT",
+        "durationMinutes": 233.178
+      },
+      "reason": "The Ekadashi began before arunodaya and was running at sunrise, so the fast is kept on the Ekadashi itself.",
+      "confidence": "CONFIRMED"
+    },
+    {
+      "date": "2026-03-15",
+      "name": "Papamocani Ekadashi",
+      "kind": "EKADASHI",
+      "tithi": {
+        "index": 25,
+        "name": "Ekadashi",
+        "numberInPaksha": 11,
+        "paksha": "KRISHNA",
+        "lunarMonthName": "Phalguna",
+        "isAdhikaMonth": false,
+        "start": {
+          "local": "2026-03-14T08:11:25+05:30",
+          "jdUt": 2461113.6121
+        },
+        "end": {
+          "local": "2026-03-15T09:16:58+05:30",
+          "jdUt": 2461114.65762
+        }
+      },
+      "parana": {
+        "date": "2026-03-16",
+        "start": {
+          "local": "2026-03-16T05:44:43+05:30",
+          "jdUt": 2461115.51022
+        },
+        "end": {
+          "local": "2026-03-16T09:41:23+05:30",
+          "jdUt": 2461115.67457
+        },
+        "startReason": "SUNRISE",
+        "endReason": "DVADASHI_END",
+        "durationMinutes": 236.655
+      },
+      "reason": "The Ekadashi began before arunodaya and was running at sunrise, so the fast is kept on the Ekadashi itself.",
+      "confidence": "CONFIRMED"
+    },
+    {
+      "date": "2026-03-29",
+      "name": "Kamada Ekadashi",
+      "kind": "EKADASHI",
+      "tithi": {
+        "index": 10,
+        "name": "Ekadashi",
+        "numberInPaksha": 11,
+        "paksha": "SHUKLA",
+        "lunarMonthName": "Chaitra",
+        "isAdhikaMonth": false,
+        "start": {
+          "local": "2026-03-28T08:46:15+05:30",
+          "jdUt": 2461127.63629
+        },
+        "end": {
+          "local": "2026-03-29T07:46:58+05:30",
+          "jdUt": 2461128.59511
+        }
+      },
+      "parana": {
+        "date": "2026-03-30",
+        "start": {
+          "local": "2026-03-30T05:31:00+05:30",
+          "jdUt": 2461129.5007
+        },
+        "end": {
+          "local": "2026-03-30T07:10:09+05:30",
+          "jdUt": 2461129.56955
+        },
+        "startReason": "SUNRISE",
+        "endReason": "DVADASHI_END",
+        "durationMinutes": 99.137
+      },
+      "reason": "The Ekadashi began before arunodaya and was running at sunrise, so the fast is kept on the Ekadashi itself.",
+      "confidence": "CONFIRMED"
+    },
+    {
+      "date": "2026-04-13",
+      "name": "Varuthini Ekadashi",
+      "kind": "EKADASHI",
+      "tithi": {
+        "index": 25,
+        "name": "Ekadashi",
+        "numberInPaksha": 11,
+        "paksha": "KRISHNA",
+        "lunarMonthName": "Chaitra",
+        "isAdhikaMonth": false,
+        "start": {
+          "local": "2026-04-13T01:17:19+05:30",
+          "jdUt": 2461143.32453
+        },
+        "end": {
+          "local": "2026-04-14T01:09:13+05:30",
+          "jdUt": 2461144.3189
+        }
+      },
+      "parana": {
+        "date": "2026-04-14",
+        "start": {
+          "local": "2026-04-14T06:55:10+05:30",
+          "jdUt": 2461144.55914
+        },
+        "end": {
+          "local": "2026-04-14T09:30:14+05:30",
+          "jdUt": 2461144.66683
+        },
+        "startReason": "HARI_VASARA_END",
+        "endReason": "ONE_THIRD_DAYLIGHT",
+        "durationMinutes": 155.072
+      },
+      "reason": "The Ekadashi began before arunodaya and was running at sunrise, so the fast is kept on the Ekadashi itself.",
+      "confidence": "CONFIRMED"
+    },
+    {
+      "date": "2026-04-27",
+      "name": "Mohini Ekadashi",
+      "kind": "EKADASHI",
+      "tithi": {
+        "index": 10,
+        "name": "Ekadashi",
+        "numberInPaksha": 11,
+        "paksha": "SHUKLA",
+        "lunarMonthName": "Vaishakha",
+        "isAdhikaMonth": false,
+        "start": {
+          "local": "2026-04-26T18:07:28+05:30",
+          "jdUt": 2461157.02602
+        },
+        "end": {
+          "local": "2026-04-27T18:16:26+05:30",
+          "jdUt": 2461158.03224
+        }
+      },
+      "parana": {
+        "date": "2026-04-28",
+        "start": {
+          "local": "2026-04-28T05:05:18+05:30",
+          "jdUt": 2461158.48285
+        },
+        "end": {
+          "local": "2026-04-28T09:24:31+05:30",
+          "jdUt": 2461158.66286
+        },
+        "startReason": "SUNRISE",
+        "endReason": "ONE_THIRD_DAYLIGHT",
+        "durationMinutes": 259.225
+      },
+      "reason": "The Ekadashi began before arunodaya and was running at sunrise, so the fast is kept on the Ekadashi itself.",
+      "confidence": "CONFIRMED"
+    },
+    {
+      "date": "2026-05-13",
+      "name": "Apara Ekadashi",
+      "kind": "EKADASHI",
+      "tithi": {
+        "index": 25,
+        "name": "Ekadashi",
+        "numberInPaksha": 11,
+        "paksha": "KRISHNA",
+        "lunarMonthName": "Vaishakha",
+        "isAdhikaMonth": false,
+        "start": {
+          "local": "2026-05-12T14:52:59+05:30",
+          "jdUt": 2461172.89096
+        },
+        "end": {
+          "local": "2026-05-13T13:30:31+05:30",
+          "jdUt": 2461173.83369
+        }
+      },
+      "parana": {
+        "date": "2026-05-14",
+        "start": {
+          "local": "2026-05-14T04:55:26+05:30",
+          "jdUt": 2461174.476
+        },
+        "end": {
+          "local": "2026-05-14T09:20:26+05:30",
+          "jdUt": 2461174.66002
+        },
+        "startReason": "SUNRISE",
+        "endReason": "ONE_THIRD_DAYLIGHT",
+        "durationMinutes": 264.987
+      },
+      "reason": "The Ekadashi began before arunodaya and was running at sunrise, so the fast is kept on the Ekadashi itself.",
+      "confidence": "CONFIRMED"
+    },
+    {
+      "date": "2026-05-27",
+      "name": "Padmini Ekadashi",
+      "kind": "EKADASHI",
+      "tithi": {
+        "index": 10,
+        "name": "Ekadashi",
+        "numberInPaksha": 11,
+        "paksha": "SHUKLA",
+        "lunarMonthName": "Adhika Jyeshtha",
+        "isAdhikaMonth": true,
+        "start": {
+          "local": "2026-05-26T05:11:26+05:30",
+          "jdUt": 2461186.48711
+        },
+        "end": {
+          "local": "2026-05-27T06:22:17+05:30",
+          "jdUt": 2461187.53631
+        }
+      },
+      "parana": {
+        "date": "2026-05-28",
+        "start": {
+          "local": "2026-05-28T04:50:35+05:30",
+          "jdUt": 2461188.47263
+        },
+        "end": {
+          "local": "2026-05-28T07:57:31+05:30",
+          "jdUt": 2461188.60244
+        },
+        "startReason": "SUNRISE",
+        "endReason": "DVADASHI_END",
+        "durationMinutes": 186.933
+      },
+      "reason": "The Ekadashi began before arunodaya and was running at sunrise, so the fast is kept on the Ekadashi itself.",
+      "confidence": "CONFIRMED"
+    },
+    {
+      "date": "2026-06-11",
+      "name": "Parama Ekadashi",
+      "kind": "EKADASHI",
+      "tithi": {
+        "index": 25,
+        "name": "Ekadashi",
+        "numberInPaksha": 11,
+        "paksha": "KRISHNA",
+        "lunarMonthName": "Adhika Jyeshtha",
+        "isAdhikaMonth": true,
+        "start": {
+          "local": "2026-06-11T00:58:26+05:30",
+          "jdUt": 2461202.31141
+        },
+        "end": {
+          "local": "2026-06-11T22:36:48+05:30",
+          "jdUt": 2461203.21306
+        }
+      },
+      "parana": {
+        "date": "2026-06-12",
+        "start": {
+          "local": "2026-06-12T04:49:32+05:30",
+          "jdUt": 2461203.4719
+        },
+        "end": {
+          "local": "2026-06-12T09:20:44+05:30",
+          "jdUt": 2461203.66023
+        },
+        "startReason": "SUNRISE",
+        "endReason": "ONE_THIRD_DAYLIGHT",
+        "durationMinutes": 271.184
+      },
+      "reason": "The Ekadashi began before arunodaya and was running at sunrise, so the fast is kept on the Ekadashi itself.",
+      "confidence": "CONFIRMED"
+    },
+    {
+      "date": "2026-06-26",
+      "name": "Pandava Nirjala Ekadashi",
+      "kind": "MAHADVADASHI",
+      "mahadvadashiType": "PAKSAVARDHINI",
+      "tithi": {
+        "index": 10,
+        "name": "Ekadashi",
+        "numberInPaksha": 11,
+        "paksha": "SHUKLA",
+        "lunarMonthName": "Jyeshtha",
+        "isAdhikaMonth": false,
+        "start": {
+          "local": "2026-06-24T18:12:50+05:30",
+          "jdUt": 2461216.02974
+        },
+        "end": {
+          "local": "2026-06-25T20:09:55+05:30",
+          "jdUt": 2461217.11105
+        }
+      },
+      "parana": {
+        "date": "2026-06-27",
+        "start": {
+          "local": "2026-06-27T04:52:22+05:30",
+          "jdUt": 2461218.47386
+        },
+        "end": {
+          "local": "2026-06-27T09:23:47+05:30",
+          "jdUt": 2461218.66235
+        },
+        "startReason": "SUNRISE",
+        "endReason": "ONE_THIRD_DAYLIGHT",
+        "durationMinutes": 271.418
+      },
+      "reason": "The Purnima closing this fortnight is running at sunrise on two successive days, so the fortnight is lengthened and the fast is kept on the Dvadashi as Paksavardhini Mahadvadashi.",
+      "confidence": "CONFIRMED"
+    },
+    {
+      "date": "2026-07-11",
+      "name": "Yogini Ekadashi",
+      "kind": "MAHADVADASHI",
+      "mahadvadashiType": "TRISPRSA",
+      "tithi": {
+        "index": 25,
+        "name": "Ekadashi",
+        "numberInPaksha": 11,
+        "paksha": "KRISHNA",
+        "lunarMonthName": "Jyeshtha",
+        "isAdhikaMonth": false,
+        "start": {
+          "local": "2026-07-10T08:16:55+05:30",
+          "jdUt": 2461231.61591
+        },
+        "end": {
+          "local": "2026-07-11T05:23:10+05:30",
+          "jdUt": 2461232.49526
+        }
+      },
+      "parana": {
+        "date": "2026-07-12",
+        "start": {
+          "local": "2026-07-12T04:57:47+05:30",
+          "jdUt": 2461233.47763
+        },
+        "end": {
+          "local": "2026-07-12T09:27:17+05:30",
+          "jdUt": 2461233.66478
+        },
+        "startReason": "SUNRISE",
+        "endReason": "ONE_THIRD_DAYLIGHT",
+        "durationMinutes": 269.494
+      },
+      "reason": "The Dvadashi begins and ends between two sunrises, so Ekadashi, Dvadashi and Trayodashi all touch this day; the fast is kept on the Ekadashi as Trisprsa Mahadvadashi and broken on the Trayodashi.",
+      "confidence": "CONFIRMED"
+    },
+    {
+      "date": "2026-07-25",
+      "name": "Sayana Ekadashi",
+      "kind": "EKADASHI",
+      "tithi": {
+        "index": 10,
+        "name": "Ekadashi",
+        "numberInPaksha": 11,
+        "paksha": "SHUKLA",
+        "lunarMonthName": "Ashadha",
+        "isAdhikaMonth": false,
+        "start": {
+          "local": "2026-07-24T09:13:15+05:30",
+          "jdUt": 2461245.65504
+        },
+        "end": {
+          "local": "2026-07-25T11:34:48+05:30",
+          "jdUt": 2461246.75333
+        }
+      },
+      "parana": {
+        "date": "2026-07-26",
+        "start": {
+          "local": "2026-07-26T05:03:53+05:30",
+          "jdUt": 2461247.48186
+        },
+        "end": {
+          "local": "2026-07-26T09:29:54+05:30",
+          "jdUt": 2461247.6666
+        },
+        "startReason": "SUNRISE",
+        "endReason": "ONE_THIRD_DAYLIGHT",
+        "durationMinutes": 266.017
+      },
+      "reason": "The Ekadashi began before arunodaya and was running at sunrise, so the fast is kept on the Ekadashi itself.",
+      "confidence": "CONFIRMED"
+    },
+    {
+      "date": "2026-08-09",
+      "name": "Kamika Ekadashi",
+      "kind": "EKADASHI",
+      "tithi": {
+        "index": 25,
+        "name": "Ekadashi",
+        "numberInPaksha": 11,
+        "paksha": "KRISHNA",
+        "lunarMonthName": "Ashadha",
+        "isAdhikaMonth": false,
+        "start": {
+          "local": "2026-08-08T13:59:46+05:30",
+          "jdUt": 2461260.85401
+        },
+        "end": {
+          "local": "2026-08-09T11:05:31+05:30",
+          "jdUt": 2461261.733
+        }
+      },
+      "parana": {
+        "date": "2026-08-10",
+        "start": {
+          "local": "2026-08-10T05:10:18+05:30",
+          "jdUt": 2461262.48632
+        },
+        "end": {
+          "local": "2026-08-10T08:01:18+05:30",
+          "jdUt": 2461262.60507
+        },
+        "startReason": "SUNRISE",
+        "endReason": "DVADASHI_END",
+        "durationMinutes": 170.999
+      },
+      "reason": "The Ekadashi began before arunodaya and was running at sunrise, so the fast is kept on the Ekadashi itself.",
+      "confidence": "CONFIRMED"
+    },
+    {
+      "date": "2026-08-24",
+      "name": "Pavitraropana Ekadashi",
+      "kind": "MAHADVADASHI",
+      "mahadvadashiType": "VANJULI",
+      "tithi": {
+        "index": 10,
+        "name": "Ekadashi",
+        "numberInPaksha": 11,
+        "paksha": "SHUKLA",
+        "lunarMonthName": "Shravana",
+        "isAdhikaMonth": false,
+        "start": {
+          "local": "2026-08-23T02:00:51+05:30",
+          "jdUt": 2461275.35476
+        },
+        "end": {
+          "local": "2026-08-24T04:19:14+05:30",
+          "jdUt": 2461276.45086
+        }
+      },
+      "parana": {
+        "date": "2026-08-25",
+        "start": {
+          "local": "2026-08-25T05:16:00+05:30",
+          "jdUt": 2461277.49028
+        },
+        "end": {
+          "local": "2026-08-25T06:21:26+05:30",
+          "jdUt": 2461277.53572
+        },
+        "startReason": "SUNRISE",
+        "endReason": "DVADASHI_END",
+        "durationMinutes": 65.434
+      },
+      "reason": "The Dvadashi is running at sunrise on two successive days, so the fast is kept on the first of them as Vyanjuli Mahadvadashi.",
+      "confidence": "CONFIRMED"
+    },
+    {
+      "date": "2026-09-07",
+      "name": "Annada Ekadashi",
+      "kind": "EKADASHI",
+      "tithi": {
+        "index": 25,
+        "name": "Ekadashi",
+        "numberInPaksha": 11,
+        "paksha": "KRISHNA",
+        "lunarMonthName": "Shravana",
+        "isAdhikaMonth": false,
+        "start": {
+          "local": "2026-09-06T19:29:43+05:30",
+          "jdUt": 2461290.08314
+        },
+        "end": {
+          "local": "2026-09-07T17:04:36+05:30",
+          "jdUt": 2461290.98236
+        }
+      },
+      "parana": {
+        "date": "2026-09-08",
+        "start": {
+          "local": "2026-09-08T05:20:38+05:30",
+          "jdUt": 2461291.4935
+        },
+        "end": {
+          "local": "2026-09-08T09:29:35+05:30",
+          "jdUt": 2461291.66638
+        },
+        "startReason": "SUNRISE",
+        "endReason": "ONE_THIRD_DAYLIGHT",
+        "durationMinutes": 248.947
+      },
+      "reason": "The Ekadashi began before arunodaya and was running at sunrise, so the fast is kept on the Ekadashi itself.",
+      "confidence": "CONFIRMED"
+    },
+    {
+      "date": "2026-09-22",
+      "name": "Parsva Ekadashi",
+      "kind": "EKADASHI",
+      "tithi": {
+        "index": 10,
+        "name": "Ekadashi",
+        "numberInPaksha": 11,
+        "paksha": "SHUKLA",
+        "lunarMonthName": "Bhadrapada",
+        "isAdhikaMonth": false,
+        "start": {
+          "local": "2026-09-21T20:01:24+05:30",
+          "jdUt": 2461305.10514
+        },
+        "end": {
+          "local": "2026-09-22T21:43:51+05:30",
+          "jdUt": 2461306.17628
+        }
+      },
+      "parana": {
+        "date": "2026-09-23",
+        "start": {
+          "local": "2026-09-23T05:25:23+05:30",
+          "jdUt": 2461306.49679
+        },
+        "end": {
+          "local": "2026-09-23T09:27:38+05:30",
+          "jdUt": 2461306.66502
+        },
+        "startReason": "SUNRISE",
+        "endReason": "ONE_THIRD_DAYLIGHT",
+        "durationMinutes": 242.252
+      },
+      "reason": "The Ekadashi began before arunodaya and was running at sunrise, so the fast is kept on the Ekadashi itself.",
+      "confidence": "CONFIRMED"
+    },
+    {
+      "date": "2026-10-06",
+      "name": "Indira Ekadashi",
+      "kind": "EKADASHI",
+      "tithi": {
+        "index": 25,
+        "name": "Ekadashi",
+        "numberInPaksha": 11,
+        "paksha": "KRISHNA",
+        "lunarMonthName": "Bhadrapada",
+        "isAdhikaMonth": false,
+        "start": {
+          "local": "2026-10-06T02:08:00+05:30",
+          "jdUt": 2461319.35972
+        },
+        "end": {
+          "local": "2026-10-07T00:34:56+05:30",
+          "jdUt": 2461320.29509
+        }
+      },
+      "parana": {
+        "date": "2026-10-07",
+        "start": {
+          "local": "2026-10-07T06:15:27+05:30",
+          "jdUt": 2461320.53156
+        },
+        "end": {
+          "local": "2026-10-07T09:26:12+05:30",
+          "jdUt": 2461320.66403
+        },
+        "startReason": "HARI_VASARA_END",
+        "endReason": "ONE_THIRD_DAYLIGHT",
+        "durationMinutes": 190.757
+      },
+      "reason": "The Ekadashi began before arunodaya and was running at sunrise, so the fast is kept on the Ekadashi itself.",
+      "confidence": "CONFIRMED"
+    },
+    {
+      "date": "2026-10-22",
+      "name": "Pasankusa Ekadashi",
+      "kind": "EKADASHI",
+      "tithi": {
+        "index": 10,
+        "name": "Ekadashi",
+        "numberInPaksha": 11,
+        "paksha": "SHUKLA",
+        "lunarMonthName": "Ashvina",
+        "isAdhikaMonth": false,
+        "start": {
+          "local": "2026-10-21T14:12:18+05:30",
+          "jdUt": 2461334.86271
+        },
+        "end": {
+          "local": "2026-10-22T14:48:30+05:30",
+          "jdUt": 2461335.88785
+        }
+      },
+      "parana": {
+        "date": "2026-10-23",
+        "start": {
+          "local": "2026-10-23T05:37:04+05:30",
+          "jdUt": 2461336.50491
+        },
+        "end": {
+          "local": "2026-10-23T09:26:09+05:30",
+          "jdUt": 2461336.66399
+        },
+        "startReason": "SUNRISE",
+        "endReason": "ONE_THIRD_DAYLIGHT",
+        "durationMinutes": 229.077
+      },
+      "reason": "The Ekadashi began before arunodaya and was running at sunrise, so the fast is kept on the Ekadashi itself.",
+      "confidence": "CONFIRMED"
+    },
+    {
+      "date": "2026-11-05",
+      "name": "Rama Ekadashi",
+      "kind": "EKADASHI",
+      "tithi": {
+        "index": 25,
+        "name": "Ekadashi",
+        "numberInPaksha": 11,
+        "paksha": "KRISHNA",
+        "lunarMonthName": "Ashvina",
+        "isAdhikaMonth": false,
+        "start": {
+          "local": "2026-11-04T11:03:46+05:30",
+          "jdUt": 2461348.73178
+        },
+        "end": {
+          "local": "2026-11-05T10:36:05+05:30",
+          "jdUt": 2461349.71256
+        }
+      },
+      "parana": {
+        "date": "2026-11-06",
+        "start": {
+          "local": "2026-11-06T05:44:39+05:30",
+          "jdUt": 2461350.51017
+        },
+        "end": {
+          "local": "2026-11-06T09:28:11+05:30",
+          "jdUt": 2461350.6654
+        },
+        "startReason": "SUNRISE",
+        "endReason": "ONE_THIRD_DAYLIGHT",
+        "durationMinutes": 223.534
+      },
+      "reason": "The Ekadashi began before arunodaya and was running at sunrise, so the fast is kept on the Ekadashi itself.",
+      "confidence": "CONFIRMED"
+    },
+    {
+      "date": "2026-11-21",
+      "name": "Utthana Ekadashi",
+      "kind": "MAHADVADASHI",
+      "mahadvadashiType": "TRISPRSA",
+      "tithi": {
+        "index": 10,
+        "name": "Ekadashi",
+        "numberInPaksha": 11,
+        "paksha": "SHUKLA",
+        "lunarMonthName": "Kartika",
+        "isAdhikaMonth": false,
+        "start": {
+          "local": "2026-11-20T07:16:05+05:30",
+          "jdUt": 2461364.57367
+        },
+        "end": {
+          "local": "2026-11-21T06:31:57+05:30",
+          "jdUt": 2461365.54302
+        }
+      },
+      "parana": {
+        "date": "2026-11-22",
+        "start": {
+          "local": "2026-11-22T05:55:00+05:30",
+          "jdUt": 2461366.51736
+        },
+        "end": {
+          "local": "2026-11-22T09:33:17+05:30",
+          "jdUt": 2461366.66895
+        },
+        "startReason": "SUNRISE",
+        "endReason": "ONE_THIRD_DAYLIGHT",
+        "durationMinutes": 218.284
+      },
+      "reason": "The Dvadashi begins and ends between two sunrises, so Ekadashi, Dvadashi and Trayodashi all touch this day; the fast is kept on the Ekadashi as Trisprsa Mahadvadashi and broken on the Trayodashi.",
+      "confidence": "CONFIRMED"
+    },
+    {
+      "date": "2026-12-05",
+      "name": "Utpanna Ekadashi",
+      "kind": "MAHADVADASHI",
+      "mahadvadashiType": "PAKSAVARDHINI",
+      "tithi": {
+        "index": 25,
+        "name": "Ekadashi",
+        "numberInPaksha": 11,
+        "paksha": "KRISHNA",
+        "lunarMonthName": "Kartika",
+        "isAdhikaMonth": false,
+        "start": {
+          "local": "2026-12-03T23:04:01+05:30",
+          "jdUt": 2461378.23196
+        },
+        "end": {
+          "local": "2026-12-04T23:45:12+05:30",
+          "jdUt": 2461379.26055
+        }
+      },
+      "parana": {
+        "date": "2026-12-06",
+        "start": {
+          "local": "2026-12-06T06:04:33+05:30",
+          "jdUt": 2461380.52399
+        },
+        "end": {
+          "local": "2026-12-06T09:39:43+05:30",
+          "jdUt": 2461380.67342
+        },
+        "startReason": "SUNRISE",
+        "endReason": "ONE_THIRD_DAYLIGHT",
+        "durationMinutes": 215.176
+      },
+      "reason": "The Amavasya closing this fortnight is running at sunrise on two successive days, so the fortnight is lengthened and the fast is kept on the Dvadashi as Paksavardhini Mahadvadashi.",
+      "confidence": "CONFIRMED"
+    },
+    {
+      "date": "2026-12-20",
+      "name": "Moksada Ekadashi",
+      "kind": "EKADASHI",
+      "tithi": {
+        "index": 10,
+        "name": "Ekadashi",
+        "numberInPaksha": 11,
+        "paksha": "SHUKLA",
+        "lunarMonthName": "Margashirsha",
+        "isAdhikaMonth": false,
+        "start": {
+          "local": "2026-12-19T22:09:54+05:30",
+          "jdUt": 2461394.19438
+        },
+        "end": {
+          "local": "2026-12-20T20:15:05+05:30",
+          "jdUt": 2461395.11464
+        }
+      },
+      "parana": {
+        "date": "2026-12-21",
+        "start": {
+          "local": "2026-12-21T06:13:34+05:30",
+          "jdUt": 2461395.53025
+        },
+        "end": {
+          "local": "2026-12-21T09:47:27+05:30",
+          "jdUt": 2461395.67879
+        },
+        "startReason": "SUNRISE",
+        "endReason": "ONE_THIRD_DAYLIGHT",
+        "durationMinutes": 213.901
+      },
+      "reason": "The Ekadashi began before arunodaya and was running at sunrise, so the fast is kept on the Ekadashi itself.",
+      "confidence": "CONFIRMED"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "calendar-bangalore-2026",
+  "url": "https://www.vaisnavacalendar.info/calendars/2026/Bangalore%20%5BIndia%5D.txt",
+  "kind": "calendar",
+  "retrievedAtUtc": "2026-09-21T09:04:34.232080+00:00",
+  "cityId": "bangalore",
+  "year": 2026,
+  "lineage": "vaisnavacalendar.info/GCal-text",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": null,
+  "error": "The read operation timed out"
+}

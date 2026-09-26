@@ -1,0 +1,61 @@
+{
+  "members": [
+    {
+      "place": {
+        "id": "point:4d762208d04a1908fb2fdb8e4f7dc49a7a3f96cd478df35eb3cb556a5f61ddd8",
+        "latitude": 17.383333333333333,
+        "longitude": 78.46666666666667,
+        "elevationMeters": 0.0,
+        "timeZone": "Asia/Kolkata"
+      },
+      "tradition": "iskcon",
+      "year": 2026,
+      "coverage": {
+        "from": "2026-01-01",
+        "through": "2026-12-31"
+      },
+      "fields": [
+        "OBSERVANCES"
+      ]
+    }
+  ],
+  "referencePolicy": {
+    "id": "vaisnavacalendar-info-gcal-text",
+    "revision": "2026-09-16-proposed",
+    "description": "PROPOSED only: compare exact GCal text snapshots at printed coordinates, IANA mappings and assumed zero elevation. Existing solar -15..75s and lunar -180..75s bands; retain clock/basis disputes and missing ends. No replacement of calculated values. Owner and qualified review pending.",
+    "evidence": [
+      {
+        "link": "docs/release/2026-09-16/REFERENCE-POLICY.md",
+        "sha256": "59c2fe098f2d74ae2418b1af5a173a53bbf12f505be16f077a60bd5b137b2b2d",
+        "outcome": "PROPOSED_POLICY_NOT_APPROVED"
+      },
+      {
+        "link": "docs/release/2026-09-16/coverage-inventory.json",
+        "sha256": "dd9eba1e612260279487d0904f7d2428ed0810fabbfd6d62fd2c7e9e481abb25",
+        "outcome": "MEASURED_COMPARISONS_WITH_UNRESOLVED_CASES"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "link": "docs/release/2026-09-16/measurements/hyderabad-2026.json",
+      "sha256": "ea6601136504da6e5075e7b4a85e15f62b5c1b1132d52dd4fbaf6a2be4457306",
+      "outcome": "MEASURED_NOT_APPROVED"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-hyderabad-2025.raw",
+      "sha256": "d9808934c6a4013e4b5f49d8b8e163ec16ea966f18af110d52a0600ff9915ade",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-hyderabad-2026.raw",
+      "sha256": "171c6fd7f97c83a1cf9789e2906b3dceafc45bb56dd462767565564873e4a439",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-hyderabad-2027.raw",
+      "sha256": "9a55b8eff9e6f2e2d5a84c9c120bf8c91935cde87178ec42b74550866dbc4ca8",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    }
+  ]
+}

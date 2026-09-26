@@ -1,0 +1,10 @@
+{
+  "command": [
+    "java",
+    "-cp",
+    "D:\\projects\\panchang-service\\api\\build\\install\\api\\lib\\*",
+    "org.panchang.api.MainKt"
+  ],
+  "HOST": "127.0.0.1",
+  "PORT": 64456
+}

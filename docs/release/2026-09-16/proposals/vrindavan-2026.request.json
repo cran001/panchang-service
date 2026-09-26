@@ -1,0 +1,61 @@
+{
+  "members": [
+    {
+      "place": {
+        "id": "point:5f96574f6eb1150766113cd9b09dcd45052ccf9f2afbe42865fd6b091611d5a5",
+        "latitude": 27.583333333333332,
+        "longitude": 77.7,
+        "elevationMeters": 0.0,
+        "timeZone": "Asia/Kolkata"
+      },
+      "tradition": "iskcon",
+      "year": 2026,
+      "coverage": {
+        "from": "2026-01-01",
+        "through": "2026-12-31"
+      },
+      "fields": [
+        "OBSERVANCES"
+      ]
+    }
+  ],
+  "referencePolicy": {
+    "id": "vaisnavacalendar-info-gcal-text",
+    "revision": "2026-09-16-proposed",
+    "description": "PROPOSED only: compare exact GCal text snapshots at printed coordinates, IANA mappings and assumed zero elevation. Existing solar -15..75s and lunar -180..75s bands; retain clock/basis disputes and missing ends. No replacement of calculated values. Owner and qualified review pending.",
+    "evidence": [
+      {
+        "link": "docs/release/2026-09-16/REFERENCE-POLICY.md",
+        "sha256": "59c2fe098f2d74ae2418b1af5a173a53bbf12f505be16f077a60bd5b137b2b2d",
+        "outcome": "PROPOSED_POLICY_NOT_APPROVED"
+      },
+      {
+        "link": "docs/release/2026-09-16/coverage-inventory.json",
+        "sha256": "dd9eba1e612260279487d0904f7d2428ed0810fabbfd6d62fd2c7e9e481abb25",
+        "outcome": "MEASURED_COMPARISONS_WITH_UNRESOLVED_CASES"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "link": "docs/release/2026-09-16/measurements/vrindavan-2026.json",
+      "sha256": "0cbdc100691ba8cc6d2a66fcf05e7b9c08f308341a3643f774cd25d14ea641ce",
+      "outcome": "MEASURED_NOT_APPROVED"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-vrindavan-2025.raw",
+      "sha256": "93ff3dc92b8b9162cdba78984a505aecc0aa64828d61c20b450e1945262cb140",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-vrindavan-2026.raw",
+      "sha256": "da193be0364433b4ae9ddc2cd0d4cc2c27c794448a585d9d54556fba4a71872d",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-vrindavan-2027.raw",
+      "sha256": "d8cac77ada9d98c6dfee8fdf7e71db1d92152d3056d222ec268fdb1e1ad745c6",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    }
+  ]
+}

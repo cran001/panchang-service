@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.calc.CalcCliTest" tests="17" skipped="0" failures="1" errors="0" timestamp="2026-09-12T16:07:28" hostname="DESKTOP-KBUKJ2P" time="74.982">
+  <properties/>
+  <testcase name="every event carries its tithi window, or honestly carries none()" classname="org.panchang.calc.CalcCliTest" time="18.345"/>
+  <testcase name="an unknown sampradaya is refused, never answered with another tradition's dates()" classname="org.panchang.calc.CalcCliTest" time="0.004"/>
+  <testcase name="a polar site is refused with wire's own stated reason()" classname="org.panchang.calc.CalcCliTest" time="0.006"/>
+  <testcase name="giving both a place and coordinates is refused rather than silently ranked()" classname="org.panchang.calc.CalcCliTest" time="0.002"/>
+  <testcase name="ekadashi observances carry both parana bounds with both reasons()" classname="org.panchang.calc.CalcCliTest" time="0.007">
+    <failure message="org.opentest4j.AssertionFailedError: an ordinary year carries 24 Ekadashi observances ==&gt; expected: &lt;24&gt; but was: &lt;25&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: an ordinary year carries 24 Ekadashi observances ==&gt; expected: &lt;24&gt; but was: &lt;25&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at app//org.panchang.calc.CalcCliTest.ekadashi observances carry both parana bounds with both reasons(CalcCliTest.kt:270)
+	at java.base@21.0.6/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList.forEach(Unknown Source)
+</failure>
+  </testcase>
+  <testcase name="the same arguments produce byte-identical output across two runs()" classname="org.panchang.calc.CalcCliTest" time="14.071"/>
+  <testcase name="a place resolves to the record's point and says that is what it did()" classname="org.panchang.calc.CalcCliTest" time="13.672"/>
+  <testcase name="an event with no anchor emits no fast-until field at all, not a null-shaped one()" classname="org.panchang.calc.CalcCliTest" time="0.003"/>
+  <testcase name="coordinates without a zone are refused rather than guessed()" classname="org.panchang.calc.CalcCliTest" time="0.002"/>
+  <testcase name="unresolved is printed, not dropped()" classname="org.panchang.calc.CalcCliTest" time="0.002"/>
+  <testcase name="a day query keeps the Ekadashi whose parana falls that morning, and all unresolved()" classname="org.panchang.calc.CalcCliTest" time="14.198"/>
+  <testcase name="a historical name fails with a message, and is never silently substituted()" classname="org.panchang.calc.CalcCliTest" time="0.011"/>
+  <testcase name="an ambiguous place is refused, non-zero, with every candidate named()" classname="org.panchang.calc.CalcCliTest" time="0.009"/>
+  <testcase name="two cities in one time zone get different parana times()" classname="org.panchang.calc.CalcCliTest" time="14.629"/>
+  <testcase name="caller coordinates are reported as caller-supplied and used verbatim()" classname="org.panchang.calc.CalcCliTest" time="0.001"/>
+  <testcase name="an undecidable parana window is omitted with a reason, not invented()" classname="org.panchang.calc.CalcCliTest" time="0.001"/>
+  <testcase name="a place that resolves elsewhere than the famous namesake says so()" classname="org.panchang.calc.CalcCliTest" time="0.012"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

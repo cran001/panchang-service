@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.sampradaya.GujaratiCalendarTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-09-22T08:11:06" hostname="DESKTOP-KBUKJ2P" time="15.693">
+  <properties/>
+  <testcase name="Bestu Varas 2026 resolves inside the Kartika window()" classname="org.panchang.sampradaya.GujaratiCalendarTest" time="7.797"/>
+  <testcase name="ekadashi timing is absent and the rest of the catalog resolves()" classname="org.panchang.sampradaya.GujaratiCalendarTest" time="7.895"/>
+  <testcase name="the rules identify themselves and stay unverified()" classname="org.panchang.sampradaya.GujaratiCalendarTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

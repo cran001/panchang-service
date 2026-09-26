@@ -1,0 +1,29 @@
+{
+  "id": "calendar-mumbai-2026",
+  "url": "https://www.vaisnavacalendar.info/calendars/2026/Bombay%20%5BIndia%5D.txt",
+  "kind": "calendar",
+  "retrievedAtUtc": "2026-09-21T09:05:45.338895+00:00",
+  "cityId": "mumbai",
+  "year": 2026,
+  "lineage": "vaisnavacalendar.info/GCal-text",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": 200,
+  "finalUrl": "https://www.vaisnavacalendar.info/calendars/2026/Bombay%20%5BIndia%5D.txt",
+  "responseHeaders": {
+    "Date": "Mon, 21 Sep 2026 09:05:47 GMT",
+    "Server": "Apache/2",
+    "Upgrade": "h2,h2c",
+    "Connection": "Upgrade, close",
+    "Last-Modified": "Sun, 19 Jan 2025 15:13:12 GMT",
+    "ETag": "\"a1a7-62c109518e6b6\"",
+    "Accept-Ranges": "bytes",
+    "Content-Length": "41383",
+    "Vary": "Accept-Encoding,User-Agent",
+    "Content-Type": "text/plain"
+  },
+  "file": "docs/release/2026-09-21/sources/calendar-mumbai-2026.raw",
+  "sha256": "1f768d777870327a90ffada13e9dc48fc0e8c7d3e6e5d7659ad490eff1fd74b0",
+  "bytes": 41383
+}

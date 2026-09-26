@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.verify.audit.AuditEvidenceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-09-12T15:55:20" hostname="DESKTOP-KBUKJ2P" time="6.049">
+  <properties/>
+  <testcase name="highLatitudeDiagnostics()" classname="org.panchang.verify.audit.AuditEvidenceTest" time="6.049"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

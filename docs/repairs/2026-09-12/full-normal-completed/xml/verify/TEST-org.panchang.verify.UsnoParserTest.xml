@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.verify.UsnoParserTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-09-12T17:53:57" hostname="DESKTOP-KBUKJ2P" time="0.061">
+  <properties/>
+  <testcase name="rejects USNO's HTTP 200 error envelope()" classname="org.panchang.verify.UsnoParserTest" time="0.023"/>
+  <testcase name="reports an unknown phenomenon instead of discarding it()" classname="org.panchang.verify.UsnoParserTest" time="0.021"/>
+  <testcase name="rejects a response for a different date()" classname="org.panchang.verify.UsnoParserTest" time="0.003"/>
+  <testcase name="keeps both moonsets on a day that has two()" classname="org.panchang.verify.UsnoParserTest" time="0.002"/>
+  <testcase name="resolves DST offsets for the stress cities()" classname="org.panchang.verify.UsnoParserTest" time="0.003"/>
+  <testcase name="represents a polar day as a condition rather than a missing sunrise()" classname="org.panchang.verify.UsnoParserTest" time="0.002"/>
+  <testcase name="formats fractional offsets the way USNO expects()" classname="org.panchang.verify.UsnoParserTest" time="0.001"/>
+  <testcase name="warns when USNO echoes coordinates we did not send()" classname="org.panchang.verify.UsnoParserTest" time="0.002"/>
+  <testcase name="parses an ordinary day()" classname="org.panchang.verify.UsnoParserTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

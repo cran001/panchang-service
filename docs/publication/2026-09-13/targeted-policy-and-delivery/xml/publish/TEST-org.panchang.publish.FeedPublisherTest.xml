@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.publish.FeedPublisherTest" tests="16" skipped="0" failures="1" errors="0" timestamp="2026-09-13T20:31:16" hostname="DESKTOP-KBUKJ2P" time="82.624">
+  <properties/>
+  <testcase name="write puts every computed file on disk and nothing else(Path)" classname="org.panchang.publish.FeedPublisherTest" time="40.623"/>
+  <testcase name="zones and locations are the shape CalendarSyncRepository navigates()" classname="org.panchang.publish.FeedPublisherTest" time="0.009"/>
+  <testcase name="yearly files retain January Parana with the preceding legacy fast for attachment()" classname="org.panchang.publish.FeedPublisherTest" time="0.033"/>
+  <testcase name="every skipped site names a code, and a wire refusal is reported as wire's()" classname="org.panchang.publish.FeedPublisherTest" time="0.002"/>
+  <testcase name="every parana in the legacy feed is recovered by the app's own pipeline()" classname="org.panchang.publish.FeedPublisherTest" time="0.016"/>
+  <testcase name="an unmatched offset never creates a synthetic calendar()" classname="org.panchang.publish.FeedPublisherTest" time="0.001"/>
+  <testcase name="each fast day carries an explicitly fasting title()" classname="org.panchang.publish.FeedPublisherTest" time="0.004"/>
+  <testcase name="the published v1 year resolution carries unresolved()" classname="org.panchang.publish.FeedPublisherTest" time="0.001"/>
+  <testcase name="the manifest warns that no UTC zone was published()" classname="org.panchang.publish.FeedPublisherTest" time="0.015">
+    <failure message="org.opentest4j.AssertionFailedError: no warning about the missing UTC fallback: [] ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: no warning about the missing UTC fallback: [] ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at app//org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at app//org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at app//org.panchang.publish.FeedPublisherTest.the manifest warns that no UTC zone was published(FeedPublisherTest.kt:315)
+	at java.base@21.0.6/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList.forEach(Unknown Source)
+</failure>
+  </testcase>
+  <testcase name="no fallback is synthesised when a requested site already holds P0000()" classname="org.panchang.publish.FeedPublisherTest" time="24.431"/>
+  <testcase name="published plus skipped equals requested()" classname="org.panchang.publish.FeedPublisherTest" time="0.002"/>
+  <testcase name="two runs of the same request produce the same bytes()" classname="org.panchang.publish.FeedPublisherTest" time="17.469"/>
+  <testcase name="the legacy day file covers the whole year with no gaps()" classname="org.panchang.publish.FeedPublisherTest" time="0.002"/>
+  <testcase name="legacy published plus withheld equals published()" classname="org.panchang.publish.FeedPublisherTest" time="0.001"/>
+  <testcase name="the UTC fallback is counted in nothing()" classname="org.panchang.publish.FeedPublisherTest" time="0.001"/>
+  <testcase name="every accepted site gets both v1 documents, including the one with no legacy file()" classname="org.panchang.publish.FeedPublisherTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

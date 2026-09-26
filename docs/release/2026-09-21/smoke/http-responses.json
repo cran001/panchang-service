@@ -1,0 +1,1251 @@
+[
+  {
+    "path": "/v1/day/iskcon/2026-01-01?lat=23.416666666666668&lon=88.38333333333334&tz=Asia/Kolkata",
+    "status": 410,
+    "headers": {
+      "Cache-Control": "no-store",
+      "Content-Length": "334",
+      "Content-Type": "application/json",
+      "Connection": "close"
+    },
+    "body": {
+      "service": "panchang-api",
+      "schemaVersion": 2,
+      "code": "API_VERSION_RETIRED",
+      "guidance": "WITHHELD",
+      "replacement": "/v2/day/{sampradaya}/{date}",
+      "message": "Use the explicit v2 route with the same location parameters. Check each field's publication state; null means withheld, never no observance. No automatic redirect or legacy fallback."
+    },
+    "elapsedMillis": 26.62330004386604
+  },
+  {
+    "path": "/v1/calendar/iskcon/2026?lat=23.416666666666668&lon=88.38333333333334&tz=Asia/Kolkata",
+    "status": 410,
+    "headers": {
+      "Cache-Control": "no-store",
+      "Content-Length": "339",
+      "Content-Type": "application/json",
+      "Connection": "close"
+    },
+    "body": {
+      "service": "panchang-api",
+      "schemaVersion": 2,
+      "code": "API_VERSION_RETIRED",
+      "guidance": "WITHHELD",
+      "replacement": "/v2/calendar/{sampradaya}/{year}",
+      "message": "Use the explicit v2 route with the same location parameters. Check each field's publication state; null means withheld, never no observance. No automatic redirect or legacy fallback."
+    },
+    "elapsedMillis": 5.375100066885352
+  },
+  {
+    "path": "/v2/calendar/iskcon/2026?lat=23.416666666666668&lon=88.38333333333334&tz=Asia/Kolkata",
+    "status": 200,
+    "headers": {
+      "Cache-Control": "no-store",
+      "Content-Length": "5025",
+      "Content-Type": "application/json",
+      "Connection": "close"
+    },
+    "body": {
+      "service": "panchang-api",
+      "schemaVersion": 2,
+      "publication": {
+        "contract": "publication-v2",
+        "releaseScope": "first-release-iskcon-2026-09-16",
+        "calculation": "CALCULATED",
+        "validation": "SEPARATE_EVIDENCE_RECORDS_NOT_APPROVAL",
+        "humanApprovalRequired": true,
+        "qualifiedReviewQuestions": [
+          {
+            "id": "RARE-NAKSHATRA-QUALIFIERS",
+            "traditions": [
+              "iskcon"
+            ],
+            "fields": [
+              "OBSERVANCES"
+            ],
+            "description": "Jaya, Jayanti and Papanasini lack positive coverage; next-sunrise survival qualifiers remain inferred.",
+            "evidence": [
+              {
+                "link": "docs/audits/2026-09-12/AUDIT.md",
+                "sha256": "a40444c43b222725030d614a24aff0a6b34546f92bd941531aaa9d51be4d83e2",
+                "outcome": "UNRESOLVED_REVIEW_QUESTIONS"
+              }
+            ]
+          },
+          {
+            "id": "UNMILANI-PURITY-NAMING",
+            "traditions": [
+              "iskcon"
+            ],
+            "fields": [
+              "OBSERVANCES"
+            ],
+            "description": "Unmilani purity and naming qualifiers require qualified tradition review.",
+            "evidence": [
+              {
+                "link": "docs/audits/2026-09-12/AUDIT.md",
+                "sha256": "a40444c43b222725030d614a24aff0a6b34546f92bd941531aaa9d51be4d83e2",
+                "outcome": "UNRESOLVED_REVIEW_QUESTIONS"
+              }
+            ]
+          },
+          {
+            "id": "FAST-ENDING-ANCHORS",
+            "traditions": [
+              "iskcon"
+            ],
+            "fields": [
+              "EVENTS"
+            ],
+            "description": "Dusk versus civil twilight, midnight versus Nisita and interval-edge choice need an approved policy.",
+            "evidence": [
+              {
+                "link": "docs/audits/2026-09-12/AUDIT.md",
+                "sha256": "a40444c43b222725030d614a24aff0a6b34546f92bd941531aaa9d51be4d83e2",
+                "outcome": "UNRESOLVED_REVIEW_QUESTIONS"
+              }
+            ]
+          },
+          {
+            "id": "CATALOG-INTERPRETATIONS",
+            "traditions": [
+              "iskcon"
+            ],
+            "fields": [
+              "EVENTS"
+            ],
+            "description": "Ramanuja tithi versus regional nakshatra reckoning and Damodara closing labels remain human review questions.",
+            "evidence": [
+              {
+                "link": "docs/audits/2026-09-12/AUDIT.md",
+                "sha256": "a40444c43b222725030d614a24aff0a6b34546f92bd941531aaa9d51be4d83e2",
+                "outcome": "UNRESOLVED_REVIEW_QUESTIONS"
+              }
+            ]
+          },
+          {
+            "id": "HIGH-LATITUDE-OBSERVANCE",
+            "traditions": [
+              "iskcon"
+            ],
+            "fields": [
+              "EVENTS",
+              "OBSERVANCES"
+            ],
+            "description": "Assess whether this exact release scope uses high-latitude conditions lacking an authoritative observance oracle; record not-applicable reasoning when appropriate.",
+            "evidence": [
+              {
+                "link": "docs/audits/2026-09-12/AUDIT.md",
+                "sha256": "a40444c43b222725030d614a24aff0a6b34546f92bd941531aaa9d51be4d83e2",
+                "outcome": "UNRESOLVED_REVIEW_QUESTIONS"
+              }
+            ]
+          },
+          {
+            "id": "REFERENCE-COVERAGE",
+            "traditions": [
+              "iskcon"
+            ],
+            "fields": [
+              "EVENTS",
+              "OBSERVANCES"
+            ],
+            "description": "Review actual reference year/location coverage, missing 2028 calendars, uncertainty and exclusions; passing tests do not fill gaps.",
+            "evidence": [
+              {
+                "link": "docs/audits/2026-09-12/AUDIT.md",
+                "sha256": "a40444c43b222725030d614a24aff0a6b34546f92bd941531aaa9d51be4d83e2",
+                "outcome": "UNRESOLVED_REVIEW_QUESTIONS"
+              }
+            ]
+          }
+        ],
+        "legacyPublication": "REFUSED_CONTRACT_CANNOT_EXPRESS_WITHHOLDING"
+      },
+      "request": {
+        "sampradaya": "iskcon",
+        "year": 2026,
+        "scope": "YEAR"
+      },
+      "location": {
+        "coordinateSource": "CALLER_COORDINATES",
+        "query": "lat=23.416666666666668&lon=88.38333333333334&tz=Asia/Kolkata",
+        "coordinatesUsed": {
+          "latitude": 23.416666666666668,
+          "longitude": 88.38333333333334,
+          "timeZone": "Asia/Kolkata",
+          "elevationMeters": 0.0
+        },
+        "nearestPlaceLabel": {
+          "place": {
+            "geonameId": 1261669,
+            "name": "Navadw\u012bp",
+            "asciiName": "Navadwip",
+            "kind": "CITY",
+            "country": "IN",
+            "admin1": "West Bengal",
+            "population": 111123,
+            "latitude": 23.4067,
+            "longitude": 88.36861,
+            "timeZone": "Asia/Kolkata",
+            "attribution": "Place data \u00a9 GeoNames (https://www.geonames.org/), used under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)."
+          },
+          "distanceKm": 1.87,
+          "note": "A label for the coordinates supplied. Nothing was computed at this record's point."
+        },
+        "notes": [
+          "Computed at the coordinates you supplied, not at any place record. The place name below, if any, is a label only."
+        ]
+      },
+      "ekadashiYear": {
+        "schemaVersion": 2,
+        "year": 2026,
+        "site": {
+          "latitude": 23.416666666666668,
+          "longitude": 88.38333333333334,
+          "timeZone": "Asia/Kolkata",
+          "elevationMeters": 0.0
+        },
+        "sampradaya": {
+          "id": "iskcon",
+          "displayName": "ISKCON / Gaudiya Vaishnava"
+        },
+        "publication": {
+          "state": "MISSING_EVIDENCE",
+          "guidance": "WITHHELD",
+          "field": "OBSERVANCES",
+          "coverage": {
+            "from": "2026-01-01",
+            "through": "2026-12-31"
+          },
+          "bundleFingerprint": "51b189ec5ca44346785a2beb29c6a4414117ff99913ded1ab62c1b9a217b9d80",
+          "approvalRecordId": null,
+          "approverKeyId": null,
+          "approvedAt": null,
+          "issues": [],
+          "explanation": "No approved reference-policy evidence is configured"
+        },
+        "diagnosticClassificationsAreNotApproval": true,
+        "observances": null,
+        "absenceMeaning": "GUIDANCE_WITHHELD_NOT_NO_EVENT"
+      },
+      "yearResolution": {
+        "schemaVersion": 2,
+        "year": 2026,
+        "site": {
+          "latitude": 23.416666666666668,
+          "longitude": 88.38333333333334,
+          "timeZone": "Asia/Kolkata",
+          "elevationMeters": 0.0
+        },
+        "sampradaya": {
+          "id": "iskcon",
+          "displayName": "ISKCON / Gaudiya Vaishnava"
+        },
+        "publication": {
+          "state": "MISSING_EVIDENCE",
+          "guidance": "WITHHELD",
+          "field": "EVENTS",
+          "coverage": {
+            "from": "2026-01-01",
+            "through": "2026-12-31"
+          },
+          "bundleFingerprint": "51b189ec5ca44346785a2beb29c6a4414117ff99913ded1ab62c1b9a217b9d80",
+          "approvalRecordId": null,
+          "approverKeyId": null,
+          "approvedAt": null,
+          "issues": [],
+          "explanation": "No approved reference-policy evidence is configured"
+        },
+        "diagnosticClassificationsAreNotApproval": true,
+        "events": null,
+        "unresolved": null,
+        "absenceMeaning": "GUIDANCE_WITHHELD_NOT_NO_EVENT"
+      }
+    },
+    "elapsedMillis": 11169.352599885315
+  },
+  {
+    "path": "/v2/day/iskcon/2026-01-01?lat=23.416666666666668&lon=88.38333333333334&tz=Asia/Kolkata",
+    "status": 200,
+    "headers": {
+      "Cache-Control": "no-store",
+      "Content-Length": "5506",
+      "Content-Type": "application/json",
+      "Connection": "close"
+    },
+    "body": {
+      "service": "panchang-api",
+      "schemaVersion": 2,
+      "publication": {
+        "contract": "publication-v2",
+        "releaseScope": "first-release-iskcon-2026-09-16",
+        "calculation": "CALCULATED",
+        "validation": "SEPARATE_EVIDENCE_RECORDS_NOT_APPROVAL",
+        "humanApprovalRequired": true,
+        "qualifiedReviewQuestions": [
+          {
+            "id": "RARE-NAKSHATRA-QUALIFIERS",
+            "traditions": [
+              "iskcon"
+            ],
+            "fields": [
+              "OBSERVANCES"
+            ],
+            "description": "Jaya, Jayanti and Papanasini lack positive coverage; next-sunrise survival qualifiers remain inferred.",
+            "evidence": [
+              {
+                "link": "docs/audits/2026-09-12/AUDIT.md",
+                "sha256": "a40444c43b222725030d614a24aff0a6b34546f92bd941531aaa9d51be4d83e2",
+                "outcome": "UNRESOLVED_REVIEW_QUESTIONS"
+              }
+            ]
+          },
+          {
+            "id": "UNMILANI-PURITY-NAMING",
+            "traditions": [
+              "iskcon"
+            ],
+            "fields": [
+              "OBSERVANCES"
+            ],
+            "description": "Unmilani purity and naming qualifiers require qualified tradition review.",
+            "evidence": [
+              {
+                "link": "docs/audits/2026-09-12/AUDIT.md",
+                "sha256": "a40444c43b222725030d614a24aff0a6b34546f92bd941531aaa9d51be4d83e2",
+                "outcome": "UNRESOLVED_REVIEW_QUESTIONS"
+              }
+            ]
+          },
+          {
+            "id": "FAST-ENDING-ANCHORS",
+            "traditions": [
+              "iskcon"
+            ],
+            "fields": [
+              "EVENTS"
+            ],
+            "description": "Dusk versus civil twilight, midnight versus Nisita and interval-edge choice need an approved policy.",
+            "evidence": [
+              {
+                "link": "docs/audits/2026-09-12/AUDIT.md",
+                "sha256": "a40444c43b222725030d614a24aff0a6b34546f92bd941531aaa9d51be4d83e2",
+                "outcome": "UNRESOLVED_REVIEW_QUESTIONS"
+              }
+            ]
+          },
+          {
+            "id": "CATALOG-INTERPRETATIONS",
+            "traditions": [
+              "iskcon"
+            ],
+            "fields": [
+              "EVENTS"
+            ],
+            "description": "Ramanuja tithi versus regional nakshatra reckoning and Damodara closing labels remain human review questions.",
+            "evidence": [
+              {
+                "link": "docs/audits/2026-09-12/AUDIT.md",
+                "sha256": "a40444c43b222725030d614a24aff0a6b34546f92bd941531aaa9d51be4d83e2",
+                "outcome": "UNRESOLVED_REVIEW_QUESTIONS"
+              }
+            ]
+          },
+          {
+            "id": "HIGH-LATITUDE-OBSERVANCE",
+            "traditions": [
+              "iskcon"
+            ],
+            "fields": [
+              "EVENTS",
+              "OBSERVANCES"
+            ],
+            "description": "Assess whether this exact release scope uses high-latitude conditions lacking an authoritative observance oracle; record not-applicable reasoning when appropriate.",
+            "evidence": [
+              {
+                "link": "docs/audits/2026-09-12/AUDIT.md",
+                "sha256": "a40444c43b222725030d614a24aff0a6b34546f92bd941531aaa9d51be4d83e2",
+                "outcome": "UNRESOLVED_REVIEW_QUESTIONS"
+              }
+            ]
+          },
+          {
+            "id": "REFERENCE-COVERAGE",
+            "traditions": [
+              "iskcon"
+            ],
+            "fields": [
+              "EVENTS",
+              "OBSERVANCES"
+            ],
+            "description": "Review actual reference year/location coverage, missing 2028 calendars, uncertainty and exclusions; passing tests do not fill gaps.",
+            "evidence": [
+              {
+                "link": "docs/audits/2026-09-12/AUDIT.md",
+                "sha256": "a40444c43b222725030d614a24aff0a6b34546f92bd941531aaa9d51be4d83e2",
+                "outcome": "UNRESOLVED_REVIEW_QUESTIONS"
+              }
+            ]
+          }
+        ],
+        "legacyPublication": "REFUSED_CONTRACT_CANNOT_EXPRESS_WITHHOLDING"
+      },
+      "request": {
+        "sampradaya": "iskcon",
+        "year": 2026,
+        "scope": "DAY",
+        "date": "2026-01-01",
+        "scopeNote": "yearResolution.events is filtered to this date. ekadashiYear.observances keeps an Ekadashi whose fast OR whose parana window falls on this date, because the parana falls on the following day and is the thing most likely to be asked for on the morning itself; check observances[].date against observances[].parana.date to tell the two cases apart. yearResolution.unresolved is the whole year's, because an unresolved entry has no date to filter on."
+      },
+      "location": {
+        "coordinateSource": "CALLER_COORDINATES",
+        "query": "lat=23.416666666666668&lon=88.38333333333334&tz=Asia/Kolkata",
+        "coordinatesUsed": {
+          "latitude": 23.416666666666668,
+          "longitude": 88.38333333333334,
+          "timeZone": "Asia/Kolkata",
+          "elevationMeters": 0.0
+        },
+        "nearestPlaceLabel": {
+          "place": {
+            "geonameId": 1261669,
+            "name": "Navadw\u012bp",
+            "asciiName": "Navadwip",
+            "kind": "CITY",
+            "country": "IN",
+            "admin1": "West Bengal",
+            "population": 111123,
+            "latitude": 23.4067,
+            "longitude": 88.36861,
+            "timeZone": "Asia/Kolkata",
+            "attribution": "Place data \u00a9 GeoNames (https://www.geonames.org/), used under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)."
+          },
+          "distanceKm": 1.87,
+          "note": "A label for the coordinates supplied. Nothing was computed at this record's point."
+        },
+        "notes": [
+          "Computed at the coordinates you supplied, not at any place record. The place name below, if any, is a label only."
+        ]
+      },
+      "ekadashiYear": {
+        "schemaVersion": 2,
+        "year": 2026,
+        "site": {
+          "latitude": 23.416666666666668,
+          "longitude": 88.38333333333334,
+          "timeZone": "Asia/Kolkata",
+          "elevationMeters": 0.0
+        },
+        "sampradaya": {
+          "id": "iskcon",
+          "displayName": "ISKCON / Gaudiya Vaishnava"
+        },
+        "publication": {
+          "state": "MISSING_EVIDENCE",
+          "guidance": "WITHHELD",
+          "field": "OBSERVANCES",
+          "coverage": {
+            "from": "2026-01-01",
+            "through": "2026-01-01"
+          },
+          "bundleFingerprint": "51b189ec5ca44346785a2beb29c6a4414117ff99913ded1ab62c1b9a217b9d80",
+          "approvalRecordId": null,
+          "approverKeyId": null,
+          "approvedAt": null,
+          "issues": [],
+          "explanation": "No approved reference-policy evidence is configured"
+        },
+        "diagnosticClassificationsAreNotApproval": true,
+        "observances": null,
+        "absenceMeaning": "GUIDANCE_WITHHELD_NOT_NO_EVENT"
+      },
+      "yearResolution": {
+        "schemaVersion": 2,
+        "year": 2026,
+        "site": {
+          "latitude": 23.416666666666668,
+          "longitude": 88.38333333333334,
+          "timeZone": "Asia/Kolkata",
+          "elevationMeters": 0.0
+        },
+        "sampradaya": {
+          "id": "iskcon",
+          "displayName": "ISKCON / Gaudiya Vaishnava"
+        },
+        "publication": {
+          "state": "MISSING_EVIDENCE",
+          "guidance": "WITHHELD",
+          "field": "EVENTS",
+          "coverage": {
+            "from": "2026-01-01",
+            "through": "2026-01-01"
+          },
+          "bundleFingerprint": "51b189ec5ca44346785a2beb29c6a4414117ff99913ded1ab62c1b9a217b9d80",
+          "approvalRecordId": null,
+          "approverKeyId": null,
+          "approvedAt": null,
+          "issues": [],
+          "explanation": "No approved reference-policy evidence is configured"
+        },
+        "diagnosticClassificationsAreNotApproval": true,
+        "events": null,
+        "unresolved": null,
+        "absenceMeaning": "GUIDANCE_WITHHELD_NOT_NO_EVENT"
+      }
+    },
+    "elapsedMillis": 47.745199874043465
+  },
+  {
+    "path": "/v2/day/marathi/2026-01-01?lat=23.416666666666668&lon=88.38333333333334&tz=Asia/Kolkata",
+    "status": 422,
+    "headers": {
+      "Cache-Control": "no-store",
+      "Content-Length": "440",
+      "Content-Type": "application/json",
+      "Connection": "close"
+    },
+    "body": {
+      "service": "panchang-api",
+      "schemaVersion": 1,
+      "publication": {
+        "state": "UNSUPPORTED",
+        "guidance": "WITHHELD",
+        "absenceMeaning": "GUIDANCE_WITHHELD_NOT_NO_EVENT"
+      },
+      "error": {
+        "status": 422,
+        "code": "SAMPRADAYA_OUTSIDE_RELEASE",
+        "message": "This tradition is outside the ISKCON-only first public release. Its calculation code remains available for local research. No alternative calendar is substituted."
+      },
+      "requested": "marathi",
+      "publicTraditions": [
+        "iskcon"
+      ]
+    },
+    "elapsedMillis": 204.93909996002913
+  },
+  {
+    "path": "/v2/calendar/marathi/2026?lat=23.416666666666668&lon=88.38333333333334&tz=Asia/Kolkata",
+    "status": 422,
+    "headers": {
+      "Cache-Control": "no-store",
+      "Content-Length": "440",
+      "Content-Type": "application/json",
+      "Connection": "close"
+    },
+    "body": {
+      "service": "panchang-api",
+      "schemaVersion": 1,
+      "publication": {
+        "state": "UNSUPPORTED",
+        "guidance": "WITHHELD",
+        "absenceMeaning": "GUIDANCE_WITHHELD_NOT_NO_EVENT"
+      },
+      "error": {
+        "status": 422,
+        "code": "SAMPRADAYA_OUTSIDE_RELEASE",
+        "message": "This tradition is outside the ISKCON-only first public release. Its calculation code remains available for local research. No alternative calendar is substituted."
+      },
+      "requested": "marathi",
+      "publicTraditions": [
+        "iskcon"
+      ]
+    },
+    "elapsedMillis": 3.827099921181798
+  },
+  {
+    "path": "/v2/day/telugu/2026-01-01?lat=23.416666666666668&lon=88.38333333333334&tz=Asia/Kolkata",
+    "status": 422,
+    "headers": {
+      "Cache-Control": "no-store",
+      "Content-Length": "439",
+      "Content-Type": "application/json",
+      "Connection": "close"
+    },
+    "body": {
+      "service": "panchang-api",
+      "schemaVersion": 1,
+      "publication": {
+        "state": "UNSUPPORTED",
+        "guidance": "WITHHELD",
+        "absenceMeaning": "GUIDANCE_WITHHELD_NOT_NO_EVENT"
+      },
+      "error": {
+        "status": 422,
+        "code": "SAMPRADAYA_OUTSIDE_RELEASE",
+        "message": "This tradition is outside the ISKCON-only first public release. Its calculation code remains available for local research. No alternative calendar is substituted."
+      },
+      "requested": "telugu",
+      "publicTraditions": [
+        "iskcon"
+      ]
+    },
+    "elapsedMillis": 14.945300063118339
+  },
+  {
+    "path": "/v2/calendar/telugu/2026?lat=23.416666666666668&lon=88.38333333333334&tz=Asia/Kolkata",
+    "status": 422,
+    "headers": {
+      "Cache-Control": "no-store",
+      "Content-Length": "439",
+      "Content-Type": "application/json",
+      "Connection": "close"
+    },
+    "body": {
+      "service": "panchang-api",
+      "schemaVersion": 1,
+      "publication": {
+        "state": "UNSUPPORTED",
+        "guidance": "WITHHELD",
+        "absenceMeaning": "GUIDANCE_WITHHELD_NOT_NO_EVENT"
+      },
+      "error": {
+        "status": 422,
+        "code": "SAMPRADAYA_OUTSIDE_RELEASE",
+        "message": "This tradition is outside the ISKCON-only first public release. Its calculation code remains available for local research. No alternative calendar is substituted."
+      },
+      "requested": "telugu",
+      "publicTraditions": [
+        "iskcon"
+      ]
+    },
+    "elapsedMillis": 20.454500103369355
+  },
+  {
+    "path": "/v2/day/kannada/2026-01-01?lat=23.416666666666668&lon=88.38333333333334&tz=Asia/Kolkata",
+    "status": 422,
+    "headers": {
+      "Cache-Control": "no-store",
+      "Content-Length": "440",
+      "Content-Type": "application/json",
+      "Connection": "close"
+    },
+    "body": {
+      "service": "panchang-api",
+      "schemaVersion": 1,
+      "publication": {
+        "state": "UNSUPPORTED",
+        "guidance": "WITHHELD",
+        "absenceMeaning": "GUIDANCE_WITHHELD_NOT_NO_EVENT"
+      },
+      "error": {
+        "status": 422,
+        "code": "SAMPRADAYA_OUTSIDE_RELEASE",
+        "message": "This tradition is outside the ISKCON-only first public release. Its calculation code remains available for local research. No alternative calendar is substituted."
+      },
+      "requested": "kannada",
+      "publicTraditions": [
+        "iskcon"
+      ]
+    },
+    "elapsedMillis": 16.312599880620837
+  },
+  {
+    "path": "/v2/calendar/kannada/2026?lat=23.416666666666668&lon=88.38333333333334&tz=Asia/Kolkata",
+    "status": 422,
+    "headers": {
+      "Cache-Control": "no-store",
+      "Content-Length": "440",
+      "Content-Type": "application/json",
+      "Connection": "close"
+    },
+    "body": {
+      "service": "panchang-api",
+      "schemaVersion": 1,
+      "publication": {
+        "state": "UNSUPPORTED",
+        "guidance": "WITHHELD",
+        "absenceMeaning": "GUIDANCE_WITHHELD_NOT_NO_EVENT"
+      },
+      "error": {
+        "status": 422,
+        "code": "SAMPRADAYA_OUTSIDE_RELEASE",
+        "message": "This tradition is outside the ISKCON-only first public release. Its calculation code remains available for local research. No alternative calendar is substituted."
+      },
+      "requested": "kannada",
+      "publicTraditions": [
+        "iskcon"
+      ]
+    },
+    "elapsedMillis": 3.750199917703867
+  },
+  {
+    "path": "/v2/day/gujarati/2026-01-01?lat=23.416666666666668&lon=88.38333333333334&tz=Asia/Kolkata",
+    "status": 422,
+    "headers": {
+      "Cache-Control": "no-store",
+      "Content-Length": "441",
+      "Content-Type": "application/json",
+      "Connection": "close"
+    },
+    "body": {
+      "service": "panchang-api",
+      "schemaVersion": 1,
+      "publication": {
+        "state": "UNSUPPORTED",
+        "guidance": "WITHHELD",
+        "absenceMeaning": "GUIDANCE_WITHHELD_NOT_NO_EVENT"
+      },
+      "error": {
+        "status": 422,
+        "code": "SAMPRADAYA_OUTSIDE_RELEASE",
+        "message": "This tradition is outside the ISKCON-only first public release. Its calculation code remains available for local research. No alternative calendar is substituted."
+      },
+      "requested": "gujarati",
+      "publicTraditions": [
+        "iskcon"
+      ]
+    },
+    "elapsedMillis": 27.728399960324168
+  },
+  {
+    "path": "/v2/calendar/gujarati/2026?lat=23.416666666666668&lon=88.38333333333334&tz=Asia/Kolkata",
+    "status": 422,
+    "headers": {
+      "Cache-Control": "no-store",
+      "Content-Length": "441",
+      "Content-Type": "application/json",
+      "Connection": "close"
+    },
+    "body": {
+      "service": "panchang-api",
+      "schemaVersion": 1,
+      "publication": {
+        "state": "UNSUPPORTED",
+        "guidance": "WITHHELD",
+        "absenceMeaning": "GUIDANCE_WITHHELD_NOT_NO_EVENT"
+      },
+      "error": {
+        "status": 422,
+        "code": "SAMPRADAYA_OUTSIDE_RELEASE",
+        "message": "This tradition is outside the ISKCON-only first public release. Its calculation code remains available for local research. No alternative calendar is substituted."
+      },
+      "requested": "gujarati",
+      "publicTraditions": [
+        "iskcon"
+      ]
+    },
+    "elapsedMillis": 3.3935001119971275
+  },
+  {
+    "path": "/v2/day/northindian/2026-01-01?lat=23.416666666666668&lon=88.38333333333334&tz=Asia/Kolkata",
+    "status": 422,
+    "headers": {
+      "Cache-Control": "no-store",
+      "Content-Length": "444",
+      "Content-Type": "application/json",
+      "Connection": "close"
+    },
+    "body": {
+      "service": "panchang-api",
+      "schemaVersion": 1,
+      "publication": {
+        "state": "UNSUPPORTED",
+        "guidance": "WITHHELD",
+        "absenceMeaning": "GUIDANCE_WITHHELD_NOT_NO_EVENT"
+      },
+      "error": {
+        "status": 422,
+        "code": "SAMPRADAYA_OUTSIDE_RELEASE",
+        "message": "This tradition is outside the ISKCON-only first public release. Its calculation code remains available for local research. No alternative calendar is substituted."
+      },
+      "requested": "northindian",
+      "publicTraditions": [
+        "iskcon"
+      ]
+    },
+    "elapsedMillis": 3.4978999756276608
+  },
+  {
+    "path": "/v2/calendar/northindian/2026?lat=23.416666666666668&lon=88.38333333333334&tz=Asia/Kolkata",
+    "status": 422,
+    "headers": {
+      "Cache-Control": "no-store",
+      "Content-Length": "444",
+      "Content-Type": "application/json",
+      "Connection": "close"
+    },
+    "body": {
+      "service": "panchang-api",
+      "schemaVersion": 1,
+      "publication": {
+        "state": "UNSUPPORTED",
+        "guidance": "WITHHELD",
+        "absenceMeaning": "GUIDANCE_WITHHELD_NOT_NO_EVENT"
+      },
+      "error": {
+        "status": 422,
+        "code": "SAMPRADAYA_OUTSIDE_RELEASE",
+        "message": "This tradition is outside the ISKCON-only first public release. Its calculation code remains available for local research. No alternative calendar is substituted."
+      },
+      "requested": "northindian",
+      "publicTraditions": [
+        "iskcon"
+      ]
+    },
+    "elapsedMillis": 24.737900123000145
+  },
+  {
+    "path": "/v2/day/tamil/2026-01-01?lat=23.416666666666668&lon=88.38333333333334&tz=Asia/Kolkata",
+    "status": 422,
+    "headers": {
+      "Cache-Control": "no-store",
+      "Content-Length": "438",
+      "Content-Type": "application/json",
+      "Connection": "close"
+    },
+    "body": {
+      "service": "panchang-api",
+      "schemaVersion": 1,
+      "publication": {
+        "state": "UNSUPPORTED",
+        "guidance": "WITHHELD",
+        "absenceMeaning": "GUIDANCE_WITHHELD_NOT_NO_EVENT"
+      },
+      "error": {
+        "status": 422,
+        "code": "SAMPRADAYA_OUTSIDE_RELEASE",
+        "message": "This tradition is outside the ISKCON-only first public release. Its calculation code remains available for local research. No alternative calendar is substituted."
+      },
+      "requested": "tamil",
+      "publicTraditions": [
+        "iskcon"
+      ]
+    },
+    "elapsedMillis": 3.159700194373727
+  },
+  {
+    "path": "/v2/calendar/tamil/2026?lat=23.416666666666668&lon=88.38333333333334&tz=Asia/Kolkata",
+    "status": 422,
+    "headers": {
+      "Cache-Control": "no-store",
+      "Content-Length": "438",
+      "Content-Type": "application/json",
+      "Connection": "close"
+    },
+    "body": {
+      "service": "panchang-api",
+      "schemaVersion": 1,
+      "publication": {
+        "state": "UNSUPPORTED",
+        "guidance": "WITHHELD",
+        "absenceMeaning": "GUIDANCE_WITHHELD_NOT_NO_EVENT"
+      },
+      "error": {
+        "status": 422,
+        "code": "SAMPRADAYA_OUTSIDE_RELEASE",
+        "message": "This tradition is outside the ISKCON-only first public release. Its calculation code remains available for local research. No alternative calendar is substituted."
+      },
+      "requested": "tamil",
+      "publicTraditions": [
+        "iskcon"
+      ]
+    },
+    "elapsedMillis": 3.2426000107079744
+  },
+  {
+    "path": "/v2/day/malayalam/2026-01-01?lat=23.416666666666668&lon=88.38333333333334&tz=Asia/Kolkata",
+    "status": 422,
+    "headers": {
+      "Cache-Control": "no-store",
+      "Content-Length": "442",
+      "Content-Type": "application/json",
+      "Connection": "close"
+    },
+    "body": {
+      "service": "panchang-api",
+      "schemaVersion": 1,
+      "publication": {
+        "state": "UNSUPPORTED",
+        "guidance": "WITHHELD",
+        "absenceMeaning": "GUIDANCE_WITHHELD_NOT_NO_EVENT"
+      },
+      "error": {
+        "status": 422,
+        "code": "SAMPRADAYA_OUTSIDE_RELEASE",
+        "message": "This tradition is outside the ISKCON-only first public release. Its calculation code remains available for local research. No alternative calendar is substituted."
+      },
+      "requested": "malayalam",
+      "publicTraditions": [
+        "iskcon"
+      ]
+    },
+    "elapsedMillis": 3.514199983328581
+  },
+  {
+    "path": "/v2/calendar/malayalam/2026?lat=23.416666666666668&lon=88.38333333333334&tz=Asia/Kolkata",
+    "status": 422,
+    "headers": {
+      "Cache-Control": "no-store",
+      "Content-Length": "442",
+      "Content-Type": "application/json",
+      "Connection": "close"
+    },
+    "body": {
+      "service": "panchang-api",
+      "schemaVersion": 1,
+      "publication": {
+        "state": "UNSUPPORTED",
+        "guidance": "WITHHELD",
+        "absenceMeaning": "GUIDANCE_WITHHELD_NOT_NO_EVENT"
+      },
+      "error": {
+        "status": 422,
+        "code": "SAMPRADAYA_OUTSIDE_RELEASE",
+        "message": "This tradition is outside the ISKCON-only first public release. Its calculation code remains available for local research. No alternative calendar is substituted."
+      },
+      "requested": "malayalam",
+      "publicTraditions": [
+        "iskcon"
+      ]
+    },
+    "elapsedMillis": 20.388900069519877
+  },
+  {
+    "path": "/v2/day/bengali/2026-01-01?lat=23.416666666666668&lon=88.38333333333334&tz=Asia/Kolkata",
+    "status": 422,
+    "headers": {
+      "Cache-Control": "no-store",
+      "Content-Length": "440",
+      "Content-Type": "application/json",
+      "Connection": "close"
+    },
+    "body": {
+      "service": "panchang-api",
+      "schemaVersion": 1,
+      "publication": {
+        "state": "UNSUPPORTED",
+        "guidance": "WITHHELD",
+        "absenceMeaning": "GUIDANCE_WITHHELD_NOT_NO_EVENT"
+      },
+      "error": {
+        "status": 422,
+        "code": "SAMPRADAYA_OUTSIDE_RELEASE",
+        "message": "This tradition is outside the ISKCON-only first public release. Its calculation code remains available for local research. No alternative calendar is substituted."
+      },
+      "requested": "bengali",
+      "publicTraditions": [
+        "iskcon"
+      ]
+    },
+    "elapsedMillis": 14.872899977490306
+  },
+  {
+    "path": "/v2/calendar/bengali/2026?lat=23.416666666666668&lon=88.38333333333334&tz=Asia/Kolkata",
+    "status": 422,
+    "headers": {
+      "Cache-Control": "no-store",
+      "Content-Length": "440",
+      "Content-Type": "application/json",
+      "Connection": "close"
+    },
+    "body": {
+      "service": "panchang-api",
+      "schemaVersion": 1,
+      "publication": {
+        "state": "UNSUPPORTED",
+        "guidance": "WITHHELD",
+        "absenceMeaning": "GUIDANCE_WITHHELD_NOT_NO_EVENT"
+      },
+      "error": {
+        "status": 422,
+        "code": "SAMPRADAYA_OUTSIDE_RELEASE",
+        "message": "This tradition is outside the ISKCON-only first public release. Its calculation code remains available for local research. No alternative calendar is substituted."
+      },
+      "requested": "bengali",
+      "publicTraditions": [
+        "iskcon"
+      ]
+    },
+    "elapsedMillis": 15.01019997522235
+  },
+  {
+    "path": "/v2/day/odia/2026-01-01?lat=23.416666666666668&lon=88.38333333333334&tz=Asia/Kolkata",
+    "status": 422,
+    "headers": {
+      "Cache-Control": "no-store",
+      "Content-Length": "437",
+      "Content-Type": "application/json",
+      "Connection": "close"
+    },
+    "body": {
+      "service": "panchang-api",
+      "schemaVersion": 1,
+      "publication": {
+        "state": "UNSUPPORTED",
+        "guidance": "WITHHELD",
+        "absenceMeaning": "GUIDANCE_WITHHELD_NOT_NO_EVENT"
+      },
+      "error": {
+        "status": 422,
+        "code": "SAMPRADAYA_OUTSIDE_RELEASE",
+        "message": "This tradition is outside the ISKCON-only first public release. Its calculation code remains available for local research. No alternative calendar is substituted."
+      },
+      "requested": "odia",
+      "publicTraditions": [
+        "iskcon"
+      ]
+    },
+    "elapsedMillis": 17.464699922129512
+  },
+  {
+    "path": "/v2/calendar/odia/2026?lat=23.416666666666668&lon=88.38333333333334&tz=Asia/Kolkata",
+    "status": 422,
+    "headers": {
+      "Cache-Control": "no-store",
+      "Content-Length": "437",
+      "Content-Type": "application/json",
+      "Connection": "close"
+    },
+    "body": {
+      "service": "panchang-api",
+      "schemaVersion": 1,
+      "publication": {
+        "state": "UNSUPPORTED",
+        "guidance": "WITHHELD",
+        "absenceMeaning": "GUIDANCE_WITHHELD_NOT_NO_EVENT"
+      },
+      "error": {
+        "status": 422,
+        "code": "SAMPRADAYA_OUTSIDE_RELEASE",
+        "message": "This tradition is outside the ISKCON-only first public release. Its calculation code remains available for local research. No alternative calendar is substituted."
+      },
+      "requested": "odia",
+      "publicTraditions": [
+        "iskcon"
+      ]
+    },
+    "elapsedMillis": 13.902000151574612
+  },
+  {
+    "path": "/v2/calendar/iskcon/2026?lat=23.416666666666668&lon=88.38333333333334&tz=Asia/Kolkata",
+    "status": 200,
+    "headers": {
+      "Cache-Control": "no-store",
+      "Content-Length": "5025",
+      "Content-Type": "application/json",
+      "Connection": "close"
+    },
+    "body": {
+      "service": "panchang-api",
+      "schemaVersion": 2,
+      "publication": {
+        "contract": "publication-v2",
+        "releaseScope": "first-release-iskcon-2026-09-16",
+        "calculation": "CALCULATED",
+        "validation": "SEPARATE_EVIDENCE_RECORDS_NOT_APPROVAL",
+        "humanApprovalRequired": true,
+        "qualifiedReviewQuestions": [
+          {
+            "id": "RARE-NAKSHATRA-QUALIFIERS",
+            "traditions": [
+              "iskcon"
+            ],
+            "fields": [
+              "OBSERVANCES"
+            ],
+            "description": "Jaya, Jayanti and Papanasini lack positive coverage; next-sunrise survival qualifiers remain inferred.",
+            "evidence": [
+              {
+                "link": "docs/audits/2026-09-12/AUDIT.md",
+                "sha256": "a40444c43b222725030d614a24aff0a6b34546f92bd941531aaa9d51be4d83e2",
+                "outcome": "UNRESOLVED_REVIEW_QUESTIONS"
+              }
+            ]
+          },
+          {
+            "id": "UNMILANI-PURITY-NAMING",
+            "traditions": [
+              "iskcon"
+            ],
+            "fields": [
+              "OBSERVANCES"
+            ],
+            "description": "Unmilani purity and naming qualifiers require qualified tradition review.",
+            "evidence": [
+              {
+                "link": "docs/audits/2026-09-12/AUDIT.md",
+                "sha256": "a40444c43b222725030d614a24aff0a6b34546f92bd941531aaa9d51be4d83e2",
+                "outcome": "UNRESOLVED_REVIEW_QUESTIONS"
+              }
+            ]
+          },
+          {
+            "id": "FAST-ENDING-ANCHORS",
+            "traditions": [
+              "iskcon"
+            ],
+            "fields": [
+              "EVENTS"
+            ],
+            "description": "Dusk versus civil twilight, midnight versus Nisita and interval-edge choice need an approved policy.",
+            "evidence": [
+              {
+                "link": "docs/audits/2026-09-12/AUDIT.md",
+                "sha256": "a40444c43b222725030d614a24aff0a6b34546f92bd941531aaa9d51be4d83e2",
+                "outcome": "UNRESOLVED_REVIEW_QUESTIONS"
+              }
+            ]
+          },
+          {
+            "id": "CATALOG-INTERPRETATIONS",
+            "traditions": [
+              "iskcon"
+            ],
+            "fields": [
+              "EVENTS"
+            ],
+            "description": "Ramanuja tithi versus regional nakshatra reckoning and Damodara closing labels remain human review questions.",
+            "evidence": [
+              {
+                "link": "docs/audits/2026-09-12/AUDIT.md",
+                "sha256": "a40444c43b222725030d614a24aff0a6b34546f92bd941531aaa9d51be4d83e2",
+                "outcome": "UNRESOLVED_REVIEW_QUESTIONS"
+              }
+            ]
+          },
+          {
+            "id": "HIGH-LATITUDE-OBSERVANCE",
+            "traditions": [
+              "iskcon"
+            ],
+            "fields": [
+              "EVENTS",
+              "OBSERVANCES"
+            ],
+            "description": "Assess whether this exact release scope uses high-latitude conditions lacking an authoritative observance oracle; record not-applicable reasoning when appropriate.",
+            "evidence": [
+              {
+                "link": "docs/audits/2026-09-12/AUDIT.md",
+                "sha256": "a40444c43b222725030d614a24aff0a6b34546f92bd941531aaa9d51be4d83e2",
+                "outcome": "UNRESOLVED_REVIEW_QUESTIONS"
+              }
+            ]
+          },
+          {
+            "id": "REFERENCE-COVERAGE",
+            "traditions": [
+              "iskcon"
+            ],
+            "fields": [
+              "EVENTS",
+              "OBSERVANCES"
+            ],
+            "description": "Review actual reference year/location coverage, missing 2028 calendars, uncertainty and exclusions; passing tests do not fill gaps.",
+            "evidence": [
+              {
+                "link": "docs/audits/2026-09-12/AUDIT.md",
+                "sha256": "a40444c43b222725030d614a24aff0a6b34546f92bd941531aaa9d51be4d83e2",
+                "outcome": "UNRESOLVED_REVIEW_QUESTIONS"
+              }
+            ]
+          }
+        ],
+        "legacyPublication": "REFUSED_CONTRACT_CANNOT_EXPRESS_WITHHOLDING"
+      },
+      "request": {
+        "sampradaya": "iskcon",
+        "year": 2026,
+        "scope": "YEAR"
+      },
+      "location": {
+        "coordinateSource": "CALLER_COORDINATES",
+        "query": "lat=23.416666666666668&lon=88.38333333333334&tz=Asia/Kolkata",
+        "coordinatesUsed": {
+          "latitude": 23.416666666666668,
+          "longitude": 88.38333333333334,
+          "timeZone": "Asia/Kolkata",
+          "elevationMeters": 0.0
+        },
+        "nearestPlaceLabel": {
+          "place": {
+            "geonameId": 1261669,
+            "name": "Navadw\u012bp",
+            "asciiName": "Navadwip",
+            "kind": "CITY",
+            "country": "IN",
+            "admin1": "West Bengal",
+            "population": 111123,
+            "latitude": 23.4067,
+            "longitude": 88.36861,
+            "timeZone": "Asia/Kolkata",
+            "attribution": "Place data \u00a9 GeoNames (https://www.geonames.org/), used under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)."
+          },
+          "distanceKm": 1.87,
+          "note": "A label for the coordinates supplied. Nothing was computed at this record's point."
+        },
+        "notes": [
+          "Computed at the coordinates you supplied, not at any place record. The place name below, if any, is a label only."
+        ]
+      },
+      "ekadashiYear": {
+        "schemaVersion": 2,
+        "year": 2026,
+        "site": {
+          "latitude": 23.416666666666668,
+          "longitude": 88.38333333333334,
+          "timeZone": "Asia/Kolkata",
+          "elevationMeters": 0.0
+        },
+        "sampradaya": {
+          "id": "iskcon",
+          "displayName": "ISKCON / Gaudiya Vaishnava"
+        },
+        "publication": {
+          "state": "MISSING_EVIDENCE",
+          "guidance": "WITHHELD",
+          "field": "OBSERVANCES",
+          "coverage": {
+            "from": "2026-01-01",
+            "through": "2026-12-31"
+          },
+          "bundleFingerprint": "51b189ec5ca44346785a2beb29c6a4414117ff99913ded1ab62c1b9a217b9d80",
+          "approvalRecordId": null,
+          "approverKeyId": null,
+          "approvedAt": null,
+          "issues": [],
+          "explanation": "No approved reference-policy evidence is configured"
+        },
+        "diagnosticClassificationsAreNotApproval": true,
+        "observances": null,
+        "absenceMeaning": "GUIDANCE_WITHHELD_NOT_NO_EVENT"
+      },
+      "yearResolution": {
+        "schemaVersion": 2,
+        "year": 2026,
+        "site": {
+          "latitude": 23.416666666666668,
+          "longitude": 88.38333333333334,
+          "timeZone": "Asia/Kolkata",
+          "elevationMeters": 0.0
+        },
+        "sampradaya": {
+          "id": "iskcon",
+          "displayName": "ISKCON / Gaudiya Vaishnava"
+        },
+        "publication": {
+          "state": "MISSING_EVIDENCE",
+          "guidance": "WITHHELD",
+          "field": "EVENTS",
+          "coverage": {
+            "from": "2026-01-01",
+            "through": "2026-12-31"
+          },
+          "bundleFingerprint": "51b189ec5ca44346785a2beb29c6a4414117ff99913ded1ab62c1b9a217b9d80",
+          "approvalRecordId": null,
+          "approverKeyId": null,
+          "approvedAt": null,
+          "issues": [],
+          "explanation": "No approved reference-policy evidence is configured"
+        },
+        "diagnosticClassificationsAreNotApproval": true,
+        "events": null,
+        "unresolved": null,
+        "absenceMeaning": "GUIDANCE_WITHHELD_NOT_NO_EVENT"
+      }
+    },
+    "elapsedMillis": 278.0161998234689
+  }
+]

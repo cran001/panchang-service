@@ -1,0 +1,29 @@
+{
+  "id": "calendar-sydney-2026",
+  "url": "https://www.vaisnavacalendar.info/calendars/2026/Sydney%20%5BAustralia%5D.txt",
+  "kind": "calendar",
+  "retrievedAtUtc": "2026-09-21T09:05:53.072409+00:00",
+  "cityId": "sydney",
+  "year": 2026,
+  "lineage": "vaisnavacalendar.info/GCal-text",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": 200,
+  "finalUrl": "https://www.vaisnavacalendar.info/calendars/2026/Sydney%20%5BAustralia%5D.txt",
+  "responseHeaders": {
+    "Date": "Mon, 21 Sep 2026 09:05:53 GMT",
+    "Server": "Apache/2",
+    "Upgrade": "h2,h2c",
+    "Connection": "Upgrade, close",
+    "Last-Modified": "Sun, 19 Jan 2025 15:13:33 GMT",
+    "ETag": "\"a2f8-62c10965b8cd9\"",
+    "Accept-Ranges": "bytes",
+    "Content-Length": "41720",
+    "Vary": "Accept-Encoding,User-Agent",
+    "Content-Type": "text/plain"
+  },
+  "file": "docs/release/2026-09-21/sources/calendar-sydney-2026.raw",
+  "sha256": "0fbd0ac1f3b61a96a059375f20ef34099064d74a2c8d48b4f1267a50a635e076",
+  "bytes": 41720
+}

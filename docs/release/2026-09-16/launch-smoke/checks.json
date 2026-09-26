@@ -1,0 +1,111 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "path": "/v1/meta",
+      "publicTraditions": [
+        "iskcon"
+      ]
+    },
+    {
+      "path": "/v1/day/marathi/2026-01-01",
+      "status": 422
+    },
+    {
+      "path": "/v1/calendar/marathi/2026",
+      "status": 422
+    },
+    {
+      "path": "/v1/day/telugu/2026-01-01",
+      "status": 422
+    },
+    {
+      "path": "/v1/calendar/telugu/2026",
+      "status": 422
+    },
+    {
+      "path": "/v1/day/kannada/2026-01-01",
+      "status": 422
+    },
+    {
+      "path": "/v1/calendar/kannada/2026",
+      "status": 422
+    },
+    {
+      "path": "/v1/day/gujarati/2026-01-01",
+      "status": 422
+    },
+    {
+      "path": "/v1/calendar/gujarati/2026",
+      "status": 422
+    },
+    {
+      "path": "/v1/day/northindian/2026-01-01",
+      "status": 422
+    },
+    {
+      "path": "/v1/calendar/northindian/2026",
+      "status": 422
+    },
+    {
+      "path": "/v1/day/tamil/2026-01-01",
+      "status": 422
+    },
+    {
+      "path": "/v1/calendar/tamil/2026",
+      "status": 422
+    },
+    {
+      "path": "/v1/day/malayalam/2026-01-01",
+      "status": 422
+    },
+    {
+      "path": "/v1/calendar/malayalam/2026",
+      "status": 422
+    },
+    {
+      "path": "/v1/day/bengali/2026-01-01",
+      "status": 422
+    },
+    {
+      "path": "/v1/calendar/bengali/2026",
+      "status": 422
+    },
+    {
+      "path": "/v1/day/odia/2026-01-01",
+      "status": 422
+    },
+    {
+      "path": "/v1/calendar/odia/2026",
+      "status": 422
+    },
+    {
+      "path": "/v1/day/iskcon/2026-01-01",
+      "status": 200,
+      "guidance": "WITHHELD"
+    }
+  ],
+  "serverCommand": [
+    "java",
+    "-cp",
+    "D:\\projects\\panchang-service\\api\\build\\install\\api\\lib\\*",
+    "org.panchang.api.MainKt"
+  ],
+  "publisherCommand": [
+    "java",
+    "-cp",
+    "D:\\projects\\panchang-service\\publish\\build\\install\\publish\\lib\\*",
+    "org.panchang.publish.MainKt",
+    "--sites",
+    "D:\\projects\\panchang-service\\docs\\release\\2026-09-16\\launch-smoke\\sites.txt",
+    "--year",
+    "2026",
+    "--sampradaya",
+    "marathi",
+    "--out",
+    "D:\\projects\\panchang-service\\docs\\release\\2026-09-16\\launch-smoke\\refused-feed"
+  ],
+  "excludedPublisherExit": 1,
+  "approvalsCreated": false,
+  "deployed": false
+}

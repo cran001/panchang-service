@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.verify.ProvenanceAndCacheTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-09-12T20:45:13" hostname="DESKTOP-KBUKJ2P" time="0.169">
+  <properties/>
+  <testcase name="stamps every field a re-fetch would need(Path)" classname="org.panchang.verify.ProvenanceAndCacheTest" time="0.047"/>
+  <testcase name="offline mode labels an expired artifact as stale(Path)" classname="org.panchang.verify.ProvenanceAndCacheTest" time="0.023"/>
+  <testcase name="writes the raw bytes beside the stamp, byte for byte(Path)" classname="org.panchang.verify.ProvenanceAndCacheTest" time="0.016"/>
+  <testcase name="distinct queries never share a cache slot()" classname="org.panchang.verify.ProvenanceAndCacheTest" time="0.002"/>
+  <testcase name="ignores an artifact harvested by an older request shape(Path)" classname="org.panchang.verify.ProvenanceAndCacheTest" time="0.011"/>
+  <testcase name="treats an artifact past its TTL as absent(Path)" classname="org.panchang.verify.ProvenanceAndCacheTest" time="0.016"/>
+  <testcase name="refuses a cached artifact whose bytes no longer match its digest(Path)" classname="org.panchang.verify.ProvenanceAndCacheTest" time="0.012"/>
+  <testcase name="a fetch failure propagates unless stale fallback was asked for(Path)" classname="org.panchang.verify.ProvenanceAndCacheTest" time="0.014"/>
+  <testcase name="a second harvest of the same query does not touch the network(Path)" classname="org.panchang.verify.ProvenanceAndCacheTest" time="0.011"/>
+  <testcase name="offline mode fails with an actionable message instead of inventing data(Path)" classname="org.panchang.verify.ProvenanceAndCacheTest" time="0.008"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

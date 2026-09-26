@@ -1,0 +1,11 @@
+{
+  "id": "gcal-rules",
+  "url": "https://gopal.home.sk/gcal/docs/GCalVaisnavaCalculation.pdf",
+  "kind": "upstream-documentation",
+  "retrievedAtUtc": "2026-09-15T19:52:55.651657+00:00",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": null,
+  "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'gopal.home.sk'. (_ssl.c:1016)>"
+}

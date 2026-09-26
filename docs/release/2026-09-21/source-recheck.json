@@ -1,0 +1,272 @@
+[
+  {
+    "input": "calendar-ahmedabad-2025.json",
+    "sourceMetadata": "docs/release/2026-09-16/sources/calendar-ahmedabad-2025.json",
+    "samePriorBytes": true,
+    "freshRetrieval": false
+  },
+  {
+    "input": "calendar-ahmedabad-2026.json",
+    "sourceMetadata": "docs/release/2026-09-21/sources/calendar-ahmedabad-2026.json",
+    "samePriorBytes": true,
+    "freshRetrieval": true
+  },
+  {
+    "input": "calendar-ahmedabad-2027.json",
+    "sourceMetadata": "docs/release/2026-09-16/sources/calendar-ahmedabad-2027.json",
+    "samePriorBytes": true,
+    "freshRetrieval": false
+  },
+  {
+    "input": "calendar-auckland-2025.json",
+    "sourceMetadata": "docs/release/2026-09-16/sources/calendar-auckland-2025.json",
+    "samePriorBytes": true,
+    "freshRetrieval": false
+  },
+  {
+    "input": "calendar-auckland-2026.json",
+    "sourceMetadata": "docs/release/2026-09-21/sources/calendar-auckland-2026.json",
+    "samePriorBytes": true,
+    "freshRetrieval": true
+  },
+  {
+    "input": "calendar-auckland-2027.json",
+    "sourceMetadata": "docs/release/2026-09-16/sources/calendar-auckland-2027.json",
+    "samePriorBytes": true,
+    "freshRetrieval": false
+  },
+  {
+    "input": "calendar-bangalore-2025.json",
+    "sourceMetadata": "docs/release/2026-09-16/sources/calendar-bangalore-2025.json",
+    "samePriorBytes": true,
+    "freshRetrieval": false
+  },
+  {
+    "input": "calendar-bangalore-2026.json",
+    "sourceMetadata": "docs/release/2026-09-21/sources/calendar-bangalore-2026-retry.json",
+    "samePriorBytes": true,
+    "freshRetrieval": true
+  },
+  {
+    "input": "calendar-bangalore-2027.json",
+    "sourceMetadata": "docs/release/2026-09-16/sources/calendar-bangalore-2027.json",
+    "samePriorBytes": true,
+    "freshRetrieval": false
+  },
+  {
+    "input": "calendar-chennai-2025.json",
+    "sourceMetadata": "docs/release/2026-09-16/sources/calendar-chennai-2025.json",
+    "samePriorBytes": true,
+    "freshRetrieval": false
+  },
+  {
+    "input": "calendar-chennai-2026.json",
+    "sourceMetadata": "docs/release/2026-09-21/sources/calendar-chennai-2026.json",
+    "samePriorBytes": true,
+    "freshRetrieval": true
+  },
+  {
+    "input": "calendar-chennai-2027.json",
+    "sourceMetadata": "docs/release/2026-09-16/sources/calendar-chennai-2027.json",
+    "samePriorBytes": true,
+    "freshRetrieval": false
+  },
+  {
+    "input": "calendar-delhi-2025.json",
+    "sourceMetadata": "docs/release/2026-09-16/sources/calendar-delhi-2025.json",
+    "samePriorBytes": true,
+    "freshRetrieval": false
+  },
+  {
+    "input": "calendar-delhi-2026.json",
+    "sourceMetadata": "docs/release/2026-09-21/sources/calendar-delhi-2026.json",
+    "samePriorBytes": true,
+    "freshRetrieval": true
+  },
+  {
+    "input": "calendar-delhi-2027.json",
+    "sourceMetadata": "docs/release/2026-09-16/sources/calendar-delhi-2027.json",
+    "samePriorBytes": true,
+    "freshRetrieval": false
+  },
+  {
+    "input": "calendar-guwahati-2025.json",
+    "sourceMetadata": "docs/release/2026-09-16/sources/calendar-guwahati-2025.json",
+    "samePriorBytes": true,
+    "freshRetrieval": false
+  },
+  {
+    "input": "calendar-guwahati-2026.json",
+    "sourceMetadata": "docs/release/2026-09-21/sources/calendar-guwahati-2026.json",
+    "samePriorBytes": true,
+    "freshRetrieval": true
+  },
+  {
+    "input": "calendar-guwahati-2027.json",
+    "sourceMetadata": "docs/release/2026-09-16/sources/calendar-guwahati-2027.json",
+    "samePriorBytes": true,
+    "freshRetrieval": false
+  },
+  {
+    "input": "calendar-hyderabad-2025.json",
+    "sourceMetadata": "docs/release/2026-09-16/sources/calendar-hyderabad-2025.json",
+    "samePriorBytes": true,
+    "freshRetrieval": false
+  },
+  {
+    "input": "calendar-hyderabad-2026.json",
+    "sourceMetadata": "docs/release/2026-09-21/sources/calendar-hyderabad-2026.json",
+    "samePriorBytes": true,
+    "freshRetrieval": true
+  },
+  {
+    "input": "calendar-hyderabad-2027.json",
+    "sourceMetadata": "docs/release/2026-09-16/sources/calendar-hyderabad-2027.json",
+    "samePriorBytes": true,
+    "freshRetrieval": false
+  },
+  {
+    "input": "calendar-london-2025.json",
+    "sourceMetadata": "docs/release/2026-09-16/sources/calendar-london-2025.json",
+    "samePriorBytes": true,
+    "freshRetrieval": false
+  },
+  {
+    "input": "calendar-london-2026.json",
+    "sourceMetadata": "docs/release/2026-09-21/sources/calendar-london-2026.json",
+    "samePriorBytes": true,
+    "freshRetrieval": true
+  },
+  {
+    "input": "calendar-london-2027.json",
+    "sourceMetadata": "docs/release/2026-09-16/sources/calendar-london-2027.json",
+    "samePriorBytes": true,
+    "freshRetrieval": false
+  },
+  {
+    "input": "calendar-mayapur-2025.json",
+    "sourceMetadata": "docs/release/2026-09-16/sources/calendar-mayapur-2025.json",
+    "samePriorBytes": true,
+    "freshRetrieval": false
+  },
+  {
+    "input": "calendar-mayapur-2026.json",
+    "sourceMetadata": "docs/release/2026-09-21/sources/calendar-mayapur-2026.json",
+    "samePriorBytes": true,
+    "freshRetrieval": true
+  },
+  {
+    "input": "calendar-mayapur-2027.json",
+    "sourceMetadata": "docs/release/2026-09-16/sources/calendar-mayapur-2027.json",
+    "samePriorBytes": true,
+    "freshRetrieval": false
+  },
+  {
+    "input": "calendar-moscow-2025.json",
+    "sourceMetadata": "docs/release/2026-09-16/sources/calendar-moscow-2025.json",
+    "samePriorBytes": true,
+    "freshRetrieval": false
+  },
+  {
+    "input": "calendar-moscow-2026.json",
+    "sourceMetadata": "docs/release/2026-09-21/sources/calendar-moscow-2026.json",
+    "samePriorBytes": true,
+    "freshRetrieval": true
+  },
+  {
+    "input": "calendar-moscow-2027.json",
+    "sourceMetadata": "docs/release/2026-09-16/sources/calendar-moscow-2027.json",
+    "samePriorBytes": true,
+    "freshRetrieval": false
+  },
+  {
+    "input": "calendar-mumbai-2025.json",
+    "sourceMetadata": "docs/release/2026-09-16/sources/calendar-mumbai-2025.json",
+    "samePriorBytes": true,
+    "freshRetrieval": false
+  },
+  {
+    "input": "calendar-mumbai-2026.json",
+    "sourceMetadata": "docs/release/2026-09-21/sources/calendar-mumbai-2026.json",
+    "samePriorBytes": true,
+    "freshRetrieval": true
+  },
+  {
+    "input": "calendar-mumbai-2027.json",
+    "sourceMetadata": "docs/release/2026-09-16/sources/calendar-mumbai-2027.json",
+    "samePriorBytes": true,
+    "freshRetrieval": false
+  },
+  {
+    "input": "calendar-new-york-2025.json",
+    "sourceMetadata": "docs/release/2026-09-16/sources/calendar-new-york-2025.json",
+    "samePriorBytes": true,
+    "freshRetrieval": false
+  },
+  {
+    "input": "calendar-new-york-2026.json",
+    "sourceMetadata": "docs/release/2026-09-21/sources/calendar-new-york-2026.json",
+    "samePriorBytes": true,
+    "freshRetrieval": true
+  },
+  {
+    "input": "calendar-new-york-2027.json",
+    "sourceMetadata": "docs/release/2026-09-16/sources/calendar-new-york-2027.json",
+    "samePriorBytes": true,
+    "freshRetrieval": false
+  },
+  {
+    "input": "calendar-sao-paulo-2025.json",
+    "sourceMetadata": "docs/release/2026-09-16/sources/calendar-sao-paulo-2025.json",
+    "samePriorBytes": true,
+    "freshRetrieval": false
+  },
+  {
+    "input": "calendar-sao-paulo-2026.json",
+    "sourceMetadata": "docs/release/2026-09-21/sources/calendar-sao-paulo-2026.json",
+    "samePriorBytes": true,
+    "freshRetrieval": true
+  },
+  {
+    "input": "calendar-sao-paulo-2027.json",
+    "sourceMetadata": "docs/release/2026-09-16/sources/calendar-sao-paulo-2027.json",
+    "samePriorBytes": true,
+    "freshRetrieval": false
+  },
+  {
+    "input": "calendar-sydney-2025.json",
+    "sourceMetadata": "docs/release/2026-09-16/sources/calendar-sydney-2025.json",
+    "samePriorBytes": true,
+    "freshRetrieval": false
+  },
+  {
+    "input": "calendar-sydney-2026.json",
+    "sourceMetadata": "docs/release/2026-09-21/sources/calendar-sydney-2026.json",
+    "samePriorBytes": true,
+    "freshRetrieval": true
+  },
+  {
+    "input": "calendar-sydney-2027.json",
+    "sourceMetadata": "docs/release/2026-09-16/sources/calendar-sydney-2027.json",
+    "samePriorBytes": true,
+    "freshRetrieval": false
+  },
+  {
+    "input": "calendar-vrindavan-2025.json",
+    "sourceMetadata": "docs/release/2026-09-16/sources/calendar-vrindavan-2025.json",
+    "samePriorBytes": true,
+    "freshRetrieval": false
+  },
+  {
+    "input": "calendar-vrindavan-2026.json",
+    "sourceMetadata": "docs/release/2026-09-21/sources/calendar-vrindavan-2026.json",
+    "samePriorBytes": true,
+    "freshRetrieval": true
+  },
+  {
+    "input": "calendar-vrindavan-2027.json",
+    "sourceMetadata": "docs/release/2026-09-16/sources/calendar-vrindavan-2027.json",
+    "samePriorBytes": true,
+    "freshRetrieval": false
+  }
+]

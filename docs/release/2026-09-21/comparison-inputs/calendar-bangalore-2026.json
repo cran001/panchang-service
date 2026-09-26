@@ -1,0 +1,28 @@
+{
+  "id": "calendar-bangalore-2026-retry",
+  "url": "https://www.vaisnavacalendar.info/calendars/2026/Bangalore%20%5BIndia%5D.txt",
+  "kind": "calendar-retrieval-retry-after-timeout",
+  "retrievedAtUtc": "2026-09-21T13:39:19.811598+00:00",
+  "cityId": "bangalore",
+  "year": 2026,
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": 200,
+  "finalUrl": "https://www.vaisnavacalendar.info/calendars/2026/Bangalore%20%5BIndia%5D.txt",
+  "responseHeaders": {
+    "Date": "Mon, 21 Sep 2026 13:39:21 GMT",
+    "Server": "Apache/2",
+    "Upgrade": "h2,h2c",
+    "Connection": "Upgrade, close",
+    "Last-Modified": "Sun, 19 Jan 2025 15:13:10 GMT",
+    "ETag": "\"a21d-62c1094f9b64a\"",
+    "Accept-Ranges": "bytes",
+    "Content-Length": "41501",
+    "Vary": "Accept-Encoding,User-Agent",
+    "Content-Type": "text/plain"
+  },
+  "file": "docs/release/2026-09-21/sources/calendar-bangalore-2026-retry.raw",
+  "sha256": "781f54e9914e832ea16fd4787aa89a559dece9b639858be4f94479be21903972",
+  "bytes": 41501
+}

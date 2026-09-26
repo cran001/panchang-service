@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.core.DayDivisionsTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2026-09-11T22:47:52" hostname="DESKTOP-KBUKJ2P" time="0.055">
+  <properties/>
+  <testcase name="an interval contains its start but not its end()" classname="org.panchang.core.DayDivisionsTest" time="0.001"/>
+  <testcase name="an inverted or non-finite interval is rejected()" classname="org.panchang.core.DayDivisionsTest" time="0.003"/>
+  <testcase name="divisions of a real day fall between sunrise and sunset()" classname="org.panchang.core.DayDivisionsTest" time="0.011"/>
+  <testcase name="all seven weekdays are covered by each table()" classname="org.panchang.core.DayDivisionsTest" time="0.001"/>
+  <testcase name="part indices are one-based and out-of-range parts are rejected()" classname="org.panchang.core.DayDivisionsTest" time="0.008"/>
+  <testcase name="the three eighth-part periods never coincide on any weekday()" classname="org.panchang.core.DayDivisionsTest" time="0.001"/>
+  <testcase name="a longer day makes every division proportionally longer()" classname="org.panchang.core.DayDivisionsTest" time="0.001"/>
+  <testcase name="the fifteen muhurtas tile daylight exactly()" classname="org.panchang.core.DayDivisionsTest" time="0.003"/>
+  <testcase name="the rahu kaal weekday table is the standard one()" classname="org.panchang.core.DayDivisionsTest" time="0.002"/>
+  <testcase name="the gulika weekday table is the standard one()" classname="org.panchang.core.DayDivisionsTest" time="0.003"/>
+  <testcase name="the yamaganda weekday table is the standard one()" classname="org.panchang.core.DayDivisionsTest" time="0.001"/>
+  <testcase name="rahu kaal spans one eighth of daylight for a real site()" classname="org.panchang.core.DayDivisionsTest" time="0.002"/>
+  <testcase name="the eight parts tile daylight exactly()" classname="org.panchang.core.DayDivisionsTest" time="0.002"/>
+  <testcase name="abhijit is the eighth muhurta and is centred on the middle of daylight()" classname="org.panchang.core.DayDivisionsTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

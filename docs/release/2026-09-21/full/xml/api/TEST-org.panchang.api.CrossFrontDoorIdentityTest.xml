@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.api.CrossFrontDoorIdentityTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-09-22T08:07:25" hostname="DESKTOP-KBUKJ2P" time="168.959">
+  <properties/>
+  <testcase name="publication metadata is explicit in both self describing roots()" classname="org.panchang.api.CrossFrontDoorIdentityTest" time="40.168"/>
+  <testcase name="a single day at the same coordinates is byte-identical through both front doors()" classname="org.panchang.api.CrossFrontDoorIdentityTest" time="45.853"/>
+  <testcase name="both doors resolve the same request to the same site, and say so the same way()" classname="org.panchang.api.CrossFrontDoorIdentityTest" time="62.261"/>
+  <testcase name="a year at the same coordinates is byte-identical through both front doors()" classname="org.panchang.api.CrossFrontDoorIdentityTest" time="0.028"/>
+  <testcase name="the compact form carries the same document as the file form()" classname="org.panchang.api.CrossFrontDoorIdentityTest" time="20.631"/>
+  <testcase name="a place-resolved year is byte-identical through both front doors()" classname="org.panchang.api.CrossFrontDoorIdentityTest" time="0.012"/>
+  <system-out><![CDATA[08:07:25.852 [DefaultDispatcher-worker-2 @call-context#2] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+08:07:26.576 [DefaultDispatcher-worker-2 @call-context#2] INFO ktor.test -- Application started in 0.751 seconds.
+08:07:26.580 [DefaultDispatcher-worker-3 @coroutine#4] INFO ktor.test -- Responding at http://localhost:80
+08:07:26.581 [DefaultDispatcher-worker-3 @coroutine#4] INFO ktor.test -- Responding at https://localhost:443
+08:08:29.827 [DefaultDispatcher-worker-3 @call-context#11] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+08:08:29.829 [DefaultDispatcher-worker-3 @call-context#11] INFO ktor.test -- Application started in 0.003 seconds.
+08:08:29.830 [DefaultDispatcher-worker-2 @coroutine#13] INFO ktor.test -- Responding at http://localhost:80
+08:08:29.830 [DefaultDispatcher-worker-2 @coroutine#13] INFO ktor.test -- Responding at https://localhost:443
+08:09:32.374 [DefaultDispatcher-worker-3 @call-context#20] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+08:09:32.377 [DefaultDispatcher-worker-3 @call-context#20] INFO ktor.test -- Application started in 0.004 seconds.
+08:09:32.378 [DefaultDispatcher-worker-4 @coroutine#22] INFO ktor.test -- Responding at http://localhost:80
+08:09:32.378 [DefaultDispatcher-worker-4 @coroutine#22] INFO ktor.test -- Responding at https://localhost:443
+08:09:53.625 [DefaultDispatcher-worker-10 @call-context#29] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+08:09:53.626 [DefaultDispatcher-worker-10 @call-context#29] INFO ktor.test -- Application started in 0.002 seconds.
+08:09:53.628 [DefaultDispatcher-worker-4 @coroutine#31] INFO ktor.test -- Responding at http://localhost:80
+08:09:53.628 [DefaultDispatcher-worker-4 @coroutine#31] INFO ktor.test -- Responding at https://localhost:443
+]]></system-out>
+  <system-err><![CDATA[SLF4J(I): Connected with provider of type [ch.qos.logback.classic.spi.LogbackServiceProvider]
+]]></system-err>
+</testsuite>

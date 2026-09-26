@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.wire.DeterminismTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-09-14T05:31:29" hostname="DESKTOP-KBUKJ2P" time="0.394">
+  <properties/>
+  <testcase name="output does not depend on the order the unresolved map was built in()" classname="org.panchang.wire.DeterminismTest" time="0.336"/>
+  <testcase name="two runs of the same input produce byte-identical output()" classname="org.panchang.wire.DeterminismTest" time="0.002"/>
+  <testcase name="output does not depend on the default locale()" classname="org.panchang.wire.DeterminismTest" time="0.007"/>
+  <testcase name="a Julian Day renders as the same characters every time()" classname="org.panchang.wire.DeterminismTest" time="0.001"/>
+  <testcase name="output does not depend on the default time zone()" classname="org.panchang.wire.DeterminismTest" time="0.042"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

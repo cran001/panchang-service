@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.api.PlaceRenderingTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-09-11T22:50:10" hostname="DESKTOP-KBUKJ2P" time="0.029">
+  <properties/>
+  <testcase name="both doors describe a gazetteer record with the same fields in the same order()" classname="org.panchang.api.PlaceRenderingTest" time="0.018"/>
+  <testcase name="the fields a district is identified by are all present()" classname="org.panchang.api.PlaceRenderingTest" time="0.01"/>
+  <system-out><![CDATA[22:50:10.488 [DefaultDispatcher-worker-8 @call-context#47] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+22:50:10.489 [DefaultDispatcher-worker-8 @call-context#47] INFO ktor.test -- Application started in 0.003 seconds.
+22:50:10.489 [DefaultDispatcher-worker-7 @coroutine#49] INFO ktor.test -- Responding at http://localhost:80
+22:50:10.489 [DefaultDispatcher-worker-7 @coroutine#49] INFO ktor.test -- Responding at https://localhost:443
+22:50:10.505 [DefaultDispatcher-worker-6 @call-context#56] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+22:50:10.506 [DefaultDispatcher-worker-6 @call-context#56] INFO ktor.test -- Application started in 0.001 seconds.
+22:50:10.506 [DefaultDispatcher-worker-2 @coroutine#58] INFO ktor.test -- Responding at http://localhost:80
+22:50:10.506 [DefaultDispatcher-worker-2 @coroutine#58] INFO ktor.test -- Responding at https://localhost:443
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

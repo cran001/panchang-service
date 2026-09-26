@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.verify.IskconMumbaiParserTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-09-12T20:45:13" hostname="DESKTOP-KBUKJ2P" time="0.021">
+  <properties/>
+  <testcase name="fails rather than returning an empty notice when the sentence is gone()" classname="org.panchang.verify.IskconMumbaiParserTest" time="0.007"/>
+  <testcase name="refuses to report the JavaScript-rendered calendar page as empty()" classname="org.panchang.verify.IskconMumbaiParserTest" time="0.002"/>
+  <testcase name="reads the Ekadashi name and parana window from the notice()" classname="org.panchang.verify.IskconMumbaiParserTest" time="0.007"/>
+  <testcase name="normalises inconsistently written clock times()" classname="org.panchang.verify.IskconMumbaiParserTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

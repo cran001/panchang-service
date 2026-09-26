@@ -1,0 +1,42 @@
+{
+  "id": "gcal-astronomy",
+  "url": "https://raw.githubusercontent.com/gopaladasa/GCAL-for-Windows/9267f9fde9aefe2e60fb30c80a7ac9fc366fa585/documentation/GCalAstronomyDocumentation.pdf",
+  "kind": "upstream-documentation",
+  "retrievedAtUtc": "2026-09-15T19:52:53.690001+00:00",
+  "upstreamRevision": "9267f9fde9aefe2e60fb30c80a7ac9fc366fa585",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": 200,
+  "finalUrl": "https://raw.githubusercontent.com/gopaladasa/GCAL-for-Windows/9267f9fde9aefe2e60fb30c80a7ac9fc366fa585/documentation/GCalAstronomyDocumentation.pdf",
+  "responseHeaders": {
+    "Connection": "close",
+    "Content-Length": "28654",
+    "Cache-Control": "max-age=300",
+    "Content-Security-Policy": "default-src 'none'; style-src 'unsafe-inline'; sandbox",
+    "Content-Type": "application/octet-stream",
+    "ETag": "\"ef242bae3ae0ac3cddd738fcbee611f6e4afd39808578b09ed0868b4c8684b1d\"",
+    "Strict-Transport-Security": "max-age=31536000",
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "deny",
+    "X-XSS-Protection": "1; mode=block",
+    "X-GitHub-Request-Id": "990E:202F8B:40E3D:9A3FC:6AA9A214",
+    "x-github-edge-region": "centralindia",
+    "Accept-Ranges": "bytes",
+    "Date": "Tue, 15 Sep 2026 19:52:54 GMT",
+    "Via": "1.1 varnish",
+    "X-Served-By": "cache-bom-vanm7210050-BOM",
+    "X-Cache": "MISS",
+    "X-Cache-Hits": "0",
+    "X-Timer": "S1789501974.799321,VS0,VE286",
+    "Vary": "Authorization,Accept-Encoding",
+    "Access-Control-Allow-Origin": "*",
+    "Cross-Origin-Resource-Policy": "cross-origin",
+    "X-Fastly-Request-ID": "cde85e8b5d963bdf58bacdc6cc905e32f0c68334",
+    "Expires": "Tue, 15 Sep 2026 19:57:54 GMT",
+    "Source-Age": "0"
+  },
+  "file": "docs/release/2026-09-16/sources/gcal-astronomy.pdf",
+  "sha256": "ddda561e91d3005515a4e9f387e787a09b78407996fb4412c85b6b9f392f6542",
+  "bytes": 28654
+}

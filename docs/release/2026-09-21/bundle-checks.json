@@ -1,0 +1,32 @@
+[
+  {
+    "name": "priority",
+    "members": 7,
+    "fingerprint": "bac29c1ecbc3ffc945bc04a7bb14bdccca0e65d2ac508213a2d41426c14993e2",
+    "bundleBytesSha256": "f8f16846e36c4fb230e9182689e009611340cca22cbe4b200ea159a52687df3f",
+    "resultsAndVersionsMatchMeasurements": true,
+    "classification": "AI_ASSISTED_EVIDENCE_REVIEW",
+    "unsigned": true,
+    "realApproval": false
+  },
+  {
+    "name": "hold",
+    "members": 8,
+    "fingerprint": "c126d0044a9c72b98428235d7e3619a1dde8319db22dff2902bee0f7443bc9f5",
+    "bundleBytesSha256": "064f06883d1371b4f889f514c55e646db464ab154742d264d81834a300ba1004",
+    "resultsAndVersionsMatchMeasurements": true,
+    "classification": "AI_ASSISTED_EVIDENCE_REVIEW",
+    "unsigned": true,
+    "realApproval": false
+  },
+  {
+    "name": "alternative-sydney-through-december-04",
+    "members": 1,
+    "fingerprint": "0a0539a38fc77edd3c909b2d7f7567daa2e7e957c0f30b4bdae0ebd26eeb6523",
+    "bundleBytesSha256": "d5bda0df16bfa999f3fad057a3ce44d2a08c4c44a4125f37618eeddcb0b53250",
+    "resultsAndVersionsMatchMeasurements": true,
+    "classification": "AI_ASSISTED_EVIDENCE_REVIEW",
+    "unsigned": true,
+    "realApproval": false
+  }
+]

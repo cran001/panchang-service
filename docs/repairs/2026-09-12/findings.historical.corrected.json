@@ -1,0 +1,153 @@
+{
+  "auditDateLocal": "2026-09-12",
+  "timezone": "Asia/Kolkata",
+  "commit": "4e7fc3a54d8e3dcc8664a05adbb5689ec5db3b09",
+  "subjectIncludesExistingDirtyState": true,
+  "productionEdits": false,
+  "deploymentPerformed": false,
+  "publishingApprover": "owner",
+  "releaseReadinessEstablished": false,
+  "baseline": {
+    "tests": 633,
+    "passed": 624,
+    "failed": 9,
+    "errors": 0,
+    "skipped": 0,
+    "tagExcludedNetworkMethods": 7
+  },
+  "findings": [
+    {
+      "id": "DELIVERY-01",
+      "priority": "P1",
+      "classification": "confirmed_implementation_bug",
+      "case": "Mayapur day query 2026-01-01",
+      "expected": "Previous December fast's January 1 Parana is included",
+      "actual": "Zero observances",
+      "cause": "Fasting-year filter removes carryover before day filtering",
+      "evidence": [
+        "january-first-delivery.json",
+        "defect-tests.xml"
+      ]
+    },
+    {
+      "id": "DELIVERY-02",
+      "priority": "P1",
+      "classification": "confirmed_documented_rule_contract_bug",
+      "case": "Reykjavik Parana 2026-06-26",
+      "referenceDerivedDaylightThird": "2026-06-26T09:59:20Z",
+      "actualEnd": "2026-06-26T16:52:50.322Z",
+      "deltaSeconds": 24810.322,
+      "cause": "Same-civil-date sunset pairing drops a real sunrise-to-following-sunset daylight cap",
+      "humanObservanceApprovalStillRequired": true,
+      "evidence": [
+        "reykjavik-cap-comparison.json",
+        "high-latitude-diagnostics.json",
+        "defect-tests.xml"
+      ]
+    },
+    {
+      "id": "ASTRONOMY-01",
+      "priority": "P2",
+      "classification": "unresolved_numerical_reference_disagreement",
+      "case": "Reykjavik sunrise 2026-06-27",
+      "reference": "03:00 UTC, nearest minute",
+      "actual": "02:59:27.829 UTC",
+      "deltaSeconds": -32.171,
+      "predeclaredToleranceSeconds": 30,
+      "extraRefinementResolved": false,
+      "evidence": [
+        "reykjavik-sunrise-sensitivity.json",
+        "defect-tests.xml"
+      ]
+    },
+    {
+      "id": "OBSERVANCE-01",
+      "priority": "P1",
+      "classification": "unresolved_boundary_and_reference_policy",
+      "case": "Vrindavan Nirjala 2026",
+      "referenceDate": "2026-06-26",
+      "actualDate": "2026-06-25",
+      "deltaDays": -1,
+      "independentLunarBoundaryDifferenceSeconds": -1.372,
+      "sunriseOrderingResolved": false,
+      "evidence": [
+        "independent-boundaries.json",
+        "fasting-results.json",
+        "rule-diagnostics.json"
+      ]
+    },
+    {
+      "id": "OBSERVANCE-02",
+      "priority": "P1",
+      "classification": "unresolved_boundary_and_reference_policy",
+      "case": "Auckland Parana 2026-10-08",
+      "referenceEnd": "06:47 NZDT",
+      "actualEnd": "11:01:42.688 NZDT",
+      "deltaSeconds": 15282.688,
+      "independentLunarBoundaryDifferenceSeconds": -7.367,
+      "sunriseOrderingResolved": false,
+      "evidence": [
+        "independent-boundaries.json",
+        "parana-results.json",
+        "rule-diagnostics.json"
+      ]
+    },
+    {
+      "id": "OBSERVANCE-03",
+      "priority": "P2",
+      "classification": "unresolved_observance_rule_or_reference_label",
+      "cases": [
+        "Moscow 2026-05-27",
+        "Sydney 2026-12-05"
+      ],
+      "referenceType": null,
+      "actualType": "VANJULI",
+      "fastingDatesMatch": true,
+      "evidence": [
+        "fasting-results.json",
+        "rule-diagnostics.json"
+      ]
+    },
+    {
+      "id": "APPROVAL-01",
+      "priority": "P1",
+      "classification": "missing_recorded_authority_approval_and_overstated_verification",
+      "case": "Reference lineage/version, runtime confidence and dispute handling",
+      "actual": "VERIFIED tradition label and some disputed CONFIRMED decisions; no request-time reference disagreement detection",
+      "requiredDecision": "Owner and qualified reviewer approve source/version, overrides, withholding and uncertainty policy",
+      "evidence": [
+        "AUDIT.md",
+        "raw/publisher-policy.raw",
+        "fasting-results.json"
+      ]
+    }
+  ],
+  "otherUnresolvedCases": "EXCEPTIONS.md and AUDIT.md enumerate every comparison exception and pandit-review item",
+  "sharedPersistentCalculationCache": {
+    "exists": false,
+    "implementedDuringAudit": false,
+    "acceptanceTestsExecuted": false,
+    "acceptancePlan": "AUDIT.md section 8"
+  },
+  "machineComparisons": [
+    "summary.json",
+    "site-summary.json",
+    "fasting-results.json",
+    "parana-results.json",
+    "daily-field-comparisons.json",
+    "daily-boundary-diagnostics.json",
+    "astronomy-comparisons.json",
+    "independent-angular-elements.json",
+    "independent-boundaries.json"
+  ],
+  "erratum": {
+    "date": "2026-09-12",
+    "scope": "Historical audit only; not post-fix status",
+    "replacesReportedTotals": {
+      "tests": 733,
+      "passed": 724
+    },
+    "evidence": "../../audits/2026-09-12/baseline-xml",
+    "originalPreserved": "../../audits/2026-09-12/findings.json"
+  }
+}

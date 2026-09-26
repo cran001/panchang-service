@@ -1,0 +1,25 @@
+{
+  "id": "dst",
+  "url": "https://www.vaisnavacalendar.info/daylight-savings",
+  "kind": "documentation",
+  "retrievedAtUtc": "2026-09-15T19:52:42.164477+00:00",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": 200,
+  "finalUrl": "https://www.vaisnavacalendar.info/daylight-savings",
+  "responseHeaders": {
+    "Date": "Tue, 15 Sep 2026 19:52:42 GMT",
+    "Server": "Apache/2",
+    "X-UA-Compatible": "IE=edge",
+    "Link": "<https://www.vaisnavacalendar.info/wp-json/>; rel=\"https://api.w.org/\", <https://www.vaisnavacalendar.info/wp-json/wp/v2/pages/36>; rel=\"alternate\"; type=\"application/json\", <https://www.vaisnavacalendar.info/?p=36>; rel=shortlink",
+    "Upgrade": "h2,h2c",
+    "Connection": "Upgrade, close",
+    "Vary": "Accept-Encoding,User-Agent",
+    "Transfer-Encoding": "chunked",
+    "Content-Type": "text/html; charset=UTF-8"
+  },
+  "file": "docs/release/2026-09-16/sources/dst.raw",
+  "sha256": "91b796d7f78dbad7f8b2620a7e2acbdf6d7153804c40f4e23613d1b9eded7b8e",
+  "bytes": 194856
+}

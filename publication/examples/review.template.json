@@ -1,0 +1,15 @@
+{
+  "action": "REVIEW",
+  "actorKeyId": "REPLACE_WITH_OWNER_CONFIGURED_KEY_ID",
+  "bundleFile": "build/local-review-example/bundle.json",
+  "reason": "REPLACE_WITH_REAL_HUMAN_DECISION",
+  "evidence": [
+    {
+      "link": "publication/examples/TEST-ONLY-evidence.txt",
+      "sha256": "11933c88c2750f73dad23089f3c24b48fbe6fb2bec425291efc89eb928681276",
+      "outcome": "TEST_ONLY_NOT_VALIDATION"
+    }
+  ],
+  "reviewDecision": "PENDING",
+  "resolutions": []
+}

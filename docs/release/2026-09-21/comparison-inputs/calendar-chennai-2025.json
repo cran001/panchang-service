@@ -1,0 +1,29 @@
+{
+  "id": "calendar-chennai-2025",
+  "url": "https://www.vaisnavacalendar.info/calendars/2025/Madras%20%5BIndia%5D.txt",
+  "kind": "calendar",
+  "retrievedAtUtc": "2026-09-15T19:53:17.310454+00:00",
+  "cityId": "chennai",
+  "year": 2025,
+  "lineage": "vaisnavacalendar.info/GCal-text",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": 200,
+  "finalUrl": "https://www.vaisnavacalendar.info/calendars/2025/Madras%20%5BIndia%5D.txt",
+  "responseHeaders": {
+    "Date": "Tue, 15 Sep 2026 19:53:17 GMT",
+    "Server": "Apache/2",
+    "Upgrade": "h2,h2c",
+    "Connection": "Upgrade, close",
+    "Last-Modified": "Mon, 29 Jan 2024 18:01:23 GMT",
+    "ETag": "\"9c7a-610196f0f80de\"",
+    "Accept-Ranges": "bytes",
+    "Content-Length": "40058",
+    "Vary": "Accept-Encoding,User-Agent",
+    "Content-Type": "text/plain"
+  },
+  "file": "docs/release/2026-09-16/sources/calendar-chennai-2025.raw",
+  "sha256": "e41116df854fc689f07bf9b8336769e62c99f131889a472f8d791a89f3acbf87",
+  "bytes": 40058
+}

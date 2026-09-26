@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.verify.HorizonsParserTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-09-11T22:48:05" hostname="DESKTOP-KBUKJ2P" time="0.175">
+  <properties/>
+  <testcase name="warns when the table carries no distance column()" classname="org.panchang.verify.HorizonsParserTest" time="0.12"/>
+  <testcase name="rejects a table whose centre is not the geocentre()" classname="org.panchang.verify.HorizonsParserTest" time="0.009"/>
+  <testcase name="fails loudly on a Horizons prose error instead of returning nothing()" classname="org.panchang.verify.HorizonsParserTest" time="0.007"/>
+  <testcase name="reports a malformed data row rather than skipping it silently()" classname="org.panchang.verify.HorizonsParserTest" time="0.007"/>
+  <testcase name="resolves columns by name so an added quantity does not shift the reading()" classname="org.panchang.verify.HorizonsParserTest" time="0.004"/>
+  <testcase name="rejects a table for the wrong target body()" classname="org.panchang.verify.HorizonsParserTest" time="0.006"/>
+  <testcase name="records the ephemeris kernel and geocentric framing()" classname="org.panchang.verify.HorizonsParserTest" time="0.004"/>
+  <testcase name="parses every row in the ephemeris block()" classname="org.panchang.verify.HorizonsParserTest" time="0.004"/>
+  <testcase name="rejects a response that does not declare the ecliptic-of-date frame()" classname="org.panchang.verify.HorizonsParserTest" time="0.005"/>
+  <testcase name="recovers the moon apparent longitude regression anchor()" classname="org.panchang.verify.HorizonsParserTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

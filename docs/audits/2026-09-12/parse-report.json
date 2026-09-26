@@ -1,0 +1,184 @@
+[
+    {
+        "id": "horizons-2027-moon",
+        "status": "parsed",
+        "count": 32,
+        "warnings": ""
+    },
+    {
+        "id": "horizons-2027-sun",
+        "status": "parsed",
+        "count": 32,
+        "warnings": ""
+    },
+    {
+        "id": "horizons-2028-moon",
+        "status": "parsed",
+        "count": 32,
+        "warnings": ""
+    },
+    {
+        "id": "horizons-2028-sun",
+        "status": "parsed",
+        "count": 32,
+        "warnings": ""
+    },
+    {
+        "id": "horizons-vrindavan-boundary-moon",
+        "status": "parsed",
+        "count": 4,
+        "warnings": ""
+    },
+    {
+        "id": "horizons-vrindavan-boundary-sun",
+        "status": "parsed",
+        "count": 4,
+        "warnings": ""
+    },
+    {
+        "id": "horizons-auckland-boundary-moon",
+        "status": "parsed",
+        "count": 4,
+        "warnings": ""
+    },
+    {
+        "id": "horizons-auckland-boundary-sun",
+        "status": "parsed",
+        "count": 4,
+        "warnings": ""
+    },
+    {
+        "id": "usno-cape-town-2027-01-01",
+        "status": "http_unavailable"
+    },
+    {
+        "id": "usno-cape-town-2028-06-21",
+        "status": "http_unavailable"
+    },
+    {
+        "id": "usno-singapore-2027-12-31",
+        "status": "http_unavailable"
+    },
+    {
+        "id": "usno-singapore-2028-01-01",
+        "status": "http_unavailable"
+    },
+    {
+        "id": "usno-reykjavik-2026-06-26",
+        "status": "parsed",
+        "count": 1,
+        "warnings": ""
+    },
+    {
+        "id": "usno-reykjavik-2028-06-21",
+        "status": "http_unavailable"
+    },
+    {
+        "id": "usno-london-2027-03-28",
+        "status": "http_unavailable"
+    },
+    {
+        "id": "usno-london-2028-10-29",
+        "status": "http_unavailable"
+    },
+    {
+        "id": "usno-new-york-2027-03-14",
+        "status": "http_unavailable"
+    },
+    {
+        "id": "usno-new-york-2028-11-05",
+        "status": "http_unavailable"
+    },
+    {
+        "id": "usno-vrindavan-2026-06-30",
+        "status": "http_unavailable"
+    },
+    {
+        "id": "usno-auckland-2026-10-08",
+        "status": "http_unavailable"
+    },
+    {
+        "id": "calendar-mayapur-2027",
+        "status": "parsed",
+        "count": 365,
+        "warnings": ""
+    },
+    {
+        "id": "calendar-hyderabad-2027",
+        "status": "parsed",
+        "count": 365,
+        "warnings": ""
+    },
+    {
+        "id": "calendar-mayapur-2028",
+        "status": "http_unavailable"
+    },
+    {
+        "id": "calendar-hyderabad-2028",
+        "status": "http_unavailable"
+    },
+    {
+        "id": "supplement-usno-cape-town-2027-01-01",
+        "status": "parsed",
+        "count": 1,
+        "warnings": ""
+    },
+    {
+        "id": "supplement-usno-singapore-2027-12-31",
+        "status": "parsed",
+        "count": 1,
+        "warnings": ""
+    },
+    {
+        "id": "supplement-usno-vrindavan-2026-06-30",
+        "status": "parsed",
+        "count": 1,
+        "warnings": ""
+    },
+    {
+        "id": "supplement-usno-auckland-2026-10-08",
+        "status": "parsed",
+        "count": 1,
+        "warnings": ""
+    },
+    {
+        "id": "usno-definitions",
+        "status": "documentation_only"
+    },
+    {
+        "id": "publisher-policy",
+        "status": "documentation_only"
+    },
+    {
+        "id": "gcal-rules",
+        "status": "documentation_only"
+    },
+    {
+        "id": "gcal-readme",
+        "status": "documentation_only"
+    },
+    {
+        "id": "retry-usno-cape-town-2028-06-21",
+        "status": "parsed",
+        "count": 1,
+        "warnings": ""
+    },
+    {
+        "id": "retry-usno-singapore-2028-01-01",
+        "status": "parsed",
+        "count": 1,
+        "warnings": ""
+    },
+    {
+        "id": "retry-usno-london-2027-03-28",
+        "status": "parsed",
+        "count": 1,
+        "warnings": ""
+    },
+    {
+        "id": "retry-usno-reykjavik-2026-06-26",
+        "status": "parsed",
+        "count": 1,
+        "warnings": ""
+    }
+]

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.publish.FeedPublisherTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2026-09-21T09:03:24" hostname="DESKTOP-KBUKJ2P" time="74.798">
+  <properties/>
+  <testcase name="write puts every computed file on disk and nothing else(Path)" classname="org.panchang.publish.FeedPublisherTest" time="39.943"/>
+  <testcase name="zones and locations are the shape CalendarSyncRepository navigates()" classname="org.panchang.publish.FeedPublisherTest" time="0.006"/>
+  <testcase name="yearly files retain January Parana with the preceding legacy fast for attachment()" classname="org.panchang.publish.FeedPublisherTest" time="0.021"/>
+  <testcase name="every skipped site names a code, and a wire refusal is reported as wire's()" classname="org.panchang.publish.FeedPublisherTest" time="0.001"/>
+  <testcase name="every parana in the legacy feed is recovered by the app's own pipeline()" classname="org.panchang.publish.FeedPublisherTest" time="0.012"/>
+  <testcase name="an unmatched offset never creates a synthetic calendar()" classname="org.panchang.publish.FeedPublisherTest" time="0.002"/>
+  <testcase name="each fast day carries an explicitly fasting title()" classname="org.panchang.publish.FeedPublisherTest" time="0.003"/>
+  <testcase name="the published v1 year resolution carries unresolved()" classname="org.panchang.publish.FeedPublisherTest" time="0.001"/>
+  <testcase name="the manifest warns that no UTC zone was published()" classname="org.panchang.publish.FeedPublisherTest" time="0.001"/>
+  <testcase name="no fallback is synthesised when a requested site already holds P0000()" classname="org.panchang.publish.FeedPublisherTest" time="19.336"/>
+  <testcase name="published plus skipped equals requested()" classname="org.panchang.publish.FeedPublisherTest" time="0.001"/>
+  <testcase name="two runs of the same request produce the same bytes()" classname="org.panchang.publish.FeedPublisherTest" time="15.462"/>
+  <testcase name="the legacy day file covers the whole year with no gaps()" classname="org.panchang.publish.FeedPublisherTest" time="0.001"/>
+  <testcase name="legacy published plus withheld equals published()" classname="org.panchang.publish.FeedPublisherTest" time="0.001"/>
+  <testcase name="the UTC fallback is counted in nothing()" classname="org.panchang.publish.FeedPublisherTest" time="0.001"/>
+  <testcase name="every accepted site gets both v1 documents, including the one with no legacy file()" classname="org.panchang.publish.FeedPublisherTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

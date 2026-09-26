@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.publish.RegionalFeedPublishTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-09-15T19:54:51" hostname="DESKTOP-KBUKJ2P" time="9.416">
+  <properties/>
+  <testcase name="the legacy day files carry festivals and no fasting or parana items()" classname="org.panchang.publish.RegionalFeedPublishTest" time="9.408"/>
+  <testcase name="the run publishes one site and refuses nothing()" classname="org.panchang.publish.RegionalFeedPublishTest" time="0.0"/>
+  <testcase name="the legacy index files are unchanged in shape()" classname="org.panchang.publish.RegionalFeedPublishTest" time="0.005"/>
+  <testcase name="the v1 year resolution keeps its unresolved record and the new year()" classname="org.panchang.publish.RegionalFeedPublishTest" time="0.0"/>
+  <testcase name="the v1 ekadashi year is schema-shaped and honestly empty()" classname="org.panchang.publish.RegionalFeedPublishTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

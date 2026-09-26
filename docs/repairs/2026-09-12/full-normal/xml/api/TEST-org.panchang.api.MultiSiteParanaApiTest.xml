@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.api.MultiSiteParanaApiTest" tests="6" skipped="0" failures="5" errors="0" timestamp="2026-09-12T16:11:23" hostname="DESKTOP-KBUKJ2P" time="12.396">
+  <properties/>
+  <testcase name="each response reports the coordinates it was actually given()" classname="org.panchang.api.MultiSiteParanaApiTest" time="12.385"/>
+  <testcase name="in December the separation is small and reversed()" classname="org.panchang.api.MultiSiteParanaApiTest" time="0.001">
+    <failure message="java.lang.IllegalStateException: an ordinary year carries 24 Ekadashi observances, found 25" type="java.lang.IllegalStateException">java.lang.IllegalStateException: an ordinary year carries 24 Ekadashi observances, found 25
+	at org.panchang.api.MultiSiteParanaApiTest.paranaStarts(MultiSiteParanaApiTest.kt:186)
+	at org.panchang.api.MultiSiteParanaApiTest.mumbai_delegate$lambda$0(MultiSiteParanaApiTest.kt:176)
+	at kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:74)
+	at org.panchang.api.MultiSiteParanaApiTest.getMumbai(MultiSiteParanaApiTest.kt:175)
+	at org.panchang.api.MultiSiteParanaApiTest.differenceMinutes(MultiSiteParanaApiTest.kt:159)
+	at org.panchang.api.MultiSiteParanaApiTest.assertRow(MultiSiteParanaApiTest.kt:166)
+	at org.panchang.api.MultiSiteParanaApiTest.in December the separation is small and reversed(MultiSiteParanaApiTest.kt:65)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.base/java.util.ArrayList.forEach(Unknown Source)
+	at java.base/java.util.ArrayList.forEach(Unknown Source)
+</failure>
+  </testcase>
+  <testcase name="every tithi-bounded parana agrees and every sunrise-bounded one does not()" classname="org.panchang.api.MultiSiteParanaApiTest" time="0.001">
+    <failure message="java.lang.IllegalStateException: an ordinary year carries 24 Ekadashi observances, found 25" type="java.lang.IllegalStateException">java.lang.IllegalStateException: an ordinary year carries 24 Ekadashi observances, found 25
+	at org.panchang.api.MultiSiteParanaApiTest.paranaStarts(MultiSiteParanaApiTest.kt:186)
+	at org.panchang.api.MultiSiteParanaApiTest.mumbai_delegate$lambda$0(MultiSiteParanaApiTest.kt:176)
+	at kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:74)
+	at org.panchang.api.MultiSiteParanaApiTest.getMumbai(MultiSiteParanaApiTest.kt:175)
+	at org.panchang.api.MultiSiteParanaApiTest.every tithi-bounded parana agrees and every sunrise-bounded one does not(MultiSiteParanaApiTest.kt:97)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.base/java.util.ArrayList.forEach(Unknown Source)
+	at java.base/java.util.ArrayList.forEach(Unknown Source)
+</failure>
+  </testcase>
+  <testcase name="at the equinox the separation is about a quarter of an hour()" classname="org.panchang.api.MultiSiteParanaApiTest" time="0.001">
+    <failure message="java.lang.IllegalStateException: an ordinary year carries 24 Ekadashi observances, found 25" type="java.lang.IllegalStateException">java.lang.IllegalStateException: an ordinary year carries 24 Ekadashi observances, found 25
+	at org.panchang.api.MultiSiteParanaApiTest.paranaStarts(MultiSiteParanaApiTest.kt:186)
+	at org.panchang.api.MultiSiteParanaApiTest.mumbai_delegate$lambda$0(MultiSiteParanaApiTest.kt:176)
+	at kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:74)
+	at org.panchang.api.MultiSiteParanaApiTest.getMumbai(MultiSiteParanaApiTest.kt:175)
+	at org.panchang.api.MultiSiteParanaApiTest.differenceMinutes(MultiSiteParanaApiTest.kt:159)
+	at org.panchang.api.MultiSiteParanaApiTest.assertRow(MultiSiteParanaApiTest.kt:166)
+	at org.panchang.api.MultiSiteParanaApiTest.at the equinox the separation is about a quarter of an hour(MultiSiteParanaApiTest.kt:58)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.base/java.util.ArrayList.forEach(Unknown Source)
+	at java.base/java.util.ArrayList.forEach(Unknown Source)
+</failure>
+  </testcase>
+  <testcase name="a parana bounded by the end of Hari Vasara is identical in both cities()" classname="org.panchang.api.MultiSiteParanaApiTest" time="0.002">
+    <failure message="java.lang.IllegalStateException: an ordinary year carries 24 Ekadashi observances, found 25" type="java.lang.IllegalStateException">java.lang.IllegalStateException: an ordinary year carries 24 Ekadashi observances, found 25
+	at org.panchang.api.MultiSiteParanaApiTest.paranaStarts(MultiSiteParanaApiTest.kt:186)
+	at org.panchang.api.MultiSiteParanaApiTest.mumbai_delegate$lambda$0(MultiSiteParanaApiTest.kt:176)
+	at kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:74)
+	at org.panchang.api.MultiSiteParanaApiTest.getMumbai(MultiSiteParanaApiTest.kt:175)
+	at org.panchang.api.MultiSiteParanaApiTest.a parana bounded by the end of Hari Vasara is identical in both cities(MultiSiteParanaApiTest.kt:73)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.base/java.util.ArrayList.forEach(Unknown Source)
+	at java.base/java.util.ArrayList.forEach(Unknown Source)
+</failure>
+  </testcase>
+  <testcase name="mid-June is the widest separation, and it is over half an hour()" classname="org.panchang.api.MultiSiteParanaApiTest" time="0.003">
+    <failure message="java.lang.IllegalStateException: an ordinary year carries 24 Ekadashi observances, found 25" type="java.lang.IllegalStateException">java.lang.IllegalStateException: an ordinary year carries 24 Ekadashi observances, found 25
+	at org.panchang.api.MultiSiteParanaApiTest.paranaStarts(MultiSiteParanaApiTest.kt:186)
+	at org.panchang.api.MultiSiteParanaApiTest.mumbai_delegate$lambda$0(MultiSiteParanaApiTest.kt:176)
+	at kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:74)
+	at org.panchang.api.MultiSiteParanaApiTest.getMumbai(MultiSiteParanaApiTest.kt:175)
+	at org.panchang.api.MultiSiteParanaApiTest.differenceMinutes(MultiSiteParanaApiTest.kt:159)
+	at org.panchang.api.MultiSiteParanaApiTest.assertRow(MultiSiteParanaApiTest.kt:166)
+	at org.panchang.api.MultiSiteParanaApiTest.mid-June is the widest separation, and it is over half an hour(MultiSiteParanaApiTest.kt:48)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.base/java.util.ArrayList.forEach(Unknown Source)
+	at java.base/java.util.ArrayList.forEach(Unknown Source)
+</failure>
+  </testcase>
+  <system-out><![CDATA[16:11:23.956 [DefaultDispatcher-worker-8 @call-context#92] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+16:11:23.957 [DefaultDispatcher-worker-8 @call-context#92] INFO ktor.test -- Application started in 0.001 seconds.
+16:11:23.957 [DefaultDispatcher-worker-3 @coroutine#94] INFO ktor.test -- Responding at http://localhost:80
+16:11:23.958 [DefaultDispatcher-worker-3 @coroutine#94] INFO ktor.test -- Responding at https://localhost:443
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

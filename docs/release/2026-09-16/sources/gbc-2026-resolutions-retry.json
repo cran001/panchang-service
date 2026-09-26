@@ -1,0 +1,28 @@
+{
+  "id": "gbc-2026-resolutions-retry",
+  "url": "https://gbc.iskcon.org/wp-content/uploads/2026/05/GBC-Res-26.pdf",
+  "kind": "primary-authority-document",
+  "retrievedAtUtc": "2026-09-20T18:05:00.042767+00:00",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": 200,
+  "finalUrl": "https://gbc.iskcon.org/wp-content/uploads/2026/05/GBC-Res-26.pdf",
+  "responseHeaders": {
+    "Server": "nginx/1.31.1",
+    "Date": "Sun, 20 Sep 2026 18:05:02 GMT",
+    "Content-Type": "application/pdf",
+    "Content-Length": "372108",
+    "Last-Modified": "Fri, 22 May 2026 09:35:01 GMT",
+    "Connection": "close",
+    "Vary": "Accept-Encoding",
+    "ETag": "\"6a102345-5ad8c\"",
+    "Expires": "Sun, 27 Sep 2026 18:05:02 GMT",
+    "Cache-Control": "max-age=604800",
+    "X-Proxy-Cache": "STATIC/PATH",
+    "Accept-Ranges": "bytes"
+  },
+  "file": "docs/release/2026-09-16/sources/gbc-2026-resolutions-retry.pdf",
+  "sha256": "3b7ebb79089bf67788f2940feecef4500339e7fb1f26f4c5b987f66ca95fb41e",
+  "bytes": 372108
+}

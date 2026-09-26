@@ -1,0 +1,11 @@
+{
+  "id": "gcal-rules-http-retry",
+  "url": "http://gopal.home.sk/gcal/docs/GCalVaisnavaCalculation.pdf",
+  "kind": "upstream-documentation-transport-unverified",
+  "retrievedAtUtc": "2026-09-20T17:56:18.788469+00:00",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": 403,
+  "error": "HTTP Error 403: Forbidden"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "calendar-hyderabad-2026",
+  "url": "https://www.vaisnavacalendar.info/calendars/2026/Hyderabad%20%5BIndia%5D.txt",
+  "kind": "calendar",
+  "retrievedAtUtc": "2026-09-15T19:55:17.506884+00:00",
+  "cityId": "hyderabad",
+  "year": 2026,
+  "lineage": "vaisnavacalendar.info/GCal-text",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": 200,
+  "finalUrl": "https://www.vaisnavacalendar.info/calendars/2026/Hyderabad%20%5BIndia%5D.txt",
+  "responseHeaders": {
+    "Date": "Tue, 15 Sep 2026 19:55:19 GMT",
+    "Server": "Apache/2",
+    "Upgrade": "h2,h2c",
+    "Connection": "Upgrade, close",
+    "Last-Modified": "Sun, 19 Jan 2025 15:13:20 GMT",
+    "ETag": "\"a21c-62c10958ae679\"",
+    "Accept-Ranges": "bytes",
+    "Content-Length": "41500",
+    "Vary": "Accept-Encoding,User-Agent",
+    "Content-Type": "text/plain"
+  },
+  "file": "docs/release/2026-09-16/sources/calendar-hyderabad-2026.raw",
+  "sha256": "171c6fd7f97c83a1cf9789e2906b3dceafc45bb56dd462767565564873e4a439",
+  "bytes": 41500
+}

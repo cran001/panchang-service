@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.gazetteer.GazetteerProvenanceTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-09-14T05:31:25" hostname="DESKTOP-KBUKJ2P" time="0.05">
+  <properties/>
+  <testcase name="the elevation decision is recorded in the artifact()" classname="org.panchang.gazetteer.GazetteerProvenanceTest" time="0.001"/>
+  <testcase name="recorded source hashes match the vendor manifest()" classname="org.panchang.gazetteer.GazetteerProvenanceTest" time="0.018"/>
+  <testcase name="every dropped row has a named reason and the arithmetic closes()" classname="org.panchang.gazetteer.GazetteerProvenanceTest" time="0.017"/>
+  <testcase name="attribution ships inside the artifact()" classname="org.panchang.gazetteer.GazetteerProvenanceTest" time="0.001"/>
+  <testcase name="vendored archives exist()" classname="org.panchang.gazetteer.GazetteerProvenanceTest" time="0.007"/>
+  <testcase name="recorded counts agree with the rows actually present()" classname="org.panchang.gazetteer.GazetteerProvenanceTest" time="0.001"/>
+  <testcase name="the applied filter is recorded()" classname="org.panchang.gazetteer.GazetteerProvenanceTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

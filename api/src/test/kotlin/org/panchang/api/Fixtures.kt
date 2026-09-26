@@ -29,11 +29,14 @@ data class ApiResponse(val status: Int, val body: String) {
  * ephemeris evaluations, and `runTest`'s own timeout is generous but not unlimited; batching
  * several years into one block would trade a clear failure for a timeout.
  */
+// Existing calculation/route regressions explicitly use signed TEST ONLY scope approvals.
+// PublicationControlsApiTest exercises the real unconfigured production defaults separately.
+private val testPublication = org.panchang.publication.TestApprovals.service()
 fun call(url: String): ApiResponse {
     var status = -1
     var body = ""
     testApplication {
-        application { panchangModule() }
+        application { panchangModule(publication = testPublication) }
         val response: HttpResponse = client.get(url)
         status = response.status.value
         body = response.bodyAsText()
@@ -131,22 +134,22 @@ object Fixtures {
 
     /** The same Mumbai year through HTTP, in the indented form `:calc` writes. */
     val apiMumbaiYearPretty: ApiResponse by lazy {
-        call("/v1/calendar/iskcon/2026?$MUMBAI_QUERY&pretty=1")
+        call("/v2/calendar/iskcon/2026?$MUMBAI_QUERY&pretty=1")
     }
 
     /** The same Mumbai year through HTTP, in the compact form the wire actually carries. */
-    val apiMumbaiYearCompact: ApiResponse by lazy { call("/v1/calendar/iskcon/2026?$MUMBAI_QUERY") }
+    val apiMumbaiYearCompact: ApiResponse by lazy { call("/v2/calendar/iskcon/2026?$MUMBAI_QUERY") }
 
     /** The same Mumbai day through HTTP. */
     val apiMumbaiDayPretty: ApiResponse by lazy {
-        call("/v1/day/iskcon/2026-01-15?$MUMBAI_QUERY&pretty=1")
+        call("/v2/day/iskcon/2026-01-15?$MUMBAI_QUERY&pretty=1")
     }
 
     /** A place-resolved year through HTTP. */
     val apiNadiaYearPretty: ApiResponse by lazy {
-        call("/v1/calendar/iskcon/2026?place=Nadia&pretty=1")
+        call("/v2/calendar/iskcon/2026?place=Nadia&pretty=1")
     }
 
     /** Delhi, for the two-cities-one-time-zone claim. */
-    val apiDelhiYearCompact: ApiResponse by lazy { call("/v1/calendar/iskcon/2026?$DELHI_QUERY") }
+    val apiDelhiYearCompact: ApiResponse by lazy { call("/v2/calendar/iskcon/2026?$DELHI_QUERY") }
 }

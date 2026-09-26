@@ -1,0 +1,14 @@
+gradle.projectsEvaluated {
+    def p = gradle.rootProject.project(':verify')
+    p.dependencies.add('testImplementation', gradle.rootProject.project(':publication'))
+    p.kotlin.sourceSets.test.kotlin.srcDir(new File(gradle.rootProject.projectDir, 'docs/release/2026-09-16/harness'))
+    p.tasks.register('releaseEvidence', Test) {
+        testClassesDirs = p.sourceSets.test.output.classesDirs
+        classpath = p.sourceSets.test.runtimeClasspath
+        useJUnitPlatform()
+        filter { includeTestsMatching('org.panchang.verify.release.ReleaseEvidenceTest') }
+        systemProperty('release.root', gradle.rootProject.projectDir.absolutePath)
+        outputs.upToDateWhen { false }
+        maxParallelForks = 1
+    }
+}

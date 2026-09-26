@@ -1,0 +1,29 @@
+{
+  "id": "calendar-mayapur-2026",
+  "url": "https://www.vaisnavacalendar.info/calendars/2026/Mayapur%20%5BIndia%5D.txt",
+  "kind": "calendar",
+  "retrievedAtUtc": "2026-09-21T09:05:38.546332+00:00",
+  "cityId": "mayapur",
+  "year": 2026,
+  "lineage": "vaisnavacalendar.info/GCal-text",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": 200,
+  "finalUrl": "https://www.vaisnavacalendar.info/calendars/2026/Mayapur%20%5BIndia%5D.txt",
+  "responseHeaders": {
+    "Date": "Mon, 21 Sep 2026 09:05:40 GMT",
+    "Server": "Apache/2",
+    "Upgrade": "h2,h2c",
+    "Connection": "Upgrade, close",
+    "Last-Modified": "Sun, 19 Jan 2025 15:13:24 GMT",
+    "ETag": "\"a294-62c1095cceceb\"",
+    "Accept-Ranges": "bytes",
+    "Content-Length": "41620",
+    "Vary": "Accept-Encoding,User-Agent",
+    "Content-Type": "text/plain"
+  },
+  "file": "docs/release/2026-09-21/sources/calendar-mayapur-2026.raw",
+  "sha256": "51fbe8bb9ab3e92a9090b7c8d9d204055c8e3b9b51422cba9aab7003112f84b0",
+  "bytes": 41620
+}

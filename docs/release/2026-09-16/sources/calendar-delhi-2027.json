@@ -1,0 +1,29 @@
+{
+  "id": "calendar-delhi-2027",
+  "url": "https://www.vaisnavacalendar.info/calendars/2027/Delhi%20%5BIndia%5D.txt",
+  "kind": "calendar",
+  "retrievedAtUtc": "2026-09-15T19:53:26.624955+00:00",
+  "cityId": "delhi",
+  "year": 2027,
+  "lineage": "vaisnavacalendar.info/GCal-text",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": 200,
+  "finalUrl": "https://www.vaisnavacalendar.info/calendars/2027/Delhi%20%5BIndia%5D.txt",
+  "responseHeaders": {
+    "Date": "Tue, 15 Sep 2026 19:53:27 GMT",
+    "Server": "Apache/2",
+    "Upgrade": "h2,h2c",
+    "Connection": "Upgrade, close",
+    "Last-Modified": "Fri, 27 Mar 2026 19:48:40 GMT",
+    "ETag": "\"a341-64e06c9a5c958\"",
+    "Accept-Ranges": "bytes",
+    "Content-Length": "41793",
+    "Vary": "Accept-Encoding,User-Agent",
+    "Content-Type": "text/plain"
+  },
+  "file": "docs/release/2026-09-16/sources/calendar-delhi-2027.raw",
+  "sha256": "7c70eb9fbb19cdec3a73762670d6aa9b1ec700b1d783330efcf911d390ac098f",
+  "bytes": 41793
+}

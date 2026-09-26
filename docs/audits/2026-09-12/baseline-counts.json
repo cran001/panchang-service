@@ -1,0 +1,65 @@
+[
+  {
+    "module": "api",
+    "tests": 37.0,
+    "failures": 0.0,
+    "errors": 0.0,
+    "skipped": 0.0
+  },
+  {
+    "module": "calc",
+    "tests": 20.0,
+    "failures": 0.0,
+    "errors": 0.0,
+    "skipped": 0.0
+  },
+  {
+    "module": "core",
+    "tests": 82.0,
+    "failures": 0.0,
+    "errors": 0.0,
+    "skipped": 0.0
+  },
+  {
+    "module": "ephemeris",
+    "tests": 54.0,
+    "failures": 0.0,
+    "errors": 0.0,
+    "skipped": 0.0
+  },
+  {
+    "module": "gazetteer",
+    "tests": 36.0,
+    "failures": 0.0,
+    "errors": 0.0,
+    "skipped": 0.0
+  },
+  {
+    "module": "publish",
+    "tests": 39.0,
+    "failures": 0.0,
+    "errors": 0.0,
+    "skipped": 0.0
+  },
+  {
+    "module": "sampradaya",
+    "tests": 221.0,
+    "failures": 9.0,
+    "errors": 0.0,
+    "skipped": 0.0
+  },
+  {
+    "module": "verify",
+    "tests": 101.0,
+    "failures": 0.0,
+    "errors": 0.0,
+    "skipped": 0.0
+  },
+  {
+    "module": "wire",
+    "tests": 43.0,
+    "failures": 0.0,
+    "errors": 0.0,
+    "skipped": 0.0
+  }
+]

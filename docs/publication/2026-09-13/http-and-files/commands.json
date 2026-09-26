@@ -1,0 +1,33 @@
+{
+  "commands": [
+    [
+      "java",
+      "-cp",
+      "D:\\projects\\panchang-service\\publish\\build\\install\\publish\\lib\\*",
+      "org.panchang.publish.MainKt",
+      "--sites",
+      "D:\\projects\\panchang-service\\docs\\publication\\2026-09-13\\http-and-files\\sites.tsv",
+      "--year",
+      "2026",
+      "--out",
+      "D:\\projects\\panchang-service\\docs\\publication\\2026-09-13\\http-and-files\\feed"
+    ],
+    [
+      "java",
+      "-cp",
+      "D:\\projects\\panchang-service\\publication\\build\\install\\publication\\lib\\*",
+      "org.panchang.publication.MainKt",
+      "prepare",
+      "publication/examples/prepare.TEST-ONLY.json",
+      "D:\\projects\\panchang-service\\docs\\publication\\2026-09-13\\http-and-files\\review-example"
+    ]
+  ],
+  "server": [
+    "java",
+    "-cp",
+    "D:\\projects\\panchang-service\\api\\build\\install\\api\\lib\\*",
+    "org.panchang.api.MainKt"
+  ],
+  "bind": "127.0.0.1",
+  "port": 56424
+}

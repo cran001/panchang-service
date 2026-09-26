@@ -1,0 +1,17 @@
+{
+  "id": "vaisnavacalendar-info-gcal-text",
+  "revision": "2026-09-16-proposed",
+  "description": "PROPOSED only: compare exact GCal text snapshots at printed coordinates, IANA mappings and assumed zero elevation. Existing solar -15..75s and lunar -180..75s bands; retain clock/basis disputes and missing ends. No replacement of calculated values. Owner and qualified review pending.",
+  "evidence": [
+    {
+      "link": "docs/release/2026-09-16/REFERENCE-POLICY.md",
+      "sha256": "59c2fe098f2d74ae2418b1af5a173a53bbf12f505be16f077a60bd5b137b2b2d",
+      "outcome": "PROPOSED_POLICY_NOT_APPROVED"
+    },
+    {
+      "link": "docs/release/2026-09-16/coverage-inventory.json",
+      "sha256": "dd9eba1e612260279487d0904f7d2428ed0810fabbfd6d62fd2c7e9e481abb25",
+      "outcome": "MEASURED_COMPARISONS_WITH_UNRESOLVED_CASES"
+    }
+  ]
+}

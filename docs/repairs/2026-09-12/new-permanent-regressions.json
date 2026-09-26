@@ -1,0 +1,72 @@
+{
+  "run": "full-normal-completed",
+  "total": {
+    "tests": 10,
+    "passed": 10,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "cases": [
+    {
+      "suite": "org.panchang.api.DeliveryFrontDoorTest",
+      "name": "Reykjavik daylight cap and metadata agree through HTTP and written files()",
+      "outcome": "passed",
+      "xml": "docs/repairs/2026-09-12/full-normal-completed/xml/api/TEST-org.panchang.api.DeliveryFrontDoorTest.xml"
+    },
+    {
+      "suite": "org.panchang.api.DeliveryFrontDoorTest",
+      "name": "January carryover agrees through HTTP day year and written v1 and legacy files()",
+      "outcome": "passed",
+      "xml": "docs/repairs/2026-09-12/full-normal-completed/xml/api/TEST-org.panchang.api.DeliveryFrontDoorTest.xml"
+    },
+    {
+      "suite": "org.panchang.calc.YearCarryoverTest",
+      "name": "adjacent years share only the carryover and day selection agrees with each year()",
+      "outcome": "passed",
+      "xml": "docs/repairs/2026-09-12/full-normal-completed/xml/calc/TEST-org.panchang.calc.YearCarryoverTest.xml"
+    },
+    {
+      "suite": "org.panchang.calc.YearCarryoverTest",
+      "name": "January 1 retains the December fast with its distinct Parana date()",
+      "outcome": "passed",
+      "xml": "docs/repairs/2026-09-12/full-normal-completed/xml/calc/TEST-org.panchang.calc.YearCarryoverTest.xml"
+    },
+    {
+      "suite": "org.panchang.core.DaylightIntervalTest",
+      "name": "missing endpoints and polar conditions do not invent an interval()",
+      "outcome": "passed",
+      "xml": "docs/repairs/2026-09-12/full-normal-completed/xml/core/TEST-org.panchang.core.DaylightIntervalTest.xml"
+    },
+    {
+      "suite": "org.panchang.core.DaylightIntervalTest",
+      "name": "cross-midnight interval uses a distinct next sunset without altering civil semantics()",
+      "outcome": "passed",
+      "xml": "docs/repairs/2026-09-12/full-normal-completed/xml/core/TEST-org.panchang.core.DaylightIntervalTest.xml"
+    },
+    {
+      "suite": "org.panchang.core.DaylightIntervalTest",
+      "name": "daylight across both DST transitions follows actual instants and civil dates()",
+      "outcome": "passed",
+      "xml": "docs/repairs/2026-09-12/full-normal-completed/xml/core/TEST-org.panchang.core.DaylightIntervalTest.xml"
+    },
+    {
+      "suite": "org.panchang.core.DaylightIntervalTest",
+      "name": "ordinary Indian daylight keeps the exact civil events and avoids next day lookup()",
+      "outcome": "passed",
+      "xml": "docs/repairs/2026-09-12/full-normal-completed/xml/core/TEST-org.panchang.core.DaylightIntervalTest.xml"
+    },
+    {
+      "suite": "org.panchang.publish.FeedPublisherTest",
+      "name": "yearly files retain January Parana with the preceding legacy fast for attachment()",
+      "outcome": "passed",
+      "xml": "docs/repairs/2026-09-12/full-normal-completed/xml/publish/TEST-org.panchang.publish.FeedPublisherTest.xml"
+    },
+    {
+      "suite": "org.panchang.sampradaya.DaylightDeliveryTest",
+      "name": "Reykjavik June 26 uses the independently evidenced following sunset cap()",
+      "outcome": "passed",
+      "xml": "docs/repairs/2026-09-12/full-normal-completed/xml/sampradaya/TEST-org.panchang.sampradaya.DaylightDeliveryTest.xml"
+    }
+  ]
+}

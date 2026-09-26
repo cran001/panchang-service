@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TimeScale" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-09-20T18:07:48" hostname="DESKTOP-KBUKJ2P" time="0.213">
+  <properties/>
+  <testcase name="normalizeDegrees maps into 0 to 360()" classname="org.panchang.ephemeris.TimeScaleTest" time="0.002"/>
+  <testcase name="angleDifference is antisymmetric away from the 180 degree case()" classname="org.panchang.ephemeris.TimeScaleTest" time="0.006"/>
+  <testcase name="TT round trip closes to well under a millisecond()" classname="org.panchang.ephemeris.TimeScaleTest" time="0.004"/>
+  <testcase name="midnight julian day agrees with java_time()" classname="org.panchang.ephemeris.TimeScaleTest" time="0.041"/>
+  <testcase name="civil time conversion uses the supplied zone only()" classname="org.panchang.ephemeris.TimeScaleTest" time="0.058"/>
+  <testcase name="instant round trip is exact on millisecond boundaries()" classname="org.panchang.ephemeris.TimeScaleTest" time="0.01"/>
+  <testcase name="host default zone is UTC()" classname="org.panchang.ephemeris.TimeScaleTest" time="0.002"/>
+  <testcase name="angleDifference wraps to the half open interval()" classname="org.panchang.ephemeris.TimeScaleTest" time="0.028"/>
+  <testcase name="anchor instants()" classname="org.panchang.ephemeris.TimeScaleTest" time="0.043"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

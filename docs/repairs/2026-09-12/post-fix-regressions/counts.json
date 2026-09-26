@@ -1,0 +1,42 @@
+{
+  "xmlSource": "docs\\repairs\\2026-09-12\\post-fix-regressions\\xml",
+  "modules": {
+    "calc": {
+      "tests": 2,
+      "passed": 1,
+      "failed": 1,
+      "errors": 0,
+      "skipped": 0
+    },
+    "core": {
+      "tests": 4,
+      "passed": 4,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "sampradaya": {
+      "tests": 1,
+      "passed": 1,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "total": {
+    "tests": 7,
+    "passed": 6,
+    "failed": 1,
+    "errors": 0,
+    "skipped": 0
+  },
+  "failures": [
+    {
+      "module": "calc",
+      "suite": "org.panchang.calc.YearCarryoverTest",
+      "name": "adjacent years share only the carryover and day selection agrees with each year()",
+      "kind": "failure",
+      "message": "org.opentest4j.AssertionFailedError: expected: <ObservanceDecisionDto(date=2025-12-31, name=Putrada Ekadashi, kind=EKADASHI, mahadvadashiType=null, tithi=TithiOccurrenceDto(index=10, name=Ekadashi, numberInPaksha=11, paksha=SHUKLA, lunarMonthName=Pausha, isAdhikaMonth=false, start=InstantDto(local=2025-12-30T07:51:33+05:30, jdUt=2461039.5983), end=InstantDto(local=2025-12-31T05:00:57+05:30, jdUt=2461040.47983)), parana=ParanaWindowDto(date=2026-01-01, start=InstantDto(local=2026-01-01T06:18:13+05:30, jdUt=2461041.53348), end=InstantDto(local=2026-01-01T09:52:42+05:30, jdUt=2461041.68243), startReason=SUNRISE, endReason=ONE_THIRD_DAYLIGHT, durationMinutes=214.499), reason=The Ekadashi began after sunrise and ended before the next sunrise, so no day carries it; the fast is kept on the Dvadashi., confidence=CONFIRMED)> but was: <ObservanceDecisionDto(date=2025-12-31, name=Putrada Ekadashi, kind=EKADASHI, mahadvadashiType=null, tithi=TithiOccurrenceDto(index=10, name=Ekadashi, numberInPaksha=11, paksha=SHUKLA, lunarMonthName=Pausha, isAdhikaMonth=false, start=InstantDto(local=2025-12-30T07:51:32+05:30, jdUt=2461039.59829), end=InstantDto(local=2025-12-31T05:00:57+05:30, jdUt=2461040.47983)), parana=ParanaWindowDto(date=2026-01-01, start=InstantDto(local=2026-01-01T06:18:13+05:30, jdUt=2461041.53348), end=InstantDto(local=2026-01-01T09:52:42+05:30, jdUt=2461041.68243), startReason=SUNRISE, endReason=ONE_THIRD_DAYLIGHT, durationMinutes=214.499), reason=The Ekadashi began after sunrise and ended before the next sunrise, so no day carries it; the fast is kept on the Dvadashi., confidence=CONFIRMED)>"
+    }
+  ]
+}

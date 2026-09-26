@@ -1,0 +1,253 @@
+[
+  {
+    "city": "ahmedabad",
+    "year": 2026,
+    "fields": [
+      "OBSERVANCES"
+    ],
+    "tier": "HOLD_DISAGREEMENTS_OR_MISSING_FIELDS",
+    "request": "proposals/ahmedabad-2026.request.json",
+    "approved": false,
+    "evidenceStatus": "DISAGREES_OR_INCOMPLETE",
+    "openRuntimeCases": [
+      "AHMEDABAD-NOVEMBER-BASIS",
+      "DAILY-ahmedabad-2026-11-20"
+    ],
+    "qualification": "Evidence triage only. Runtime review questions, exact artifact rebuild and owner approval still apply. No EVENTS or daily-astronomy approval is proposed."
+  },
+  {
+    "city": "auckland",
+    "year": 2026,
+    "fields": [
+      "OBSERVANCES"
+    ],
+    "tier": "HOLD_DISAGREEMENTS_OR_MISSING_FIELDS",
+    "request": "proposals/auckland-2026.request.json",
+    "approved": false,
+    "evidenceStatus": "DISAGREES_OR_INCOMPLETE",
+    "openRuntimeCases": [
+      "OBSERVANCE-02",
+      "AUCKLAND-APRIL-BASIS",
+      "OPEN-ENDED-auckland",
+      "DAILY-auckland-2026-04-06",
+      "DAILY-auckland-2026-06-11",
+      "DAILY-auckland-2026-10-08"
+    ],
+    "qualification": "Evidence triage only. Runtime review questions, exact artifact rebuild and owner approval still apply. No EVENTS or daily-astronomy approval is proposed."
+  },
+  {
+    "city": "bangalore",
+    "year": 2026,
+    "fields": [
+      "OBSERVANCES"
+    ],
+    "tier": "PRIORITY_QUALIFIED_REVIEW",
+    "request": "proposals/bangalore-2026.request.json",
+    "approved": false,
+    "evidenceStatus": "SUFFICIENT_COMPARISON_EVIDENCE_PENDING_REVIEW",
+    "openRuntimeCases": [
+      "DAILY-bangalore-2026-08-13"
+    ],
+    "qualification": "Evidence triage only. Runtime review questions, exact artifact rebuild and owner approval still apply. No EVENTS or daily-astronomy approval is proposed."
+  },
+  {
+    "city": "chennai",
+    "year": 2026,
+    "fields": [
+      "OBSERVANCES"
+    ],
+    "tier": "PRIORITY_QUALIFIED_REVIEW",
+    "request": "proposals/chennai-2026.request.json",
+    "approved": false,
+    "evidenceStatus": "SUFFICIENT_COMPARISON_EVIDENCE_PENDING_REVIEW",
+    "openRuntimeCases": [],
+    "qualification": "Evidence triage only. Runtime review questions, exact artifact rebuild and owner approval still apply. No EVENTS or daily-astronomy approval is proposed."
+  },
+  {
+    "city": "delhi",
+    "year": 2026,
+    "fields": [
+      "OBSERVANCES"
+    ],
+    "tier": "PRIORITY_QUALIFIED_REVIEW",
+    "request": "proposals/delhi-2026.request.json",
+    "approved": false,
+    "evidenceStatus": "SUFFICIENT_COMPARISON_EVIDENCE_PENDING_REVIEW",
+    "openRuntimeCases": [],
+    "qualification": "Evidence triage only. Runtime review questions, exact artifact rebuild and owner approval still apply. No EVENTS or daily-astronomy approval is proposed."
+  },
+  {
+    "city": "guwahati",
+    "year": 2026,
+    "fields": [
+      "OBSERVANCES"
+    ],
+    "tier": "PRIORITY_QUALIFIED_REVIEW",
+    "request": "proposals/guwahati-2026.request.json",
+    "approved": false,
+    "evidenceStatus": "SUFFICIENT_COMPARISON_EVIDENCE_PENDING_REVIEW",
+    "openRuntimeCases": [
+      "DAILY-guwahati-2026-05-25"
+    ],
+    "qualification": "Evidence triage only. Runtime review questions, exact artifact rebuild and owner approval still apply. No EVENTS or daily-astronomy approval is proposed."
+  },
+  {
+    "city": "hyderabad",
+    "year": 2026,
+    "fields": [
+      "OBSERVANCES"
+    ],
+    "tier": "PRIORITY_QUALIFIED_REVIEW",
+    "request": "proposals/hyderabad-2026.request.json",
+    "approved": false,
+    "evidenceStatus": "SUFFICIENT_COMPARISON_EVIDENCE_PENDING_REVIEW",
+    "openRuntimeCases": [],
+    "qualification": "Evidence triage only. Runtime review questions, exact artifact rebuild and owner approval still apply. No EVENTS or daily-astronomy approval is proposed."
+  },
+  {
+    "city": "london",
+    "year": 2026,
+    "fields": [
+      "OBSERVANCES"
+    ],
+    "tier": "PRIORITY_QUALIFIED_REVIEW",
+    "request": "proposals/london-2026.request.json",
+    "approved": false,
+    "evidenceStatus": "SUFFICIENT_COMPARISON_EVIDENCE_PENDING_REVIEW",
+    "openRuntimeCases": [
+      "DAILY-london-2026-08-11"
+    ],
+    "qualification": "Evidence triage only. Runtime review questions, exact artifact rebuild and owner approval still apply. No EVENTS or daily-astronomy approval is proposed."
+  },
+  {
+    "city": "mayapur",
+    "year": 2026,
+    "fields": [
+      "OBSERVANCES"
+    ],
+    "tier": "PRIORITY_QUALIFIED_REVIEW",
+    "request": "proposals/mayapur-2026.request.json",
+    "approved": false,
+    "evidenceStatus": "SUFFICIENT_COMPARISON_EVIDENCE_PENDING_REVIEW",
+    "openRuntimeCases": [
+      "DAILY-mayapur-2026-11-22"
+    ],
+    "qualification": "Evidence triage only. Runtime review questions, exact artifact rebuild and owner approval still apply. No EVENTS or daily-astronomy approval is proposed."
+  },
+  {
+    "city": "moscow",
+    "year": 2026,
+    "fields": [
+      "OBSERVANCES"
+    ],
+    "tier": "HOLD_DISAGREEMENTS_OR_MISSING_FIELDS",
+    "request": "proposals/moscow-2026.request.json",
+    "approved": false,
+    "evidenceStatus": "DISAGREES_OR_INCOMPLETE",
+    "openRuntimeCases": [
+      "OBSERVANCE-03-moscow",
+      "REFERENCE-DST-moscow-2026-03-30",
+      "REFERENCE-DST-moscow-2026-04-14",
+      "REFERENCE-DST-moscow-2026-04-28",
+      "REFERENCE-DST-moscow-2026-05-14",
+      "REFERENCE-DST-moscow-2026-05-28",
+      "REFERENCE-DST-moscow-2026-06-12",
+      "REFERENCE-DST-moscow-2026-06-26",
+      "REFERENCE-DST-moscow-2026-07-12",
+      "REFERENCE-DST-moscow-2026-07-26",
+      "REFERENCE-DST-moscow-2026-08-10",
+      "REFERENCE-DST-moscow-2026-08-24",
+      "REFERENCE-DST-moscow-2026-09-08",
+      "REFERENCE-DST-moscow-2026-09-23",
+      "REFERENCE-DST-moscow-2026-10-07",
+      "REFERENCE-DST-moscow-2026-10-23"
+    ],
+    "qualification": "Evidence triage only. Runtime review questions, exact artifact rebuild and owner approval still apply. No EVENTS or daily-astronomy approval is proposed."
+  },
+  {
+    "city": "mumbai",
+    "year": 2026,
+    "fields": [
+      "OBSERVANCES"
+    ],
+    "tier": "HOLD_DISAGREEMENTS_OR_MISSING_FIELDS",
+    "request": "proposals/mumbai-2026.request.json",
+    "approved": false,
+    "evidenceStatus": "DISAGREES_OR_INCOMPLETE",
+    "openRuntimeCases": [
+      "OPEN-ENDED-mumbai"
+    ],
+    "qualification": "Evidence triage only. Runtime review questions, exact artifact rebuild and owner approval still apply. No EVENTS or daily-astronomy approval is proposed."
+  },
+  {
+    "city": "new-york",
+    "year": 2026,
+    "fields": [
+      "OBSERVANCES"
+    ],
+    "tier": "HOLD_DISAGREEMENTS_OR_MISSING_FIELDS",
+    "request": "proposals/new-york-2026.request.json",
+    "approved": false,
+    "evidenceStatus": "DISAGREES_OR_INCOMPLETE",
+    "openRuntimeCases": [
+      "OPEN-ENDED-new-york",
+      "DAILY-new-york-2026-03-26"
+    ],
+    "qualification": "Evidence triage only. Runtime review questions, exact artifact rebuild and owner approval still apply. No EVENTS or daily-astronomy approval is proposed."
+  },
+  {
+    "city": "sao-paulo",
+    "year": 2026,
+    "fields": [
+      "OBSERVANCES"
+    ],
+    "tier": "HOLD_DISAGREEMENTS_OR_MISSING_FIELDS",
+    "request": "proposals/sao-paulo-2026.request.json",
+    "approved": false,
+    "evidenceStatus": "DISAGREES_OR_INCOMPLETE",
+    "openRuntimeCases": [
+      "REFERENCE-DST-sao-paulo-2026-01-15",
+      "REFERENCE-DST-sao-paulo-2026-01-30",
+      "REFERENCE-DST-sao-paulo-2026-02-14",
+      "REFERENCE-DST-sao-paulo-2026-02-28",
+      "REFERENCE-DST-sao-paulo-2026-10-23",
+      "REFERENCE-DST-sao-paulo-2026-11-05",
+      "REFERENCE-DST-sao-paulo-2026-11-21",
+      "REFERENCE-DST-sao-paulo-2026-12-05",
+      "REFERENCE-DST-sao-paulo-2026-12-21"
+    ],
+    "qualification": "Evidence triage only. Runtime review questions, exact artifact rebuild and owner approval still apply. No EVENTS or daily-astronomy approval is proposed."
+  },
+  {
+    "city": "sydney",
+    "year": 2026,
+    "fields": [
+      "OBSERVANCES"
+    ],
+    "tier": "HOLD_DISAGREEMENTS_OR_MISSING_FIELDS",
+    "request": "proposals/sydney-2026.request.json",
+    "approved": false,
+    "evidenceStatus": "DISAGREES_OR_INCOMPLETE",
+    "openRuntimeCases": [
+      "OBSERVANCE-03-sydney"
+    ],
+    "qualification": "Evidence triage only. Runtime review questions, exact artifact rebuild and owner approval still apply. No EVENTS or daily-astronomy approval is proposed."
+  },
+  {
+    "city": "vrindavan",
+    "year": 2026,
+    "fields": [
+      "OBSERVANCES"
+    ],
+    "tier": "HOLD_DISAGREEMENTS_OR_MISSING_FIELDS",
+    "request": "proposals/vrindavan-2026.request.json",
+    "approved": false,
+    "evidenceStatus": "DISAGREES_OR_INCOMPLETE",
+    "openRuntimeCases": [
+      "OBSERVANCE-01",
+      "DAILY-vrindavan-2026-03-13",
+      "DAILY-vrindavan-2026-06-30"
+    ],
+    "qualification": "Evidence triage only. Runtime review questions, exact artifact rebuild and owner approval still apply. No EVENTS or daily-astronomy approval is proposed."
+  }
+]

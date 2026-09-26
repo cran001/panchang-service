@@ -1,0 +1,29 @@
+{
+  "id": "calendar-london-2026",
+  "url": "https://www.vaisnavacalendar.info/calendars/2026/London%20%5BUnited%20Kingdom%5D.txt",
+  "kind": "calendar",
+  "retrievedAtUtc": "2026-09-15T19:53:47.047282+00:00",
+  "cityId": "london",
+  "year": 2026,
+  "lineage": "vaisnavacalendar.info/GCal-text",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": 200,
+  "finalUrl": "https://www.vaisnavacalendar.info/calendars/2026/London%20%5BUnited%20Kingdom%5D.txt",
+  "responseHeaders": {
+    "Date": "Tue, 15 Sep 2026 19:53:47 GMT",
+    "Server": "Apache/2",
+    "Upgrade": "h2,h2c",
+    "Connection": "Upgrade, close",
+    "Last-Modified": "Sun, 19 Jan 2025 15:13:22 GMT",
+    "ETag": "\"a2e6-62c1095b34a61\"",
+    "Accept-Ranges": "bytes",
+    "Content-Length": "41702",
+    "Vary": "Accept-Encoding,User-Agent",
+    "Content-Type": "text/plain"
+  },
+  "file": "docs/release/2026-09-16/sources/calendar-london-2026.raw",
+  "sha256": "521de0c0c54cc8c79f6e2872c757c6158c48234294e97236303bf56524a034d2",
+  "bytes": 41702
+}

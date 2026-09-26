@@ -1,0 +1,29 @@
+{
+  "id": "calendar-ahmedabad-2026",
+  "url": "https://www.vaisnavacalendar.info/calendars/2026/Ahmadabad%20%5BIndia%5D.txt",
+  "kind": "calendar",
+  "retrievedAtUtc": "2026-09-15T19:53:02.288087+00:00",
+  "cityId": "ahmedabad",
+  "year": 2026,
+  "lineage": "vaisnavacalendar.info/GCal-text",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": 200,
+  "finalUrl": "https://www.vaisnavacalendar.info/calendars/2026/Ahmadabad%20%5BIndia%5D.txt",
+  "responseHeaders": {
+    "Date": "Tue, 15 Sep 2026 19:53:03 GMT",
+    "Server": "Apache/2",
+    "Upgrade": "h2,h2c",
+    "Connection": "Upgrade, close",
+    "Last-Modified": "Sun, 19 Jan 2025 15:13:08 GMT",
+    "ETag": "\"a1f0-62c1094de372f\"",
+    "Accept-Ranges": "bytes",
+    "Content-Length": "41456",
+    "Vary": "Accept-Encoding,User-Agent",
+    "Content-Type": "text/plain"
+  },
+  "file": "docs/release/2026-09-16/sources/calendar-ahmedabad-2026.raw",
+  "sha256": "28ea1f7d579fcae374a48ad9545c0cbbffd45edd0d11d783935ad38cc4d3c26a",
+  "bytes": 41456
+}

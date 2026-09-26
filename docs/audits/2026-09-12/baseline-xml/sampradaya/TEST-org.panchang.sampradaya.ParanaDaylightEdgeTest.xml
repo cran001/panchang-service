@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.sampradaya.ParanaDaylightEdgeTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-09-11T22:52:35" hostname="DESKTOP-KBUKJ2P" time="141.372">
+  <properties/>
+  <testcase name="a site whose sunset precedes its sunrise never claims a third of daylight()" classname="org.panchang.sampradaya.ParanaDaylightEdgeTest" time="10.443"/>
+  <testcase name="no site in a polar longitude sweep claims a daylight cap it cannot justify()" classname="org.panchang.sampradaya.ParanaDaylightEdgeTest" time="130.929"/>
+  <system-out><![CDATA[parana daylight sweep: 8 sites, 60 windows, 27 claiming ONE_THIRD_DAYLIGHT, 16 absent; 8 sites saw an undefined daylight interval and 6 saw a negative one
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

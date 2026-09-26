@@ -1,0 +1,25 @@
+{
+  "testOnlyApprovalClassesPackaged": false,
+  "checkedJars": [
+    "annotations-13.0.jar",
+    "calc-0.1.0-SNAPSHOT.jar",
+    "clikt-jvm.jar",
+    "clikt-mordant-jvm.jar",
+    "colormath-jvm.jar",
+    "core-0.1.0-SNAPSHOT.jar",
+    "ephemeris-0.1.0-SNAPSHOT.jar",
+    "gazetteer-0.1.0-SNAPSHOT.jar",
+    "jna-5.14.0.jar",
+    "kotlin-stdlib-2.0.21.jar",
+    "kotlinx-serialization-core-jvm-1.7.3.jar",
+    "kotlinx-serialization-json-jvm-1.7.3.jar",
+    "mordant-jvm-ffm-jvm.jar",
+    "mordant-jvm-graal-ffi-jvm.jar",
+    "mordant-jvm-jna-jvm.jar",
+    "mordant-jvm.jar",
+    "mordant-omnibus-jvm.jar",
+    "publication-0.1.0-SNAPSHOT.jar",
+    "sampradaya-0.1.0-SNAPSHOT.jar",
+    "wire-0.1.0-SNAPSHOT.jar"
+  ]
+}

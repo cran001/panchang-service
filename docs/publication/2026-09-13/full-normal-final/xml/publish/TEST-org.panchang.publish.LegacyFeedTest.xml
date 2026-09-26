@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.publish.LegacyFeedTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2026-09-14T05:32:49" hostname="DESKTOP-KBUKJ2P" time="0.024">
+  <properties/>
+  <testcase name="two break-fast items on one day are refused()" classname="org.panchang.publish.LegacyFeedTest" time="0.002"/>
+  <testcase name="the break-fast title matches the app's own regex and yields both bounds()" classname="org.panchang.publish.LegacyFeedTest" time="0.001"/>
+  <testcase name="the string Z is refused, and timezoneField never produces it()" classname="org.panchang.publish.LegacyFeedTest" time="0.002"/>
+  <testcase name="a day with a blank tithi is refused()" classname="org.panchang.publish.LegacyFeedTest" time="0.002"/>
+  <testcase name="a zone dir the app could never match is refused()" classname="org.panchang.publish.LegacyFeedTest" time="0.001"/>
+  <testcase name="numeric offsets are accepted and rendered with two digits and a sign()" classname="org.panchang.publish.LegacyFeedTest" time="0.0"/>
+  <testcase name="an IANA zone id in the timezone field is refused()" classname="org.panchang.publish.LegacyFeedTest" time="0.001"/>
+  <testcase name="a day with an unparseable date is refused()" classname="org.panchang.publish.LegacyFeedTest" time="0.002"/>
+  <testcase name="the fasting predicate matches what processAllDays looks for()" classname="org.panchang.publish.LegacyFeedTest" time="0.0"/>
+  <testcase name="the emitted offset survives the app's own parser unchanged()" classname="org.panchang.publish.LegacyFeedTest" time="0.001"/>
+  <testcase name="zoneDir matches CalendarSyncRepository formatOffset()" classname="org.panchang.publish.LegacyFeedTest" time="0.001"/>
+  <testcase name="an event with a blank title is refused()" classname="org.panchang.publish.LegacyFeedTest" time="0.001"/>
+  <testcase name="an arc-minute that rounds to sixty is carried into the degrees()" classname="org.panchang.publish.LegacyFeedTest" time="0.001"/>
+  <testcase name="coordinates are emitted in the form the app's parser reads()" classname="org.panchang.publish.LegacyFeedTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

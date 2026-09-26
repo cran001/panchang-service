@@ -1,0 +1,11 @@
+{
+  "command": [
+    "java",
+    "-cp",
+    "D:\\projects\\panchang-service\\api\\build\\install\\api\\lib\\*",
+    "org.panchang.api.MainKt"
+  ],
+  "host": "127.0.0.1",
+  "port": 60890,
+  "cacheDir": "D:\\projects\\panchang-service\\docs\\release\\2026-09-21\\smoke\\http-cache"
+}

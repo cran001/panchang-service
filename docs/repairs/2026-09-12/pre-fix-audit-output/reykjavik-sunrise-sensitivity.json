@@ -1,0 +1,23 @@
+[
+    {
+        "refinementPasses": 6,
+        "reference": "03:00",
+        "date": "2026-06-27",
+        "actual": "2026-06-27T02:59:27.829Z[Atlantic/Reykjavik]",
+        "deltaSeconds": -32.171058654785156
+    },
+    {
+        "refinementPasses": 12,
+        "reference": "03:00",
+        "date": "2026-06-27",
+        "actual": "2026-06-27T02:59:27.829Z[Atlantic/Reykjavik]",
+        "deltaSeconds": -32.171058654785156
+    },
+    {
+        "refinementPasses": 24,
+        "reference": "03:00",
+        "date": "2026-06-27",
+        "actual": "2026-06-27T02:59:27.829Z[Atlantic/Reykjavik]",
+        "deltaSeconds": -32.171058654785156
+    }
+]

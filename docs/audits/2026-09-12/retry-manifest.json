@@ -1,0 +1,86 @@
+[
+  {
+    "id": "retry-usno-cape-town-2028-06-21",
+    "kind": "usno",
+    "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2028-06-21&coords=-33.925%2C18.424&tz=2&label=cape-town",
+    "parameters": {
+      "id": "retry-usno-cape-town-2028-06-21",
+      "kind": "usno",
+      "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2028-06-21&coords=-33.925%2C18.424&tz=2&label=cape-town",
+      "date": "2028-06-21",
+      "latitude": -33.925,
+      "longitude": 18.424,
+      "offset": 2.0,
+      "zone": "Africa/Johannesburg"
+    },
+    "retrievedAtUtc": "2026-09-12T06:58:48.2844435Z",
+    "origin": "live",
+    "httpStatus": 200,
+    "file": "raw/retry-usno-cape-town-2028-06-21.raw",
+    "sha256": "c791511bf327a274f9125bfb7225e2eb127860747daf118b2d309acb1acb7ae0",
+    "error": null
+  },
+  {
+    "id": "retry-usno-singapore-2028-01-01",
+    "kind": "usno",
+    "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2028-01-01&coords=1.3521%2C103.8198&tz=8&label=singapore",
+    "parameters": {
+      "id": "retry-usno-singapore-2028-01-01",
+      "kind": "usno",
+      "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2028-01-01&coords=1.3521%2C103.8198&tz=8&label=singapore",
+      "date": "2028-01-01",
+      "latitude": 1.3521,
+      "longitude": 103.8198,
+      "offset": 8.0,
+      "zone": "Asia/Singapore"
+    },
+    "retrievedAtUtc": "2026-09-12T06:58:53.0654826Z",
+    "origin": "live",
+    "httpStatus": 200,
+    "file": "raw/retry-usno-singapore-2028-01-01.raw",
+    "sha256": "13dae276f020e236856da850db97babfbd0cea1144cf52cf9fb1fa5120eb48df",
+    "error": null
+  },
+  {
+    "id": "retry-usno-london-2027-03-28",
+    "kind": "usno",
+    "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2027-03-28&coords=51.5074%2C-0.1278&tz=1&label=london",
+    "parameters": {
+      "id": "retry-usno-london-2027-03-28",
+      "kind": "usno",
+      "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2027-03-28&coords=51.5074%2C-0.1278&tz=1&label=london",
+      "date": "2027-03-28",
+      "latitude": 51.5074,
+      "longitude": -0.1278,
+      "offset": 1.0,
+      "zone": "Europe/London"
+    },
+    "retrievedAtUtc": "2026-09-12T06:58:57.3914584Z",
+    "origin": "live",
+    "httpStatus": 200,
+    "file": "raw/retry-usno-london-2027-03-28.raw",
+    "sha256": "8b5c66bbd763677a4cc105ce2026a9b83ea7c433e66b8c436d131ac137163869",
+    "error": null
+  },
+  {
+    "id": "retry-usno-reykjavik-2026-06-26",
+    "kind": "usno",
+    "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-06-27&coords=64.1466%2C-21.9426&tz=0&label=reykjavik",
+    "parameters": {
+      "id": "retry-usno-reykjavik-2026-06-26",
+      "kind": "usno",
+      "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-06-27&coords=64.1466%2C-21.9426&tz=0&label=reykjavik",
+      "date": "2026-06-27",
+      "latitude": 64.1466,
+      "longitude": -21.9426,
+      "offset": 0.0,
+      "zone": "Atlantic/Reykjavik"
+    },
+    "retrievedAtUtc": "2026-09-12T06:59:01.5946165Z",
+    "origin": "live",
+    "httpStatus": 200,
+    "file": "raw/retry-usno-reykjavik-2026-06-26.raw",
+    "sha256": "0c639f0a7a4b1f76a4c86d8d0a7464de8dda0119fbfc1dcfda2ba3d238372406",
+    "error": null
+  }
+]

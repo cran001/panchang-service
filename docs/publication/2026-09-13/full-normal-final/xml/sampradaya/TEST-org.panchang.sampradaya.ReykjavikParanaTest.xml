@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.sampradaya.ReykjavikParanaTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-09-14T05:37:24" hostname="DESKTOP-KBUKJ2P" time="7.39">
+  <properties/>
+  <testcase name="a window that cannot be capped is refused with a sentence, never truncated or invented()" classname="org.panchang.sampradaya.ReykjavikParanaTest" time="5.87"/>
+  <testcase name="Reykjavik windows keep the daylight cap across civil midnight()" classname="org.panchang.sampradaya.ReykjavikParanaTest" time="0.992"/>
+  <testcase name="the 2026-06-26 window is bounded by the available daylight third()" classname="org.panchang.sampradaya.ReykjavikParanaTest" time="0.527"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

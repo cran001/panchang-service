@@ -1,0 +1,222 @@
+[
+    {
+        "id": "horizons-2027-moon",
+        "kind": "horizons",
+        "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=text&COMMAND=%27301%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27500%40399%27&START_TIME=%272027-01-01%27&STOP_TIME=%272027-02-01%27&STEP_SIZE=%271%20d%27&QUANTITIES=%2731%2C20%27&CAL_FORMAT=%27CAL%27&ANG_FORMAT=%27DEG%27&TIME_DIGITS=%27SECONDS%27&CSV_FORMAT=%27YES%27",
+        "body": "MOON",
+        "start": "2027-01-01",
+        "stop": "2027-02-01",
+        "step": "1 d"
+    },
+    {
+        "id": "horizons-2027-sun",
+        "kind": "horizons",
+        "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=text&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27500%40399%27&START_TIME=%272027-01-01%27&STOP_TIME=%272027-02-01%27&STEP_SIZE=%271%20d%27&QUANTITIES=%2731%2C20%27&CAL_FORMAT=%27CAL%27&ANG_FORMAT=%27DEG%27&TIME_DIGITS=%27SECONDS%27&CSV_FORMAT=%27YES%27",
+        "body": "SUN",
+        "start": "2027-01-01",
+        "stop": "2027-02-01",
+        "step": "1 d"
+    },
+    {
+        "id": "horizons-2028-moon",
+        "kind": "horizons",
+        "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=text&COMMAND=%27301%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27500%40399%27&START_TIME=%272028-01-01%27&STOP_TIME=%272028-02-01%27&STEP_SIZE=%271%20d%27&QUANTITIES=%2731%2C20%27&CAL_FORMAT=%27CAL%27&ANG_FORMAT=%27DEG%27&TIME_DIGITS=%27SECONDS%27&CSV_FORMAT=%27YES%27",
+        "body": "MOON",
+        "start": "2028-01-01",
+        "stop": "2028-02-01",
+        "step": "1 d"
+    },
+    {
+        "id": "horizons-2028-sun",
+        "kind": "horizons",
+        "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=text&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27500%40399%27&START_TIME=%272028-01-01%27&STOP_TIME=%272028-02-01%27&STEP_SIZE=%271%20d%27&QUANTITIES=%2731%2C20%27&CAL_FORMAT=%27CAL%27&ANG_FORMAT=%27DEG%27&TIME_DIGITS=%27SECONDS%27&CSV_FORMAT=%27YES%27",
+        "body": "SUN",
+        "start": "2028-01-01",
+        "stop": "2028-02-01",
+        "step": "1 d"
+    },
+    {
+        "id": "horizons-vrindavan-boundary-moon",
+        "kind": "horizons",
+        "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=text&COMMAND=%27301%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27500%40399%27&START_TIME=%272026-06-29%2023%3A40%27&STOP_TIME=%272026-06-30%2000%3A10%27&STEP_SIZE=%2710%20m%27&QUANTITIES=%2731%2C20%27&CAL_FORMAT=%27CAL%27&ANG_FORMAT=%27DEG%27&TIME_DIGITS=%27SECONDS%27&CSV_FORMAT=%27YES%27",
+        "body": "MOON",
+        "start": "2026-06-29 23:40",
+        "stop": "2026-06-30 00:10",
+        "step": "10 m"
+    },
+    {
+        "id": "horizons-vrindavan-boundary-sun",
+        "kind": "horizons",
+        "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=text&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27500%40399%27&START_TIME=%272026-06-29%2023%3A40%27&STOP_TIME=%272026-06-30%2000%3A10%27&STEP_SIZE=%2710%20m%27&QUANTITIES=%2731%2C20%27&CAL_FORMAT=%27CAL%27&ANG_FORMAT=%27DEG%27&TIME_DIGITS=%27SECONDS%27&CSV_FORMAT=%27YES%27",
+        "body": "SUN",
+        "start": "2026-06-29 23:40",
+        "stop": "2026-06-30 00:10",
+        "step": "10 m"
+    },
+    {
+        "id": "horizons-auckland-boundary-moon",
+        "kind": "horizons",
+        "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=text&COMMAND=%27301%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27500%40399%27&START_TIME=%272026-10-07%2017%3A30%27&STOP_TIME=%272026-10-07%2018%3A00%27&STEP_SIZE=%2710%20m%27&QUANTITIES=%2731%2C20%27&CAL_FORMAT=%27CAL%27&ANG_FORMAT=%27DEG%27&TIME_DIGITS=%27SECONDS%27&CSV_FORMAT=%27YES%27",
+        "body": "MOON",
+        "start": "2026-10-07 17:30",
+        "stop": "2026-10-07 18:00",
+        "step": "10 m"
+    },
+    {
+        "id": "horizons-auckland-boundary-sun",
+        "kind": "horizons",
+        "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=text&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27500%40399%27&START_TIME=%272026-10-07%2017%3A30%27&STOP_TIME=%272026-10-07%2018%3A00%27&STEP_SIZE=%2710%20m%27&QUANTITIES=%2731%2C20%27&CAL_FORMAT=%27CAL%27&ANG_FORMAT=%27DEG%27&TIME_DIGITS=%27SECONDS%27&CSV_FORMAT=%27YES%27",
+        "body": "SUN",
+        "start": "2026-10-07 17:30",
+        "stop": "2026-10-07 18:00",
+        "step": "10 m"
+    },
+    {
+        "id": "usno-cape-town-2027-01-01",
+        "kind": "usno",
+        "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2027-01-01&coords=-33.925%2C18.424&tz=2&label=cape-town",
+        "date": "2027-01-01",
+        "latitude": -33.925,
+        "longitude": 18.424,
+        "offset": 2.0,
+        "zone": "Africa/Johannesburg"
+    },
+    {
+        "id": "usno-cape-town-2028-06-21",
+        "kind": "usno",
+        "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2028-06-21&coords=-33.925%2C18.424&tz=2&label=cape-town",
+        "date": "2028-06-21",
+        "latitude": -33.925,
+        "longitude": 18.424,
+        "offset": 2.0,
+        "zone": "Africa/Johannesburg"
+    },
+    {
+        "id": "usno-singapore-2027-12-31",
+        "kind": "usno",
+        "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2027-12-31&coords=1.3521%2C103.8198&tz=8&label=singapore",
+        "date": "2027-12-31",
+        "latitude": 1.3521,
+        "longitude": 103.8198,
+        "offset": 8.0,
+        "zone": "Asia/Singapore"
+    },
+    {
+        "id": "usno-singapore-2028-01-01",
+        "kind": "usno",
+        "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2028-01-01&coords=1.3521%2C103.8198&tz=8&label=singapore",
+        "date": "2028-01-01",
+        "latitude": 1.3521,
+        "longitude": 103.8198,
+        "offset": 8.0,
+        "zone": "Asia/Singapore"
+    },
+    {
+        "id": "usno-reykjavik-2026-06-26",
+        "kind": "usno",
+        "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-06-26&coords=64.1466%2C-21.9426&tz=0&label=reykjavik",
+        "date": "2026-06-26",
+        "latitude": 64.1466,
+        "longitude": -21.9426,
+        "offset": 0.0,
+        "zone": "Atlantic/Reykjavik"
+    },
+    {
+        "id": "usno-reykjavik-2028-06-21",
+        "kind": "usno",
+        "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2028-06-21&coords=64.1466%2C-21.9426&tz=0&label=reykjavik",
+        "date": "2028-06-21",
+        "latitude": 64.1466,
+        "longitude": -21.9426,
+        "offset": 0.0,
+        "zone": "Atlantic/Reykjavik"
+    },
+    {
+        "id": "usno-london-2027-03-28",
+        "kind": "usno",
+        "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2027-03-28&coords=51.5074%2C-0.1278&tz=1&label=london",
+        "date": "2027-03-28",
+        "latitude": 51.5074,
+        "longitude": -0.1278,
+        "offset": 1.0,
+        "zone": "Europe/London"
+    },
+    {
+        "id": "usno-london-2028-10-29",
+        "kind": "usno",
+        "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2028-10-29&coords=51.5074%2C-0.1278&tz=0&label=london",
+        "date": "2028-10-29",
+        "latitude": 51.5074,
+        "longitude": -0.1278,
+        "offset": 0.0,
+        "zone": "Europe/London"
+    },
+    {
+        "id": "usno-new-york-2027-03-14",
+        "kind": "usno",
+        "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2027-03-14&coords=40.7128%2C-74.006&tz=-4&label=new-york",
+        "date": "2027-03-14",
+        "latitude": 40.7128,
+        "longitude": -74.006,
+        "offset": -4.0,
+        "zone": "America/New_York"
+    },
+    {
+        "id": "usno-new-york-2028-11-05",
+        "kind": "usno",
+        "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2028-11-05&coords=40.7128%2C-74.006&tz=-5&label=new-york",
+        "date": "2028-11-05",
+        "latitude": 40.7128,
+        "longitude": -74.006,
+        "offset": -5.0,
+        "zone": "America/New_York"
+    },
+    {
+        "id": "usno-vrindavan-2026-06-30",
+        "kind": "usno",
+        "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-06-30&coords=27.583333333333332%2C77.7&tz=5.5&label=vrindavan",
+        "date": "2026-06-30",
+        "latitude": 27.583333333333332,
+        "longitude": 77.7,
+        "offset": 5.5,
+        "zone": "Asia/Kolkata"
+    },
+    {
+        "id": "usno-auckland-2026-10-08",
+        "kind": "usno",
+        "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-10-08&coords=-36.86666666666667%2C174.76666666666668&tz=13&label=auckland",
+        "date": "2026-10-08",
+        "latitude": -36.86666666666667,
+        "longitude": 174.76666666666668,
+        "offset": 13.0,
+        "zone": "Pacific/Auckland"
+    },
+    {
+        "id": "calendar-mayapur-2027",
+        "kind": "calendar",
+        "url": "https://www.vaisnavacalendar.info/calendars/2027/Mayapur%20%5BIndia%5D.txt",
+        "year": 2027,
+        "city": "Mayapur [India]"
+    },
+    {
+        "id": "calendar-hyderabad-2027",
+        "kind": "calendar",
+        "url": "https://www.vaisnavacalendar.info/calendars/2027/Hyderabad%20%5BIndia%5D.txt",
+        "year": 2027,
+        "city": "Hyderabad [India]"
+    },
+    {
+        "id": "calendar-mayapur-2028",
+        "kind": "calendar",
+        "url": "https://www.vaisnavacalendar.info/calendars/2028/Mayapur%20%5BIndia%5D.txt",
+        "year": 2028,
+        "city": "Mayapur [India]"
+    },
+    {
+        "id": "calendar-hyderabad-2028",
+        "kind": "calendar",
+        "url": "https://www.vaisnavacalendar.info/calendars/2028/Hyderabad%20%5BIndia%5D.txt",
+        "year": 2028,
+        "city": "Hyderabad [India]"
+    }
+]

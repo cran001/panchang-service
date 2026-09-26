@@ -1,0 +1,20 @@
+[
+  [
+    "java",
+    "-cp",
+    "D:\\projects\\panchang-service\\publication\\build\\install\\publication\\lib\\*",
+    "org.panchang.publication.MainKt",
+    "prepare",
+    "D:\\projects\\panchang-service\\docs\\release\\2026-09-16\\proposals\\priority.request.json",
+    "D:\\projects\\panchang-service\\docs\\release\\2026-09-16\\bundles\\priority"
+  ],
+  [
+    "java",
+    "-cp",
+    "D:\\projects\\panchang-service\\publication\\build\\install\\publication\\lib\\*",
+    "org.panchang.publication.MainKt",
+    "prepare",
+    "D:\\projects\\panchang-service\\docs\\release\\2026-09-16\\proposals\\hold.request.json",
+    "D:\\projects\\panchang-service\\docs\\release\\2026-09-16\\bundles\\hold"
+  ]
+]

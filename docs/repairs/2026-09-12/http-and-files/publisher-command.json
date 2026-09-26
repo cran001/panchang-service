@@ -1,0 +1,12 @@
+[
+  "java",
+  "-cp",
+  "D:\\projects\\panchang-service\\publish\\build\\install\\publish\\lib\\*",
+  "org.panchang.publish.MainKt",
+  "--sites",
+  "D:\\projects\\panchang-service\\docs\\repairs\\2026-09-12\\http-and-files\\sites.tsv",
+  "--year",
+  "2026",
+  "--out",
+  "D:\\projects\\panchang-service\\docs\\repairs\\2026-09-12\\http-and-files\\feed"
+]

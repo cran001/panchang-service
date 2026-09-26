@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.publish.RegionalFeedPublishTest" tests="5" skipped="0" failures="2" errors="0" timestamp="2026-09-21T13:41:23" hostname="DESKTOP-KBUKJ2P" time="11.344">
+  <properties/>
+  <testcase name="the legacy day files carry festivals and no fasting or parana items()" classname="org.panchang.publish.RegionalFeedPublishTest" time="11.325"/>
+  <testcase name="the run publishes one site and refuses nothing()" classname="org.panchang.publish.RegionalFeedPublishTest" time="0.002"/>
+  <testcase name="the legacy index files are unchanged in shape()" classname="org.panchang.publish.RegionalFeedPublishTest" time="0.01"/>
+  <testcase name="the v1 year resolution keeps its unresolved record and the new year()" classname="org.panchang.publish.RegionalFeedPublishTest" time="0.002">
+    <failure message="java.util.NoSuchElementException: Key v2/mumbai/year-resolution.json is missing in the map." type="java.util.NoSuchElementException">java.util.NoSuchElementException: Key v2/mumbai/year-resolution.json is missing in the map.
+	at kotlin.collections.MapsKt__MapWithDefaultKt.getOrImplicitDefaultNullable(MapWithDefault.kt:24)
+	at kotlin.collections.MapsKt__MapsKt.getValue(Maps.kt:369)
+	at org.panchang.publish.RegionalFeedPublishTest.the v1 year resolution keeps its unresolved record and the new year(RegionalFeedPublishTest.kt:47)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.base/java.util.ArrayList.forEach(Unknown Source)
+	at java.base/java.util.ArrayList.forEach(Unknown Source)
+</failure>
+  </testcase>
+  <testcase name="the v1 ekadashi year is schema-shaped and honestly empty()" classname="org.panchang.publish.RegionalFeedPublishTest" time="0.002">
+    <failure message="java.util.NoSuchElementException: Key v2/mumbai/ekadashi-year.json is missing in the map." type="java.util.NoSuchElementException">java.util.NoSuchElementException: Key v2/mumbai/ekadashi-year.json is missing in the map.
+	at kotlin.collections.MapsKt__MapWithDefaultKt.getOrImplicitDefaultNullable(MapWithDefault.kt:24)
+	at kotlin.collections.MapsKt__MapsKt.getValue(Maps.kt:369)
+	at org.panchang.publish.RegionalFeedPublishTest.the v1 ekadashi year is schema-shaped and honestly empty(RegionalFeedPublishTest.kt:66)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.base/java.util.ArrayList.forEach(Unknown Source)
+	at java.base/java.util.ArrayList.forEach(Unknown Source)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

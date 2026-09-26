@@ -1,0 +1,10 @@
+[
+  "D:\\projects\\panchang-service\\gradlew.bat",
+  "-I",
+  "docs/repairs/2026-09-12/audit.init.gradle",
+  "-PauditOutput=docs/repairs/2026-09-12/pre-fix-audit-output",
+  ":verify:auditEvidence",
+  "--tests",
+  "*highLatitudeDiagnostics",
+  "--console=plain"
+]

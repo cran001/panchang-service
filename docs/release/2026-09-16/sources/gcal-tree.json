@@ -1,0 +1,43 @@
+{
+  "id": "gcal-tree",
+  "url": "https://api.github.com/repos/gopaladasa/GCAL-for-Windows/git/trees/master?recursive=1",
+  "kind": "upstream-discovery",
+  "retrievedAtUtc": "2026-09-15T19:52:51.454932+00:00",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": 200,
+  "finalUrl": "https://api.github.com/repos/gopaladasa/GCAL-for-Windows/git/trees/master?recursive=1",
+  "responseHeaders": {
+    "Date": "Tue, 15 Sep 2026 19:52:51 GMT",
+    "Content-Type": "application/json; charset=utf-8",
+    "Cache-Control": "public, max-age=60, s-maxage=60",
+    "Vary": "Accept,Accept-Encoding, Accept, X-Requested-With",
+    "ETag": "W/\"f1e4eaa881128d04274bc96bdd151cd372789c272475819d2ae5b008e6195ae8\"",
+    "Last-Modified": "Thu, 23 Jul 2026 10:51:40 GMT",
+    "X-GitHub-Media-Type": "github.v3; format=json",
+    "x-github-api-version-selected": "2022-11-28",
+    "Access-Control-Expose-Headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset, Warning",
+    "Access-Control-Allow-Origin": "*",
+    "Strict-Transport-Security": "max-age=31536000; includeSubdomains; preload",
+    "X-Frame-Options": "deny",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "0",
+    "Referrer-Policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+    "Content-Security-Policy": "default-src 'none'",
+    "Server": "github.com",
+    "Accept-Ranges": "bytes",
+    "X-RateLimit-Limit": "60",
+    "X-RateLimit-Remaining": "59",
+    "X-RateLimit-Used": "1",
+    "X-RateLimit-Resource": "core",
+    "X-RateLimit-Reset": "1789505571",
+    "Transfer-Encoding": "chunked",
+    "X-GitHub-Request-Id": "EE07:D4DE:30D3B0:364449:6AA9A213",
+    "x-github-edge-region": "centralindia",
+    "connection": "close"
+  },
+  "file": "docs/release/2026-09-16/sources/gcal-tree.raw",
+  "sha256": "f1e4eaa881128d04274bc96bdd151cd372789c272475819d2ae5b008e6195ae8",
+  "bytes": 68566
+}

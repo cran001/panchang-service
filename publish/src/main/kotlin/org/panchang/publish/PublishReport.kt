@@ -68,6 +68,7 @@ data class SkippedReport(
 /** Why a published site got no *legacy* file, though it got a full v1 payload. */
 @Serializable
 enum class LegacyWithholdingCode {
+    PUBLICATION_CONTRACT_REQUIRED,
     /**
      * The site's zone changes offset inside the published range.
      *
@@ -176,4 +177,6 @@ data class PublishResult(
     val skipped: SkippedReport,
     /** Relative output path → file content, exactly as written. */
     val files: Map<String, String>,
+    /** Public producer binds contents and rechecks approval before completing a new export. */
+    internal val validatePublication: ((Map<String, String>) -> Boolean)? = null,
 )

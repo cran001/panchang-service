@@ -1,0 +1,13 @@
+[
+  "api/build.gradle.kts",
+  "api/src/test/kotlin/org/panchang/api/CrossFrontDoorIdentityTest.kt",
+  "api/src/test/kotlin/org/panchang/api/MultiSiteParanaApiTest.kt",
+  "calc/src/test/kotlin/org/panchang/calc/CalcCliTest.kt",
+  "core/src/main/kotlin/org/panchang/core/RiseSet.kt",
+  "publish/src/main/kotlin/org/panchang/publish/FeedPublisher.kt",
+  "publish/src/test/kotlin/org/panchang/publish/FeedPublisherTest.kt",
+  "sampradaya/src/main/kotlin/org/panchang/sampradaya/IskconRules.kt",
+  "sampradaya/src/main/kotlin/org/panchang/sampradaya/SampradayaRules.kt",
+  "sampradaya/src/test/kotlin/org/panchang/sampradaya/ParanaDaylightEdgeTest.kt",
+  "sampradaya/src/test/kotlin/org/panchang/sampradaya/ReykjavikParanaTest.kt"
+]

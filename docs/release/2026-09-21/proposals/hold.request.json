@@ -1,0 +1,342 @@
+{
+  "members": [
+    {
+      "place": {
+        "id": "point:5a8873150045134f185bd0c3b30b6890d90c91a532bf90e5d124bb1319c160f2",
+        "latitude": 23.033333333333335,
+        "longitude": 72.61666666666666,
+        "elevationMeters": 0.0,
+        "timeZone": "Asia/Kolkata"
+      },
+      "tradition": "iskcon",
+      "year": 2026,
+      "coverage": {
+        "from": "2026-01-01",
+        "through": "2026-12-31"
+      },
+      "fields": [
+        "OBSERVANCES"
+      ]
+    },
+    {
+      "place": {
+        "id": "point:3fc65b8451f0f54d7af076a4ed14858e6095ac0dd0034a03ed8241a7cfb8470e",
+        "latitude": -36.86666666666667,
+        "longitude": 174.76666666666668,
+        "elevationMeters": 0.0,
+        "timeZone": "Pacific/Auckland"
+      },
+      "tradition": "iskcon",
+      "year": 2026,
+      "coverage": {
+        "from": "2026-01-01",
+        "through": "2026-12-31"
+      },
+      "fields": [
+        "OBSERVANCES"
+      ]
+    },
+    {
+      "place": {
+        "id": "point:cf72a25e85cc84b2a9d5c04f51fdc28019b58f8b5c5317cf36689a7f8025bd4a",
+        "latitude": 55.75,
+        "longitude": 37.61666666666667,
+        "elevationMeters": 0.0,
+        "timeZone": "Europe/Moscow"
+      },
+      "tradition": "iskcon",
+      "year": 2026,
+      "coverage": {
+        "from": "2026-01-01",
+        "through": "2026-12-31"
+      },
+      "fields": [
+        "OBSERVANCES"
+      ]
+    },
+    {
+      "place": {
+        "id": "point:7f83b97097f1c842be5689d588b413d715e7a1cb2499437324323253ded2deaf",
+        "latitude": 18.983333333333334,
+        "longitude": 72.83333333333333,
+        "elevationMeters": 0.0,
+        "timeZone": "Asia/Kolkata"
+      },
+      "tradition": "iskcon",
+      "year": 2026,
+      "coverage": {
+        "from": "2026-01-01",
+        "through": "2026-12-31"
+      },
+      "fields": [
+        "OBSERVANCES"
+      ]
+    },
+    {
+      "place": {
+        "id": "point:86e5782e0356194520cc6ed2af757bdf87cb4b40655a7047c7959b80876fecf7",
+        "latitude": 40.71666666666667,
+        "longitude": -74.0,
+        "elevationMeters": 0.0,
+        "timeZone": "America/New_York"
+      },
+      "tradition": "iskcon",
+      "year": 2026,
+      "coverage": {
+        "from": "2026-01-01",
+        "through": "2026-12-31"
+      },
+      "fields": [
+        "OBSERVANCES"
+      ]
+    },
+    {
+      "place": {
+        "id": "point:184bbc55cc7f89cb5a8bfdf3e8a0501a6ec91f20b5f1f5ff84cf628a2a50821b",
+        "latitude": -23.55,
+        "longitude": -46.63333333333333,
+        "elevationMeters": 0.0,
+        "timeZone": "America/Sao_Paulo"
+      },
+      "tradition": "iskcon",
+      "year": 2026,
+      "coverage": {
+        "from": "2026-01-01",
+        "through": "2026-12-31"
+      },
+      "fields": [
+        "OBSERVANCES"
+      ]
+    },
+    {
+      "place": {
+        "id": "point:59e1ccd303e857adea6db9e7304875448cf5ec83dee85bff5f8f3760f0b6a62b",
+        "latitude": -33.86666666666667,
+        "longitude": 151.2,
+        "elevationMeters": 0.0,
+        "timeZone": "Australia/Sydney"
+      },
+      "tradition": "iskcon",
+      "year": 2026,
+      "coverage": {
+        "from": "2026-01-01",
+        "through": "2026-12-31"
+      },
+      "fields": [
+        "OBSERVANCES"
+      ]
+    },
+    {
+      "place": {
+        "id": "point:5f96574f6eb1150766113cd9b09dcd45052ccf9f2afbe42865fd6b091611d5a5",
+        "latitude": 27.583333333333332,
+        "longitude": 77.7,
+        "elevationMeters": 0.0,
+        "timeZone": "Asia/Kolkata"
+      },
+      "tradition": "iskcon",
+      "year": 2026,
+      "coverage": {
+        "from": "2026-01-01",
+        "through": "2026-12-31"
+      },
+      "fields": [
+        "OBSERVANCES"
+      ]
+    }
+  ],
+  "referencePolicy": {
+    "id": "vaisnavacalendar-info-gcal-text",
+    "revision": "2026-09-21-ai-assisted-proposed",
+    "description": "Unsigned 2026 OBSERVANCES-only evidence proposal; original bands and exact points preserved. AI-assisted research is not qualified review or publication approval.",
+    "evidence": [
+      {
+        "link": "docs/release/2026-09-16/REFERENCE-POLICY.md",
+        "sha256": "59c2fe098f2d74ae2418b1af5a173a53bbf12f505be16f077a60bd5b137b2b2d",
+        "outcome": "PROPOSED_POLICY_NOT_APPROVED"
+      },
+      {
+        "link": "docs/release/2026-09-21/ai-assisted-review.json",
+        "sha256": "f6870d7b8c8c95ec9dc309ca255c9a8ad2cdf2ea0ec5dd7f89aff5eb268f3e2c",
+        "outcome": "AI_ASSISTED_EVIDENCE_REVIEW"
+      },
+      {
+        "link": "docs/release/2026-09-21/coverage-inventory.json",
+        "sha256": "8e306ff7af9d6676620ef7d07dde40470ab444265f8d1a06ef10559bfa20792d",
+        "outcome": "REPRODUCED_COMPARISONS_NOT_APPROVAL"
+      },
+      {
+        "link": "docs/release/2026-09-21/SOURCE-FINDINGS.md",
+        "sha256": "714bbfe0a0baa66e47e45f31917269bafb9dc0a6d6fa2dc2884331d51f088517",
+        "outcome": "AI_ASSISTED_SOURCE_INVESTIGATION_NOT_APPROVAL"
+      },
+      {
+        "link": "docs/release/2026-09-21/source-checks.json",
+        "sha256": "f09999f38793baa67499526889448da0154290b2f6fcf85189e5ea3460887f02",
+        "outcome": "HASHED_RESEARCH_SOURCES_NOT_APPROVAL"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "link": "docs/release/2026-09-21/measurements/ahmedabad-2026.json",
+      "sha256": "1ae35bbfc75ce1966641a31237e375386c714e8d57a02af4cf3cc7127ec53aa7",
+      "outcome": "AI_ASSISTED_MEASUREMENT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-ahmedabad-2025.raw",
+      "sha256": "92c5fdf227dd37d2444d407399df3c4220d43e30a1a0c8eaf5216ab817316b94",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-21/sources/calendar-ahmedabad-2026.raw",
+      "sha256": "28ea1f7d579fcae374a48ad9545c0cbbffd45edd0d11d783935ad38cc4d3c26a",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-ahmedabad-2027.raw",
+      "sha256": "a0d0ed3bf51be89d4d866ad12764663b0308ee072fc863629b2c9c815babf12b",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-21/measurements/auckland-2026.json",
+      "sha256": "689c574c53c99a616789c40d8c63e29a57d4cbd2498af36f4c480497a6a0b8a8",
+      "outcome": "AI_ASSISTED_MEASUREMENT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-auckland-2025.raw",
+      "sha256": "5abdff77c9cd8c510e4dbb918f4a58bc926c651b61136db774f0c7c184a71359",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-21/sources/calendar-auckland-2026.raw",
+      "sha256": "ef4246bff1a7339c87653ae87b50d8c137fdbd289af4d9dd95c1f9832a3fe53d",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-auckland-2027.raw",
+      "sha256": "387679552696bdfd121da31fde3ea5dd882c23a13f95732e45ec0f2ec8277e65",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-21/measurements/moscow-2026.json",
+      "sha256": "d34da1268cbccf587db54f58a604d4fb7cf1aa6f275098b462da8d22dd07374a",
+      "outcome": "AI_ASSISTED_MEASUREMENT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-moscow-2025.raw",
+      "sha256": "1280037096eee9254763fe432b5fa03260ea0c767d5ef67c0e544ef238a7a436",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-21/sources/calendar-moscow-2026.raw",
+      "sha256": "ff1db8c94dd5e8e447e042b21fc8639a1a7b094e584a306cd7846cda2f0ac5b2",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-moscow-2027.raw",
+      "sha256": "aa6f2ce84fa7fafe6db1ae50ec65ac730db6687be46d1df4297c4d2f6b655806",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-21/measurements/mumbai-2026.json",
+      "sha256": "02e6ce4e64fb67641cd5531945971de1a8efa3b203370cded17b32664a922a75",
+      "outcome": "AI_ASSISTED_MEASUREMENT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-mumbai-2025.raw",
+      "sha256": "d659d94df017b22bb26966076200ed1cc25dd23eae41f335fa22e236ab631d45",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-21/sources/calendar-mumbai-2026.raw",
+      "sha256": "1f768d777870327a90ffada13e9dc48fc0e8c7d3e6e5d7659ad490eff1fd74b0",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-mumbai-2027.raw",
+      "sha256": "027cfa264297ddaf8c140a303dd5728e8583ddbf36b3ad5a66ca04758d34f93d",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-21/measurements/new-york-2026.json",
+      "sha256": "99a7cd6a7a93c8176eb91b68c7445d17d715aa253946e0275bf0cdd2934ec030",
+      "outcome": "AI_ASSISTED_MEASUREMENT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-new-york-2025.raw",
+      "sha256": "10b8f2015f6a509a9bef3d3edae8a25449a5d1d737a42cf8d54513dc3c60ba5a",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-21/sources/calendar-new-york-2026.raw",
+      "sha256": "4050a4b15ed55a1e67aee9bad487dd3d4315b90bbd0aab6df11e18d8172f1fce",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-new-york-2027.raw",
+      "sha256": "d63f5e3e1fff80de68dc8211a6d2d7193a892312be8021cca7a145fbfd35c57f",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-21/measurements/sao-paulo-2026.json",
+      "sha256": "4cab81e1bac32a31af67b3270007c9cd54ca930b4dbbefe8cecade55db7caede",
+      "outcome": "AI_ASSISTED_MEASUREMENT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-sao-paulo-2025.raw",
+      "sha256": "1b6c1d8df880811dc721d7ce25f54b32dee39adf9a13652c74b4f67246add2ae",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-21/sources/calendar-sao-paulo-2026.raw",
+      "sha256": "4f1fb3acd451efe6b72a4d6e1647758231473dba710d0d8e35d6be423882de15",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-sao-paulo-2027.raw",
+      "sha256": "e1eef816f6c2ef0b2949e9c61b4d029b17d27be071975c10957edc29414dd45a",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-21/measurements/sydney-2026.json",
+      "sha256": "1c5704fa05eab13973d57e1f4ce0177e51c46ce01c2fbfecedccb33b8dd76672",
+      "outcome": "AI_ASSISTED_MEASUREMENT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-sydney-2025.raw",
+      "sha256": "a9368462dfc3635b54f1ab77dbf2c75df717446c5ad358118a4029c1419b9445",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-21/sources/calendar-sydney-2026.raw",
+      "sha256": "0fbd0ac1f3b61a96a059375f20ef34099064d74a2c8d48b4f1267a50a635e076",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-sydney-2027.raw",
+      "sha256": "c371f3d1ae0183d9e6ce09d92abd5c0ad443e83a3b94b5cc4a24718ac9260ca4",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-21/measurements/vrindavan-2026.json",
+      "sha256": "b9c385b14c46feba1982aa507942cbb7cdf9b8292257e0fe9291bb7d0d11fcc5",
+      "outcome": "AI_ASSISTED_MEASUREMENT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-vrindavan-2025.raw",
+      "sha256": "93ff3dc92b8b9162cdba78984a505aecc0aa64828d61c20b450e1945262cb140",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-21/sources/calendar-vrindavan-2026.raw",
+      "sha256": "da193be0364433b4ae9ddc2cd0d4cc2c27c794448a585d9d54556fba4a71872d",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-vrindavan-2027.raw",
+      "sha256": "d8cac77ada9d98c6dfee8fdf7e71db1d92152d3056d222ec268fdb1e1ad745c6",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    }
+  ]
+}

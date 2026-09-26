@@ -16,4 +16,5 @@ include(
     ":api",
     ":publish",
     ":verify",
+    ":publication",
 )

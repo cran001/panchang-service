@@ -1,0 +1,32 @@
+{
+  "id": "vaisnavacalendar-info-gcal-text",
+  "revision": "2026-09-21-ai-assisted-proposed",
+  "description": "Unsigned 2026 OBSERVANCES-only evidence proposal; original bands and exact points preserved. AI-assisted research is not qualified review or publication approval.",
+  "evidence": [
+    {
+      "link": "docs/release/2026-09-16/REFERENCE-POLICY.md",
+      "sha256": "59c2fe098f2d74ae2418b1af5a173a53bbf12f505be16f077a60bd5b137b2b2d",
+      "outcome": "PROPOSED_POLICY_NOT_APPROVED"
+    },
+    {
+      "link": "docs/release/2026-09-21/ai-assisted-review.json",
+      "sha256": "f6870d7b8c8c95ec9dc309ca255c9a8ad2cdf2ea0ec5dd7f89aff5eb268f3e2c",
+      "outcome": "AI_ASSISTED_EVIDENCE_REVIEW"
+    },
+    {
+      "link": "docs/release/2026-09-21/coverage-inventory.json",
+      "sha256": "8e306ff7af9d6676620ef7d07dde40470ab444265f8d1a06ef10559bfa20792d",
+      "outcome": "REPRODUCED_COMPARISONS_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-21/SOURCE-FINDINGS.md",
+      "sha256": "714bbfe0a0baa66e47e45f31917269bafb9dc0a6d6fa2dc2884331d51f088517",
+      "outcome": "AI_ASSISTED_SOURCE_INVESTIGATION_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-21/source-checks.json",
+      "sha256": "f09999f38793baa67499526889448da0154290b2f6fcf85189e5ea3460887f02",
+      "outcome": "HASHED_RESEARCH_SOURCES_NOT_APPROVAL"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "rama-navami-sac-2018",
+  "url": "https://www.vaisnavacalendar.info/wp2020/wp-content/uploads/2020/05/Rama-navami-fast-SAC-March-2018.pdf",
+  "kind": "primary-author-document-hosted-by-designated-publisher",
+  "retrievedAtUtc": "2026-09-20T17:53:10.492750+00:00",
+  "documentRevision": "March 2018",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": 200,
+  "finalUrl": "https://www.vaisnavacalendar.info/wp2020/wp-content/uploads/2020/05/Rama-navami-fast-SAC-March-2018.pdf",
+  "responseHeaders": {
+    "Date": "Sun, 20 Sep 2026 17:53:11 GMT",
+    "Server": "Apache/2",
+    "Upgrade": "h2,h2c",
+    "Connection": "Upgrade, close",
+    "Last-Modified": "Sun, 10 May 2020 08:22:10 GMT",
+    "ETag": "\"85f5b-5a546ed455717\"",
+    "Accept-Ranges": "bytes",
+    "Content-Length": "548699",
+    "Vary": "Accept-Encoding,User-Agent",
+    "Content-Type": "application/pdf"
+  },
+  "file": "docs/release/2026-09-16/sources/rama-navami-sac-2018.pdf",
+  "sha256": "e2ddea23cdcdb273726f27772e583adf7af86e6d66935723fa7e8c88fccd630d",
+  "bytes": 548699
+}

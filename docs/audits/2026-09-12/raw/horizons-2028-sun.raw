@@ -1,0 +1,139 @@
+API VERSION: 1.2
+API SOURCE: NASA/JPL Horizons API
+
+
+
+*******************************************************************************
+Ephemeris / API_USER Fri Sep 11 15:51:59 2026 Pasadena, USA      / Horizons    
+*******************************************************************************
+Target body name: Sun (10)                        {source: DE441}
+Center body name: Earth (399)                     {source: DE441}
+Center-site name: GEOCENTRIC
+*******************************************************************************
+Start time      : A.D. 2028-Jan-01 00:00:00.0000 UT      
+Stop  time      : A.D. 2028-Feb-01 00:00:00.0000 UT      
+Step-size       : 1440 minutes
+*******************************************************************************
+Target pole/equ : IAU_SUN                         {East-longitude positive}
+Target radii    : 695700.0, 695700.0, 695700.0 km {Equator_a, b, pole_c}       
+Center geodetic : 0.0, 0.0, -6378.137             {E-lon(deg),Lat(deg),Alt(km)}
+Center cylindric: 0.0, 0.0, 0.0                   {E-lon(deg),Dxy(km),Dz(km)}
+Center pole/equ : ITRF93                          {East-longitude positive}
+Center radii    : 6378.137, 6378.137, 6356.752 km {Equator_a, b, pole_c}       
+Target primary  : Sun
+Vis. interferer : MOON (R_eq= 1737.400) km        {source: DE441}
+Rel. light bend : Sun                             {source: DE441}
+Rel. lght bnd GM: 1.3271E+11 km^3/s^2                                          
+Atmos refraction: NO (AIRLESS)
+RA format       : DEG
+Time format     : CAL 
+Calendar mode   : Mixed Julian/Gregorian
+EOP file        : eop.260911.p261208                                           
+EOP coverage    : DATA-BASED 1962-JAN-20 TO 2026-SEP-11. PREDICTS-> 2026-DEC-07
+Units conversion: 1 au= 149597870.700 km, c= 299792.458 km/s, 1 day= 86400.0 s 
+Table cut-offs 1: Elevation (-90.0deg=NO ),Airmass (>38.000=NO), Daylight (NO )
+Table cut-offs 2: Solar elongation (  0.0,180.0=NO ),Local Hour Angle( 0.0=NO )
+Table cut-offs 3: RA/DEC angular rate (     0.0=NO )                           
+Table format    : Comma Separated Values (spreadsheet)
+**********************************************************************************
+ Date__(UT)__HR:MN:SS, , ,    ObsEcLon,   ObsEcLat,             delta,     deldot,
+**********************************************************************************
+$$SOE
+ 2028-Jan-01 00:00:00, , , 280.0770488,  0.0000973,  0.98335691404757, -0.0366774,
+ 2028-Jan-02 00:00:00, , , 281.0964784,  0.0001284,  0.98333787659068, -0.0291955,
+ 2028-Jan-03 00:00:00, , , 282.1158643,  0.0001549,  0.98332325424024, -0.0213824,
+ 2028-Jan-04 00:00:00, , , 283.1351927,  0.0001755,  0.98331324823300, -0.0132039,
+ 2028-Jan-05 00:00:00, , , 284.1544525,  0.0001891,  0.98330807930236, -0.0046265,
+ 2028-Jan-06 00:00:00, , , 285.1736351,  0.0001947,  0.98330798731787,  0.0043825,
+ 2028-Jan-07 00:00:00, , , 286.1927338,  0.0001919,  0.98331323027460,  0.0138523,
+ 2028-Jan-08 00:00:00, , , 287.2117436,  0.0001804,  0.98332408073845,  0.0238028,
+ 2028-Jan-09 00:00:00, , , 288.2306610,  0.0001603,  0.98334081739932,  0.0342332,
+ 2028-Jan-10 00:00:00, , , 289.2494829,  0.0001323,  0.98336370950647,  0.0451092,
+ 2028-Jan-11 00:00:00, , , 290.2682066,  0.0000977,  0.98339299330232,  0.0563491,
+ 2028-Jan-12 00:00:00, , , 291.2868304,  0.0000585,  0.98342884256978,  0.0678181,
+ 2028-Jan-13 00:00:00, , , 292.3053554,  0.0000169,  0.98347133942481,  0.0793363,
+ 2028-Jan-14 00:00:00, , , 293.3237879, -0.0000245,  0.98352045425652,  0.0907019,
+ 2028-Jan-15 00:00:00, , , 294.3421390, -0.0000629,  0.98357604246653,  0.1017240,
+ 2028-Jan-16 00:00:00, , , 295.3604230, -0.0000961,  0.98363785989519,  0.1122526,
+ 2028-Jan-17 00:00:00, , , 296.3786528, -0.0001222,  0.98370559177539,  0.1221946,
+ 2028-Jan-18 00:00:00, , , 297.3968358, -0.0001399,  0.98377888618125,  0.1315133,
+ 2028-Jan-19 00:00:00, , , 298.4149717, -0.0001485,  0.98385738390497,  0.1402178,
+ 2028-Jan-20 00:00:00, , , 299.4330517, -0.0001480,  0.98394074057390,  0.1483479,
+ 2028-Jan-21 00:00:00, , , 300.4510603, -0.0001387,  0.98402864065188,  0.1559618,
+ 2028-Jan-22 00:00:00, , , 301.4689764, -0.0001215,  0.98412080513679,  0.1631269,
+ 2028-Jan-23 00:00:00, , , 302.4867751, -0.0000975,  0.98421699526117,  0.1699144,
+ 2028-Jan-24 00:00:00, , , 303.5044294, -0.0000681,  0.98431701403319,  0.1763973,
+ 2028-Jan-25 00:00:00, , , 304.5219116, -0.0000349,  0.98442070669765,  0.1826489,
+ 2028-Jan-26 00:00:00, , , 305.5391943,  0.0000006,  0.98452796054707,  0.1887413,
+ 2028-Jan-27 00:00:00, , , 306.5562514,  0.0000366,  0.98463870412913,  0.1947450,
+ 2028-Jan-28 00:00:00, , , 307.5730588,  0.0000715,  0.98475290578974,  0.2007273,
+ 2028-Jan-29 00:00:00, , , 308.5895944,  0.0001036,  0.98487057158848,  0.2067512,
+ 2028-Jan-30 00:00:00, , , 309.6058387,  0.0001315,  0.98499174281332,  0.2128757,
+ 2028-Jan-31 00:00:00, , , 310.6217742,  0.0001539,  0.98511649348789,  0.2191554,
+ 2028-Feb-01 00:00:00, , , 311.6373854,  0.0001697,  0.98524492831727,  0.2256421,
+$$EOE
+**********************************************************************************
+Column meaning:
+ 
+TIME
+
+  Times PRIOR to 1962 are UT1, a mean-solar time closely related to the
+prior but now-deprecated GMT. Times AFTER 1962 are in UTC, the current
+civil or "wall-clock" time-scale. UTC is kept within 0.9 seconds of UT1
+using integer leap-seconds for 1972 and later years.
+
+  Conversion from the internal Barycentric Dynamical Time (TDB) of solar
+system dynamics to the non-uniform civil UT time-scale requested for output
+has not been determined for UTC times after the next July or January 1st.
+Therefore, the last known leap-second is used as a constant over future
+intervals.
+
+  Time tags refer to the UT time-scale conversion from TDB on Earth
+regardless of observer location within the solar system, although clock
+rates may differ due to the local gravity field and no analog to "UT"
+may be defined for that location.
+
+  Any 'b' symbol in the 1st-column denotes a B.C. date. First-column blank
+(" ") denotes an A.D. date.
+ 
+CALENDAR SYSTEM
+
+  Mixed calendar mode was active such that calendar dates after AD 1582-Oct-15
+(if any) are in the modern Gregorian system. Dates prior to 1582-Oct-5 (if any)
+are in the Julian calendar system, which is automatically extended for dates
+prior to its adoption on 45-Jan-1 BC.  The Julian calendar is useful for
+matching historical dates. The Gregorian calendar more accurately corresponds
+to the Earth's orbital motion and seasons. A "Gregorian-only" calendar mode is
+available if such physical events are the primary interest.
+
+  NOTE: "n.a." in output means quantity "not available" at the print-time.
+ 
+ 'ObsEcLon,   ObsEcLat,' =
+   Observer-centered IAU76/80 ecliptic-of-date longitude and latitude of the
+target centers' apparent position, with light-time, gravitational deflection of
+light, and stellar aberrations.  Units: DEGREES
+ 
+ 'delta,     deldot,' =
+   Apparent range ("delta", light-time aberrated) and range-rate ("delta-dot")
+of the target center relative to the observer. A positive "deldot" means the
+target center is moving away from the observer, negative indicates movement
+toward the observer.  Units: AU and KM/S
+
+Computations by ...
+
+    Solar System Dynamics Group, Horizons On-Line Ephemeris System
+    4800 Oak Grove Drive, Jet Propulsion Laboratory
+    Pasadena, CA  91109   USA
+
+    General site: https://ssd.jpl.nasa.gov/
+    Mailing list: https://ssd.jpl.nasa.gov/email_list.html
+    System news : https://ssd.jpl.nasa.gov/horizons/news.html
+    User Guide  : https://ssd.jpl.nasa.gov/horizons/manual.html
+    Connect     : browser        https://ssd.jpl.nasa.gov/horizons/app.html#/x
+                  API            https://ssd-api.jpl.nasa.gov/doc/horizons.html
+                  command-line   telnet ssd.jpl.nasa.gov 6775
+                  e-mail/batch   https://ssd.jpl.nasa.gov/ftp/ssd/horizons_batch.txt
+                  scripts        https://ssd.jpl.nasa.gov/ftp/ssd/SCRIPTS
+    Inquiries   : Jon.D.Giorgini@jpl.nasa.gov
+
+**********************************************************************************

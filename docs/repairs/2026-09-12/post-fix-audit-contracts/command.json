@@ -1,0 +1,14 @@
+[
+  "D:\\projects\\panchang-service\\gradlew.bat",
+  "-I",
+  "docs/repairs/2026-09-12/audit.init.gradle",
+  "-PauditOutput=docs/repairs/2026-09-12/post-fix-audit-output",
+  ":verify:auditEvidence",
+  "--tests",
+  "*januaryFirstDeliveryContract",
+  "--tests",
+  "*reykjavikSunriseRoundingContract",
+  "--tests",
+  "*reykjavikDocumentedDaylightCapContract",
+  "--console=plain"
+]

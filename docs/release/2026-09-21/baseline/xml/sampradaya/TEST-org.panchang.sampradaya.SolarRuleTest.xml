@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.sampradaya.SolarRuleTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-09-21T09:09:45" hostname="DESKTOP-KBUKJ2P" time="8.098">
+  <properties/>
+  <testcase name="a solar rule explains itself in terms of the sign and the day()" classname="org.panchang.sampradaya.SolarRuleTest" time="5.543"/>
+  <testcase name="days of the solar month count from its opening()" classname="org.panchang.sampradaya.SolarRuleTest" time="0.138"/>
+  <testcase name="a cycle rule cannot nest a rule that needs the catalog around it()" classname="org.panchang.sampradaya.SolarRuleTest" time="0.002"/>
+  <testcase name="a rule held for one cycle year resolves in that year and only that year()" classname="org.panchang.sampradaya.SolarRuleTest" time="0.045"/>
+  <testcase name="every sign opens once a year, in order, a month apart()" classname="org.panchang.sampradaya.SolarRuleTest" time="0.553"/>
+  <testcase name="the cycle arithmetic round-trips against its published anchor()" classname="org.panchang.sampradaya.SolarRuleTest" time="0.0"/>
+  <testcase name="solar months open when the Sun enters the sign()" classname="org.panchang.sampradaya.SolarRuleTest" time="0.155"/>
+  <testcase name="the Bengali month-opening never precedes the ingress day and never lags it by more than a day()" classname="org.panchang.sampradaya.SolarRuleTest" time="1.661"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

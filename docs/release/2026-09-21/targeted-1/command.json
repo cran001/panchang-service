@@ -1,0 +1,13 @@
+{
+  "command": [
+    ".\\gradlew.bat",
+    ":publication:test",
+    ":api:test",
+    ":publish:test",
+    "--rerun-tasks",
+    "--continue",
+    "--console=plain"
+  ],
+  "exitCode": 1,
+  "elapsedSeconds": 538.609000000055
+}

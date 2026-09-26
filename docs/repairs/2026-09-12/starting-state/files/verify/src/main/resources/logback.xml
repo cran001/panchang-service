@@ -1,0 +1,16 @@
+<!--
+  The harvest CLI prints its own provenance lines to stderr. Ktor/CIO debug logging on
+  top of that buries the one thing an operator needs to read, so everything below WARN
+  is silenced.
+-->
+<configuration>
+    <appender name="STDERR" class="ch.qos.logback.core.ConsoleAppender">
+        <target>System.err</target>
+        <encoder>
+            <pattern>%-5level %logger{20} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <root level="WARN">
+        <appender-ref ref="STDERR"/>
+    </root>
+</configuration>

@@ -1,0 +1,67 @@
+{
+  "apiversion": "4.0.1", 
+  "geometry": {
+    "coordinates": [
+      18.424, 
+      -33.925
+    ], 
+    "type": "Point"
+  }, 
+  "properties": {
+    "data": {
+      "closestphase": {
+        "day": 3, 
+        "month": 1, 
+        "phase": "Full Moon", 
+        "time": "12:03", 
+        "year": 2026
+      }, 
+      "curphase": "Waxing Gibbous", 
+      "day": 1, 
+      "day_of_week": "Thursday", 
+      "fracillum": "94%", 
+      "isdst": false, 
+      "label": "cape-town", 
+      "month": 1, 
+      "moondata": [
+        {
+          "phen": "Set", 
+          "time": "03:03"
+        }, 
+        {
+          "phen": "Rise", 
+          "time": "18:26"
+        }, 
+        {
+          "phen": "Upper Transit", 
+          "time": "23:15"
+        }
+      ], 
+      "sundata": [
+        {
+          "phen": "Begin Civil Twilight", 
+          "time": "05:10"
+        }, 
+        {
+          "phen": "Rise", 
+          "time": "05:39"
+        }, 
+        {
+          "phen": "Upper Transit", 
+          "time": "12:50"
+        }, 
+        {
+          "phen": "Set", 
+          "time": "20:01"
+        }, 
+        {
+          "phen": "End Civil Twilight", 
+          "time": "20:30"
+        }
+      ], 
+      "tz": 2.0, 
+      "year": 2026
+    }
+  }, 
+  "type": "Feature"
+}

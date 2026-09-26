@@ -1,0 +1,7 @@
+{
+  "url": "https://api.github.com/repos/gopaladasa/GCAL-for-Windows/git/trees/master?recursive=1",
+  "httpStatus": 200,
+  "sha256": "e346f9c20f96c6b24d704bd3b92b065b30d21a282a1886de36dfc0e9277e0162",
+  "retrievalTimeFromSavedFileMtimeUtc": "2026-09-12T06:52:09.845281+00:00",
+  "note": "JSON response text saved with PowerShell Set-Content; checksum covers saved text, not a captured raw HTTP body. Discovery only."
+}

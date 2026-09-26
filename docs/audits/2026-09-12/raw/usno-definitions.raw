@@ -1,0 +1,905 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rise, Set, and Twilight Definitions</title>
+    <meta name="description" content="Definitions for the terms associated with the astronomical phenomena of rise, set, and twilight.">
+    <meta name="keywords" content="rise, set, twilight, sunrise, sunset, moonrise, moonset, horizon, transit">
+
+    <link rel="stylesheet" href="/uswds/css/uswds.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/aa.css">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <script src="/uswds/js/uswds-init.min.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>   
+</head>
+
+<body>
+    
+
+<a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+
+
+<div class="site-banner usa-banner">
+    <div class="usa-accordion">
+        <header class="usa-banner__header">
+            <div class="usa-banner__inner">
+                <div class="grid-col-auto">
+                    <img class="usa-banner__header-flag" src="/uswds/img/us_flag_small.png" alt="U.S. flag">
+                </div>
+                <div class="grid-col-fill tablet:grid-col-auto">
+                    <p class="usa-banner__header-text">An official website of the United States government</p>
+                    <p class="usa-banner__header-action" aria-hidden="true">Here’s how you know</p>
+                </div>
+                <button class="usa-accordion__button usa-banner__button" aria-expanded="false" aria-controls="gov-banner">
+            <span class="usa-banner__button-text">Here’s how you know</span>
+            </button>
+            </div>
+        </header>
+        <div class="usa-banner__content usa-accordion__content" id="gov-banner">
+            <div class="grid-row grid-gap-lg">
+                <div class="usa-banner__guidance tablet:grid-col-6">
+                    <img class="usa-banner__icon usa-media-block__img" src="/uswds/img/icon-dot-gov.svg" alt="Dot gov">
+                    <div class="usa-media-block__body">
+                        <p>
+                            <strong>The .gov means it’s official.</strong>
+                            <br> Federal government websites often end in .gov or .mil. Before sharing sensitive information, make sure you’re on a federal government site.
+                        </p>
+                    </div>
+                </div>
+                <div class="usa-banner__guidance tablet:grid-col-6">
+                    <img class="usa-banner__icon usa-media-block__img" src="/uswds/img/icon-https.svg" alt="Https">
+                    <div class="usa-media-block__body">
+                        <p>
+                            <strong>The site is secure.</strong>
+                            <br> The <strong>https://</strong> ensures that you are connecting to the official website and that any information you provide is encrypted and transmitted securely.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="usa-overlay"></div>
+<header class="usa-header site-header site-header-dark" role="banner">
+    <div class="usa-navbar site-header-navbar">
+        <div class="usa-logo site-logo" id="logo">
+            <em class="usa-logo__text">
+                <a class="margin-right-05" href="/" title="Home" aria-label="USNO Astronomical Applications Home">
+                <span aria-hidden="true" class="site-title-short">AA Dept</span>
+                <span class="site-title">Astronomical Applications Department</span>
+                </a>
+            </em>
+        </div>
+        <div class="urania-logo-container">
+            <a href="https://www.cnmoc.usff.navy.mil/usno/">
+                <img class="urania-logo" src="/graphics/urania_logo_circle.png" alt="Urania Logo">
+            </a>
+        </div>
+        <button class="usa-menu-btn">Menu</button>
+    </div>
+
+</header>
+<nav class="site-nav-secondary sticky">
+    <ul>
+        
+        <li class="usa-nav__primary-item " >
+        <a class="" href="/index"><span>Main</span></a>
+        </li>
+        
+        <li class="usa-nav__primary-item " >
+        <a class="" href="/data/index"><span>Data Services</span></a>
+        </li>
+        
+        <li class="usa-nav__primary-item is-current" >
+        <a class="usa-current" href="/faq/index"><span>Information Center</span></a>
+        </li>
+        
+        <li class="usa-nav__primary-item " >
+        <a class="" href="/publications/index"><span>Publications</span></a>
+        </li>
+        
+        <li class="usa-nav__primary-item " >
+        <a class="" href="/software/index"><span>Software</span></a>
+        </li>
+        
+        <li class="usa-nav__primary-item " >
+        <a class="" href="/about/index"><span>About Us</span></a>
+        </li>
+        
+        <li class="usa-nav__primary-item " >
+        <a class="" href="/sitemap/"><span>Site Map</span></a>
+        </li>
+        
+    </ul>
+</nav>
+    
+
+<nav role="navigation" aria-label="Mobile Navigation" class="usa-nav site-nav sidenav-mobile">
+    <div class="usa-nav__inner"><button class="usa-nav__close"><img src="/uswds/img/close.svg" role="img" alt="close"></button>
+    <ul class="usa-nav__primary">
+        
+        <li class="usa-nav__primary-item " >
+        <a class="" href="/index"><span>Main</span></a>
+        </li>
+        
+        <li class="usa-nav__primary-item " >
+        <a class="" href="/data/index"><span>Data Services</span></a>
+        </li>
+        
+        <li class="usa-nav__primary-item is-current" >
+        <a class="usa-current" href="/faq/index"><span>Information Center</span></a>
+        </li>
+        
+        <li class="usa-nav__primary-item " >
+        <a class="" href="/publications/index"><span>Publications</span></a>
+        </li>
+        
+        <li class="usa-nav__primary-item " >
+        <a class="" href="/software/index"><span>Software</span></a>
+        </li>
+        
+        <li class="usa-nav__primary-item " >
+        <a class="" href="/about/index"><span>About Us</span></a>
+        </li>
+        
+        <li class="usa-nav__primary-item " >
+        <a class="" href="/sitemap/"><span>Site Map</span></a>
+        </li>
+        
+    </ul>
+</nav>
+
+
+<main class="usa-layout-docs usa-section" id="main-content">
+    <div class="grid-container">
+        <div class="grid-row grid-gap">
+            <aside class="usa-layout-docs__sidenav desktop:grid-col-3">
+                <nav aria-label="Secondary navigation">
+                    <ul class="usa-sidenav"> 
+                         
+
+    
+
+
+ 
+    
+    
+    <li class="usa-sidenav__item">
+        
+            <a class="" 
+            href="/faq/index">
+            <span><strong>Astronomical Information Center</strong></span></a>
+        
+    </li>
+    
+
+ 
+    
+    
+    <li class="usa-sidenav__item">
+        
+            <strong><span>Terms used on this website</span></strong>
+        
+    </li>
+    
+
+ 
+    
+    
+    <li class="usa-sidenav__item">
+        
+            <a class="" 
+            href="/faq/asa_glossary">
+            <span>Astronomical Almanac Glossary</span></a>
+        
+        
+    </li>
+    
+
+ 
+    
+    
+    <li class="usa-sidenav__item">
+        
+            <strong><span>Phenomena of the Sun and Moon</span></strong>
+        
+    </li>
+    
+
+ 
+    
+    
+    <li class="usa-sidenav__item">
+        
+            <a class="usa-current" 
+            href="/faq/RST_defs">
+            <span>Rise, Set and Twilight Definitions</span></a>
+        
+        
+    </li>
+    
+
+ 
+    
+    
+    <li class="usa-sidenav__item">
+        
+            <a class="" 
+            href="/faq/longest_day">
+            <span>Comparative Lengths of Days and Nights</span></a>
+        
+        
+    </li>
+    
+
+ 
+    
+    
+    <li class="usa-sidenav__item">
+        
+            <a class="" 
+            href="/faq/equinoxes">
+            <span>Length of Day and Night at the Equinoxes</span></a>
+        
+        
+    </li>
+    
+
+ 
+    
+    
+    <li class="usa-sidenav__item">
+        
+            <a class="" 
+            href="/faq/rs_solstices">
+            <span>Sunrise and Sunset Times Near the Solstices</span></a>
+        
+        
+    </li>
+    
+
+ 
+    
+    
+    <li class="usa-sidenav__item">
+        
+            <a class="" 
+            href="/faq/crescent">
+            <span>Visibility of the Crescent Moon</span></a>
+        
+        
+    </li>
+    
+
+ 
+    
+    
+    <li class="usa-sidenav__item">
+        
+            <a class="" 
+            href="/faq/eclipse_ref">
+            <span>References on Eclipses</span></a>
+        
+        
+    </li>
+    
+
+ 
+    
+    
+    <li class="usa-sidenav__item">
+        
+            <a class="" 
+            href="/faq/moon_phases">
+            <span>Phases of the Moon and Percent of the Moon Illuminated</span></a>
+        
+        
+    </li>
+    
+
+ 
+    
+    
+    <li class="usa-sidenav__item">
+        
+            <strong><span>Time</span></strong>
+        
+    </li>
+    
+
+ 
+    
+    
+    <li class="usa-sidenav__item">
+        
+            <a class="" 
+            href="/faq/UT">
+            <span>Universal Time</span></a>
+        
+        
+    </li>
+    
+
+ 
+    
+    
+    <li class="usa-sidenav__item">
+        
+            <a class="" 
+            href="/faq/TT">
+            <span>Terrestrial Time</span></a>
+        
+        
+    </li>
+    
+
+ 
+    
+    
+    <li class="usa-sidenav__item">
+        
+            <a class="" 
+            href="/faq/GAST">
+            <span>Approximate Sidereal Time</span></a>
+        
+        
+    </li>
+    
+
+ 
+    
+    
+    <li class="usa-sidenav__item">
+        
+            <a class="" 
+            href="/faq/us_tzones">
+            <span>U.S. Time Zones</span></a>
+        
+        
+    </li>
+    
+
+ 
+    
+    
+    <li class="usa-sidenav__item">
+        
+            <a class="" 
+            href="/faq/world_tzones">
+            <span>World Time Zone Map</span></a>
+        
+        
+    </li>
+    
+
+ 
+    
+    
+    <li class="usa-sidenav__item">
+        
+            <a class="" 
+            href="/faq/daylight_time">
+            <span>Daylight Saving Time</span></a>
+        
+        
+    </li>
+    
+
+ 
+    
+    
+    <li class="usa-sidenav__item">
+        
+            <a class="" 
+            href="/faq/eqtime">
+            <span>The Equation of Time</span></a>
+        
+        
+    </li>
+    
+
+ 
+    
+    
+    <li class="usa-sidenav__item">
+        
+            <strong><span>Calendars and Historical Events</span></strong>
+        
+    </li>
+    
+
+ 
+    
+    
+    <li class="usa-sidenav__item">
+        
+            <a class="" 
+            href="/faq/calendars">
+            <span>Introduction to Calendars</span></a>
+        
+        
+    </li>
+    
+
+ 
+    
+    
+    <li class="usa-sidenav__item">
+        
+            <a class="" 
+            href="/faq/leap_years">
+            <span>Leap Years</span></a>
+        
+        
+    </li>
+    
+
+ 
+    
+    
+    <li class="usa-sidenav__item">
+        
+            <a class="" 
+            href="/faq/holidays">
+            <span>U.S. Holidays</span></a>
+        
+        
+    </li>
+    
+
+ 
+    
+    
+    <li class="usa-sidenav__item">
+        
+            <a class="" 
+            href="/faq/international_date">
+            <span>International Date Line</span></a>
+        
+        
+    </li>
+    
+
+ 
+    
+    
+    <li class="usa-sidenav__item">
+        
+            <a class="" 
+            href="/faq/millennium">
+            <span>The 21st Century and the 3rd Millennium</span></a>
+        
+        
+    </li>
+    
+
+ 
+    
+    
+    <li class="usa-sidenav__item">
+        
+            <a class="" 
+            href="/faq/first_sunrise">
+            <span>The First Sunrise of the New Year</span></a>
+        
+        
+    </li>
+    
+
+ 
+    
+    
+    <li class="usa-sidenav__item">
+        
+            <strong><span>Computing Astronomical Data and Phenomena</span></strong>
+        
+    </li>
+    
+
+ 
+    
+    
+    <li class="usa-sidenav__item">
+        
+            <a class="" 
+            href="/faq/JD_formula">
+            <span>Converting Between Julian Dates and Gregorian Calendar Dates</span></a>
+        
+        
+    </li>
+    
+
+ 
+    
+    
+    <li class="usa-sidenav__item">
+        
+            <a class="" 
+            href="/faq/rs_algor">
+            <span>Computing Times of Rise, Set, and Twilight</span></a>
+        
+        
+    </li>
+    
+
+ 
+    
+    
+    <li class="usa-sidenav__item">
+        
+            <a class="" 
+            href="/faq/sun_approx">
+            <span>Computing Approximate Solar Coordinates</span></a>
+        
+        
+    </li>
+    
+
+ 
+    
+    
+    <li class="usa-sidenav__item">
+        
+            <a class="" 
+            href="/faq/alt_az">
+            <span>Computing Altitude and Azimuth</span></a>
+        
+        
+    </li>
+    
+
+ 
+    
+    
+    <li class="usa-sidenav__item">
+        
+            <strong><span>Celestial Navigation</span></strong>
+        
+    </li>
+    
+
+ 
+    
+        
+          
+    
+    
+    <li class="usa-sidenav__item">
+        
+            <a class="" 
+            href="/publications/celnav">
+            <span>Celestial Navigation Algorithms</span></a>
+        
+        
+    </li>
+    
+
+ 
+    
+    
+    <li class="usa-sidenav__item">
+        
+            <a class="" 
+            href="/faq/celnav">
+            <span>Celestial Navigation Resources</span></a>
+        
+        
+    </li>
+    
+
+ 
+    
+    
+    <li class="usa-sidenav__item">
+        
+            <strong><span>Other Topics</span></strong>
+        
+    </li>
+    
+
+ 
+    
+    
+    <li class="usa-sidenav__item">
+        
+            <a class="" 
+            href="/faq/lawyers">
+            <span>Astronomical Data Used for Litigation</span></a>
+        
+        
+    </li>
+    
+
+ 
+    
+    
+    <li class="usa-sidenav__item">
+        
+            <a class="" 
+            href="/faq/seasons_orbit">
+            <span>The Seasons and the Earth&#39;s Orbit</span></a>
+        
+        
+    </li>
+    
+
+ 
+    
+    
+    <li class="usa-sidenav__item">
+        
+            <a class="" 
+            href="/faq/apsides">
+            <span>Variation in Times of Perihelion and Aphelion</span></a>
+        
+        
+    </li>
+    
+
+ 
+    
+    
+    <li class="usa-sidenav__item">
+        
+            <a class="" 
+            href="/faq/ICRS_doc">
+            <span>International Celestial Reference System (ICRS)</span></a>
+        
+        
+    </li>
+    
+
+ 
+    
+    
+    <li class="usa-sidenav__item">
+        
+            <a class="" 
+            href="/faq/minorplanets">
+            <span>When Did the Asteroids Become Minor Planets?</span></a>
+        
+        
+    </li>
+    
+
+
+
+
+
+         
+                     </ul>
+                </nav>
+            </aside>
+            <div class="usa-layout-docs__main desktop:grid-col-9 usa-prose">
+                <div>
+                
+<h1>Rise, Set, and Twilight Definitions</h1>
+
+<p>(For specific rise, set, and twilight computations, see
+        <a href="/data/RS_OneDay">
+        Complete Sun and Moon Data for One Day</a> or
+        <a href="/data/RS_OneYear">
+        One Year's table of Sunrise/Sunset, Moonrise/Moonset, or
+        Twilight Times</a> in <strong>Data Services</strong>.)</p>
+        
+        <p>
+        <strong>Horizon</strong>:  Wherever one is located on or near the
+        Earth's surface, the Earth is perceived as essentially flat and,
+        therefore, as a plane.  The sky resembles one-half of a sphere or
+        dome centered at the observer.  If there are no visual
+        obstructions, the apparent intersection of the sky with the
+        Earth's (plane) surface is the horizon, which appears as a circle
+        centered at the observer.  For rise/set computations, the
+        observer's eye is considered to be on the surface of the Earth,
+        so that the horizon is geometrically exactly 90 degrees from the observer's zenith.</p>
+        
+        <p><a name="riseset"></a>
+        <strong>Rise, Set</strong>:  During the course of a day the Earth
+        rotates once on its axis causing the phenomena of rising and
+        setting.  Excluding circumpolar objects, celestial bodies &ndash; stars and planets included &ndash; seem
+        to appear in the sky at the horizon to the East of any particular
+        place, then to cross the sky and again disappear at the horizon
+        to the West.  The most noticeable of these events, and the most
+        significant in regard to ordinary affairs, are the rising and
+        setting of the Sun and Moon.  Because the Sun and Moon appear as
+        circular disks and not as points of light, a definition of rise
+        or set must be very specific because not all of either body is seen to rise 
+        or set at once.</p>
+        
+        <blockquote>
+        <p>
+        <strong>Sunrise and sunset</strong> conventionally refer to the
+        times when the upper edge of the disk of the Sun is on the
+        horizon.  Atmospheric conditions are assumed to be average, and
+        the location is in a level region on the Earth's surface.</p>
+        
+        <p>
+        <strong>Moonrise and moonset</strong> times are computed for
+        exactly the same circumstances as for sunrise and sunset.
+        However, moonrise and moonset may occur at any time of day and, consequently, it is often possible for the Moon
+        to be seen during daylight, and to have moonless nights.  It is
+        also possible that a moonrise or moonset does not occur relative
+        to a specific place on a given date.</p>
+        </blockquote>
+        
+        <p>
+        <strong>Transit</strong>:  The transit time of a celestial body 
+        refers to the instant that its center crosses an imaginary line in the
+        sky - the observer's meridian - running from north to south.  For
+        observers in low to middle latitudes, transit is
+        <em>approximately</em> midway between rise and set, and 
+        represents the time at which the body is highest in the sky on any given day.
+        At high latitudes, neither of these statements may be true - for
+        example, there may be several transits between rise and set.
+        The transit of the Sun is local solar (sundial) noon.  The difference
+        between the transit times of the Sun and Moon is closely related to the
+        Moon's phase.  The New Moon transits at about the same time as the Sun;
+        the First Quarter Moon transits about 6 hours after the Sun;
+        the Full Moon transits about 12 hours after/before the Sun;  and
+        the Last Quarter Moon transits about 6 hours before the Sun.</p>
+        
+        <p><a name="twilight"></a>
+        <strong>Twilight</strong>:  Twilight is the period of time before sunrise
+        and again after sunset, during which sunlight is scattered by the Earth’s
+        upper atmosphere and provides significant illumination. The qualitative
+        descriptions of civil, nautical and astronomical twilight will match the
+        computed beginning and ending times for an observer near sea level, with
+        good weather conditions and a level horizon. Note, however, that the
+        amount of natural light available at any particular time during the twilight
+        periods and the actual visibility of objects depends significantly on such
+        factors as local atmospheric conditions, cloud cover, and visibility of the
+        horizon. Thus, to determine the actual lighting level, a forensic study
+        and/or eye witness testimony would be required.</p>
+        
+        <blockquote>
+        <p>
+        <strong>Civil twilight</strong> is defined to begin in the morning, and to
+        end in the evening when the center of the Sun is geometrically 6 degrees
+        below the horizon.  In the morning before the beginning of civil twilight
+        and in the evening after the end of civil twilight, artificial illumination
+        is normally required to carry on ordinary outdoor activities.</p>
+        
+        <p>
+        <strong>Nautical twilight</strong> is defined to begin in the morning, and
+        to end in the evening, when the center of the sun is geometrically 12
+        degrees below the horizon. During nautical twilight the illumination level
+        is such that the horizon is still visible even on a Moonless night allowing
+        mariners to take reliable star sights for navigational purposes before
+        sunrise or after sunset.</p>
+        
+        <p>
+        <strong>Astronomical twilight</strong> is defined to begin in the morning,
+        and to end in the evening when the center of the Sun is geometrically 18
+        degrees below the horizon. Before the beginning of astronomical twilight in
+        the morning and after the end of astronomical twilight in the evening,
+        scattered light from the Sun is less than that from starlight and other
+        natural sources.        
+        </p>
+        </blockquote>
+        
+        <hr>
+        <h3>Technical 
+        Definitions and Computational Details</h3>
+        
+        <p><strong>Sunrise and sunset.</strong> For computational 
+        purposes, sunrise or sunset is defined to occur when the geometric 
+        zenith distance of center of the Sun is 90.8333 degrees.  That is, 
+        the center of the Sun is geometrically 50 arcminutes below a
+        horizontal plane.  For an observer at sea level with a level,
+        unobstructed horizon, under average atmospheric conditions, the
+        upper limb of the Sun will then appear to be tangent to the
+        horizon.  The 50-arcminute geometric depression of the Sun's
+        center used for the computations is obtained by adding the
+        average apparent radius of the Sun (16 arcminutes) to the average
+        amount of atmospheric refraction at the horizon (34
+        arcminutes).</p>
+        
+        <p><strong>Moonrise and moonset.</strong> Moonrise and 
+        moonset are defined similarly, but the situation is computationally 
+        more complex because of the nearness of the Moon and the eccentricity
+        of its orbit.  If the computations are carried out using
+        coordinates of the Moon with respect to the Earth's center (the
+        usual method), then moonrise or moonset is defined to occur when
+        the geometric zenith distance of the center of the Moon is</p>
+        
+        <blockquote>90.5666 degrees + Moon's apparent angular radius
+        
+                                - Moon's horizontal parallax</blockquote>
+        
+        <p>Under normal atmospheric conditions at sea level, the upper
+        limb of the Moon will then appear to be tangent with a level,
+        unobstructed horizon.  No account is taken of the Moon's phase;
+        that is, the Moon is always regarded as a disk in the sky and the
+        upper limb might be dark.  Here again, a constant of 34
+        arcminutes (0.5666 degree) is used to account for atmospheric
+        refraction.  The Moon's apparent radius varies from 15 to 17
+        arcminutes and its horizontal parallax varies from 54 to 61
+        arcminutes.  Adding all the terms above together, the center of
+        the Moon at rise or set is geometrically 5 to 10 arcminutes above
+        the observer's "geocentric horizon" - the horizontal plane that passes through
+        the Earth's center, orthogonal to the observer's local vertical.</p>
+        
+        <p><strong>Accuracy of rise/set computations.</strong> The 
+        times of rise and set phenomena cannot be precisely computed, because,
+        in practice, the actual times depend on unpredictable atmospheric
+        conditions that affect the amount of refraction at the horizon.
+        Thus, even under ideal conditions (e.g., a clear sky at sea) the
+        times computed for rise or set may be in error by a minute or
+        more. Local topography (e.g., mountains on the horizon) and the
+        height of the observer can affect the times of rise or set even
+        more.  It is not practical to attempt to include such effects in
+        routine rise/set computations.</p>
+        
+        <p>The accuracy of rise and set computations decreases at high
+        latitudes.  There, small variations in atmospheric refraction can
+        change the time of rise or set by many minutes, since the Sun and
+        Moon intersect the horizon at a very shallow angle.  For the same
+        reason, at high latitudes, the effects of observer height and
+        local topography are magnified and can substantially change the
+        times of the phenomena actually observed, or even whether the
+        phenomena are observed to occur at all.</p>
+        
+        <p><strong>Twilight.</strong>  There are three kinds of
+        twilight defined:  civil twilight, nautical twilight, and
+        astronomical twilight.  For computational purposes, civil
+        twilight begins before sunrise and ends after sunset when the
+        geometric zenith distance of the center of the Sun is 96 degrees
+        - 6 degrees below a horizontal plane.  The corresponding solar
+        zenith distances for nautical and astronomical twilight are 102
+        and 108 degrees, respectively.  That is, at the dark limit of
+        nautical twilight, the center of the Sun is geometrically 12
+        degrees below a horizontal plane; and at the dark limit of
+        astronomical twilight, the center of the Sun is geometrically 18
+        degrees below a horizontal plane. </p>
+
+
+
+                </div>
+            </div>
+        </div> 
+    </div>
+</main>
+ 
+
+<footer class="usa-footer usa-footer--slim">
+    <div class="usa-footer">
+      <div class="usa-footer grid-row">
+        <div class="mobile-lg:grid-col-12 bg-gold padding-y-1 line-height-sans-3 font-lang-4">
+          <nav class="usa-footer__nav" aria-label="Footer navigation">
+            <ul class="grid-row grid-gap">
+              <li class="mobile-lg:grid-col-6 desktop:grid-col-3 usa-footer">
+                <p class="usa-footer">This is an official 
+
+<a href='https://www.navy.mil' target="_blank" rel="noreferrer">U.S. Navy</a>
+
+ Web site</p>
+              </li>
+              <li class="mobile-lg:grid-col-6 desktop:grid-col-7 usa-footer">
+                <p class="usa-footer">
+                  Hyperlinks do not constitute endorsement by the U.S. Navy of non-U.S.Government sites or the information, products, or services contained therein.
+                </p>
+              </li>
+              <li class="mobile-lg:grid-col-6 desktop:grid-col-2 usa-footer">
+                <p><a class="usa-footer" href="/about/PrivacyNotice">Privacy and Security Notice</a></p>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer> 
+
+
+
+<script src="/js/aa.js"></script>
+<script src="/uswds/js/uswds.min.js"></script>
+</body>
+
+</html>

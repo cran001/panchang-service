@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.sampradaya.NorthIndianCalendarTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-09-20T18:12:02" hostname="DESKTOP-KBUKJ2P" time="17.686">
+  <properties/>
+  <testcase name="Chaitra Navratri resolves inside the Chaitra window in an ordinary year()" classname="org.panchang.sampradaya.NorthIndianCalendarTest" time="5.914"/>
+  <testcase name="the kshaya Chaitra Pratipada of 2026 is reported loudly, never guessed()" classname="org.panchang.sampradaya.NorthIndianCalendarTest" time="6.002"/>
+  <testcase name="ekadashi timing is absent and the rest of the catalog resolves()" classname="org.panchang.sampradaya.NorthIndianCalendarTest" time="5.77"/>
+  <testcase name="the rules identify themselves and stay unverified()" classname="org.panchang.sampradaya.NorthIndianCalendarTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

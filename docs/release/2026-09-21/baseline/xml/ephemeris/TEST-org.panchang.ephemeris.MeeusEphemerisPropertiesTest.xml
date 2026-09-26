@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MeeusEphemeris properties" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-09-21T09:02:53" hostname="DESKTOP-KBUKJ2P" time="0.743">
+  <properties/>
+  <testcase name="longitudes are normalised and latitude is bounded()" classname="org.panchang.ephemeris.MeeusEphemerisPropertiesTest" time="0.22"/>
+  <testcase name="moon daily motion stays within its physical bounds()" classname="org.panchang.ephemeris.MeeusEphemerisPropertiesTest" time="0.062"/>
+  <testcase name="sun longitude advances about 0_9856 degrees per day()" classname="org.panchang.ephemeris.MeeusEphemerisPropertiesTest" time="0.012"/>
+  <testcase name="separate instances agree bit for bit()" classname="org.panchang.ephemeris.MeeusEphemerisPropertiesTest" time="0.003"/>
+  <testcase name="concurrent callers agree with the single-threaded result()" classname="org.panchang.ephemeris.MeeusEphemerisPropertiesTest" time="0.187"/>
+  <testcase name="moon-sun elongation increases about 12_19 degrees per day()" classname="org.panchang.ephemeris.MeeusEphemerisPropertiesTest" time="0.159"/>
+  <testcase name="a 70 second shift in the argument moves the moon by tens of arcseconds()" classname="org.panchang.ephemeris.MeeusEphemerisPropertiesTest" time="0.003"/>
+  <testcase name="identity and claimed accuracy()" classname="org.panchang.ephemeris.MeeusEphemerisPropertiesTest" time="0.004"/>
+  <testcase name="same input yields bit-identical output()" classname="org.panchang.ephemeris.MeeusEphemerisPropertiesTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

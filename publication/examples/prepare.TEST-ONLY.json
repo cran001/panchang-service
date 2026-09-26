@@ -1,0 +1,42 @@
+{
+  "members": [
+    {
+      "place": {
+        "id": "example-mayapur",
+        "latitude": 23.416666666666668,
+        "longitude": 88.38333333333334,
+        "elevationMeters": 0.0,
+        "timeZone": "Asia/Kolkata"
+      },
+      "tradition": "iskcon",
+      "year": 2026,
+      "coverage": {
+        "from": "2026-01-01",
+        "through": "2026-12-31"
+      },
+      "fields": [
+        "EVENTS",
+        "OBSERVANCES"
+      ]
+    }
+  ],
+  "referencePolicy": {
+    "id": "TEST-ONLY-NOT-AN-APPROVED-POLICY",
+    "revision": "example-1",
+    "description": "TEST ONLY workflow example. No approved reference policy exists.",
+    "evidence": [
+      {
+        "link": "publication/examples/TEST-ONLY-evidence.txt",
+        "sha256": "11933c88c2750f73dad23089f3c24b48fbe6fb2bec425291efc89eb928681276",
+        "outcome": "TEST_ONLY_NOT_VALIDATION"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "link": "publication/examples/TEST-ONLY-evidence.txt",
+      "sha256": "11933c88c2750f73dad23089f3c24b48fbe6fb2bec425291efc89eb928681276",
+      "outcome": "TEST_ONLY_NOT_VALIDATION"
+    }
+  ]
+}

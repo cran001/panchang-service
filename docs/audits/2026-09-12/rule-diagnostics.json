@@ -1,0 +1,583 @@
+[
+    {
+        "city": "ahmedabad",
+        "date": "2026-11-06",
+        "sunrise": "2026-11-06T06:47:13.824+05:30[Asia/Kolkata]",
+        "sunset": "2026-11-06T17:58:48.535+05:30[Asia/Kolkata]",
+        "daylightThirdEnd": "2026-11-06T10:31:05.395+05:30[Asia/Kolkata]",
+        "spans": [
+            {
+                "index": 24,
+                "start": "2026-11-03T11:55:03.754+05:30[Asia/Kolkata]",
+                "end": "2026-11-04T11:03:46.044+05:30[Asia/Kolkata]",
+                "endMinusSunriseSeconds": -157407.77992755175,
+                "sunriseMinusStartSeconds": 240730.06996661425,
+                "hariVasaraEnd": "2026-11-03T17:42:14.327+05:30[Asia/Kolkata]"
+            },
+            {
+                "index": 25,
+                "start": "2026-11-04T11:03:45.786+05:30[Asia/Kolkata]",
+                "end": "2026-11-05T10:36:05.312+05:30[Asia/Kolkata]",
+                "endMinusSunriseSeconds": -72668.51250082254,
+                "sunriseMinusStartSeconds": 157408.03886801004,
+                "hariVasaraEnd": "2026-11-04T16:56:50.667+05:30[Asia/Kolkata]"
+            },
+            {
+                "index": 26,
+                "start": "2026-11-05T10:36:05.053+05:30[Asia/Kolkata]",
+                "end": "2026-11-06T10:31:04.467+05:30[Asia/Kolkata]",
+                "endMinusSunriseSeconds": 13430.642621219158,
+                "sunriseMinusStartSeconds": 72668.77144128084,
+                "hariVasaraEnd": "2026-11-05T16:34:49.906+05:30[Asia/Kolkata]"
+            },
+            {
+                "index": 27,
+                "start": "2026-11-06T10:31:04.867+05:30[Asia/Kolkata]",
+                "end": "2026-11-07T10:48:23.075+05:30[Asia/Kolkata]",
+                "endMinusSunriseSeconds": 100869.25086826086,
+                "sunriseMinusStartSeconds": -13431.04286044836,
+                "hariVasaraEnd": "2026-11-06T16:35:24.419+05:30[Asia/Kolkata]"
+            },
+            {
+                "index": 28,
+                "start": "2026-11-07T10:48:23.476+05:30[Asia/Kolkata]",
+                "end": "2026-11-08T11:28:26.185+05:30[Asia/Kolkata]",
+                "endMinusSunriseSeconds": 189672.36106842756,
+                "sunriseMinusStartSeconds": -100869.65110749006,
+                "hariVasaraEnd": "2026-11-07T16:58:24.153+05:30[Asia/Kolkata]"
+            }
+        ]
+    },
+    {
+        "city": "auckland",
+        "date": "2026-10-08",
+        "sunrise": "2026-10-08T06:47:17.585+13:00[Pacific/Auckland]",
+        "sunset": "2026-10-08T19:30:32.893+13:00[Pacific/Auckland]",
+        "daylightThirdEnd": "2026-10-08T11:01:42.688+13:00[Pacific/Auckland]",
+        "spans": [
+            {
+                "index": 24,
+                "start": "2026-10-05T11:24:18.569+13:00[Pacific/Auckland]",
+                "end": "2026-10-06T09:37:59.687+13:00[Pacific/Auckland]",
+                "endMinusSunriseSeconds": -162557.898683846,
+                "sunriseMinusStartSeconds": 242579.0168479085,
+                "hariVasaraEnd": "2026-10-05T16:57:43.848+13:00[Pacific/Auckland]"
+            },
+            {
+                "index": 25,
+                "start": "2026-10-06T09:37:59.428+13:00[Pacific/Auckland]",
+                "end": "2026-10-07T08:04:56.176+13:00[Pacific/Auckland]",
+                "endMinusSunriseSeconds": -81741.4095774293,
+                "sunriseMinusStartSeconds": 162558.1576243043,
+                "hariVasaraEnd": "2026-10-06T15:14:43.615+13:00[Pacific/Auckland]"
+            },
+            {
+                "index": 26,
+                "start": "2026-10-07T08:04:56.576+13:00[Pacific/Auckland]",
+                "end": "2026-10-08T06:46:57.059+13:00[Pacific/Auckland]",
+                "endMinusSunriseSeconds": -20.525939762592316,
+                "sunriseMinusStartSeconds": 81741.00933820009,
+                "hariVasaraEnd": "2026-10-07T13:45:26.697+13:00[Pacific/Auckland]"
+            },
+            {
+                "index": 27,
+                "start": "2026-10-08T06:46:57.460+13:00[Pacific/Auckland]",
+                "end": "2026-10-09T05:46:22.743+13:00[Pacific/Auckland]",
+                "endMinusSunriseSeconds": 82745.15750259161,
+                "sunriseMinusStartSeconds": 20.125700533390045,
+                "hariVasaraEnd": "2026-10-08T12:31:48.780+13:00[Pacific/Auckland]"
+            },
+            {
+                "index": 28,
+                "start": "2026-10-09T05:46:22.484+13:00[Pacific/Auckland]",
+                "end": "2026-10-10T05:06:13.841+13:00[Pacific/Auckland]",
+                "endMinusSunriseSeconds": 166736.2559840083,
+                "sunriseMinusStartSeconds": -82744.89856213331,
+                "hariVasaraEnd": "2026-10-09T11:36:20.323+13:00[Pacific/Auckland]"
+            },
+            {
+                "index": 29,
+                "start": "2026-10-10T05:06:13.582+13:00[Pacific/Auckland]",
+                "end": "2026-10-11T04:50:03.929+13:00[Pacific/Auckland]",
+                "endMinusSunriseSeconds": 252166.3437232375,
+                "sunriseMinusStartSeconds": -166735.99704355,
+                "hariVasaraEnd": "2026-10-10T11:02:11.169+13:00[Pacific/Auckland]"
+            }
+        ]
+    },
+    {
+        "city": "auckland",
+        "date": "2026-04-28",
+        "sunrise": "2026-04-28T06:57:19.423+12:00[Pacific/Auckland]",
+        "sunset": "2026-04-28T17:39:11.084+12:00[Pacific/Auckland]",
+        "daylightThirdEnd": "2026-04-28T10:31:16.643+12:00[Pacific/Auckland]",
+        "spans": [
+            {
+                "index": 9,
+                "start": "2026-04-26T00:58:34.648+12:00[Pacific/Auckland]",
+                "end": "2026-04-27T00:37:28.364+12:00[Pacific/Auckland]",
+                "endMinusSunriseSeconds": -109191.05903953314,
+                "sunriseMinusStartSeconds": 194324.77485984564,
+                "hariVasaraEnd": "2026-04-26T06:53:18.077+12:00[Pacific/Auckland]"
+            },
+            {
+                "index": 10,
+                "start": "2026-04-27T00:37:28.105+12:00[Pacific/Auckland]",
+                "end": "2026-04-28T00:46:25.337+12:00[Pacific/Auckland]",
+                "endMinusSunriseSeconds": -22254.086534678936,
+                "sunriseMinusStartSeconds": 109191.31797999144,
+                "hariVasaraEnd": "2026-04-27T06:39:42.413+12:00[Pacific/Auckland]"
+            },
+            {
+                "index": 11,
+                "start": "2026-04-28T00:46:25.078+12:00[Pacific/Auckland]",
+                "end": "2026-04-29T01:22:18.618+12:00[Pacific/Auckland]",
+                "endMinusSunriseSeconds": 66299.19456392527,
+                "sunriseMinusStartSeconds": 22254.345475137234,
+                "hariVasaraEnd": "2026-04-28T06:55:23.463+12:00[Pacific/Auckland]"
+            },
+            {
+                "index": 12,
+                "start": "2026-04-29T01:22:18.359+12:00[Pacific/Auckland]",
+                "end": "2026-04-30T02:22:03.637+12:00[Pacific/Auckland]",
+                "endMinusSunriseSeconds": 156284.21394377947,
+                "sunriseMinusStartSeconds": -66298.93562346697,
+                "hariVasaraEnd": "2026-04-29T07:37:14.678+12:00[Pacific/Auckland]"
+            },
+            {
+                "index": 13,
+                "start": "2026-04-30T02:22:03.378+12:00[Pacific/Auckland]",
+                "end": "2026-05-01T03:43:04.169+12:00[Pacific/Auckland]",
+                "endMinusSunriseSeconds": 247544.74601894617,
+                "sunriseMinusStartSeconds": -156283.95500332117,
+                "hariVasaraEnd": "2026-04-30T08:42:18.576+12:00[Pacific/Auckland]"
+            }
+        ]
+    },
+    {
+        "city": "auckland",
+        "date": "2026-09-23",
+        "sunrise": "2026-09-23T06:09:41.353+12:00[Pacific/Auckland]",
+        "sunset": "2026-09-23T18:17:51.459+12:00[Pacific/Auckland]",
+        "daylightThirdEnd": "2026-09-23T10:12:24.722+12:00[Pacific/Auckland]",
+        "spans": [
+            {
+                "index": 9,
+                "start": "2026-09-21T00:22:00.949+12:00[Pacific/Auckland]",
+                "end": "2026-09-22T02:31:24.767+12:00[Pacific/Auckland]",
+                "endMinusSunriseSeconds": -99496.58601433039,
+                "sunriseMinusStartSeconds": 193660.4043737054,
+                "hariVasaraEnd": "2026-09-21T06:54:21.903+12:00[Pacific/Auckland]"
+            },
+            {
+                "index": 10,
+                "start": "2026-09-22T02:31:24.508+12:00[Pacific/Auckland]",
+                "end": "2026-09-23T04:13:50.700+12:00[Pacific/Auckland]",
+                "endMinusSunriseSeconds": -6950.653548538685,
+                "sunriseMinusStartSeconds": 99496.84495478868,
+                "hariVasaraEnd": "2026-09-22T08:57:01.056+12:00[Pacific/Auckland]"
+            },
+            {
+                "index": 11,
+                "start": "2026-09-23T04:13:50.441+12:00[Pacific/Auckland]",
+                "end": "2026-09-24T05:21:05.279+12:00[Pacific/Auckland]",
+                "endMinusSunriseSeconds": 83483.92637819052,
+                "sunriseMinusStartSeconds": 6950.912488996983,
+                "hariVasaraEnd": "2026-09-23T10:30:39.150+12:00[Pacific/Auckland]"
+            },
+            {
+                "index": 12,
+                "start": "2026-09-24T05:21:05.021+12:00[Pacific/Auckland]",
+                "end": "2026-09-25T05:48:59.996+12:00[Pacific/Auckland]",
+                "endMinusSunriseSeconds": 171558.64302366972,
+                "sunriseMinusStartSeconds": -83483.66743773222,
+                "hariVasaraEnd": "2026-09-24T11:28:03.764+12:00[Pacific/Auckland]"
+            },
+            {
+                "index": 13,
+                "start": "2026-09-25T05:49:00.396+12:00[Pacific/Auckland]",
+                "end": "2026-09-26T05:37:19.688+12:00[Pacific/Auckland]",
+                "endMinusSunriseSeconds": 257258.33525508642,
+                "sunriseMinusStartSeconds": -171559.04326289892,
+                "hariVasaraEnd": "2026-09-25T11:46:05.219+12:00[Pacific/Auckland]"
+            }
+        ]
+    },
+    {
+        "city": "delhi",
+        "date": "2026-06-30",
+        "sunrise": "2026-06-30T05:26:18.952+05:30[Asia/Kolkata]",
+        "sunset": "2026-06-30T19:23:10.250+05:30[Asia/Kolkata]",
+        "daylightThirdEnd": "2026-06-30T10:05:16.052+05:30[Asia/Kolkata]",
+        "spans": [
+            {
+                "index": 13,
+                "start": "2026-06-28T00:43:55.430+05:30[Asia/Kolkata]",
+                "end": "2026-06-29T03:06:53.994+05:30[Asia/Kolkata]",
+                "endMinusSunriseSeconds": -94764.95832949877,
+                "sunriseMinusStartSeconds": 189743.52278262377,
+                "hariVasaraEnd": "2026-06-28T07:19:40.071+05:30[Asia/Kolkata]"
+            },
+            {
+                "index": 14,
+                "start": "2026-06-29T03:06:54.394+05:30[Asia/Kolkata]",
+                "end": "2026-06-30T05:26:39.819+05:30[Asia/Kolkata]",
+                "endMinusSunriseSeconds": 20.866714417934418,
+                "sunriseMinusStartSeconds": 94764.55809026957,
+                "hariVasaraEnd": "2026-06-29T09:41:50.750+05:30[Asia/Kolkata]"
+            },
+            {
+                "index": 15,
+                "start": "2026-06-30T05:26:40.219+05:30[Asia/Kolkata]",
+                "end": "2026-07-01T07:38:41.582+05:30[Asia/Kolkata]",
+                "endMinusSunriseSeconds": 94342.62925833464,
+                "sunriseMinusStartSeconds": -21.26695364713669,
+                "hariVasaraEnd": "2026-06-30T11:59:40.560+05:30[Asia/Kolkata]"
+            },
+            {
+                "index": 16,
+                "start": "2026-07-01T07:38:41.323+05:30[Asia/Kolkata]",
+                "end": "2026-07-02T09:38:25.063+05:30[Asia/Kolkata]",
+                "endMinusSunriseSeconds": 187926.11055225134,
+                "sunriseMinusStartSeconds": -94342.37031787634,
+                "hariVasaraEnd": "2026-07-01T14:08:37.258+05:30[Asia/Kolkata]"
+            }
+        ]
+    },
+    {
+        "city": "mayapur",
+        "date": "2026-06-30",
+        "sunrise": "2026-06-30T04:53:16.938+05:30[Asia/Kolkata]",
+        "sunset": "2026-06-30T18:26:52.917+05:30[Asia/Kolkata]",
+        "daylightThirdEnd": "2026-06-30T09:24:28.931+05:30[Asia/Kolkata]",
+        "spans": [
+            {
+                "index": 13,
+                "start": "2026-06-28T00:43:55.430+05:30[Asia/Kolkata]",
+                "end": "2026-06-29T03:06:53.994+05:30[Asia/Kolkata]",
+                "endMinusSunriseSeconds": -92782.94369280338,
+                "sunriseMinusStartSeconds": 187761.50814592838,
+                "hariVasaraEnd": "2026-06-28T07:19:40.071+05:30[Asia/Kolkata]"
+            },
+            {
+                "index": 14,
+                "start": "2026-06-29T03:06:54.394+05:30[Asia/Kolkata]",
+                "end": "2026-06-30T05:26:39.819+05:30[Asia/Kolkata]",
+                "endMinusSunriseSeconds": 2002.8813511133194,
+                "sunriseMinusStartSeconds": 92782.54345357418,
+                "hariVasaraEnd": "2026-06-29T09:41:50.750+05:30[Asia/Kolkata]"
+            },
+            {
+                "index": 15,
+                "start": "2026-06-30T05:26:40.219+05:30[Asia/Kolkata]",
+                "end": "2026-07-01T07:38:41.582+05:30[Asia/Kolkata]",
+                "endMinusSunriseSeconds": 96324.64389503002,
+                "sunriseMinusStartSeconds": -2003.2815903425217,
+                "hariVasaraEnd": "2026-06-30T11:59:40.560+05:30[Asia/Kolkata]"
+            },
+            {
+                "index": 16,
+                "start": "2026-07-01T07:38:41.323+05:30[Asia/Kolkata]",
+                "end": "2026-07-02T09:38:25.063+05:30[Asia/Kolkata]",
+                "endMinusSunriseSeconds": 189908.12518894672,
+                "sunriseMinusStartSeconds": -96324.38495457172,
+                "hariVasaraEnd": "2026-07-01T14:08:37.258+05:30[Asia/Kolkata]"
+            }
+        ]
+    },
+    {
+        "city": "moscow",
+        "date": "2026-05-27",
+        "sunrise": "2026-05-27T03:59:19.145+03:00[Europe/Moscow]",
+        "sunset": "2026-05-27T20:55:02.436+03:00[Europe/Moscow]",
+        "daylightThirdEnd": "2026-05-27T09:37:53.575+03:00[Europe/Moscow]",
+        "spans": [
+            {
+                "index": 9,
+                "start": "2026-05-25T02:01:18.267+03:00[Europe/Moscow]",
+                "end": "2026-05-26T02:41:26.909+03:00[Europe/Moscow]",
+                "endMinusSunriseSeconds": -91072.23565131426,
+                "sunriseMinusStartSeconds": 179880.87822943926,
+                "hariVasaraEnd": "2026-05-25T08:11:20.427+03:00[Europe/Moscow]"
+            },
+            {
+                "index": 10,
+                "start": "2026-05-26T02:41:26.650+03:00[Europe/Moscow]",
+                "end": "2026-05-27T03:52:17.041+03:00[Europe/Moscow]",
+                "endMinusSunriseSeconds": -422.1039667725563,
+                "sunriseMinusStartSeconds": 91072.49459177256,
+                "hariVasaraEnd": "2026-05-26T08:59:09.248+03:00[Europe/Moscow]"
+            },
+            {
+                "index": 11,
+                "start": "2026-05-27T03:52:16.782+03:00[Europe/Moscow]",
+                "end": "2026-05-28T05:27:31.211+03:00[Europe/Moscow]",
+                "endMinusSunriseSeconds": 91692.06580370665,
+                "sunriseMinusStartSeconds": 422.36290723085403,
+                "hariVasaraEnd": "2026-05-27T10:16:05.389+03:00[Europe/Moscow]"
+            },
+            {
+                "index": 12,
+                "start": "2026-05-28T05:27:30.952+03:00[Europe/Moscow]",
+                "end": "2026-05-29T07:21:16.098+03:00[Europe/Moscow]",
+                "endMinusSunriseSeconds": 184916.95334762335,
+                "sunriseMinusStartSeconds": -91691.80686324835,
+                "hariVasaraEnd": "2026-05-28T11:55:57.238+03:00[Europe/Moscow]"
+            }
+        ]
+    },
+    {
+        "city": "moscow",
+        "date": "2026-05-28",
+        "sunrise": "2026-05-28T03:58:01.806+03:00[Europe/Moscow]",
+        "sunset": "2026-05-28T20:56:32.588+03:00[Europe/Moscow]",
+        "daylightThirdEnd": "2026-05-28T09:37:32.067+03:00[Europe/Moscow]",
+        "spans": [
+            {
+                "index": 10,
+                "start": "2026-05-26T02:41:26.650+03:00[Europe/Moscow]",
+                "end": "2026-05-27T03:52:17.041+03:00[Europe/Moscow]",
+                "endMinusSunriseSeconds": -86744.76521909237,
+                "sunriseMinusStartSeconds": 177395.15584409237,
+                "hariVasaraEnd": "2026-05-26T08:59:09.248+03:00[Europe/Moscow]"
+            },
+            {
+                "index": 11,
+                "start": "2026-05-27T03:52:16.782+03:00[Europe/Moscow]",
+                "end": "2026-05-28T05:27:31.211+03:00[Europe/Moscow]",
+                "endMinusSunriseSeconds": 5369.404551386833,
+                "sunriseMinusStartSeconds": 86745.02415955067,
+                "hariVasaraEnd": "2026-05-27T10:16:05.389+03:00[Europe/Moscow]"
+            },
+            {
+                "index": 12,
+                "start": "2026-05-28T05:27:30.952+03:00[Europe/Moscow]",
+                "end": "2026-05-29T07:21:16.098+03:00[Europe/Moscow]",
+                "endMinusSunriseSeconds": 98594.29209530354,
+                "sunriseMinusStartSeconds": -5369.1456109285355,
+                "hariVasaraEnd": "2026-05-28T11:55:57.238+03:00[Europe/Moscow]"
+            },
+            {
+                "index": 13,
+                "start": "2026-05-29T07:21:16.499+03:00[Europe/Moscow]",
+                "end": "2026-05-30T09:28:34.414+03:00[Europe/Moscow]",
+                "endMinusSunriseSeconds": 192632.60737359524,
+                "sunriseMinusStartSeconds": -98594.69233453274,
+                "hariVasaraEnd": "2026-05-29T13:53:05.977+03:00[Europe/Moscow]"
+            }
+        ]
+    },
+    {
+        "city": "mumbai",
+        "date": "2026-08-24",
+        "sunrise": "2026-08-24T06:22:01.143+05:30[Asia/Kolkata]",
+        "sunset": "2026-08-24T18:59:55.797+05:30[Asia/Kolkata]",
+        "daylightThirdEnd": "2026-08-24T10:34:39.361+05:30[Asia/Kolkata]",
+        "spans": [
+            {
+                "index": 9,
+                "start": "2026-08-21T23:36:39.274+05:30[Asia/Kolkata]",
+                "end": "2026-08-23T02:00:51.007+05:30[Asia/Kolkata]",
+                "endMinusSunriseSeconds": -102070.13564407825,
+                "sunriseMinusStartSeconds": 197121.86904251575,
+                "hariVasaraEnd": "2026-08-22T06:12:42.207+05:30[Asia/Kolkata]"
+            },
+            {
+                "index": 10,
+                "start": "2026-08-23T02:00:51.407+05:30[Asia/Kolkata]",
+                "end": "2026-08-24T04:19:14.435+05:30[Asia/Kolkata]",
+                "endMinusSunriseSeconds": -7366.708061099052,
+                "sunriseMinusStartSeconds": 102069.73540484905,
+                "hariVasaraEnd": "2026-08-23T08:35:27.164+05:30[Asia/Kolkata]"
+            },
+            {
+                "index": 11,
+                "start": "2026-08-24T04:19:14.176+05:30[Asia/Kolkata]",
+                "end": "2026-08-25T06:21:26.231+05:30[Asia/Kolkata]",
+                "endMinusSunriseSeconds": 86365.08866250515,
+                "sunriseMinusStartSeconds": 7366.96700155735,
+                "hariVasaraEnd": "2026-08-24T10:49:47.190+05:30[Asia/Kolkata]"
+            },
+            {
+                "index": 12,
+                "start": "2026-08-25T06:21:25.972+05:30[Asia/Kolkata]",
+                "end": "2026-08-26T07:59:46.290+05:30[Asia/Kolkata]",
+                "endMinusSunriseSeconds": 178665.14710485935,
+                "sunriseMinusStartSeconds": -86364.82972204685,
+                "hariVasaraEnd": "2026-08-25T12:46:01.052+05:30[Asia/Kolkata]"
+            }
+        ]
+    },
+    {
+        "city": "new-york",
+        "date": "2026-10-22",
+        "sunrise": "2026-10-22T07:14:59.048-04:00[America/New_York]",
+        "sunset": "2026-10-22T18:05:20.298-04:00[America/New_York]",
+        "daylightThirdEnd": "2026-10-22T10:51:46.131-04:00[America/New_York]",
+        "spans": [
+            {
+                "index": 9,
+                "start": "2026-10-20T03:20:51.696-04:00[America/New_York]",
+                "end": "2026-10-21T04:42:18.195-04:00[America/New_York]",
+                "endMinusSunriseSeconds": -95560.85274517536,
+                "sunriseMinusStartSeconds": 186847.35176861286,
+                "hariVasaraEnd": "2026-10-20T09:41:13.321-04:00[America/New_York]"
+            },
+            {
+                "index": 10,
+                "start": "2026-10-21T04:42:17.936-04:00[America/New_York]",
+                "end": "2026-10-22T05:18:30.593-04:00[America/New_York]",
+                "endMinusSunriseSeconds": -6988.455435633659,
+                "sunriseMinusStartSeconds": 95561.11168563366,
+                "hariVasaraEnd": "2026-10-21T10:51:21.100-04:00[America/New_York]"
+            },
+            {
+                "index": 11,
+                "start": "2026-10-22T05:18:30.334-04:00[America/New_York]",
+                "end": "2026-10-23T05:06:21.281-04:00[America/New_York]",
+                "endMinusSunriseSeconds": 78682.23288953304,
+                "sunriseMinusStartSeconds": 6988.714376091957,
+                "hariVasaraEnd": "2026-10-22T11:15:28.070-04:00[America/New_York]"
+            },
+            {
+                "index": 12,
+                "start": "2026-10-23T05:06:21.022-04:00[America/New_York]",
+                "end": "2026-10-24T04:07:17.931-04:00[America/New_York]",
+                "endMinusSunriseSeconds": 161538.88312876225,
+                "sunriseMinusStartSeconds": -78681.97394907475,
+                "hariVasaraEnd": "2026-10-23T10:51:35.249-04:00[America/New_York]"
+            },
+            {
+                "index": 13,
+                "start": "2026-10-24T04:07:18.331-04:00[America/New_York]",
+                "end": "2026-10-25T02:26:31.017-04:00[America/New_York]",
+                "endMinusSunriseSeconds": 241891.96891486645,
+                "sunriseMinusStartSeconds": -161539.28336799145,
+                "hariVasaraEnd": "2026-10-24T09:42:06.503-04:00[America/New_York]"
+            }
+        ]
+    },
+    {
+        "city": "sydney",
+        "date": "2026-12-05",
+        "sunrise": "2026-12-05T05:37:01.749+11:00[Australia/Sydney]",
+        "sunset": "2026-12-05T19:54:27.047+11:00[Australia/Sydney]",
+        "daylightThirdEnd": "2026-12-05T10:22:50.182+11:00[Australia/Sydney]",
+        "spans": [
+            {
+                "index": 24,
+                "start": "2026-12-03T04:22:34.922+11:00[Australia/Sydney]",
+                "end": "2026-12-04T04:34:01.128+11:00[Australia/Sydney]",
+                "endMinusSunriseSeconds": -90180.62137663364,
+                "sunriseMinusStartSeconds": 177266.82743132114,
+                "hariVasaraEnd": "2026-12-03T10:25:26.473+11:00[Australia/Sydney]"
+            },
+            {
+                "index": 25,
+                "start": "2026-12-04T04:34:00.869+11:00[Australia/Sydney]",
+                "end": "2026-12-05T05:15:12.133+11:00[Australia/Sydney]",
+                "endMinusSunriseSeconds": -1309.6156686544418,
+                "sunriseMinusStartSeconds": 90180.88031709194,
+                "hariVasaraEnd": "2026-12-04T10:44:18.685+11:00[Australia/Sydney]"
+            },
+            {
+                "index": 26,
+                "start": "2026-12-05T05:15:11.875+11:00[Australia/Sydney]",
+                "end": "2026-12-06T06:22:29.350+11:00[Australia/Sydney]",
+                "endMinusSunriseSeconds": 89127.60097682476,
+                "sunriseMinusStartSeconds": 1309.8746091127396,
+                "hariVasaraEnd": "2026-12-05T11:32:01.243+11:00[Australia/Sydney]"
+            },
+            {
+                "index": 27,
+                "start": "2026-12-06T06:22:29.750+11:00[Australia/Sydney]",
+                "end": "2026-12-07T07:52:39.638+11:00[Australia/Sydney]",
+                "endMinusSunriseSeconds": 180937.88891136646,
+                "sunriseMinusStartSeconds": -89128.00121605396,
+                "hariVasaraEnd": "2026-12-06T12:45:02.222+11:00[Australia/Sydney]"
+            }
+        ]
+    },
+    {
+        "city": "sydney",
+        "date": "2026-12-06",
+        "sunrise": "2026-12-06T05:37:01.320+11:00[Australia/Sydney]",
+        "sunset": "2026-12-06T19:55:16.598+11:00[Australia/Sydney]",
+        "daylightThirdEnd": "2026-12-06T10:23:06.412+11:00[Australia/Sydney]",
+        "spans": [
+            {
+                "index": 25,
+                "start": "2026-12-04T04:34:00.869+11:00[Australia/Sydney]",
+                "end": "2026-12-05T05:15:12.133+11:00[Australia/Sydney]",
+                "endMinusSunriseSeconds": -87709.1862604022,
+                "sunriseMinusStartSeconds": 176580.4509088397,
+                "hariVasaraEnd": "2026-12-04T10:44:18.685+11:00[Australia/Sydney]"
+            },
+            {
+                "index": 26,
+                "start": "2026-12-05T05:15:11.875+11:00[Australia/Sydney]",
+                "end": "2026-12-06T06:22:29.350+11:00[Australia/Sydney]",
+                "endMinusSunriseSeconds": 2728.0303850769997,
+                "sunriseMinusStartSeconds": 87709.4452008605,
+                "hariVasaraEnd": "2026-12-05T11:32:01.243+11:00[Australia/Sydney]"
+            },
+            {
+                "index": 27,
+                "start": "2026-12-06T06:22:29.750+11:00[Australia/Sydney]",
+                "end": "2026-12-07T07:52:39.638+11:00[Australia/Sydney]",
+                "endMinusSunriseSeconds": 94538.3183196187,
+                "sunriseMinusStartSeconds": -2728.430624306202,
+                "hariVasaraEnd": "2026-12-06T12:45:02.222+11:00[Australia/Sydney]"
+            },
+            {
+                "index": 28,
+                "start": "2026-12-07T07:52:40.038+11:00[Australia/Sydney]",
+                "end": "2026-12-08T09:43:09.408+11:00[Australia/Sydney]",
+                "endMinusSunriseSeconds": 187568.0886760354,
+                "sunriseMinusStartSeconds": -94538.7185588479,
+                "hariVasaraEnd": "2026-12-07T14:20:17.381+11:00[Australia/Sydney]"
+            }
+        ]
+    },
+    {
+        "city": "vrindavan",
+        "date": "2026-06-30",
+        "sunrise": "2026-06-30T05:26:53.259+05:30[Asia/Kolkata]",
+        "sunset": "2026-06-30T19:18:44.215+05:30[Asia/Kolkata]",
+        "daylightThirdEnd": "2026-06-30T10:04:10.244+05:30[Asia/Kolkata]",
+        "spans": [
+            {
+                "index": 13,
+                "start": "2026-06-28T00:43:55.430+05:30[Asia/Kolkata]",
+                "end": "2026-06-29T03:06:53.994+05:30[Asia/Kolkata]",
+                "endMinusSunriseSeconds": -94799.26452040672,
+                "sunriseMinusStartSeconds": 189777.82897353172,
+                "hariVasaraEnd": "2026-06-28T07:19:40.071+05:30[Asia/Kolkata]"
+            },
+            {
+                "index": 14,
+                "start": "2026-06-29T03:06:54.394+05:30[Asia/Kolkata]",
+                "end": "2026-06-30T05:26:39.819+05:30[Asia/Kolkata]",
+                "endMinusSunriseSeconds": -13.439476490020752,
+                "sunriseMinusStartSeconds": 94798.86428117752,
+                "hariVasaraEnd": "2026-06-29T09:41:50.750+05:30[Asia/Kolkata]"
+            },
+            {
+                "index": 15,
+                "start": "2026-06-30T05:26:40.219+05:30[Asia/Kolkata]",
+                "end": "2026-07-01T07:38:41.582+05:30[Asia/Kolkata]",
+                "endMinusSunriseSeconds": 94308.32306742668,
+                "sunriseMinusStartSeconds": 13.039237260818481,
+                "hariVasaraEnd": "2026-06-30T11:59:40.560+05:30[Asia/Kolkata]"
+            },
+            {
+                "index": 16,
+                "start": "2026-07-01T07:38:41.323+05:30[Asia/Kolkata]",
+                "end": "2026-07-02T09:38:25.063+05:30[Asia/Kolkata]",
+                "endMinusSunriseSeconds": 187891.80436134338,
+                "sunriseMinusStartSeconds": -94308.06412696838,
+                "hariVasaraEnd": "2026-07-01T14:08:37.258+05:30[Asia/Kolkata]"
+            }
+        ]
+    }
+]

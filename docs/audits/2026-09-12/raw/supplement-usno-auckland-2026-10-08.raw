@@ -1,0 +1,67 @@
+{
+  "apiversion": "4.0.1", 
+  "geometry": {
+    "coordinates": [
+      174.766667, 
+      -36.866667
+    ], 
+    "type": "Point"
+  }, 
+  "properties": {
+    "data": {
+      "closestphase": {
+        "day": 11, 
+        "month": 10, 
+        "phase": "New Moon", 
+        "time": "04:50", 
+        "year": 2026
+      }, 
+      "curphase": "Waning Crescent", 
+      "day": 8, 
+      "day_of_week": "Thursday", 
+      "fracillum": "8%", 
+      "isdst": false, 
+      "label": "auckland", 
+      "month": 10, 
+      "moondata": [
+        {
+          "phen": "Rise", 
+          "time": "05:17"
+        }, 
+        {
+          "phen": "Upper Transit", 
+          "time": "11:03"
+        }, 
+        {
+          "phen": "Set", 
+          "time": "16:58"
+        }
+      ], 
+      "sundata": [
+        {
+          "phen": "Begin Civil Twilight", 
+          "time": "06:21"
+        }, 
+        {
+          "phen": "Rise", 
+          "time": "06:47"
+        }, 
+        {
+          "phen": "Upper Transit", 
+          "time": "13:09"
+        }, 
+        {
+          "phen": "Set", 
+          "time": "19:31"
+        }, 
+        {
+          "phen": "End Civil Twilight", 
+          "time": "19:57"
+        }
+      ], 
+      "tz": 13.0, 
+      "year": 2026
+    }
+  }, 
+  "type": "Feature"
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.gazetteer.PlaceNamesTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-09-12T16:07:18" hostname="DESKTOP-KBUKJ2P" time="0.02">
+  <properties/>
+  <testcase name="normalisation is idempotent()" classname="org.panchang.gazetteer.PlaceNamesTest" time="0.001"/>
+  <testcase name="indic names stay one token()" classname="org.panchang.gazetteer.PlaceNamesTest" time="0.001"/>
+  <testcase name="an all-punctuation name normalises to empty and is therefore not indexed()" classname="org.panchang.gazetteer.PlaceNamesTest" time="0.004"/>
+  <testcase name="punctuation and runs of whitespace collapse to single spaces()" classname="org.panchang.gazetteer.PlaceNamesTest" time="0.002"/>
+  <testcase name="diacritics are stripped()" classname="org.panchang.gazetteer.PlaceNamesTest" time="0.001"/>
+  <testcase name="case folding does not depend on the default locale()" classname="org.panchang.gazetteer.PlaceNamesTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

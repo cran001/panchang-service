@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.wire.WireRoundTripTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2026-09-21T09:03:14" hostname="DESKTOP-KBUKJ2P" time="0.383">
+  <properties/>
+  <testcase name="every payload root states its schema version()" classname="org.panchang.wire.WireRoundTripTest" time="0.023"/>
+  <testcase name="an unknown enum name is refused rather than defaulted()" classname="org.panchang.wire.WireRoundTripTest" time="0.079"/>
+  <testcase name="EkadashiYearDto round trips()" classname="org.panchang.wire.WireRoundTripTest" time="0.011"/>
+  <testcase name="unresolved is present in the JSON text, not merely in the object model()" classname="org.panchang.wire.WireRoundTripTest" time="0.002"/>
+  <testcase name="ResolvedEventDto round trips with every optional field absent()" classname="org.panchang.wire.WireRoundTripTest" time="0.002"/>
+  <testcase name="ParanaWindowDto round trips and keeps both of its reasons()" classname="org.panchang.wire.WireRoundTripTest" time="0.002"/>
+  <testcase name="SampradayaDto round trips and carries status and provenance()" classname="org.panchang.wire.WireRoundTripTest" time="0.001"/>
+  <testcase name="ObservanceDecisionDto round trips()" classname="org.panchang.wire.WireRoundTripTest" time="0.002"/>
+  <testcase name="unresolved keys are emitted in ascending id order regardless of input order()" classname="org.panchang.wire.WireRoundTripTest" time="0.002"/>
+  <testcase name="all three confidence grades survive()" classname="org.panchang.wire.WireRoundTripTest" time="0.001"/>
+  <testcase name="SampradayaListDto round trips()" classname="org.panchang.wire.WireRoundTripTest" time="0.001"/>
+  <testcase name="dates are ISO-8601 and enums are their declared names()" classname="org.panchang.wire.WireRoundTripTest" time="0.047"/>
+  <testcase name="YearResolutionDto round trips and unresolved survives it()" classname="org.panchang.wire.WireRoundTripTest" time="0.094"/>
+  <testcase name="TithiOccurrenceDto round trips()" classname="org.panchang.wire.WireRoundTripTest" time="0.005"/>
+  <testcase name="ResolvedEventDto round trips with fastUntil and tithi present()" classname="org.panchang.wire.WireRoundTripTest" time="0.002"/>
+  <testcase name="InstantDto round trips()" classname="org.panchang.wire.WireRoundTripTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

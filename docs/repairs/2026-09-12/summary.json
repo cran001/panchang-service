@@ -1,0 +1,901 @@
+{
+  "date": "2026-09-12",
+  "historicalBaseline": {
+    "xmlSource": "docs\\audits\\2026-09-12\\baseline-xml",
+    "modules": {
+      "api": {
+        "tests": 37,
+        "passed": 37,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "calc": {
+        "tests": 20,
+        "passed": 20,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "core": {
+        "tests": 82,
+        "passed": 82,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "ephemeris": {
+        "tests": 54,
+        "passed": 54,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "gazetteer": {
+        "tests": 36,
+        "passed": 36,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "publish": {
+        "tests": 39,
+        "passed": 39,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "sampradaya": {
+        "tests": 221,
+        "passed": 212,
+        "failed": 9,
+        "errors": 0,
+        "skipped": 0
+      },
+      "verify": {
+        "tests": 101,
+        "passed": 101,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "wire": {
+        "tests": 43,
+        "passed": 43,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    },
+    "total": {
+      "tests": 633,
+      "passed": 624,
+      "failed": 9,
+      "errors": 0,
+      "skipped": 0
+    },
+    "failures": [
+      {
+        "module": "sampradaya",
+        "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+        "name": "vrindavan",
+        "kind": "failure",
+        "message": "org.opentest4j.AssertionFailedError: parana disagreements at vrindavan:\n2026-06-27: calendar prints a parana window, rules produced none\n2026-06-26: rules produced a parana window the calendar does not print ==> expected: <true> but was: <false>"
+      },
+      {
+        "module": "sampradaya",
+        "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+        "name": "auckland",
+        "kind": "failure",
+        "message": "org.opentest4j.AssertionFailedError: parana disagreements at auckland:\n2026-04-28 start basis: calendar '1/4 of tithi' (HARI_VASARA_END), rules SUNRISE\n2026-10-08 end basis: calendar 'end of tithi' (DVADASHI_END), rules ONE_THIRD_DAYLIGHT\n2026-10-08 end (ONE_THIRD_DAYLIGHT): calendar 06:47, rules 11:01:42, delta +254.71 min, outside -0.25..1.25 ==> expected: <true> but was: <false>"
+      },
+      {
+        "module": "sampradaya",
+        "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+        "name": "vrindavan",
+        "kind": "failure",
+        "message": "org.opentest4j.AssertionFailedError: Ekadashi fasting dates disagree with the vrindavan 2026 calendar. Missing: [2026-06-26]. Extra: [2026-06-25]. A fasting-date disagreement is a far stronger signal than a label disagreement and must be investigated as a rule error first; see docs/validation-multisite.md. ==> expected: <[2026-01-14, 2026-01-29, 2026-02-13, 2026-02-27, 2026-03-15, 2026-03-29, 2026-04-13, 2026-04-27, 2026-05-13, 2026-05-27, 2026-06-11, 2026-06-26, 2026-07-11, 2026-07-25, 2026-08-09, 2026-08-24, 2026-09-07, 2026-09-22, 2026-10-06, 2026-10-22, 2026-11-05, 2026-11-21, 2026-12-04, 2026-12-20]> but was: <[2026-01-14, 2026-01-29, 2026-02-13, 2026-02-27, 2026-03-15, 2026-03-29, 2026-04-13, 2026-04-27, 2026-05-13, 2026-05-27, 2026-06-11, 2026-06-25, 2026-07-11, 2026-07-25, 2026-08-09, 2026-08-24, 2026-09-07, 2026-09-22, 2026-10-06, 2026-10-22, 2026-11-05, 2026-11-21, 2026-12-04, 2026-12-20]>"
+      },
+      {
+        "module": "sampradaya",
+        "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+        "name": "vrindavan",
+        "kind": "failure",
+        "message": "org.opentest4j.AssertionFailedError: Mahadvadashi classification disagrees with the vrindavan 2026 calendar. A *label* disagreement on a fortnight whose fasting date still matches is the outcome ADR 0002 predicts from the reference's ephemeris (docs/decisions/0002-reference-calendar-disagreement.md); a disagreement that also moves the fasting date is not, and is a rule error until shown otherwise. ==> expected: <{2026-06-26=PAKSAVARDHINI, 2026-08-24=VANJULI}> but was: <{2026-08-24=VANJULI}>"
+      },
+      {
+        "module": "sampradaya",
+        "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+        "name": "moscow",
+        "kind": "failure",
+        "message": "org.opentest4j.AssertionFailedError: Mahadvadashi classification disagrees with the moscow 2026 calendar. A *label* disagreement on a fortnight whose fasting date still matches is the outcome ADR 0002 predicts from the reference's ephemeris (docs/decisions/0002-reference-calendar-disagreement.md); a disagreement that also moves the fasting date is not, and is a rule error until shown otherwise. ==> expected: <{}> but was: <{2026-05-27=VANJULI}>"
+      },
+      {
+        "module": "sampradaya",
+        "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+        "name": "auckland",
+        "kind": "failure",
+        "message": "org.opentest4j.AssertionFailedError: Mahadvadashi classification disagrees with the auckland 2026 calendar. A *label* disagreement on a fortnight whose fasting date still matches is the outcome ADR 0002 predicts from the reference's ephemeris (docs/decisions/0002-reference-calendar-disagreement.md); a disagreement that also moves the fasting date is not, and is a rule error until shown otherwise. ==> expected: <{2026-04-14=TRISPRSA}> but was: <{2026-04-14=TRISPRSA, 2026-10-07=TRISPRSA}>"
+      },
+      {
+        "module": "sampradaya",
+        "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+        "name": "sydney",
+        "kind": "failure",
+        "message": "org.opentest4j.AssertionFailedError: Mahadvadashi classification disagrees with the sydney 2026 calendar. A *label* disagreement on a fortnight whose fasting date still matches is the outcome ADR 0002 predicts from the reference's ephemeris (docs/decisions/0002-reference-calendar-disagreement.md); a disagreement that also moves the fasting date is not, and is a rule error until shown otherwise. ==> expected: <{2026-01-15=PAKSAVARDHINI, 2026-07-11=TRISPRSA}> but was: <{2026-01-15=PAKSAVARDHINI, 2026-07-11=TRISPRSA, 2026-12-05=VANJULI}>"
+      },
+      {
+        "module": "sampradaya",
+        "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+        "name": "moscow",
+        "kind": "failure",
+        "message": "org.opentest4j.AssertionFailedError: deferral classification at moscow:\n2026-05-27: an unnamed deferral was promoted to VANJULI; the calendar prints no Mahadvadashi line here ==> expected: <true> but was: <false>"
+      },
+      {
+        "module": "sampradaya",
+        "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+        "name": "sydney",
+        "kind": "failure",
+        "message": "org.opentest4j.AssertionFailedError: deferral classification at sydney:\n2026-12-05: an unnamed deferral was promoted to VANJULI; the calendar prints no Mahadvadashi line here ==> expected: <true> but was: <false>"
+      }
+    ]
+  },
+  "historicalAdditionalAuditChecks": {
+    "xmlSource": "docs\\repairs\\2026-09-12\\historical-audit-xml",
+    "modules": {
+      "audit": {
+        "tests": 3,
+        "passed": 0,
+        "failed": 3,
+        "errors": 0,
+        "skipped": 0
+      }
+    },
+    "total": {
+      "tests": 3,
+      "passed": 0,
+      "failed": 3,
+      "errors": 0,
+      "skipped": 0
+    },
+    "failures": [
+      {
+        "module": "audit",
+        "suite": "org.panchang.verify.audit.AuditEvidenceTest",
+        "name": "reykjavikDocumentedDaylightCapContract()",
+        "kind": "failure",
+        "message": "org.opentest4j.AssertionFailedError: An ordinary sunrise followed by sunset exists: the documented daylight-third cap must not disappear merely because sunset has the next civil date ==> expected: <true> but was: <false>"
+      },
+      {
+        "module": "audit",
+        "suite": "org.panchang.verify.audit.AuditEvidenceTest",
+        "name": "januaryFirstDeliveryContract()",
+        "kind": "failure",
+        "message": "org.opentest4j.AssertionFailedError: January 1 day output must include the previous December fast's Parana printed in the independent calendar ==> expected: <1> but was: <0>"
+      },
+      {
+        "module": "audit",
+        "suite": "org.panchang.verify.audit.AuditEvidenceTest",
+        "name": "reykjavikSunriseRoundingContract()",
+        "kind": "failure",
+        "message": "org.opentest4j.AssertionFailedError: Held-out Reykjavik 2026-06-27 sunrise exceeds the predeclared USNO rounding interval ==> expected: <true> but was: <false>"
+      }
+    ]
+  },
+  "freshRuns": {
+    "full-normal": {
+      "xmlSource": "docs\\repairs\\2026-09-12\\full-normal\\xml",
+      "modules": {
+        "api": {
+          "tests": 39,
+          "passed": 33,
+          "failed": 6,
+          "errors": 0,
+          "skipped": 0
+        },
+        "calc": {
+          "tests": 22,
+          "passed": 21,
+          "failed": 1,
+          "errors": 0,
+          "skipped": 0
+        },
+        "core": {
+          "tests": 86,
+          "passed": 86,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "ephemeris": {
+          "tests": 54,
+          "passed": 54,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "gazetteer": {
+          "tests": 36,
+          "passed": 36,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "publish": {
+          "tests": 40,
+          "passed": 40,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "sampradaya": {
+          "tests": 222,
+          "passed": 213,
+          "failed": 9,
+          "errors": 0,
+          "skipped": 0
+        },
+        "verify": {
+          "tests": 101,
+          "passed": 101,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "wire": {
+          "tests": 43,
+          "passed": 43,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      },
+      "total": {
+        "tests": 643,
+        "passed": 627,
+        "failed": 16,
+        "errors": 0,
+        "skipped": 0
+      },
+      "failures": [
+        {
+          "module": "api",
+          "suite": "org.panchang.api.CrossFrontDoorIdentityTest",
+          "name": "a year at the same coordinates is byte-identical through both front doors()",
+          "kind": "failure",
+          "message": "org.opentest4j.AssertionFailedError: an ordinary year carries 24 Ekadashi observances; if this is 0 the byte comparison above is comparing two empty documents ==> expected: <24> but was: <25>"
+        },
+        {
+          "module": "api",
+          "suite": "org.panchang.api.MultiSiteParanaApiTest",
+          "name": "in December the separation is small and reversed()",
+          "kind": "failure",
+          "message": "java.lang.IllegalStateException: an ordinary year carries 24 Ekadashi observances, found 25"
+        },
+        {
+          "module": "api",
+          "suite": "org.panchang.api.MultiSiteParanaApiTest",
+          "name": "every tithi-bounded parana agrees and every sunrise-bounded one does not()",
+          "kind": "failure",
+          "message": "java.lang.IllegalStateException: an ordinary year carries 24 Ekadashi observances, found 25"
+        },
+        {
+          "module": "api",
+          "suite": "org.panchang.api.MultiSiteParanaApiTest",
+          "name": "at the equinox the separation is about a quarter of an hour()",
+          "kind": "failure",
+          "message": "java.lang.IllegalStateException: an ordinary year carries 24 Ekadashi observances, found 25"
+        },
+        {
+          "module": "api",
+          "suite": "org.panchang.api.MultiSiteParanaApiTest",
+          "name": "a parana bounded by the end of Hari Vasara is identical in both cities()",
+          "kind": "failure",
+          "message": "java.lang.IllegalStateException: an ordinary year carries 24 Ekadashi observances, found 25"
+        },
+        {
+          "module": "api",
+          "suite": "org.panchang.api.MultiSiteParanaApiTest",
+          "name": "mid-June is the widest separation, and it is over half an hour()",
+          "kind": "failure",
+          "message": "java.lang.IllegalStateException: an ordinary year carries 24 Ekadashi observances, found 25"
+        },
+        {
+          "module": "calc",
+          "suite": "org.panchang.calc.CalcCliTest",
+          "name": "ekadashi observances carry both parana bounds with both reasons()",
+          "kind": "failure",
+          "message": "org.opentest4j.AssertionFailedError: an ordinary year carries 24 Ekadashi observances ==> expected: <24> but was: <25>"
+        },
+        {
+          "module": "sampradaya",
+          "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+          "name": "vrindavan",
+          "kind": "failure",
+          "message": "org.opentest4j.AssertionFailedError: parana disagreements at vrindavan:\n2026-06-27: calendar prints a parana window, rules produced none\n2026-06-26: rules produced a parana window the calendar does not print ==> expected: <true> but was: <false>"
+        },
+        {
+          "module": "sampradaya",
+          "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+          "name": "auckland",
+          "kind": "failure",
+          "message": "org.opentest4j.AssertionFailedError: parana disagreements at auckland:\n2026-04-28 start basis: calendar '1/4 of tithi' (HARI_VASARA_END), rules SUNRISE\n2026-10-08 end basis: calendar 'end of tithi' (DVADASHI_END), rules ONE_THIRD_DAYLIGHT\n2026-10-08 end (ONE_THIRD_DAYLIGHT): calendar 06:47, rules 11:01:42, delta +254.71 min, outside -0.25..1.25 ==> expected: <true> but was: <false>"
+        },
+        {
+          "module": "sampradaya",
+          "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+          "name": "vrindavan",
+          "kind": "failure",
+          "message": "org.opentest4j.AssertionFailedError: Ekadashi fasting dates disagree with the vrindavan 2026 calendar. Missing: [2026-06-26]. Extra: [2026-06-25]. A fasting-date disagreement is a far stronger signal than a label disagreement and must be investigated as a rule error first; see docs/validation-multisite.md. ==> expected: <[2026-01-14, 2026-01-29, 2026-02-13, 2026-02-27, 2026-03-15, 2026-03-29, 2026-04-13, 2026-04-27, 2026-05-13, 2026-05-27, 2026-06-11, 2026-06-26, 2026-07-11, 2026-07-25, 2026-08-09, 2026-08-24, 2026-09-07, 2026-09-22, 2026-10-06, 2026-10-22, 2026-11-05, 2026-11-21, 2026-12-04, 2026-12-20]> but was: <[2026-01-14, 2026-01-29, 2026-02-13, 2026-02-27, 2026-03-15, 2026-03-29, 2026-04-13, 2026-04-27, 2026-05-13, 2026-05-27, 2026-06-11, 2026-06-25, 2026-07-11, 2026-07-25, 2026-08-09, 2026-08-24, 2026-09-07, 2026-09-22, 2026-10-06, 2026-10-22, 2026-11-05, 2026-11-21, 2026-12-04, 2026-12-20]>"
+        },
+        {
+          "module": "sampradaya",
+          "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+          "name": "vrindavan",
+          "kind": "failure",
+          "message": "org.opentest4j.AssertionFailedError: Mahadvadashi classification disagrees with the vrindavan 2026 calendar. A *label* disagreement on a fortnight whose fasting date still matches is the outcome ADR 0002 predicts from the reference's ephemeris (docs/decisions/0002-reference-calendar-disagreement.md); a disagreement that also moves the fasting date is not, and is a rule error until shown otherwise. ==> expected: <{2026-06-26=PAKSAVARDHINI, 2026-08-24=VANJULI}> but was: <{2026-08-24=VANJULI}>"
+        },
+        {
+          "module": "sampradaya",
+          "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+          "name": "moscow",
+          "kind": "failure",
+          "message": "org.opentest4j.AssertionFailedError: Mahadvadashi classification disagrees with the moscow 2026 calendar. A *label* disagreement on a fortnight whose fasting date still matches is the outcome ADR 0002 predicts from the reference's ephemeris (docs/decisions/0002-reference-calendar-disagreement.md); a disagreement that also moves the fasting date is not, and is a rule error until shown otherwise. ==> expected: <{}> but was: <{2026-05-27=VANJULI}>"
+        },
+        {
+          "module": "sampradaya",
+          "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+          "name": "auckland",
+          "kind": "failure",
+          "message": "org.opentest4j.AssertionFailedError: Mahadvadashi classification disagrees with the auckland 2026 calendar. A *label* disagreement on a fortnight whose fasting date still matches is the outcome ADR 0002 predicts from the reference's ephemeris (docs/decisions/0002-reference-calendar-disagreement.md); a disagreement that also moves the fasting date is not, and is a rule error until shown otherwise. ==> expected: <{2026-04-14=TRISPRSA}> but was: <{2026-04-14=TRISPRSA, 2026-10-07=TRISPRSA}>"
+        },
+        {
+          "module": "sampradaya",
+          "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+          "name": "sydney",
+          "kind": "failure",
+          "message": "org.opentest4j.AssertionFailedError: Mahadvadashi classification disagrees with the sydney 2026 calendar. A *label* disagreement on a fortnight whose fasting date still matches is the outcome ADR 0002 predicts from the reference's ephemeris (docs/decisions/0002-reference-calendar-disagreement.md); a disagreement that also moves the fasting date is not, and is a rule error until shown otherwise. ==> expected: <{2026-01-15=PAKSAVARDHINI, 2026-07-11=TRISPRSA}> but was: <{2026-01-15=PAKSAVARDHINI, 2026-07-11=TRISPRSA, 2026-12-05=VANJULI}>"
+        },
+        {
+          "module": "sampradaya",
+          "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+          "name": "moscow",
+          "kind": "failure",
+          "message": "org.opentest4j.AssertionFailedError: deferral classification at moscow:\n2026-05-27: an unnamed deferral was promoted to VANJULI; the calendar prints no Mahadvadashi line here ==> expected: <true> but was: <false>"
+        },
+        {
+          "module": "sampradaya",
+          "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+          "name": "sydney",
+          "kind": "failure",
+          "message": "org.opentest4j.AssertionFailedError: deferral classification at sydney:\n2026-12-05: an unnamed deferral was promoted to VANJULI; the calendar prints no Mahadvadashi line here ==> expected: <true> but was: <false>"
+        }
+      ],
+      "exitCode": 1
+    },
+    "full-normal-completed": {
+      "xmlSource": "docs\\repairs\\2026-09-12\\full-normal-completed\\xml",
+      "modules": {
+        "api": {
+          "tests": 39,
+          "passed": 39,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "calc": {
+          "tests": 22,
+          "passed": 22,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "core": {
+          "tests": 86,
+          "passed": 86,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "ephemeris": {
+          "tests": 54,
+          "passed": 54,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "gazetteer": {
+          "tests": 36,
+          "passed": 36,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "publish": {
+          "tests": 40,
+          "passed": 40,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "sampradaya": {
+          "tests": 222,
+          "passed": 213,
+          "failed": 9,
+          "errors": 0,
+          "skipped": 0
+        },
+        "verify": {
+          "tests": 101,
+          "passed": 101,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "wire": {
+          "tests": 43,
+          "passed": 43,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      },
+      "total": {
+        "tests": 643,
+        "passed": 634,
+        "failed": 9,
+        "errors": 0,
+        "skipped": 0
+      },
+      "failures": [
+        {
+          "module": "sampradaya",
+          "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+          "name": "vrindavan",
+          "kind": "failure",
+          "message": "org.opentest4j.AssertionFailedError: parana disagreements at vrindavan:\n2026-06-27: calendar prints a parana window, rules produced none\n2026-06-26: rules produced a parana window the calendar does not print ==> expected: <true> but was: <false>"
+        },
+        {
+          "module": "sampradaya",
+          "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+          "name": "auckland",
+          "kind": "failure",
+          "message": "org.opentest4j.AssertionFailedError: parana disagreements at auckland:\n2026-04-28 start basis: calendar '1/4 of tithi' (HARI_VASARA_END), rules SUNRISE\n2026-10-08 end basis: calendar 'end of tithi' (DVADASHI_END), rules ONE_THIRD_DAYLIGHT\n2026-10-08 end (ONE_THIRD_DAYLIGHT): calendar 06:47, rules 11:01:42, delta +254.71 min, outside -0.25..1.25 ==> expected: <true> but was: <false>"
+        },
+        {
+          "module": "sampradaya",
+          "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+          "name": "vrindavan",
+          "kind": "failure",
+          "message": "org.opentest4j.AssertionFailedError: Ekadashi fasting dates disagree with the vrindavan 2026 calendar. Missing: [2026-06-26]. Extra: [2026-06-25]. A fasting-date disagreement is a far stronger signal than a label disagreement and must be investigated as a rule error first; see docs/validation-multisite.md. ==> expected: <[2026-01-14, 2026-01-29, 2026-02-13, 2026-02-27, 2026-03-15, 2026-03-29, 2026-04-13, 2026-04-27, 2026-05-13, 2026-05-27, 2026-06-11, 2026-06-26, 2026-07-11, 2026-07-25, 2026-08-09, 2026-08-24, 2026-09-07, 2026-09-22, 2026-10-06, 2026-10-22, 2026-11-05, 2026-11-21, 2026-12-04, 2026-12-20]> but was: <[2026-01-14, 2026-01-29, 2026-02-13, 2026-02-27, 2026-03-15, 2026-03-29, 2026-04-13, 2026-04-27, 2026-05-13, 2026-05-27, 2026-06-11, 2026-06-25, 2026-07-11, 2026-07-25, 2026-08-09, 2026-08-24, 2026-09-07, 2026-09-22, 2026-10-06, 2026-10-22, 2026-11-05, 2026-11-21, 2026-12-04, 2026-12-20]>"
+        },
+        {
+          "module": "sampradaya",
+          "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+          "name": "vrindavan",
+          "kind": "failure",
+          "message": "org.opentest4j.AssertionFailedError: Mahadvadashi classification disagrees with the vrindavan 2026 calendar. A *label* disagreement on a fortnight whose fasting date still matches is the outcome ADR 0002 predicts from the reference's ephemeris (docs/decisions/0002-reference-calendar-disagreement.md); a disagreement that also moves the fasting date is not, and is a rule error until shown otherwise. ==> expected: <{2026-06-26=PAKSAVARDHINI, 2026-08-24=VANJULI}> but was: <{2026-08-24=VANJULI}>"
+        },
+        {
+          "module": "sampradaya",
+          "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+          "name": "moscow",
+          "kind": "failure",
+          "message": "org.opentest4j.AssertionFailedError: Mahadvadashi classification disagrees with the moscow 2026 calendar. A *label* disagreement on a fortnight whose fasting date still matches is the outcome ADR 0002 predicts from the reference's ephemeris (docs/decisions/0002-reference-calendar-disagreement.md); a disagreement that also moves the fasting date is not, and is a rule error until shown otherwise. ==> expected: <{}> but was: <{2026-05-27=VANJULI}>"
+        },
+        {
+          "module": "sampradaya",
+          "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+          "name": "auckland",
+          "kind": "failure",
+          "message": "org.opentest4j.AssertionFailedError: Mahadvadashi classification disagrees with the auckland 2026 calendar. A *label* disagreement on a fortnight whose fasting date still matches is the outcome ADR 0002 predicts from the reference's ephemeris (docs/decisions/0002-reference-calendar-disagreement.md); a disagreement that also moves the fasting date is not, and is a rule error until shown otherwise. ==> expected: <{2026-04-14=TRISPRSA}> but was: <{2026-04-14=TRISPRSA, 2026-10-07=TRISPRSA}>"
+        },
+        {
+          "module": "sampradaya",
+          "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+          "name": "sydney",
+          "kind": "failure",
+          "message": "org.opentest4j.AssertionFailedError: Mahadvadashi classification disagrees with the sydney 2026 calendar. A *label* disagreement on a fortnight whose fasting date still matches is the outcome ADR 0002 predicts from the reference's ephemeris (docs/decisions/0002-reference-calendar-disagreement.md); a disagreement that also moves the fasting date is not, and is a rule error until shown otherwise. ==> expected: <{2026-01-15=PAKSAVARDHINI, 2026-07-11=TRISPRSA}> but was: <{2026-01-15=PAKSAVARDHINI, 2026-07-11=TRISPRSA, 2026-12-05=VANJULI}>"
+        },
+        {
+          "module": "sampradaya",
+          "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+          "name": "moscow",
+          "kind": "failure",
+          "message": "org.opentest4j.AssertionFailedError: deferral classification at moscow:\n2026-05-27: an unnamed deferral was promoted to VANJULI; the calendar prints no Mahadvadashi line here ==> expected: <true> but was: <false>"
+        },
+        {
+          "module": "sampradaya",
+          "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+          "name": "sydney",
+          "kind": "failure",
+          "message": "org.opentest4j.AssertionFailedError: deferral classification at sydney:\n2026-12-05: an unnamed deferral was promoted to VANJULI; the calendar prints no Mahadvadashi line here ==> expected: <true> but was: <false>"
+        }
+      ],
+      "exitCode": 1
+    },
+    "post-fix-audit-contracts": {
+      "xmlSource": "docs\\repairs\\2026-09-12\\post-fix-audit-contracts\\xml",
+      "modules": {
+        "verify": {
+          "tests": 3,
+          "passed": 2,
+          "failed": 1,
+          "errors": 0,
+          "skipped": 0
+        }
+      },
+      "total": {
+        "tests": 3,
+        "passed": 2,
+        "failed": 1,
+        "errors": 0,
+        "skipped": 0
+      },
+      "failures": [
+        {
+          "module": "verify",
+          "suite": "org.panchang.verify.audit.AuditEvidenceTest",
+          "name": "reykjavikSunriseRoundingContract()",
+          "kind": "failure",
+          "message": "org.opentest4j.AssertionFailedError: Held-out Reykjavik 2026-06-27 sunrise exceeds the predeclared USNO rounding interval ==> expected: <true> but was: <false>"
+        }
+      ],
+      "exitCode": 1
+    },
+    "post-fix-audit-diagnostics": {
+      "xmlSource": "docs\\repairs\\2026-09-12\\post-fix-audit-diagnostics\\xml",
+      "modules": {
+        "verify": {
+          "tests": 1,
+          "passed": 1,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      },
+      "total": {
+        "tests": 1,
+        "passed": 1,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "failures": [],
+      "exitCode": 0
+    },
+    "post-fix-regressions": {
+      "xmlSource": "docs\\repairs\\2026-09-12\\post-fix-regressions\\xml",
+      "modules": {
+        "calc": {
+          "tests": 2,
+          "passed": 1,
+          "failed": 1,
+          "errors": 0,
+          "skipped": 0
+        },
+        "core": {
+          "tests": 4,
+          "passed": 4,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "sampradaya": {
+          "tests": 1,
+          "passed": 1,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      },
+      "total": {
+        "tests": 7,
+        "passed": 6,
+        "failed": 1,
+        "errors": 0,
+        "skipped": 0
+      },
+      "failures": [
+        {
+          "module": "calc",
+          "suite": "org.panchang.calc.YearCarryoverTest",
+          "name": "adjacent years share only the carryover and day selection agrees with each year()",
+          "kind": "failure",
+          "message": "org.opentest4j.AssertionFailedError: expected: <ObservanceDecisionDto(date=2025-12-31, name=Putrada Ekadashi, kind=EKADASHI, mahadvadashiType=null, tithi=TithiOccurrenceDto(index=10, name=Ekadashi, numberInPaksha=11, paksha=SHUKLA, lunarMonthName=Pausha, isAdhikaMonth=false, start=InstantDto(local=2025-12-30T07:51:33+05:30, jdUt=2461039.5983), end=InstantDto(local=2025-12-31T05:00:57+05:30, jdUt=2461040.47983)), parana=ParanaWindowDto(date=2026-01-01, start=InstantDto(local=2026-01-01T06:18:13+05:30, jdUt=2461041.53348), end=InstantDto(local=2026-01-01T09:52:42+05:30, jdUt=2461041.68243), startReason=SUNRISE, endReason=ONE_THIRD_DAYLIGHT, durationMinutes=214.499), reason=The Ekadashi began after sunrise and ended before the next sunrise, so no day carries it; the fast is kept on the Dvadashi., confidence=CONFIRMED)> but was: <ObservanceDecisionDto(date=2025-12-31, name=Putrada Ekadashi, kind=EKADASHI, mahadvadashiType=null, tithi=TithiOccurrenceDto(index=10, name=Ekadashi, numberInPaksha=11, paksha=SHUKLA, lunarMonthName=Pausha, isAdhikaMonth=false, start=InstantDto(local=2025-12-30T07:51:32+05:30, jdUt=2461039.59829), end=InstantDto(local=2025-12-31T05:00:57+05:30, jdUt=2461040.47983)), parana=ParanaWindowDto(date=2026-01-01, start=InstantDto(local=2026-01-01T06:18:13+05:30, jdUt=2461041.53348), end=InstantDto(local=2026-01-01T09:52:42+05:30, jdUt=2461041.68243), startReason=SUNRISE, endReason=ONE_THIRD_DAYLIGHT, durationMinutes=214.499), reason=The Ekadashi began after sunrise and ended before the next sunrise, so no day carries it; the fast is kept on the Dvadashi., confidence=CONFIRMED)>"
+        }
+      ],
+      "exitCode": 1
+    },
+    "pre-fix-audit-contracts": {
+      "xmlSource": "docs\\repairs\\2026-09-12\\pre-fix-audit-contracts\\xml",
+      "modules": {
+        "verify": {
+          "tests": 3,
+          "passed": 0,
+          "failed": 3,
+          "errors": 0,
+          "skipped": 0
+        }
+      },
+      "total": {
+        "tests": 3,
+        "passed": 0,
+        "failed": 3,
+        "errors": 0,
+        "skipped": 0
+      },
+      "failures": [
+        {
+          "module": "verify",
+          "suite": "org.panchang.verify.audit.AuditEvidenceTest",
+          "name": "reykjavikDocumentedDaylightCapContract()",
+          "kind": "failure",
+          "message": "org.opentest4j.AssertionFailedError: An ordinary sunrise followed by sunset exists: the documented daylight-third cap must not disappear merely because sunset has the next civil date ==> expected: <true> but was: <false>"
+        },
+        {
+          "module": "verify",
+          "suite": "org.panchang.verify.audit.AuditEvidenceTest",
+          "name": "januaryFirstDeliveryContract()",
+          "kind": "failure",
+          "message": "org.opentest4j.AssertionFailedError: January 1 day output must include the previous December fast's Parana printed in the independent calendar ==> expected: <1> but was: <0>"
+        },
+        {
+          "module": "verify",
+          "suite": "org.panchang.verify.audit.AuditEvidenceTest",
+          "name": "reykjavikSunriseRoundingContract()",
+          "kind": "failure",
+          "message": "org.opentest4j.AssertionFailedError: Held-out Reykjavik 2026-06-27 sunrise exceeds the predeclared USNO rounding interval ==> expected: <true> but was: <false>"
+        }
+      ],
+      "exitCode": 1
+    },
+    "pre-fix-audit-diagnostics": {
+      "xmlSource": "docs\\repairs\\2026-09-12\\pre-fix-audit-diagnostics\\xml",
+      "modules": {
+        "verify": {
+          "tests": 1,
+          "passed": 1,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      },
+      "total": {
+        "tests": 1,
+        "passed": 1,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "failures": [],
+      "exitCode": 0
+    },
+    "pre-fix-regressions": {
+      "xmlSource": "docs\\repairs\\2026-09-12\\pre-fix-regressions\\xml",
+      "modules": {
+        "calc": {
+          "tests": 2,
+          "passed": 0,
+          "failed": 2,
+          "errors": 0,
+          "skipped": 0
+        },
+        "sampradaya": {
+          "tests": 1,
+          "passed": 0,
+          "failed": 1,
+          "errors": 0,
+          "skipped": 0
+        }
+      },
+      "total": {
+        "tests": 3,
+        "passed": 0,
+        "failed": 3,
+        "errors": 0,
+        "skipped": 0
+      },
+      "failures": [
+        {
+          "module": "calc",
+          "suite": "org.panchang.calc.YearCarryoverTest",
+          "name": "adjacent years share only the carryover and day selection agrees with each year()",
+          "kind": "failure",
+          "message": "java.util.NoSuchElementException: Collection contains no element matching the predicate."
+        },
+        {
+          "module": "calc",
+          "suite": "org.panchang.calc.YearCarryoverTest",
+          "name": "January 1 retains the December fast with its distinct Parana date()",
+          "kind": "failure",
+          "message": "java.util.NoSuchElementException: List is empty."
+        },
+        {
+          "module": "sampradaya",
+          "suite": "org.panchang.sampradaya.DaylightDeliveryTest",
+          "name": "Reykjavik June 26 uses the independently evidenced following sunset cap()",
+          "kind": "failure",
+          "message": "org.opentest4j.AssertionFailedError: USNO daylight third=2026-06-26T09:59:20Z; actual=2026-06-26T16:52:50.322Z ==> expected: <true> but was: <false>"
+        }
+      ],
+      "exitCode": 1
+    },
+    "targeted-delivery": {
+      "xmlSource": "docs\\repairs\\2026-09-12\\targeted-delivery\\xml",
+      "modules": {
+        "api": {
+          "tests": 2,
+          "passed": 2,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "calc": {
+          "tests": 2,
+          "passed": 2,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "core": {
+          "tests": 4,
+          "passed": 4,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "sampradaya": {
+          "tests": 6,
+          "passed": 6,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      },
+      "total": {
+        "tests": 14,
+        "passed": 14,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "failures": [],
+      "exitCode": 0
+    }
+  },
+  "publishingBlocked": true,
+  "releaseReadinessEstablished": false,
+  "unresolved": [
+    "Vrindavan fasting date and Parana",
+    "Auckland Parana and classification",
+    "Moscow and Sydney classification",
+    "Reykjavik sunrise rounding disagreement",
+    "Owner and qualified reviewer approval, inferred religious conditions"
+  ],
+  "excludedNetworkMethods": 7,
+  "interruptedRuns": [
+    {
+      "run": "full-normal-final",
+      "completed": false,
+      "reason": "Process absent after resumed user turn; no completion exit or copied XML recorded. Partial log preserved."
+    }
+  ],
+  "localHttpAndWrittenFiles": {
+    "passed": true,
+    "requests": [
+      {
+        "name": "mayapur-year",
+        "url": "http://127.0.0.1:64456/v1/calendar/iskcon/2026?lat=23.416666666666668&lon=88.38333333333334&tz=Asia%2FKolkata",
+        "status": 200
+      },
+      {
+        "name": "mayapur-day",
+        "url": "http://127.0.0.1:64456/v1/day/iskcon/2026-01-01?lat=23.416666666666668&lon=88.38333333333334&tz=Asia%2FKolkata",
+        "status": 200
+      },
+      {
+        "name": "mayapur-january-2",
+        "url": "http://127.0.0.1:64456/v1/day/iskcon/2026-01-02?lat=23.416666666666668&lon=88.38333333333334&tz=Asia%2FKolkata",
+        "status": 200
+      },
+      {
+        "name": "reykjavik-year",
+        "url": "http://127.0.0.1:64456/v1/calendar/iskcon/2026?lat=64.1466&lon=-21.9426&tz=Atlantic%2FReykjavik",
+        "status": 200
+      },
+      {
+        "name": "reykjavik-day",
+        "url": "http://127.0.0.1:64456/v1/day/iskcon/2026-06-26?lat=64.1466&lon=-21.9426&tz=Atlantic%2FReykjavik",
+        "status": 200
+      }
+    ],
+    "checks": [
+      "real HTTP day/year agreement",
+      "HTTP/written v1 agreement",
+      "legacy January attachment context",
+      "no duplicated or unrelated legacy dates",
+      "Reykjavik end reason and inward legacy rounding"
+    ],
+    "deployed": false,
+    "junitTestCounts": false
+  },
+  "fullNormalFailureComparison": {
+    "run": "full-normal-completed",
+    "identicalToHistorical": true,
+    "added": [],
+    "removed": []
+  },
+  "newPermanentRegressions": {
+    "run": "full-normal-completed",
+    "total": {
+      "tests": 10,
+      "passed": 10,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "cases": [
+      {
+        "suite": "org.panchang.api.DeliveryFrontDoorTest",
+        "name": "Reykjavik daylight cap and metadata agree through HTTP and written files()",
+        "outcome": "passed",
+        "xml": "docs/repairs/2026-09-12/full-normal-completed/xml/api/TEST-org.panchang.api.DeliveryFrontDoorTest.xml"
+      },
+      {
+        "suite": "org.panchang.api.DeliveryFrontDoorTest",
+        "name": "January carryover agrees through HTTP day year and written v1 and legacy files()",
+        "outcome": "passed",
+        "xml": "docs/repairs/2026-09-12/full-normal-completed/xml/api/TEST-org.panchang.api.DeliveryFrontDoorTest.xml"
+      },
+      {
+        "suite": "org.panchang.calc.YearCarryoverTest",
+        "name": "adjacent years share only the carryover and day selection agrees with each year()",
+        "outcome": "passed",
+        "xml": "docs/repairs/2026-09-12/full-normal-completed/xml/calc/TEST-org.panchang.calc.YearCarryoverTest.xml"
+      },
+      {
+        "suite": "org.panchang.calc.YearCarryoverTest",
+        "name": "January 1 retains the December fast with its distinct Parana date()",
+        "outcome": "passed",
+        "xml": "docs/repairs/2026-09-12/full-normal-completed/xml/calc/TEST-org.panchang.calc.YearCarryoverTest.xml"
+      },
+      {
+        "suite": "org.panchang.core.DaylightIntervalTest",
+        "name": "missing endpoints and polar conditions do not invent an interval()",
+        "outcome": "passed",
+        "xml": "docs/repairs/2026-09-12/full-normal-completed/xml/core/TEST-org.panchang.core.DaylightIntervalTest.xml"
+      },
+      {
+        "suite": "org.panchang.core.DaylightIntervalTest",
+        "name": "cross-midnight interval uses a distinct next sunset without altering civil semantics()",
+        "outcome": "passed",
+        "xml": "docs/repairs/2026-09-12/full-normal-completed/xml/core/TEST-org.panchang.core.DaylightIntervalTest.xml"
+      },
+      {
+        "suite": "org.panchang.core.DaylightIntervalTest",
+        "name": "daylight across both DST transitions follows actual instants and civil dates()",
+        "outcome": "passed",
+        "xml": "docs/repairs/2026-09-12/full-normal-completed/xml/core/TEST-org.panchang.core.DaylightIntervalTest.xml"
+      },
+      {
+        "suite": "org.panchang.core.DaylightIntervalTest",
+        "name": "ordinary Indian daylight keeps the exact civil events and avoids next day lookup()",
+        "outcome": "passed",
+        "xml": "docs/repairs/2026-09-12/full-normal-completed/xml/core/TEST-org.panchang.core.DaylightIntervalTest.xml"
+      },
+      {
+        "suite": "org.panchang.publish.FeedPublisherTest",
+        "name": "yearly files retain January Parana with the preceding legacy fast for attachment()",
+        "outcome": "passed",
+        "xml": "docs/repairs/2026-09-12/full-normal-completed/xml/publish/TEST-org.panchang.publish.FeedPublisherTest.xml"
+      },
+      {
+        "suite": "org.panchang.sampradaya.DaylightDeliveryTest",
+        "name": "Reykjavik June 26 uses the independently evidenced following sunset cap()",
+        "outcome": "passed",
+        "xml": "docs/repairs/2026-09-12/full-normal-completed/xml/sampradaya/TEST-org.panchang.sampradaya.DaylightDeliveryTest.xml"
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "id": "gbc-2019-agm",
+  "url": "https://gbc.iskcon.org/2019-agm/",
+  "kind": "primary-authority-document",
+  "retrievedAtUtc": "2026-09-20T18:01:15.397960+00:00",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": null,
+  "error": "The read operation timed out"
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.api.VersionMigrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-09-21T13:48:05" hostname="DESKTOP-KBUKJ2P" time="0.009">
+  <properties/>
+  <testcase name="v1 calendar and day are explicit non-cacheable migration refusals()" classname="org.panchang.api.VersionMigrationTest" time="0.009"/>
+  <system-out><![CDATA[13:48:05.033 [DefaultDispatcher-worker-10 @call-context#626] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+13:48:05.033 [DefaultDispatcher-worker-10 @call-context#626] INFO ktor.test -- Application started in 0.001 seconds.
+13:48:05.033 [DefaultDispatcher-worker-2 @coroutine#628] INFO ktor.test -- Responding at http://localhost:80
+13:48:05.034 [DefaultDispatcher-worker-2 @coroutine#628] INFO ktor.test -- Responding at https://localhost:443
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

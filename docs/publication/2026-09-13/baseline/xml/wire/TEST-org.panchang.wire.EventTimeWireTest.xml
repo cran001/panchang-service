@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.wire.EventTimeWireTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-09-12T20:45:02" hostname="DESKTOP-KBUKJ2P" time="0.103">
+  <properties/>
+  <testcase name="all three shapes round trip()" classname="org.panchang.wire.EventTimeWireTest" time="0.044"/>
+  <testcase name="At carries one instant()" classname="org.panchang.wire.EventTimeWireTest" time="0.001"/>
+  <testcase name="Absent states the absence in a sentence a client can show unmodified()" classname="org.panchang.wire.EventTimeWireTest" time="0.001"/>
+  <testcase name="Absent emits a reason and no time-shaped field whatsoever()" classname="org.panchang.wire.EventTimeWireTest" time="0.031"/>
+  <testcase name="Window carries both bounds because a muhurta is not a point()" classname="org.panchang.wire.EventTimeWireTest" time="0.001"/>
+  <testcase name="basis and confidence cross the module boundary verbatim()" classname="org.panchang.wire.EventTimeWireTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

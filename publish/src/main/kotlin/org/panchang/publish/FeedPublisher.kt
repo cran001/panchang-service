@@ -26,33 +26,12 @@ import org.panchang.wire.WireJson
 import org.panchang.wire.YearResolutionDto
 import org.panchang.wire.acceptSite
 
-/**
- * Generates the published artifacts for a set of sites into a local directory.
- *
- * ## What this module does and does not own
- *
- * It owns *layout*: which files exist, what goes in each, and the legacy shape in
- * [LegacyFeed]. It owns no astronomy and no ruling. The request→answer path is
- * `org.panchang.calc.CalcEngine`, reused rather than reimplemented — including
- * [org.panchang.calc.Sampradayas], which is the single registration site for `IskconRules`.
- * Constructing a second `IskconRules` here and registering it would trip
- * `SampradayaRegistry.register`'s identity check the moment both modules are loaded in one JVM,
- * and, more to the point, two front doors that each assemble a year are two chances to disagree
- * about a fasting time in front of a user.
- *
- * ## Two shapes, on purpose
- *
- * `v1/` is `:wire`'s document roots verbatim, `unresolved` map included — see
- * [v1YearResolution] for why that map is not optional. `legacy/` reproduces the shape the shipped
- * Android app already parses, so existing installs keep working; that contract, and the reading of
- * the app source it rests on, is `docs/legacy-contract.md`.
- *
- * ## Nothing leaves this process
- *
- * No deploy, no credentials, no network. [write] takes a local directory and that is the whole of
- * the publication step.
+/** Development-only renderer of historical calculation formats.
+ * It carries no publishing authority. Writes are forced below review/ with a warning marker.
+ * Public export is FeedPublisher in PublicFeedPublisher.kt and always uses PublicationService.
+ * Kept so numerical, rounding and January carryover regression checks remain permanent.
  */
-class FeedPublisher(
+class ReviewFeedPublisher(
     private val calculator: PanchangCalculator = PanchangCalculator(Vsop87Ephemeris()),
     private val resolver: LocationResolver = LocationResolver(),
 ) {
@@ -124,50 +103,10 @@ class FeedPublisher(
             )
         }
 
-        // The app falls back to P0000 for any offset it cannot match and fails outright when that
-        // directory is absent, which reaches the user as a stale cache with no visible error. If no
-        // requested site landed there, synthesise one. Guarded on a non-empty feed so that a run
-        // where everything was skipped still produces an empty feed rather than one fake site.
-        var utcFallback: UtcFallback? = null
+        // Never synthesize a different location for an unmatched offset.
+        val utcFallback: UtcFallback? = null
         if (legacyByZoneDir.isNotEmpty() && "P0000" !in legacyByZoneDir) {
-            val site = Accepted(
-                key = UTC_FALLBACK_KEY,
-                title = UTC_FALLBACK_TITLE,
-                site = resolver.byCoordinates(
-                    GeoLocation(UTC_FALLBACK_LATITUDE, UTC_FALLBACK_LONGITUDE, ZoneId.of("Etc/UTC")),
-                    UTC_FALLBACK_KEY,
-                ),
-            )
-            val result = engine.compute(site.site, rules, Scope.Year(year))
-            val day = legacyDays(
-                site, result.yearResolution, result.ekadashiYear, year, ZoneOffset.UTC,
-                omissions, warnings,
-            )
-            files["legacy/P0000/${site.key}.json"] = WireJson.pretty.encodeToString(
-                kotlinx.serialization.builtins.ListSerializer(LegacyDay.serializer()), day,
-            )
-            legacyByZoneDir.getOrPut("P0000") { ArrayList() } += LegacyLocation(
-                title = site.title,
-                coordinates = LegacyFeed.coordinates(UTC_FALLBACK_LATITUDE, UTC_FALLBACK_LONGITUDE),
-                timezone = LegacyFeed.timezoneField(ZoneOffset.UTC),
-                option = site.key,
-                file = site.key,
-            )
-            utcFallback = UtcFallback(
-                key = site.key,
-                title = site.title,
-                latitude = UTC_FALLBACK_LATITUDE,
-                longitude = UTC_FALLBACK_LONGITUDE,
-                timeZone = "Etc/UTC",
-                reason = "No requested site published into the P0000 zone directory. " +
-                    "CalendarSyncRepository falls back to P0000 whenever the device's offset " +
-                    "matches no published zone, and returns failure when that directory is " +
-                    "missing — the user then keeps a stale cache with nothing on screen to say " +
-                    "so. This site exists only so that case degrades to a visibly-generic " +
-                    "calendar instead. Its times are computed on the prime meridian at a fixed " +
-                    "UTC offset and are correct for no district. See docs/legacy-contract.md " +
-                    "section 7.",
-            )
+            warnings += "No requested site uses P0000. No UTC fallback calendar was created; unmatched locations have no guidance."
         }
 
         val zoneDirs = legacyByZoneDir.keys.sorted()
@@ -183,14 +122,6 @@ class FeedPublisher(
                 kotlinx.serialization.builtins.ListSerializer(LegacyLocation.serializer()),
                 legacyByZoneDir.getValue(dir).sortedBy { it.file },
             )
-        }
-
-        if (utcFallback != null) {
-            warnings += "A synthetic UTC site was published into legacy/P0000/ because no " +
-                "requested site landed there. It is correct for no district and exists only so " +
-                "that an unmatched device offset degrades to a visibly-generic calendar rather " +
-                "than a silent stale cache. See manifest.utcFallback and " +
-                "docs/legacy-contract.md section 7."
         }
 
         val skippedReport = SkippedReport(
@@ -224,8 +155,14 @@ class FeedPublisher(
 
     /** Write a computed run to [outDir]. Creates directories; overwrites files; touches nothing else. */
     fun write(result: PublishResult, outDir: Path) {
+        // Diagnostic renderer retained for inspection and permanent delivery regressions.
+        // Never writes to the public artifact paths. This directory is not deployable.
+        val reviewDir = outDir.resolve("review")
+        Files.createDirectories(reviewDir)
+        Files.writeString(reviewDir.resolve("NOT-FOR-PUBLICATION.txt"),
+            "CALCULATED DIAGNOSTICS ONLY. No human approval. Do not serve these files.\n")
         result.files.forEach { (relative, content) ->
-            val target = outDir.resolve(relative)
+            val target = reviewDir.resolve(relative)
             Files.createDirectories(target.parent)
             Files.writeString(target, content, StandardCharsets.UTF_8)
         }
@@ -342,9 +279,19 @@ class FeedPublisher(
             }
         }
 
-        val days = ArrayList<LegacyDay>(366)
-        var date = LocalDate.of(year, 1, 1)
-        while (date.year == year) {
+        val yearStart = LocalDate.of(year, 1, 1)
+        val yearEnd = LocalDate.of(year, 12, 31)
+        // The legacy reader attaches a Parana to a fasting event on the preceding day in the
+        // SAME file. Retain that December context day only for a delivered January carryover;
+        // a January 1 Break fast item without it would still be silently dropped by the reader.
+        val carryoverStart = ekadashi.observances.filter {
+            it.date < yearStart && it.parana?.date?.let { date ->
+                date.year == year && date in paranasByDate
+            } == true
+        }.minOfOrNull { it.date }
+        val days = ArrayList<LegacyDay>(367)
+        var date = carryoverStart ?: yearStart
+        while (!date.isAfter(yearEnd)) {
             val events = ArrayList<LegacyEvent>()
 
             fastsByDate[date]?.forEach { decision ->
@@ -396,8 +343,9 @@ class FeedPublisher(
         val reference = sun.sunrise.jdUtOrNull ?: run {
             warnings += "$key $date has no sunrise; the legacy tithi for that day was taken at " +
                 "solar noon instead, which is a substitute this project has no traditional " +
-                "source for. Sites above ${org.panchang.wire.POLAR_LIMIT_DEG} degrees are " +
-                "refused outright, so this should not occur — treat it as a bug report."
+                "source for. Sites beyond the midnight-sun boundary " +
+                "(org.panchang.wire.MIDNIGHT_SUN_LIMIT_DEG) are refused outright, so this should " +
+                "not occur — treat it as a bug report."
             sun.solarNoonJdUt
         }
         val tithi = calculator.tithiAt(reference)
@@ -482,20 +430,6 @@ class FeedPublisher(
     // ── Zones ───────────────────────────────────────────────────────────────────────────────
 
     private companion object {
-
-        /**
-         * The synthesised `P0000` site. The prime meridian at the Royal Observatory's latitude,
-         * pinned to `Etc/UTC` rather than `Europe/London` so it holds one offset all year — which
-         * is the entire meaning of the `P0000` directory.
-         *
-         * The title says what it is in the one place a user can actually see it: `locations.json`,
-         * which the app renders as a pick list. A row reading "UTC" invites someone to select it
-         * and believe the result.
-         */
-        const val UTC_FALLBACK_KEY = "utc-fallback"
-        const val UTC_FALLBACK_TITLE = "UTC — generic fallback, not your location"
-        const val UTC_FALLBACK_LATITUDE = 51.4779
-        const val UTC_FALLBACK_LONGITUDE = 0.0
 
         /**
          * The zone's single UTC offset across [year], or null if it has more than one.

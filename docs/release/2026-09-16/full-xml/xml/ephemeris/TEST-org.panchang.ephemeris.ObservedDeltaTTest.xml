@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ΔT — observed IERS Earth orientation" tests="11" skipped="0" failures="0" errors="0" timestamp="2026-09-20T18:07:48" hostname="DESKTOP-KBUKJ2P" time="0.1">
+  <properties/>
+  <testcase name="the recent observed decrease in deltaT is present()" classname="org.panchang.ephemeris.ObservedDeltaTTest" time="0.002"/>
+  <testcase name="no step at the fit-to-observed or observed-to-extrapolated seams()" classname="org.panchang.ephemeris.ObservedDeltaTTest" time="0.006"/>
+  <testcase name="both ephemerides expose the same deltaT()" classname="org.panchang.ephemeris.ObservedDeltaTTest" time="0.001"/>
+  <testcase name="the stale Espenak-Meeus post-2005 bias is gone()" classname="org.panchang.ephemeris.ObservedDeltaTTest" time="0.001"/>
+  <testcase name="the table carries its provenance()" classname="org.panchang.ephemeris.ObservedDeltaTTest" time="0.007"/>
+  <testcase name="far-future extrapolation is anchored to the observed record()" classname="org.panchang.ephemeris.ObservedDeltaTTest" time="0.006"/>
+  <testcase name="reproduces independently published deltaT values()" classname="org.panchang.ephemeris.ObservedDeltaTTest" time="0.001"/>
+  <testcase name="before the IERS record the Espenak-Meeus fit is used()" classname="org.panchang.ephemeris.ObservedDeltaTTest" time="0.004"/>
+  <testcase name="quality bands are reported at the right dates()" classname="org.panchang.ephemeris.ObservedDeltaTTest" time="0.003"/>
+  <testcase name="modified julian date conversion()" classname="org.panchang.ephemeris.ObservedDeltaTTest" time="0.0"/>
+  <testcase name="deltaT has no discontinuity anywhere from 1900 to 2200()" classname="org.panchang.ephemeris.ObservedDeltaTTest" time="0.058"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

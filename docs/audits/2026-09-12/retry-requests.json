@@ -1,0 +1,42 @@
+[
+  {
+    "id": "retry-usno-cape-town-2028-06-21",
+    "kind": "usno",
+    "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2028-06-21&coords=-33.925%2C18.424&tz=2&label=cape-town",
+    "date": "2028-06-21",
+    "latitude": -33.925,
+    "longitude": 18.424,
+    "offset": 2.0,
+    "zone": "Africa/Johannesburg"
+  },
+  {
+    "id": "retry-usno-singapore-2028-01-01",
+    "kind": "usno",
+    "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2028-01-01&coords=1.3521%2C103.8198&tz=8&label=singapore",
+    "date": "2028-01-01",
+    "latitude": 1.3521,
+    "longitude": 103.8198,
+    "offset": 8.0,
+    "zone": "Asia/Singapore"
+  },
+  {
+    "id": "retry-usno-london-2027-03-28",
+    "kind": "usno",
+    "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2027-03-28&coords=51.5074%2C-0.1278&tz=1&label=london",
+    "date": "2027-03-28",
+    "latitude": 51.5074,
+    "longitude": -0.1278,
+    "offset": 1.0,
+    "zone": "Europe/London"
+  },
+  {
+    "id": "retry-usno-reykjavik-2026-06-26",
+    "kind": "usno",
+    "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-06-27&coords=64.1466%2C-21.9426&tz=0&label=reykjavik",
+    "date": "2026-06-27",
+    "latitude": 64.1466,
+    "longitude": -21.9426,
+    "offset": 0.0,
+    "zone": "Atlantic/Reykjavik"
+  }
+]

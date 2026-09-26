@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.core.MoonTimesTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-09-12T20:44:51" hostname="DESKTOP-KBUKJ2P" time="0.075">
+  <properties/>
+  <testcase name="the full moon rises near sunset()" classname="org.panchang.core.MoonTimesTest" time="0.011"/>
+  <testcase name="the lunar horizon is above the true horizon because parallax beats refraction()" classname="org.panchang.core.MoonTimesTest" time="0.001"/>
+  <testcase name="moon events fall inside the civil day they are reported for()" classname="org.panchang.core.MoonTimesTest" time="0.013"/>
+  <testcase name="moonrise runs later each day by roughly fifty minutes()" classname="org.panchang.core.MoonTimesTest" time="0.019"/>
+  <testcase name="about once a lunar month a civil day has no moonrise()" classname="org.panchang.core.MoonTimesTest" time="0.01"/>
+  <testcase name="moon events sit on the lunar horizon, which is not the solar one()" classname="org.panchang.core.MoonTimesTest" time="0.019"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

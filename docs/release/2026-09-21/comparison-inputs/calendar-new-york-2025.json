@@ -1,0 +1,29 @@
+{
+  "id": "calendar-new-york-2025",
+  "url": "https://www.vaisnavacalendar.info/calendars/2025/New%20York%20City%20%5BUnited%20States%20of%20America%5D.txt",
+  "kind": "calendar",
+  "retrievedAtUtc": "2026-09-15T19:54:49.755966+00:00",
+  "cityId": "new-york",
+  "year": 2025,
+  "lineage": "vaisnavacalendar.info/GCal-text",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": 200,
+  "finalUrl": "https://www.vaisnavacalendar.info/calendars/2025/New%20York%20City%20%5BUnited%20States%20of%20America%5D.txt",
+  "responseHeaders": {
+    "Date": "Tue, 15 Sep 2026 19:54:50 GMT",
+    "Server": "Apache/2",
+    "Upgrade": "h2,h2c",
+    "Connection": "Upgrade, close",
+    "Last-Modified": "Mon, 29 Jan 2024 18:01:27 GMT",
+    "ETag": "\"a061-610196f46b1dc\"",
+    "Accept-Ranges": "bytes",
+    "Content-Length": "41057",
+    "Vary": "Accept-Encoding,User-Agent",
+    "Content-Type": "text/plain"
+  },
+  "file": "docs/release/2026-09-16/sources/calendar-new-york-2025.raw",
+  "sha256": "10b8f2015f6a509a9bef3d3edae8a25449a5d1d737a42cf8d54513dc3c60ba5a",
+  "bytes": 41057
+}

@@ -1,0 +1,49 @@
+{
+  "xmlSource": "docs\\repairs\\2026-09-12\\pre-fix-regressions\\xml",
+  "modules": {
+    "calc": {
+      "tests": 2,
+      "passed": 0,
+      "failed": 2,
+      "errors": 0,
+      "skipped": 0
+    },
+    "sampradaya": {
+      "tests": 1,
+      "passed": 0,
+      "failed": 1,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "total": {
+    "tests": 3,
+    "passed": 0,
+    "failed": 3,
+    "errors": 0,
+    "skipped": 0
+  },
+  "failures": [
+    {
+      "module": "calc",
+      "suite": "org.panchang.calc.YearCarryoverTest",
+      "name": "adjacent years share only the carryover and day selection agrees with each year()",
+      "kind": "failure",
+      "message": "java.util.NoSuchElementException: Collection contains no element matching the predicate."
+    },
+    {
+      "module": "calc",
+      "suite": "org.panchang.calc.YearCarryoverTest",
+      "name": "January 1 retains the December fast with its distinct Parana date()",
+      "kind": "failure",
+      "message": "java.util.NoSuchElementException: List is empty."
+    },
+    {
+      "module": "sampradaya",
+      "suite": "org.panchang.sampradaya.DaylightDeliveryTest",
+      "name": "Reykjavik June 26 uses the independently evidenced following sunset cap()",
+      "kind": "failure",
+      "message": "org.opentest4j.AssertionFailedError: USNO daylight third=2026-06-26T09:59:20Z; actual=2026-06-26T16:52:50.322Z ==> expected: <true> but was: <false>"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.sampradaya.IskconEventCatalogConformanceTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-09-12T17:56:31" hostname="DESKTOP-KBUKJ2P" time="5.914">
+  <properties/>
+  <testcase name="no catalog entry fails to resolve in 2026()" classname="org.panchang.sampradaya.IskconEventCatalogConformanceTest" time="5.881"/>
+  <testcase name="every catalog entry is either checkable against the golden calendar or named as not()" classname="org.panchang.sampradaya.IskconEventCatalogConformanceTest" time="0.0"/>
+  <testcase name="the catalog reproduces the official Mayapur 2026 dates()" classname="org.panchang.sampradaya.IskconEventCatalogConformanceTest" time="0.015"/>
+  <testcase name="every entry records where its rule came from()" classname="org.panchang.sampradaya.IskconEventCatalogConformanceTest" time="0.001"/>
+  <testcase name="every golden marker identifies exactly one day of 2026()" classname="org.panchang.sampradaya.IskconEventCatalogConformanceTest" time="0.003"/>
+  <testcase name="no entry claims CONFIRMED without an oracle that agrees()" classname="org.panchang.sampradaya.IskconEventCatalogConformanceTest" time="0.008"/>
+  <testcase name="report golden events this catalog does not cover()" classname="org.panchang.sampradaya.IskconEventCatalogConformanceTest" time="0.003"/>
+  <system-out><![CDATA[Mayapur 2026 conformance: 67/67 checkable entries agree (69 entries total, 2 not checkable). Unresolved: []
+Golden 2026 rows not matched by a catalog marker: 92 (73 acharya appearance/disappearance rows, deferred to Phase 4; 10 further names for a day this catalog already dates; 9 rows on days this catalog does not date at all)
+  not dated at all  2026-01-15  Ganga Sagara Mela
+  not dated at all  2026-04-14  Tulasi Jala Dan begins.
+  not dated at all  2026-05-14  Tulasi Jala Dan ends.
+  not dated at all  2026-06-26  Paksa vardhini Mahadvadasi
+  not dated at all  2026-07-11  Trisprsa Mahadvadasi
+  not dated at all  2026-08-07  The incorporation of ISKCON in New York
+  not dated at all  2026-08-29  Srila Prabhupada's departure for the USA
+  not dated at all  2026-10-03  Srila Prabhupada's arrival in the USA
+  not dated at all  2026-12-05  Paksa vardhini Mahadvadasi
+  alias of a dated day  2026-01-23  Sarasvati Puja
+  alias of a dated day  2026-04-02  Sri Balarama Rasayatra
+  alias of a dated day  2026-04-02  Appearance of Radha Kunda, snana dana
+  alias of a dated day  2026-08-24  Vyanjuli Mahadvadasi
+  alias of a dated day  2026-09-26  Bhadra Purnima
+  alias of a dated day  2026-09-26  Acceptance of sannyasa by Srila Prabhupada
+  alias of a dated day  2026-10-26  Laksmi Puja
+  alias of a dated day  2026-11-10  Bali Daityaraja Puja
+  alias of a dated day  2026-11-21  Trisprsa Mahadvadasi
+  alias of a dated day  2026-11-24  Tulasi-Saligrama Vivaha (marriage)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

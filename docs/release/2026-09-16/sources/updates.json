@@ -1,0 +1,25 @@
+{
+  "id": "updates",
+  "url": "https://www.vaisnavacalendar.info/2020-gbc-changes-updates",
+  "kind": "documentation",
+  "retrievedAtUtc": "2026-09-15T19:52:49.221276+00:00",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": 200,
+  "finalUrl": "https://www.vaisnavacalendar.info/2020-gbc-changes-updates",
+  "responseHeaders": {
+    "Date": "Tue, 15 Sep 2026 19:52:49 GMT",
+    "Server": "Apache/2",
+    "X-UA-Compatible": "IE=edge",
+    "Link": "<https://www.vaisnavacalendar.info/wp-json/>; rel=\"https://api.w.org/\", <https://www.vaisnavacalendar.info/wp-json/wp/v2/posts/1414>; rel=\"alternate\"; type=\"application/json\", <https://www.vaisnavacalendar.info/?p=1414>; rel=shortlink",
+    "Upgrade": "h2,h2c",
+    "Connection": "Upgrade, close",
+    "Vary": "Accept-Encoding,User-Agent",
+    "Transfer-Encoding": "chunked",
+    "Content-Type": "text/html; charset=UTF-8"
+  },
+  "file": "docs/release/2026-09-16/sources/updates.raw",
+  "sha256": "8a62f8fd2b00fcfeeb18a3eb583b8fa448405431c74ea49d2c16f426c3e9f8d8",
+  "bytes": 80117
+}

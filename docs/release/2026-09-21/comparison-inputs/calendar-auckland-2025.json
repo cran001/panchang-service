@@ -1,0 +1,29 @@
+{
+  "id": "calendar-auckland-2025",
+  "url": "https://www.vaisnavacalendar.info/calendars/2025/Auckland%20%5BNew%20Zealand%5D.txt",
+  "kind": "calendar",
+  "retrievedAtUtc": "2026-09-15T19:53:05.248694+00:00",
+  "cityId": "auckland",
+  "year": 2025,
+  "lineage": "vaisnavacalendar.info/GCal-text",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": 200,
+  "finalUrl": "https://www.vaisnavacalendar.info/calendars/2025/Auckland%20%5BNew%20Zealand%5D.txt",
+  "responseHeaders": {
+    "Date": "Tue, 15 Sep 2026 19:53:05 GMT",
+    "Server": "Apache/2",
+    "Upgrade": "h2,h2c",
+    "Connection": "Upgrade, close",
+    "Last-Modified": "Mon, 29 Jan 2024 18:01:10 GMT",
+    "ETag": "\"9d21-610196e474e8e\"",
+    "Accept-Ranges": "bytes",
+    "Content-Length": "40225",
+    "Vary": "Accept-Encoding,User-Agent",
+    "Content-Type": "text/plain"
+  },
+  "file": "docs/release/2026-09-16/sources/calendar-auckland-2025.raw",
+  "sha256": "5abdff77c9cd8c510e4dbb918f4a58bc926c651b61136db774f0c7c184a71359",
+  "bytes": 40225
+}

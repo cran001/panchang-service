@@ -1,0 +1,1094 @@
+[
+  {
+    "path": "calc/src/test/kotlin/org/panchang/calc/SampradayasRegistrationTest.kt",
+    "sha256": "5d62f6e48dd05c5c00d5523f1552aac13c443a1ff81c5b4cf9fa9998bde6e5ec"
+  },
+  {
+    "path": "docs/sampradaya-coverage.md",
+    "sha256": "6a2dc3b1e207145948fd688add5fba885dd6bd7d17c095d5a4748000d5ac7f20"
+  },
+  {
+    "path": "docs/sampradaya-expansion-guide.md",
+    "sha256": "872f53847fb360e0de8a9048de1f60a427903dc74109e274b61012eed3bffbb0"
+  },
+  {
+    "path": "publish/src/test/kotlin/org/panchang/publish/RegionalFeedPublishTest.kt",
+    "sha256": "46e2aba9ad73c8387730ce712e3ab73b6f8dfd22721207c788461fc83e467182"
+  },
+  {
+    "path": "sampradaya/src/main/kotlin/org/panchang/sampradaya/BengaliRules.kt",
+    "sha256": "61ef6adafd769aa8d7762a7dc94842b9cff7559dde54a08ce4e912e22e61b2a6"
+  },
+  {
+    "path": "sampradaya/src/main/kotlin/org/panchang/sampradaya/GujaratiRules.kt",
+    "sha256": "6e43a09e078855c12de4e81fc7718125129eb50d0d218437ce2db4530cafe75f"
+  },
+  {
+    "path": "sampradaya/src/main/kotlin/org/panchang/sampradaya/KannadaRules.kt",
+    "sha256": "c40bbee8f9df2c1148da2ada82753a521a91ddaa6d3b4dc7189e34b2f062ff2b"
+  },
+  {
+    "path": "sampradaya/src/main/kotlin/org/panchang/sampradaya/MalayalamRules.kt",
+    "sha256": "c86de8a2d4c0597242c28ee6295a7fc0ca7f47a95a4da42e1fa9b4f2ab15f381"
+  },
+  {
+    "path": "sampradaya/src/main/kotlin/org/panchang/sampradaya/MarathiRules.kt",
+    "sha256": "3e239a52a714601c0d0c2feafe6c8a69d9b40b6a64fb8198922d89a172d6f62d"
+  },
+  {
+    "path": "sampradaya/src/main/kotlin/org/panchang/sampradaya/NorthIndianRules.kt",
+    "sha256": "569be767ef22d706b354a053ac6097d01f07d09a40c7634910c93f47f7498305"
+  },
+  {
+    "path": "sampradaya/src/main/kotlin/org/panchang/sampradaya/OdiaRules.kt",
+    "sha256": "3c1629c4f6124c39bc589623df9d97eed9e1806e86546946c084756a0c3960d9"
+  },
+  {
+    "path": "sampradaya/src/main/kotlin/org/panchang/sampradaya/SolarIngressIndex.kt",
+    "sha256": "a3c4b0b9544073e0b1a7300486c4854d0304416a5f36dcc3777cd96ebbe8f8e8"
+  },
+  {
+    "path": "sampradaya/src/main/kotlin/org/panchang/sampradaya/TamilRules.kt",
+    "sha256": "01191de5db97e30c404845894e42dfaf6b7c89c5956745bf2892e17a27f7cc46"
+  },
+  {
+    "path": "sampradaya/src/main/kotlin/org/panchang/sampradaya/TeluguRules.kt",
+    "sha256": "0d9f37c36a55b182e4a88c4dd85dea9b2fa10dcfcef900b0d930d78ab319ac8b"
+  },
+  {
+    "path": "sampradaya/src/test/kotlin/org/panchang/sampradaya/BengaliCalendarTest.kt",
+    "sha256": "222767f45acd182eac5324270978a7fd5abfc90698190cc9a8bd139a42afb439"
+  },
+  {
+    "path": "sampradaya/src/test/kotlin/org/panchang/sampradaya/GujaratiCalendarTest.kt",
+    "sha256": "7dc7591a75c47f585159741c778d25e500195dd417b2bb8cf2ce796ee7f4ef8a"
+  },
+  {
+    "path": "sampradaya/src/test/kotlin/org/panchang/sampradaya/KannadaCalendarTest.kt",
+    "sha256": "6bc13b0e1a4f60bd42843af23314c26e08fbdb7843c589ef7f2859051edd1df3"
+  },
+  {
+    "path": "sampradaya/src/test/kotlin/org/panchang/sampradaya/MalayalamCalendarTest.kt",
+    "sha256": "10437322d6d0ede60fb8b8291393a817cc20412c1e358c6bdf3bcbebfc15c6fe"
+  },
+  {
+    "path": "sampradaya/src/test/kotlin/org/panchang/sampradaya/MarathiCalendarTest.kt",
+    "sha256": "065281542321a5c6ce99894bd1f344cae692ed7a565875c8680b561012fb2063"
+  },
+  {
+    "path": "sampradaya/src/test/kotlin/org/panchang/sampradaya/NorthIndianCalendarTest.kt",
+    "sha256": "32e241dd7c2369edd137f3b4a41ce6308d21b74d907450c465e147bbd3d207f5"
+  },
+  {
+    "path": "sampradaya/src/test/kotlin/org/panchang/sampradaya/OdiaCalendarTest.kt",
+    "sha256": "1b503a92c8ca7e251e4529d77a497b484cecf0356f8ad687da635353f636d4b7"
+  },
+  {
+    "path": "sampradaya/src/test/kotlin/org/panchang/sampradaya/ReykjavikParanaTest.kt",
+    "sha256": "9f9ce3f0b9c7655bc3068da4eca4f44492a637c9b8132d340f8651ee5f73dd00"
+  },
+  {
+    "path": "sampradaya/src/test/kotlin/org/panchang/sampradaya/SolarRuleTest.kt",
+    "sha256": "bcd7b9f7a005a4522e0e59a92388cf2f12cd38277cd8482ec7d8f565a9fdf2cc"
+  },
+  {
+    "path": "sampradaya/src/test/kotlin/org/panchang/sampradaya/TamilCalendarTest.kt",
+    "sha256": "891f1253e42c46e9012804e5737169ebfe1421257525d8b0c6f1a7f05b4a8238"
+  },
+  {
+    "path": "sampradaya/src/test/kotlin/org/panchang/sampradaya/TeluguCalendarTest.kt",
+    "sha256": "f8527d67caf456bc133f80911b9f106c9e044fc45482e66800c0478905722c53"
+  },
+  {
+    "path": ".gitattributes",
+    "sha256": "1fba2772c1fafc96b4068a62512a12c848a58866e0390985d08d682e7800dace"
+  },
+  {
+    "path": ".gitignore",
+    "sha256": "efe4045496f3092cc05503adddc4d2e61e3da41d27e8dcfb854b19c92ca42d7e"
+  },
+  {
+    "path": "api/build.gradle.kts",
+    "sha256": "7edd4f2d232fcc293ca98a51a5082530daa9cb4dcce54614d44263b946907ddf"
+  },
+  {
+    "path": "api/src/main/kotlin/org/panchang/api/ApiFailure.kt",
+    "sha256": "a0f1bcc6170420e1df1dccf482400df6d85ed76901a7fef2a16b99124b8efe1e"
+  },
+  {
+    "path": "api/src/main/kotlin/org/panchang/api/ApiJson.kt",
+    "sha256": "f9cab8f39062c300f22764f6885b65f4075c26fd2d7d8742621d917fd6550473"
+  },
+  {
+    "path": "api/src/main/kotlin/org/panchang/api/Main.kt",
+    "sha256": "7f171e0a6cada5e2e340ed63c9d7ab001b7d2bdb5dbf614eb349b07dbbecad03"
+  },
+  {
+    "path": "api/src/main/kotlin/org/panchang/api/RequestSite.kt",
+    "sha256": "bce7a7133055e51a0c3450bc859886524d814f1be1faba19fbdbbd7ad9769a5b"
+  },
+  {
+    "path": "api/src/main/kotlin/org/panchang/api/Routes.kt",
+    "sha256": "65708c0f66be44dee2a9110dc030bdd69d57d998691a0c0691384511ea1e1222"
+  },
+  {
+    "path": "api/src/test/kotlin/org/panchang/api/CrossFrontDoorIdentityTest.kt",
+    "sha256": "4b28714c6ea1d890f0ab7f4bff12ba043039fd4a860d511f186c30f375432f21"
+  },
+  {
+    "path": "api/src/test/kotlin/org/panchang/api/Fixtures.kt",
+    "sha256": "2ff5b2f5619881d9e1fe6979e86a1b8b71823b7f68bc9693b97086a804a13dd3"
+  },
+  {
+    "path": "api/src/test/kotlin/org/panchang/api/MultiSiteParanaApiTest.kt",
+    "sha256": "30b0a879f62a01ced8e33ba05daf0d34f8c808be5a498a0bcd0498481823df2a"
+  },
+  {
+    "path": "api/src/test/kotlin/org/panchang/api/PlaceRenderingTest.kt",
+    "sha256": "abc8ca5222c046bf88f609ecc82c6b1b9a2c7ed4bf9593a583112dee503e03e4"
+  },
+  {
+    "path": "api/src/test/kotlin/org/panchang/api/RoutesTest.kt",
+    "sha256": "2bafcdfcd53fc91a5d23a8752ae0fef40292727ed578c44f76f0d783e54baeae"
+  },
+  {
+    "path": "build.gradle.kts",
+    "sha256": "a1ea4059d6d5d40be96f3a982669202d7a6c54130a8ef9ff54a82c1443124c27"
+  },
+  {
+    "path": "calc/build.gradle.kts",
+    "sha256": "48105a74af2b555375041621457101253789ca09182ffe105cea4d0d3112eae3"
+  },
+  {
+    "path": "calc/src/main/kotlin/org/panchang/calc/CalcEngine.kt",
+    "sha256": "0a5a02b608d175402dd63d298021aabe77580924159f4caf55d3d5e7a0a2733c"
+  },
+  {
+    "path": "calc/src/main/kotlin/org/panchang/calc/HumanReport.kt",
+    "sha256": "e9124772cc2d2b91b27034215c354efbb95f75a360dd1137640a5f2d0ef58cd6"
+  },
+  {
+    "path": "calc/src/main/kotlin/org/panchang/calc/LocationResolution.kt",
+    "sha256": "427df309faf42cdeb82b8486e62cbc7dab9740c85478052ca8bcace9381f1dbe"
+  },
+  {
+    "path": "calc/src/main/kotlin/org/panchang/calc/Main.kt",
+    "sha256": "0722774477cdda73ca78ab3b920c00ba8974eee0a58eae9d1574a285e53d3dab"
+  },
+  {
+    "path": "calc/src/test/kotlin/org/panchang/calc/CalcCliTest.kt",
+    "sha256": "9c2a42b1a7467e1653f560ce61b5dac52c4bb954cf00daa7b617841307db1552"
+  },
+  {
+    "path": "core/build.gradle.kts",
+    "sha256": "233ac5c0572bc590bf7e5d453181a8bd8429f867ef661fd44a992d886f76e5f5"
+  },
+  {
+    "path": "core/src/main/kotlin/org/panchang/core/AngleCrossing.kt",
+    "sha256": "f698f2ed1145cdc03d5363f2ab423dd0577b50665e04dcab18f8a46ee5a83182"
+  },
+  {
+    "path": "core/src/main/kotlin/org/panchang/core/Angles.kt",
+    "sha256": "fadd60a621773cffa1b1b8cd2ad0e2961c55ca947304643a5afddb5a0227f597"
+  },
+  {
+    "path": "core/src/main/kotlin/org/panchang/core/Ayanamsha.kt",
+    "sha256": "30c3aa327cc4492b833b43ece934af71c13e62282a65b77650befb84cd3f9934"
+  },
+  {
+    "path": "core/src/main/kotlin/org/panchang/core/DayDivisions.kt",
+    "sha256": "a8f02fcb25a39d0e3d5a60b781e645711a3d786e0a97df6b51a695c2cdc094b6"
+  },
+  {
+    "path": "core/src/main/kotlin/org/panchang/core/Elements.kt",
+    "sha256": "35927518a4a413e525ad5a85ffb0b383e93c17bcdf7b35af5c148253ec4a21ee"
+  },
+  {
+    "path": "core/src/main/kotlin/org/panchang/core/GeoLocation.kt",
+    "sha256": "f077bdbd0e72ac2d205c20e8e3b1212cc7768b50133ad92cf8fb27ec254cc686"
+  },
+  {
+    "path": "core/src/main/kotlin/org/panchang/core/LunarMonth.kt",
+    "sha256": "345054a20518716ab1596ece98c3feba2987220b119f6372f1c5c707b0b96755"
+  },
+  {
+    "path": "core/src/main/kotlin/org/panchang/core/Panchang.kt",
+    "sha256": "ff65b3ea55836951c6d94160832758f80fd03e3a373ca15a1176d684e5e8a62f"
+  },
+  {
+    "path": "core/src/main/kotlin/org/panchang/core/PanchangCalculator.kt",
+    "sha256": "6be2727bf8d3bd0efe8cbe311a740db9cccf6f9780917a02e241bf7f142386a4"
+  },
+  {
+    "path": "core/src/main/kotlin/org/panchang/core/RiseSet.kt",
+    "sha256": "165c153d3bb1167480ad46f2864bb911eb44d639baecea7b715480820d299bbb"
+  },
+  {
+    "path": "core/src/main/kotlin/org/panchang/core/RiseSetSolver.kt",
+    "sha256": "6247c1729f42fd7845a74e60279ec466cbd15bf3a2ea3ec6381280c3fd3cb77b"
+  },
+  {
+    "path": "core/src/main/kotlin/org/panchang/core/Topocentric.kt",
+    "sha256": "3f725954f3d60620ead79d784f19ca0c3d562271554cd8cf48c88680399a4f78"
+  },
+  {
+    "path": "core/src/test/kotlin/org/panchang/core/AngleCrossingTest.kt",
+    "sha256": "80e1e3fc7b2fc51f7955b2f0cdfa058a42e3e7e9ff2fee06676a93ea050bf76c"
+  },
+  {
+    "path": "core/src/test/kotlin/org/panchang/core/CivilTwilightTest.kt",
+    "sha256": "91ed2077218e0b61e63feeb58933cebb35d6e1510c774df097da36f89f4fe03d"
+  },
+  {
+    "path": "core/src/test/kotlin/org/panchang/core/DayDivisionsTest.kt",
+    "sha256": "3bbd7c1d4a83e7108ac9917974079cbd688a96023a6820bb0cfdc540c83e8642"
+  },
+  {
+    "path": "core/src/test/kotlin/org/panchang/core/LinearEphemeris.kt",
+    "sha256": "5d560367dae66af16d017607c00cf0c69d3cb370532c20dc43c8f03d1bd0404b"
+  },
+  {
+    "path": "core/src/test/kotlin/org/panchang/core/LunarMonthTest.kt",
+    "sha256": "ffb273433186de1454d3b4720f5f9eb519cde90e6582c9805fde4e8627ffb4de"
+  },
+  {
+    "path": "core/src/test/kotlin/org/panchang/core/MoonTimesTest.kt",
+    "sha256": "32a17db1f71e4d62111a986ca951442acd2162fd9de4864829a16e4a467dfdb1"
+  },
+  {
+    "path": "core/src/test/kotlin/org/panchang/core/PolarTest.kt",
+    "sha256": "e08ac2dbe7bb25c1a2252201e47d313c0e22231877367ce516282e10486dfbfc"
+  },
+  {
+    "path": "core/src/test/kotlin/org/panchang/core/SunTimesTest.kt",
+    "sha256": "9f517b3abcb3abfded282b2cbd5c463dc07c1825d96d95b3274179e5aa506e90"
+  },
+  {
+    "path": "core/src/test/kotlin/org/panchang/core/TimeZoneTest.kt",
+    "sha256": "7c8d1e1e70b53bb01a80983df54d7b1af42b4aa64916bd73ba96d7926af56721"
+  },
+  {
+    "path": "core/src/test/kotlin/org/panchang/core/TithiPartitionTest.kt",
+    "sha256": "22b476f85d14ed4f896ae751dda97f08e3e297db444a363f793cc83c69d7cb03"
+  },
+  {
+    "path": "core/src/test/kotlin/org/panchang/core/UsnoSunTimesConformanceTest.kt",
+    "sha256": "ebf2b8a4db85c627b2fb1d5bc5e7ee20da0ee02631cae9b8a6dcfae6fa9c448d"
+  },
+  {
+    "path": "docs/accuracy-baseline.md",
+    "sha256": "be3ed6814dfc88b5e0b5986c02507e8f96a5a9fcf2fc45a83c58e57646acbdfe"
+  },
+  {
+    "path": "docs/decisions/0001-elp2000-deferred.md",
+    "sha256": "71226d71a12e4733f98701b8b4223425a388ecebdcaccf7051aeee28cf02a409"
+  },
+  {
+    "path": "docs/decisions/0002-reference-calendar-disagreement.md",
+    "sha256": "eaadae713b1510ddaafce5dfd966ae096c36a4fd0f9fddfe533572992940aa34"
+  },
+  {
+    "path": "docs/decisions/0003-event-anchor-definitions.md",
+    "sha256": "58dc4b7aa7f0e3e7b036d30a62aec79ada282ef0b42eb320069a72168b2e682b"
+  },
+  {
+    "path": "docs/legacy-contract.md",
+    "sha256": "80af806c753bc4fe806400e085e5a0ed991d9ff2ce12519ae18819fbb91dbde5"
+  },
+  {
+    "path": "docs/measurements/horizons-2026-08-01/README.md",
+    "sha256": "b533ffec0dd80410f2575b4202176c1739a0d342a6c633a695b857065fc0d117"
+  },
+  {
+    "path": "docs/measurements/horizons-2026-08-01/moon_1950.csv",
+    "sha256": "d78b5f3bed0a9bde2f9fc4a68fd63b7af2583e9c51eb42a6cd2212c5e7e897da"
+  },
+  {
+    "path": "docs/measurements/horizons-2026-08-01/moon_2026.csv",
+    "sha256": "87f6cc5a0a9e6f8b18fd08a8a0856bf249312d956d2c5b9bb061ff383365ee23"
+  },
+  {
+    "path": "docs/measurements/horizons-2026-08-01/moon_2100.csv",
+    "sha256": "74a64f8be4f39c2dc873fcbfb5c7862f9bbca26deb92bfe4ed738791278c6fea"
+  },
+  {
+    "path": "docs/measurements/horizons-2026-08-01/sun_1950.csv",
+    "sha256": "1f84ed3dea5d60689f634c7fc1079b6430a6bdfea55f71df39e3fc321e4eabc1"
+  },
+  {
+    "path": "docs/measurements/horizons-2026-08-01/sun_2026.csv",
+    "sha256": "f18a4af60af38dd687fdc3c0beda7b94ca1ae8ba2b83ab08137a801dd0c51526"
+  },
+  {
+    "path": "docs/measurements/horizons-2026-08-01/sun_2100.csv",
+    "sha256": "5548bca2c592641403c273367de68fa56f82f02e58752b343c53a5703ccd7978"
+  },
+  {
+    "path": "docs/pandit-review.md",
+    "sha256": "a6c518e36eb4e3fbc4ed05c7621478000992e34a2e8e5eac15d1e9d719fc822b"
+  },
+  {
+    "path": "docs/validation-moonrise.md",
+    "sha256": "466f81c1d3d4fb58cae8f365f6b7d24902b1911fa66862e848bf3bb45eadd7c2"
+  },
+  {
+    "path": "docs/validation-multisite.md",
+    "sha256": "57a785af64301b3aa844abe44e6ed5782c9c41e84c50f065b1457cb514a366ed"
+  },
+  {
+    "path": "docs/validation-sunrise.md",
+    "sha256": "502af9fd7907b1f82a726ccaa21f0e227242b0e4797e3dbcdef60ae7b3ad158a"
+  },
+  {
+    "path": "ephemeris/.gitattributes",
+    "sha256": "bbc28060bd2daf0ab0638d0c979a4cf1fc8afa5b75ff0a0e2f9fb38ce412ac1c"
+  },
+  {
+    "path": "ephemeris/build.gradle.kts",
+    "sha256": "c647269fc67081ad52fa5f82ddee33c906987e12d121676b3139536c9c693f4f"
+  },
+  {
+    "path": "ephemeris/src/main/kotlin/org/panchang/ephemeris/DeltaT.kt",
+    "sha256": "cb8d6227de4f4d58600453951a776c18df07aad08ca638c24060d1ebf63ed962"
+  },
+  {
+    "path": "ephemeris/src/main/kotlin/org/panchang/ephemeris/Ephemeris.kt",
+    "sha256": "74c5cd6c828c4940e995314eb37741a4d4385bc35dd05bd37e566b1b0882b4df"
+  },
+  {
+    "path": "ephemeris/src/main/kotlin/org/panchang/ephemeris/MeeusEphemeris.kt",
+    "sha256": "a58b497278931873deb920ec16c755dc9214ac60bad1713f081a29fc322fc03e"
+  },
+  {
+    "path": "ephemeris/src/main/kotlin/org/panchang/ephemeris/Nutation.kt",
+    "sha256": "3d3bb06f2a1472d265a1d38b2b0ea097a8559dfd6fc275d07c589b3e0cf1464b"
+  },
+  {
+    "path": "ephemeris/src/main/kotlin/org/panchang/ephemeris/ObservedDeltaT.kt",
+    "sha256": "e0b6bad1ef9dc04372fd69cb346f32e22d9ddb10be8dac896fdfc265584f67a4"
+  },
+  {
+    "path": "ephemeris/src/main/kotlin/org/panchang/ephemeris/TimeScale.kt",
+    "sha256": "9e5b2f3412790620d30b0b3adc3264621f0eafc73a779561768cb9a3f81a48b5"
+  },
+  {
+    "path": "ephemeris/src/main/kotlin/org/panchang/ephemeris/Vsop87.kt",
+    "sha256": "93c26a908b5ed2f1a10325487f8d730c1d1b7580c0cd023813ee46b44a484ed3"
+  },
+  {
+    "path": "ephemeris/src/main/kotlin/org/panchang/ephemeris/Vsop87Ephemeris.kt",
+    "sha256": "e96efc8774cf50efed27d042da1960ee5a3b59ed87daea42a9cb6954756631b1"
+  },
+  {
+    "path": "ephemeris/src/main/resources/org/panchang/ephemeris/VSOP87D.ear",
+    "sha256": "8b160c859136d467f2be7fc29efa8a9652e95516dfbde00e4c739d7ddc90ca91"
+  },
+  {
+    "path": "ephemeris/src/main/resources/org/panchang/ephemeris/deltat-iers.csv",
+    "sha256": "887c7cead4a88ea003ff0f91dead864657a7e27b9f99441489f205ea14a2b557"
+  },
+  {
+    "path": "ephemeris/src/test/kotlin/org/panchang/ephemeris/DeltaTTest.kt",
+    "sha256": "cec545092279715299abd5b6c785740d448fe60016b5fecef30b602d9e7a87cb"
+  },
+  {
+    "path": "ephemeris/src/test/kotlin/org/panchang/ephemeris/HorizonsDifferentialTest.kt",
+    "sha256": "232e51b5f1920dd4a81ddd9d649b08a3c064b97b807f0cb91127ccee29b9290b"
+  },
+  {
+    "path": "ephemeris/src/test/kotlin/org/panchang/ephemeris/MeeusEphemerisPropertiesTest.kt",
+    "sha256": "9810b659f37c6f9046a3b199416a69a42e9de2f15e937715ca4a1bc1c0adc79a"
+  },
+  {
+    "path": "ephemeris/src/test/kotlin/org/panchang/ephemeris/MeeusWorkedExampleTest.kt",
+    "sha256": "43a679208cf8786bbaab600714d3626ea36e52181ff8bb3facc9765b31aa1887"
+  },
+  {
+    "path": "ephemeris/src/test/kotlin/org/panchang/ephemeris/ObservedDeltaTTest.kt",
+    "sha256": "b3da500573f717a362e627ee98b042a9df7a59a2bd28bff83dea5c46eae4bb0e"
+  },
+  {
+    "path": "ephemeris/src/test/kotlin/org/panchang/ephemeris/TimeScaleTest.kt",
+    "sha256": "a2176fa044c84c5197632e97fb7b72e5516b06354d8d762fe16cdef362c88032"
+  },
+  {
+    "path": "ephemeris/src/test/kotlin/org/panchang/ephemeris/Vsop87CheckValuesTest.kt",
+    "sha256": "9f681da9122dc91738432664a8088242e966a5b1ac0527144a889a439959cf49"
+  },
+  {
+    "path": "ephemeris/src/test/kotlin/org/panchang/ephemeris/Vsop87SolarTest.kt",
+    "sha256": "ea29b87f6b5b3e4cca45e7b04b7548f04ec86c00eba6a46fd154783ec9746939"
+  },
+  {
+    "path": "ephemeris/src/test/resources/org/panchang/ephemeris/vsop87d-earth-checkvalues.txt",
+    "sha256": "086c5244883419b049e0fbbb4d5d2272887b25234ad8be738eb7061f158eaa10"
+  },
+  {
+    "path": "gazetteer/build.gradle.kts",
+    "sha256": "29bbd4d33a75a2a722449c1bd687b411dc3d11829509feb7d1efcfd8784e116a"
+  },
+  {
+    "path": "gazetteer/src/main/kotlin/org/panchang/gazetteer/Gazetteer.kt",
+    "sha256": "79e09bb06063b1e6fe0010acd195b81ae03d5d6e283f977a1c3dfe58e12642d7"
+  },
+  {
+    "path": "gazetteer/src/main/kotlin/org/panchang/gazetteer/Place.kt",
+    "sha256": "e41b49139c6aa306d4803ab115c82bae5cedef8255d4a0328485f142433ef529"
+  },
+  {
+    "path": "gazetteer/src/main/kotlin/org/panchang/gazetteer/PlaceNames.kt",
+    "sha256": "f3e450de3a0f8a8c6484c82df0aab6bd156f58d2193f95b60434e8e118fe527c"
+  },
+  {
+    "path": "gazetteer/src/main/kotlin/org/panchang/gazetteer/ingest/Ingest.kt",
+    "sha256": "9c4332b7b8f7dd38ad626e78585dc9d64f1e252ea6ab49347c1d277c4f5f3780"
+  },
+  {
+    "path": "gazetteer/src/main/resources/org/panchang/gazetteer/gazetteer-v1.tsv",
+    "sha256": "1e900a1af8c4dba79e86112bdfea81cc0c86a6ae58aa9d7d1d90909700ba1aa0"
+  },
+  {
+    "path": "gazetteer/src/test/kotlin/org/panchang/gazetteer/GazetteerGeometryTest.kt",
+    "sha256": "7032bd8abf85c562a56570dea301b9132a5e2ef2a3fc38a99db09bb07e744a00"
+  },
+  {
+    "path": "gazetteer/src/test/kotlin/org/panchang/gazetteer/GazetteerProvenanceTest.kt",
+    "sha256": "fcb746dde3bf8ce5281ce6758bbcc7c6dc32ad74051c9471b31324f584a2d406"
+  },
+  {
+    "path": "gazetteer/src/test/kotlin/org/panchang/gazetteer/GazetteerTest.kt",
+    "sha256": "8ca7fdee53790d9412367f9d95306ff8c8dd7beeefb862e4d2344931b31c23fe"
+  },
+  {
+    "path": "gazetteer/src/test/kotlin/org/panchang/gazetteer/PlaceNamesTest.kt",
+    "sha256": "0e7b4430bdf66d2534b4dd284c7f4a1e9210a979b34e993fb9543620a0a971e0"
+  },
+  {
+    "path": "gradle.properties",
+    "sha256": "cf450b918d9c5005e41545f3894578feae951592aca00cee9ba52aab72bbd5b8"
+  },
+  {
+    "path": "gradle/libs.versions.toml",
+    "sha256": "69e72d8cbd6b237b74e51ee8294ac9fc519d5546ba015d6b9e3f08b2746b5086"
+  },
+  {
+    "path": "gradle/wrapper/gradle-wrapper.jar",
+    "sha256": "e996d452d2645e70c01c11143ca2d3742734a28da2bf61f25c82bdc288c9e637"
+  },
+  {
+    "path": "gradle/wrapper/gradle-wrapper.properties",
+    "sha256": "f95acd617bcfc15f79c1c19625ea479049f4d63f3aee65fff64ac42db286cce9"
+  },
+  {
+    "path": "gradlew",
+    "sha256": "c15a47b60a4eeede9ffee33433fd990d8b6236607372b9bb1f6dc51b07b78c39"
+  },
+  {
+    "path": "gradlew.bat",
+    "sha256": "af835f98787e9269af5a046edcb821a592fed372139df7b947b471a63cfc236b"
+  },
+  {
+    "path": "publish/build.gradle.kts",
+    "sha256": "912fd4577f8c81870eea790ad0e5d91faeec46f24b97f46d6dc0eb64db3183c9"
+  },
+  {
+    "path": "publish/sites/example.tsv",
+    "sha256": "4c8c6fddbc3840eb23f1cc5271218b3309668f1c5625859bb0807d64937422b8"
+  },
+  {
+    "path": "publish/src/main/kotlin/org/panchang/publish/FeedPublisher.kt",
+    "sha256": "525f4118020fd934afdff284bc90c680966e81e791f3d10d93b06e1b321b6216"
+  },
+  {
+    "path": "publish/src/main/kotlin/org/panchang/publish/LegacyFeed.kt",
+    "sha256": "4635acdd21640f8b7332574fe917b0c660d949e274b69c1d4c7b66e900470ee3"
+  },
+  {
+    "path": "publish/src/main/kotlin/org/panchang/publish/Main.kt",
+    "sha256": "34004c594bbf202e6aa9f4ef74cfdc2c58200abb4d7a5b1c2f3121b7caca6741"
+  },
+  {
+    "path": "publish/src/main/kotlin/org/panchang/publish/PublishReport.kt",
+    "sha256": "45d91edbbbfe102fcd4d86bd6bae133be8a1e75702707368ffa28443f9240e9e"
+  },
+  {
+    "path": "publish/src/main/kotlin/org/panchang/publish/SiteList.kt",
+    "sha256": "bad0c16651c9e41e48306b2aefe72f5d684c5fe284e82a27b3e21378d4324edb"
+  },
+  {
+    "path": "publish/src/test/kotlin/org/panchang/publish/FeedPublisherTest.kt",
+    "sha256": "829422ccbc5f5a62424b105de92165bdd9a389068022aa20714a7b5344754653"
+  },
+  {
+    "path": "publish/src/test/kotlin/org/panchang/publish/LegacyFeedTest.kt",
+    "sha256": "055da7a41fb01823ef87d2655abfb40f81ce48d92cd7d7cb8bd4ddeeee1c16a2"
+  },
+  {
+    "path": "publish/src/test/kotlin/org/panchang/publish/SiteListTest.kt",
+    "sha256": "75fcef9cb5fced8181377a542799960256aa485fe95ab10aa8560f136bbcf712"
+  },
+  {
+    "path": "sampradaya/build.gradle.kts",
+    "sha256": "07423486f8775c14ad605cfc2f438fb3acfee76ef3fc91af1902d74cdef3181e"
+  },
+  {
+    "path": "sampradaya/src/main/kotlin/org/panchang/sampradaya/EventCatalog.kt",
+    "sha256": "126337764088330c2ec42bc88f66937a3f8ca9c98a702230650172ba195e65de"
+  },
+  {
+    "path": "sampradaya/src/main/kotlin/org/panchang/sampradaya/EventResolver.kt",
+    "sha256": "451d41ea587653255f01e9ea99ba370b5a3eca3d0bcaa44f16a3398dadd844af"
+  },
+  {
+    "path": "sampradaya/src/main/kotlin/org/panchang/sampradaya/EventTime.kt",
+    "sha256": "49bfd01287a4fc84e4d0c57bbb05a31fbf4f0a25db1b6fcc729f0520403e3927"
+  },
+  {
+    "path": "sampradaya/src/main/kotlin/org/panchang/sampradaya/IskconEventCatalog.kt",
+    "sha256": "bcc2e50001923e1801ff7be385f7493e970ff8ea9defbcf45f0f25c6fceae0c1"
+  },
+  {
+    "path": "sampradaya/src/main/kotlin/org/panchang/sampradaya/IskconRules.kt",
+    "sha256": "3bd2011599d984dd5f4c3ba1ed57b974e3fb0423435e06621575dea1fd97ca7a"
+  },
+  {
+    "path": "sampradaya/src/main/kotlin/org/panchang/sampradaya/Observance.kt",
+    "sha256": "67efbb8ccc49d4bc2cfcfd27a2f0597dffb264dd618ea983c80c727845f1b31e"
+  },
+  {
+    "path": "sampradaya/src/main/kotlin/org/panchang/sampradaya/SampradayaRules.kt",
+    "sha256": "e7e9f08ef5cd71e6d2c5768fe00603467aecbd276da1a649fa168f19554b0408"
+  },
+  {
+    "path": "sampradaya/src/test/kotlin/org/panchang/sampradaya/EventResolverTest.kt",
+    "sha256": "fb3889aea3a7c4e70787272c35794b4ab7bbbd6770198f0ca1f94fbd01c6d463"
+  },
+  {
+    "path": "sampradaya/src/test/kotlin/org/panchang/sampradaya/EventTimeTest.kt",
+    "sha256": "190fd92f377fa7608187cd93d34c26863474e3655f1fca4fcaca5ed86177a47d"
+  },
+  {
+    "path": "sampradaya/src/test/kotlin/org/panchang/sampradaya/GaudiyaEkadashiConformanceTest.kt",
+    "sha256": "2f6e1c988989dd327c01f61b9eb2bf28c573e37134d67d6bf14809cd782485f5"
+  },
+  {
+    "path": "sampradaya/src/test/kotlin/org/panchang/sampradaya/GaudiyaGoldenCalendar.kt",
+    "sha256": "eb7a5ddaaa38e30d1581e1d4f9f4a4632e39c186387c441509ce90966d54f9a2"
+  },
+  {
+    "path": "sampradaya/src/test/kotlin/org/panchang/sampradaya/GaudiyaSiteFixture.kt",
+    "sha256": "240fb2b3154768944363b7ee9392b9c105b61bf5bdf96c57eae8ac2e95b74a41"
+  },
+  {
+    "path": "sampradaya/src/test/kotlin/org/panchang/sampradaya/IndiaParanaReportTest.kt",
+    "sha256": "d9db5fa1101e3a7a8b32f26f5b07cb01f9838a69734f159c9a2ec95b1fac97a6"
+  },
+  {
+    "path": "sampradaya/src/test/kotlin/org/panchang/sampradaya/IskconEventCatalogConformanceTest.kt",
+    "sha256": "f2d66b7f4e47b10675a382416ffa8ebf25f889ab21ae9a55f5b90608cd1ab6fc"
+  },
+  {
+    "path": "sampradaya/src/test/kotlin/org/panchang/sampradaya/MultiSiteParanaConformanceTest.kt",
+    "sha256": "ad78e4b48baf59cb790cb972b899dd36f1eaf6a499a1187267e2797724dbea57"
+  },
+  {
+    "path": "sampradaya/src/test/kotlin/org/panchang/sampradaya/ParanaDaylightEdgeTest.kt",
+    "sha256": "32b364dc164232d62ea341906fd4d0d4d783dd1b77da4d9f711e26a41f93fafc"
+  },
+  {
+    "path": "settings.gradle.kts",
+    "sha256": "81299fe513d744772ed3a351c18dbf310989d5375b51c925de17e3069833a69e"
+  },
+  {
+    "path": "vendor/MANIFEST.sha256",
+    "sha256": "d4aac23bdd44668faed6a56e59009536ad479b6e5c8cd05be593d309a2ee3706"
+  },
+  {
+    "path": "vendor/PROVENANCE.md",
+    "sha256": "aceda5b79c38404c54f3268e12d0aac88f4d61a1547580d5b9e12cce4ae9c181"
+  },
+  {
+    "path": "vendor/elp2000/ELP1",
+    "sha256": "ae30cbffb83a7bd4582a83a32a322d08a48ba057a4df7bf9dd5df9f06b1688fa"
+  },
+  {
+    "path": "vendor/elp2000/ELP10",
+    "sha256": "dbd82ddc6064e4cc7b4f08fa27b2fcb48f82456ad36a850a0d3ddae098c3e2e6"
+  },
+  {
+    "path": "vendor/elp2000/ELP11",
+    "sha256": "0ad7a914c9f98008a648881783c9dd4a14692ec14e2e1bfce4709c68d17bd659"
+  },
+  {
+    "path": "vendor/elp2000/ELP12",
+    "sha256": "8ed7be0ab70f4ffae6b1f711cc4e915257ae5e269fbbfc5a7060f7e952728ba8"
+  },
+  {
+    "path": "vendor/elp2000/ELP13",
+    "sha256": "643295b3894023b4b1bd6ee2b0ecf5d3ff23d703baccc6302caa05fa8b84f76c"
+  },
+  {
+    "path": "vendor/elp2000/ELP14",
+    "sha256": "b59d8b9bbef282f2bead538d6906781257a7fb5b8699bb6adcacb070a76f1e89"
+  },
+  {
+    "path": "vendor/elp2000/ELP15",
+    "sha256": "17ab0d521c178187a5de4847b6696fbcb7a55d77d776568a0c16f33fd3be342a"
+  },
+  {
+    "path": "vendor/elp2000/ELP16",
+    "sha256": "2bef867d8aad4075bc2711559cf1bc42757501bb10c307ff121152bddd344a66"
+  },
+  {
+    "path": "vendor/elp2000/ELP17",
+    "sha256": "6cf0746d034ac75ed60d4d16ed0de790fe5b7aad9df7b462091c38020e1b1bfc"
+  },
+  {
+    "path": "vendor/elp2000/ELP18",
+    "sha256": "b1d93931f6016023c83354cd54a2614978de3b6bc5b7234537d461200f7f4753"
+  },
+  {
+    "path": "vendor/elp2000/ELP19",
+    "sha256": "dd0b0bd5f5c354683f035ee8a09d82e9c138baaf27758ca311d07c76983bdd2e"
+  },
+  {
+    "path": "vendor/elp2000/ELP2",
+    "sha256": "c91e5585b0a9e7bd091304b164ce89a6461acd0e439d47957c890aec1e031e08"
+  },
+  {
+    "path": "vendor/elp2000/ELP20",
+    "sha256": "0f1d571879dc9b1a6f7698b403bef26ab151c3ec2ed42cbdec5b297cb0464a8e"
+  },
+  {
+    "path": "vendor/elp2000/ELP21",
+    "sha256": "1546d0e8af01f759f9dfb7a3bf4334a3e579f59e5c22edab29d660dede2ed4b4"
+  },
+  {
+    "path": "vendor/elp2000/ELP22",
+    "sha256": "44263bb254c2b6c0df963bddfd1ecfd01950668fd913f9e6ba6da6ff729f3e41"
+  },
+  {
+    "path": "vendor/elp2000/ELP23",
+    "sha256": "38917cf2cbe0f9afcd271444a47066b098f9a8792836ec85dac359f4c11b9464"
+  },
+  {
+    "path": "vendor/elp2000/ELP24",
+    "sha256": "ca67e5db5933887130709767c1eb3ac009e4bce596978bad7995c416ee71c59f"
+  },
+  {
+    "path": "vendor/elp2000/ELP25",
+    "sha256": "fd0cb03d496cbf23bf7bebef40aa09019c6a50072fc7fd2573645f26a56ab635"
+  },
+  {
+    "path": "vendor/elp2000/ELP26",
+    "sha256": "d5b2a33974b099448a35536987b2f08aff5b11d5801ffa55c87ae8a1d26e9f4f"
+  },
+  {
+    "path": "vendor/elp2000/ELP27",
+    "sha256": "648379d85e1753cc37bc3852b63899d414a05d3aea1c8621dc44e9fdfff234f1"
+  },
+  {
+    "path": "vendor/elp2000/ELP28",
+    "sha256": "0785b8e002887799bc303e8be1abd71c37ae9de671bffbdeb8f50998f892f18e"
+  },
+  {
+    "path": "vendor/elp2000/ELP29",
+    "sha256": "816fd1a94b1cb4e2e5e6cec72971f27ad0f2bf987735d184586fdadd033c3d02"
+  },
+  {
+    "path": "vendor/elp2000/ELP3",
+    "sha256": "862a8e4c8e70ce8b28383be4c9f2e2c025a8f633d7b7a811eb3afdab4ed9f354"
+  },
+  {
+    "path": "vendor/elp2000/ELP30",
+    "sha256": "cff5ab4c84a6a36855e5b2e2f47e1e0e1d605e789ff2954755dc64d188067a13"
+  },
+  {
+    "path": "vendor/elp2000/ELP31",
+    "sha256": "c2fc53c2442c1b61404991f31c859cc5eb300eb66bb764e1f16c70fe8d199dc3"
+  },
+  {
+    "path": "vendor/elp2000/ELP32",
+    "sha256": "7a07397b63d1ade0909c12be9024632de6ff27fd9e8e410e5f97f821d2390a60"
+  },
+  {
+    "path": "vendor/elp2000/ELP33",
+    "sha256": "459ea9eff9a9d7b5c224245f5edb113060174b4991d3adf7d27079719bcf2339"
+  },
+  {
+    "path": "vendor/elp2000/ELP34",
+    "sha256": "b83178e98bd33e8f26ef6662e03455761ffac7dae399ad1ccb4bf028c5f0e774"
+  },
+  {
+    "path": "vendor/elp2000/ELP35",
+    "sha256": "692d1752a7ea28c7157dbf694750af6ea2cbf74c744c4b792a7e8bf1bb5ad7d7"
+  },
+  {
+    "path": "vendor/elp2000/ELP36",
+    "sha256": "1f8eec292def5ceb4fff9a09ca678bd81e9cdc23ff7bdc802f2281c837357bda"
+  },
+  {
+    "path": "vendor/elp2000/ELP4",
+    "sha256": "f27ea439bf8f4fd35bed31c0a42de5414db07f9fcc3587237f6908891d43d773"
+  },
+  {
+    "path": "vendor/elp2000/ELP5",
+    "sha256": "6803422481e4decae4a59f89d4f94c7b33af21d293d9bc807d565f51c29b9915"
+  },
+  {
+    "path": "vendor/elp2000/ELP6",
+    "sha256": "2a6be4d33dfce4cf2351d295b4aade8f34cc476a97747b3eccb12763658e1fd1"
+  },
+  {
+    "path": "vendor/elp2000/ELP7",
+    "sha256": "35491a0c73ff6bcb136d8f54db89d8df2fb741af43aed9707618e3a925df474d"
+  },
+  {
+    "path": "vendor/elp2000/ELP8",
+    "sha256": "f3e7f4c851e7f9ac1a0556fe7e685e44612f3dca317ab605eb35f565251e020e"
+  },
+  {
+    "path": "vendor/elp2000/ELP9",
+    "sha256": "574347346363df52c7602f56747b790e9cbe60152127d24451c6a1633bc79f0e"
+  },
+  {
+    "path": "vendor/elp2000_ReadMe",
+    "sha256": "5677bd763410821e561135b46594fb4f3baf5ab92f10906aa0872bb5bd8b8993"
+  },
+  {
+    "path": "vendor/geonames/IN.zip",
+    "sha256": "eb0157eecc2841d3196281afea6a849886b41e4bd915ab228bc775de4279413a"
+  },
+  {
+    "path": "vendor/geonames/cities15000.zip",
+    "sha256": "9ba4c24f8b514081139a813be393f2f01e98a7a059e5f3ac8c96c786bf532481"
+  },
+  {
+    "path": "vendor/vsop87_ReadMe",
+    "sha256": "0646685a1520d81e627c54b7a339731520850744fe8a1f55f355f1e915f85487"
+  },
+  {
+    "path": "vendor/vsop87_VSOP87D.ear",
+    "sha256": "8b160c859136d467f2be7fc29efa8a9652e95516dfbde00e4c739d7ddc90ca91"
+  },
+  {
+    "path": "vendor/vsop87_vsop87.chk",
+    "sha256": "f8fa52449262be05a22a96840c1acbad0b35c8999e00b5c0477ba8a91a67a51a"
+  },
+  {
+    "path": "vendor/vsop87_vsop87.txt",
+    "sha256": "8e2067276413f2feffde70a4292d8b3dc70b8c0355ff5d00a7ccdf4c3af5f121"
+  },
+  {
+    "path": "verify/build.gradle.kts",
+    "sha256": "9dd67913a2e208b1f776687c6af7aff84d50daad2ba233eef15034c464a9afd8"
+  },
+  {
+    "path": "verify/golden/horizons-moon-2026-04-14_2026-04-21.json",
+    "sha256": "020757a14c6995cc6cd5c522f35e2aaa6a85d7392d08a156a7d8181cdf6335d8"
+  },
+  {
+    "path": "verify/golden/horizons-sun-2026-04-14_2026-04-21.json",
+    "sha256": "7606735e8dc61416bd2d5207cd35bd1fee0db34e8716396e7afcb7f5e040c409"
+  },
+  {
+    "path": "verify/golden/usno-grid-2026-04-14.json",
+    "sha256": "f46f3b68e873f353e022ed8f8b01ff2c62267cbf472cc23a26cb7731301c41b2"
+  },
+  {
+    "path": "verify/golden/usno-polar-2026-06-21.json",
+    "sha256": "cdd8cd8071824a7bf6f5af9fa56d7a01c9592481ccc0aa7075b48d9a8c8da92d"
+  },
+  {
+    "path": "verify/golden/usno-polar-2026-12-21.json",
+    "sha256": "cc75e3ba6183b7830ab0391176279ad3aef9bdaa3cc121b08c2ae3fb75f35ef9"
+  },
+  {
+    "path": "verify/golden/vaisnavacalendar-ahmedabad-2026.json",
+    "sha256": "afba78d8a2d6dee9b1d3c5a46ef268d2ec4b06bc31b875ce01ff742fc2c0fcf5"
+  },
+  {
+    "path": "verify/golden/vaisnavacalendar-auckland-2026.json",
+    "sha256": "4c528a0f9c94f6512249161ba08ff145c57b3458a7c5709ee1e5f1ee1a17d0a0"
+  },
+  {
+    "path": "verify/golden/vaisnavacalendar-bangalore-2026.json",
+    "sha256": "7e680adec5a2f63dddfafe47573d82b50b89b632ba9e6bfb098d055b4e5d5679"
+  },
+  {
+    "path": "verify/golden/vaisnavacalendar-chennai-2026.json",
+    "sha256": "50a4554c30ad8c66e574e898c447681958edd77c81340de29033f5d1893f05ba"
+  },
+  {
+    "path": "verify/golden/vaisnavacalendar-delhi-2026.json",
+    "sha256": "abac9645623b4b5914f176a53371f072bd77bc328837716d65e9655d963386c7"
+  },
+  {
+    "path": "verify/golden/vaisnavacalendar-guwahati-2026.json",
+    "sha256": "db2c40821e8b8c2bef605e4ed3e63b964fdf8ad1ecb8e484dcd30142b50c8c7a"
+  },
+  {
+    "path": "verify/golden/vaisnavacalendar-london-2026.json",
+    "sha256": "eaa7c72f8802f806e1f3a7358d404b453ced98e1750d87a9c3fb5648e19b9cb3"
+  },
+  {
+    "path": "verify/golden/vaisnavacalendar-mayapur-2026.json",
+    "sha256": "d84e50a45a15576d059523a8f4731c6849dcbc439bf8a7283c456840b52099e4"
+  },
+  {
+    "path": "verify/golden/vaisnavacalendar-moscow-2026.json",
+    "sha256": "2a527d25fd8c99a600ca9203c7250f839a3bc6d83ed73a486a5152c775d98dd8"
+  },
+  {
+    "path": "verify/golden/vaisnavacalendar-mumbai-2026.json",
+    "sha256": "8efe851f707564d9d033ad9a71ffcccb9c9bd23adc387623fc35d807ffcc2677"
+  },
+  {
+    "path": "verify/golden/vaisnavacalendar-new-york-2026.json",
+    "sha256": "2bb8863c6ffacbea90573b4a73f00019c3534349beacdf45fa285019ca37e75e"
+  },
+  {
+    "path": "verify/golden/vaisnavacalendar-sao-paulo-2026.json",
+    "sha256": "7ff059e7e045508ca282719a0f43492c6ae258763f0fed9a62d9076677759703"
+  },
+  {
+    "path": "verify/golden/vaisnavacalendar-sydney-2026.json",
+    "sha256": "26daa01124e4835ac88a00564acfbae113de5197be513dcd57aa08d7d7d9c867"
+  },
+  {
+    "path": "verify/golden/vaisnavacalendar-vrindavan-2026.json",
+    "sha256": "f4e9250c3dd34646709ac0aed6d698a65c38045c5cc8cfa90b323849d6c7f05d"
+  },
+  {
+    "path": "verify/src/main/kotlin/org/panchang/verify/cli/Main.kt",
+    "sha256": "16d9893856a0d96f799f556f82fe77cc64cb9443b9009e5e81e81f02427a04ae"
+  },
+  {
+    "path": "verify/src/main/kotlin/org/panchang/verify/drik/DrikPanchangHarvester.kt",
+    "sha256": "dc51704e29d2cd33984b4d97db5c89517a0e71e2c3592b384ac3495824948629"
+  },
+  {
+    "path": "verify/src/main/kotlin/org/panchang/verify/grid/ReferenceCities.kt",
+    "sha256": "03b44a2800e8d227c458b2c1989ce5c5767fe3fbc68c945d5cba5ba4dfad5e01"
+  },
+  {
+    "path": "verify/src/main/kotlin/org/panchang/verify/harvest/ArtifactStore.kt",
+    "sha256": "4c12f8169a3aedc4c0ffd96a9de73994b4e4d919323a6f5fe6253290d7e8a04c"
+  },
+  {
+    "path": "verify/src/main/kotlin/org/panchang/verify/harvest/HarvestException.kt",
+    "sha256": "8dfbb9934d8f8963f0da342f532f8d23e739a6a4d5f4ecd11c9033da378d70a5"
+  },
+  {
+    "path": "verify/src/main/kotlin/org/panchang/verify/harvest/Harvester.kt",
+    "sha256": "64dcabfc281eeeaf30acd4cee70d446e5ac8bbaf225b9a9cdf3d560db062e9f6"
+  },
+  {
+    "path": "verify/src/main/kotlin/org/panchang/verify/harvest/HttpFetcher.kt",
+    "sha256": "dda9f943f590a333cf4e7b55d794bca63822039ee0c9538c924d9faa1cfac09f"
+  },
+  {
+    "path": "verify/src/main/kotlin/org/panchang/verify/harvest/Provenance.kt",
+    "sha256": "6f02e7b742b2b0f225ee1eb77bb50fbc962d2861cd6e77b06b425a30c93911f3"
+  },
+  {
+    "path": "verify/src/main/kotlin/org/panchang/verify/harvest/RateLimiter.kt",
+    "sha256": "eda087cf553ebedcc43edc8171af65156625da2112c66a11917d452563188ad6"
+  },
+  {
+    "path": "verify/src/main/kotlin/org/panchang/verify/harvest/RequestSpec.kt",
+    "sha256": "915ccd1c7d41fa08ca728eb70f14318c6be24e676c38a2ed68f1a66735bf79db"
+  },
+  {
+    "path": "verify/src/main/kotlin/org/panchang/verify/horizons/HorizonsHarvester.kt",
+    "sha256": "9d5948fac3858885de177754a3ebeb2f3e29e84d209f01560f51d0c925abbe66"
+  },
+  {
+    "path": "verify/src/main/kotlin/org/panchang/verify/horizons/HorizonsModels.kt",
+    "sha256": "a1c3ec4530de9b6a970c104228a9d162bb0e6796cd73b1f3d8ea849081773089"
+  },
+  {
+    "path": "verify/src/main/kotlin/org/panchang/verify/horizons/HorizonsParser.kt",
+    "sha256": "d3b85de6375918ba8c31a675751a332e365708ed1341e273d72329eaf1ea251c"
+  },
+  {
+    "path": "verify/src/main/kotlin/org/panchang/verify/usno/UsnoHarvester.kt",
+    "sha256": "1c2e2ad542dbbcccf1828f3666b33a7d57f5ed3e0f5e0e46ca87b0ab1ccd089b"
+  },
+  {
+    "path": "verify/src/main/kotlin/org/panchang/verify/usno/UsnoModels.kt",
+    "sha256": "408eb3ddb6182276dff30d2358cc1f3d7bfa0eb9f8831d604586198df8aadea1"
+  },
+  {
+    "path": "verify/src/main/kotlin/org/panchang/verify/usno/UsnoParser.kt",
+    "sha256": "e0e8458906b72b4c34daa920d78138e249ea61cdbe4ad2a28d8c1806f6e0c427"
+  },
+  {
+    "path": "verify/src/main/kotlin/org/panchang/verify/vaisnava/HtmlText.kt",
+    "sha256": "f92faedc307baa7ea1bf9544d9f213ae4dc4ae8de8e1279c47c6b0031e839d76"
+  },
+  {
+    "path": "verify/src/main/kotlin/org/panchang/verify/vaisnava/IskconMumbaiHarvester.kt",
+    "sha256": "ff33b26f63567b61050f238da4d7817f0d81810b9bbf7bf882e2dd6fbb46ae74"
+  },
+  {
+    "path": "verify/src/main/kotlin/org/panchang/verify/vaisnava/PureBhaktiHarvester.kt",
+    "sha256": "8dda35b225619e6ef91a8c99422cb47602748c02e1578a07268a57d9bcde4301"
+  },
+  {
+    "path": "verify/src/main/kotlin/org/panchang/verify/vaisnava/VaisnavaCalendarTxtHarvester.kt",
+    "sha256": "859b8ecf9f51679b03173690a4f62c39ce0d5e5826f98f21c0d810545408ca7c"
+  },
+  {
+    "path": "verify/src/main/kotlin/org/panchang/verify/vaisnava/VaisnavaCalendarTxtParser.kt",
+    "sha256": "b16cd38f4e736099e3391bee214b73cefa046d251116acdd59dfba1da5be5ed6"
+  },
+  {
+    "path": "verify/src/main/kotlin/org/panchang/verify/vaisnava/VaisnavaModels.kt",
+    "sha256": "8eb5a7e36d5e2889a283d869459e7f139d08e585ccb12300540075d86007c412"
+  },
+  {
+    "path": "verify/src/main/kotlin/org/panchang/verify/vaisnava/VaisnavaSites.kt",
+    "sha256": "e463e5eecfa584f381ed49a57bdaf4aa6a098811025750d3079e80ed6ca13e94"
+  },
+  {
+    "path": "verify/src/main/resources/logback.xml",
+    "sha256": "80efcf477bd6ca219de263aea95f6f6d7b2ae8a79d221c9d42b7c27d87e08567"
+  },
+  {
+    "path": "verify/src/test/kotlin/org/panchang/verify/Fixtures.kt",
+    "sha256": "e788f9d03fcf3232a79e26bff1fe700391840bf17dcbad49d480edaba8ba0b94"
+  },
+  {
+    "path": "verify/src/test/kotlin/org/panchang/verify/HorizonsParserTest.kt",
+    "sha256": "011299adcef017ab783188511e4b632982bb22eeab6dfabe2abccd756c844e31"
+  },
+  {
+    "path": "verify/src/test/kotlin/org/panchang/verify/HtmlSourceParserTest.kt",
+    "sha256": "a71d6f96b99da6c3cedb169848a6bf5f7f2420436789e03b8f3a0d4d3a177ce0"
+  },
+  {
+    "path": "verify/src/test/kotlin/org/panchang/verify/HttpFetcherTest.kt",
+    "sha256": "09952e2f7d9da6c016e4d5f32c813d2410ed66953a29e9f28513fc0234e0da57"
+  },
+  {
+    "path": "verify/src/test/kotlin/org/panchang/verify/LiveSourceTest.kt",
+    "sha256": "418df886df725f3e40932e7b01fb7a2b65953fe75916f9771b4239aa215e1583"
+  },
+  {
+    "path": "verify/src/test/kotlin/org/panchang/verify/ProvenanceAndCacheTest.kt",
+    "sha256": "9995d50f2aed6d5abac05e7c820b9eac94c0aeabb69b6b10c8f8781271b88896"
+  },
+  {
+    "path": "verify/src/test/kotlin/org/panchang/verify/RateLimiterTest.kt",
+    "sha256": "3d85dc87d5b95caa7e80b5035d5496e69c5739edd2a419779f3e97f47068cc89"
+  },
+  {
+    "path": "verify/src/test/kotlin/org/panchang/verify/ReferenceCitiesTest.kt",
+    "sha256": "a8c490e4236fbaf5005b374f7d612b40c6cb016ec2cf1a3be97137d284aabc2f"
+  },
+  {
+    "path": "verify/src/test/kotlin/org/panchang/verify/UsnoMoonTimesConformanceTest.kt",
+    "sha256": "4a7ec758f1784787e805d7e27870f6b1314abe83d677b1d997b22c6c906ccfb6"
+  },
+  {
+    "path": "verify/src/test/kotlin/org/panchang/verify/UsnoParserTest.kt",
+    "sha256": "dc75fec19b07e32c76e42cada47c45dcb8251063b6abc13131b76b113670c625"
+  },
+  {
+    "path": "verify/src/test/kotlin/org/panchang/verify/VaisnavaCalendarTxtParserTest.kt",
+    "sha256": "7793d9ad4d8de397b18d0d6c9e563fdd5a2917f609ebe649d7c0bf0571852a3c"
+  },
+  {
+    "path": "verify/src/test/kotlin/org/panchang/verify/VaisnavaSiteTest.kt",
+    "sha256": "cf5db0044a619872e14448932c3591347575fa46928655b081bba311f8564cc4"
+  },
+  {
+    "path": "verify/src/test/resources/fixtures/drikpanchang_day_panchang_structure.html",
+    "sha256": "bfa8af40d564801c0d927aaba48d4dc3e4b6628c32b7b28439ef97879f182619"
+  },
+  {
+    "path": "verify/src/test/resources/fixtures/horizons_moon_geocentric_2026-04-14.txt",
+    "sha256": "2c0e7590a94637addbf79ffe2dcabaad56b9ecbb25b2875f3151b0d0c6835aa6"
+  },
+  {
+    "path": "verify/src/test/resources/fixtures/horizons_sun_geocentric_2026-04-14.txt",
+    "sha256": "32bc84afa8f03c7b3050eab593d58e94ab056d6fbfd779eb5e2ef1b18e1804ad"
+  },
+  {
+    "path": "verify/src/test/resources/fixtures/iskconmumbai_ekadasi_fragment.html",
+    "sha256": "1f027fc381652d161e6b959abb3ee826420d6e821a03e1448519593d18afef41"
+  },
+  {
+    "path": "verify/src/test/resources/fixtures/usno_oneday_mayapur_2026-04-14.json",
+    "sha256": "8245ccf8a457dfa4b70718b6519039709bbbe0d1d319a780c73043ab80022ba0"
+  },
+  {
+    "path": "verify/src/test/resources/fixtures/usno_oneday_svalbard_2026-06-21.json",
+    "sha256": "05ea93017c27cf1933f31bcab7e26d7af3fbb9471377c3c0f2bba3388b697db9"
+  },
+  {
+    "path": "verify/src/test/resources/fixtures/vaisnavacalendar_auckland_2026_head.txt",
+    "sha256": "6dac7908c6c972c22b6584a8e05e210f8ba91b21b3f0193ed2b6da852b3e1642"
+  },
+  {
+    "path": "verify/src/test/resources/fixtures/vaisnavacalendar_auckland_2026_sep_slice.txt",
+    "sha256": "dac29eafdbc310c0e00d9c5a0f29e3fefdac569fa79ddfc9ed482ee045f2524f"
+  },
+  {
+    "path": "verify/src/test/resources/fixtures/vaisnavacalendar_mayapur_2026_head.txt",
+    "sha256": "88e1a1308e916ffc2d60a945fc734efb7993fb233bee8e60caf4e30675e4dcc1"
+  },
+  {
+    "path": "verify/src/test/resources/fixtures/vaisnavacalendar_mayapur_2026_jun_slice.txt",
+    "sha256": "1b41e8c3dc1fe295d8102728026f11701a9b532cb45bfefd80de005cb829761a"
+  },
+  {
+    "path": "verify/src/test/resources/fixtures/vaisnavacalendar_notes_tail.txt",
+    "sha256": "051c8c3b9a88b3b9841f767d580076819e5ccd80238ba5afa05675ed2a169c52"
+  },
+  {
+    "path": "wire/build.gradle.kts",
+    "sha256": "ee1e38fc5b1aecea5701886e03bbd7a747bc2467f86b8cf9890a3935bb077f99"
+  },
+  {
+    "path": "wire/src/main/kotlin/org/panchang/wire/Dto.kt",
+    "sha256": "1d217fd641332b0fffa462617c659ef5e014595ef27030db00495b8227ee13a6"
+  },
+  {
+    "path": "wire/src/main/kotlin/org/panchang/wire/SiteAcceptance.kt",
+    "sha256": "4d1ee60dc707019f28ef1be8048115661c511acc2046e32cb5b4fec14c27487d"
+  },
+  {
+    "path": "wire/src/main/kotlin/org/panchang/wire/WireJson.kt",
+    "sha256": "3ea3f4cd4151c62aa9aa226821a3a68184cd541d90e1aacc114743d2f797a81f"
+  },
+  {
+    "path": "wire/src/main/kotlin/org/panchang/wire/WireRenderer.kt",
+    "sha256": "31ded2881194e9e77e30846d38d3ca3e0411fade668dd2b1af2330dcd9763216"
+  },
+  {
+    "path": "wire/src/test/kotlin/org/panchang/wire/DeterminismTest.kt",
+    "sha256": "ef2c6fa769ee00f14f639bd55a805588ac5585248afc220a0e74b77efcce8f4b"
+  },
+  {
+    "path": "wire/src/test/kotlin/org/panchang/wire/EventTimeWireTest.kt",
+    "sha256": "afdecb0608d7aac3081fb4c883cae3f1f8162d17cdcd8c7285bf3d34f85060ec"
+  },
+  {
+    "path": "wire/src/test/kotlin/org/panchang/wire/Fixtures.kt",
+    "sha256": "79242f20698a18142ee8ff6d30730a056c8a13d133ea07c44d6a0e4b7dda3df7"
+  },
+  {
+    "path": "wire/src/test/kotlin/org/panchang/wire/InstantRenderingTest.kt",
+    "sha256": "5c24c656e74361b6d370305c1cac062e79091bf438f53cce5202e52f8e92e360"
+  },
+  {
+    "path": "wire/src/test/kotlin/org/panchang/wire/SiteAcceptanceTest.kt",
+    "sha256": "b9f15dfdaf9aed346a760be17541926513e002605b97d34898c004cf3ac2791c"
+  },
+  {
+    "path": "wire/src/test/kotlin/org/panchang/wire/WireRoundTripTest.kt",
+    "sha256": "bfb7148649a19876aa8f6a0aa16ef256fdfa2123a8b6c232df1611c628b96041"
+  }
+]

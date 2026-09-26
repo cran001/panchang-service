@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.wire.InstantRenderingTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-09-12T20:45:02" hostname="DESKTOP-KBUKJ2P" time="0.04">
+  <properties/>
+  <testcase name="Julian Days are rounded to a fixed number of places()" classname="org.panchang.wire.InstantRenderingTest" time="0.001"/>
+  <testcase name="a non-finite Julian Day is refused rather than rendered()" classname="org.panchang.wire.InstantRenderingTest" time="0.008"/>
+  <testcase name="the offset is rendered, not just implied()" classname="org.panchang.wire.InstantRenderingTest" time="0.002"/>
+  <testcase name="renders the local string and the Julian Day side by side()" classname="org.panchang.wire.InstantRenderingTest" time="0.0"/>
+  <testcase name="the same instant at two zones gives two local strings and one Julian Day()" classname="org.panchang.wire.InstantRenderingTest" time="0.001"/>
+  <testcase name="seconds are rounded rather than truncated()" classname="org.panchang.wire.InstantRenderingTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,800 @@
+diff --git a/api/src/main/kotlin/org/panchang/api/Routes.kt b/api/src/main/kotlin/org/panchang/api/Routes.kt
+index 1db51a5..1ae07b4 100644
+--- a/api/src/main/kotlin/org/panchang/api/Routes.kt
++++ b/api/src/main/kotlin/org/panchang/api/Routes.kt
+@@ -32,7 +32,7 @@ import org.panchang.gazetteer.PlaceKind
+ import org.panchang.gazetteer.normalizePlaceName
+ import org.panchang.sampradaya.SampradayaRules
+ import org.panchang.sampradaya.VerificationStatus
+-import org.panchang.wire.POLAR_LIMIT_DEG
++import org.panchang.wire.MIDNIGHT_SUN_LIMIT_DEG
+ import org.panchang.wire.SampradayaListDto
+ import org.panchang.wire.SiteAcceptance
+ import org.panchang.wire.SiteRejectionCode
+@@ -188,12 +188,12 @@ private fun computed(
+  * it is a real tradition this project knows about and has not implemented, and returning its empty
+  * calendar with a 200 would put "no observances" in front of someone as if it were a finding.
+  *
+- * The 501 branch has no test in this module because `:calc`'s `Sampradayas` registers exactly one
+- * tradition, ISKCON, and it is implemented — so no request can currently reach the branch.
+- * Registering a placeholder from a test would mutate the process-wide `SampradayaRegistry` and
+- * leak into every other test in the JVM. The branch is here because the alternative is worse:
+- * without it, the day a placeholder is registered, this door starts answering with empty
+- * calendars and nothing fails.
++ * The 501 branch has no test in this module because every tradition `:calc`'s `Sampradayas`
++ * registers is implemented — ISKCON fully, the nine regional traditions as festival catalogs —
++ * so no request can currently reach the branch. Registering a placeholder from a test would
++ * mutate the process-wide `SampradayaRegistry` and leak into every other test in the JVM. The
++ * branch is here because the alternative is worse: without it, the day a placeholder is
++ * registered, this door starts answering with empty calendars and nothing fails.
+  */
+ private fun ApplicationCall.rules(): SampradayaRules {
+     val id = parameters["sampradaya"]!!
+@@ -273,7 +273,8 @@ private fun meta(call: ApplicationCall, gazetteer: Gazetteer): JsonObject = apiD
+             )
+             add(
+                 JsonPrimitive(
+-                    "This service declines to compute above $POLAR_LIMIT_DEG degrees of " +
++                    "This service declines to compute above the midnight-sun boundary of about " +
++                        "${"%.2f".format(java.util.Locale.ROOT, MIDNIGHT_SUN_LIMIT_DEG)} degrees of " +
+                         "latitude, north or south, and answers 422 there. The " +
+                         "observance rules are defined against a sunrise that does not occur on " +
+                         "every day at those latitudes.",
+diff --git a/api/src/test/kotlin/org/panchang/api/RoutesTest.kt b/api/src/test/kotlin/org/panchang/api/RoutesTest.kt
+index ca0b00f..e0930f1 100644
+--- a/api/src/test/kotlin/org/panchang/api/RoutesTest.kt
++++ b/api/src/test/kotlin/org/panchang/api/RoutesTest.kt
+@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Assertions.assertNotNull
+ import org.junit.jupiter.api.Assertions.assertTrue
+ import org.junit.jupiter.api.Test
+ import org.panchang.gazetteer.Gazetteer
+-import org.panchang.wire.POLAR_LIMIT_DEG
++import org.panchang.wire.MIDNIGHT_SUN_LIMIT_DEG
+ 
+ /**
+  * The HTTP surface: what each route answers, and — the part that carries weight — which status
+@@ -84,7 +84,7 @@ class RoutesTest {
+         )
+         assertTrue(
+             r.json["notes"]!!.jsonArray.any {
+-                it.jsonPrimitive.content.contains(POLAR_LIMIT_DEG.toString())
++                it.jsonPrimitive.content.contains("%.2f".format(MIDNIGHT_SUN_LIMIT_DEG))
+             },
+             "the boundary of the service must be discoverable before a 422 is met",
+         )
+@@ -188,7 +188,7 @@ class RoutesTest {
+         val error = r.json["error"]!!.jsonObject
+         assertEquals("ABOVE_POLAR_LIMIT", error["code"]!!.jsonPrimitive.content)
+         val message = error["message"]!!.jsonPrimitive.content
+-        assertTrue(message.contains("beyond 66 degrees"), "wire's own sentence, unedited: $message")
++        assertTrue(message.contains("midnight-sun boundary"), "wire's own sentence, unedited: $message")
+         assertTrue(message.contains("no sunrise"), "the reason must explain itself")
+         assertTrue(
+             message.contains("declines rather than guessing"),
+@@ -203,13 +203,15 @@ class RoutesTest {
+     }
+ 
+     @Test
+-    fun `a site exactly at the polar limit is answered`() {
+-        // :wire states the limit as "above 66", not "at or above". A boundary that moves depending
+-        // on which door you knock at is worse than either boundary.
+-        val r = call("/v1/day/iskcon/2026-06-15?lat=66.0&lon=25.0&tz=Europe/Helsinki")
++    fun `a site below the midnight-sun boundary is answered`() {
++        // :wire states the boundary as "above", not "at or above", and computes it rather than
++        // choosing it. A boundary that moves depending on which door you knock at is worse than
++        // either boundary, so this asks with a real sub-boundary site: Reykjavik, whose midsummer
++        // night is under three hours long and whose Sun therefore sets every day of the year.
++        val r = call("/v1/day/iskcon/2026-06-15?lat=64.1466&lon=-21.9426&tz=Atlantic/Reykjavik")
+         assertEquals(200, r.status)
+         assertEquals(
+-            66.0,
++            64.1466,
+             r.json["location"]!!.jsonObject["coordinatesUsed"]!!.jsonObject["latitude"]!!
+                 .jsonPrimitive.content.toDouble(),
+         )
+@@ -222,8 +224,13 @@ class RoutesTest {
+         val error = r.json["error"]!!.jsonObject
+         assertEquals("UNKNOWN_SAMPRADAYA", error["code"]!!.jsonPrimitive.content)
+         assertTrue(error["message"]!!.jsonPrimitive.content.contains("iskcon"))
++        // The registry: ISKCON plus the nine regional traditions, whose ids are pinned so that
++        // adding one is a deliberate act someone notices, not a silent list growth.
+         assertEquals(
+-            listOf("iskcon"),
++            listOf(
++                "iskcon", "marathi", "telugu", "kannada", "gujarati", "northindian",
++                "tamil", "malayalam", "bengali", "odia",
++            ),
+             r.json["known"]!!.jsonArray.map { it.jsonPrimitive.content },
+         )
+         assertFalse(
+diff --git a/calc/src/main/kotlin/org/panchang/calc/CalcEngine.kt b/calc/src/main/kotlin/org/panchang/calc/CalcEngine.kt
+index 10df9ac..8cbd05e 100644
+--- a/calc/src/main/kotlin/org/panchang/calc/CalcEngine.kt
++++ b/calc/src/main/kotlin/org/panchang/calc/CalcEngine.kt
+@@ -11,10 +11,19 @@ import kotlinx.serialization.json.put
+ import kotlinx.serialization.json.putJsonObject
+ import org.panchang.core.PanchangCalculator
+ import org.panchang.ephemeris.Vsop87Ephemeris
++import org.panchang.sampradaya.BengaliRules
++import org.panchang.sampradaya.GujaratiRules
+ import org.panchang.sampradaya.IskconRules
++import org.panchang.sampradaya.KannadaRules
++import org.panchang.sampradaya.MalayalamRules
++import org.panchang.sampradaya.MarathiRules
++import org.panchang.sampradaya.NorthIndianRules
+ import org.panchang.sampradaya.ObservanceContext
++import org.panchang.sampradaya.OdiaRules
+ import org.panchang.sampradaya.SampradayaRegistry
+ import org.panchang.sampradaya.SampradayaRules
++import org.panchang.sampradaya.TamilRules
++import org.panchang.sampradaya.TeluguRules
+ import org.panchang.sampradaya.YearResolution
+ import org.panchang.wire.EkadashiYearDto
+ import org.panchang.wire.WireJson
+@@ -25,9 +34,12 @@ import org.panchang.wire.YearResolutionDto
+  * The traditions this front door can be asked for.
+  *
+  * `:sampradaya` ships the registry empty on purpose — registering a tradition is a statement
+- * that its rules exist, and only a front door knows which ones it is prepared to make. Exactly
+- * one is registered here, because exactly one is implemented. Asking for anything else is an
+- * error naming what *is* known; it is never quietly answered with Gaudiya dates.
++ * that its rules exist, and only a front door knows which ones it is prepared to make. ISKCON
++ * is the one tradition whose Ekadashi, Mahadvadashi and parana rules are implemented and
++ * conformance-tested; the nine regional traditions registered alongside it carry **festival
++ * catalogs only** (each [VerificationStatus.UNVERIFIED]), and their `ekadashiObservances`
++ * return empty lists rather than borrowing ISKCON's fasting rulings. Asking for a tradition
++ * that exists but has no ekadashi timing gets exactly that — never another tradition's dates.
+  */
+ object Sampradayas {
+ 
+@@ -35,6 +47,15 @@ object Sampradayas {
+ 
+     init {
+         SampradayaRegistry.register(iskcon)
++        SampradayaRegistry.register(MarathiRules())
++        SampradayaRegistry.register(TeluguRules())
++        SampradayaRegistry.register(KannadaRules())
++        SampradayaRegistry.register(GujaratiRules())
++        SampradayaRegistry.register(NorthIndianRules())
++        SampradayaRegistry.register(TamilRules())
++        SampradayaRegistry.register(MalayalamRules())
++        SampradayaRegistry.register(BengaliRules())
++        SampradayaRegistry.register(OdiaRules())
+     }
+ 
+     operator fun get(id: String): SampradayaRules? = SampradayaRegistry[id]
+diff --git a/calc/src/test/kotlin/org/panchang/calc/CalcCliTest.kt b/calc/src/test/kotlin/org/panchang/calc/CalcCliTest.kt
+index cdd91fe..ee27036 100644
+--- a/calc/src/test/kotlin/org/panchang/calc/CalcCliTest.kt
++++ b/calc/src/test/kotlin/org/panchang/calc/CalcCliTest.kt
+@@ -61,7 +61,7 @@ class CalcCliTest {
+         assertTrue(run.err.contains("ABOVE_POLAR_LIMIT"), "the refusal must carry wire's code")
+         // The limit is :wire's. If :calc ever grows one of its own, this sentence changes and the
+         // test says so.
+-        assertTrue(run.err.contains("beyond 66 degrees"), "wire's own reason must be printed")
++        assertTrue(run.err.contains("midnight-sun boundary"), "wire's own reason must be printed")
+         assertTrue(run.err.contains("no sunrise"), "the reason must explain itself, not just fail")
+     }
+ 
+diff --git a/publish/src/main/kotlin/org/panchang/publish/FeedPublisher.kt b/publish/src/main/kotlin/org/panchang/publish/FeedPublisher.kt
+index 635fa9f..9b7f665 100644
+--- a/publish/src/main/kotlin/org/panchang/publish/FeedPublisher.kt
++++ b/publish/src/main/kotlin/org/panchang/publish/FeedPublisher.kt
+@@ -396,8 +396,9 @@ class FeedPublisher(
+         val reference = sun.sunrise.jdUtOrNull ?: run {
+             warnings += "$key $date has no sunrise; the legacy tithi for that day was taken at " +
+                 "solar noon instead, which is a substitute this project has no traditional " +
+-                "source for. Sites above ${org.panchang.wire.POLAR_LIMIT_DEG} degrees are " +
+-                "refused outright, so this should not occur — treat it as a bug report."
++                "source for. Sites beyond the midnight-sun boundary " +
++                "(org.panchang.wire.MIDNIGHT_SUN_LIMIT_DEG) are refused outright, so this should " +
++                "not occur — treat it as a bug report."
+             sun.solarNoonJdUt
+         }
+         val tithi = calculator.tithiAt(reference)
+diff --git a/sampradaya/src/main/kotlin/org/panchang/sampradaya/EventCatalog.kt b/sampradaya/src/main/kotlin/org/panchang/sampradaya/EventCatalog.kt
+index 5c06413..a6f8a35 100644
+--- a/sampradaya/src/main/kotlin/org/panchang/sampradaya/EventCatalog.kt
++++ b/sampradaya/src/main/kotlin/org/panchang/sampradaya/EventCatalog.kt
+@@ -74,6 +74,52 @@ sealed interface EventRule {
+      */
+     data class RelativeTo(val eventId: String, val offsetDays: Int) : EventRule
+ 
++    /**
++     * A day of a *sidereal solar* month, for the traditions whose calendar runs from Sankranti to
++     * Sankranti — Tamil, Malayalam, Bengali and Odia, and the pan-Indian Sankranti observances.
++     *
++     * The solar month is not the same length every year and does not begin on the same Gregorian
++     * day in consecutive years, so a solar rule cannot be a Gregorian date or a tithi; it is the
++     * rashi the Sun is entering and a day count from the day the month opens.
++     *
++     * @param solarMonthIndex 1–12, 1 = Mesha (Aries) … 12 = Meena (Pisces), the order the Sun
++     *   visits the signs.
++     * @param dayOfMonth 1-based within the solar month; 1 is the day the month opens.
++     * @param transitionPoint how the first day of the month is fixed against the Sankranti
++     *   instant. Traditions differ: Tamil, Malayalam and Odia calendars open the month on the
++     *   civil day containing the ingress whatever the clock says; the Bengali calendar opens it
++     *   on the day whose sunrise first follows the ingress. See [SolarTransition].
++     */
++    data class OnSolarMonth(
++        val solarMonthIndex: Int,
++        val dayOfMonth: Int,
++        val transitionPoint: SolarTransition = SolarTransition.SANKRANTI_START,
++    ) : EventRule
++
++    /**
++     * An event reserved for one year of a sixty-year Samvatsara cycle.
++     *
++     * Several Indian traditions name their years cyclically — Prabhava, Vibhava, … — over sixty
++     * years, and a small class of observances belongs to a particular year of the cycle rather
++     * than to every year. This wrapper holds that reservation without duplicating the underlying
++     * rule: in a Gregorian year whose cycle position is not [cycleYear], the event simply does
++     * not occur and the resolver says so.
++     *
++     * The mapping from Gregorian years to cycle positions is [SixtyYearCycle.cycleYearOf]. It is
++     * anchored to published recent years and documented there, including the one respect in which
++     * it is coarse (a cyclic year begins at the Ugadi/Puthandu new year in March–April, not on
++     * 1 January).
++     *
++     * [baseRule] must be a self-contained rule — [OnTithi], [OnNakshatraInMonth], [OnSolarMonth]
++     * or [FixedGregorian]. A [RelativeTo] names another *catalog entry* and cannot be resolved
++     * from a bare rule with no catalog around it, so nesting one here is rejected at resolver
++     * construction rather than failing during a resolve.
++     */
++    data class In60YearCycle(
++        val cycleYear: Int,
++        val baseRule: EventRule,
++    ) : EventRule
++
+     /**
+      * A literal Gregorian date per year, with no rule behind it.
+      *
+@@ -87,6 +133,74 @@ sealed interface EventRule {
+     data class FixedGregorian(val datesByYear: Map<Int, LocalDate>) : EventRule
+ }
+ 
++/**
++ * How the first day of a solar month is fixed against the Sankranti instant.
++ *
++ * One ingress, two month-openings, and the difference is a whole day: when the Sun enters a sign
++ * at, say, 15:00 local, the civil day containing that moment and the day whose sunrise follows it
++ * are different days. Both conventions are in live use, so the rule states which it means.
++ */
++enum class SolarTransition {
++    /** The civil day containing the Sankranti instant is day 1. Tamil, Malayalam and Odia. */
++    SANKRANTI_START,
++
++    /**
++     * The first day whose sunrise follows the Sankranti instant is day 1: an ingress before
++     * sunrise opens the month that day, a later one opens it the next. Bengali.
++     */
++    SANKRANTI_AT_SUNRISE,
++}
++
++/** The twelve rashis, in the order the Sun visits them; index 0 = Mesha. */
++object Rashi {
++    val NAMES: List<String> = listOf(
++        "Mesha", "Vrishabha", "Mithuna", "Karka", "Simha", "Kanya",
++        "Tula", "Vrischika", "Dhanu", "Makara", "Kumbha", "Meena",
++    )
++}
++
++/**
++ * The sixty-year Samvatsara cycle shared, with local variations in spelling, by the Tamil,
++ * Telugu, Kannada, Marathi and other Indian calendars.
++ *
++ * ## The anchor, and why it is what it is
++ *
++ * The cycle position of recent years is published everywhere the tradition itself publishes: the
++ * cyclic year that opened at Ugadi/Puthandu in April **2024** was the **43rd** of the cycle
++ * (Krodhi), 2025 opened the 44th (Vishvavasu), 2026 the 45th. Rather than reproduce all sixty
++ * year-names from memory — where a single misremembered name would travel into rendered output —
++ * this object holds only the arithmetic those three published years pin down, and callers who
++ * need the names should take them from a published list.
++ *
++ * ## The one coarseness, stated plainly
++ *
++ * A cyclic year begins at the lunar new year in March–April, not on 1 January. Mapping a
++ * Gregorian year *number* to a cycle position therefore says the wrong thing for January–early
++ *April of every year: an event dated 15 February 2026 belongs to the cyclic year that opened in
++ * March 2025. Rules that care about the distinction should resolve their date first and ask
++ * about the cycle year of the *resolved* year; this mapping is for whole-year gating, where an
++ * eleven-week smear at one end is the documented trade.
++ */
++object SixtyYearCycle {
++
++    /** The cycle position (1–60) of the cyclic year opening in [gregorianYear]. */
++    fun cycleYearOf(gregorianYear: Int): Int {
++        val zeroBased = Math.floorMod(gregorianYear - ANCHOR_YEAR + ANCHOR_CYCLE_YEAR - 1, 60)
++        return zeroBased + 1
++    }
++
++    /** The Gregorian year a cyclic year opens in, given its 1–60 position. */
++    fun gregorianYearOf(cycleYear: Int): Int {
++        require(cycleYear in 1..60) { "cycle year must be in 1..60, was $cycleYear" }
++        return ANCHOR_YEAR + Math.floorMod(cycleYear - ANCHOR_CYCLE_YEAR, 60)
++    }
++
++    /** 2024 opened the 43rd year of the cycle (Krodhi), as published for Ugadi and Puthandu. */
++    private const val ANCHOR_YEAR: Int = 2024
++
++    private const val ANCHOR_CYCLE_YEAR: Int = 43
++}
++
+ /**
+  * The instant of the day an observance is anchored to.
+  *
+diff --git a/sampradaya/src/main/kotlin/org/panchang/sampradaya/EventResolver.kt b/sampradaya/src/main/kotlin/org/panchang/sampradaya/EventResolver.kt
+index fc2333b..dea3350 100644
+--- a/sampradaya/src/main/kotlin/org/panchang/sampradaya/EventResolver.kt
++++ b/sampradaya/src/main/kotlin/org/panchang/sampradaya/EventResolver.kt
+@@ -1,6 +1,7 @@
+ package org.panchang.sampradaya
+ 
+ import java.time.LocalDate
++import java.util.WeakHashMap
+ import org.panchang.core.GeoLocation
+ import org.panchang.core.LunarMonth
+ import org.panchang.core.MonthReckoning
+@@ -286,7 +287,11 @@ data class YearResolution(
+ /**
+  * Turns [EventDefinition]s into dates.
+  *
+- * Stateless and safe to share once constructed.
++ * Safe to share once constructed. The only mutable state is a memo of [SolarIngressIndex] keyed
++ * weakly by the [LunarDayIndex] it was built over: solar rules in one catalog share a year's
++ * ingresses, and recomputing them per definition would re-walk the window once per entry for no
++ * new information. The memo never affects a result — only how often it is derived — so sharing
++ * the resolver across threads remains sound.
+  *
+  * ## Rulings this class makes, and why
+  *
+@@ -319,6 +324,9 @@ class EventResolver(catalog: List<EventDefinition>) {
+ 
+     private val byId: Map<String, EventDefinition> = definitions.associateBy { it.id }
+ 
++    /** One [SolarIngressIndex] per [LunarDayIndex] seen; see the class KDoc for why it is cached. */
++    private val solarIndexByLunarIndex = WeakHashMap<LunarDayIndex, SolarIngressIndex>()
++
+     init {
+         require(byId.size == definitions.size) {
+             val duplicates = definitions.groupBy { it.id }.filterValues { it.size > 1 }.keys
+@@ -341,6 +349,33 @@ class EventResolver(catalog: List<EventDefinition>) {
+                     }
+                 }
+ 
++                is EventRule.OnSolarMonth -> {
++                    require(rule.solarMonthIndex in 1..12) {
++                        "event '${definition.id}' names solar month ${rule.solarMonthIndex}; " +
++                            "the rashis are numbered 1..12 with Mesha = 1"
++                    }
++                    require(rule.dayOfMonth in 1..MAX_SOLAR_DAY_OF_MONTH) {
++                        "event '${definition.id}' names day ${rule.dayOfMonth} of a solar " +
++                            "month; solar months run 29 to 32 days, so anything beyond " +
++                            "$MAX_SOLAR_DAY_OF_MONTH is not a day any solar calendar has"
++                    }
++                }
++
++                is EventRule.In60YearCycle -> {
++                    require(rule.cycleYear in 1..60) {
++                        "event '${definition.id}' names cycle year ${rule.cycleYear}; the " +
++                            "Samvatsara cycle runs 1..60"
++                    }
++                    require(
++                        rule.baseRule !is EventRule.RelativeTo &&
++                            rule.baseRule !is EventRule.In60YearCycle,
++                    ) {
++                        "event '${definition.id}' nests a " +
++                            "${rule.baseRule::class.simpleName} inside In60YearCycle; only a " +
++                            "self-contained rule can be nested there"
++                    }
++                }
++
+                 else -> Unit
+             }
+         }
+@@ -497,10 +532,26 @@ class EventResolver(catalog: List<EventDefinition>) {
+         definition: EventDefinition,
+         index: LunarDayIndex,
+         visiting: MutableSet<String>,
+-    ): RuleOutcome = when (val rule = definition.rule) {
+-        is EventRule.OnTithi -> onTithi(definition, rule, index)
++    ): RuleOutcome = ruleDatesOf(definition.id, definition.rule, index, visiting)
++
++    /**
++     * The dates one rule names, by rule rather than by catalog entry.
++     *
++     * Exists because [EventRule.In60YearCycle] wraps a bare rule, not a catalog entry, so its
++     * inner rule has no definition to hand to [onTithi] or [onNakshatra] — only an id for error
++     * context. Every other caller reaches here through [datesOf].
++     */
++    private fun ruleDatesOf(
++        eventId: String,
++        rule: EventRule,
++        index: LunarDayIndex,
++        visiting: MutableSet<String>,
++    ): RuleOutcome = when (rule) {
++        is EventRule.OnTithi -> onTithi(eventId, rule, index)
++
++        is EventRule.OnNakshatraInMonth -> onNakshatra(eventId, rule, index)
+ 
+-        is EventRule.OnNakshatraInMonth -> onNakshatra(definition, rule, index)
++        is EventRule.OnSolarMonth -> onSolarMonth(rule, index)
+ 
+         // A bare date qualified nothing, so it carries no span: there is no tithi that "made"
+         // this date and inventing the one that happens to run on it would be a different claim.
+@@ -511,17 +562,35 @@ class EventResolver(catalog: List<EventDefinition>) {
+                 .map { Match(it, span = null) },
+         )
+ 
++        is EventRule.In60YearCycle -> {
++            val actualCycleYear = SixtyYearCycle.cycleYearOf(index.year)
++            if (actualCycleYear != rule.cycleYear) {
++                // Suppression, not failure: the event is defined, and this simply is not its
++                // year. The note reaches the caller through `unresolved`, where a reader can see
++                // that the absence is the rule working.
++                RuleOutcome(
++                    matches = emptyList(),
++                    notes = listOf(
++                        "${index.year} is cycle year $actualCycleYear of the sixty-year " +
++                            "cycle, not ${rule.cycleYear}",
++                    ),
++                )
++            } else {
++                ruleDatesOf(eventId, rule.baseRule, index, visiting)
++            }
++        }
++
+         is EventRule.RelativeTo -> {
+             val base = requireNotNull(byId[rule.eventId]) {
+-                "event '${definition.id}' is defined relative to '${rule.eventId}', which is not " +
++                "event '$eventId' is defined relative to '${rule.eventId}', which is not " +
+                     "in this catalog"
+             }
+-            check(visiting.add(definition.id)) {
+-                "event '${definition.id}' is defined relative to itself through " +
++            check(visiting.add(eventId)) {
++                "event '$eventId' is defined relative to itself through " +
+                     "${visiting.toList()}"
+             }
+             val inner = datesOf(base, index, visiting)
+-            visiting.remove(definition.id)
++            visiting.remove(eventId)
+             RuleOutcome(
+                 // The base's span is deliberately dropped rather than carried across the offset.
+                 // It is the tithi that qualified the *base* event; the offset day's own tithi was
+@@ -537,11 +606,11 @@ class EventResolver(catalog: List<EventDefinition>) {
+     }
+ 
+     private fun onTithi(
+-        definition: EventDefinition,
++        eventId: String,
+         rule: EventRule.OnTithi,
+         index: LunarDayIndex,
+     ): RuleOutcome {
+-        val monthIndex = monthIndexOf(rule.lunarMonthName, definition.id)
++        val monthIndex = monthIndexOf(rule.lunarMonthName, eventId)
+         val wantedTithiIndex = tithiIndexOf(rule.paksha, rule.tithiNumberInPaksha)
+         val matches = ArrayList<Match>()
+         val skipped = ArrayList<String>()
+@@ -585,11 +654,11 @@ class EventResolver(catalog: List<EventDefinition>) {
+      * for every year to serve nothing would be paid by every caller.
+      */
+     private fun onNakshatra(
+-        definition: EventDefinition,
++        eventId: String,
+         rule: EventRule.OnNakshatraInMonth,
+         index: LunarDayIndex,
+     ): RuleOutcome {
+-        val monthIndex = monthIndexOf(rule.lunarMonthName, definition.id)
++        val monthIndex = monthIndexOf(rule.lunarMonthName, eventId)
+         val dates = ArrayList<LocalDate>()
+         val notes = ArrayList<String>()
+         var sawAdhika = false
+@@ -615,6 +684,49 @@ class EventResolver(catalog: List<EventDefinition>) {
+         return RuleOutcome(dates.sorted().map { Match(it, span = null) }, notes = notes)
+     }
+ 
++    /**
++     * The days a solar rule names: [rule.dayOfMonth] counted from the opening of the solar
++     * month [EventRule.OnSolarMonth.solarMonthIndex], with the opening fixed by
++     * [SolarTransition] as that rule states.
++     *
++     * The window the resolver works over runs ~60 days past each side of the year, so the
++     * signs whose ingress falls in November–February open *twice* in it; one match is produced
++     * per opening, and the caller's year filter keeps the one that lands inside the requested
++     * year. Suppressing the edge openings here instead would silently break a rule resolved
++     * for January and February.
++     *
++     * Like a tabulated date and a nakshatra match, a solar match carries no span: the Sun's
++     * position qualified this date, not a tithi, and the tithi running that morning is a fact
++     * about the day rather than the thing the rule matched on.
++     */
++    private fun onSolarMonth(rule: EventRule.OnSolarMonth, index: LunarDayIndex): RuleOutcome {
++        val signIndex = rule.solarMonthIndex - 1
++        val openings = solarIndexOf(index).monthStartDaysOf(signIndex, rule.transitionPoint)
++        if (openings.isEmpty()) {
++            return RuleOutcome(
++                emptyList(),
++                notes = listOf(
++                    "the Sun does not enter ${Rashi.NAMES[signIndex]} between " +
++                        "${index.windowStart} and ${index.windowEnd} at this site's window",
++                ),
++            )
++        }
++        return RuleOutcome(
++            openings
++                .map { it.plusDays((rule.dayOfMonth - 1).toLong()) }
++                .filter { !it.isBefore(index.windowStart) && !it.isAfter(index.windowEnd) }
++                .sorted()
++                .map { Match(it, span = null) },
++        )
++    }
++
++    /** The year's [SolarIngressIndex] over [index], built once however many solar rules ask. */
++    private fun solarIndexOf(index: LunarDayIndex): SolarIngressIndex =
++        synchronized(solarIndexByLunarIndex) {
++            solarIndexByLunarIndex[index]
++                ?: SolarIngressIndex.build(index).also { solarIndexByLunarIndex[index] = it }
++        }
++
+     private fun checkReferences(definition: EventDefinition, seen: MutableSet<String>) {
+         val rule = definition.rule
+         if (rule !is EventRule.RelativeTo) return
+@@ -635,6 +747,22 @@ class EventResolver(catalog: List<EventDefinition>) {
+             "${rule.nakshatraName} at sunrise in ${rule.lunarMonthName} " +
+                 "(${rule.reckoning.name.lowercase()})"
+ 
++        is EventRule.OnSolarMonth -> {
++            val rashi = Rashi.NAMES[rule.solarMonthIndex - 1]
++            val basis = when (rule.transitionPoint) {
++                SolarTransition.SANKRANTI_START ->
++                    "the month opening on the day the Sun enters $rashi"
++                SolarTransition.SANKRANTI_AT_SUNRISE ->
++                    "the month opening on the first sunrise after the Sun enters $rashi"
++            }
++            "day ${rule.dayOfMonth} of the solar month $rashi, $basis"
++        }
++
++        is EventRule.In60YearCycle ->
++            "a rule held only in cycle year ${rule.cycleYear} of the sixty-year cycle " +
++                "(the cyclic year opening ${SixtyYearCycle.gregorianYearOf(rule.cycleYear)}), " +
++                "namely: ${describe(rule.baseRule)}"
++
+         is EventRule.RelativeTo -> when {
+             rule.offsetDays == 0 -> "the same day as '${rule.eventId}'"
+             rule.offsetDays > 0 -> "${rule.offsetDays} day(s) after '${rule.eventId}'"
+@@ -671,6 +799,13 @@ class EventResolver(catalog: List<EventDefinition>) {
+ 
+     private companion object {
+ 
++        /**
++         * The largest solar day-of-month a rule may name. Solar months run 29 to 32 days; 40 is
++         * the outer bound a rule could plausibly intend, and anything beyond it names a day no
++         * solar calendar contains.
++         */
++        const val MAX_SOLAR_DAY_OF_MONTH: Int = 40
++
+         fun monthIndexOf(name: String, eventId: String): Int {
+             val index = LunarMonth.NAMES.indexOfFirst { it.equals(name, ignoreCase = true) }
+             require(index >= 0) {
+diff --git a/wire/src/main/kotlin/org/panchang/wire/SiteAcceptance.kt b/wire/src/main/kotlin/org/panchang/wire/SiteAcceptance.kt
+index f4f320b..10565cd 100644
+--- a/wire/src/main/kotlin/org/panchang/wire/SiteAcceptance.kt
++++ b/wire/src/main/kotlin/org/panchang/wire/SiteAcceptance.kt
+@@ -2,32 +2,70 @@ package org.panchang.wire
+ 
+ import java.time.ZoneId
+ import java.time.zone.ZoneRulesException
++import java.util.Locale
+ import kotlin.math.abs
+ import kotlinx.serialization.SerialName
+ import kotlinx.serialization.Serializable
+ import org.panchang.core.GeoLocation
++import org.panchang.core.Horizon
+ 
+ /**
+- * The latitude beyond which this service will not answer, north or south.
++ * The greatest declination the Sun reaches, in any year this service will be asked about.
+  *
+- * 66° is just inside the polar circles. Above it there are days with no sunrise at all, and the
+- * observance rules are written against one — "the tithi running at sunrise", "Dashami still
+- * running at arunodaya", "the first third of the daylight period". With no sunrise there is
+- * nothing to test the tithi against, and the tradition has no ruling on the substitute that this
+- * project has a source for. Inventing one would produce a fasting date that looks authoritative
+- * and is not.
++ * The true solstitial declination wobbles between about 23.436° and 23.445° over the decades,
++ * which moves the boundary below by under 0.005° — thirty times smaller than the arcminute-level
++ * uncertainty in the refraction constant that dominates it, so one figure serves every year.
++ */
++const val MAX_SOLAR_DECLINATION_DEG: Double = 23.44
++
++/**
++ * The lowest latitude that sees at least one midnight-sun or polar-night day a year, at sea level.
++ *
++ * Computed, not chosen: the Sun stays above the rise/set horizon at local midnight when
++ * `latitude > 90 − 23.44 − 0.8333`, where 0.8333° is the same refraction-and-semidiameter
++ * allowance `core.Horizon.SUN_ALTITUDE_DEGREES` applies when it decides what a sunrise *is*. The
++ * old fixed 66° limit was close to this but stated no reason for its number; this boundary is the
++ * solver's own definition of "the Sun is up", turned sideways into a latitude.
++ *
++ * The tradition-level fact it stands for: above this latitude there are days with no sunrise at
++ * all, and the observance rules are written against one — "the tithi running at sunrise",
++ * "Dashami still running at arunodaya", "the first third of the daylight period". With no sunrise
++ * there is nothing to test the tithi against, and the tradition has no ruling on the substitute
++ * that this project has a source for. Inventing one would produce a fasting date that looks
++ * authoritative and is not.
+  *
+  * The limit lives in `:wire` so `:calc`, `:api` and `:publish` cannot disagree about where the
+  * world ends. Three copies of a constant is two copies too many.
++ */
++val MIDNIGHT_SUN_LIMIT_DEG: Double =
++    90.0 - MAX_SOLAR_DECLINATION_DEG + Horizon.SUN_ALTITUDE_DEGREES
++
++/**
++ * Whether this site experiences at least one day a year on which the Sun never rises or never
++ * sets, under the solver's own rise/set definitions.
++ *
++ * This is the dynamic check behind [MIDNIGHT_SUN_LIMIT_DEG]: at summer solstice the Sun's
++ * altitude at local midnight is `latitude + 23.44 − 90`, and the site has a midnight-sun day
++ * when that exceeds the horizon altitude — i.e. when the upper limb is still showing at solar
++ * midnight. Elevation lowers the horizon through the dip of the visible horizon, so a mountain
++ * site crosses the boundary at a slightly lower latitude; [elevationMeters] is accepted for that
++ * reason, not as decoration.
+  *
+- * A site exactly *at* 66.0° is accepted: the limit is stated as "above".
++ * A site exactly *at* the boundary is accepted: the test is "above".
+  */
+-const val POLAR_LIMIT_DEG: Double = 66.0
++fun hasMidnightSunOrPolarNight(latitude: Double, elevationMeters: Double = 0.0): Boolean =
++    abs(latitude) >
++        90.0 - MAX_SOLAR_DECLINATION_DEG +
++        Horizon.SUN_ALTITUDE_DEGREES -
++        Horizon.dipDegrees(elevationMeters)
+ 
+ /** Why a requested site was refused. */
+ @Serializable
+ enum class SiteRejectionCode {
+-    /** Latitude beyond [POLAR_LIMIT_DEG]. Not a bug and not a data gap — a stated boundary. */
++    /**
++     * Latitude beyond the computed midnight-sun boundary ([MIDNIGHT_SUN_LIMIT_DEG] at sea level,
++     * lower for an elevated site). Not a bug and not a data gap — a stated boundary.
++     */
+     ABOVE_POLAR_LIMIT,
+ 
+     /** A coordinate that is NaN or infinite. */
+@@ -79,7 +117,8 @@ sealed interface SiteAcceptance {
+  * out-of-range coordinates, and re-checking them would be a second opinion nobody asked for.
+  */
+ fun acceptSite(location: GeoLocation): SiteAcceptance =
+-    polarCheck(location.latitude) ?: SiteAcceptance.Accepted(WireRenderer.site(location))
++    polarCheck(location.latitude, location.elevationMeters)
++        ?: SiteAcceptance.Accepted(WireRenderer.site(location))
+ 
+ /**
+  * Validate raw request input, before a [GeoLocation] exists.
+@@ -123,7 +162,7 @@ fun acceptSite(
+                 "$elevationMeters m.",
+         )
+     }
+-    polarCheck(latitude)?.let { return it }
++    polarCheck(latitude, elevationMeters)?.let { return it }
+ 
+     val zone = try {
+         ZoneId.of(zoneId)
+@@ -145,18 +184,21 @@ fun acceptSite(
+     )
+ }
+ 
+-private fun polarCheck(latitude: Double): SiteAcceptance.Rejected? =
+-    if (abs(latitude) > POLAR_LIMIT_DEG) {
+-        reject(
+-            SiteRejectionCode.ABOVE_POLAR_LIMIT,
+-            "Latitude $latitude is beyond ${POLAR_LIMIT_DEG.toInt()} degrees. The observance " +
+-                "rules are defined against sunrise, and above this latitude there are days with " +
+-                "no sunrise to test a tithi against. The tradition has no ruling we have a " +
+-                "source for, so this service declines rather than guessing a fasting date.",
+-        )
+-    } else {
+-        null
+-    }
++private fun polarCheck(latitude: Double, elevationMeters: Double): SiteAcceptance.Rejected? {
++    if (!hasMidnightSunOrPolarNight(latitude, elevationMeters)) return null
++    val boundary = 90.0 - MAX_SOLAR_DECLINATION_DEG +
++        Horizon.SUN_ALTITUDE_DEGREES -
++        Horizon.dipDegrees(elevationMeters)
++    return reject(
++        SiteRejectionCode.ABOVE_POLAR_LIMIT,
++        "Latitude $latitude is beyond this site's midnight-sun boundary of " +
++            "${"%.2f".format(Locale.ROOT, boundary)} degrees. At this latitude the Sun stays above the " +
++            "horizon around the clock at midsummer (and below it at midwinter), so there are " +
++            "days with no sunrise to test a tithi against. The observance rules are defined " +
++            "against a sunrise, and the tradition has no ruling we have a source for, so this " +
++            "service declines rather than guessing a fasting date.",
++    )
++}
+ 
+ private fun reject(code: SiteRejectionCode, reason: String): SiteAcceptance.Rejected =
+     SiteAcceptance.Rejected(code, reason)
+diff --git a/wire/src/test/kotlin/org/panchang/wire/SiteAcceptanceTest.kt b/wire/src/test/kotlin/org/panchang/wire/SiteAcceptanceTest.kt
+index 7666acb..0983a08 100644
+--- a/wire/src/test/kotlin/org/panchang/wire/SiteAcceptanceTest.kt
++++ b/wire/src/test/kotlin/org/panchang/wire/SiteAcceptanceTest.kt
+@@ -5,19 +5,43 @@ import org.junit.jupiter.api.Assertions.assertFalse
+ import org.junit.jupiter.api.Assertions.assertTrue
+ import org.junit.jupiter.api.Test
+ import org.panchang.core.GeoLocation
++import org.panchang.core.Horizon
+ 
+ /**
+  * Where the world ends, agreed once so three front doors cannot disagree about it.
+  *
+- * Above [POLAR_LIMIT_DEG] the observance rules have no sunrise to test a tithi against and the
+- * tradition has no ruling this project has a source for. Declining is the honest answer; a
+- * fabricated one would look authoritative.
++ * Above the computed midnight-sun boundary ([MIDNIGHT_SUN_LIMIT_DEG] at sea level) the observance
++ * rules have no sunrise to test a tithi against and the tradition has no ruling this project has
++ * a source for. Declining is the honest answer; a fabricated one would look authoritative.
++ *
++ * The boundary is *computed* — 90° minus the Sun's greatest declination, minus the same
++ * refraction-and-semidiameter allowance `core.Horizon` applies when deciding what a sunrise is —
++ * so the gate and the solver can never disagree about whether the Sun is up. The tests below pin
++ * the arithmetic against that definition rather than against a latitude somebody chose.
+  */
+ class SiteAcceptanceTest {
+ 
+     @Test
+-    fun `the limit is stated once and is 66 degrees`() {
+-        assertEquals(66.0, POLAR_LIMIT_DEG)
++    fun `the boundary is the solver's own horizon turned into a latitude`() {
++        assertEquals(90.0 - MAX_SOLAR_DECLINATION_DEG + Horizon.SUN_ALTITUDE_DEGREES, MIDNIGHT_SUN_LIMIT_DEG)
++        // ~65.73°: the geometric polar circle at 66.56°, lowered by the 0.8333° the solver's
++        // horizon already grants the Sun's upper limb. Pinning the value keeps a future edit of
++        // either constant from silently moving the edge of the world.
++        assertEquals(65.73, MIDNIGHT_SUN_LIMIT_DEG, 0.005)
++    }
++
++    @Test
++    fun `midnight sun is a dynamic fact about the site, not a fixed latitude`() {
++        // Reykjavik (64.15°N) has a two-hour night at midsummer — its Sun sets every day — so it
++        // is inside the boundary however close the call looks on a map.
++        assertFalse(hasMidnightSunOrPolarNight(64.1466))
++        // Longyearbyen and McMurdo do lose the sunrise for months.
++        assertTrue(hasMidnightSunOrPolarNight(78.2232))
++        assertTrue(hasMidnightSunOrPolarNight(-77.8419))
++        // Elevation lowers the visible horizon, so a high site crosses the boundary sooner.
++        // 65.5° is below the sea-level boundary (65.73°) but above the 400 m boundary (65.03°).
++        assertFalse(hasMidnightSunOrPolarNight(65.5))
++        assertTrue(hasMidnightSunOrPolarNight(65.5, elevationMeters = 400.0))
+     }
+ 
+     @Test
+@@ -30,22 +54,23 @@ class SiteAcceptanceTest {
+     }
+ 
+     @Test
+-    fun `a site just below the limit is accepted, north and south`() {
+-        for (latitude in listOf(65.9, -65.9, 66.0, -66.0)) {
++    fun `a site just below the boundary is accepted, north and south`() {
++        for (latitude in listOf(65.7, -65.7, 64.1466)) {
+             val result = acceptSite(latitude, 25.0, "Europe/Helsinki")
+-            assertTrue(result.isAccepted, "latitude $latitude is not above the limit: $result")
++            assertTrue(result.isAccepted, "latitude $latitude is not above the boundary: $result")
+         }
+     }
+ 
+     @Test
+-    fun `a site above the limit is rejected with a reason a user can be told`() {
+-        for (latitude in listOf(66.1, 71.0, -66.1, -78.0)) {
++    fun `a site above the boundary is rejected with a reason a user can be told`() {
++        for (latitude in listOf(65.8, 71.0, -65.8, -78.0)) {
+             val result = acceptSite(latitude, 25.0, "Europe/Helsinki")
+ 
+             assertTrue(result is SiteAcceptance.Rejected, "latitude $latitude must be refused")
+             val rejected = result as SiteAcceptance.Rejected
+             assertEquals(SiteRejectionCode.ABOVE_POLAR_LIMIT, rejected.code)
+             assertTrue(rejected.reason.contains("sunrise"), rejected.reason)
++            assertTrue(rejected.reason.contains("midnight-sun"), rejected.reason)
+             assertFalse(rejected.isAccepted)
+         }
+     }

@@ -1,0 +1,343 @@
+[
+  {
+    "metadata": "docs/release/2026-09-21/sources/about.json",
+    "url": "https://www.vaisnavacalendar.info/about-the-vaisnava-calendar",
+    "retrievedAtUtc": "2026-09-21T09:05:59.632930+00:00",
+    "error": "IncompleteRead(101053 bytes read)",
+    "verified": false
+  },
+  {
+    "metadata": "docs/release/2026-09-21/sources/calendar-ahmedabad-2026.json",
+    "url": "https://www.vaisnavacalendar.info/calendars/2026/Ahmadabad%20%5BIndia%5D.txt",
+    "retrievedAtUtc": "2026-09-21T09:04:29.454540+00:00",
+    "sha256": "28ea1f7d579fcae374a48ad9545c0cbbffd45edd0d11d783935ad38cc4d3c26a",
+    "file": "docs/release/2026-09-21/sources/calendar-ahmedabad-2026.raw",
+    "verified": true
+  },
+  {
+    "metadata": "docs/release/2026-09-21/sources/calendar-auckland-2026.json",
+    "url": "https://www.vaisnavacalendar.info/calendars/2026/Auckland%20%5BNew%20Zealand%5D.txt",
+    "retrievedAtUtc": "2026-09-21T09:04:31.038795+00:00",
+    "sha256": "ef4246bff1a7339c87653ae87b50d8c137fdbd289af4d9dd95c1f9832a3fe53d",
+    "file": "docs/release/2026-09-21/sources/calendar-auckland-2026.raw",
+    "verified": true
+  },
+  {
+    "metadata": "docs/release/2026-09-21/sources/calendar-bangalore-2026-retry.json",
+    "url": "https://www.vaisnavacalendar.info/calendars/2026/Bangalore%20%5BIndia%5D.txt",
+    "retrievedAtUtc": "2026-09-21T13:39:19.811598+00:00",
+    "sha256": "781f54e9914e832ea16fd4787aa89a559dece9b639858be4f94479be21903972",
+    "file": "docs/release/2026-09-21/sources/calendar-bangalore-2026-retry.raw",
+    "verified": true
+  },
+  {
+    "metadata": "docs/release/2026-09-21/sources/calendar-bangalore-2026.json",
+    "url": "https://www.vaisnavacalendar.info/calendars/2026/Bangalore%20%5BIndia%5D.txt",
+    "retrievedAtUtc": "2026-09-21T09:04:34.232080+00:00",
+    "error": "The read operation timed out",
+    "verified": false
+  },
+  {
+    "metadata": "docs/release/2026-09-21/sources/calendar-chennai-2026.json",
+    "url": "https://www.vaisnavacalendar.info/calendars/2026/Madras%20%5BIndia%5D.txt",
+    "retrievedAtUtc": "2026-09-21T09:05:15.647013+00:00",
+    "sha256": "76cad39e527ffdecbcdbb15bd597873440769f8259f59fd7142db2d7c99a1bcf",
+    "file": "docs/release/2026-09-21/sources/calendar-chennai-2026.raw",
+    "verified": true
+  },
+  {
+    "metadata": "docs/release/2026-09-21/sources/calendar-delhi-2026.json",
+    "url": "https://www.vaisnavacalendar.info/calendars/2026/Delhi%20%5BIndia%5D.txt",
+    "retrievedAtUtc": "2026-09-21T09:05:24.846412+00:00",
+    "sha256": "2477eeb288fbf0aa27969de770e142d6a397624dd6e4f5a4c746d574e141eebe",
+    "file": "docs/release/2026-09-21/sources/calendar-delhi-2026.raw",
+    "verified": true
+  },
+  {
+    "metadata": "docs/release/2026-09-21/sources/calendar-guwahati-2026.json",
+    "url": "https://www.vaisnavacalendar.info/calendars/2026/Guwahati%20%5BIndia%5D.txt",
+    "retrievedAtUtc": "2026-09-21T09:05:26.695928+00:00",
+    "sha256": "5819d25013ad2374115d22504d7193fb2655ff91e7d6f8915200bd7d3876ed9c",
+    "file": "docs/release/2026-09-21/sources/calendar-guwahati-2026.raw",
+    "verified": true
+  },
+  {
+    "metadata": "docs/release/2026-09-21/sources/calendar-hyderabad-2026.json",
+    "url": "https://www.vaisnavacalendar.info/calendars/2026/Hyderabad%20%5BIndia%5D.txt",
+    "retrievedAtUtc": "2026-09-21T09:05:28.583287+00:00",
+    "sha256": "171c6fd7f97c83a1cf9789e2906b3dceafc45bb56dd462767565564873e4a439",
+    "file": "docs/release/2026-09-21/sources/calendar-hyderabad-2026.raw",
+    "verified": true
+  },
+  {
+    "metadata": "docs/release/2026-09-21/sources/calendar-london-2026.json",
+    "url": "https://www.vaisnavacalendar.info/calendars/2026/London%20%5BUnited%20Kingdom%5D.txt",
+    "retrievedAtUtc": "2026-09-21T09:05:33.277524+00:00",
+    "sha256": "521de0c0c54cc8c79f6e2872c757c6158c48234294e97236303bf56524a034d2",
+    "file": "docs/release/2026-09-21/sources/calendar-london-2026.raw",
+    "verified": true
+  },
+  {
+    "metadata": "docs/release/2026-09-21/sources/calendar-mayapur-2026.json",
+    "url": "https://www.vaisnavacalendar.info/calendars/2026/Mayapur%20%5BIndia%5D.txt",
+    "retrievedAtUtc": "2026-09-21T09:05:38.546332+00:00",
+    "sha256": "51fbe8bb9ab3e92a9090b7c8d9d204055c8e3b9b51422cba9aab7003112f84b0",
+    "file": "docs/release/2026-09-21/sources/calendar-mayapur-2026.raw",
+    "verified": true
+  },
+  {
+    "metadata": "docs/release/2026-09-21/sources/calendar-moscow-2026.json",
+    "url": "https://www.vaisnavacalendar.info/calendars/2026/Moskva%20%5BRussia%5D.txt",
+    "retrievedAtUtc": "2026-09-21T09:05:41.834092+00:00",
+    "sha256": "ff1db8c94dd5e8e447e042b21fc8639a1a7b094e584a306cd7846cda2f0ac5b2",
+    "file": "docs/release/2026-09-21/sources/calendar-moscow-2026.raw",
+    "verified": true
+  },
+  {
+    "metadata": "docs/release/2026-09-21/sources/calendar-mumbai-2026.json",
+    "url": "https://www.vaisnavacalendar.info/calendars/2026/Bombay%20%5BIndia%5D.txt",
+    "retrievedAtUtc": "2026-09-21T09:05:45.338895+00:00",
+    "sha256": "1f768d777870327a90ffada13e9dc48fc0e8c7d3e6e5d7659ad490eff1fd74b0",
+    "file": "docs/release/2026-09-21/sources/calendar-mumbai-2026.raw",
+    "verified": true
+  },
+  {
+    "metadata": "docs/release/2026-09-21/sources/calendar-new-york-2026.json",
+    "url": "https://www.vaisnavacalendar.info/calendars/2026/New%20York%20City%20%5BUnited%20States%20of%20America%5D.txt",
+    "retrievedAtUtc": "2026-09-21T09:05:48.553127+00:00",
+    "sha256": "4050a4b15ed55a1e67aee9bad487dd3d4315b90bbd0aab6df11e18d8172f1fce",
+    "file": "docs/release/2026-09-21/sources/calendar-new-york-2026.raw",
+    "verified": true
+  },
+  {
+    "metadata": "docs/release/2026-09-21/sources/calendar-sao-paulo-2026.json",
+    "url": "https://www.vaisnavacalendar.info/calendars/2026/Sao%20Paulo%20%5BBrazil%5D.txt",
+    "retrievedAtUtc": "2026-09-21T09:05:50.921004+00:00",
+    "sha256": "4f1fb3acd451efe6b72a4d6e1647758231473dba710d0d8e35d6be423882de15",
+    "file": "docs/release/2026-09-21/sources/calendar-sao-paulo-2026.raw",
+    "verified": true
+  },
+  {
+    "metadata": "docs/release/2026-09-21/sources/calendar-sydney-2026.json",
+    "url": "https://www.vaisnavacalendar.info/calendars/2026/Sydney%20%5BAustralia%5D.txt",
+    "retrievedAtUtc": "2026-09-21T09:05:53.072409+00:00",
+    "sha256": "0fbd0ac1f3b61a96a059375f20ef34099064d74a2c8d48b4f1267a50a635e076",
+    "file": "docs/release/2026-09-21/sources/calendar-sydney-2026.raw",
+    "verified": true
+  },
+  {
+    "metadata": "docs/release/2026-09-21/sources/calendar-vrindavan-2026.json",
+    "url": "https://www.vaisnavacalendar.info/calendars/2026/Vrindavan%20%5BIndia%5D.txt",
+    "retrievedAtUtc": "2026-09-21T09:05:54.348265+00:00",
+    "sha256": "da193be0364433b4ae9ddc2cd0d4cc2c27c794448a585d9d54556fba4a71872d",
+    "file": "docs/release/2026-09-21/sources/calendar-vrindavan-2026.raw",
+    "verified": true
+  },
+  {
+    "metadata": "docs/release/2026-09-21/sources/cpp-GCSunData.json",
+    "url": "https://raw.githubusercontent.com/gopa810/gcal-cpp/1cedaea67278009aedbfc7c91beeb64489a3ed4c/GCSunData.cpp",
+    "retrievedAtUtc": "2026-09-21T09:08:04.562189+00:00",
+    "sha256": "d3cdf226589fc568ae737f1fd5a477b4370a47c875be89eb8bb649182f408022",
+    "file": "docs/release/2026-09-21/sources/cpp-GCSunData.raw",
+    "verified": true
+  },
+  {
+    "metadata": "docs/release/2026-09-21/sources/cpp-GCVaisnavaDay.json",
+    "url": "https://raw.githubusercontent.com/gopa810/gcal-cpp/1cedaea67278009aedbfc7c91beeb64489a3ed4c/GCVaisnavaDay.cpp",
+    "retrievedAtUtc": "2026-09-21T09:08:05.239349+00:00",
+    "sha256": "2bb0d06d9bd1658cd8d8bb170f0afdd992df3664c4d036210014290f20f3cd2f",
+    "file": "docs/release/2026-09-21/sources/cpp-GCVaisnavaDay.raw",
+    "verified": true
+  },
+  {
+    "metadata": "docs/release/2026-09-21/sources/cpp-ReadMe.json",
+    "url": "https://raw.githubusercontent.com/gopa810/gcal-cpp/1cedaea67278009aedbfc7c91beeb64489a3ed4c/ReadMe.txt",
+    "retrievedAtUtc": "2026-09-21T09:08:05.894293+00:00",
+    "sha256": "5d6ae16dadf9b40d9c81b8548b85154e01b35da0b4a9f18f4e0f2729a206456e",
+    "file": "docs/release/2026-09-21/sources/cpp-ReadMe.raw",
+    "verified": true
+  },
+  {
+    "metadata": "docs/release/2026-09-21/sources/cpp-TResultCalendar.json",
+    "url": "https://raw.githubusercontent.com/gopa810/gcal-cpp/1cedaea67278009aedbfc7c91beeb64489a3ed4c/TResultCalendar.cpp",
+    "retrievedAtUtc": "2026-09-21T09:08:02.511319+00:00",
+    "sha256": "c87ac6384a2777bca9da9e7d7ea1b36e02b3810896dc597f2111eb46204f5f86",
+    "file": "docs/release/2026-09-21/sources/cpp-TResultCalendar.raw",
+    "verified": true
+  },
+  {
+    "metadata": "docs/release/2026-09-21/sources/cpp-version-resource.json",
+    "url": "https://raw.githubusercontent.com/gopa810/gcal-cpp/1cedaea67278009aedbfc7c91beeb64489a3ed4c/VCal5beta.rc",
+    "retrievedAtUtc": "2026-09-21T13:39:49.471512+00:00",
+    "sha256": "1000f9381d01950e6539f030ede4b3c4a3536a367880fe00a1fd7518c0e9d499",
+    "file": "docs/release/2026-09-21/sources/cpp-version-resource.raw",
+    "verified": true
+  },
+  {
+    "metadata": "docs/release/2026-09-21/sources/dst.json",
+    "url": "https://www.vaisnavacalendar.info/daylight-savings",
+    "retrievedAtUtc": "2026-09-21T09:06:38.263320+00:00",
+    "sha256": "7822b35930818e17270eea7a649e3f69cd0ceb2b909f1f83ef5176f59c447c83",
+    "file": "docs/release/2026-09-21/sources/dst.raw",
+    "verified": true
+  },
+  {
+    "metadata": "docs/release/2026-09-21/sources/gbc-2019.json",
+    "url": "https://gbc.iskcon.org/2019-agm/",
+    "retrievedAtUtc": "2026-09-21T09:07:08.478350+00:00",
+    "sha256": "6fff0eaa91fe6d1328ba90ff5f3a7496f9f86478bc9463135d086441872327d0",
+    "file": "docs/release/2026-09-21/sources/gbc-2019.pdf",
+    "verified": true
+  },
+  {
+    "metadata": "docs/release/2026-09-21/sources/gbc-committees.json",
+    "url": "https://gbc.iskcon.org/commmittees/",
+    "retrievedAtUtc": "2026-09-21T09:08:20.840745+00:00",
+    "sha256": "959567a4adb93c60944c7b3357144ee1dc3350924921129f81a354aa1109f62c",
+    "file": "docs/release/2026-09-21/sources/gbc-committees.raw",
+    "verified": true
+  },
+  {
+    "metadata": "docs/release/2026-09-21/sources/gcal-cpp-tree.json",
+    "url": "https://api.github.com/repos/gopa810/gcal-cpp/git/trees/master?recursive=1",
+    "retrievedAtUtc": "2026-09-21T09:07:44.291893+00:00",
+    "sha256": "13670ed70d48d1ddaf42b81c44898fd0fa14306a14fa5cd7452b183b13fcb42c",
+    "file": "docs/release/2026-09-21/sources/gcal-cpp-tree.raw",
+    "verified": true
+  },
+  {
+    "metadata": "docs/release/2026-09-21/sources/gcal-README.json",
+    "url": "https://raw.githubusercontent.com/gopaladasa/GCAL-for-Windows/9267f9fde9aefe2e60fb30c80a7ac9fc366fa585/README.md",
+    "retrievedAtUtc": "2026-09-21T09:08:24.093750+00:00",
+    "sha256": "51d09a77d3039ddfad9a9d38f6d7ced57d40941ea1ab8e1f9fd9424a4319e94b",
+    "file": "docs/release/2026-09-21/sources/gcal-README.raw",
+    "verified": true
+  },
+  {
+    "metadata": "docs/release/2026-09-21/sources/gcal-rules.json",
+    "url": "https://gopal.home.sk/gcal/docs/GCalVaisnavaCalculation.pdf",
+    "retrievedAtUtc": "2026-09-21T09:07:07.275711+00:00",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'gopal.home.sk'. (_ssl.c:1016)>",
+    "verified": false
+  },
+  {
+    "metadata": "docs/release/2026-09-21/sources/gcal-tree.json",
+    "url": "https://api.github.com/repos/gopaladasa/GCAL-for-Windows/git/trees/master?recursive=1",
+    "retrievedAtUtc": "2026-09-21T09:05:55.428568+00:00",
+    "sha256": "f1e4eaa881128d04274bc96bdd151cd372789c272475819d2ae5b008e6195ae8",
+    "file": "docs/release/2026-09-21/sources/gcal-tree.raw",
+    "verified": true
+  },
+  {
+    "metadata": "docs/release/2026-09-21/sources/gopa-GCCalendarDay.json",
+    "url": "https://raw.githubusercontent.com/gopa810/gaurabda-calendar/92c36b5948e9bcbfe991f19f511371aff1cc0fcb/gaurabda/GCCalendarDay.py",
+    "retrievedAtUtc": "2026-09-21T09:08:26.939286+00:00",
+    "sha256": "5f72bb485b509de316d60225bd6212ab1fc694031e91672b8ad27fed16af01d1",
+    "file": "docs/release/2026-09-21/sources/gopa-GCCalendarDay.raw",
+    "verified": true
+  },
+  {
+    "metadata": "docs/release/2026-09-21/sources/gopa-GCSunData.json",
+    "url": "https://raw.githubusercontent.com/gopa810/gaurabda-calendar/92c36b5948e9bcbfe991f19f511371aff1cc0fcb/gaurabda/GCSunData.py",
+    "retrievedAtUtc": "2026-09-21T09:08:27.900601+00:00",
+    "sha256": "13aafe838de766bf23287632b3457f62010c58bb572ee4a178b4e37066b232a2",
+    "file": "docs/release/2026-09-21/sources/gopa-GCSunData.raw",
+    "verified": true
+  },
+  {
+    "metadata": "docs/release/2026-09-21/sources/gopa-profile.json",
+    "url": "https://api.github.com/users/gopa810",
+    "retrievedAtUtc": "2026-09-21T09:05:56.981141+00:00",
+    "sha256": "bd201f0e725f839e18034b5987b25c5422313d449b534423f9413821d32532e5",
+    "file": "docs/release/2026-09-21/sources/gopa-profile.raw",
+    "verified": true
+  },
+  {
+    "metadata": "docs/release/2026-09-21/sources/gopa-README.json",
+    "url": "https://raw.githubusercontent.com/gopa810/gaurabda-calendar/92c36b5948e9bcbfe991f19f511371aff1cc0fcb/README.md",
+    "retrievedAtUtc": "2026-09-21T09:08:24.815027+00:00",
+    "sha256": "b3d8ed6528bc45c1556db0f5856464142187dcce9c893a9ec51394a184ca1885",
+    "file": "docs/release/2026-09-21/sources/gopa-README.raw",
+    "verified": true
+  },
+  {
+    "metadata": "docs/release/2026-09-21/sources/gopa-repos.json",
+    "url": "https://api.github.com/users/gopa810/repos?per_page=100",
+    "retrievedAtUtc": "2026-09-21T09:05:57.642244+00:00",
+    "sha256": "9a0bfd42975ad3fdde9a7037587e3f8a8d6816ef1ea187ae8f06bf9b25c023a2",
+    "file": "docs/release/2026-09-21/sources/gopa-repos.raw",
+    "verified": true
+  },
+  {
+    "metadata": "docs/release/2026-09-21/sources/gopa-setup.json",
+    "url": "https://raw.githubusercontent.com/gopa810/gaurabda-calendar/92c36b5948e9bcbfe991f19f511371aff1cc0fcb/setup.py",
+    "retrievedAtUtc": "2026-09-21T09:08:25.498069+00:00",
+    "sha256": "7b863081fd31a2e2525cdc4f1b3a4fc5279885e20b9a609d378a9e6b93a83364",
+    "file": "docs/release/2026-09-21/sources/gopa-setup.raw",
+    "verified": true
+  },
+  {
+    "metadata": "docs/release/2026-09-21/sources/gopa-TCalendar.json",
+    "url": "https://raw.githubusercontent.com/gopa810/gaurabda-calendar/92c36b5948e9bcbfe991f19f511371aff1cc0fcb/gaurabda/TCalendar.py",
+    "retrievedAtUtc": "2026-09-21T09:08:26.215083+00:00",
+    "sha256": "20fd46f65df8b1e7be7b4f1495b11a19995aa4fd9c0bf5f6698cc6c0ea818e51",
+    "file": "docs/release/2026-09-21/sources/gopa-TCalendar.raw",
+    "verified": true
+  },
+  {
+    "metadata": "docs/release/2026-09-21/sources/gopa-tree.json",
+    "url": "https://api.github.com/repos/gopa810/gaurabda-calendar/git/trees/master?recursive=1",
+    "retrievedAtUtc": "2026-09-21T09:05:56.280822+00:00",
+    "sha256": "c77924c2a6d756bd5da71db88413bcd4e1c9a50e6003b02d7b53d65fbe40fbc2",
+    "file": "docs/release/2026-09-21/sources/gopa-tree.raw",
+    "verified": true
+  },
+  {
+    "metadata": "docs/release/2026-09-16/sources/about.json",
+    "url": "https://www.vaisnavacalendar.info/about-the-vaisnava-calendar",
+    "retrievedAtUtc": "2026-09-15T19:52:25.860927+00:00",
+    "sha256": "b60951502d41dbb39dc973f0b052a51e5d41512fe438d0afa8868f7440646f6f",
+    "file": "docs/release/2026-09-16/sources/about.raw",
+    "verified": true
+  },
+  {
+    "metadata": "docs/release/2026-09-16/sources/gcal-astronomy.json",
+    "url": "https://raw.githubusercontent.com/gopaladasa/GCAL-for-Windows/9267f9fde9aefe2e60fb30c80a7ac9fc366fa585/documentation/GCalAstronomyDocumentation.pdf",
+    "retrievedAtUtc": "2026-09-15T19:52:53.690001+00:00",
+    "sha256": "ddda561e91d3005515a4e9f387e787a09b78407996fb4412c85b6b9f392f6542",
+    "file": "docs/release/2026-09-16/sources/gcal-astronomy.pdf",
+    "verified": true
+  },
+  {
+    "metadata": "docs/release/2026-09-16/sources/gcal-events.json",
+    "url": "https://raw.githubusercontent.com/gopaladasa/GCAL-for-Windows/9267f9fde9aefe2e60fb30c80a7ac9fc366fa585/documentation/StandardEventsList.pdf",
+    "retrievedAtUtc": "2026-09-15T19:52:54.326816+00:00",
+    "sha256": "df6df762ea0f4075cece6333b79033308baf216101f8540edc214d55af92a68b",
+    "file": "docs/release/2026-09-16/sources/gcal-events.pdf",
+    "verified": true
+  },
+  {
+    "metadata": "docs/release/2026-09-16/sources/rama-navami-sac-2018.json",
+    "url": "https://www.vaisnavacalendar.info/wp2020/wp-content/uploads/2020/05/Rama-navami-fast-SAC-March-2018.pdf",
+    "retrievedAtUtc": "2026-09-20T17:53:10.492750+00:00",
+    "sha256": "e2ddea23cdcdb273726f27772e583adf7af86e6d66935723fa7e8c88fccd630d",
+    "file": "docs/release/2026-09-16/sources/rama-navami-sac-2018.pdf",
+    "verified": true
+  },
+  {
+    "metadata": "docs/release/2026-09-16/sources/gbc-2019-agm-retry.json",
+    "url": "https://gbc.iskcon.org/2019-agm/",
+    "retrievedAtUtc": "2026-09-20T18:03:07.607617+00:00",
+    "sha256": "6fff0eaa91fe6d1328ba90ff5f3a7496f9f86478bc9463135d086441872327d0",
+    "file": "docs/release/2026-09-16/sources/gbc-2019-agm-retry.pdf",
+    "verified": true
+  },
+  {
+    "metadata": "docs/release/2026-09-16/sources/updates.json",
+    "url": "https://www.vaisnavacalendar.info/2020-gbc-changes-updates",
+    "retrievedAtUtc": "2026-09-15T19:52:49.221276+00:00",
+    "sha256": "8a62f8fd2b00fcfeeb18a3eb583b8fa448405431c74ea49d2c16f426c3e9f8d8",
+    "file": "docs/release/2026-09-16/sources/updates.raw",
+    "verified": true
+  }
+]

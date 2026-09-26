@@ -1,0 +1,16 @@
+[
+  {
+    "name": "priority",
+    "members": 7,
+    "fingerprint": "b73a9322e9992852ec69a58c02af32cf797c3ce620452349c2a06ab11a393b5f",
+    "realApproval": false,
+    "resultsMatchMeasurements": true
+  },
+  {
+    "name": "hold",
+    "members": 8,
+    "fingerprint": "44c9728461516fde699c463bf97df4fb398ccf290766f609abe49b6ca5df4608",
+    "realApproval": false,
+    "resultsMatchMeasurements": true
+  }
+]

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.sampradaya.EventTimeTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2026-09-20T18:10:53" hostname="DESKTOP-KBUKJ2P" time="5.967">
+  <properties/>
+  <testcase name="a sunset fast lands on sunset and a dusk fast strictly after it()" classname="org.panchang.sampradaya.EventTimeTest" time="5.748"/>
+  <testcase name="events without a fast carry no anchor at all()" classname="org.panchang.sampradaya.EventTimeTest" time="0.001"/>
+  <testcase name="a noon fast lands on the solar transit, not on twelve o'clock()" classname="org.panchang.sampradaya.EventTimeTest" time="0.011"/>
+  <testcase name="a day with no moonrise reports absence rather than a substitute()" classname="org.panchang.sampradaya.EventTimeTest" time="0.091"/>
+  <testcase name="the inferred anchors carry their definition in basis()" classname="org.panchang.sampradaya.EventTimeTest" time="0.001"/>
+  <testcase name="the two judgement-call anchors are INFERRED and the plain ones are not()" classname="org.panchang.sampradaya.EventTimeTest" time="0.0"/>
+  <testcase name="the RiseSet adapter maps every absent case without inventing one()" classname="org.panchang.sampradaya.EventTimeTest" time="0.001"/>
+  <testcase name="a tithi-ruled event carries the occurrence that qualified it()" classname="org.panchang.sampradaya.EventTimeTest" time="0.01"/>
+  <testcase name="no fabricated instants at high latitude()" classname="org.panchang.sampradaya.EventTimeTest" time="0.053"/>
+  <testcase name="the Nisita window is a window and it contains solar midnight()" classname="org.panchang.sampradaya.EventTimeTest" time="0.041"/>
+  <testcase name="an offset event reports no qualifying tithi rather than an invented one()" classname="org.panchang.sampradaya.EventTimeTest" time="0.0"/>
+  <testcase name="no EventTime is ever produced without a basis()" classname="org.panchang.sampradaya.EventTimeTest" time="0.001"/>
+  <testcase name="an event's date and its fast time are graded independently()" classname="org.panchang.sampradaya.EventTimeTest" time="0.001"/>
+  <testcase name="every fast-till note names an anchor, and the right one()" classname="org.panchang.sampradaya.EventTimeTest" time="0.001"/>
+  <testcase name="a moonrise fast lands on moonrise()" classname="org.panchang.sampradaya.EventTimeTest" time="0.003"/>
+  <testcase name="no anchor without a fast to anchor()" classname="org.panchang.sampradaya.EventTimeTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

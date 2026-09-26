@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Meeus worked examples" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-09-12T20:44:45" hostname="DESKTOP-KBUKJ2P" time="0.009">
+  <properties/>
+  <testcase name="example 25a sun radius vector and apparent longitude()" classname="org.panchang.ephemeris.MeeusWorkedExampleTest" time="0.001"/>
+  <testcase name="example 47a moon longitude latitude and distance()" classname="org.panchang.ephemeris.MeeusWorkedExampleTest" time="0.003"/>
+  <testcase name="example 22a nutation and obliquity()" classname="org.panchang.ephemeris.MeeusWorkedExampleTest" time="0.002"/>
+  <testcase name="sunExample25bHighAccuracyCrossCheck()" classname="org.panchang.ephemeris.MeeusWorkedExampleTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

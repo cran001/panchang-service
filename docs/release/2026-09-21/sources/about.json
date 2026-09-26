@@ -1,0 +1,11 @@
+{
+  "id": "about",
+  "url": "https://www.vaisnavacalendar.info/about-the-vaisnava-calendar",
+  "kind": "upstream-discovery-or-documentation",
+  "retrievedAtUtc": "2026-09-21T09:05:59.632930+00:00",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": null,
+  "error": "IncompleteRead(101053 bytes read)"
+}

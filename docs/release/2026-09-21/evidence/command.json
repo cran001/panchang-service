@@ -1,0 +1,12 @@
+{
+  "command": [
+    ".\\gradlew.bat",
+    "-I",
+    "docs/release/2026-09-21/evidence.init.gradle",
+    ":verify:releaseEvidence",
+    ":verify:releaseProbeClasspath",
+    "--console=plain"
+  ],
+  "exitCode": 0,
+  "elapsedSeconds": 747.186999999918
+}

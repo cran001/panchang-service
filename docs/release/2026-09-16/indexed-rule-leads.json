@@ -1,0 +1,16 @@
+{
+  "purpose": "DISCOVERY_LEADS_NOT_COMPLETE_AUTHORITY_OR_APPROVAL",
+  "observedOn": "2026-09-20",
+  "sourceUrl": "https://gopal.home.sk/gcal/docs/GCalVaisnavaCalculation.pdf",
+  "title": "Vaisnava Events Calculation in GCAL",
+  "access": "Search-index excerpts only; direct HTTPS downloads failed hostname verification, HTTP returned 403",
+  "completeSourceSha256": null,
+  "queries": [
+    "site:gopal.home.sk/gcal/docs/GCalVaisnavaCalculation.pdf Unmilani parana",
+    "site:gopal.home.sk/gcal/docs/GCalVaisnavaCalculation.pdf Jaya Papanasini Vijaya",
+    "site:gopal.home.sk/gcal/docs/GCalVaisnavaCalculation.pdf Case 3 Unmilani",
+    "site:gopal.home.sk/gcal/docs/GCalVaisnavaCalculation.pdf Paksavardhini"
+  ],
+  "scope": "Section 1.4.1 and preceding Ekadasi decision table; paraphrased leads recorded in QUESTIONS.md",
+  "limitation": "No authenticated full document revision or proof of exact Build 5 applicability; no dispute resolution, reviewer record, reference replacement or approval created"
+}

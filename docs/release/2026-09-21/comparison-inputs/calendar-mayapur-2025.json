@@ -1,0 +1,29 @@
+{
+  "id": "calendar-mayapur-2025",
+  "url": "https://www.vaisnavacalendar.info/calendars/2025/Mayapur%20%5BIndia%5D.txt",
+  "kind": "calendar",
+  "retrievedAtUtc": "2026-09-15T19:53:51.591970+00:00",
+  "cityId": "mayapur",
+  "year": 2025,
+  "lineage": "vaisnavacalendar.info/GCal-text",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": 200,
+  "finalUrl": "https://www.vaisnavacalendar.info/calendars/2025/Mayapur%20%5BIndia%5D.txt",
+  "responseHeaders": {
+    "Date": "Tue, 15 Sep 2026 19:53:52 GMT",
+    "Server": "Apache/2",
+    "Upgrade": "h2,h2c",
+    "Connection": "Upgrade, close",
+    "Last-Modified": "Mon, 29 Jan 2024 18:01:24 GMT",
+    "ETag": "\"9f5f-610196f20f5a5\"",
+    "Accept-Ranges": "bytes",
+    "Content-Length": "40799",
+    "Vary": "Accept-Encoding,User-Agent",
+    "Content-Type": "text/plain"
+  },
+  "file": "docs/release/2026-09-16/sources/calendar-mayapur-2025.raw",
+  "sha256": "b78714a817e21ac91c919178b40c332fb960215ea1c9b1812d4971dff2e75f86",
+  "bytes": 40799
+}

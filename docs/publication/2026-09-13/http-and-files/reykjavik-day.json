@@ -1,0 +1,291 @@
+{
+  "service": "panchang-api",
+  "schemaVersion": 2,
+  "publication": {
+    "contract": "publication-v2",
+    "calculation": "CALCULATED",
+    "validation": "SEPARATE_EVIDENCE_RECORDS_NOT_APPROVAL",
+    "humanApprovalRequired": true,
+    "qualifiedReviewQuestions": [
+      {
+        "id": "RARE-NAKSHATRA-QUALIFIERS",
+        "traditions": [
+          "iskcon"
+        ],
+        "fields": [
+          "OBSERVANCES"
+        ],
+        "description": "Jaya, Jayanti and Papanasini lack positive coverage; next-sunrise survival qualifiers remain inferred.",
+        "evidence": [
+          {
+            "link": "docs/audits/2026-09-12/AUDIT.md",
+            "sha256": "a40444c43b222725030d614a24aff0a6b34546f92bd941531aaa9d51be4d83e2",
+            "outcome": "UNRESOLVED_REVIEW_QUESTIONS"
+          }
+        ]
+      },
+      {
+        "id": "UNMILANI-PURITY-NAMING",
+        "traditions": [
+          "iskcon"
+        ],
+        "fields": [
+          "OBSERVANCES"
+        ],
+        "description": "Unmilani purity and naming qualifiers require qualified tradition review.",
+        "evidence": [
+          {
+            "link": "docs/audits/2026-09-12/AUDIT.md",
+            "sha256": "a40444c43b222725030d614a24aff0a6b34546f92bd941531aaa9d51be4d83e2",
+            "outcome": "UNRESOLVED_REVIEW_QUESTIONS"
+          }
+        ]
+      },
+      {
+        "id": "FAST-ENDING-ANCHORS",
+        "traditions": [
+          "iskcon"
+        ],
+        "fields": [
+          "EVENTS"
+        ],
+        "description": "Dusk versus civil twilight, midnight versus Nisita and interval-edge choice need an approved policy.",
+        "evidence": [
+          {
+            "link": "docs/audits/2026-09-12/AUDIT.md",
+            "sha256": "a40444c43b222725030d614a24aff0a6b34546f92bd941531aaa9d51be4d83e2",
+            "outcome": "UNRESOLVED_REVIEW_QUESTIONS"
+          }
+        ]
+      },
+      {
+        "id": "CATALOG-INTERPRETATIONS",
+        "traditions": [
+          "iskcon"
+        ],
+        "fields": [
+          "EVENTS"
+        ],
+        "description": "Ramanuja tithi versus regional nakshatra reckoning and Damodara closing labels remain human review questions.",
+        "evidence": [
+          {
+            "link": "docs/audits/2026-09-12/AUDIT.md",
+            "sha256": "a40444c43b222725030d614a24aff0a6b34546f92bd941531aaa9d51be4d83e2",
+            "outcome": "UNRESOLVED_REVIEW_QUESTIONS"
+          }
+        ]
+      },
+      {
+        "id": "HIGH-LATITUDE-OBSERVANCE",
+        "traditions": [
+          "iskcon"
+        ],
+        "fields": [
+          "EVENTS",
+          "OBSERVANCES"
+        ],
+        "description": "Assess whether this exact release scope uses high-latitude conditions lacking an authoritative observance oracle; record not-applicable reasoning when appropriate.",
+        "evidence": [
+          {
+            "link": "docs/audits/2026-09-12/AUDIT.md",
+            "sha256": "a40444c43b222725030d614a24aff0a6b34546f92bd941531aaa9d51be4d83e2",
+            "outcome": "UNRESOLVED_REVIEW_QUESTIONS"
+          }
+        ]
+      },
+      {
+        "id": "REFERENCE-COVERAGE",
+        "traditions": [
+          "iskcon"
+        ],
+        "fields": [
+          "EVENTS",
+          "OBSERVANCES"
+        ],
+        "description": "Review actual reference year/location coverage, missing 2028 calendars, uncertainty and exclusions; passing tests do not fill gaps.",
+        "evidence": [
+          {
+            "link": "docs/audits/2026-09-12/AUDIT.md",
+            "sha256": "a40444c43b222725030d614a24aff0a6b34546f92bd941531aaa9d51be4d83e2",
+            "outcome": "UNRESOLVED_REVIEW_QUESTIONS"
+          }
+        ]
+      }
+    ],
+    "legacyPublication": "REFUSED_CONTRACT_CANNOT_EXPRESS_WITHHOLDING"
+  },
+  "request": {
+    "sampradaya": "iskcon",
+    "year": 2026,
+    "scope": "DAY",
+    "date": "2026-06-27",
+    "scopeNote": "yearResolution.events is filtered to this date. ekadashiYear.observances keeps an Ekadashi whose fast OR whose parana window falls on this date, because the parana falls on the following day and is the thing most likely to be asked for on the morning itself; check observances[].date against observances[].parana.date to tell the two cases apart. yearResolution.unresolved is the whole year's, because an unresolved entry has no date to filter on."
+  },
+  "location": {
+    "coordinateSource": "CALLER_COORDINATES",
+    "query": "lat=64.1466&lon=-21.9426&tz=Atlantic/Reykjavik",
+    "coordinatesUsed": {
+      "latitude": 64.1466,
+      "longitude": -21.9426,
+      "timeZone": "Atlantic/Reykjavik",
+      "elevationMeters": 0.0
+    },
+    "nearestPlaceLabel": {
+      "place": {
+        "geonameId": 3413829,
+        "name": "Reykjav\u00edk",
+        "asciiName": "Reykjavik",
+        "kind": "CITY",
+        "country": "IS",
+        "admin1": "39",
+        "population": 118918,
+        "latitude": 64.13548,
+        "longitude": -21.89541,
+        "timeZone": "Atlantic/Reykjavik",
+        "attribution": "Place data \u00a9 GeoNames (https://www.geonames.org/), used under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)."
+      },
+      "distanceKm": 2.6,
+      "note": "A label for the coordinates supplied. Nothing was computed at this record's point."
+    },
+    "notes": [
+      "Computed at the coordinates you supplied, not at any place record. The place name below, if any, is a label only."
+    ]
+  },
+  "ekadashiYear": {
+    "schemaVersion": 2,
+    "year": 2026,
+    "site": {
+      "latitude": 64.1466,
+      "longitude": -21.9426,
+      "timeZone": "Atlantic/Reykjavik",
+      "elevationMeters": 0.0
+    },
+    "sampradaya": {
+      "id": "iskcon",
+      "displayName": "ISKCON / Gaudiya Vaishnava"
+    },
+    "publication": {
+      "state": "DISPUTED",
+      "guidance": "WITHHELD",
+      "field": "OBSERVANCES",
+      "coverage": {
+        "from": "2026-06-27",
+        "through": "2026-06-27"
+      },
+      "bundleFingerprint": "045b8dac9844fcb8747d603fac81cf736f93f0e1e1a20039ea6f15c943b10c8e",
+      "approvalRecordId": null,
+      "approverKeyId": null,
+      "approvedAt": null,
+      "issues": [
+        {
+          "id": "ASTRONOMY-01",
+          "place": {
+            "id": "audit:reykjavik",
+            "latitude": 64.1466,
+            "longitude": -21.9426,
+            "elevationMeters": 0.0,
+            "timeZone": "Atlantic/Reykjavik"
+          },
+          "tradition": "iskcon",
+          "coverage": {
+            "from": "2026-06-27",
+            "through": "2026-06-27"
+          },
+          "fields": [
+            "DAILY_ASTRONOMY",
+            "OBSERVANCES",
+            "EVENTS"
+          ],
+          "affectedDetails": [
+            "sunrise",
+            "sunriseDependentGuidance"
+          ],
+          "observedRevision": "2026-09-12-dirty-audit-and-repair-handoff",
+          "versionApplicability": "OBSERVED_AND_UNREVIEWED_SUCCESSORS",
+          "state": "DISPUTED",
+          "explanation": "Separate sunrise disagreement: -32.171 seconds versus the unchanged 30-second USNO rounding band; daylight repair did not settle it.",
+          "evidence": [
+            {
+              "link": "docs/audits/2026-09-12/reykjavik-sunrise-sensitivity.json",
+              "sha256": "6619671686e82a3873bc0e6b65ec84dc242f4e0d8b0f80e60268eeb8672fc68d",
+              "outcome": "UNRESOLVED_AUDIT_EVIDENCE"
+            }
+          ]
+        }
+      ],
+      "explanation": "Scoped audit cases require an explicit qualified resolution. An approved withholding decision keeps guidance withheld"
+    },
+    "diagnosticClassificationsAreNotApproval": true,
+    "observances": null,
+    "absenceMeaning": "GUIDANCE_WITHHELD_NOT_NO_EVENT"
+  },
+  "yearResolution": {
+    "schemaVersion": 2,
+    "year": 2026,
+    "site": {
+      "latitude": 64.1466,
+      "longitude": -21.9426,
+      "timeZone": "Atlantic/Reykjavik",
+      "elevationMeters": 0.0
+    },
+    "sampradaya": {
+      "id": "iskcon",
+      "displayName": "ISKCON / Gaudiya Vaishnava"
+    },
+    "publication": {
+      "state": "DISPUTED",
+      "guidance": "WITHHELD",
+      "field": "EVENTS",
+      "coverage": {
+        "from": "2026-06-27",
+        "through": "2026-06-27"
+      },
+      "bundleFingerprint": "045b8dac9844fcb8747d603fac81cf736f93f0e1e1a20039ea6f15c943b10c8e",
+      "approvalRecordId": null,
+      "approverKeyId": null,
+      "approvedAt": null,
+      "issues": [
+        {
+          "id": "ASTRONOMY-01",
+          "place": {
+            "id": "audit:reykjavik",
+            "latitude": 64.1466,
+            "longitude": -21.9426,
+            "elevationMeters": 0.0,
+            "timeZone": "Atlantic/Reykjavik"
+          },
+          "tradition": "iskcon",
+          "coverage": {
+            "from": "2026-06-27",
+            "through": "2026-06-27"
+          },
+          "fields": [
+            "DAILY_ASTRONOMY",
+            "OBSERVANCES",
+            "EVENTS"
+          ],
+          "affectedDetails": [
+            "sunrise",
+            "sunriseDependentGuidance"
+          ],
+          "observedRevision": "2026-09-12-dirty-audit-and-repair-handoff",
+          "versionApplicability": "OBSERVED_AND_UNREVIEWED_SUCCESSORS",
+          "state": "DISPUTED",
+          "explanation": "Separate sunrise disagreement: -32.171 seconds versus the unchanged 30-second USNO rounding band; daylight repair did not settle it.",
+          "evidence": [
+            {
+              "link": "docs/audits/2026-09-12/reykjavik-sunrise-sensitivity.json",
+              "sha256": "6619671686e82a3873bc0e6b65ec84dc242f4e0d8b0f80e60268eeb8672fc68d",
+              "outcome": "UNRESOLVED_AUDIT_EVIDENCE"
+            }
+          ]
+        }
+      ],
+      "explanation": "Scoped audit cases require an explicit qualified resolution. An approved withholding decision keeps guidance withheld"
+    },
+    "diagnosticClassificationsAreNotApproval": true,
+    "events": null,
+    "unresolved": null,
+    "absenceMeaning": "GUIDANCE_WITHHELD_NOT_NO_EVENT"
+  }
+}

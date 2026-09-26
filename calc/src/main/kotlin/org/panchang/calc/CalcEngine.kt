@@ -11,10 +11,19 @@ import kotlinx.serialization.json.put
 import kotlinx.serialization.json.putJsonObject
 import org.panchang.core.PanchangCalculator
 import org.panchang.ephemeris.Vsop87Ephemeris
+import org.panchang.sampradaya.BengaliRules
+import org.panchang.sampradaya.GujaratiRules
 import org.panchang.sampradaya.IskconRules
+import org.panchang.sampradaya.KannadaRules
+import org.panchang.sampradaya.MalayalamRules
+import org.panchang.sampradaya.MarathiRules
+import org.panchang.sampradaya.NorthIndianRules
 import org.panchang.sampradaya.ObservanceContext
+import org.panchang.sampradaya.OdiaRules
 import org.panchang.sampradaya.SampradayaRegistry
 import org.panchang.sampradaya.SampradayaRules
+import org.panchang.sampradaya.TamilRules
+import org.panchang.sampradaya.TeluguRules
 import org.panchang.sampradaya.YearResolution
 import org.panchang.wire.EkadashiYearDto
 import org.panchang.wire.WireJson
@@ -25,9 +34,12 @@ import org.panchang.wire.YearResolutionDto
  * The traditions this front door can be asked for.
  *
  * `:sampradaya` ships the registry empty on purpose — registering a tradition is a statement
- * that its rules exist, and only a front door knows which ones it is prepared to make. Exactly
- * one is registered here, because exactly one is implemented. Asking for anything else is an
- * error naming what *is* known; it is never quietly answered with Gaudiya dates.
+ * that its rules exist, and only a front door knows which ones it is prepared to make. ISKCON
+ * is the one tradition whose Ekadashi, Mahadvadashi and parana rules are implemented and
+ * conformance-tested; the nine regional traditions registered alongside it carry **festival
+ * catalogs only** (each [VerificationStatus.UNVERIFIED]), and their `ekadashiObservances`
+ * return empty lists rather than borrowing ISKCON's fasting rulings. Asking for a tradition
+ * that exists but has no ekadashi timing gets exactly that — never another tradition's dates.
  */
 object Sampradayas {
 
@@ -35,6 +47,15 @@ object Sampradayas {
 
     init {
         SampradayaRegistry.register(iskcon)
+        SampradayaRegistry.register(MarathiRules())
+        SampradayaRegistry.register(TeluguRules())
+        SampradayaRegistry.register(KannadaRules())
+        SampradayaRegistry.register(GujaratiRules())
+        SampradayaRegistry.register(NorthIndianRules())
+        SampradayaRegistry.register(TamilRules())
+        SampradayaRegistry.register(MalayalamRules())
+        SampradayaRegistry.register(BengaliRules())
+        SampradayaRegistry.register(OdiaRules())
     }
 
     operator fun get(id: String): SampradayaRules? = SampradayaRegistry[id]
@@ -143,6 +164,7 @@ object CalcJson {
 
     fun document(result: CalcResult): JsonObject = buildJsonObject {
         put("tool", JsonPrimitive("panchang-calc"))
+        put("purpose", JsonPrimitive("CALCULATED_REVIEW_ONLY_NOT_APPROVED_GUIDANCE"))
         putJsonObject("request") {
             put("sampradaya", JsonPrimitive(result.rules.id))
             put("year", JsonPrimitive(result.scope.year))

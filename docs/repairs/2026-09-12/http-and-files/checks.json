@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "requests": [
+    {
+      "name": "mayapur-year",
+      "url": "http://127.0.0.1:64456/v1/calendar/iskcon/2026?lat=23.416666666666668&lon=88.38333333333334&tz=Asia%2FKolkata",
+      "status": 200
+    },
+    {
+      "name": "mayapur-day",
+      "url": "http://127.0.0.1:64456/v1/day/iskcon/2026-01-01?lat=23.416666666666668&lon=88.38333333333334&tz=Asia%2FKolkata",
+      "status": 200
+    },
+    {
+      "name": "mayapur-january-2",
+      "url": "http://127.0.0.1:64456/v1/day/iskcon/2026-01-02?lat=23.416666666666668&lon=88.38333333333334&tz=Asia%2FKolkata",
+      "status": 200
+    },
+    {
+      "name": "reykjavik-year",
+      "url": "http://127.0.0.1:64456/v1/calendar/iskcon/2026?lat=64.1466&lon=-21.9426&tz=Atlantic%2FReykjavik",
+      "status": 200
+    },
+    {
+      "name": "reykjavik-day",
+      "url": "http://127.0.0.1:64456/v1/day/iskcon/2026-06-26?lat=64.1466&lon=-21.9426&tz=Atlantic%2FReykjavik",
+      "status": 200
+    }
+  ],
+  "checks": [
+    "real HTTP day/year agreement",
+    "HTTP/written v1 agreement",
+    "legacy January attachment context",
+    "no duplicated or unrelated legacy dates",
+    "Reykjavik end reason and inward legacy rounding"
+  ],
+  "deployed": false,
+  "junitTestCounts": false
+}

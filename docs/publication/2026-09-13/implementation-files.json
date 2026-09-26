@@ -1,0 +1,38 @@
+{
+  "changedExisting": [
+    "api/build.gradle.kts",
+    "api/src/main/kotlin/org/panchang/api/ApiFailure.kt",
+    "api/src/main/kotlin/org/panchang/api/Routes.kt",
+    "api/src/test/kotlin/org/panchang/api/CrossFrontDoorIdentityTest.kt",
+    "api/src/test/kotlin/org/panchang/api/DeliveryFrontDoorTest.kt",
+    "api/src/test/kotlin/org/panchang/api/Fixtures.kt",
+    "calc/src/main/kotlin/org/panchang/calc/CalcEngine.kt",
+    "calc/src/main/kotlin/org/panchang/calc/HumanReport.kt",
+    "publish/build.gradle.kts",
+    "publish/src/main/kotlin/org/panchang/publish/FeedPublisher.kt",
+    "publish/src/main/kotlin/org/panchang/publish/Main.kt",
+    "publish/src/main/kotlin/org/panchang/publish/PublishReport.kt",
+    "publish/src/test/kotlin/org/panchang/publish/FeedPublisherTest.kt",
+    "publish/src/test/kotlin/org/panchang/publish/RegionalFeedPublishTest.kt",
+    "settings.gradle.kts"
+  ],
+  "newImplementationFiles": [
+    "api/src/test/kotlin/org/panchang/api/PublicationControlsApiTest.kt",
+    "publication/build.gradle.kts",
+    "publication/examples/TEST-ONLY-evidence.txt",
+    "publication/examples/approve.template.json",
+    "publication/examples/prepare.TEST-ONLY.json",
+    "publication/examples/review.template.json",
+    "publication/examples/revoke.template.json",
+    "publication/examples/supersede.template.json",
+    "publication/src/main/kotlin/org/panchang/publication/Disputes.kt",
+    "publication/src/main/kotlin/org/panchang/publication/LocalJournal.kt",
+    "publication/src/main/kotlin/org/panchang/publication/Main.kt",
+    "publication/src/main/kotlin/org/panchang/publication/PublicationPolicy.kt",
+    "publication/src/main/kotlin/org/panchang/publication/Records.kt",
+    "publication/src/main/resources/org/panchang/publication/disputes.json",
+    "publication/src/test/kotlin/org/panchang/publication/PublicationPolicyTest.kt",
+    "publication/src/testFixtures/kotlin/org/panchang/publication/TestApprovals.kt",
+    "publish/src/main/kotlin/org/panchang/publish/PublicFeedPublisher.kt"
+  ]
+}

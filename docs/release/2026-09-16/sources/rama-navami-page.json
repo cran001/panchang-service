@@ -1,0 +1,25 @@
+{
+  "id": "rama-navami-page",
+  "url": "https://www.vaisnavacalendar.info/rama%E2%80%90navami-observance-and-fasting",
+  "kind": "documentation",
+  "retrievedAtUtc": "2026-09-20T17:52:30.327775+00:00",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": 200,
+  "finalUrl": "https://www.vaisnavacalendar.info/rama%E2%80%90navami-observance-and-fasting",
+  "responseHeaders": {
+    "Date": "Sun, 20 Sep 2026 17:52:33 GMT",
+    "Server": "Apache/2",
+    "X-UA-Compatible": "IE=edge",
+    "Link": "<https://www.vaisnavacalendar.info/wp-json/>; rel=\"https://api.w.org/\", <https://www.vaisnavacalendar.info/wp-json/wp/v2/pages/1425>; rel=\"alternate\"; type=\"application/json\", <https://www.vaisnavacalendar.info/?p=1425>; rel=shortlink",
+    "Upgrade": "h2,h2c",
+    "Connection": "Upgrade, close",
+    "Vary": "Accept-Encoding,User-Agent",
+    "Transfer-Encoding": "chunked",
+    "Content-Type": "text/html; charset=UTF-8"
+  },
+  "file": "docs/release/2026-09-16/sources/rama-navami-page.raw",
+  "sha256": "e8c7c1d49e608f92debf837de1038cc5ffed96278b21382ed45b87977e808fdd",
+  "bytes": 81235
+}

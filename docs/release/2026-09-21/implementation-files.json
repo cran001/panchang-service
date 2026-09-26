@@ -1,0 +1,20 @@
+{
+  "changed": [
+    "api/src/test/kotlin/org/panchang/api/DeliveryFrontDoorTest.kt",
+    "api/src/test/kotlin/org/panchang/api/PublicationControlsApiTest.kt",
+    "docs/release/2026-09-16/__pycache__/inventory.cpython-311.pyc",
+    "publication/src/main/kotlin/org/panchang/publication/PublicationPolicy.kt",
+    "publish/src/main/kotlin/org/panchang/publish/PublicFeedPublisher.kt",
+    "api/src/main/kotlin/org/panchang/api/Main.kt",
+    "api/src/main/kotlin/org/panchang/api/Routes.kt",
+    "api/src/test/kotlin/org/panchang/api/Fixtures.kt",
+    "api/src/test/kotlin/org/panchang/api/PlaceRenderingTest.kt",
+    "api/src/test/kotlin/org/panchang/api/RoutesTest.kt",
+    "publish/src/main/kotlin/org/panchang/publish/Main.kt"
+  ],
+  "added": [
+    "api/src/test/kotlin/org/panchang/api/VersionMigrationTest.kt",
+    "publication/src/main/kotlin/org/panchang/publication/CalculationCache.kt",
+    "publication/src/test/kotlin/org/panchang/publication/CalculationCacheTest.kt"
+  ]
+}

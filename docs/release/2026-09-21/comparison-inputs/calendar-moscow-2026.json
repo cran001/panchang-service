@@ -1,0 +1,29 @@
+{
+  "id": "calendar-moscow-2026",
+  "url": "https://www.vaisnavacalendar.info/calendars/2026/Moskva%20%5BRussia%5D.txt",
+  "kind": "calendar",
+  "retrievedAtUtc": "2026-09-21T09:05:41.834092+00:00",
+  "cityId": "moscow",
+  "year": 2026,
+  "lineage": "vaisnavacalendar.info/GCal-text",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": 200,
+  "finalUrl": "https://www.vaisnavacalendar.info/calendars/2026/Moskva%20%5BRussia%5D.txt",
+  "responseHeaders": {
+    "Date": "Mon, 21 Sep 2026 09:05:43 GMT",
+    "Server": "Apache/2",
+    "Upgrade": "h2,h2c",
+    "Connection": "Upgrade, close",
+    "Last-Modified": "Sun, 19 Jan 2025 15:13:25 GMT",
+    "ETag": "\"a1f2-62c1095e15f52\"",
+    "Accept-Ranges": "bytes",
+    "Content-Length": "41458",
+    "Vary": "Accept-Encoding,User-Agent",
+    "Content-Type": "text/plain"
+  },
+  "file": "docs/release/2026-09-21/sources/calendar-moscow-2026.raw",
+  "sha256": "ff1db8c94dd5e8e447e042b21fc8639a1a7b094e584a306cd7846cda2f0ac5b2",
+  "bytes": 41458
+}

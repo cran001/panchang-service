@@ -1,0 +1,34 @@
+ M api/src/main/kotlin/org/panchang/api/Routes.kt
+ M api/src/test/kotlin/org/panchang/api/RoutesTest.kt
+ M calc/src/main/kotlin/org/panchang/calc/CalcEngine.kt
+ M calc/src/test/kotlin/org/panchang/calc/CalcCliTest.kt
+ M publish/src/main/kotlin/org/panchang/publish/FeedPublisher.kt
+ M sampradaya/src/main/kotlin/org/panchang/sampradaya/EventCatalog.kt
+ M sampradaya/src/main/kotlin/org/panchang/sampradaya/EventResolver.kt
+ M wire/src/main/kotlin/org/panchang/wire/SiteAcceptance.kt
+ M wire/src/test/kotlin/org/panchang/wire/SiteAcceptanceTest.kt
+?? calc/src/test/kotlin/org/panchang/calc/SampradayasRegistrationTest.kt
+?? docs/sampradaya-coverage.md
+?? docs/sampradaya-expansion-guide.md
+?? publish/src/test/kotlin/org/panchang/publish/RegionalFeedPublishTest.kt
+?? sampradaya/src/main/kotlin/org/panchang/sampradaya/BengaliRules.kt
+?? sampradaya/src/main/kotlin/org/panchang/sampradaya/GujaratiRules.kt
+?? sampradaya/src/main/kotlin/org/panchang/sampradaya/KannadaRules.kt
+?? sampradaya/src/main/kotlin/org/panchang/sampradaya/MalayalamRules.kt
+?? sampradaya/src/main/kotlin/org/panchang/sampradaya/MarathiRules.kt
+?? sampradaya/src/main/kotlin/org/panchang/sampradaya/NorthIndianRules.kt
+?? sampradaya/src/main/kotlin/org/panchang/sampradaya/OdiaRules.kt
+?? sampradaya/src/main/kotlin/org/panchang/sampradaya/SolarIngressIndex.kt
+?? sampradaya/src/main/kotlin/org/panchang/sampradaya/TamilRules.kt
+?? sampradaya/src/main/kotlin/org/panchang/sampradaya/TeluguRules.kt
+?? sampradaya/src/test/kotlin/org/panchang/sampradaya/BengaliCalendarTest.kt
+?? sampradaya/src/test/kotlin/org/panchang/sampradaya/GujaratiCalendarTest.kt
+?? sampradaya/src/test/kotlin/org/panchang/sampradaya/KannadaCalendarTest.kt
+?? sampradaya/src/test/kotlin/org/panchang/sampradaya/MalayalamCalendarTest.kt
+?? sampradaya/src/test/kotlin/org/panchang/sampradaya/MarathiCalendarTest.kt
+?? sampradaya/src/test/kotlin/org/panchang/sampradaya/NorthIndianCalendarTest.kt
+?? sampradaya/src/test/kotlin/org/panchang/sampradaya/OdiaCalendarTest.kt
+?? sampradaya/src/test/kotlin/org/panchang/sampradaya/ReykjavikParanaTest.kt
+?? sampradaya/src/test/kotlin/org/panchang/sampradaya/SolarRuleTest.kt
+?? sampradaya/src/test/kotlin/org/panchang/sampradaya/TamilCalendarTest.kt
+?? sampradaya/src/test/kotlin/org/panchang/sampradaya/TeluguCalendarTest.kt

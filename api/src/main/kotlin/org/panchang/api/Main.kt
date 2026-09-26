@@ -14,17 +14,18 @@ import io.ktor.server.netty.Netty
  *
  * `PORT` and `HOST` are read from the environment because that is how a process manager passes
  * them, and defaulted so that `:api:run` works with no configuration at all. Nothing else is
- * configurable: there is no database, no credential and no tuning knob in this service, and a
- * configuration file that held only a port number would be a place for one to appear.
+ * configurable for approval. PANCHANG_CALC_CACHE_DIR optionally enables an operator-owned
+ * persistent calculation cache; PANCHANG_APPROVAL_MODE accepts only disabled.
  *
  * The whole engine is constructed once, at startup, and shared by every request.
  * `PanchangCalculator` and `Vsop87Ephemeris` hold no mutable state — every table in `:ephemeris`
- * is immutable and nothing is cached across calls — so one instance is safe for concurrent use and
- * a per-request instance would only re-do the constructor.
+ * is immutable. The optional yearly cache coordinates concurrent requests and processes through
+ * local filesystem locks. Every public response evaluates current publication policy.
  */
 fun main() {
     val host = System.getenv("HOST") ?: "0.0.0.0"
     val port = System.getenv("PORT")?.toIntOrNull() ?: 8080
-    embeddedServer(Netty, port = port, host = host) { panchangModule() }
+    val publication = org.panchang.publication.PublicationRuntime.service()
+    embeddedServer(Netty, port = port, host = host) { panchangModule(publication = publication) }
         .start(wait = true)
 }

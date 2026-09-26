@@ -1,0 +1,25 @@
+{
+  "id": "fasting-corrected-url",
+  "url": "https://www.vaisnavacalendar.info/fasting",
+  "kind": "documentation",
+  "retrievedAtUtc": "2026-09-20T17:52:24.177537+00:00",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": 200,
+  "finalUrl": "https://www.vaisnavacalendar.info/fasting",
+  "responseHeaders": {
+    "Date": "Sun, 20 Sep 2026 17:52:27 GMT",
+    "Server": "Apache/2",
+    "X-UA-Compatible": "IE=edge",
+    "Link": "<https://www.vaisnavacalendar.info/wp-json/>; rel=\"https://api.w.org/\", <https://www.vaisnavacalendar.info/wp-json/wp/v2/pages/252>; rel=\"alternate\"; type=\"application/json\", <https://www.vaisnavacalendar.info/?p=252>; rel=shortlink",
+    "Upgrade": "h2,h2c",
+    "Connection": "Upgrade, close",
+    "Vary": "Accept-Encoding,User-Agent",
+    "Transfer-Encoding": "chunked",
+    "Content-Type": "text/html; charset=UTF-8"
+  },
+  "file": "docs/release/2026-09-16/sources/fasting-corrected-url.raw",
+  "sha256": "5f6957d46fa69fa1d31515b2a3cb585d7763c9f5d1088eae45005b99842da9e4",
+  "bytes": 81763
+}

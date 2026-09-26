@@ -1,0 +1,11 @@
+{
+  "id": "gbc-resolutions-2019",
+  "url": "https://gbc.iskcon.org/gbc_res/GBCRES19.pdf",
+  "kind": "primary-authority-document",
+  "retrievedAtUtc": "2026-09-20T17:56:17.132205+00:00",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": 404,
+  "error": "HTTP Error 404: Not Found"
+}

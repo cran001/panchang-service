@@ -1,0 +1,42 @@
+{
+  "id": "gcal-events",
+  "url": "https://raw.githubusercontent.com/gopaladasa/GCAL-for-Windows/9267f9fde9aefe2e60fb30c80a7ac9fc366fa585/documentation/StandardEventsList.pdf",
+  "kind": "upstream-documentation",
+  "retrievedAtUtc": "2026-09-15T19:52:54.326816+00:00",
+  "upstreamRevision": "9267f9fde9aefe2e60fb30c80a7ac9fc366fa585",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": 200,
+  "finalUrl": "https://raw.githubusercontent.com/gopaladasa/GCAL-for-Windows/9267f9fde9aefe2e60fb30c80a7ac9fc366fa585/documentation/StandardEventsList.pdf",
+  "responseHeaders": {
+    "Connection": "close",
+    "Content-Length": "15600",
+    "Cache-Control": "max-age=300",
+    "Content-Security-Policy": "default-src 'none'; style-src 'unsafe-inline'; sandbox",
+    "Content-Type": "application/octet-stream",
+    "ETag": "\"e73ca56705fefa841605ddd478ca71309e387c49e5c3c23ad46f985d5b05fb3f\"",
+    "Strict-Transport-Security": "max-age=31536000",
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "deny",
+    "X-XSS-Protection": "1; mode=block",
+    "X-GitHub-Request-Id": "175E:ACE71:445D8:9DB6F:6AA9A215",
+    "x-github-edge-region": "centralindia",
+    "Accept-Ranges": "bytes",
+    "Date": "Tue, 15 Sep 2026 19:52:54 GMT",
+    "Via": "1.1 varnish",
+    "X-Served-By": "cache-bom-vanm7210075-BOM",
+    "X-Cache": "MISS",
+    "X-Cache-Hits": "0",
+    "X-Timer": "S1789501975.511121,VS0,VE275",
+    "Vary": "Authorization,Accept-Encoding",
+    "Access-Control-Allow-Origin": "*",
+    "Cross-Origin-Resource-Policy": "cross-origin",
+    "X-Fastly-Request-ID": "697c25762f6b05bd997d4a7408a7a0e1909a9330",
+    "Expires": "Tue, 15 Sep 2026 19:57:54 GMT",
+    "Source-Age": "0"
+  },
+  "file": "docs/release/2026-09-16/sources/gcal-events.pdf",
+  "sha256": "df6df762ea0f4075cece6333b79033308baf216101f8540edc214d55af92a68b",
+  "bytes": 15600
+}

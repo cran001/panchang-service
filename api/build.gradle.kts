@@ -34,6 +34,8 @@ plugins {
     application
 }
 dependencies {
+    implementation(project(":publication"))
+    testImplementation(testFixtures(project(":publication")))
     implementation(project(":calc"))
     implementation(project(":wire"))
     implementation(project(":gazetteer"))
@@ -44,6 +46,8 @@ dependencies {
     implementation(libs.ktor.server.status.pages)
     implementation(libs.logback.classic)
     testImplementation(libs.ktor.server.test.host)
+    // Delivery regressions compare actual HTTP payloads with files written by the publisher.
+    testImplementation(project(":publish"))
     // The acceptance test drives the real `:calc` CLI object, not just its engine, so that the
     // bytes it compares against are the bytes `--format json` actually writes to stdout. `:calc`
     // declares clikt `implementation`, so the test source set has to name it.

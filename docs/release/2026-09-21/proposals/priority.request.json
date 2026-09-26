@@ -1,0 +1,304 @@
+{
+  "members": [
+    {
+      "place": {
+        "id": "point:ad52d4f8f3ce2859efc67d68130645a129518b65e299612abefd7ca95e174ffd",
+        "latitude": 12.983333333333333,
+        "longitude": 77.6,
+        "elevationMeters": 0.0,
+        "timeZone": "Asia/Kolkata"
+      },
+      "tradition": "iskcon",
+      "year": 2026,
+      "coverage": {
+        "from": "2026-01-01",
+        "through": "2026-12-31"
+      },
+      "fields": [
+        "OBSERVANCES"
+      ]
+    },
+    {
+      "place": {
+        "id": "point:fad5e9599fb906fb770aca3c82140bb0ea4ce3cf44f1b19de35c8774c146dd82",
+        "latitude": 13.083333333333334,
+        "longitude": 80.28333333333333,
+        "elevationMeters": 0.0,
+        "timeZone": "Asia/Kolkata"
+      },
+      "tradition": "iskcon",
+      "year": 2026,
+      "coverage": {
+        "from": "2026-01-01",
+        "through": "2026-12-31"
+      },
+      "fields": [
+        "OBSERVANCES"
+      ]
+    },
+    {
+      "place": {
+        "id": "point:9044be8bde1db78cc2e3e8e484353f4597c804636499162f9e2dbed4acd405f6",
+        "latitude": 28.666666666666668,
+        "longitude": 77.21666666666667,
+        "elevationMeters": 0.0,
+        "timeZone": "Asia/Kolkata"
+      },
+      "tradition": "iskcon",
+      "year": 2026,
+      "coverage": {
+        "from": "2026-01-01",
+        "through": "2026-12-31"
+      },
+      "fields": [
+        "OBSERVANCES"
+      ]
+    },
+    {
+      "place": {
+        "id": "point:bc237e530d81fe29f0ab8c90f5486ce86853eeaaae2557bb56496fe6d9595da8",
+        "latitude": 26.183333333333334,
+        "longitude": 91.73333333333333,
+        "elevationMeters": 0.0,
+        "timeZone": "Asia/Kolkata"
+      },
+      "tradition": "iskcon",
+      "year": 2026,
+      "coverage": {
+        "from": "2026-01-01",
+        "through": "2026-12-31"
+      },
+      "fields": [
+        "OBSERVANCES"
+      ]
+    },
+    {
+      "place": {
+        "id": "point:4d762208d04a1908fb2fdb8e4f7dc49a7a3f96cd478df35eb3cb556a5f61ddd8",
+        "latitude": 17.383333333333333,
+        "longitude": 78.46666666666667,
+        "elevationMeters": 0.0,
+        "timeZone": "Asia/Kolkata"
+      },
+      "tradition": "iskcon",
+      "year": 2026,
+      "coverage": {
+        "from": "2026-01-01",
+        "through": "2026-12-31"
+      },
+      "fields": [
+        "OBSERVANCES"
+      ]
+    },
+    {
+      "place": {
+        "id": "point:b4ca8dd07b8583591294b50fe54cd3e0d26c5c0ec8f69e3db8bd87756800248b",
+        "latitude": 51.516666666666666,
+        "longitude": -0.13333333333333333,
+        "elevationMeters": 0.0,
+        "timeZone": "Europe/London"
+      },
+      "tradition": "iskcon",
+      "year": 2026,
+      "coverage": {
+        "from": "2026-01-01",
+        "through": "2026-12-31"
+      },
+      "fields": [
+        "OBSERVANCES"
+      ]
+    },
+    {
+      "place": {
+        "id": "point:fe60bf47b35d0b3e7323ff4eac2a153d1c0ed3bf999231a77c4c8674a0bb9fb2",
+        "latitude": 23.416666666666668,
+        "longitude": 88.38333333333334,
+        "elevationMeters": 0.0,
+        "timeZone": "Asia/Kolkata"
+      },
+      "tradition": "iskcon",
+      "year": 2026,
+      "coverage": {
+        "from": "2026-01-01",
+        "through": "2026-12-31"
+      },
+      "fields": [
+        "OBSERVANCES"
+      ]
+    }
+  ],
+  "referencePolicy": {
+    "id": "vaisnavacalendar-info-gcal-text",
+    "revision": "2026-09-21-ai-assisted-proposed",
+    "description": "Unsigned 2026 OBSERVANCES-only evidence proposal; original bands and exact points preserved. AI-assisted research is not qualified review or publication approval.",
+    "evidence": [
+      {
+        "link": "docs/release/2026-09-16/REFERENCE-POLICY.md",
+        "sha256": "59c2fe098f2d74ae2418b1af5a173a53bbf12f505be16f077a60bd5b137b2b2d",
+        "outcome": "PROPOSED_POLICY_NOT_APPROVED"
+      },
+      {
+        "link": "docs/release/2026-09-21/ai-assisted-review.json",
+        "sha256": "f6870d7b8c8c95ec9dc309ca255c9a8ad2cdf2ea0ec5dd7f89aff5eb268f3e2c",
+        "outcome": "AI_ASSISTED_EVIDENCE_REVIEW"
+      },
+      {
+        "link": "docs/release/2026-09-21/coverage-inventory.json",
+        "sha256": "8e306ff7af9d6676620ef7d07dde40470ab444265f8d1a06ef10559bfa20792d",
+        "outcome": "REPRODUCED_COMPARISONS_NOT_APPROVAL"
+      },
+      {
+        "link": "docs/release/2026-09-21/SOURCE-FINDINGS.md",
+        "sha256": "714bbfe0a0baa66e47e45f31917269bafb9dc0a6d6fa2dc2884331d51f088517",
+        "outcome": "AI_ASSISTED_SOURCE_INVESTIGATION_NOT_APPROVAL"
+      },
+      {
+        "link": "docs/release/2026-09-21/source-checks.json",
+        "sha256": "f09999f38793baa67499526889448da0154290b2f6fcf85189e5ea3460887f02",
+        "outcome": "HASHED_RESEARCH_SOURCES_NOT_APPROVAL"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "link": "docs/release/2026-09-21/measurements/bangalore-2026.json",
+      "sha256": "f817414f53d957aaa00d092e320b9de3ff1b1bd691a17d5f80eb3e71ec2ac5a8",
+      "outcome": "AI_ASSISTED_MEASUREMENT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-bangalore-2025.raw",
+      "sha256": "3912a35a2f1c29473f2c5204e25686454d144d7b0642531137d848d890ef14a4",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-21/sources/calendar-bangalore-2026-retry.raw",
+      "sha256": "781f54e9914e832ea16fd4787aa89a559dece9b639858be4f94479be21903972",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-bangalore-2027.raw",
+      "sha256": "70eb5a3e2e4d52c4f02324f6757955f7dc1853c1d5adfe0fa4a631416c9e0414",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-21/measurements/chennai-2026.json",
+      "sha256": "b9fa88b78984daf8be7f44d739666d32bbbc8f359132c53c6aabd3aa7a92c578",
+      "outcome": "AI_ASSISTED_MEASUREMENT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-chennai-2025.raw",
+      "sha256": "e41116df854fc689f07bf9b8336769e62c99f131889a472f8d791a89f3acbf87",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-21/sources/calendar-chennai-2026.raw",
+      "sha256": "76cad39e527ffdecbcdbb15bd597873440769f8259f59fd7142db2d7c99a1bcf",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-chennai-2027.raw",
+      "sha256": "d7f002c434856cbcb6f5beb73d877a9a4428a3521c3f16353825c3697f035bcc",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-21/measurements/delhi-2026.json",
+      "sha256": "e924319bbf29b4677c923678838703229bf5c379849b9e460f8c3fa87c0d660c",
+      "outcome": "AI_ASSISTED_MEASUREMENT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-delhi-2025.raw",
+      "sha256": "740646536b0ee057b4594c0a95484bcb65e3663c34e806a8bc5cdabb0aad0741",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-21/sources/calendar-delhi-2026.raw",
+      "sha256": "2477eeb288fbf0aa27969de770e142d6a397624dd6e4f5a4c746d574e141eebe",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-delhi-2027.raw",
+      "sha256": "7c70eb9fbb19cdec3a73762670d6aa9b1ec700b1d783330efcf911d390ac098f",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-21/measurements/guwahati-2026.json",
+      "sha256": "7c04065218a407d14440beabcbcccdc9ace21dfaa6f6229850fb5c9c65abbfd7",
+      "outcome": "AI_ASSISTED_MEASUREMENT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-guwahati-2025.raw",
+      "sha256": "46943b11ac3aef8f722d204d53f26e32c24f05606f61953db75b6ae3074d8eaf",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-21/sources/calendar-guwahati-2026.raw",
+      "sha256": "5819d25013ad2374115d22504d7193fb2655ff91e7d6f8915200bd7d3876ed9c",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-guwahati-2027.raw",
+      "sha256": "5cf03394bddf70e39a233a71a31a3b942042e22b898374b57abefbbbbda133df",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-21/measurements/hyderabad-2026.json",
+      "sha256": "8fcad776e72e06a4566741a811baec4377a3b17de741a1494f52820a30183fb3",
+      "outcome": "AI_ASSISTED_MEASUREMENT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-hyderabad-2025.raw",
+      "sha256": "d9808934c6a4013e4b5f49d8b8e163ec16ea966f18af110d52a0600ff9915ade",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-21/sources/calendar-hyderabad-2026.raw",
+      "sha256": "171c6fd7f97c83a1cf9789e2906b3dceafc45bb56dd462767565564873e4a439",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-hyderabad-2027.raw",
+      "sha256": "9a55b8eff9e6f2e2d5a84c9c120bf8c91935cde87178ec42b74550866dbc4ca8",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-21/measurements/london-2026.json",
+      "sha256": "ec1ea616c08d2b89fc382fad3632d3f84fdbac336cef444cce167cb91ee4a634",
+      "outcome": "AI_ASSISTED_MEASUREMENT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-london-2025.raw",
+      "sha256": "7b2b2913c7dc333b6223ffe5c1c65be5df3e58c8ee044ee23e23c1a6e1385197",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-21/sources/calendar-london-2026.raw",
+      "sha256": "521de0c0c54cc8c79f6e2872c757c6158c48234294e97236303bf56524a034d2",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-london-2027.raw",
+      "sha256": "1a725685690673dafee26763978290c64c9f07d08e0f854b4079e9c1afc39d76",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-21/measurements/mayapur-2026.json",
+      "sha256": "4a3b160a184c2c6742ed329f767b8208cabb9d306bbebe3ee3dfe88969ae3b00",
+      "outcome": "AI_ASSISTED_MEASUREMENT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-mayapur-2025.raw",
+      "sha256": "b78714a817e21ac91c919178b40c332fb960215ea1c9b1812d4971dff2e75f86",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-21/sources/calendar-mayapur-2026.raw",
+      "sha256": "51fbe8bb9ab3e92a9090b7c8d9d204055c8e3b9b51422cba9aab7003112f84b0",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    },
+    {
+      "link": "docs/release/2026-09-16/sources/calendar-mayapur-2027.raw",
+      "sha256": "3d3dd810eec68a3f095ef574c5c3edd87e17c2778a002a4747ed3d9bab6d5590",
+      "outcome": "DESIGNATED_REFERENCE_CONTEXT_NOT_APPROVAL"
+    }
+  ]
+}

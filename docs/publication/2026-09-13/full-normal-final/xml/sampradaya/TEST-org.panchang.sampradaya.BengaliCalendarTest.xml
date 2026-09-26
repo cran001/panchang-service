@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.sampradaya.BengaliCalendarTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-09-14T05:31:36" hostname="DESKTOP-KBUKJ2P" time="17.402">
+  <properties/>
+  <testcase name="Pohela Boishakh 2026 resolves inside the Mesha window()" classname="org.panchang.sampradaya.BengaliCalendarTest" time="10.832"/>
+  <testcase name="ekadashi timing is absent and the rest of the catalog resolves()" classname="org.panchang.sampradaya.BengaliCalendarTest" time="6.568"/>
+  <testcase name="the rules identify themselves and stay unverified()" classname="org.panchang.sampradaya.BengaliCalendarTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

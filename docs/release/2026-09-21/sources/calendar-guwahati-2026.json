@@ -1,0 +1,29 @@
+{
+  "id": "calendar-guwahati-2026",
+  "url": "https://www.vaisnavacalendar.info/calendars/2026/Guwahati%20%5BIndia%5D.txt",
+  "kind": "calendar",
+  "retrievedAtUtc": "2026-09-21T09:05:26.695928+00:00",
+  "cityId": "guwahati",
+  "year": 2026,
+  "lineage": "vaisnavacalendar.info/GCal-text",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": 200,
+  "finalUrl": "https://www.vaisnavacalendar.info/calendars/2026/Guwahati%20%5BIndia%5D.txt",
+  "responseHeaders": {
+    "Date": "Mon, 21 Sep 2026 09:05:27 GMT",
+    "Server": "Apache/2",
+    "Upgrade": "h2,h2c",
+    "Connection": "Upgrade, close",
+    "Last-Modified": "Sun, 19 Jan 2025 15:13:18 GMT",
+    "ETag": "\"a299-62c109576aac2\"",
+    "Accept-Ranges": "bytes",
+    "Content-Length": "41625",
+    "Vary": "Accept-Encoding,User-Agent",
+    "Content-Type": "text/plain"
+  },
+  "file": "docs/release/2026-09-21/sources/calendar-guwahati-2026.raw",
+  "sha256": "5819d25013ad2374115d22504d7193fb2655ff91e7d6f8915200bd7d3876ed9c",
+  "bytes": 41625
+}

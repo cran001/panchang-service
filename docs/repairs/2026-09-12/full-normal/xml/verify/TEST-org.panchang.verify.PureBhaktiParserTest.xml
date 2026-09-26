@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.verify.PureBhaktiParserTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-09-12T16:07:35" hostname="DESKTOP-KBUKJ2P" time="0.007">
+  <properties/>
+  <testcase name="extracts dated observance lines when they are present()" classname="org.panchang.verify.PureBhaktiParserTest" time="0.004"/>
+  <testcase name="fails explicitly on a page with no calendar rows()" classname="org.panchang.verify.PureBhaktiParserTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

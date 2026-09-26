@@ -1,0 +1,29 @@
+{
+  "id": "calendar-sydney-2027",
+  "url": "https://www.vaisnavacalendar.info/calendars/2027/Sydney%20%5BAustralia%5D.txt",
+  "kind": "calendar",
+  "retrievedAtUtc": "2026-09-15T19:55:04.783402+00:00",
+  "cityId": "sydney",
+  "year": 2027,
+  "lineage": "vaisnavacalendar.info/GCal-text",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": 200,
+  "finalUrl": "https://www.vaisnavacalendar.info/calendars/2027/Sydney%20%5BAustralia%5D.txt",
+  "responseHeaders": {
+    "Date": "Tue, 15 Sep 2026 19:55:05 GMT",
+    "Server": "Apache/2",
+    "Upgrade": "h2,h2c",
+    "Connection": "Upgrade, close",
+    "Last-Modified": "Fri, 27 Mar 2026 19:49:05 GMT",
+    "ETag": "\"a369-64e06cb22638b\"",
+    "Accept-Ranges": "bytes",
+    "Content-Length": "41833",
+    "Vary": "Accept-Encoding,User-Agent",
+    "Content-Type": "text/plain"
+  },
+  "file": "docs/release/2026-09-16/sources/calendar-sydney-2027.raw",
+  "sha256": "c371f3d1ae0183d9e6ce09d92abd5c0ad443e83a3b94b5cc4a24718ac9260ca4",
+  "bytes": 41833
+}

@@ -1,0 +1,7 @@
+[
+  ".\\gradlew.bat",
+  "test",
+  "--rerun-tasks",
+  "--continue",
+  "--console=plain"
+]

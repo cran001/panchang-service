@@ -1,0 +1,67 @@
+{
+  "apiversion": "4.0.1", 
+  "geometry": {
+    "coordinates": [
+      -21.9426, 
+      64.1466
+    ], 
+    "type": "Point"
+  }, 
+  "properties": {
+    "data": {
+      "closestphase": {
+        "day": 29, 
+        "month": 6, 
+        "phase": "Full Moon", 
+        "time": "23:56", 
+        "year": 2026
+      }, 
+      "curphase": "Waxing Gibbous", 
+      "day": 26, 
+      "day_of_week": "Friday", 
+      "fracillum": "89%", 
+      "isdst": false, 
+      "label": "reykjavik", 
+      "month": 6, 
+      "moondata": [
+        {
+          "phen": "Set", 
+          "time": "00:17"
+        }, 
+        {
+          "phen": "Rise", 
+          "time": "22:27"
+        }, 
+        {
+          "phen": "Upper Transit", 
+          "time": "23:03"
+        }, 
+        {
+          "phen": "Set", 
+          "time": "23:31"
+        }
+      ], 
+      "sundata": [
+        {
+          "phen": "Object continuously above the Twilight Limit", 
+          "time": null
+        }, 
+        {
+          "phen": "Set", 
+          "time": "00:03"
+        }, 
+        {
+          "phen": "Rise", 
+          "time": "02:58"
+        }, 
+        {
+          "phen": "Upper Transit", 
+          "time": "13:31"
+        }
+      ], 
+      "tz": 0.0, 
+      "year": 2026
+    }
+  }, 
+  "type": "Feature"
+}

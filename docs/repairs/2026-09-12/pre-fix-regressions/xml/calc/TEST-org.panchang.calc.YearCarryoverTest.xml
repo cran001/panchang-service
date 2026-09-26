@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.calc.YearCarryoverTest" tests="2" skipped="0" failures="2" errors="0" timestamp="2026-09-12T15:56:57" hostname="DESKTOP-KBUKJ2P" time="42.962">
+  <properties/>
+  <testcase name="adjacent years share only the carryover and day selection agrees with each year()" classname="org.panchang.calc.YearCarryoverTest" time="32.396">
+    <failure message="java.util.NoSuchElementException: Collection contains no element matching the predicate." type="java.util.NoSuchElementException">java.util.NoSuchElementException: Collection contains no element matching the predicate.
+	at org.panchang.calc.YearCarryoverTest.adjacent years share only the carryover and day selection agrees with each year(YearCarryoverTest.kt:66)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.base/java.util.ArrayList.forEach(Unknown Source)
+	at java.base/java.util.ArrayList.forEach(Unknown Source)
+</failure>
+  </testcase>
+  <testcase name="January 1 retains the December fast with its distinct Parana date()" classname="org.panchang.calc.YearCarryoverTest" time="10.566">
+    <failure message="java.util.NoSuchElementException: List is empty." type="java.util.NoSuchElementException">java.util.NoSuchElementException: List is empty.
+	at kotlin.collections.CollectionsKt___CollectionsKt.single(_Collections.kt:616)
+	at org.panchang.calc.YearCarryoverTest.January 1 retains the December fast with its distinct Parana date(YearCarryoverTest.kt:21)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.base/java.util.ArrayList.forEach(Unknown Source)
+	at java.base/java.util.ArrayList.forEach(Unknown Source)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

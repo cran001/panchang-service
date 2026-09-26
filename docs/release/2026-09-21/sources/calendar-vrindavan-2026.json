@@ -1,0 +1,29 @@
+{
+  "id": "calendar-vrindavan-2026",
+  "url": "https://www.vaisnavacalendar.info/calendars/2026/Vrindavan%20%5BIndia%5D.txt",
+  "kind": "calendar",
+  "retrievedAtUtc": "2026-09-21T09:05:54.348265+00:00",
+  "cityId": "vrindavan",
+  "year": 2026,
+  "lineage": "vaisnavacalendar.info/GCal-text",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": 200,
+  "finalUrl": "https://www.vaisnavacalendar.info/calendars/2026/Vrindavan%20%5BIndia%5D.txt",
+  "responseHeaders": {
+    "Date": "Mon, 21 Sep 2026 09:05:54 GMT",
+    "Server": "Apache/2",
+    "Upgrade": "h2,h2c",
+    "Connection": "Upgrade, close",
+    "Last-Modified": "Sun, 19 Jan 2025 15:13:37 GMT",
+    "ETag": "\"a225-62c10968b8dfc\"",
+    "Accept-Ranges": "bytes",
+    "Content-Length": "41509",
+    "Vary": "Accept-Encoding,User-Agent",
+    "Content-Type": "text/plain"
+  },
+  "file": "docs/release/2026-09-21/sources/calendar-vrindavan-2026.raw",
+  "sha256": "da193be0364433b4ae9ddc2cd0d4cc2c27c794448a585d9d54556fba4a71872d",
+  "bytes": 41509
+}

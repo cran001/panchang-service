@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Assertions.assertNotNull
 import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test
 import org.panchang.gazetteer.Gazetteer
-import org.panchang.wire.POLAR_LIMIT_DEG
+import org.panchang.wire.MIDNIGHT_SUN_LIMIT_DEG
 
 /**
  * The HTTP surface: what each route answers, and — the part that carries weight — which status
@@ -27,7 +27,7 @@ class RoutesTest {
 
     @Test
     fun `health answers with a version it did not invent`() {
-        val r = call("/v1/health")
+        val r = call("/v2/health")
         assertEquals(200, r.status)
         assertEquals("ok", r.json["status"]!!.jsonPrimitive.content)
         assertEquals("panchang-api", r.json["service"]!!.jsonPrimitive.content)
@@ -41,7 +41,7 @@ class RoutesTest {
 
     @Test
     fun `meta states what is known, how well, and whose data this is`() {
-        val r = call("/v1/meta")
+        val r = call("/v2/meta")
         assertEquals(200, r.status)
 
         // The registry, as :wire's own document root, so a client reads the same status and
@@ -49,6 +49,7 @@ class RoutesTest {
         val list = r.json["sampradayas"]!!.jsonObject
         assertEquals(1, list["schemaVersion"]!!.jsonPrimitive.content.toInt())
         val entries = list["sampradayas"]!!.jsonArray.map { it.jsonObject }
+        assertEquals(listOf("iskcon"), entries.map { it["id"]!!.jsonPrimitive.content })
         assertTrue(entries.isNotEmpty(), "the registry must not be empty at this front door")
         val iskcon = entries.single { it["id"]!!.jsonPrimitive.content == "iskcon" }
         assertTrue(iskcon["status"]!!.jsonPrimitive.content.isNotBlank())
@@ -84,7 +85,7 @@ class RoutesTest {
         )
         assertTrue(
             r.json["notes"]!!.jsonArray.any {
-                it.jsonPrimitive.content.contains(POLAR_LIMIT_DEG.toString())
+                it.jsonPrimitive.content.contains("%.2f".format(MIDNIGHT_SUN_LIMIT_DEG))
             },
             "the boundary of the service must be discoverable before a 422 is met",
         )
@@ -94,7 +95,7 @@ class RoutesTest {
 
     @Test
     fun `a place search lists every record carrying the name and chooses none`() {
-        val r = call("/v1/places?q=Raigarh")
+        val r = call("/v2/places?q=Raigarh")
         assertEquals(200, r.status, "a search is not a resolution; finding two is a result")
         val ids = r.json["exactMatches"]!!.jsonArray
             .map { it.jsonObject["geonameId"]!!.jsonPrimitive.content.toInt() }
@@ -115,7 +116,7 @@ class RoutesTest {
 
     @Test
     fun `a historical name returns no record and the hint that names the modern one`() {
-        val r = call("/v1/places?q=Bombay")
+        val r = call("/v2/places?q=Bombay")
         assertEquals(200, r.status)
         assertTrue((r.json["exactMatches"] as JsonArray).isEmpty())
         assertTrue(r.json["hint"]!!.jsonPrimitive.content.contains("renamed Mumbai"))
@@ -123,14 +124,14 @@ class RoutesTest {
 
     @Test
     fun `a place search without q is refused`() {
-        val r = call("/v1/places")
+        val r = call("/v2/places")
         assertEquals(400, r.status)
         assertEquals("MISSING_PARAMETER", r.json["error"]!!.jsonObject["code"]!!.jsonPrimitive.content)
     }
 
     @Test
     fun `nearest names a record and how far away it is, as a label only`() {
-        val r = call("/v1/places/nearest?lat=19.0760&lon=72.8777")
+        val r = call("/v2/places/nearest?lat=19.0760&lon=72.8777")
         assertEquals(200, r.status)
         val nearest = r.json["nearest"]!!.jsonObject
         assertEquals("Mumbai", nearest["place"]!!.jsonObject["name"]!!.jsonPrimitive.content)
@@ -146,7 +147,7 @@ class RoutesTest {
     fun `nearest in the middle of an ocean says so rather than naming a distant record`() {
         // Point Nemo, the oceanic pole of inaccessibility. Nothing is within 150 km of it, and
         // naming a record 900 km away would be a fabrication.
-        val r = call("/v1/places/nearest?lat=-48.8767&lon=-123.3933")
+        val r = call("/v2/places/nearest?lat=-48.8767&lon=-123.3933")
         assertEquals(200, r.status, "absence is a result, not an error")
         assertFalse(r.json.containsKey("nearest"), "a client cannot format what is not there")
         val absent = r.json["absent"]!!.jsonObject
@@ -158,7 +159,7 @@ class RoutesTest {
     fun `nearest above the polar limit still answers, and warns before a calendar is asked for`() {
         // Longyearbyen. The gazetteer knows places up there; the observance rules cannot be
         // evaluated there. Telling a caller that here saves them a 422 they cannot act on.
-        val r = call("/v1/places/nearest?lat=78.2232&lon=15.6469")
+        val r = call("/v2/places/nearest?lat=78.2232&lon=15.6469")
         assertEquals(200, r.status)
         assertFalse(r.json["computable"]!!.jsonPrimitive.content.toBoolean())
         assertEquals("ABOVE_POLAR_LIMIT", r.json["notComputableCode"]!!.jsonPrimitive.content)
@@ -167,7 +168,7 @@ class RoutesTest {
 
     @Test
     fun `nearest with a latitude off the planet is a malformed request`() {
-        val r = call("/v1/places/nearest?lat=200&lon=0")
+        val r = call("/v2/places/nearest?lat=200&lon=0")
         assertEquals(400, r.status)
         assertEquals(
             "LATITUDE_OUT_OF_RANGE",
@@ -183,12 +184,12 @@ class RoutesTest {
         // real place with real devotees; there is simply no answer, because the rules are defined
         // against a sunrise that does not occur there every day. A 400 would tell the caller they
         // made a typing mistake.
-        val r = call("/v1/calendar/iskcon/2026?lat=78.2232&lon=15.6469&tz=Arctic/Longyearbyen")
+        val r = call("/v2/calendar/iskcon/2026?lat=78.2232&lon=15.6469&tz=Arctic/Longyearbyen")
         assertEquals(422, r.status)
         val error = r.json["error"]!!.jsonObject
         assertEquals("ABOVE_POLAR_LIMIT", error["code"]!!.jsonPrimitive.content)
         val message = error["message"]!!.jsonPrimitive.content
-        assertTrue(message.contains("beyond 66 degrees"), "wire's own sentence, unedited: $message")
+        assertTrue(message.contains("midnight-sun boundary"), "wire's own sentence, unedited: $message")
         assertTrue(message.contains("no sunrise"), "the reason must explain itself")
         assertTrue(
             message.contains("declines rather than guessing"),
@@ -203,13 +204,15 @@ class RoutesTest {
     }
 
     @Test
-    fun `a site exactly at the polar limit is answered`() {
-        // :wire states the limit as "above 66", not "at or above". A boundary that moves depending
-        // on which door you knock at is worse than either boundary.
-        val r = call("/v1/day/iskcon/2026-06-15?lat=66.0&lon=25.0&tz=Europe/Helsinki")
+    fun `a site below the midnight-sun boundary is answered`() {
+        // :wire states the boundary as "above", not "at or above", and computes it rather than
+        // choosing it. A boundary that moves depending on which door you knock at is worse than
+        // either boundary, so this asks with a real sub-boundary site: Reykjavik, whose midsummer
+        // night is under three hours long and whose Sun therefore sets every day of the year.
+        val r = call("/v2/day/iskcon/2026-06-15?lat=64.1466&lon=-21.9426&tz=Atlantic/Reykjavik")
         assertEquals(200, r.status)
         assertEquals(
-            66.0,
+            64.1466,
             r.json["location"]!!.jsonObject["coordinatesUsed"]!!.jsonObject["latitude"]!!
                 .jsonPrimitive.content.toDouble(),
         )
@@ -217,11 +220,12 @@ class RoutesTest {
 
     @Test
     fun `an unknown sampradaya is 404 naming what is known, never another tradition's dates`() {
-        val r = call("/v1/calendar/pushtimarg/2026?${Fixtures.MUMBAI_QUERY}")
+        val r = call("/v2/calendar/pushtimarg/2026?${Fixtures.MUMBAI_QUERY}")
         assertEquals(404, r.status)
         val error = r.json["error"]!!.jsonObject
         assertEquals("UNKNOWN_SAMPRADAYA", error["code"]!!.jsonPrimitive.content)
         assertTrue(error["message"]!!.jsonPrimitive.content.contains("iskcon"))
+        // Public discovery advertises launch scope, not the internal calculator registry.
         assertEquals(
             listOf("iskcon"),
             r.json["known"]!!.jsonArray.map { it.jsonPrimitive.content },
@@ -234,14 +238,14 @@ class RoutesTest {
 
     @Test
     fun `a malformed year is 400`() {
-        val r = call("/v1/calendar/iskcon/twentytwentysix?${Fixtures.MUMBAI_QUERY}")
+        val r = call("/v2/calendar/iskcon/twentytwentysix?${Fixtures.MUMBAI_QUERY}")
         assertEquals(400, r.status)
         assertEquals("MALFORMED_YEAR", r.json["error"]!!.jsonObject["code"]!!.jsonPrimitive.content)
     }
 
     @Test
     fun `a malformed date is 400`() {
-        val r = call("/v1/day/iskcon/15-01-2026?${Fixtures.MUMBAI_QUERY}")
+        val r = call("/v2/day/iskcon/15-01-2026?${Fixtures.MUMBAI_QUERY}")
         assertEquals(400, r.status)
         assertEquals("MALFORMED_DATE", r.json["error"]!!.jsonObject["code"]!!.jsonPrimitive.content)
         assertTrue(r.json["error"]!!.jsonObject["message"]!!.jsonPrimitive.content.contains("YYYY-MM-DD"))
@@ -251,7 +255,7 @@ class RoutesTest {
 
     @Test
     fun `an ambiguous place is 409 with every candidate named and none chosen`() {
-        val r = call("/v1/calendar/iskcon/2026?place=Raigarh")
+        val r = call("/v2/calendar/iskcon/2026?place=Raigarh")
         assertEquals(409, r.status, "several answers exist; choosing between them is not our call")
         assertEquals(
             "PLACE_AMBIGUOUS",
@@ -272,7 +276,7 @@ class RoutesTest {
 
     @Test
     fun `a placeId settles an ambiguous name`() {
-        val r = call("/v1/day/iskcon/2026-01-15?placeId=1259006")
+        val r = call("/v2/day/iskcon/2026-01-15?placeId=1259006")
         assertEquals(200, r.status)
         val location = r.json["location"]!!.jsonObject
         assertEquals("GAZETTEER_PLACE_POINT", location["coordinateSource"]!!.jsonPrimitive.content)
@@ -290,7 +294,7 @@ class RoutesTest {
 
     @Test
     fun `a name with no record is 404 and nothing is substituted for it`() {
-        val r = call("/v1/calendar/iskcon/2026?place=Bombay")
+        val r = call("/v2/calendar/iskcon/2026?place=Bombay")
         assertEquals(404, r.status)
         assertEquals(
             "PLACE_NOT_FOUND",
@@ -306,7 +310,7 @@ class RoutesTest {
 
     @Test
     fun `an unknown placeId is 404`() {
-        val r = call("/v1/calendar/iskcon/2026?placeId=1")
+        val r = call("/v2/calendar/iskcon/2026?placeId=1")
         assertEquals(404, r.status)
         assertEquals(
             "PLACE_ID_UNKNOWN",
@@ -316,7 +320,7 @@ class RoutesTest {
 
     @Test
     fun `coordinates and a place together are refused rather than silently ranked`() {
-        val r = call("/v1/calendar/iskcon/2026?place=Nadia&lat=23.0&lon=88.0&tz=Asia/Kolkata")
+        val r = call("/v2/calendar/iskcon/2026?place=Nadia&lat=23.0&lon=88.0&tz=Asia/Kolkata")
         assertEquals(400, r.status)
         assertEquals(
             "CONFLICTING_LOCATION",
@@ -330,7 +334,7 @@ class RoutesTest {
 
     @Test
     fun `coordinates without a zone are refused rather than guessed`() {
-        val r = call("/v1/calendar/iskcon/2026?lat=19.076&lon=72.8777")
+        val r = call("/v2/calendar/iskcon/2026?lat=19.076&lon=72.8777")
         assertEquals(400, r.status)
         assertEquals(
             "INCOMPLETE_COORDINATES",
@@ -344,7 +348,7 @@ class RoutesTest {
 
     @Test
     fun `an unknown time zone is a malformed request, not a polar one`() {
-        val r = call("/v1/calendar/iskcon/2026?lat=19.076&lon=72.8777&tz=Asia/Bombay")
+        val r = call("/v2/calendar/iskcon/2026?lat=19.076&lon=72.8777&tz=Asia/Bombay")
         assertEquals(400, r.status)
         assertEquals(
             "UNKNOWN_TIME_ZONE",
@@ -354,7 +358,7 @@ class RoutesTest {
 
     @Test
     fun `no location at all is refused with instructions`() {
-        val r = call("/v1/calendar/iskcon/2026")
+        val r = call("/v2/calendar/iskcon/2026")
         assertEquals(400, r.status)
         assertEquals(
             "MISSING_LOCATION",
@@ -366,10 +370,10 @@ class RoutesTest {
     @Test
     fun `every refusal is a json document with the same two identifying fields`() {
         for (url in listOf(
-            "/v1/calendar/iskcon/2026",
-            "/v1/calendar/pushtimarg/2026?${Fixtures.MUMBAI_QUERY}",
-            "/v1/places",
-            "/v1/calendar/iskcon/2026?lat=78.2232&lon=15.6469&tz=Arctic/Longyearbyen",
+            "/v2/calendar/iskcon/2026",
+            "/v2/calendar/pushtimarg/2026?${Fixtures.MUMBAI_QUERY}",
+            "/v2/places",
+            "/v2/calendar/iskcon/2026?lat=78.2232&lon=15.6469&tz=Arctic/Longyearbyen",
         )) {
             val r = call(url)
             assertTrue(r.status >= 400, "$url should refuse")

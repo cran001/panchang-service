@@ -1,0 +1,62 @@
+[
+    {
+        "city": "reykjavik",
+        "latitude": 64.1466,
+        "longitude": -21.9426,
+        "acceptance": "Accepted(site=SiteDto(latitude=64.1466, longitude=-21.9426, timeZone=Atlantic/Reykjavik, elevationMeters=0.0))",
+        "date": "2026-06-26",
+        "sunrise": "2026-06-26T02:58:18.180Z[Atlantic/Reykjavik]",
+        "sameDateSunset": "2026-06-26T00:02:56.238Z[Atlantic/Reykjavik]",
+        "nextDateSunset": "2026-06-27T00:02:12.968Z[Atlantic/Reykjavik]",
+        "civilDaylightMinutes": -175.365706756711,
+        "followingSunsetThird": "2026-06-26T09:59:36.443Z[Atlantic/Reykjavik]",
+        "actualParanaEnd": "2026-06-26T16:52:50.322Z[Atlantic/Reykjavik]",
+        "actualParanaEndBasis": "DVADASHI_END",
+        "actualParanaDurationMinutes": 834.5356994122267
+    },
+    {
+        "city": "akureyri",
+        "latitude": 65.6835,
+        "longitude": -18.0878,
+        "acceptance": "Accepted(site=SiteDto(latitude=65.6835, longitude=-18.0878, timeZone=Atlantic/Reykjavik, elevationMeters=0.0))",
+        "date": "2026-06-26",
+        "sunrise": "2026-06-26T01:39:28.286Z[Atlantic/Reykjavik]",
+        "sameDateSunset": "2026-06-26T00:50:55.847Z[Atlantic/Reykjavik]",
+        "nextDateSunset": "2026-06-27T00:47:48.334Z[Atlantic/Reykjavik]",
+        "civilDaylightMinutes": -48.54064799845219,
+        "followingSunsetThird": "2026-06-26T09:22:14.968Z[Atlantic/Reykjavik]",
+        "actualParanaEnd": null,
+        "actualParanaEndBasis": null,
+        "actualParanaDurationMinutes": null
+    },
+    {
+        "city": "longyearbyen",
+        "latitude": 78.2232,
+        "longitude": 15.6469,
+        "acceptance": "Rejected(code=ABOVE_POLAR_LIMIT, reason=Latitude 78.2232 is beyond this site's midnight-sun boundary of 65.73 degrees. At this latitude the Sun stays above the horizon around the clock at midsummer (and below it at midwinter), so there are days with no sunrise to test a tithi against. The observance rules are defined against a sunrise, and the tradition has no ruling we have a source for, so this service declines rather than guessing a fasting date.)",
+        "date": "2026-06-26",
+        "sunrise": null,
+        "sameDateSunset": null,
+        "nextDateSunset": null,
+        "civilDaylightMinutes": null,
+        "followingSunsetThird": null,
+        "actualParanaEnd": null,
+        "actualParanaEndBasis": null,
+        "actualParanaDurationMinutes": null
+    },
+    {
+        "city": "mcmurdo",
+        "latitude": -77.8419,
+        "longitude": 166.6863,
+        "acceptance": "Rejected(code=ABOVE_POLAR_LIMIT, reason=Latitude -77.8419 is beyond this site's midnight-sun boundary of 65.73 degrees. At this latitude the Sun stays above the horizon around the clock at midsummer (and below it at midwinter), so there are days with no sunrise to test a tithi against. The observance rules are defined against a sunrise, and the tradition has no ruling we have a source for, so this service declines rather than guessing a fasting date.)",
+        "date": "2026-06-26",
+        "sunrise": null,
+        "sameDateSunset": null,
+        "nextDateSunset": null,
+        "civilDaylightMinutes": null,
+        "followingSunsetThird": null,
+        "actualParanaEnd": null,
+        "actualParanaEndBasis": null,
+        "actualParanaDurationMinutes": null
+    }
+]

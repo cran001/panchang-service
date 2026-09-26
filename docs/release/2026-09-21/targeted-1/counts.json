@@ -1,0 +1,67 @@
+{
+  "total": {
+    "tests": 118,
+    "passed": 110,
+    "failed": 8,
+    "errors": 0,
+    "skipped": 0
+  },
+  "failures": [
+    {
+      "module": "api",
+      "suite": "org.panchang.api.DeliveryFrontDoorTest",
+      "name": "Reykjavik daylight cap and metadata agree through HTTP and written files()",
+      "kind": "failure",
+      "message": "java.io.FileNotFoundException: C:\\Users\\khanm\\AppData\\Local\\Temp\\junit-7839378455479369264\\review\\v2\\reykjavik\\ekadashi-year.json (The system cannot find the path specified)"
+    },
+    {
+      "module": "api",
+      "suite": "org.panchang.api.DeliveryFrontDoorTest",
+      "name": "January carryover agrees through HTTP day year and written v1 and legacy files()",
+      "kind": "failure",
+      "message": "java.io.FileNotFoundException: C:\\Users\\khanm\\AppData\\Local\\Temp\\junit-15244893215659043041\\review\\v2\\mayapur\\ekadashi-year.json (The system cannot find the path specified)"
+    },
+    {
+      "module": "publish",
+      "suite": "org.panchang.publish.FeedPublisherTest",
+      "name": "yearly files retain January Parana with the preceding legacy fast for attachment()",
+      "kind": "failure",
+      "message": "java.util.NoSuchElementException: Key v2/mayapur/ekadashi-year.json is missing in the map."
+    },
+    {
+      "module": "publish",
+      "suite": "org.panchang.publish.FeedPublisherTest",
+      "name": "the published v1 year resolution carries unresolved()",
+      "kind": "failure",
+      "message": "java.util.NoSuchElementException: Key v2/mayapur/year-resolution.json is missing in the map."
+    },
+    {
+      "module": "publish",
+      "suite": "org.panchang.publish.FeedPublisherTest",
+      "name": "two runs of the same request produce the same bytes()",
+      "kind": "failure",
+      "message": "java.util.NoSuchElementException: Key v2/new-york/year-resolution.json is missing in the map."
+    },
+    {
+      "module": "publish",
+      "suite": "org.panchang.publish.FeedPublisherTest",
+      "name": "every accepted site gets both v1 documents, including the one with no legacy file()",
+      "kind": "failure",
+      "message": "org.opentest4j.AssertionFailedError: no v1 year resolution for mayapur ==> expected: <true> but was: <false>"
+    },
+    {
+      "module": "publish",
+      "suite": "org.panchang.publish.RegionalFeedPublishTest",
+      "name": "the v1 year resolution keeps its unresolved record and the new year()",
+      "kind": "failure",
+      "message": "java.util.NoSuchElementException: Key v2/mumbai/year-resolution.json is missing in the map."
+    },
+    {
+      "module": "publish",
+      "suite": "org.panchang.publish.RegionalFeedPublishTest",
+      "name": "the v1 ekadashi year is schema-shaped and honestly empty()",
+      "kind": "failure",
+      "message": "java.util.NoSuchElementException: Key v2/mumbai/ekadashi-year.json is missing in the map."
+    }
+  ]
+}

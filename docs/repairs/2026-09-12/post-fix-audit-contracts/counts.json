@@ -1,0 +1,28 @@
+{
+  "xmlSource": "docs\\repairs\\2026-09-12\\post-fix-audit-contracts\\xml",
+  "modules": {
+    "verify": {
+      "tests": 3,
+      "passed": 2,
+      "failed": 1,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "total": {
+    "tests": 3,
+    "passed": 2,
+    "failed": 1,
+    "errors": 0,
+    "skipped": 0
+  },
+  "failures": [
+    {
+      "module": "verify",
+      "suite": "org.panchang.verify.audit.AuditEvidenceTest",
+      "name": "reykjavikSunriseRoundingContract()",
+      "kind": "failure",
+      "message": "org.opentest4j.AssertionFailedError: Held-out Reykjavik 2026-06-27 sunrise exceeds the predeclared USNO rounding interval ==> expected: <true> but was: <false>"
+    }
+  ]
+}

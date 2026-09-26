@@ -1,0 +1,722 @@
+[
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2027-moon.json",
+        "utc": "2027-01-01T00:00:00Z",
+        "referenceElongation": 284.29360249999996,
+        "expectedTithiIndex": 23,
+        "actualTithiIndex": 23,
+        "expectedKaranaIndex": 47,
+        "actualKaranaIndex": 47,
+        "deltaElongationArcsec": -0.4154231978191092
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2027-moon.json",
+        "utc": "2027-01-02T00:00:00Z",
+        "referenceElongation": 295.79237980000005,
+        "expectedTithiIndex": 24,
+        "actualTithiIndex": 24,
+        "expectedKaranaIndex": 49,
+        "actualKaranaIndex": 49,
+        "deltaElongationArcsec": 0.4614407609551563
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2027-moon.json",
+        "utc": "2027-01-03T00:00:00Z",
+        "referenceElongation": 307.0603226,
+        "expectedTithiIndex": 25,
+        "actualTithiIndex": 25,
+        "expectedKaranaIndex": 51,
+        "actualKaranaIndex": 51,
+        "deltaElongationArcsec": -0.5126326405161308
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2027-moon.json",
+        "utc": "2027-01-04T00:00:00Z",
+        "referenceElongation": 318.15288009999995,
+        "expectedTithiIndex": 26,
+        "actualTithiIndex": 26,
+        "expectedKaranaIndex": 53,
+        "actualKaranaIndex": 53,
+        "deltaElongationArcsec": -1.984061863640818
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2027-moon.json",
+        "utc": "2027-01-05T00:00:00Z",
+        "referenceElongation": 329.1177782,
+        "expectedTithiIndex": 27,
+        "actualTithiIndex": 27,
+        "expectedKaranaIndex": 54,
+        "actualKaranaIndex": 54,
+        "deltaElongationArcsec": -1.9371425131112119
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2027-moon.json",
+        "utc": "2027-01-06T00:00:00Z",
+        "referenceElongation": 339.9949081,
+        "expectedTithiIndex": 28,
+        "actualTithiIndex": 28,
+        "expectedKaranaIndex": 56,
+        "actualKaranaIndex": 56,
+        "deltaElongationArcsec": 0.045349661331783864
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2027-moon.json",
+        "utc": "2027-01-07T00:00:00Z",
+        "referenceElongation": 350.8178441,
+        "expectedTithiIndex": 29,
+        "actualTithiIndex": 29,
+        "expectedKaranaIndex": 58,
+        "actualKaranaIndex": 58,
+        "deltaElongationArcsec": 2.5312308160664543
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2027-moon.json",
+        "utc": "2027-01-08T00:00:00Z",
+        "referenceElongation": 1.6164875000000052,
+        "expectedTithiIndex": 0,
+        "actualTithiIndex": 0,
+        "expectedKaranaIndex": 0,
+        "actualKaranaIndex": 0,
+        "deltaElongationArcsec": 3.8660298350805533
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2027-moon.json",
+        "utc": "2027-01-09T00:00:00Z",
+        "referenceElongation": 12.420314399999995,
+        "expectedTithiIndex": 1,
+        "actualTithiIndex": 1,
+        "expectedKaranaIndex": 2,
+        "actualKaranaIndex": 2,
+        "deltaElongationArcsec": 3.665484421844667
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2027-moon.json",
+        "utc": "2027-01-10T00:00:00Z",
+        "referenceElongation": 23.261693699999967,
+        "expectedTithiIndex": 1,
+        "actualTithiIndex": 1,
+        "expectedKaranaIndex": 3,
+        "actualKaranaIndex": 3,
+        "deltaElongationArcsec": 2.7537154624269533
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2027-moon.json",
+        "utc": "2027-01-11T00:00:00Z",
+        "referenceElongation": 34.17875550000002,
+        "expectedTithiIndex": 2,
+        "actualTithiIndex": 2,
+        "expectedKaranaIndex": 5,
+        "actualKaranaIndex": 5,
+        "deltaElongationArcsec": 2.0347022506030044
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2027-moon.json",
+        "utc": "2027-01-12T00:00:00Z",
+        "referenceElongation": 45.2173396,
+        "expectedTithiIndex": 3,
+        "actualTithiIndex": 3,
+        "expectedKaranaIndex": 7,
+        "actualKaranaIndex": 7,
+        "deltaElongationArcsec": 1.6836710004554334
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2027-moon.json",
+        "utc": "2027-01-13T00:00:00Z",
+        "referenceElongation": 56.431593299999975,
+        "expectedTithiIndex": 4,
+        "actualTithiIndex": 4,
+        "expectedKaranaIndex": 9,
+        "actualKaranaIndex": 9,
+        "deltaElongationArcsec": 1.30676020496594
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2027-moon.json",
+        "utc": "2027-01-14T00:00:00Z",
+        "referenceElongation": 67.88279360000001,
+        "expectedTithiIndex": 5,
+        "actualTithiIndex": 5,
+        "expectedKaranaIndex": 11,
+        "actualKaranaIndex": 11,
+        "deltaElongationArcsec": 0.5717999938497087
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2027-moon.json",
+        "utc": "2027-01-15T00:00:00Z",
+        "referenceElongation": 79.63593169999996,
+        "expectedTithiIndex": 6,
+        "actualTithiIndex": 6,
+        "expectedKaranaIndex": 13,
+        "actualKaranaIndex": 13,
+        "deltaElongationArcsec": -0.41113581075933325
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2027-moon.json",
+        "utc": "2027-01-16T00:00:00Z",
+        "referenceElongation": 91.7535848,
+        "expectedTithiIndex": 7,
+        "actualTithiIndex": 7,
+        "expectedKaranaIndex": 15,
+        "actualKaranaIndex": 15,
+        "deltaElongationArcsec": -1.1370851223546197
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2027-moon.json",
+        "utc": "2027-01-17T00:00:00Z",
+        "referenceElongation": 104.28678839999998,
+        "expectedTithiIndex": 8,
+        "actualTithiIndex": 8,
+        "expectedKaranaIndex": 17,
+        "actualKaranaIndex": 17,
+        "deltaElongationArcsec": -1.0214105966269926
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2027-moon.json",
+        "utc": "2027-01-18T00:00:00Z",
+        "referenceElongation": 117.26325540000002,
+        "expectedTithiIndex": 9,
+        "actualTithiIndex": 9,
+        "expectedKaranaIndex": 19,
+        "actualKaranaIndex": 19,
+        "deltaElongationArcsec": 0.15986897233233321
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2027-moon.json",
+        "utc": "2027-01-19T00:00:00Z",
+        "referenceElongation": 130.67461219999996,
+        "expectedTithiIndex": 10,
+        "actualTithiIndex": 10,
+        "expectedKaranaIndex": 21,
+        "actualKaranaIndex": 21,
+        "deltaElongationArcsec": 1.9288337114517162
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2027-moon.json",
+        "utc": "2027-01-20T00:00:00Z",
+        "referenceElongation": 144.4661255,
+        "expectedTithiIndex": 12,
+        "actualTithiIndex": 12,
+        "expectedKaranaIndex": 24,
+        "actualKaranaIndex": 24,
+        "deltaElongationArcsec": 3.352678392548114
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2027-moon.json",
+        "utc": "2027-01-21T00:00:00Z",
+        "referenceElongation": 158.53372480000002,
+        "expectedTithiIndex": 13,
+        "actualTithiIndex": 13,
+        "expectedKaranaIndex": 26,
+        "actualKaranaIndex": 26,
+        "deltaElongationArcsec": 3.8846760001661096
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2027-moon.json",
+        "utc": "2027-01-22T00:00:00Z",
+        "referenceElongation": 172.73233580000002,
+        "expectedTithiIndex": 14,
+        "actualTithiIndex": 14,
+        "expectedKaranaIndex": 28,
+        "actualKaranaIndex": 28,
+        "deltaElongationArcsec": 3.824975890938731
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2027-moon.json",
+        "utc": "2027-01-23T00:00:00Z",
+        "referenceElongation": 186.89570960000003,
+        "expectedTithiIndex": 15,
+        "actualTithiIndex": 15,
+        "expectedKaranaIndex": 31,
+        "actualKaranaIndex": 31,
+        "deltaElongationArcsec": 3.645764232101101
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2027-moon.json",
+        "utc": "2027-01-24T00:00:00Z",
+        "referenceElongation": 200.8626069,
+        "expectedTithiIndex": 16,
+        "actualTithiIndex": 16,
+        "expectedKaranaIndex": 33,
+        "actualKaranaIndex": 33,
+        "deltaElongationArcsec": 3.1055298683099863
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2027-moon.json",
+        "utc": "2027-01-25T00:00:00Z",
+        "referenceElongation": 214.50099569999998,
+        "expectedTithiIndex": 17,
+        "actualTithiIndex": 17,
+        "expectedKaranaIndex": 35,
+        "actualKaranaIndex": 35,
+        "deltaElongationArcsec": 1.6331909412315326
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2027-moon.json",
+        "utc": "2027-01-26T00:00:00Z",
+        "referenceElongation": 227.72327120000003,
+        "expectedTithiIndex": 18,
+        "actualTithiIndex": 18,
+        "expectedKaranaIndex": 37,
+        "actualKaranaIndex": 37,
+        "deltaElongationArcsec": -0.43196051719860407
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2027-moon.json",
+        "utc": "2027-01-27T00:00:00Z",
+        "referenceElongation": 240.4901504,
+        "expectedTithiIndex": 20,
+        "actualTithiIndex": 20,
+        "expectedKaranaIndex": 40,
+        "actualKaranaIndex": 40,
+        "deltaElongationArcsec": -1.7007649691663573
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2027-moon.json",
+        "utc": "2027-01-28T00:00:00Z",
+        "referenceElongation": 252.80539229999997,
+        "expectedTithiIndex": 21,
+        "actualTithiIndex": 21,
+        "expectedKaranaIndex": 42,
+        "actualKaranaIndex": 42,
+        "deltaElongationArcsec": -1.2359249080418522
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2027-moon.json",
+        "utc": "2027-01-29T00:00:00Z",
+        "referenceElongation": 264.70553199999995,
+        "expectedTithiIndex": 22,
+        "actualTithiIndex": 22,
+        "expectedKaranaIndex": 44,
+        "actualKaranaIndex": 44,
+        "deltaElongationArcsec": 0.19403899282224302
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2027-moon.json",
+        "utc": "2027-01-30T00:00:00Z",
+        "referenceElongation": 276.2484705,
+        "expectedTithiIndex": 23,
+        "actualTithiIndex": 23,
+        "expectedKaranaIndex": 46,
+        "actualKaranaIndex": 46,
+        "deltaElongationArcsec": 0.8596077166430405
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2027-moon.json",
+        "utc": "2027-01-31T00:00:00Z",
+        "referenceElongation": 287.5033186,
+        "expectedTithiIndex": 23,
+        "actualTithiIndex": 23,
+        "expectedKaranaIndex": 47,
+        "actualKaranaIndex": 47,
+        "deltaElongationArcsec": 0.028600510427168047
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2027-moon.json",
+        "utc": "2027-02-01T00:00:00Z",
+        "referenceElongation": 298.5424878,
+        "expectedTithiIndex": 24,
+        "actualTithiIndex": 24,
+        "expectedKaranaIndex": 49,
+        "actualKaranaIndex": 49,
+        "deltaElongationArcsec": -1.2115097305013478
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2028-moon.json",
+        "utc": "2028-01-01T00:00:00Z",
+        "referenceElongation": 45.56488619999999,
+        "expectedTithiIndex": 3,
+        "actualTithiIndex": 3,
+        "expectedKaranaIndex": 7,
+        "actualKaranaIndex": 7,
+        "deltaElongationArcsec": 0.08694890536844468
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2028-moon.json",
+        "utc": "2028-01-02T00:00:00Z",
+        "referenceElongation": 56.327464899999995,
+        "expectedTithiIndex": 4,
+        "actualTithiIndex": 4,
+        "expectedKaranaIndex": 9,
+        "actualKaranaIndex": 9,
+        "deltaElongationArcsec": 0.8560950875562412
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2028-moon.json",
+        "utc": "2028-01-03T00:00:00Z",
+        "referenceElongation": 67.13809809999998,
+        "expectedTithiIndex": 5,
+        "actualTithiIndex": 5,
+        "expectedKaranaIndex": 11,
+        "actualKaranaIndex": 11,
+        "deltaElongationArcsec": 1.1096859674353254
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2028-moon.json",
+        "utc": "2028-01-04T00:00:00Z",
+        "referenceElongation": 78.0730666,
+        "expectedTithiIndex": 6,
+        "actualTithiIndex": 6,
+        "expectedKaranaIndex": 13,
+        "actualKaranaIndex": 13,
+        "deltaElongationArcsec": 0.1954686369117553
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2028-moon.json",
+        "utc": "2028-01-05T00:00:00Z",
+        "referenceElongation": 89.2129976,
+        "expectedTithiIndex": 7,
+        "actualTithiIndex": 7,
+        "expectedKaranaIndex": 14,
+        "actualKaranaIndex": 14,
+        "deltaElongationArcsec": -1.3164786785182514
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2028-moon.json",
+        "utc": "2028-01-06T00:00:00Z",
+        "referenceElongation": 100.6380605,
+        "expectedTithiIndex": 8,
+        "actualTithiIndex": 8,
+        "expectedKaranaIndex": 16,
+        "actualKaranaIndex": 16,
+        "deltaElongationArcsec": -2.260174197226661
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2028-moon.json",
+        "utc": "2028-01-07T00:00:00Z",
+        "referenceElongation": 112.4213752,
+        "expectedTithiIndex": 9,
+        "actualTithiIndex": 9,
+        "expectedKaranaIndex": 18,
+        "actualKaranaIndex": 18,
+        "deltaElongationArcsec": -2.086968198204886
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2028-moon.json",
+        "utc": "2028-01-08T00:00:00Z",
+        "referenceElongation": 124.62049610000003,
+        "expectedTithiIndex": 10,
+        "actualTithiIndex": 10,
+        "expectedKaranaIndex": 20,
+        "actualKaranaIndex": 20,
+        "deltaElongationArcsec": -1.3273770920818606
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2028-moon.json",
+        "utc": "2028-01-09T00:00:00Z",
+        "referenceElongation": 137.2674481,
+        "expectedTithiIndex": 11,
+        "actualTithiIndex": 11,
+        "expectedKaranaIndex": 22,
+        "actualKaranaIndex": 22,
+        "deltaElongationArcsec": -0.9130567820534452
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2028-moon.json",
+        "utc": "2028-01-10T00:00:00Z",
+        "referenceElongation": 150.35885090000002,
+        "expectedTithiIndex": 12,
+        "actualTithiIndex": 12,
+        "expectedKaranaIndex": 25,
+        "actualKaranaIndex": 25,
+        "deltaElongationArcsec": -1.19990364324849
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2028-moon.json",
+        "utc": "2028-01-11T00:00:00Z",
+        "referenceElongation": 163.84887940000002,
+        "expectedTithiIndex": 13,
+        "actualTithiIndex": 13,
+        "expectedKaranaIndex": 27,
+        "actualKaranaIndex": 27,
+        "deltaElongationArcsec": -1.6805163011440527
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2028-moon.json",
+        "utc": "2028-01-12T00:00:00Z",
+        "referenceElongation": 177.6484421,
+        "expectedTithiIndex": 14,
+        "actualTithiIndex": 14,
+        "expectedKaranaIndex": 29,
+        "actualKaranaIndex": 29,
+        "deltaElongationArcsec": -1.595688315433108
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2028-moon.json",
+        "utc": "2028-01-13T00:00:00Z",
+        "referenceElongation": 191.6330322,
+        "expectedTithiIndex": 15,
+        "actualTithiIndex": 15,
+        "expectedKaranaIndex": 31,
+        "actualKaranaIndex": 31,
+        "deltaElongationArcsec": -0.8091275633887562
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2028-moon.json",
+        "utc": "2028-01-14T00:00:00Z",
+        "referenceElongation": 205.65893739999999,
+        "expectedTithiIndex": 17,
+        "actualTithiIndex": 17,
+        "expectedKaranaIndex": 34,
+        "actualKaranaIndex": 34,
+        "deltaElongationArcsec": -0.10168897659923459
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2028-moon.json",
+        "utc": "2028-01-15T00:00:00Z",
+        "referenceElongation": 219.5840099,
+        "expectedTithiIndex": 18,
+        "actualTithiIndex": 18,
+        "expectedKaranaIndex": 36,
+        "actualKaranaIndex": 36,
+        "deltaElongationArcsec": -0.5004252783805896
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2028-moon.json",
+        "utc": "2028-01-16T00:00:00Z",
+        "referenceElongation": 233.28711429999998,
+        "expectedTithiIndex": 19,
+        "actualTithiIndex": 19,
+        "expectedKaranaIndex": 38,
+        "actualKaranaIndex": 38,
+        "deltaElongationArcsec": -2.149489206965427
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2028-moon.json",
+        "utc": "2028-01-17T00:00:00Z",
+        "referenceElongation": 246.6811099,
+        "expectedTithiIndex": 20,
+        "actualTithiIndex": 20,
+        "expectedKaranaIndex": 41,
+        "actualKaranaIndex": 41,
+        "deltaElongationArcsec": -3.9056824515796507
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2028-moon.json",
+        "utc": "2028-01-18T00:00:00Z",
+        "referenceElongation": 259.717181,
+        "expectedTithiIndex": 21,
+        "actualTithiIndex": 21,
+        "expectedKaranaIndex": 43,
+        "actualKaranaIndex": 43,
+        "deltaElongationArcsec": -4.274750732361099
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2028-moon.json",
+        "utc": "2028-01-19T00:00:00Z",
+        "referenceElongation": 272.3815843,
+        "expectedTithiIndex": 22,
+        "actualTithiIndex": 22,
+        "expectedKaranaIndex": 45,
+        "actualKaranaIndex": 45,
+        "deltaElongationArcsec": -2.8553869983852564
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2028-moon.json",
+        "utc": "2028-01-20T00:00:00Z",
+        "referenceElongation": 284.68776909999997,
+        "expectedTithiIndex": 23,
+        "actualTithiIndex": 23,
+        "expectedKaranaIndex": 47,
+        "actualKaranaIndex": 47,
+        "deltaElongationArcsec": -0.7193973655375885
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2028-moon.json",
+        "utc": "2028-01-21T00:00:00Z",
+        "referenceElongation": 296.6670203,
+        "expectedTithiIndex": 24,
+        "actualTithiIndex": 24,
+        "expectedKaranaIndex": 49,
+        "actualKaranaIndex": 49,
+        "deltaElongationArcsec": 0.7270779637110536
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2028-moon.json",
+        "utc": "2028-01-22T00:00:00Z",
+        "referenceElongation": 308.3599237,
+        "expectedTithiIndex": 25,
+        "actualTithiIndex": 25,
+        "expectedKaranaIndex": 51,
+        "actualKaranaIndex": 51,
+        "deltaElongationArcsec": 1.091648746592
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2028-moon.json",
+        "utc": "2028-01-23T00:00:00Z",
+        "referenceElongation": 319.8098521,
+        "expectedTithiIndex": 26,
+        "actualTithiIndex": 26,
+        "expectedKaranaIndex": 53,
+        "actualKaranaIndex": 53,
+        "deltaElongationArcsec": 1.0451881875951585
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2028-moon.json",
+        "utc": "2028-01-24T00:00:00Z",
+        "referenceElongation": 331.0588231,
+        "expectedTithiIndex": 27,
+        "actualTithiIndex": 27,
+        "expectedKaranaIndex": 55,
+        "actualKaranaIndex": 55,
+        "deltaElongationArcsec": 1.155632618360869
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2028-moon.json",
+        "utc": "2028-01-25T00:00:00Z",
+        "referenceElongation": 342.14556849999997,
+        "expectedTithiIndex": 28,
+        "actualTithiIndex": 28,
+        "expectedKaranaIndex": 57,
+        "actualKaranaIndex": 57,
+        "deltaElongationArcsec": 1.0767939307697816
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2028-moon.json",
+        "utc": "2028-01-26T00:00:00Z",
+        "referenceElongation": 353.10541789999996,
+        "expectedTithiIndex": 29,
+        "actualTithiIndex": 29,
+        "expectedKaranaIndex": 58,
+        "actualKaranaIndex": 58,
+        "deltaElongationArcsec": 0.14957895591578563
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2028-moon.json",
+        "utc": "2028-01-27T00:00:00Z",
+        "referenceElongation": 3.9715084999999704,
+        "expectedTithiIndex": 0,
+        "actualTithiIndex": 0,
+        "expectedKaranaIndex": 0,
+        "actualKaranaIndex": 0,
+        "deltaElongationArcsec": -1.3777472706124172
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2028-moon.json",
+        "utc": "2028-01-28T00:00:00Z",
+        "referenceElongation": 14.776817300000005,
+        "expectedTithiIndex": 1,
+        "actualTithiIndex": 1,
+        "expectedKaranaIndex": 2,
+        "actualKaranaIndex": 2,
+        "deltaElongationArcsec": -2.191750407610016
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2028-moon.json",
+        "utc": "2028-01-29T00:00:00Z",
+        "referenceElongation": 25.556533300000012,
+        "expectedTithiIndex": 2,
+        "actualTithiIndex": 2,
+        "expectedKaranaIndex": 4,
+        "actualKaranaIndex": 4,
+        "deltaElongationArcsec": -1.2508345287415068
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2028-moon.json",
+        "utc": "2028-01-30T00:00:00Z",
+        "referenceElongation": 36.350326499999994,
+        "expectedTithiIndex": 3,
+        "actualTithiIndex": 3,
+        "expectedKaranaIndex": 6,
+        "actualKaranaIndex": 6,
+        "deltaElongationArcsec": 0.8878517041694067
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2028-moon.json",
+        "utc": "2028-01-31T00:00:00Z",
+        "referenceElongation": 47.20413259999998,
+        "expectedTithiIndex": 3,
+        "actualTithiIndex": 3,
+        "expectedKaranaIndex": 7,
+        "actualKaranaIndex": 7,
+        "deltaElongationArcsec": 2.4278518158325824
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-2028-moon.json",
+        "utc": "2028-02-01T00:00:00Z",
+        "referenceElongation": 58.17111639999996,
+        "expectedTithiIndex": 4,
+        "actualTithiIndex": 4,
+        "expectedKaranaIndex": 9,
+        "actualKaranaIndex": 9,
+        "deltaElongationArcsec": 2.1567545410789535
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-auckland-boundary-moon.json",
+        "utc": "2026-10-07T17:30:00Z",
+        "referenceElongation": 323.85046739999996,
+        "expectedTithiIndex": 26,
+        "actualTithiIndex": 26,
+        "expectedKaranaIndex": 53,
+        "actualKaranaIndex": 53,
+        "deltaElongationArcsec": 3.766085991901491
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-auckland-boundary-moon.json",
+        "utc": "2026-10-07T17:40:00Z",
+        "referenceElongation": 323.9380506,
+        "expectedTithiIndex": 26,
+        "actualTithiIndex": 26,
+        "expectedKaranaIndex": 53,
+        "actualKaranaIndex": 53,
+        "deltaElongationArcsec": 3.767437527949369
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-auckland-boundary-moon.json",
+        "utc": "2026-10-07T17:50:00Z",
+        "referenceElongation": 324.0256257,
+        "expectedTithiIndex": 27,
+        "actualTithiIndex": 27,
+        "expectedKaranaIndex": 54,
+        "actualKaranaIndex": 54,
+        "deltaElongationArcsec": 3.7688335376060422
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-auckland-boundary-moon.json",
+        "utc": "2026-10-07T18:00:00Z",
+        "referenceElongation": 324.1131928,
+        "expectedTithiIndex": 27,
+        "actualTithiIndex": 27,
+        "expectedKaranaIndex": 54,
+        "actualKaranaIndex": 54,
+        "deltaElongationArcsec": 3.7698891061154427
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-vrindavan-boundary-moon.json",
+        "utc": "2026-06-29T23:40:00Z",
+        "referenceElongation": 179.87299789999997,
+        "expectedTithiIndex": 14,
+        "actualTithiIndex": 14,
+        "expectedKaranaIndex": 29,
+        "actualKaranaIndex": 29,
+        "deltaElongationArcsec": 0.5446337809416946
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-vrindavan-boundary-moon.json",
+        "utc": "2026-06-29T23:50:00Z",
+        "referenceElongation": 179.9491077,
+        "expectedTithiIndex": 14,
+        "actualTithiIndex": 14,
+        "expectedKaranaIndex": 29,
+        "actualKaranaIndex": 29,
+        "deltaElongationArcsec": 0.5414767225829564
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-vrindavan-boundary-moon.json",
+        "utc": "2026-06-30T00:00:00Z",
+        "referenceElongation": 180.02521990000002,
+        "expectedTithiIndex": 15,
+        "actualTithiIndex": 15,
+        "expectedKaranaIndex": 30,
+        "actualKaranaIndex": 30,
+        "deltaElongationArcsec": 0.5381878270782181
+    },
+    {
+        "source": "docs\\audits\\2026-09-12\\new-astronomy\\horizons-vrindavan-boundary-moon.json",
+        "utc": "2026-06-30T00:10:00Z",
+        "referenceElongation": 180.10133459999997,
+        "expectedTithiIndex": 15,
+        "actualTithiIndex": 15,
+        "expectedKaranaIndex": 30,
+        "actualKaranaIndex": 30,
+        "deltaElongationArcsec": 0.5344386979686533
+    }
+]

@@ -1,0 +1,28 @@
+{
+  "id": "gbc-2019",
+  "url": "https://gbc.iskcon.org/2019-agm/",
+  "kind": "upstream-discovery-or-documentation",
+  "retrievedAtUtc": "2026-09-21T09:07:08.478350+00:00",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": 200,
+  "finalUrl": "https://gbc.iskcon.org/wp-content/uploads/2019/12/GBCRES19-v6.pdf",
+  "responseHeaders": {
+    "Server": "nginx/1.31.1",
+    "Date": "Mon, 21 Sep 2026 09:07:12 GMT",
+    "Content-Type": "application/pdf",
+    "Content-Length": "480741",
+    "Last-Modified": "Mon, 30 Dec 2019 09:52:09 GMT",
+    "Connection": "close",
+    "Vary": "Accept-Encoding",
+    "ETag": "\"5e09c8c9-755e5\"",
+    "Expires": "Mon, 28 Sep 2026 09:07:12 GMT",
+    "Cache-Control": "max-age=604800",
+    "X-Proxy-Cache": "STATIC/PATH",
+    "Accept-Ranges": "bytes"
+  },
+  "file": "docs/release/2026-09-21/sources/gbc-2019.pdf",
+  "sha256": "6fff0eaa91fe6d1328ba90ff5f3a7496f9f86478bc9463135d086441872327d0",
+  "bytes": 480741
+}

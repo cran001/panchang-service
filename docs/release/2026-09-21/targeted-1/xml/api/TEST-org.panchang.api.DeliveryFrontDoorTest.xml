@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.api.DeliveryFrontDoorTest" tests="2" skipped="0" failures="2" errors="0" timestamp="2026-09-21T13:41:56" hostname="DESKTOP-KBUKJ2P" time="108.452">
+  <properties/>
+  <testcase name="Reykjavik daylight cap and metadata agree through HTTP and written files()" classname="org.panchang.api.DeliveryFrontDoorTest" time="42.841">
+    <failure message="java.io.FileNotFoundException: C:\Users\khanm\AppData\Local\Temp\junit-7839378455479369264\review\v2\reykjavik\ekadashi-year.json (The system cannot find the path specified)" type="java.io.FileNotFoundException">java.io.FileNotFoundException: C:\Users\khanm\AppData\Local\Temp\junit-7839378455479369264\review\v2\reykjavik\ekadashi-year.json (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(Unknown Source)
+	at kotlin.io.FilesKt__FileReadWriteKt.readText(FileReadWrite.kt:131)
+	at kotlin.io.FilesKt__FileReadWriteKt.readText$default(FileReadWrite.kt:131)
+	at org.panchang.api.DeliveryFrontDoorTest.publishAndCompare(DeliveryFrontDoorTest.kt:78)
+	at org.panchang.api.DeliveryFrontDoorTest.Reykjavik daylight cap and metadata agree through HTTP and written files(DeliveryFrontDoorTest.kt:53)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.base/java.util.ArrayList.forEach(Unknown Source)
+	at java.base/java.util.ArrayList.forEach(Unknown Source)
+</failure>
+  </testcase>
+  <testcase name="January carryover agrees through HTTP day year and written v1 and legacy files()" classname="org.panchang.api.DeliveryFrontDoorTest" time="65.611">
+    <failure message="java.io.FileNotFoundException: C:\Users\khanm\AppData\Local\Temp\junit-15244893215659043041\review\v2\mayapur\ekadashi-year.json (The system cannot find the path specified)" type="java.io.FileNotFoundException">java.io.FileNotFoundException: C:\Users\khanm\AppData\Local\Temp\junit-15244893215659043041\review\v2\mayapur\ekadashi-year.json (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(Unknown Source)
+	at kotlin.io.FilesKt__FileReadWriteKt.readText(FileReadWrite.kt:131)
+	at kotlin.io.FilesKt__FileReadWriteKt.readText$default(FileReadWrite.kt:131)
+	at org.panchang.api.DeliveryFrontDoorTest.publishAndCompare(DeliveryFrontDoorTest.kt:78)
+	at org.panchang.api.DeliveryFrontDoorTest.January carryover agrees through HTTP day year and written v1 and legacy files(DeliveryFrontDoorTest.kt:37)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.base/java.util.ArrayList.forEach(Unknown Source)
+	at java.base/java.util.ArrayList.forEach(Unknown Source)
+</failure>
+  </testcase>
+  <system-out><![CDATA[13:41:56.184 [DefaultDispatcher-worker-4 @call-context#38] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+13:41:56.185 [DefaultDispatcher-worker-4 @call-context#38] INFO ktor.test -- Application started in 0.002 seconds.
+13:41:56.185 [DefaultDispatcher-worker-1 @coroutine#40] INFO ktor.test -- Responding at http://localhost:80
+13:41:56.185 [DefaultDispatcher-worker-1 @coroutine#40] INFO ktor.test -- Responding at https://localhost:443
+13:42:08.671 [DefaultDispatcher-worker-3 @call-context#47] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+13:42:08.672 [DefaultDispatcher-worker-3 @call-context#47] INFO ktor.test -- Application started in 0.002 seconds.
+13:42:08.673 [DefaultDispatcher-worker-2 @coroutine#49] INFO ktor.test -- Responding at http://localhost:80
+13:42:08.673 [DefaultDispatcher-worker-2 @coroutine#49] INFO ktor.test -- Responding at https://localhost:443
+13:42:39.020 [DefaultDispatcher-worker-3 @call-context#56] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+13:42:39.021 [DefaultDispatcher-worker-3 @call-context#56] INFO ktor.test -- Application started in 0.002 seconds.
+13:42:39.021 [DefaultDispatcher-worker-4 @coroutine#58] INFO ktor.test -- Responding at http://localhost:80
+13:42:39.021 [DefaultDispatcher-worker-4 @coroutine#58] INFO ktor.test -- Responding at https://localhost:443
+13:42:51.089 [DefaultDispatcher-worker-10 @call-context#65] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+13:42:51.090 [DefaultDispatcher-worker-10 @call-context#65] INFO ktor.test -- Application started in 0.002 seconds.
+13:42:51.091 [DefaultDispatcher-worker-7 @coroutine#67] INFO ktor.test -- Responding at http://localhost:80
+13:42:51.091 [DefaultDispatcher-worker-7 @coroutine#67] INFO ktor.test -- Responding at https://localhost:443
+13:43:03.499 [DefaultDispatcher-worker-5 @call-context#74] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+13:43:03.500 [DefaultDispatcher-worker-5 @call-context#74] INFO ktor.test -- Application started in 0.001 seconds.
+13:43:03.501 [DefaultDispatcher-worker-2 @coroutine#76] INFO ktor.test -- Responding at http://localhost:80
+13:43:03.501 [DefaultDispatcher-worker-2 @coroutine#76] INFO ktor.test -- Responding at https://localhost:443
+13:43:16.018 [DefaultDispatcher-worker-5 @call-context#83] INFO ktor.test -- No ktor.deployment.watch patterns specified, automatic reload is not active.
+13:43:16.020 [DefaultDispatcher-worker-5 @call-context#83] INFO ktor.test -- Application started in 0.004 seconds.
+13:43:16.020 [DefaultDispatcher-worker-10 @coroutine#85] INFO ktor.test -- Responding at http://localhost:80
+13:43:16.020 [DefaultDispatcher-worker-10 @coroutine#85] INFO ktor.test -- Responding at https://localhost:443
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.publication.PublicationPolicyTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2026-09-14T05:25:25" hostname="DESKTOP-KBUKJ2P" time="3.103">
+  <properties/>
+  <testcase name="superseded approval cannot authorize a release()" classname="org.panchang.publication.PublicationPolicyTest" time="0.747"/>
+  <testcase name="truncated history and missing or altered archived evidence fail closed()" classname="org.panchang.publication.PublicationPolicyTest" time="0.148"/>
+  <testcase name="calculated confirmed verified and passing tests do not imply approval()" classname="org.panchang.publication.PublicationPolicyTest" time="0.093"/>
+  <testcase name="qualified review reopening a bundle blocks prior publication()" classname="org.panchang.publication.PublicationPolicyTest" time="0.237"/>
+  <testcase name="registry retains separate numerical observance daily and missing reference cases()" classname="org.panchang.publication.PublicationPolicyTest" time="0.014"/>
+  <testcase name="unanswered general review questions and missing evidence remain blocked()" classname="org.panchang.publication.PublicationPolicyTest" time="0.347"/>
+  <testcase name="date and field scopes cannot expand themselves()" classname="org.panchang.publication.PublicationPolicyTest" time="0.108"/>
+  <testcase name="approved withholding policy retains the dispute and never publishes its timing()" classname="org.panchang.publication.PublicationPolicyTest" time="0.081"/>
+  <testcase name="malformed partially written and tampered journal records fail closed()" classname="org.panchang.publication.PublicationPolicyTest" time="0.092"/>
+  <testcase name="valid reviewer signature does not grant owner powers and owner is not automatically qualified()" classname="org.panchang.publication.PublicationPolicyTest" time="0.15"/>
+  <testcase name="different place coordinates elevation timezone tradition year result and every version miss approval()" classname="org.panchang.publication.PublicationPolicyTest" time="0.36"/>
+  <testcase name="exact owner approved scope publishes matching results and carries provenance()" classname="org.panchang.publication.PublicationPolicyTest" time="0.078"/>
+  <testcase name="reference policy and dispute registry revisions require new approval()" classname="org.panchang.publication.PublicationPolicyTest" time="0.109"/>
+  <testcase name="owner rejection prevents use of a prior approval()" classname="org.panchang.publication.PublicationPolicyTest" time="0.146"/>
+  <testcase name="anonymous forged and reviewer publication attempts fail()" classname="org.panchang.publication.PublicationPolicyTest" time="0.105"/>
+  <testcase name="revocation invalidates subsequent reads and preserves approval history()" classname="org.panchang.publication.PublicationPolicyTest" time="0.149"/>
+  <testcase name="known dispute cannot publish through approved flag or unresolved qualified review()" classname="org.panchang.publication.PublicationPolicyTest" time="0.057"/>
+  <testcase name="explicit reviewed resolution permits exact disputed scope only()" classname="org.panchang.publication.PublicationPolicyTest" time="0.06"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,7 @@
+[
+  "D:\\projects\\panchang-service\\gradlew.bat",
+  "test",
+  "--rerun-tasks",
+  "--continue",
+  "--console=plain"
+]

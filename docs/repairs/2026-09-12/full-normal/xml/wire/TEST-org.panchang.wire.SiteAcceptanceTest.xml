@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.wire.SiteAcceptanceTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-09-12T16:07:22" hostname="DESKTOP-KBUKJ2P" time="0.116">
+  <properties/>
+  <testcase name="an out-of-range elevation is refused by code rather than by exception()" classname="org.panchang.wire.SiteAcceptanceTest" time="0.007"/>
+  <testcase name="the boundary is the solver's own horizon turned into a latitude()" classname="org.panchang.wire.SiteAcceptanceTest" time="0.001"/>
+  <testcase name="a site just below the boundary is accepted, north and south()" classname="org.panchang.wire.SiteAcceptanceTest" time="0.023"/>
+  <testcase name="raw input failures each get their own code rather than one blanket refusal()" classname="org.panchang.wire.SiteAcceptanceTest" time="0.025"/>
+  <testcase name="an already-built GeoLocation above the limit is rejected too()" classname="org.panchang.wire.SiteAcceptanceTest" time="0.006"/>
+  <testcase name="the polar limit is checked before the zone, so the real reason is the one reported()" classname="org.panchang.wire.SiteAcceptanceTest" time="0.002"/>
+  <testcase name="a site above the boundary is rejected with a reason a user can be told()" classname="org.panchang.wire.SiteAcceptanceTest" time="0.002"/>
+  <testcase name="midnight sun is a dynamic fact about the site, not a fixed latitude()" classname="org.panchang.wire.SiteAcceptanceTest" time="0.002"/>
+  <testcase name="a refusal is serialisable, so the API can return it rather than reword it()" classname="org.panchang.wire.SiteAcceptanceTest" time="0.018"/>
+  <testcase name="an ordinary site is accepted()" classname="org.panchang.wire.SiteAcceptanceTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

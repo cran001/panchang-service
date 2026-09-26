@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.core.PolarTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-09-22T08:06:54" hostname="DESKTOP-KBUKJ2P" time="0.509">
+  <properties/>
+  <testcase name="the southern hemisphere is the mirror image()" classname="org.panchang.core.PolarTest" time="0.002"/>
+  <testcase name="the transition into and out of polar day is continuous()" classname="org.panchang.core.PolarTest" time="0.223"/>
+  <testcase name="midnight sun at 78 north in June()" classname="org.panchang.core.PolarTest" time="0.002"/>
+  <testcase name="moonrise at high latitude is also expressed as cases, never as sentinels()" classname="org.panchang.core.PolarTest" time="0.197"/>
+  <testcase name="polar night at 78 north in December()" classname="org.panchang.core.PolarTest" time="0.002"/>
+  <testcase name="polar days produce no numbers at all, let alone sentinel ones()" classname="org.panchang.core.PolarTest" time="0.002"/>
+  <testcase name="a polar panchang still has elements but no day divisions()" classname="org.panchang.core.PolarTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

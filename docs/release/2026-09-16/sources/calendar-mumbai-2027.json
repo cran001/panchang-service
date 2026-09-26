@@ -1,0 +1,29 @@
+{
+  "id": "calendar-mumbai-2027",
+  "url": "https://www.vaisnavacalendar.info/calendars/2027/Bombay%20%5BIndia%5D.txt",
+  "kind": "calendar",
+  "retrievedAtUtc": "2026-09-15T19:54:31.999191+00:00",
+  "cityId": "mumbai",
+  "year": 2027,
+  "lineage": "vaisnavacalendar.info/GCal-text",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": 200,
+  "finalUrl": "https://www.vaisnavacalendar.info/calendars/2027/Bombay%20%5BIndia%5D.txt",
+  "responseHeaders": {
+    "Date": "Tue, 15 Sep 2026 19:54:32 GMT",
+    "Server": "Apache/2",
+    "Upgrade": "h2,h2c",
+    "Connection": "Upgrade, close",
+    "Last-Modified": "Fri, 27 Mar 2026 19:48:34 GMT",
+    "ETag": "\"a2fe-64e06c9565178\"",
+    "Accept-Ranges": "bytes",
+    "Content-Length": "41726",
+    "Vary": "Accept-Encoding,User-Agent",
+    "Content-Type": "text/plain"
+  },
+  "file": "docs/release/2026-09-16/sources/calendar-mumbai-2027.raw",
+  "sha256": "027cfa264297ddaf8c140a303dd5728e8583ddbf36b3ad5a66ca04758d34f93d",
+  "bytes": 41726
+}

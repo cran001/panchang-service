@@ -40,7 +40,7 @@ class FeedPublisherTest {
 
         val specs: List<SiteSpec> by lazy { SiteList.parse(SITE_LIST) }
 
-        val result: PublishResult by lazy { FeedPublisher().run(specs, YEAR) }
+        val result: PublishResult by lazy { ReviewFeedPublisher().run(specs, YEAR) }
 
         val legacyDays: List<LegacyDay> by lazy {
             WireJson.pretty.decodeFromString(
@@ -48,6 +48,22 @@ class FeedPublisherTest {
                 result.files.getValue("legacy/P0530/mayapur.json"),
             )
         }
+    }
+
+    @Test
+    fun `yearly files retain January Parana with the preceding legacy fast for attachment`() {
+        val v1 = WireJson.pretty.decodeFromString(
+            org.panchang.wire.EkadashiYearDto.serializer(),
+            result.files.getValue("v1/mayapur/ekadashi-year.json"),
+        )
+        val carry = v1.observances.single { it.date == LocalDate.of(2025, 12, 31) }
+        assertEquals(LocalDate.of(2026, 1, 1), carry.parana!!.date)
+        assertEquals(1, legacyDays.single { it.date == "2026-01-01" }.events.count {
+            LegacyFeed.APP_BREAK_FAST_REGEX.containsMatchIn(it.title)
+        })
+        assertEquals("2025-12-31", legacyDays.first().date)
+        assertEquals("2026-12-31", legacyDays.last().date)
+        assertEquals(366, legacyDays.map { it.date }.distinct().size)
     }
 
     // ── the counts ──────────────────────────────────────────────────────────────────────────
@@ -141,10 +157,7 @@ class FeedPublisherTest {
             ListSerializer(LegacyZone.serializer()),
             result.files.getValue("legacy/zones.json"),
         )
-        // P0000 is present although no requested site is in it: the app falls back to that
-        // directory for any unmatched offset and fails outright when it is missing, so one
-        // synthetic UTC site is always published. See PublishManifest.utcFallback.
-        assertEquals(listOf("P0000", "P0530"), zones.map { it.dir })
+        assertEquals(listOf("P0530"), zones.map { it.dir })
 
         val locations = WireJson.pretty.decodeFromString(
             ListSerializer(LegacyLocation.serializer()),
@@ -161,28 +174,10 @@ class FeedPublisherTest {
     // ── the synthesised UTC fallback ────────────────────────────────────────────────────────
 
     @Test
-    fun `a UTC site is published so an unmatched offset is not a silent stale cache`() {
-        val fallback = result.manifest.utcFallback
-        assertNotNull(fallback, "no requested site is at UTC, so one must have been synthesised")
-        checkNotNull(fallback)
-        // Everything the app needs to navigate to it, or it is no fallback at all.
-        val locations = WireJson.pretty.decodeFromString(
-            ListSerializer(LegacyLocation.serializer()),
-            result.files.getValue("legacy/P0000/locations.json"),
-        )
-        val row = locations.single()
-        assertEquals(fallback.key, row.file)
-        assertEquals("+00:00", row.timezone)
-        assertTrue(result.files.containsKey("legacy/P0000/${row.file}.json"))
-
-        // A user can only see this row's title, so the title has to carry the warning.
-        assertTrue(row.title.contains("not your location"), row.title)
-
-        // It is announced, not silent.
-        assertTrue(
-            result.manifest.warnings.any { "P0000" in it },
-            "a synthetic site must be reported: ${result.manifest.warnings}",
-        )
+    fun `an unmatched offset never creates a synthetic calendar`() {
+        assertEquals(null, result.manifest.utcFallback)
+        assertFalse(result.files.keys.any { it.contains("utc-fallback") })
+        assertFalse(result.files.containsKey("legacy/P0000/locations.json"))
     }
 
     @Test
@@ -201,7 +196,7 @@ class FeedPublisherTest {
     @Test
     fun `no fallback is synthesised when a requested site already holds P0000`() {
         // Accra is UTC+0 all year, so it occupies P0000 on its own merit.
-        val withUtc = FeedPublisher().run(
+        val withUtc = ReviewFeedPublisher().run(
             SiteList.parse("coords accra 5.6037 -0.1870 Africa/Accra Accra"),
             YEAR,
         )
@@ -215,8 +210,9 @@ class FeedPublisherTest {
 
     @Test
     fun `the legacy day file covers the whole year with no gaps`() {
-        assertEquals(365, legacyDays.size)
-        var expected = LocalDate.of(YEAR, 1, 1)
+        // 365 requested-year days plus the preceding fast needed to attach January 1 Parana.
+        assertEquals(366, legacyDays.size)
+        var expected = LocalDate.of(YEAR - 1, 12, 31)
         legacyDays.forEach { day ->
             assertEquals(expected.toString(), day.date)
             assertTrue(day.tithi.isNotBlank(), "${day.date} has no tithi")
@@ -328,7 +324,7 @@ class FeedPublisherTest {
     fun `two runs of the same request produce the same bytes`() {
         // No timestamp, no host name, no run id. A manifest with a generatedAt would make this
         // impossible to assert, and would make every republication a diff.
-        val again = FeedPublisher().run(
+        val again = ReviewFeedPublisher().run(
             SiteList.parse("coords new-york 40.7128 -74.0060 America/New_York New York"),
             YEAR,
         )
@@ -344,14 +340,14 @@ class FeedPublisherTest {
 
     @Test
     fun `write puts every computed file on disk and nothing else`(@TempDir dir: Path) {
-        FeedPublisher().write(result, dir)
+        ReviewFeedPublisher().write(result, dir)
         val onDisk = Files.walk(dir).use { stream ->
             stream.filter(Files::isRegularFile)
                 .map { dir.relativize(it).toString().replace('\\', '/') }
                 .sorted()
                 .toList()
         }
-        assertEquals(result.files.keys.sorted(), onDisk)
+        assertEquals((result.files.keys.map { "review/$it" } + "review/NOT-FOR-PUBLICATION.txt").sorted(), onDisk)
         onDisk.forEach {
             assertTrue(Files.size(dir.resolve(it)) > 0, "$it was written empty")
         }

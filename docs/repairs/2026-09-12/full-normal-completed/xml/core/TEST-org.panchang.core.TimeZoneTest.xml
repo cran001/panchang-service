@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.core.TimeZoneTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-09-12T17:53:48" hostname="DESKTOP-KBUKJ2P" time="0.057">
+  <properties/>
+  <testcase name="local clock times move by about an hour at a DST transition and stay ordered()" classname="org.panchang.core.TimeZoneTest" time="0.001"/>
+  <testcase name="sunrise always falls on the requested local date, including across DST()" classname="org.panchang.core.TimeZoneTest" time="0.003"/>
+  <testcase name="equivalent zone ids give identical instants()" classname="org.panchang.core.TimeZoneTest" time="0.001"/>
+  <testcase name="the length of the civil day is honoured, not assumed to be 24 hours()" classname="org.panchang.core.TimeZoneTest" time="0.021"/>
+  <testcase name="vaar follows the site's civil date()" classname="org.panchang.core.TimeZoneTest" time="0.016"/>
+  <testcase name="rahu kaal is computed in the site's zone, not in UTC()" classname="org.panchang.core.TimeZoneTest" time="0.007"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

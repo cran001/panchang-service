@@ -1,0 +1,42 @@
+{
+  "id": "cpp-GCSunData",
+  "url": "https://raw.githubusercontent.com/gopa810/gcal-cpp/1cedaea67278009aedbfc7c91beeb64489a3ed4c/GCSunData.cpp",
+  "kind": "PRIMARY_UPSTREAM_CODE_SUPPORTING_ONLY_NOT_EXPORT_BINARY",
+  "retrievedAtUtc": "2026-09-21T09:08:04.562189+00:00",
+  "upstreamRevision": "1cedaea67278009aedbfc7c91beeb64489a3ed4c",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": 200,
+  "finalUrl": "https://raw.githubusercontent.com/gopa810/gcal-cpp/1cedaea67278009aedbfc7c91beeb64489a3ed4c/GCSunData.cpp",
+  "responseHeaders": {
+    "Connection": "close",
+    "Content-Length": "21469",
+    "Cache-Control": "max-age=300",
+    "Content-Security-Policy": "default-src 'none'; style-src 'unsafe-inline'; sandbox",
+    "Content-Type": "text/plain; charset=utf-8",
+    "ETag": "\"5aeb6bc35e2f62361ad5143cf094eb535799e7d580abc8bfa0e279c61895bbfb\"",
+    "Strict-Transport-Security": "max-age=31536000",
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "deny",
+    "X-XSS-Protection": "1; mode=block",
+    "X-GitHub-Request-Id": "9694:315F20:79295:E0DDE:6AB0F3F4",
+    "x-github-edge-region": "centralindia",
+    "Accept-Ranges": "bytes",
+    "Date": "Mon, 21 Sep 2026 09:08:04 GMT",
+    "Via": "1.1 varnish",
+    "X-Served-By": "cache-bom-vanm7210027-BOM",
+    "X-Cache": "MISS",
+    "X-Cache-Hits": "0",
+    "X-Timer": "S1789981685.654136,VS0,VE274",
+    "Vary": "Authorization,Accept-Encoding",
+    "Access-Control-Allow-Origin": "*",
+    "Cross-Origin-Resource-Policy": "cross-origin",
+    "X-Fastly-Request-ID": "1c57a8ca6abb6a9b076a69085099228941c77a25",
+    "Expires": "Mon, 21 Sep 2026 09:13:04 GMT",
+    "Source-Age": "0"
+  },
+  "file": "docs/release/2026-09-21/sources/cpp-GCSunData.raw",
+  "sha256": "d3cdf226589fc568ae737f1fd5a477b4370a47c875be89eb8bb649182f408022",
+  "bytes": 21469
+}

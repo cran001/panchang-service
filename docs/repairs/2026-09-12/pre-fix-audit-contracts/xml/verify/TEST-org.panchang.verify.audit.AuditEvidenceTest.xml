@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.verify.audit.AuditEvidenceTest" tests="3" skipped="0" failures="3" errors="0" timestamp="2026-09-12T15:55:33" hostname="DESKTOP-KBUKJ2P" time="10.939">
+  <properties/>
+  <testcase name="reykjavikDocumentedDaylightCapContract()" classname="org.panchang.verify.audit.AuditEvidenceTest" time="0.102">
+    <failure message="org.opentest4j.AssertionFailedError: An ordinary sunrise followed by sunset exists: the documented daylight-third cap must not disappear merely because sunset has the next civil date ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: An ordinary sunrise followed by sunset exists: the documented daylight-third cap must not disappear merely because sunset has the next civil date ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at app//org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at app//org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at app//org.panchang.verify.audit.AuditEvidenceTest.reykjavikDocumentedDaylightCapContract(AuditEvidenceTest.kt:94)
+	at java.base@21.0.6/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList.forEach(Unknown Source)
+</failure>
+  </testcase>
+  <testcase name="januaryFirstDeliveryContract()" classname="org.panchang.verify.audit.AuditEvidenceTest" time="10.801">
+    <failure message="org.opentest4j.AssertionFailedError: January 1 day output must include the previous December fast's Parana printed in the independent calendar ==&gt; expected: &lt;1&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: January 1 day output must include the previous December fast's Parana printed in the independent calendar ==&gt; expected: &lt;1&gt; but was: &lt;0&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at app//org.panchang.verify.audit.AuditEvidenceTest.januaryFirstDeliveryContract(AuditEvidenceTest.kt:43)
+	at java.base@21.0.6/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList.forEach(Unknown Source)
+</failure>
+  </testcase>
+  <testcase name="reykjavikSunriseRoundingContract()" classname="org.panchang.verify.audit.AuditEvidenceTest" time="0.035">
+    <failure message="org.opentest4j.AssertionFailedError: Held-out Reykjavik 2026-06-27 sunrise exceeds the predeclared USNO rounding interval ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Held-out Reykjavik 2026-06-27 sunrise exceeds the predeclared USNO rounding interval ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at app//org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at app//org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at app//org.panchang.verify.audit.AuditEvidenceTest.reykjavikSunriseRoundingContract(AuditEvidenceTest.kt:82)
+	at java.base@21.0.6/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList.forEach(Unknown Source)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

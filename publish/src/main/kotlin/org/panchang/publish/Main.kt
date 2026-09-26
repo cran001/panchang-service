@@ -35,10 +35,8 @@ class PublishCommand(
 ) : CliktCommand(name = "panchang-publish") {
 
     override fun help(context: Context) =
-        "Generate the static calendar feed for a list of sites into a local directory. " +
-            "Emits the v1 payloads (:wire's document roots), the legacy feed the shipped " +
-            "Android app already parses, and a manifest and skip list that account for every " +
-            "requested site."
+        "Generate publication-v2 documents with explicit approval or withholding in a new local directory. " +
+            "Legacy public export is refused because its contract cannot express withholding. No deployment occurs."
 
     private val sites by option(
         "--sites",
@@ -50,13 +48,12 @@ class PublishCommand(
 
     private val sampradaya by option(
         "--sampradaya",
-        help = "Tradition id. Default: iskcon.",
+        help = "Public launch tradition: iskcon only. Other calculators remain local research tools.",
     ).default("iskcon")
 
     private val out0 by option(
         "--out",
-        help = "Output directory. Created if absent; existing files of the same names are " +
-            "overwritten, and nothing else in it is touched.",
+        help = "New output directory; an existing directory is refused to prevent stale approved files surviving.",
     ).required()
 
     override fun run() {
@@ -81,7 +78,11 @@ class PublishCommand(
             fail(e.message ?: "The publish run failed a self-check with no message.")
         }
 
-        publisher.write(result, Path.of(out0))
+        try {
+            publisher.write(result, Path.of(out0))
+        } catch (e: IllegalArgumentException) {
+            fail(e.message ?: "Publication refused")
+        }
 
         val m = result.manifest
         out.append(
@@ -125,7 +126,8 @@ fun main(args: Array<String>) {
     val stdout = PrintStream(FileOutputStream(FileDescriptor.out), true, "UTF-8")
     val stderr = PrintStream(FileOutputStream(FileDescriptor.err), true, "UTF-8")
     try {
-        PublishCommand(out = stdout, err = stderr).main(args)
+        PublishCommand(out = stdout, err = stderr,
+            publisher = FeedPublisher(org.panchang.publication.PublicationRuntime.service())).main(args)
     } finally {
         stdout.flush()
         stderr.flush()

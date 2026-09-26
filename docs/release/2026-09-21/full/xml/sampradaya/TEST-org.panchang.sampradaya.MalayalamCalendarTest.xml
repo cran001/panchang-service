@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.sampradaya.MalayalamCalendarTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-09-22T08:11:48" hostname="DESKTOP-KBUKJ2P" time="12.587">
+  <properties/>
+  <testcase name="Chingam 1 2026 resolves inside the Simha window()" classname="org.panchang.sampradaya.MalayalamCalendarTest" time="6.435"/>
+  <testcase name="ekadashi timing is absent and the rest of the catalog resolves()" classname="org.panchang.sampradaya.MalayalamCalendarTest" time="6.151"/>
+  <testcase name="the rules identify themselves and stay unverified()" classname="org.panchang.sampradaya.MalayalamCalendarTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

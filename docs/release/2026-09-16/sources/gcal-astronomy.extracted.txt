@@ -1,0 +1,207 @@
+PAGE 1
+Second Level of the Astronomical Calculations in GCAL
+© ISKCON Governing Body Commission Society
+Author: Gopalapriya Das
+Algorithms for calculation of tithi, naksatra etc are given in this document. All descriptions
+are given "as they are" in application, that means this document does not aim to define
+calculation algorithms for values like tithi, naksatra etc. rather it describes how these
+algorithms are implemented.
+This documents is for certification of algorithms used in GCAL program.
+Content
+Mathematical operations
+Calculation of Tithi
+Paksa
+Naksatra
+Yoga
+Rasi
+Sankranti
+Masa, Gaurabda Year
+Revision History
+Mathematical operations
+/ divide
+*m u l t i p l e
+floor returns whole of part of real number
+rmdr return remainder after subtra ction of whole part of number
+put_in_360 puts given angle into range 0..360 degrees or equivalent 0..2*PI
+Calculation of Tithi
+input values:
+m – tropical longitude of the Moon /real number/
+s – tropical longitude of the Sun /real number/
+output value:
+tithi – number of tithi /integer/
+tithi_elapsed – amount of elapsed time from tithi (in percents) /real number/
+tithi = floor ( put_in_360(m – s – 180.0) / 12.0 )
+tithi_elapsed = rmdr( put_in_360(m – s – 180.0) / 12.0 ) * 100.0
+PAGE 2
+Paksa
+input value:
+tithi – moon's tithi /integer/
+output value:
+paksa – moon's paksa /integer/
+value 0 is for Krsna Paksa
+value 1 is for Gaura Paksa
+paksa = floor( tithi / 15)
+Naksatra
+input values:
+m – tropical longitude of the moon /real number/
+a – ayanamsa value calculated for the same moment as longitude of the moon /real
+number/
+output values:
+naksatra – number of naksatra /integer/
+naksatra_elapsed – elapsation of naksatra /real number/
+We need convert range <0,360) to range <0,27). Therefore constant 3/40.0 is used.
+naksatra_pos = (sidereal_moon_pos) * (3 / 40.0)
+in other symbols:
+naksatra_pos = put_in_360(m – a) * (3 / 40.0)
+naksatra = floor( naksatra_pos )
+naksatra_elapsed = rmdr ( naksatra_pos ) * 100.0
+naksatra value 0 is for Asvini, value 26 is for Revati
+Yoga
+input values:
+m – tropical longitude of the moon /real number/
+s – tropical longitude of the Sun /real number/
+a – ayanamsa value calculated for the same moment as longitude of the moon /real
+number/
+output value:
+PAGE 3
+yoga – number of yoga /integer/
+yoga_pos = (sidereal_moon_pos + sidereal_sun_pos) * (3/40.0)
+in other symbols:
+yoga_pos = ((m – a) + (s – a)) * (3/40.0) = put_in_360(m + s – 2*a) * (3/40.0)
+yoga = floor( yoga_pos )
+Yoga value 0 is for Viskumba, value 26 is for Vaidhrti.
+Rasi
+input values:
+s – tropical longitude of the Sun /real number/
+a – ayanamsa value calculated for the same moment as longitude of the moon /real
+number/
+output value:
+rasi – integer number of rasi for sun in given position
+sidereal_sun_pos equals (s – a)
+rasi = floor ( put_in_360( s – a) / 30.0 )
+rasi value 0 is for Mesa (Aries), value 11 is for Mina (Pisces)
+Sankranti
+Sankranti calculation is based on rasi.
+1) If rasi is changing from one day (day1) to next day (day2), then exact time of change of
+rasi is calculated.
+2a) If calculated time of sankranti is before noon for day1 for given location, then sankranti
+is mentioned in day1.
+2b) If calculated time of sankranti is after noon for day1, then sankranti is mentioned in
+day2.
+PAGE 4
+Masa
+input values:
+date – day, month, year
+time of sunrise
+tithi for given date
+output values:
+masa – calculated masa for given day
+gyear – gaurabda year
+Now we will calculate conjunctions of sun and moon, that is moment when sun and moon
+have the same longitude, in other words Gaura Pratipat Tithi begins.
+Let us say that t1 is moment of sunrise for given day. Then we will calculate four previous
+conjunctions and two next conjunctions.
+Ordered by time, we have values c0, c1, t1, c2, c3, c4, c5 where c0 < c1 < c2 < c3 < t1 <
+c4 < c5
+step 1
+We will calculate sun rasi for each conjuction and we get values rasi0, rasi1, rasi2 ... rasi5.
+We are not calculating rasi for t1 (sunrise of given date) since we dont need it.
+For normal months, we will find [rasi(n+1)] equals [rasi(n)+1 modulo 12].
+For adhika (extra) months, we will find [rasi(n+1)] equals [rasi(n) modulo 12].
+For ksaya (“destroyed”) months, we will find [rasi(n+1)] equals [rasi(n)+2 modulo 12].
+We first look for any ksaya month within values c0...c5.
+If we have found an index k such that [(rasi(k-1)+2) modulo 12] equals rasi(k)
+then we need to look for a subsequent adhika masa.
+If we have found an index ke, with ke >= k, such that rasi(ke+1) equals rasi(ke)
+then the range of months to be corrected is from k up to ke
+otherwise the range to be corrected is from k up to 5.
+For each month in the range to be corrected we will decrement the rasi number by 1.
+If we have found no such index k, then skip to test 2.
+see examples below for step1 effect.
+step 2 is performing evaluation for masa. Following is decision table which reads from top to
+bottom and is similar to decision tree.
+PAGE 5
+if rasi(3) equals rasi(4)
+... note that time t1 is between rasi(3) and rasi(4) moments
+yes, equals no, rasis are different
+t1 does not belong to adhika masa
+paksa is krsna paksa is gaura
+t1 belongs to adhika masa
+t1 belongs to masa according
+rasi(4), which is the next
+conjunction rasi
+t1 belongs to masa according
+rasi(3), which is the previous
+conjunction rasi
+rasi_g (see step 3 below) is set to rasi(3) rasi_g set to rasi(4) rasi_g set to rasi(3)
+To determine the month:
+Rasi Month
+Mina Visnu
+Mesa Madhusudana
+Vrsabha Trivikrama
+Mithuna Vamana
+Karka Sridhara
+Simha Hrsikesa
+Kanya Padmanadbha
+Tula Damodara
+Vrscika Kesava
+Dhanus Narayana
+Makara Madhava
+Kumbha Govinda
+step 3
+After calculation of masa, we will calculate gaurabda year.
+Basic formula is
+GYprep = Gregorian Calendar Year – 1486
+But this is not true for time interval from 1st January to Gaura Purnima. In that interval is
+valid formula GYprep = Year – 1487.
+So test for Gaurabda Year is:
+if masa_g is in the interval from Kesava to Govinda (that means before Gaura Purnima)and
+at the same time Gregorian month of given date is from interval January to June
+then  GaurabdaYear = GYprep – 1
+otherwise GaurabdaYear = GYprep
+PAGE 6
+Examples
+Four Examples for STEP 1 of masa calculation algorithm.
+Table 1 shows sequence of rasis for six consecutive conjunctions of the sun and the moon.
+actual sequence sequence to be used
+c0 c1 c2 c3 c4 c5 c0 c1 c2 c3 c4 c5
+aries aries taurus gemini cancer leo aries aries taurus gemini cancer leo
+aries aries gemini cancer cancer leo aries aries taurus gemini cancer leo
+aries aries gemini cancer leo leo aries aries taurus gemini cancer leo
+aries taurus taurus gemini leo leo aries taurus taurus gemini cancer leo
+taurus cancer leo virgo virgo libra taurus gemini cancer leo virgo libra
+normal sequence is aries – taurus – gemini – cancer – leo – virgo – libra – ...
+Table 2 gives representation of previous sequences given by ksaya/adhika notation:
+actual sequence sequence that will appear
+aries taurus gemini cancer leo virgo aries taurus gemini cancer leo virgo
+adhika normal normal normal normal - adhika normal normal normal normal -
+adhika ksaya normal adhika normal -a d h i k a normal normal normal normal -
+adhika ksaya normal normal adhika -a d h i k a normal normal normal normal -
+normal adhika normal ksaya adhika - normal adhika normal normal normal -
+- normal ksaya normal normal adhika -n o r m a l normal normal normal normal
+Table 3) STEP 1 is, in general, handling these cases of ksaya-adhika sequences:
+Case Sequence
+No.
+of changes
+in rasi
+No.
+of changes
+in masa
+1 adhika-ksaya-adhika 1 2
+2 adhika-normal-ksaya-adhika 1 2
+3 adhika-ksaya-normal-adhika 2 3
+4 adhika-normal-normal-ksaya-adhika 1 2
+5 adhika-normal-ksaya-normal-adhika 2 3
+6 adhika-ksaya-normal-normal-adhika 3 4
+No adjustment of months is required BEFORE the ksaya month, only after.
+Algorithm does not handle single ksaya month, since a ksaya month will be followed by an
+adhika month within a maximum of 3 months' time.
+PAGE 7
+Revision History
+Date Description
+May 2, 2008 Initial version.
+May 9, 2008 Corrections of few small errors.
+June 7, 2008 Changed algorithm for masa calculation.
+June 9, 2008 Changed few words in descriptio n of the masa calculation. Changed title
+of this text.
+June 20, 2008 Changed description of masa calculation. Added rasi/masa table.

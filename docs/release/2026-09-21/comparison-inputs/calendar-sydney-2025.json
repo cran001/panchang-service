@@ -1,0 +1,29 @@
+{
+  "id": "calendar-sydney-2025",
+  "url": "https://www.vaisnavacalendar.info/calendars/2025/Sydney%20%5BAustralia%5D.txt",
+  "kind": "calendar",
+  "retrievedAtUtc": "2026-09-15T19:54:57.476895+00:00",
+  "cityId": "sydney",
+  "year": 2025,
+  "lineage": "vaisnavacalendar.info/GCal-text",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": 200,
+  "finalUrl": "https://www.vaisnavacalendar.info/calendars/2025/Sydney%20%5BAustralia%5D.txt",
+  "responseHeaders": {
+    "Date": "Tue, 15 Sep 2026 19:54:58 GMT",
+    "Server": "Apache/2",
+    "Upgrade": "h2,h2c",
+    "Connection": "Upgrade, close",
+    "Last-Modified": "Mon, 29 Jan 2024 18:01:34 GMT",
+    "ETag": "\"9faf-610196fac170c\"",
+    "Accept-Ranges": "bytes",
+    "Content-Length": "40879",
+    "Vary": "Accept-Encoding,User-Agent",
+    "Content-Type": "text/plain"
+  },
+  "file": "docs/release/2026-09-16/sources/calendar-sydney-2025.raw",
+  "sha256": "a9368462dfc3635b54f1ab77dbf2c75df717446c5ad358118a4029c1419b9445",
+  "bytes": 40879
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "tool": "panchang-publish",
+  "sampradaya": "iskcon",
+  "year": 2026,
+  "requested": 2,
+  "published": 2,
+  "skipped": 0,
+  "legacyPublished": 2,
+  "legacyWithheld": 0,
+  "legacyWithheldSites": [],
+  "legacyParanaOmissions": [],
+  "warnings": [],
+  "attribution": "Place data © GeoNames (https://www.geonames.org/), used under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)."
+}

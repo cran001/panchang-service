@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.verify.DrikPanchangParserTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-09-11T22:48:04" hostname="DESKTOP-KBUKJ2P" time="0.204">
+  <properties/>
+  <testcase name="keeps the whole of a value that contains nested spans and anchors()" classname="org.panchang.verify.DrikPanchangParserTest" time="0.181"/>
+  <testcase name="recovers key value pairs across nested markup()" classname="org.panchang.verify.DrikPanchangParserTest" time="0.004"/>
+  <testcase name="fails on a page with no panchang table, such as a 403 interstitial()" classname="org.panchang.verify.DrikPanchangParserTest" time="0.01"/>
+  <testcase name="attaches a continuation row to the key above it()" classname="org.panchang.verify.DrikPanchangParserTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

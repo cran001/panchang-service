@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ΔT (Espenak &amp; Meeus piecewise fit)" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-09-12T17:53:42" hostname="DESKTOP-KBUKJ2P" time="0.225">
+  <properties/>
+  <testcase name="stays within physically plausible bounds over the full validity range()" classname="org.panchang.ephemeris.DeltaTTest" time="0.088"/>
+  <testcase name="deltaT is continuous and never quantised in julian day()" classname="org.panchang.ephemeris.DeltaTTest" time="0.109"/>
+  <testcase name="decimal year conversion()" classname="org.panchang.ephemeris.DeltaTTest" time="0.005"/>
+  <testcase name="continuity across every piece boundary()" classname="org.panchang.ephemeris.DeltaTTest" time="0.006"/>
+  <testcase name="year-on-year change stays small across the modern era()" classname="org.panchang.ephemeris.DeltaTTest" time="0.006"/>
+  <testcase name="post-2005 branch is a known-high extrapolation()" classname="org.panchang.ephemeris.DeltaTTest" time="0.001"/>
+  <testcase name="interface method delegates to the module function()" classname="org.panchang.ephemeris.DeltaTTest" time="0.001"/>
+  <testcase name="anchor values()" classname="org.panchang.ephemeris.DeltaTTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.core.TithiPartitionTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-09-12T17:53:48" hostname="DESKTOP-KBUKJ2P" time="0.014">
+  <properties/>
+  <testcase name="a lunation of tithis spans one synodic month()" classname="org.panchang.core.TithiPartitionTest" time="0.001"/>
+  <testcase name="tithis tile the timeline with no gap and no overlap()" classname="org.panchang.core.TithiPartitionTest" time="0.004"/>
+  <testcase name="elongation is wrap-safe at the seam()" classname="org.panchang.core.TithiPartitionTest" time="0.001"/>
+  <testcase name="elapsed fraction tracks the angle, not the clock()" classname="org.panchang.core.TithiPartitionTest" time="0.001"/>
+  <testcase name="every tithi index and name appears exactly once per lunation()" classname="org.panchang.core.TithiPartitionTest" time="0.001"/>
+  <testcase name="nakshatras and yogas also tile without gaps()" classname="org.panchang.core.TithiPartitionTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

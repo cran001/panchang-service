@@ -1,0 +1,29 @@
+{
+  "id": "calendar-guwahati-2027",
+  "url": "https://www.vaisnavacalendar.info/calendars/2027/Guwahati%20%5BIndia%5D.txt",
+  "kind": "calendar",
+  "retrievedAtUtc": "2026-09-15T19:53:38.422672+00:00",
+  "cityId": "guwahati",
+  "year": 2027,
+  "lineage": "vaisnavacalendar.info/GCal-text",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": 200,
+  "finalUrl": "https://www.vaisnavacalendar.info/calendars/2027/Guwahati%20%5BIndia%5D.txt",
+  "responseHeaders": {
+    "Date": "Tue, 15 Sep 2026 19:53:39 GMT",
+    "Server": "Apache/2",
+    "Upgrade": "h2,h2c",
+    "Connection": "Upgrade, close",
+    "Last-Modified": "Fri, 27 Mar 2026 19:48:43 GMT",
+    "ETag": "\"a355-64e06c9dbaa66\"",
+    "Accept-Ranges": "bytes",
+    "Content-Length": "41813",
+    "Vary": "Accept-Encoding,User-Agent",
+    "Content-Type": "text/plain"
+  },
+  "file": "docs/release/2026-09-16/sources/calendar-guwahati-2027.raw",
+  "sha256": "5cf03394bddf70e39a233a71a31a3b942042e22b898374b57abefbbbbda133df",
+  "bytes": 41813
+}

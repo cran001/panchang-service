@@ -1,0 +1,29 @@
+{
+  "id": "calendar-sao-paulo-2026",
+  "url": "https://www.vaisnavacalendar.info/calendars/2026/Sao%20Paulo%20%5BBrazil%5D.txt",
+  "kind": "calendar",
+  "retrievedAtUtc": "2026-09-15T19:54:54.736533+00:00",
+  "cityId": "sao-paulo",
+  "year": 2026,
+  "lineage": "vaisnavacalendar.info/GCal-text",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": 200,
+  "finalUrl": "https://www.vaisnavacalendar.info/calendars/2026/Sao%20Paulo%20%5BBrazil%5D.txt",
+  "responseHeaders": {
+    "Date": "Tue, 15 Sep 2026 19:54:55 GMT",
+    "Server": "Apache/2",
+    "Upgrade": "h2,h2c",
+    "Connection": "Upgrade, close",
+    "Last-Modified": "Sun, 19 Jan 2025 15:13:32 GMT",
+    "ETag": "\"a236-62c109644efc1\"",
+    "Accept-Ranges": "bytes",
+    "Content-Length": "41526",
+    "Vary": "Accept-Encoding,User-Agent",
+    "Content-Type": "text/plain"
+  },
+  "file": "docs/release/2026-09-16/sources/calendar-sao-paulo-2026.raw",
+  "sha256": "4f1fb3acd451efe6b72a4d6e1647758231473dba710d0d8e35d6be423882de15",
+  "bytes": 41526
+}

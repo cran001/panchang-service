@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.gazetteer.GazetteerGeometryTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-09-12T17:53:48" hostname="DESKTOP-KBUKJ2P" time="0.268">
+  <properties/>
+  <testcase name="the antimeridian is not a wall for the raw formula()" classname="org.panchang.gazetteer.GazetteerGeometryTest" time="0.063"/>
+  <testcase name="the default radius spans less than two degrees of latitude()" classname="org.panchang.gazetteer.GazetteerGeometryTest" time="0.021"/>
+  <testcase name="degenerate and antipodal cases do not blow up()" classname="org.panchang.gazetteer.GazetteerGeometryTest" time="0.002"/>
+  <testcase name="agrees with GeoLocation distanceKmTo()" classname="org.panchang.gazetteer.GazetteerGeometryTest" time="0.177"/>
+  <testcase name="the scale of the sphere is right()" classname="org.panchang.gazetteer.GazetteerGeometryTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

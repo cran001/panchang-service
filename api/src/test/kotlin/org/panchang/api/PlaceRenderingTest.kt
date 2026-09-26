@@ -18,7 +18,7 @@ import org.panchang.wire.WireJson
  * compiler check for that, so there is a test.
  *
  * Both sides here are real output: `location.place` lifted out of an actual `:calc --format json`
- * document, and `exactMatches[0]` from an actual `GET /v1/places`. Nothing is constructed by hand.
+ * document, and `exactMatches[0]` from an actual `GET /v2/places`. Nothing is constructed by hand.
  *
  * This one comparison is on the parsed objects rather than the raw text, and for a reason that is
  * not a compromise: the two renderings sit at different depths in their documents, so their
@@ -74,7 +74,7 @@ class PlaceRenderingTest {
         .jsonObject
 
     private fun apiPlace(): JsonObject {
-        val r = call("/v1/places?q=Nadia")
+        val r = call("/v2/places?q=Nadia")
         check(r.status == 200) { "expected 200, got ${r.status}: ${r.body}" }
         val matches = r.json["exactMatches"]!!.jsonArray
         check(matches.size == 1) { "expected exactly one Nadia record, found ${matches.size}" }

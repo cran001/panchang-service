@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.publish.FeedPublisherTest" tests="16" skipped="0" failures="4" errors="0" timestamp="2026-09-21T13:40:13" hostname="DESKTOP-KBUKJ2P" time="70.412">
+  <properties/>
+  <testcase name="write puts every computed file on disk and nothing else(Path)" classname="org.panchang.publish.FeedPublisherTest" time="38.915"/>
+  <testcase name="zones and locations are the shape CalendarSyncRepository navigates()" classname="org.panchang.publish.FeedPublisherTest" time="0.011"/>
+  <testcase name="yearly files retain January Parana with the preceding legacy fast for attachment()" classname="org.panchang.publish.FeedPublisherTest" time="0.011">
+    <failure message="java.util.NoSuchElementException: Key v2/mayapur/ekadashi-year.json is missing in the map." type="java.util.NoSuchElementException">java.util.NoSuchElementException: Key v2/mayapur/ekadashi-year.json is missing in the map.
+	at kotlin.collections.MapsKt__MapWithDefaultKt.getOrImplicitDefaultNullable(MapWithDefault.kt:24)
+	at kotlin.collections.MapsKt__MapsKt.getValue(Maps.kt:369)
+	at org.panchang.publish.FeedPublisherTest.yearly files retain January Parana with the preceding legacy fast for attachment(FeedPublisherTest.kt:57)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.base/java.util.ArrayList.forEach(Unknown Source)
+	at java.base/java.util.ArrayList.forEach(Unknown Source)
+</failure>
+  </testcase>
+  <testcase name="every skipped site names a code, and a wire refusal is reported as wire's()" classname="org.panchang.publish.FeedPublisherTest" time="0.001"/>
+  <testcase name="every parana in the legacy feed is recovered by the app's own pipeline()" classname="org.panchang.publish.FeedPublisherTest" time="0.032"/>
+  <testcase name="an unmatched offset never creates a synthetic calendar()" classname="org.panchang.publish.FeedPublisherTest" time="0.002"/>
+  <testcase name="each fast day carries an explicitly fasting title()" classname="org.panchang.publish.FeedPublisherTest" time="0.011"/>
+  <testcase name="the published v1 year resolution carries unresolved()" classname="org.panchang.publish.FeedPublisherTest" time="0.003">
+    <failure message="java.util.NoSuchElementException: Key v2/mayapur/year-resolution.json is missing in the map." type="java.util.NoSuchElementException">java.util.NoSuchElementException: Key v2/mayapur/year-resolution.json is missing in the map.
+	at kotlin.collections.MapsKt__MapWithDefaultKt.getOrImplicitDefaultNullable(MapWithDefault.kt:24)
+	at kotlin.collections.MapsKt__MapsKt.getValue(Maps.kt:369)
+	at org.panchang.publish.FeedPublisherTest.the published v1 year resolution carries unresolved(FeedPublisherTest.kt:146)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.base/java.util.ArrayList.forEach(Unknown Source)
+	at java.base/java.util.ArrayList.forEach(Unknown Source)
+</failure>
+  </testcase>
+  <testcase name="the manifest warns that no UTC zone was published()" classname="org.panchang.publish.FeedPublisherTest" time="0.004"/>
+  <testcase name="no fallback is synthesised when a requested site already holds P0000()" classname="org.panchang.publish.FeedPublisherTest" time="18.044"/>
+  <testcase name="published plus skipped equals requested()" classname="org.panchang.publish.FeedPublisherTest" time="0.001"/>
+  <testcase name="two runs of the same request produce the same bytes()" classname="org.panchang.publish.FeedPublisherTest" time="13.355">
+    <failure message="java.util.NoSuchElementException: Key v2/new-york/year-resolution.json is missing in the map." type="java.util.NoSuchElementException">java.util.NoSuchElementException: Key v2/new-york/year-resolution.json is missing in the map.
+	at kotlin.collections.MapsKt__MapWithDefaultKt.getOrImplicitDefaultNullable(MapWithDefault.kt:24)
+	at kotlin.collections.MapsKt__MapsKt.getValue(Maps.kt:369)
+	at org.panchang.publish.FeedPublisherTest.two runs of the same request produce the same bytes(FeedPublisherTest.kt:332)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.base/java.util.ArrayList.forEach(Unknown Source)
+	at java.base/java.util.ArrayList.forEach(Unknown Source)
+</failure>
+  </testcase>
+  <testcase name="the legacy day file covers the whole year with no gaps()" classname="org.panchang.publish.FeedPublisherTest" time="0.002"/>
+  <testcase name="legacy published plus withheld equals published()" classname="org.panchang.publish.FeedPublisherTest" time="0.001"/>
+  <testcase name="the UTC fallback is counted in nothing()" classname="org.panchang.publish.FeedPublisherTest" time="0.001"/>
+  <testcase name="every accepted site gets both v1 documents, including the one with no legacy file()" classname="org.panchang.publish.FeedPublisherTest" time="0.003">
+    <failure message="org.opentest4j.AssertionFailedError: no v1 year resolution for mayapur ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: no v1 year resolution for mayapur ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at app//org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at app//org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at app//org.panchang.publish.FeedPublisherTest.every accepted site gets both v1 documents, including the one with no legacy file(FeedPublisherTest.kt:122)
+	at java.base@21.0.6/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList.forEach(Unknown Source)
+	at java.base@21.0.6/java.util.ArrayList.forEach(Unknown Source)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

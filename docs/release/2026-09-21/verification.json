@@ -1,0 +1,250 @@
+{
+  "classification": "AI_ASSISTED_EVIDENCE_REVIEW",
+  "startingFilesChecked": 1829,
+  "changedFromStartingState": [
+    "api/src/test/kotlin/org/panchang/api/DeliveryFrontDoorTest.kt",
+    "api/src/test/kotlin/org/panchang/api/PublicationControlsApiTest.kt",
+    "docs/release/2026-09-16/__pycache__/inventory.cpython-311.pyc",
+    "publication/src/main/kotlin/org/panchang/publication/PublicationPolicy.kt",
+    "publish/src/main/kotlin/org/panchang/publish/PublicFeedPublisher.kt",
+    "api/src/main/kotlin/org/panchang/api/Main.kt",
+    "api/src/main/kotlin/org/panchang/api/Routes.kt",
+    "api/src/test/kotlin/org/panchang/api/Fixtures.kt",
+    "api/src/test/kotlin/org/panchang/api/PlaceRenderingTest.kt",
+    "api/src/test/kotlin/org/panchang/api/RoutesTest.kt",
+    "publish/src/main/kotlin/org/panchang/publish/Main.kt"
+  ],
+  "newImplementationFiles": [
+    "api/src/test/kotlin/org/panchang/api/VersionMigrationTest.kt",
+    "publication/src/main/kotlin/org/panchang/publication/CalculationCache.kt",
+    "publication/src/test/kotlin/org/panchang/publication/CalculationCacheTest.kt"
+  ],
+  "protectedFilesChanged": [],
+  "regeneratedPythonBytecode": [
+    "docs/release/2026-09-16/__pycache__/inventory.cpython-311.pyc"
+  ],
+  "disputeRegistryUnchanged": true,
+  "baseline": {
+    "total": {
+      "tests": 673,
+      "passed": 664,
+      "failed": 9,
+      "errors": 0,
+      "skipped": 0
+    },
+    "failures": [
+      {
+        "module": "sampradaya",
+        "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+        "name": "vrindavan",
+        "kind": "failure",
+        "message": "org.opentest4j.AssertionFailedError: parana disagreements at vrindavan:\n2026-06-27: calendar prints a parana window, rules produced none\n2026-06-26: rules produced a parana window the calendar does not print ==> expected: <true> but was: <false>"
+      },
+      {
+        "module": "sampradaya",
+        "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+        "name": "auckland",
+        "kind": "failure",
+        "message": "org.opentest4j.AssertionFailedError: parana disagreements at auckland:\n2026-04-28 start basis: calendar '1/4 of tithi' (HARI_VASARA_END), rules SUNRISE\n2026-10-08 end basis: calendar 'end of tithi' (DVADASHI_END), rules ONE_THIRD_DAYLIGHT\n2026-10-08 end (ONE_THIRD_DAYLIGHT): calendar 06:47, rules 11:01:42, delta +254.71 min, outside -0.25..1.25 ==> expected: <true> but was: <false>"
+      },
+      {
+        "module": "sampradaya",
+        "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+        "name": "vrindavan",
+        "kind": "failure",
+        "message": "org.opentest4j.AssertionFailedError: Ekadashi fasting dates disagree with the vrindavan 2026 calendar. Missing: [2026-06-26]. Extra: [2026-06-25]. A fasting-date disagreement is a far stronger signal than a label disagreement and must be investigated as a rule error first; see docs/validation-multisite.md. ==> expected: <[2026-01-14, 2026-01-29, 2026-02-13, 2026-02-27, 2026-03-15, 2026-03-29, 2026-04-13, 2026-04-27, 2026-05-13, 2026-05-27, 2026-06-11, 2026-06-26, 2026-07-11, 2026-07-25, 2026-08-09, 2026-08-24, 2026-09-07, 2026-09-22, 2026-10-06, 2026-10-22, 2026-11-05, 2026-11-21, 2026-12-04, 2026-12-20]> but was: <[2026-01-14, 2026-01-29, 2026-02-13, 2026-02-27, 2026-03-15, 2026-03-29, 2026-04-13, 2026-04-27, 2026-05-13, 2026-05-27, 2026-06-11, 2026-06-25, 2026-07-11, 2026-07-25, 2026-08-09, 2026-08-24, 2026-09-07, 2026-09-22, 2026-10-06, 2026-10-22, 2026-11-05, 2026-11-21, 2026-12-04, 2026-12-20]>"
+      },
+      {
+        "module": "sampradaya",
+        "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+        "name": "vrindavan",
+        "kind": "failure",
+        "message": "org.opentest4j.AssertionFailedError: Mahadvadashi classification disagrees with the vrindavan 2026 calendar. A *label* disagreement on a fortnight whose fasting date still matches is the outcome ADR 0002 predicts from the reference's ephemeris (docs/decisions/0002-reference-calendar-disagreement.md); a disagreement that also moves the fasting date is not, and is a rule error until shown otherwise. ==> expected: <{2026-06-26=PAKSAVARDHINI, 2026-08-24=VANJULI}> but was: <{2026-08-24=VANJULI}>"
+      },
+      {
+        "module": "sampradaya",
+        "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+        "name": "moscow",
+        "kind": "failure",
+        "message": "org.opentest4j.AssertionFailedError: Mahadvadashi classification disagrees with the moscow 2026 calendar. A *label* disagreement on a fortnight whose fasting date still matches is the outcome ADR 0002 predicts from the reference's ephemeris (docs/decisions/0002-reference-calendar-disagreement.md); a disagreement that also moves the fasting date is not, and is a rule error until shown otherwise. ==> expected: <{}> but was: <{2026-05-27=VANJULI}>"
+      },
+      {
+        "module": "sampradaya",
+        "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+        "name": "auckland",
+        "kind": "failure",
+        "message": "org.opentest4j.AssertionFailedError: Mahadvadashi classification disagrees with the auckland 2026 calendar. A *label* disagreement on a fortnight whose fasting date still matches is the outcome ADR 0002 predicts from the reference's ephemeris (docs/decisions/0002-reference-calendar-disagreement.md); a disagreement that also moves the fasting date is not, and is a rule error until shown otherwise. ==> expected: <{2026-04-14=TRISPRSA}> but was: <{2026-04-14=TRISPRSA, 2026-10-07=TRISPRSA}>"
+      },
+      {
+        "module": "sampradaya",
+        "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+        "name": "sydney",
+        "kind": "failure",
+        "message": "org.opentest4j.AssertionFailedError: Mahadvadashi classification disagrees with the sydney 2026 calendar. A *label* disagreement on a fortnight whose fasting date still matches is the outcome ADR 0002 predicts from the reference's ephemeris (docs/decisions/0002-reference-calendar-disagreement.md); a disagreement that also moves the fasting date is not, and is a rule error until shown otherwise. ==> expected: <{2026-01-15=PAKSAVARDHINI, 2026-07-11=TRISPRSA}> but was: <{2026-01-15=PAKSAVARDHINI, 2026-07-11=TRISPRSA, 2026-12-05=VANJULI}>"
+      },
+      {
+        "module": "sampradaya",
+        "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+        "name": "moscow",
+        "kind": "failure",
+        "message": "org.opentest4j.AssertionFailedError: deferral classification at moscow:\n2026-05-27: an unnamed deferral was promoted to VANJULI; the calendar prints no Mahadvadashi line here ==> expected: <true> but was: <false>"
+      },
+      {
+        "module": "sampradaya",
+        "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+        "name": "sydney",
+        "kind": "failure",
+        "message": "org.opentest4j.AssertionFailedError: deferral classification at sydney:\n2026-12-05: an unnamed deferral was promoted to VANJULI; the calendar prints no Mahadvadashi line here ==> expected: <true> but was: <false>"
+      }
+    ]
+  },
+  "full": {
+    "total": {
+      "tests": 682,
+      "passed": 673,
+      "failed": 9,
+      "errors": 0,
+      "skipped": 0
+    },
+    "failures": [
+      {
+        "module": "sampradaya",
+        "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+        "name": "vrindavan",
+        "kind": "failure",
+        "message": "org.opentest4j.AssertionFailedError: parana disagreements at vrindavan:\n2026-06-27: calendar prints a parana window, rules produced none\n2026-06-26: rules produced a parana window the calendar does not print ==> expected: <true> but was: <false>"
+      },
+      {
+        "module": "sampradaya",
+        "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+        "name": "auckland",
+        "kind": "failure",
+        "message": "org.opentest4j.AssertionFailedError: parana disagreements at auckland:\n2026-04-28 start basis: calendar '1/4 of tithi' (HARI_VASARA_END), rules SUNRISE\n2026-10-08 end basis: calendar 'end of tithi' (DVADASHI_END), rules ONE_THIRD_DAYLIGHT\n2026-10-08 end (ONE_THIRD_DAYLIGHT): calendar 06:47, rules 11:01:42, delta +254.71 min, outside -0.25..1.25 ==> expected: <true> but was: <false>"
+      },
+      {
+        "module": "sampradaya",
+        "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+        "name": "vrindavan",
+        "kind": "failure",
+        "message": "org.opentest4j.AssertionFailedError: Ekadashi fasting dates disagree with the vrindavan 2026 calendar. Missing: [2026-06-26]. Extra: [2026-06-25]. A fasting-date disagreement is a far stronger signal than a label disagreement and must be investigated as a rule error first; see docs/validation-multisite.md. ==> expected: <[2026-01-14, 2026-01-29, 2026-02-13, 2026-02-27, 2026-03-15, 2026-03-29, 2026-04-13, 2026-04-27, 2026-05-13, 2026-05-27, 2026-06-11, 2026-06-26, 2026-07-11, 2026-07-25, 2026-08-09, 2026-08-24, 2026-09-07, 2026-09-22, 2026-10-06, 2026-10-22, 2026-11-05, 2026-11-21, 2026-12-04, 2026-12-20]> but was: <[2026-01-14, 2026-01-29, 2026-02-13, 2026-02-27, 2026-03-15, 2026-03-29, 2026-04-13, 2026-04-27, 2026-05-13, 2026-05-27, 2026-06-11, 2026-06-25, 2026-07-11, 2026-07-25, 2026-08-09, 2026-08-24, 2026-09-07, 2026-09-22, 2026-10-06, 2026-10-22, 2026-11-05, 2026-11-21, 2026-12-04, 2026-12-20]>"
+      },
+      {
+        "module": "sampradaya",
+        "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+        "name": "vrindavan",
+        "kind": "failure",
+        "message": "org.opentest4j.AssertionFailedError: Mahadvadashi classification disagrees with the vrindavan 2026 calendar. A *label* disagreement on a fortnight whose fasting date still matches is the outcome ADR 0002 predicts from the reference's ephemeris (docs/decisions/0002-reference-calendar-disagreement.md); a disagreement that also moves the fasting date is not, and is a rule error until shown otherwise. ==> expected: <{2026-06-26=PAKSAVARDHINI, 2026-08-24=VANJULI}> but was: <{2026-08-24=VANJULI}>"
+      },
+      {
+        "module": "sampradaya",
+        "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+        "name": "moscow",
+        "kind": "failure",
+        "message": "org.opentest4j.AssertionFailedError: Mahadvadashi classification disagrees with the moscow 2026 calendar. A *label* disagreement on a fortnight whose fasting date still matches is the outcome ADR 0002 predicts from the reference's ephemeris (docs/decisions/0002-reference-calendar-disagreement.md); a disagreement that also moves the fasting date is not, and is a rule error until shown otherwise. ==> expected: <{}> but was: <{2026-05-27=VANJULI}>"
+      },
+      {
+        "module": "sampradaya",
+        "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+        "name": "auckland",
+        "kind": "failure",
+        "message": "org.opentest4j.AssertionFailedError: Mahadvadashi classification disagrees with the auckland 2026 calendar. A *label* disagreement on a fortnight whose fasting date still matches is the outcome ADR 0002 predicts from the reference's ephemeris (docs/decisions/0002-reference-calendar-disagreement.md); a disagreement that also moves the fasting date is not, and is a rule error until shown otherwise. ==> expected: <{2026-04-14=TRISPRSA}> but was: <{2026-04-14=TRISPRSA, 2026-10-07=TRISPRSA}>"
+      },
+      {
+        "module": "sampradaya",
+        "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+        "name": "sydney",
+        "kind": "failure",
+        "message": "org.opentest4j.AssertionFailedError: Mahadvadashi classification disagrees with the sydney 2026 calendar. A *label* disagreement on a fortnight whose fasting date still matches is the outcome ADR 0002 predicts from the reference's ephemeris (docs/decisions/0002-reference-calendar-disagreement.md); a disagreement that also moves the fasting date is not, and is a rule error until shown otherwise. ==> expected: <{2026-01-15=PAKSAVARDHINI, 2026-07-11=TRISPRSA}> but was: <{2026-01-15=PAKSAVARDHINI, 2026-07-11=TRISPRSA, 2026-12-05=VANJULI}>"
+      },
+      {
+        "module": "sampradaya",
+        "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+        "name": "moscow",
+        "kind": "failure",
+        "message": "org.opentest4j.AssertionFailedError: deferral classification at moscow:\n2026-05-27: an unnamed deferral was promoted to VANJULI; the calendar prints no Mahadvadashi line here ==> expected: <true> but was: <false>"
+      },
+      {
+        "module": "sampradaya",
+        "suite": "org.panchang.sampradaya.GaudiyaEkadashiConformanceTest",
+        "name": "sydney",
+        "kind": "failure",
+        "message": "org.opentest4j.AssertionFailedError: deferral classification at sydney:\n2026-12-05: an unnamed deferral was promoted to VANJULI; the calendar prints no Mahadvadashi line here ==> expected: <true> but was: <false>"
+      }
+    ]
+  },
+  "targeted": {
+    "total": {
+      "tests": 118,
+      "passed": 118,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "failures": []
+  },
+  "exactBaselineFailuresUnchanged": true,
+  "smoke": {
+    "restartReuse": true,
+    "artifactVersionInvalidates": true,
+    "fourProcessesOneComputation": true,
+    "performanceMillis": {
+      "cold": 11145.9083,
+      "restartWarm": 289.1392,
+      "versionMiss": 11142.1048,
+      "concurrent": [
+        11716.0332,
+        11504.702901,
+        11643.7753,
+        11843.9692
+      ]
+    },
+    "corruptionRefused": true,
+    "realHttpAndPublisher": true,
+    "apiRestartSameBytes": true,
+    "sharedApiPublisherCache": true,
+    "all18ExcludedRoutesRefused": true,
+    "noRealApprovalCreated": true,
+    "staticFilesNotDeployed": true,
+    "httpPerformanceMillis": {
+      "cold": 11169.352599885315,
+      "warmDay": 47.745199874043465,
+      "restartWarm": 278.0161998234689
+    }
+  },
+  "bundles": [
+    {
+      "name": "priority",
+      "members": 7,
+      "fingerprint": "bac29c1ecbc3ffc945bc04a7bb14bdccca0e65d2ac508213a2d41426c14993e2",
+      "bundleBytesSha256": "f8f16846e36c4fb230e9182689e009611340cca22cbe4b200ea159a52687df3f",
+      "resultsAndVersionsMatchMeasurements": true,
+      "classification": "AI_ASSISTED_EVIDENCE_REVIEW",
+      "unsigned": true,
+      "realApproval": false
+    },
+    {
+      "name": "hold",
+      "members": 8,
+      "fingerprint": "c126d0044a9c72b98428235d7e3619a1dde8319db22dff2902bee0f7443bc9f5",
+      "bundleBytesSha256": "064f06883d1371b4f889f514c55e646db464ab154742d264d81834a300ba1004",
+      "resultsAndVersionsMatchMeasurements": true,
+      "classification": "AI_ASSISTED_EVIDENCE_REVIEW",
+      "unsigned": true,
+      "realApproval": false
+    },
+    {
+      "name": "alternative-sydney-through-december-04",
+      "members": 1,
+      "fingerprint": "0a0539a38fc77edd3c909b2d7f7567daa2e7e957c0f30b4bdae0ebd26eeb6523",
+      "bundleBytesSha256": "d5bda0df16bfa999f3fad057a3ce44d2a08c4c44a4125f37618eeddcb0b53250",
+      "resultsAndVersionsMatchMeasurements": true,
+      "classification": "AI_ASSISTED_EVIDENCE_REVIEW",
+      "unsigned": true,
+      "realApproval": false
+    }
+  ],
+  "noActualReviewApprovalSignatureOrIdentityCreated": true,
+  "noAndroidOrContentHubChange": true,
+  "noDeploymentCommitOrPush": true,
+  "remoteCodeReview": "NOT_RUN_CODERABBIT_SIGNED_OUT"
+}

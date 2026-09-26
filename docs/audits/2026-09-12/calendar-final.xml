@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.verify.audit.AuditEvidenceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-09-12T07:12:30" hostname="DESKTOP-KBUKJ2P" time="90.635">
+  <properties/>
+  <testcase name="calendars()" classname="org.panchang.verify.audit.AuditEvidenceTest" time="90.635"/>
+  <system-out><![CDATA[AUDIT calendar ahmedabad 2026 references=24 actual=24
+AUDIT calendar auckland 2026 references=24 actual=24
+AUDIT calendar bangalore 2026 references=24 actual=24
+AUDIT calendar chennai 2026 references=24 actual=24
+AUDIT calendar delhi 2026 references=24 actual=24
+AUDIT calendar guwahati 2026 references=24 actual=24
+AUDIT calendar london 2026 references=24 actual=24
+AUDIT calendar mayapur 2026 references=24 actual=24
+AUDIT calendar moscow 2026 references=24 actual=24
+AUDIT calendar mumbai 2026 references=24 actual=24
+AUDIT calendar new-york 2026 references=24 actual=24
+AUDIT calendar sao-paulo 2026 references=24 actual=24
+AUDIT calendar sydney 2026 references=24 actual=24
+AUDIT calendar vrindavan 2026 references=24 actual=24
+AUDIT calendar hyderabad 2027 references=25 actual=25
+AUDIT calendar mayapur 2027 references=25 actual=25
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -34,6 +34,7 @@ import org.panchang.wire.TithiOccurrenceDto
 class HumanReport(private val explain: Boolean) {
 
     fun render(result: CalcResult): String = buildString {
+        appendLine("CALCULATED REVIEW DIAGNOSTICS — NOT HUMAN-APPROVED GUIDANCE")
         header(result)
         location(result.site)
         ekadashi(result)

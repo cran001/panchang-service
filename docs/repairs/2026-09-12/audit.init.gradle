@@ -1,0 +1,18 @@
+gradle.projectsEvaluated {
+    def p = gradle.rootProject.project(':verify')
+    p.dependencies.add('testImplementation', gradle.rootProject.project(':calc'))
+    p.dependencies.add('testImplementation', gradle.rootProject.project(':wire'))
+    p.dependencies.add('testImplementation', gradle.rootProject.project(':gazetteer'))
+    p.kotlin.sourceSets.test.kotlin.srcDir(new File(gradle.rootProject.projectDir, 'docs/repairs/2026-09-12/harness'))
+    p.tasks.register('auditEvidence', Test) {
+        testClassesDirs = p.sourceSets.test.output.classesDirs
+        classpath = p.sourceSets.test.runtimeClasspath
+        useJUnitPlatform()
+        filter { includeTestsMatching('org.panchang.verify.audit.AuditEvidenceTest') }
+        systemProperty('audit.root', gradle.rootProject.projectDir.absolutePath)
+        systemProperty('audit.output', new File(gradle.rootProject.projectDir, gradle.rootProject.findProperty('auditOutput')).absolutePath)
+        outputs.upToDateWhen { false }
+        maxParallelForks = 1
+    }
+}
+

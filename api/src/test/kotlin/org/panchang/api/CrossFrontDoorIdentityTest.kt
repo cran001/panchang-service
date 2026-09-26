@@ -10,40 +10,10 @@ import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test
 import org.panchang.wire.WireJson
 
-/**
- * The reason `:wire` exists, demonstrated instead of assumed.
- *
- * `:calc` and `:api` are two front doors onto one engine. If they disagree about a fasting time,
- * two users comparing notes see two different answers from what is nominally the same service and
- * neither has any way to tell which is wrong. `:wire` was created so that cannot happen — but
- * until this file existed, that was a structural argument and not an observation. T6 said as much.
- *
- * ## What is compared
- *
- * The **raw characters** of the two document roots, `ekadashiYear` and `yearResolution`, as each
- * door actually emits them. Not parsed trees: a tree comparison would pass while one door emitted
- * its keys in a different order, or `19.076` where the other wrote `19.0760`, or a differently
- * escaped devotee's name — all of which are real ways for two payloads to disagree in front of a
- * user, and none of which a `JsonObject` equality check can see.
- *
- * Both doors are driven for real. One side is [org.panchang.calc.CalcCommand] parsed from argument
- * strings, writing to its own stdout; the other is an HTTP GET served in-process by Ktor. The only
- * thing shared between them is the engine underneath, which is the point.
- *
- * ## Why the request carries `pretty=1`
- *
- * `:wire` defines two `Json` configurations and says which is for what: `compact` for transport,
- * `pretty` for files. `:calc --format json` writes a file. Asking `:api` for the file form is what
- * makes this a byte comparison rather than a comparison of two shapes that would be the same if
- * you reformatted them — and `the compact form carries the same document` below closes the loop by
- * showing the default transport form is the same document, differently spaced.
- *
- * The two envelopes are permitted to differ, and only in their outermost keys: `:calc` writes
- * `"tool"`, `:api` writes `"service"` and `"schemaVersion"`. Both sit at the same depth as the
- * roots, so even the indentation inside the compared regions is identical.
- *
- * **If a future change makes these fail, the fix is to route both doors through `:wire`. It is
- * never to loosen what is compared here.**
+/** Publication-v2 intentionally changes the roots. Compare all approved calculation bytes after
+ * removing only the new publication metadata and restoring the diagnostic schema version.
+ * The explicit signed TEST ONLY fixture authorizes these calculations; production defaults are
+ * covered separately by PublicationControlsApiTest. No timing or reference value is changed.
  */
 class CrossFrontDoorIdentityTest {
 
@@ -54,8 +24,8 @@ class CrossFrontDoorIdentityTest {
         assertEquals(200, api.status)
 
         for (root in ROOTS) {
-            val fromCalc = jsonMemberText(calc, root)
-            val fromApi = jsonMemberText(api.body, root)
+            val fromCalc = calculationText(calc, root)
+            val fromApi = calculationText(api.body, root)
             assertEquals(
                 fromCalc,
                 fromApi,
@@ -76,10 +46,10 @@ class CrossFrontDoorIdentityTest {
             .parseToJsonElement(jsonMemberText(api.body, "ekadashiYear").substringAfter(':'))
             .jsonObject["observances"]!!
         assertEquals(
-            24,
+            25,
             observances.let { it as kotlinx.serialization.json.JsonArray }.size,
-            "an ordinary year carries 24 Ekadashi observances; if this is 0 the byte comparison " +
-                "above is comparing two empty documents",
+            "Mumbai 2026 carries 24 fasts plus the December fast's January 1 Parana; " +
+                "the byte comparison must include that carryover",
         )
     }
 
@@ -91,8 +61,8 @@ class CrossFrontDoorIdentityTest {
 
         for (root in ROOTS) {
             assertEquals(
-                jsonMemberText(calc, root),
-                jsonMemberText(api.body, root),
+                calculationText(calc, root),
+                calculationText(api.body, root),
                 "the $root root differs between the two doors on a day query",
             )
         }
@@ -120,7 +90,7 @@ class CrossFrontDoorIdentityTest {
         val api = Fixtures.apiNadiaYearPretty
         assertEquals(200, api.status)
         for (root in ROOTS) {
-            assertEquals(jsonMemberText(calc, root), jsonMemberText(api.body, root))
+            assertEquals(calculationText(calc, root), calculationText(api.body, root))
         }
     }
 
@@ -177,18 +147,29 @@ class CrossFrontDoorIdentityTest {
     }
 
     @Test
-    fun `the api envelope adds nothing inside the wire roots`() {
+    fun `publication metadata is explicit in both self describing roots`() {
         val api = Fixtures.apiMumbaiYearPretty.json
         assertEquals(
-            listOf("service", "schemaVersion", "request", "location", "ekadashiYear", "yearResolution"),
+            listOf("service", "schemaVersion", "publication", "request", "location", "ekadashiYear", "yearResolution"),
             api.keys.toList(),
             "anything :api wants to add sits around the wire roots, never inside them",
         )
         assertEquals("panchang-api", api["service"]!!.jsonPrimitive.content)
         // Both roots are self-describing v1 payloads that can be lifted out of the envelope.
         for (root in ROOTS) {
-            assertEquals(1, api[root]!!.jsonObject["schemaVersion"]!!.jsonPrimitive.content.toInt())
+            assertEquals(2, api[root]!!.jsonObject["schemaVersion"]!!.jsonPrimitive.content.toInt())
         }
+    }
+
+    private fun calculationText(document: String, key: String): String {
+        val root = WireJson.pretty.parseToJsonElement(document).jsonObject.getValue(key).jsonObject
+        val diagnostic = kotlinx.serialization.json.buildJsonObject {
+            put("schemaVersion", kotlinx.serialization.json.JsonPrimitive(1))
+            for (field in listOf("year", "site", "sampradaya", "observances", "events", "unresolved")) {
+                root[field]?.let { put(field, it) }
+            }
+        }
+        return WireJson.pretty.encodeToString(JsonObject.serializer(), diagnostic)
     }
 
     private fun locationWithoutQuery(document: String): JsonObject {

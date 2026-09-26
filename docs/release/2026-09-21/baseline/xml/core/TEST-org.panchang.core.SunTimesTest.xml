@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.core.SunTimesTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-09-21T09:03:12" hostname="DESKTOP-KBUKJ2P" time="0.094">
+  <properties/>
+  <testcase name="a single pass is measurably wrong and iterating fixes it()" classname="org.panchang.core.SunTimesTest" time="0.032"/>
+  <testcase name="day length is longest at the summer solstice and shortest at the winter one()" classname="org.panchang.core.SunTimesTest" time="0.031"/>
+  <testcase name="solar noon is the meridian transit()" classname="org.panchang.core.SunTimesTest" time="0.001"/>
+  <testcase name="elevation raises the horizon and lengthens the day()" classname="org.panchang.core.SunTimesTest" time="0.001"/>
+  <testcase name="converged sunrise and sunset sit exactly on the horizon()" classname="org.panchang.core.SunTimesTest" time="0.001"/>
+  <testcase name="day length grows and shrinks symmetrically about the equinox()" classname="org.panchang.core.SunTimesTest" time="0.007"/>
+  <testcase name="sunrise precedes solar noon precedes sunset()" classname="org.panchang.core.SunTimesTest" time="0.002"/>
+  <testcase name="no solar quantity is ever NaN()" classname="org.panchang.core.SunTimesTest" time="0.004"/>
+  <testcase name="arunodaya is exactly 96 minutes before sunrise()" classname="org.panchang.core.SunTimesTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

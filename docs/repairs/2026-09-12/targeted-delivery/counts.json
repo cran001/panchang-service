@@ -1,0 +1,41 @@
+{
+  "xmlSource": "docs\\repairs\\2026-09-12\\targeted-delivery\\xml",
+  "modules": {
+    "api": {
+      "tests": 2,
+      "passed": 2,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "calc": {
+      "tests": 2,
+      "passed": 2,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "core": {
+      "tests": 4,
+      "passed": 4,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "sampradaya": {
+      "tests": 6,
+      "passed": 6,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "total": {
+    "tests": 14,
+    "passed": 14,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "failures": []
+}

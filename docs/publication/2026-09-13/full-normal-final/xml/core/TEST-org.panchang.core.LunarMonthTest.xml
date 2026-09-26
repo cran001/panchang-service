@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.core.LunarMonthTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-09-14T05:31:23" hostname="DESKTOP-KBUKJ2P" time="0.05">
+  <properties/>
+  <testcase name="the two reckonings agree during shukla paksha and differ during krishna()" classname="org.panchang.core.LunarMonthTest" time="0.028"/>
+  <testcase name="ordinary months contain exactly one solar rashi ingress()" classname="org.panchang.core.LunarMonthTest" time="0.002"/>
+  <testcase name="a lunar month spans exactly one synodic month and contains its instant()" classname="org.panchang.core.LunarMonthTest" time="0.002"/>
+  <testcase name="paksha follows the elongation, not the month index()" classname="org.panchang.core.LunarMonthTest" time="0.001"/>
+  <testcase name="an adhika month occurs and is followed by the nija month of the same name()" classname="org.panchang.core.LunarMonthTest" time="0.005"/>
+  <testcase name="the instance default reckoning is used only when none is passed()" classname="org.panchang.core.LunarMonthTest" time="0.001"/>
+  <testcase name="new and full moons alternate and are half a lunation apart()" classname="org.panchang.core.LunarMonthTest" time="0.001"/>
+  <testcase name="month bounds are the phases the reckoning is named for()" classname="org.panchang.core.LunarMonthTest" time="0.001"/>
+  <testcase name="month indices advance by one except across an adhika month()" classname="org.panchang.core.LunarMonthTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

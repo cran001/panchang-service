@@ -1,0 +1,28 @@
+{
+  "restartReuse": true,
+  "artifactVersionInvalidates": true,
+  "fourProcessesOneComputation": true,
+  "performanceMillis": {
+    "cold": 11145.9083,
+    "restartWarm": 289.1392,
+    "versionMiss": 11142.1048,
+    "concurrent": [
+      11716.0332,
+      11504.702901,
+      11643.7753,
+      11843.9692
+    ]
+  },
+  "corruptionRefused": true,
+  "realHttpAndPublisher": true,
+  "apiRestartSameBytes": true,
+  "sharedApiPublisherCache": true,
+  "all18ExcludedRoutesRefused": true,
+  "noRealApprovalCreated": true,
+  "staticFilesNotDeployed": true,
+  "httpPerformanceMillis": {
+    "cold": 11169.352599885315,
+    "warmDay": 47.745199874043465,
+    "restartWarm": 278.0161998234689
+  }
+}

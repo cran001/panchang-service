@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.panchang.sampradaya.EventResolverTest" tests="20" skipped="0" failures="0" errors="0" timestamp="2026-09-21T09:05:45" hostname="DESKTOP-KBUKJ2P" time="6.603">
+  <properties/>
+  <testcase name="relative events apply offsets in both directions()" classname="org.panchang.sampradaya.EventResolverTest" time="6.57"/>
+  <testcase name="a cycle of relative events fails when the catalog is built()" classname="org.panchang.sampradaya.EventResolverTest" time="0.004"/>
+  <testcase name="relative events chain through other relative events()" classname="org.panchang.sampradaya.EventResolverTest" time="0.001"/>
+  <testcase name="krishna paksha rules name different fortnights under the two reckonings()" classname="org.panchang.sampradaya.EventResolverTest" time="0.001"/>
+  <testcase name="a nakshatra rule matches the day that nakshatra is running at sunrise()" classname="org.panchang.sampradaya.EventResolverTest" time="0.007"/>
+  <testcase name="a relative event naming an unknown id fails when the catalog is built()" classname="org.panchang.sampradaya.EventResolverTest" time="0.001"/>
+  <testcase name="atSunrise false selects the day the tithi ends()" classname="org.panchang.sampradaya.EventResolverTest" time="0.0"/>
+  <testcase name="resolveYear reports failures beside successes()" classname="org.panchang.sampradaya.EventResolverTest" time="0.001"/>
+  <testcase name="the shipped catalog constructs and every rule is well formed()" classname="org.panchang.sampradaya.EventResolverTest" time="0.001"/>
+  <testcase name="a skipped tithi resolves to nothing and says so()" classname="org.panchang.sampradaya.EventResolverTest" time="0.001"/>
+  <testcase name="a skipped base is reported against the event that depends on it()" classname="org.panchang.sampradaya.EventResolverTest" time="0.001"/>
+  <testcase name="a resolved event explains itself()" classname="org.panchang.sampradaya.EventResolverTest" time="0.001"/>
+  <testcase name="Hera Pancami disagrees with the tithi rule it superficially resembles()" classname="org.panchang.sampradaya.EventResolverTest" time="0.001"/>
+  <testcase name="a relative event reaches back across the year boundary for its base()" classname="org.panchang.sampradaya.EventResolverTest" time="0.001"/>
+  <testcase name="atSunrise false can date a tithi that no sunrise touches()" classname="org.panchang.sampradaya.EventResolverTest" time="0.0"/>
+  <testcase name="a tabulated event resolves inside its table and refuses outside it()" classname="org.panchang.sampradaya.EventResolverTest" time="0.001"/>
+  <testcase name="shukla paksha rules are identical under both reckonings()" classname="org.panchang.sampradaya.EventResolverTest" time="0.0"/>
+  <testcase name="a repeated tithi is taken on the first of its two days()" classname="org.panchang.sampradaya.EventResolverTest" time="0.001"/>
+  <testcase name="structurally impossible catalogs are rejected at construction()" classname="org.panchang.sampradaya.EventResolverTest" time="0.003"/>
+  <testcase name="an intercalary month keeps no observances()" classname="org.panchang.sampradaya.EventResolverTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

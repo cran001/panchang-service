@@ -1,0 +1,29 @@
+{
+  "id": "calendar-moscow-2027",
+  "url": "https://www.vaisnavacalendar.info/calendars/2027/Moskva%20%5BRussia%5D.txt",
+  "kind": "calendar",
+  "retrievedAtUtc": "2026-09-15T19:54:25.742328+00:00",
+  "cityId": "moscow",
+  "year": 2027,
+  "lineage": "vaisnavacalendar.info/GCal-text",
+  "requestHeaders": {
+    "User-Agent": "panchang-service-evidence/0.1 (local release research)"
+  },
+  "status": 200,
+  "finalUrl": "https://www.vaisnavacalendar.info/calendars/2027/Moskva%20%5BRussia%5D.txt",
+  "responseHeaders": {
+    "Date": "Tue, 15 Sep 2026 19:54:26 GMT",
+    "Server": "Apache/2",
+    "Upgrade": "h2,h2c",
+    "Connection": "Upgrade, close",
+    "Last-Modified": "Fri, 27 Mar 2026 19:48:53 GMT",
+    "ETag": "\"a3cf-64e06ca6eedda\"",
+    "Accept-Ranges": "bytes",
+    "Content-Length": "41935",
+    "Vary": "Accept-Encoding,User-Agent",
+    "Content-Type": "text/plain"
+  },
+  "file": "docs/release/2026-09-16/sources/calendar-moscow-2027.raw",
+  "sha256": "aa6f2ce84fa7fafe6db1ae50ec65ac730db6687be46d1df4297c4d2f6b655806",
+  "bytes": 41935
+}
